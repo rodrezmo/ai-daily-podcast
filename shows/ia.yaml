@@ -9,8 +9,8 @@ author: Radar IA
 category: Technology
 explicit: false
 feed_path: docs/feed.xml
-repo: OWNER/ai-daily-podcast        # completar al crear el repo en GitHub
-site_url: https://OWNER.github.io/ai-daily-podcast
+repo: rodrezmo/ai-daily-podcast        # completar al crear el repo en GitHub
+site_url: https://rodrezmo.github.io/ai-daily-podcast
 
 schedule:
   publish_local: "06:30"            # America/Argentina/Buenos_Aires

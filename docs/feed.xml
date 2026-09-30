@@ -2,7 +2,7 @@
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     <title>Radar IA</title>
-    <link>https://OWNER.github.io/ai-daily-podcast</link>
+    <link>https://rodrezmo.github.io/ai-daily-podcast</link>
     <description>Noticias de inteligencia artificial cada mañana, en criollo y sin humo. Seis titulares, qué le sirve a quien programa, qué ofrecerle hoy a una pyme y una cosa para probar.</description>
     <language>es-ar</language>
     <itunes:author>Radar IA</itunes:author>
