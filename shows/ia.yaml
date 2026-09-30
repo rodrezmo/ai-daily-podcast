@@ -9,7 +9,7 @@ author: Radar IA
 category: Technology
 explicit: false
 feed_path: docs/feed.xml
-repo: rodrezmo/ai-daily-podcast        # completar al crear el repo en GitHub
+repo: rodrezmo/ai-daily-podcast     
 site_url: https://rodrezmo.github.io/ai-daily-podcast
 
 schedule:
