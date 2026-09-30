@@ -2,7 +2,7 @@ id: ia
 title: Radar IA
 description: >-
   Noticias de inteligencia artificial cada mañana, en criollo y sin humo.
-  Seis titulares, qué le sirve a quien programa, qué ofrecerle hoy a una pyme
+  Seis titulares, qué le sirve a quien programa, qué se puede ofrecer hoy con datos e IA
   y una cosa para probar.
 language: es-ar
 author: Radar IA
@@ -38,10 +38,12 @@ agents:                             # a confirmar contra lo que permita tu plan
 audience:
   who: >-
     Persona técnica de datos que además tiene una consultoría chica de
-    automatización, informes y sistemas para pymes argentinas.
+    automatización, informes y sistemas con datos e IA.
   consultancy_target: >-
-    Pymes argentinas que hoy trabajan con Excel, WhatsApp o un sistema
-    básico o pago.
+    Organizaciones argentinas y de la región que trabajan con Excel,
+    WhatsApp o sistemas básicos o pagos: pymes, empresas medianas,
+    estudios y profesionales independientes, equipos internos de datos
+    o de operaciones, instituciones y sector público.
 
 topics:
   - Lanzamientos y cambios de modelos (con datos reales, no marketing)

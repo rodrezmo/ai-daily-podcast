@@ -18,7 +18,7 @@ Martín: ...
 ## Estructura (en este orden)
 1. **Titulares:** saludo corto con la fecha, y las 6 noticias, cada una con qué pasó, el dato duro y una opinión honesta.
 2. **Para desarrolladores:** qué cambia en el día a día de quien programa o arma datos. Lo más útil de las 6 notas.
-3. **Para mi consultora:** qué le ofrecería hoy a una pyme con datos e IA (ver `audience.consultancy_target`). Una idea concreta, con el problema del dueño, qué se automatiza y qué haría falta. Sin prometer resultados ni precios.
+3. **Para mi consultora:** qué se le podría ofrecer hoy con datos e IA a alguno de los perfiles de `audience.consultancy_target`. Elegí el perfil al que más le sirva la noticia del día y alterná: no siempre la pyme. Una idea concreta, con el problema de esa persona u organización, qué se automatiza y qué haría falta. Sin prometer resultados ni precios.
 4. **Una cosa para probar hoy:** algo puntual y hecho en menos de media hora, con el paso a paso dicho en voz alta.
 
 Cerrá con una despedida de una línea.
