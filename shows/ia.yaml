@@ -18,7 +18,7 @@ schedule:
 
 episode:
   target_minutes: 10
-  target_words: 1500
+  target_words: 1750
   min_minutes: 6                    # fuera de este rango publish.py rechaza el episodio
   max_minutes: 16
   stories: 6
@@ -27,7 +27,7 @@ episode:
   sections:
     - Titulares
     - Para desarrolladores
-    - Para mi consultora
+    - Oportunidades de consultoría
     - Una cosa para probar hoy
 
 agents:                             # a confirmar contra lo que permita tu plan

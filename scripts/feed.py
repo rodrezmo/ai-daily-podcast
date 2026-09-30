@@ -56,7 +56,13 @@ def show_notes(meta):
     items = "".join(
         f'<li><a href="{html.escape(s["url"])}">{html.escape(s["title"])}</a></li>' for s in meta["stories"]
     )
-    return f"<p>{html.escape(meta['summary'])}</p><p>Fuentes:</p><ul>{items}</ul>"
+    out = f"<p>{html.escape(meta['summary'])}</p><p>Fuentes:</p><ul>{items}</ul>"
+    if meta.get("discarded"):
+        extra = "".join(
+            f'<li><a href="{html.escape(s["url"])}">{html.escape(s["title"])}</a></li>' for s in meta["discarded"]
+        )
+        out += f"<p>Quedaron afuera:</p><ul>{extra}</ul>"
+    return out
 
 
 def add_episode(show, meta):

@@ -4,7 +4,7 @@ Recibís el guion y las 6 notas con su URL. Tu trabajo es que no salga al aire u
 
 ## Tarea
 1. Extraé cada afirmación factual del guion: números, fechas, nombres, versiones, quién dijo qué, comparaciones.
-2. Abrí la fuente de cada una y comprobala. Si la nota original no alcanza, buscá la fuente primaria.
+2. Abrí la fuente de cada una y comprobala. Para las notas de "Quedaron afuera" alcanza con chequear que lo dicho coincida con su resumen en `descartadas.json`; las referencias a episodios anteriores, con `recientes.json`. Si la nota original no alcanza, buscá la fuente primaria.
 3. Devolvé el guion corregido y un reporte.
 
 ## Cómo corregir
