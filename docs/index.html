@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Radar IA</title>
+<link rel="alternate" type="application/rss+xml" title="Radar IA" href="feed.xml">
+<style>
+  :root { --bg:#fafafa; --fg:#1a1a1a; --muted:#666; --line:#ddd; --accent:#0a5cd6; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#111; --fg:#eee; --muted:#999; --line:#333; --accent:#6ea8ff; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, sans-serif; }
+  main { max-width:640px; margin:0 auto; padding:24px 16px 48px; }
+  h1 { margin:0 0 4px; } p.lead { color:var(--muted); margin:0 0 16px; }
+  a { color:var(--accent); }
+  article { border-top:1px solid var(--line); padding:16px 0; }
+  article h2 { font-size:1.05rem; margin:0 0 4px; } time { color:var(--muted); font-size:.9rem; }
+  audio { width:100%; margin-top:8px; }
+  details { margin-top:8px; color:var(--muted); font-size:.92rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Radar IA</h1>
+  <p class="lead">Noticias de IA cada mañana, en criollo y sin humo. <a href="feed.xml">Feed RSS</a>: pegalo en tu app de podcasts.</p>
+  <div id="eps">Cargando…</div>
+</main>
+<script>
+fetch("feed.xml").then(r => r.text()).then(t => {
+  const doc = new DOMParser().parseFromString(t, "application/xml");
+  const box = document.getElementById("eps");
+  box.textContent = "";
+  const items = [...doc.querySelectorAll("item")];
+  if (!items.length) { box.textContent = "Todavía no hay episodios."; return; }
+  for (const it of items) {
+    const get = tag => it.getElementsByTagName(tag)[0]?.textContent || "";
+    const a = document.createElement("article");
+    const h = document.createElement("h2"); h.textContent = get("title");
+    const d = document.createElement("time");
+    d.textContent = new Date(get("pubDate")).toLocaleDateString("es-AR", { dateStyle: "long" });
+    const au = document.createElement("audio");
+    au.controls = true; au.preload = "none";
+    au.src = it.querySelector("enclosure")?.getAttribute("url") || "";
+    const det = document.createElement("details");
+    const sm = document.createElement("summary"); sm.textContent = "Notas y fuentes";
+    const body = document.createElement("div");
+    body.innerHTML = new DOMParser().parseFromString(get("description"), "text/html").body.innerHTML;
+    det.append(sm, body);
+    a.append(h, d, au, det);
+    box.append(a);
+  }
+}).catch(() => { document.getElementById("eps").textContent = "No pude cargar el feed."; });
+</script>
+</body>
+</html>

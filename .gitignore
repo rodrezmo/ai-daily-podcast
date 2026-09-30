@@ -1,0 +1,12 @@
+.env
+.venv/
+.models/
+muestras/
+__pycache__/
+episodes/**/*.mp3
+.DS_Store
+refs/
+research_notes/
+reports/
+episodes/ia/2026-09-29/
+state/voices.json

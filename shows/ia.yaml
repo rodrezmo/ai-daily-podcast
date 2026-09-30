@@ -1,0 +1,79 @@
+id: ia
+title: Radar IA
+description: >-
+  Noticias de inteligencia artificial cada mañana, en criollo y sin humo.
+  Seis titulares, qué le sirve a quien programa, qué ofrecerle hoy a una pyme
+  y una cosa para probar.
+language: es-ar
+author: Radar IA
+category: Technology
+explicit: false
+feed_path: docs/feed.xml
+repo: OWNER/ai-daily-podcast        # completar al crear el repo en GitHub
+site_url: https://OWNER.github.io/ai-daily-podcast
+
+schedule:
+  publish_local: "06:30"            # America/Argentina/Buenos_Aires
+  cron_local: "05:30"               # margen para que termine el pipeline (a confirmar al medir)
+
+episode:
+  target_minutes: 10
+  target_words: 1500
+  min_minutes: 6                    # fuera de este rango publish.py rechaza el episodio
+  max_minutes: 16
+  stories: 6
+  candidates: 15
+  window_hours: 36
+  sections:
+    - Titulares
+    - Para desarrolladores
+    - Para mi consultora
+    - Una cosa para probar hoy
+
+agents:                             # a confirmar contra lo que permita tu plan
+  researcher: { model: sonnet, effort: medium }
+  writer:     { model: opus,   effort: high }
+  verifier:   { model: sonnet, effort: low }
+
+audience:
+  who: >-
+    Persona técnica de datos que además tiene una consultoría chica de
+    automatización, informes y sistemas para pymes argentinas.
+  consultancy_target: >-
+    Pymes argentinas que hoy trabajan con Excel, WhatsApp o un sistema
+    básico o pago.
+
+topics:
+  - Lanzamientos y cambios de modelos (con datos reales, no marketing)
+  - Agentes y herramientas para desarrolladores
+  - IA aplicada a datos, informes y BI
+  - Casos de uso concretos en pymes y comercio
+  - Regulación y costos que afecten a quien usa IA en Argentina o Latinoamérica
+avoid:
+  - Promesas de AGI, rumores sin fuente primaria y "mejor modelo de la historia"
+  - Notas que solo repiten un anuncio sin datos verificables
+  - Drama de personas o empresas sin impacto práctico
+
+sources:                            # punto de partida; el investigador puede sumar otras
+  - https://www.anthropic.com/news
+  - https://openai.com/news/
+  - https://blog.google/technology/ai/
+  - https://ai.meta.com/blog/
+  - https://huggingface.co/blog
+  - https://simonwillison.net/
+  - https://www.latent.space/
+  - https://news.ycombinator.com/
+
+tts:
+  engine: gemini                    # respaldo automático: edge-tts
+  gemini_model: gemini-3.8-flash-tts
+  max_chunk_chars: 2900             # ~3 min de audio por request
+  edge:                             # ritmo humano con edge-tts
+    rate: -3                        # % base; cada frase varía dentro de +-rate_jitter
+    rate_jitter: 4
+    pitch_jitter: 3                 # Hz
+    seed: 7
+  pause_ms: 350
+  hosts:                            # voces de Voice Design (TTL 1 año); se crean con client.voices.create
+    Lucía:  { gemini_voice_id: voice_ad6wlwr15rrw, edge_voice: es-AR-ElenaNeural }
+    Martín: { gemini_voice_id: voice_woico1hxhxm4, edge_voice: es-AR-TomasNeural }
