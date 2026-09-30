@@ -2,12 +2,13 @@
 # Prepara el entorno (Routine en Ubuntu, o local): ffmpeg, gh, dependencias de Python e identidad de git.
 set -euo pipefail
 cd "$(dirname "$0")/.."
+SUDO=""; [ "$(id -u)" = 0 ] || SUDO="sudo"
 need=()
 command -v ffmpeg >/dev/null || need+=(ffmpeg)
 command -v gh >/dev/null || need+=(gh)
 if [ ${#need[@]} -gt 0 ]; then
-  apt-get update -qq >/dev/null 2>&1 || true
-  apt-get install -y -qq "${need[@]}" >/dev/null
+  $SUDO apt-get update -qq >/dev/null 2>&1 || true
+  $SUDO apt-get install -y -qq "${need[@]}" >/dev/null
 fi
 [ -d .venv ] || python3 -m venv .venv
 .venv/bin/pip install -q -r requirements.txt

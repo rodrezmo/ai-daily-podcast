@@ -6,7 +6,7 @@ Corrés el pipeline de un show. Recibís `<id>` (por ejemplo `ia`). Trabajás co
 
 Carpeta de trabajo: `episodes/<id>/<día>/`.
 
-**Paso 0, preparación:** `bash scripts/setup.sh` (instala ffmpeg y crea `.venv`). Todos los comandos de Python de abajo usan `.venv/bin/python`. Si no hay `GEMINI_API_KEY` en el entorno, es normal: la key la agrega el proxy de la sesión.
+**Paso 0, preparación:** `bash scripts/setup.sh` (crea `.venv`). Todos los comandos de Python de abajo usan `.venv/bin/python`.
 
 ## Pasos
 1. **Investigar.** Lanzá un subagente con `prompts/researcher.md` (modelo y esfuerzo en `agents.researcher`). Guardá `candidatas.json`.
@@ -15,8 +15,8 @@ Carpeta de trabajo: `episodes/<id>/<día>/`.
 4. **Guion.** Subagente con `prompts/writer.md` (`agents.writer`). Le pasás el yaml, `elegidas.json`, `descartadas.json`, `recientes.json` (entradas de `state/seen.json` de este show de los últimos 7 días, con título y fecha) y la fecha. Guardá `guion-borrador.txt`.
 5. **Verificación.** Subagente con `prompts/verifier.md` (`agents.verifier`). Guardá el guion corregido en `guion.txt` y el reporte en `verificacion.json`. Si `ok_to_publish` es `false`, cortá.
 6. **Metadatos.** Escribí `meta.json` con: `title` (título del episodio con fecha y el tema más fuerte, sin clickbait), `summary` (2 o 3 frases) y `stories` (las notas que quedaron en el guion final, cada una con `title` y `url`) y `discarded` (las notas descartadas que se nombran en la sección "Quedaron afuera", con `title` y `url`).
-7. **Audio.** `.venv/bin/python scripts/tts.py --show <id> --script episodes/<id>/<día>/guion.txt --out episodes/<id>/<día>/episode.mp3 --title "<title>"`
-8. **Publicación.** `.venv/bin/python scripts/publish.py --show <id> --date <día>`
+7. **Entrega del guion.** `git add episodes/<id>/<día>/guion.txt episodes/<id>/<día>/meta.json && git commit -m "Guion <id> <día>" && git push origin HEAD:main`. El audio y la publicación los hace después el workflow `.github/workflows/publish.yml` (GitHub Actions), porque las sesiones de la Routine no pueden crear Releases.
+Terminá acá: no generes audio ni publiques. Si el push falla, el episodio no sale y el vigilante de las 07:30 avisa.
 
 ## Al fallar
-`publish.py` abre un issue de aviso si falla él. Si falla un paso anterior, abrí vos un issue en el repo con `gh issue create` diciendo qué paso falló y por qué, y terminá sin publicar.
+Si falla un paso, no subas nada y terminá explicando en una o dos líneas qué paso falló y por qué. No abras issues (en las sesiones de la Routine `gh issue` no funciona). El aviso lo da el vigilante (`watchdog.yml`) cuando a las 07:30 ART falta el episodio en el feed.

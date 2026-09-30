@@ -1,0 +1,68 @@
+name: Audio y publicación
+
+on:
+  push:
+    branches: [main]
+    paths: ["episodes/**/guion.txt"]
+  workflow_dispatch:
+    inputs:
+      show:
+        description: "id del show"
+        default: "ia"
+      day:
+        description: "día del episodio (YYYY-MM-DD)"
+        required: true
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Identificar show y día
+        id: ep
+        run: |
+          if [ -n "${{ inputs.day }}" ]; then
+            show="${{ inputs.show }}"; day="${{ inputs.day }}"
+          else
+            base="${{ github.event.before }}"
+            [ "$base" = "0000000000000000000000000000000000000000" ] && base="HEAD~1"
+            f=$(git diff --name-only "$base" "${{ github.sha }}" -- 'episodes/**/guion.txt' | head -1)
+            show=$(echo "$f" | cut -d/ -f2); day=$(echo "$f" | cut -d/ -f3)
+          fi
+          [ -n "$show" ] && [ -n "$day" ] || { echo "::error::No pude identificar el episodio"; exit 1; }
+          echo "show=$show" >> "$GITHUB_OUTPUT"; echo "day=$day" >> "$GITHUB_OUTPUT"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Preparar entorno
+        run: bash scripts/setup.sh
+
+      - name: Audio con Gemini
+        run: |
+          d="episodes/${{ steps.ep.outputs.show }}/${{ steps.ep.outputs.day }}"
+          title=$(python3 -c "import json;print(json.load(open('$d/meta.json'))['title'])")
+          .venv/bin/python scripts/tts.py --show "${{ steps.ep.outputs.show }}" --engine gemini \
+            --script "$d/guion.txt" --out "$d/episode.mp3" --title "$title"
+
+      - name: Publicar
+        run: |
+          git config user.name "Radar IA"
+          git config user.email "radar-ia@users.noreply.github.com"
+          .venv/bin/python scripts/publish.py --show "${{ steps.ep.outputs.show }}" --date "${{ steps.ep.outputs.day }}"
