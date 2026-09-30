@@ -51,7 +51,7 @@ def publish(show_id, day, dry_run):
         bytes=mp3.stat().st_size,
         seconds=MP3(mp3).info.length,
         pub_date=datetime.now(ZoneInfo("America/Argentina/Buenos_Aires")).isoformat(),
-        mp3_url=f"https://github.com/{show['repo']}/releases/download/{tag}/{tag}.mp3",
+        mp3_url=f"https://github.com/{show['repo']}/releases/download/{tag}/{mp3.name}",
     )
     if dry_run:
         print("dry-run: validaciones ok\n" + json.dumps(meta, ensure_ascii=False, indent=2))
@@ -62,7 +62,7 @@ def publish(show_id, day, dry_run):
 
     release_created = committed = False
     try:
-        run("gh", "release", "create", tag, f"{mp3}#{tag}.mp3", "--repo", show["repo"],
+        run("gh", "release", "create", tag, str(mp3), "--repo", show["repo"],
             "--title", meta["title"], "--notes", meta["summary"])
         release_created = True
         feed.add_episode(show, meta)
