@@ -10,3 +10,10 @@ research_notes/
 reports/
 episodes/ia/2026-09-29/
 state/voices.json
+episodes/**/candidatas.json
+episodes/**/nuevas.json
+episodes/**/elegidas.json
+episodes/**/descartadas.json
+episodes/**/recientes.json
+episodes/**/guion-borrador.txt
+episodes/**/verificacion.json
