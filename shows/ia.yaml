@@ -67,7 +67,8 @@ sources:                            # punto de partida; el investigador puede su
   - https://news.ycombinator.com/
 
 tts:
-  engine: gemini                    # respaldo automático: edge-tts
+  engine: gemini
+  edge_fallback: false              # true: si Gemini falla, el episodio sale con edge-tts (robótico) en vez de no salir
   gemini_model: gemini-3.8-flash-tts
   max_chunk_chars: 2900             # ~3 min de audio por request
   edge:                             # ritmo humano con edge-tts

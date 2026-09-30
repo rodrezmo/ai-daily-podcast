@@ -1,0 +1,30 @@
+{
+  "claims_checked": 78,
+  "corrected": [
+    {"was": "Muse: la nota no dice si está disponible en Argentina", "now": "La nota habla de Estados Unidos y Canadá, sin mencionar Argentina", "source": "https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/"},
+    {"was": "Sale en ChatGPT, Codex y API", "now": "ChatGPT dentro de Work (no todavía en el chat común), Codex y API", "source": "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday"},
+    {"was": "El mismo día que sale Sol se cae Astra", "now": "Casi al mismo tiempo (la cancelación se reportó el 28/29, víspera del DevDay)", "source": "https://www.cnbc.com/2026/09/28/openai-abandons-plan-to-release-upcoming-model-as-safety-concerns-escalate.html"},
+    {"was": "Claude Code 2.1.285 deja Opus 5.5 y Sonnet 5.5 como defaults / el modelo por defecto 'ahora' es ese", "now": "Mantiene esos defaults (ya venían de 2.1.280 y 2.1.284)", "source": "https://code.claude.com/docs/en/changelog"},
+    {"was": "/usage ahora muestra dólares (general)", "now": "El changelog 2.1.284 lo indica para el gateway de Claude; condicionado en el guion", "source": "https://code.claude.com/docs/en/changelog"},
+    {"was": "allowedProviders como ajuste genérico para restringir proveedores", "now": "Es un ajuste de administración (managed setting) que limita qué proveedores puede usar una máquina", "source": "https://code.claude.com/docs/en/changelog"},
+    {"was": "No hay ley nacional de IA", "now": "El proyecto espera aprobación del Senado (dato de la nota); la afirmación de 'no hay ley' no figura en la fuente", "source": "https://www.infobae.com/america/the-new-york-times/2026/09/29/javier-milei-promociona-a-argentina-como-un-refugio-sin-reglas-para-la-ia/"}
+  ],
+  "removed": [
+    {"claim": "Con eso ya tenés costo a la vista (cierre de la sección de prueba)", "reason": "El monto en dólares en /usage no está confirmado para todas las cuentas"}
+  ],
+  "softened": [
+    {"claim": "Planes de USD 20 y 100 por mes de Muse", "reason": "TechCrunch no da precios; los confirman otras coberturas (TechRadar, Help Net Security, etc.), ahora atribuido a 'otras coberturas'"},
+    {"claim": "Cancelación de Astra", "reason": "Confirmada por Al Jazeera, TNW, CNBC, Benzinga y otros (primero WSJ); no encontré fuente primaria de OpenAI. Se mantiene atribuida a OpenAI/cobertura"},
+    {"claim": "Montos en dólares en /usage", "reason": "Condicionado a cuentas con gateway de Claude"}
+  ],
+  "confirmed_notes": [
+    "Sol: USD 2 entrada / 10 salida / 0,10 caché confirmados en TNW y Unite.ai; 'iguala a Astra en ingeniería de software' y 2,1 puntos en computer use confirmados (TNW, cifras de OpenAI)",
+    "Astra: Saachi Jain, head of safety systems; problemas de alcance/autorización y de cómo informa lo hecho; lanzamiento previsto octubre (TNW, CNBC)",
+    "Decisions API: GPT-6 Luna, vista previa limitada 29/09, ~150 ms según OpenAI sin verificar, sin precio ni docs (OrcaRouter)",
+    "Claude Code: versión 2.1.285 del 29/09, CLAUDE_CODE_DISABLE_WEB_FETCH, allowedProviders, 2.1.284 del 28/09 con Sonnet 5.5 1M contexto",
+    "Milei: empresas operadas por IA, borrador con al menos un humano responsable, Sturzenegger incentivos fiscales, Patagonia, críticas de Harari y Alan Daitch; la nota no tiene fecha visible",
+    "Quedaron afuera: coincide con descartadas.json"
+  ],
+  "stories_dropped": [],
+  "ok_to_publish": true
+}

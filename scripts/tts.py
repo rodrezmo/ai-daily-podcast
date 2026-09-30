@@ -96,9 +96,8 @@ def synth_gemini(lines, tts):
     from google import genai
 
     lines = [l for l in lines if l[0] != "#"]
-    if not os.environ.get("GEMINI_API_KEY"):
-        raise RuntimeError("falta GEMINI_API_KEY")
-    client = genai.Client()
+    # En la Routine la key no está en el entorno: el proxy de la sesión la agrega al request.
+    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or "proxy-injected")
     silence = b"\x00\x00" * int(SAMPLE_RATE * tts["pause_ms"] / 1000)
     out = []
     chunks = chunk_lines(lines, tts["max_chunk_chars"])
@@ -227,7 +226,7 @@ def main():
     try:
         pcm = synth_gemini(lines, tts) if engine == "gemini" else synth_edge(lines, tts)
     except Exception as e:  # noqa: BLE001
-        if args.engine:
+        if args.engine or not tts.get("edge_fallback", False):
             raise
         print(f"Gemini falló, uso edge-tts para TODO el episodio: {e}", file=sys.stderr)
         engine = "edge"

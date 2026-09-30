@@ -1,0 +1,21 @@
+name: Vigilante del episodio diario
+
+on:
+  schedule:
+    - cron: "30 10 * * *"   # 07:30 ART
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verificar que el episodio de hoy está en el feed
+        run: |
+          day=$(TZ=America/Argentina/Buenos_Aires date +%F)
+          feed=$(curl -fsSL "https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/feed.xml")
+          if echo "$feed" | grep -q "<guid isPermaLink=\"false\">ia-${day}</guid>"; then
+            echo "ok: ia-${day} está en el feed"
+          else
+            echo "::error::Falta el episodio ia-${day} en el feed"
+            exit 1
+          fi
