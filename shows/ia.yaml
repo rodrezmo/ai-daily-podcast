@@ -23,7 +23,7 @@ episode:
   max_minutes: 16
   stories: 6
   candidates: 15
-  window_hours: 36
+  window_hours: 48
   sections:
     - Titulares
     - Para desarrolladores
