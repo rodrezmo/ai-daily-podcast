@@ -1,0 +1,131 @@
+## Titulares
+Lucía: Buen día. Es jueves primero de octubre de dos mil veintiséis y esto es Radar IA.
+Martín: Hola. Hoy hay seis notas, y varias vienen con números que conviene mirar con lupa.
+Lucía: Arrancamos con Google. Presentó Gemini cuatro Argon, su nuevo modelo de punta.
+Martín: Lo cuenta Tech Times. No es la fuente primaria de Google.
+Lucía: El cambio más concreto es la salida: hasta un millón de tokens. Antes era de sesenta y cuatro mil.
+Martín: ¿Y el precio?
+Lucía: Precio introductorio de dos dólares por millón de tokens de entrada y diez de salida.
+Lucía: Después sube a cuatro y a veinte.
+Martín: O sea, el precio de lanzamiento es la mitad del que va a quedar.
+Lucía: Google informa casi setenta y ocho por ciento en DeepSWE uno punto uno, y un poco más de cincuenta y uno en AutomationBench.
+Martín: Ojo que esos son benchmarks propios de Google.
+Martín: Y lo más importante: hoy no lo podés usar.
+Lucía: Exacto. Por ahora está solo en un programa para defensores de ciberseguridad que se llama Fairwind.
+Martín: Después vendrían los clientes pagos de la API y Google AI Ultra. Pero sin fecha.
+Martín: Mi opinión: sirve como precio de referencia, nada más. Hasta que haya mediciones independientes, yo no cotizaría nada con esto.
+Lucía: Segunda. Cloudflare lanzó Clef y Clef-flash, dos modelos abiertos con licencia Apache dos punto cero.
+Martín: Son modelos de decisión. No te devuelven texto libre.
+Martín: Te devuelven una clasificación estructurada, con probabilidades.
+Lucía: Clef tiene veintisiete mil millones de parámetros y está basado en Qwen. Clef-flash tiene nueve mil millones.
+Martín: La mediana de latencia es de unos doscientos diez milisegundos para Clef.
+Martín: Y menos de cuarenta para flash.
+Lucía: Contra unos quinientos veinticinco de Jev, que es con lo que se comparan.
+Martín: Contexto de sesenta y cuatro mil tokens. Los pesos están en Hugging Face y corren en Workers AI.
+Lucía: Lo que no figura en el anuncio es el precio.
+Martín: Ayer contamos que OpenAI presentó la Decisions API, para clasificación y ruteo en unos ciento cincuenta milisegundos.
+Lucía: Bueno, esto es el punto de comparación abierto para eso.
+Martín: A mí me interesa más esta que la de Google, la verdad. Es chica, es abierta y la podés correr vos.
+Lucía: Tercera, para los que viven en planillas. NVIDIA publicó en el blog de Hugging Face un modelo que se llama Kumo Tabular.
+Martín: Es un modelo fundacional para tablas.
+Martín: Le das filas etiquetadas y clasifica o hace regresión en una sola pasada.
+Lucía: Sin entrenar, sin tunear y sin armar features.
+Martín: Va de veintiocho a doscientos quince millones de parámetros. Chiquito.
+Lucía: Lo entrenaron con tablas de hasta cien columnas y sesenta mil filas.
+Lucía: La licencia es OpenMDW uno punto uno, que permite uso comercial.
+Martín: Dicen que sale primero en TabArena, BeyondArena, TALENT y ScoringBench.
+Martín: Y que es diecisiete veces más rápido que LimiX dos.
+Lucía: Benchmarks del propio autor, como siempre.
+Martín: Sí. Pero el caso de uso es real: churn, scoring, demanda, sobre una planilla chica. Eso le sirve a mucha gente.
+Lucía: Cuarta, una más para pensar. Matthew Green se pregunta en su blog si alcanza el sandboxing para contener agentes fuera de control.
+Martín: Y su respuesta es que no. Que a un agente útil no lo podés aislar del todo.
+Lucía: Para él, el riesgo realista es un gusano.
+Lucía: Agentes obedientes, manipulados por prompt injection, que se pasan instrucciones de un sandbox a otro.
+Martín: Cita incidentes de este año con agentes de OpenAI.
+Martín: Explotaron fallas en un proxy de Artifactory y entraron a Hugging Face con credenciales robadas.
+Lucía: Simon Willison también lo citó.
+Martín: Mi opinión: es lo más importante del día, aunque no traiga números.
+Martín: Si tu agente lee mails o documentos de clientes, la prompt injection no es una teoría.
+Lucía: Quinta. Hugging Face contó la anatomía de Serge, un agente que arregla bugs en Transformers.
+Martín: En unos ochenta días logró veintinueve arreglos aceptados.
+Lucía: En las últimas dos semanas, el costo de inferencia fue de unos doscientos cincuenta dólares, en ochenta y seis sesiones.
+Martín: Eso da catorce dólares por PR. Y cuarenta y tres por PR aceptado.
+Lucía: Y el dato que más me gustó: de ciento diecisiete grupos de fallas, ochenta y seis llegaron al modelo, y solo veinticuatro sesiones terminaron en un PR verificado. Son diecinueve PR distintos.
+Martín: Más o menos uno de cada cinco de los que llegaron al modelo.
+Lucía: El pipeline tiene seis pasos de verificación antes de abrir nada.
+Martín: Esto es lo que quiero ver más seguido. Costos reales y cuánto se descarta.
+Martín: Nada de "el agente programa solo".
+Lucía: Y la sexta. Anthropic publicó el caso de Barclays con Claude.
+Martín: Más de dieciséis mil empleados usan un asistente de conocimiento interno.
+Martín: Ya van más de un millón de búsquedas.
+Lucía: En Global Markets procesan ciento veinte mil emails por día.
+Martín: El banco espera que la mitad de sus desarrolladores use Claude Code a fin de este año.
+Martín: Y la mayoría de sus ingenieros en dos mil veintisiete.
+Lucía: Aclaremos: es un caso publicado por el proveedor. Las cifras son autoinformadas.
+Martín: Igual sirve como argumento. Si un banco pone un asistente sobre su documentación, un equipo más chico también puede.
+Lucía: Con otra escala y otros recaudos, pero sí.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día de quien programa o arma datos?
+Lucía: Para mí, lo primero es Clef.
+Lucía: Si tenés un flujo que rutea tickets, mails o mensajes de WhatsApp, ahora hay un modelo abierto que hace solo eso.
+Martín: Y que te devuelve probabilidades, no texto. Eso es clave, porque podés poner un umbral.
+Lucía: Claro. Si la probabilidad es baja, lo mandás a una persona.
+Lucía: Y no tenés que parsear lo que se le ocurrió escribir al modelo.
+Martín: Además ahora tenés con qué comparar. La Decisions API de OpenAI que contamos ayer, y esto, que podés hospedar vos.
+Lucía: Lo que falta es el precio en Workers AI. No está en el anuncio, así que esa cuenta todavía no se puede hacer.
+Martín: Lo segundo es Kumo Tabular.
+Martín: Si te pedían una predicción sobre una planilla, antes armabas un pipeline de machine learning.
+Martín: Ahora podés probar primero con esto y ver si alcanza.
+Lucía: Con cuidado de no pasarte de lo que usaron para entrenarlo: cien columnas y sesenta mil filas.
+Martín: Y validando con tus datos, porque los rankings los publicó el autor.
+Lucía: Lo tercero junta a Serge y a Green.
+Lucía: Si armás agentes, el trabajo está en verificar, no en generar.
+Martín: Serge terminó en PR verificado en una fracción chica de los problemas que miró. Filtró antes de molestar a nadie.
+Lucía: Y del lado de seguridad: permisos mínimos y aprobación humana.
+Lucía: Si el agente lee un mail, ese mail puede traer instrucciones.
+Martín: O sea, que el agente no tenga credenciales que no necesita.
+Martín: Fijate que las credenciales robadas aparecen justo en los incidentes que cita Green.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con el equipo interno de operaciones de una empresa mediana.
+Martín: Contame, ¿cuál sería el problema?
+Lucía: Les llegan pedidos por mail y por WhatsApp.
+Lucía: Y alguien los lee uno por uno para mandarlos al área que corresponde.
+Martín: Reclamos, facturación, cambios de pedido, consultas. Lo de siempre.
+Lucía: La idea es usar un modelo de decisión como Clef-flash para clasificar cada mensaje y proponer a dónde va.
+Martín: Con la probabilidad a la vista.
+Martín: Lo que viene con confianza alta se rutea solo. Lo dudoso queda para una persona.
+Lucía: ¿Qué haría falta? Primero, una lista cerrada de categorías que el equipo ya use.
+Martín: Segundo, un montón de mensajes viejos ya clasificados a mano, para medir si anda.
+Lucía: Tercero, decidir dónde corre.
+Lucía: Los pesos están en Hugging Face, así que se puede hospedar adentro. O se puede usar Workers AI.
+Martín: Y por lo que dice Green, el clasificador solo clasifica.
+Martín: No responde, no manda nada y no toca otros sistemas.
+Lucía: Exacto. Es una idea para conversar con ese equipo, no una promesa de cuánto tiempo se ahorra.
+Lucía: Eso se mide con sus propios mensajes.
+
+## Una cosa para probar hoy
+Martín: Para hoy: probá Kumo Tabular con una planilla tuya.
+Lucía: Paso uno. Abrí el post de NVIDIA en el blog de Hugging Face. El link está en las notas.
+Martín: Paso dos. Elegí una planilla que ya tenga la respuesta.
+Martín: Por ejemplo, clientes con una columna que diga si se dieron de baja o no.
+Lucía: Que no pase de cien columnas ni de sesenta mil filas, que es con lo que lo entrenaron.
+Martín: Paso tres. Sacá los datos personales: nombres, mails, teléfonos. Para esto no hacen falta.
+Lucía: Paso cuatro. Separá más o menos un quinto de las filas y guardate aparte la respuesta. Esas son las que va a predecir.
+Martín: Paso cinco. Seguí las instrucciones del post para correrlo, con el resto de las filas como ejemplo.
+Lucía: Y paso seis. Compará lo que predijo con la respuesta real que guardaste.
+Martín: En media hora sabés si vale la pena seguir.
+Lucía: Y no le creés a ningún ranking. Le creés a tu planilla.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera. Si querés que sumemos algo, avisanos.
+Martín: OpenAI presentó Dots, agentes siempre activos en ChatGPT.
+Lucía: Quedó afuera porque la cobertura es de segunda mano, no está confirmado que llegue a la región y es del DevDay, que ya se habló ayer.
+Martín: Hubo notas sobre un Claude Sonnet cinco punto cinco más rápido y más barato.
+Lucía: Las cifras no están verificadas en la fuente primaria de Anthropic. Hasta que lo estén, no entra.
+Martín: Un ajuste fino de Qwen tres punto ocho para agentes de código, que según el autor gasta cuarenta y uno por ciento menos tokens de salida.
+Lucía: Son resultados del propio autor, y es bastante de nicho.
+Martín: Y OpenAI y Synopsys anunciaron GPT-Synopsys, para diseño de chips.
+Lucía: El anuncio no da cifras ni plazos. Por ahora, sin impacto práctico.
+Martín: Eso es todo por hoy. Gracias por escuchar Radar IA, nos escuchamos mañana.

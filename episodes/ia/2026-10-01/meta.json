@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 1 de octubre de 2026: Cloudflare Clef, tablas con NVIDIA y el límite del sandboxing para agentes",
+  "summary": "Gemini 4 Argon de Google, todavía solo para defensores de ciberseguridad, y los modelos abiertos de decisión Clef de Cloudflare. También un modelo de NVIDIA para predecir sobre planillas, el costo real de un agente que arregla bugs en Hugging Face, el caso de Barclays con Claude y la advertencia de Matthew Green sobre agentes y sandboxing.",
+  "stories": [
+    {
+      "title": "Google presenta Gemini 4 Argon, por ahora solo para defensores de ciberseguridad",
+      "url": "https://www.techtimes.com/articles/328360/20261001/google-unveils-gemini-4-argon-new-frontier-model-brings-deep-reasoning-more-complex-workflow.htm"
+    },
+    {
+      "title": "Cloudflare lanza Clef y Clef-flash, modelos abiertos de decisión (Apache 2.0)",
+      "url": "https://blog.cloudflare.com/clef-decision-models/"
+    },
+    {
+      "title": "NVIDIA Kumo Tabular: modelo abierto de predicción sobre tablas sin entrenar ni armar features",
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular"
+    },
+    {
+      "title": "Matthew Green: ¿alcanza el sandboxing para contener agentes fuera de control?",
+      "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents/"
+    },
+    {
+      "title": "Anatomía de un agente que arregla bugs: 29 parches aceptados en Transformers por unos USD 250",
+      "url": "https://huggingface.co/blog/huggingface/anatomy-of-a-bug-fixing-agent"
+    },
+    {
+      "title": "Barclays escala Claude: 16.000 colegas usan un asistente de conocimiento",
+      "url": "https://www.anthropic.com/news/barclays-scales-claude"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Qwen3.8-27B-pi: ajuste fino de modelo abierto para agentes de código",
+      "url": "https://huggingface.co/blog/bytkim/qwen38-27b-pi"
+    },
+    {
+      "title": "OpenAI presenta Dots: agentes siempre activos en ChatGPT",
+      "url": "https://9to5google.com/2026/09/29/openai-dots-agent/"
+    },
+    {
+      "title": "Claude Sonnet 5.5, más rápido y más barato",
+      "url": "https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b"
+    },
+    {
+      "title": "OpenAI y Synopsys anuncian GPT-Synopsys para diseño de chips",
+      "url": "https://news.synopsys.com/2026-09-30-OpenAI-and-Synopsys-Announce-GPT-Synopsys-Frontier-Intelligence-to-Revolutionize-Chip-Design"
+    }
+  ]
+}
