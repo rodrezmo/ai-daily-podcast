@@ -29,6 +29,36 @@
       "url": "https://infobae.com/america/the-new-york-times/2026/09/29/javier-milei-promociona-a-argentina-como-un-refugio-sin-reglas-para-la-ia",
       "title": "Milei promociona a Argentina como refugio sin reglas para la IA",
       "date": "2026-09-30"
+    },
+    {
+      "url": "https://techtimes.com/articles/328360/20261001/google-unveils-gemini-4-argon-new-frontier-model-brings-deep-reasoning-more-complex-workflow.htm",
+      "title": "Google presenta Gemini 4 Argon, por ahora solo para defensores de ciberseguridad",
+      "date": "2026-10-01"
+    },
+    {
+      "url": "https://blog.cloudflare.com/clef-decision-models",
+      "title": "Cloudflare lanza Clef y Clef-flash, modelos abiertos de decisión (Apache 2.0)",
+      "date": "2026-10-01"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/kumo-tabular",
+      "title": "NVIDIA Kumo Tabular: modelo abierto de predicción sobre tablas sin entrenar ni armar features",
+      "date": "2026-10-01"
+    },
+    {
+      "url": "https://blog.cryptographyengineering.com/2026/09/30/is-sandboxing-sufficient-to-contain-rogue-agents",
+      "title": "Matthew Green: ¿alcanza el sandboxing para contener agentes fuera de control?",
+      "date": "2026-10-01"
+    },
+    {
+      "url": "https://huggingface.co/blog/huggingface/anatomy-of-a-bug-fixing-agent",
+      "title": "Anatomía de un agente que arregla bugs: 29 parches aceptados en Transformers por unos USD 250",
+      "date": "2026-10-01"
+    },
+    {
+      "url": "https://anthropic.com/news/barclays-scales-claude",
+      "title": "Barclays escala Claude: 16.000 colegas usan un asistente de conocimiento",
+      "date": "2026-10-01"
     }
   ]
 }
