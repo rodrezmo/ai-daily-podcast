@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 3 de octubre de 2026: Gemini 4 Argon, el riesgo de GLM-5.3 y los retiros de modelos de OpenAI",
+  "summary": "Google presenta Gemini 4 Argon con acceso limitado, Anthropic mide qué tan fácil es quitarle protecciones a GLM-5.3 y OpenAI publica fechas de retiro de varios modelos. También Extract v2.5 de LlamaIndex, computer use en Copilot y el aviso de Pew sobre encuestados sintéticos.",
+  "stories": [
+    {
+      "title": "Google presenta Gemini 4 Argon, con acceso limitado al inicio",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+    },
+    {
+      "title": "Anthropic: GLM-5.3 y la difusión de capacidades ciber avanzadas",
+      "url": "https://www.anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities"
+    },
+    {
+      "title": "OpenAI anuncia el retiro de GPT-5.3-Codex, GPT-5.1, GPT-5.4-Nano, TTS y otros",
+      "url": "https://developers.openai.com/api/docs/deprecations"
+    },
+    {
+      "title": "LlamaIndex lanza Extract v2.5 para extracción de documentos",
+      "url": "https://www.llamaindex.ai/blog/introducing-extract-v2-5"
+    },
+    {
+      "title": "GitHub Copilot suma computer use en vista previa pública",
+      "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/"
+    },
+    {
+      "title": "Pew: los encuestados sintéticos con IA fallan 12 puntos en promedio",
+      "url": "https://www.pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Perplexity lanza la Decisions API y abre su modelo pplx-decider-v1-27b",
+      "url": "https://docs.perplexity.ai/docs/decisions/quickstart"
+    },
+    {
+      "title": "Microsoft lanza MAI-Transcribe-2-Streaming",
+      "url": "https://www.marktechpost.com/2026/10/02/microsoft-ai-releases-mai-transcribe-2-streaming-1-real-time-speech-to-text-model-on-artificial-analysis/"
+    },
+    {
+      "title": "Qwen3.8-27B-pi: modelo ajustado para respetar el orden de esfuerzo de razonamiento",
+      "url": "https://huggingface.co/blog/bytkim/qwen38-27b-pi"
+    }
+  ]
+}

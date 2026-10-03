@@ -1,0 +1,114 @@
+## Titulares
+Lucía: Buen día, hoy es sábado tres de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y varias traen fechas y números que conviene anotar.
+Lucía: Arranquemos por Google. Lanzó Gemini cuatro Argon.
+Martín: El jueves contamos que lo presentaban, por ahora solo para defensores de ciberseguridad.
+Lucía: Exacto. Ahora sale en el blog de Google con más detalle. Tiene un millón de tokens de salida.
+Martín: ¿Y quién lo puede usar?
+Lucía: Arranca en algo que llaman Fairwind Program, para gente que defiende sistemas. Después pasa a la API paga y al plan AI Ultra.
+Martín: ¿Precio?
+Lucía: De entrada, dos dólares por millón de tokens de entrada y diez de salida. Después sube al doble: cuatro y veinte.
+Martín: ¿Y qué tal anda?
+Lucía: Google reporta casi setenta y ocho por ciento en DeepSWE, un benchmark de código. Y cincuenta y uno por ciento en AutomationBench, que mide automatización de tareas de negocio.
+Martín: Mi opinión: los números son de Google y el modelo todavía no está abierto al público. Hasta que no lo podamos probar, es una vidriera con precio.
+Lucía: Coincido. Lo que sí sirve es saber cuánto va a costar cuando llegue.
+Martín: Segunda. Anthropic publicó un análisis sobre GLM cinco punto tres, el modelo abierto de Zhipu AI.
+Lucía: El que salió sin salvaguardas serias contra el mal uso, según dicen ellos.
+Martín: Ese. Midieron que arma exploits completos en cerca del doce por ciento de ExploitBench, que son exploits para el motor de JavaScript de Chrome.
+Lucía: ¿Y en sus pruebas internas?
+Martín: Logra tomar el control del programa en el cuatro por ciento de los casos. Para comparar, Claude Mythos Preview, de la propia Anthropic, llegó al seis por ciento en esa misma prueba.
+Lucía: O sea que no está tan lejos.
+Martín: Y lo más fuerte es lo fácil que se le sacan las protecciones. Según el método, se evitan entre el sesenta y cuatro y el cien por ciento de las veces.
+Lucía: ¿Cuánto cuesta lo del cien por ciento?
+Martín: La técnica se llama abliteration. Les costó unos cuatro mil cuatrocientos dólares, en unas dos mil doscientas horas de GPU. Y estiman que un equipo con experiencia lo haría en unas seiscientas horas, unos mil doscientos dólares.
+Lucía: Mi lectura: ojo que lo publica una empresa que compite con ese modelo. Pero el dato del costo es concreto y da para pensar.
+Martín: Sí. Si evaluás un modelo abierto para datos sensibles, asumí que las protecciones se pueden quitar.
+Lucía: Tercera, y esta es para agendar. OpenAI actualizó su página de deprecaciones.
+Martín: Contame qué se va.
+Lucía: GPT cinco punto tres Codex, GPT cinco punto uno y GPT cinco punto cuatro Nano se retiran el primero de abril de dos mil veintisiete.
+Martín: ¿Con qué los reemplazan?
+Lucía: Sugieren gpt seis sol y gpt seis luna. El miércoles, de hecho, hablamos de GPT seis punto uno Sol.
+Martín: ¿Y lo de voz?
+Lucía: tts uno y tts uno HD se van antes, el seis de enero. Hay que migrar a gpt realtime dos punto uno mini.
+Martín: Y la transcripción.
+Lucía: whisper uno y GPT cuatro o transcribe se retiran el veintiséis de febrero de dos mil veintisiete.
+Martín: Opinión: esto no es humo, es trabajo. Cualquier bot que transcribe audios de WhatsApp con whisper tiene fecha de vencimiento.
+Lucía: Los anuncios de los modelos GPT y de voz figuran en la tabla con fecha primero de octubre; el de transcripción, veintiséis de agosto. La página en sí no muestra fecha propia, así que mejor revisarla directo.
+Martín: Cuarta. LlamaIndex lanzó Extract dos punto cinco, para sacar datos de documentos.
+Lucía: Facturas, formularios, PDFs escaneados.
+Martín: Eso. Tiene tres niveles. El más barato sube de ochenta y siete a casi noventa y cuatro puntos de F uno. El intermedio, de casi noventa a casi noventa y seis. Y el más caro, de noventa y cinco a noventa y seis.
+Lucía: ¿Y el precio?
+Martín: Dicen que no sube el precio por página.
+Lucía: Bien. ¿Qué más trae?
+Martín: Citas que te marcan en qué parte del documento está cada dato. En el nivel intermedio, la precisión de esas citas pasa de cuarenta y siete a ochenta y uno.
+Lucía: Y un modo nativo para planillas, ¿no?
+Martín: Sí, trabaja con las celdas en vez de aplanar todo.
+Lucía: Mi opinión: los números salen de ExtractBench, que es un benchmark propio. Suena bien, pero hay que probarlo con tus documentos.
+Martín: Totalmente. Las citas son lo que más me interesa, porque te deja revisar rápido.
+Lucía: Quinta. GitHub Copilot suma computer use, en vista previa pública.
+Martín: Ayer contamos que H company lanzó Holo4, modelos abiertos para agentes que usan la computadora. Y que OpenAI presentó Dots. Esto va por el mismo lado.
+Lucía: Sí. Copilot CLI y la app de Copilot, en Mac y Windows, ahora pueden manejar aplicaciones de escritorio.
+Martín: ¿Manejar cómo?
+Lucía: Hacer clic, escribir, apretar teclas, scrollear, arrastrar. Y te pide aprobación antes de controlar cada app.
+Martín: ¿Cómo se prende?
+Lucía: En la CLI, con barra computer on. En la app, desde la configuración.
+Martín: Opinión: para software viejo sin API, esto puede servir mucho. Pero un agente haciendo clics en un sistema de facturación da un poco de miedo.
+Lucía: Por eso está bueno que las organizaciones lo puedan desactivar.
+Martín: Y sexta, de Pew Research. Probaron si la IA puede reemplazar a encuestados reales.
+Lucía: Y la respuesta fue que no mucho.
+Martín: Compararon respuestas generadas por IA con su panel de personas, en casi trescientas preguntas. El error promedio fue de unos doce puntos.
+Lucía: Es un montón para una encuesta.
+Martín: Y en algo más de una de cada cuatro preguntas, erró por más de quince puntos.
+Lucía: ¿Con qué modelos?
+Martín: El principal fue Claude Opus cuatro punto seis, y compararon con GPT cinco punto uno. Dieron resultados contradictorios. GPT mostraba opiniones más extremas, y Opus más tibias que la realidad.
+Lucía: Contame algún ejemplo.
+Martín: En preguntas de conocimiento, la IA sobreestimó muchísimo. En una sobre la Primera Enmienda, la IA dio noventa y ocho por ciento de aciertos. Las personas, cincuenta y dos.
+Lucía: Opinión: si alguien te vende una muestra sintética para un estudio de mercado, mostrale esto. Pew lo dice claro: no reemplaza encuestar personas reales.
+
+## Para desarrolladores
+Martín: Vamos a lo práctico. ¿Qué cambia en el día a día?
+Lucía: Lo primero son las fechas de OpenAI. Si tenés código con alguno de esos modelos, tenés plazos concretos.
+Martín: Y la voz es lo más urgente. tts uno se va en enero, y la migración no es cambiar un nombre, es otro modelo.
+Lucía: Igual que la transcripción. Si usás whisper uno, a fines de febrero deja de andar.
+Martín: Segundo, Extract dos punto cinco. Si armás pipelines de datos que arrancan en un PDF, vale la pena compararlo con lo que usás hoy.
+Lucía: Tiene SDK de Python y se puede conectar por MCP a un agente.
+Martín: Lo de las citas sirve para algo muy concreto: que una persona valide el dato mirando de dónde salió, sin releer todo el documento.
+Lucía: Tercero, computer use en Copilot. Para quien programa, abre una puerta rara: automatizar cosas que solo tienen interfaz gráfica.
+Martín: Pero pensá en permisos. En Mac tenés que darle accesibilidad y grabación de pantalla. Y podés revisar qué apps dejaste en permitir siempre.
+Lucía: Yo no lo dejaría en permitir siempre con nada que toque plata.
+Martín: Y lo de GLM. Si en tu equipo están evaluando modelos abiertos para correr en casa, no confíes en las salvaguardas del modelo. Poné los controles afuera.
+
+## Oportunidades de consultoría
+Lucía: Hoy pensemos en estudios y profesionales independientes. Por ejemplo, un estudio contable chico.
+Martín: El que recibe facturas y comprobantes por WhatsApp, en foto o PDF, y alguien los carga a mano en una planilla.
+Lucía: Ese. El problema es el tiempo de carga y los errores de tipeo, sobre todo a fin de mes.
+Martín: ¿Qué se automatiza?
+Lucía: La extracción de los campos: fecha, emisor, importe, número de comprobante. Algo como Extract dos punto cinco, con las citas activadas.
+Martín: Y la persona del estudio no deja de revisar. Revisa más rápido, porque ve en qué parte del papel está cada número.
+Lucía: Exacto. El resultado va a la misma planilla que ya usan. No les cambiás la forma de trabajar.
+Martín: ¿Qué haría falta para arrancar?
+Lucía: Una muestra real de comprobantes, unos cuantos de cada tipo. Definir qué campos importan. Y medir cuántos sale bien antes de prometer nada.
+Martín: Y acordar qué pasa con los datos, porque son datos de clientes del estudio.
+Lucía: Y si en el camino usan transcripción de audios, revisar con qué modelo, por las fechas de OpenAI.
+Martín: Es una idea para charlar, no una promesa. Primero se prueba con sus papeles.
+
+## Una cosa para probar hoy
+Martín: Algo para hacer en menos de media hora.
+Lucía: Revisá si tu código usa algún modelo que OpenAI va a retirar.
+Martín: Paso uno: abrí tus repos y buscá estos nombres. tts uno, tts uno HD, whisper uno y GPT cuatro o transcribe.
+Lucía: Paso dos: buscá también GPT cinco punto uno, GPT cinco punto tres Codex y GPT cinco punto cuatro Nano.
+Martín: Paso tres: no te olvides de las variables de entorno y los archivos de configuración. Ahí suelen esconderse los nombres de modelos.
+Lucía: Paso cuatro: armá una planilla con tres columnas. Dónde está, qué modelo usa y la fecha de retiro.
+Martín: Paso cinco: ordená por fecha. Lo de voz va primero, seis de enero.
+Lucía: Paso seis: abrí la página de deprecaciones de OpenAI y confirmá el reemplazo sugerido para cada uno. El link está en las notas.
+Martín: Y si trabajás con clientes, esa planilla ya es una conversación.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: Perplexity lanzó una Decisions API y abrió un modelo, pplx decider v uno.
+Lucía: No entró porque solo hay docs de la propia empresa, se solapa con la Decisions API de OpenAI que ya contamos, y la licencia no está confirmada.
+Martín: Microsoft lanzó MAI Transcribe dos Streaming, de voz a texto en tiempo real.
+Lucía: Quedó afuera porque solo encontramos una nota secundaria, sin fuente primaria.
+Martín: Y un modelo ajustado de Qwen, Qwen tres punto ocho veintisiete B pi, para respetar el nivel de esfuerzo de razonamiento.
+Lucía: Los resultados los informa un solo autor, así que por ahora lo dejamos pasar. Si quieren que sigamos alguna, avisen.
+Martín: Eso es todo por hoy. Buen sábado y nos escuchamos el próximo episodio.
