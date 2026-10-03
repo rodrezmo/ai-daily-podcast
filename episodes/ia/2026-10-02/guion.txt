@@ -1,0 +1,118 @@
+## Titulares
+Lucía: Buen día, esto es Radar IA, hoy es dos de octubre de dos mil veintiséis.
+Martín: Hola, hola. Hoy tenemos seis notas, y varias tocan de cerca a quien trabaja con datos.
+Lucía: Arrancamos con Anthropic, que lanzó Claude Sonnet cinco punto cinco.
+Martín: El modelo intermedio. ¿Qué trae?
+Lucía: Según Anthropic, corre más de un treinta por ciento más rápido que Sonnet cinco.
+Lucía: Y en Terminal-Bench cuatro punto cero saca setenta coma seis por ciento.
+Martín: ¿Y Sonnet cinco cuánto sacaba ahí?
+Lucía: Diez coma tres.
+Martín: Pará. De diez a setenta es un salto enorme. Me gustaría verlo medido por alguien que no sea Anthropic.
+Lucía: Totalmente. Las cifras son todas del proveedor.
+Lucía: El precio por token no cambia: dos dólares de entrada, diez de salida y veinte centavos el caché.
+Martín: Pero dicen que sale hasta un treinta por ciento menos por tarea, ¿no?
+Lucía: Eso dicen, porque terminaría las tareas con menos vueltas. Ese hasta hay que tomarlo con pinzas.
+Lucía: Está en AWS, Google Cloud y Azure.
+Martín: Y esto se conecta con lo que contamos el treinta de septiembre: Claude Code dos punto uno punto doscientos ochenta y cinco ya traía Opus cinco punto cinco y Sonnet cinco punto cinco por defecto.
+Lucía: Exacto. Mi opinión: si ya usás Sonnet, vale la pena medirlo en tus propias tareas. El precio por tarea es lo que importa, no el benchmark.
+Martín: Segunda. OpenAI presentó Dots, agentes que quedan siempre activos dentro de ChatGPT.
+Lucía: ¿Qué quiere decir siempre activos?
+Martín: Cada dot corre en su propia computadora y su propio navegador en la nube, y sigue trabajando entre una conversación y otra.
+Martín: Se conecta con más de cuatro mil apps, además de Slack y Teams.
+Lucía: ¿Quién lo puede usar?
+Martín: Acá hay un detalle. La página de ayuda de OpenAI no se pudo leer, así que los planes salen de la prensa.
+Martín: Según esas notas, llega a Pro y Business Premium, con el primer dot sin costo extra.
+Martín: La salida es gradual, y en Pro no está en el Espacio Económico Europeo, Suiza ni Reino Unido.
+Lucía: Mi lectura: es la versión empaquetada de lo que muchas consultorías arman a medida. Tareas recurrentes con apps conectadas.
+Martín: Sí. Y ojo con la disponibilidad por región antes de proponérselo a alguien.
+Lucía: Tercera, Databricks. Presentó una función nueva que se llama ai_decide.
+Martín: El nombre ya te dice bastante.
+Lucía: Toma texto no estructurado y devuelve una decisión estructurada.
+Lucía: Puede ser una probabilidad, una opción elegida entre criterios o un puntaje.
+Lucía: Responde en una fracción de segundo, por SQL en batch o por REST en tiempo real.
+Martín: ¿Y el precio?
+Lucía: No lo informan. Databricks dice que tiene menos latencia y costo que un LLM en tareas parecidas, pero es su comparación.
+Martín: Y está en beta.
+Lucía: Sí. Me suena a lo que contamos el treinta de septiembre con la Decisions API de OpenAI, clasificación y ruteo en unos ciento cincuenta milisegundos.
+Martín: Y ayer con Clef y Clef-flash de Cloudflare, modelos abiertos de decisión. Ya es una tendencia: modelos chicos para decidir, no para charlar.
+Lucía: Y me parece bien. Para clasificar un ticket no hace falta un modelo enorme.
+Martín: Cuarta, también de Databricks, pero es otra cosa. Una guía para elegir los primeros Genie Agents.
+Lucía: ¿Es producto nuevo?
+Martín: No, es una guía de buenas prácticas. Proponen una grilla con cinco criterios.
+Martín: Impacto, repetitividad, qué tan preparados están los datos y los metadatos, claridad de alcance y riesgo de gobierno.
+Lucía: ¿Y cómo se lee el puntaje?
+Martín: De veinte a veinticinco puntos, construilo ya. Menos de catorce, no está listo. Y si no hay un sponsor, se frena.
+Lucía: Lo del sponsor me gusta.
+Martín: La frase fuerte es que los pilotos fallan más por elegir mal el flujo que por falta de precisión.
+Lucía: Eso lo firmo. Es contenido del proveedor, pero la checklist sirve más allá de Databricks.
+Lucía: Quinta. H company lanzó Holo cuatro, modelos abiertos para agentes que usan la computadora.
+Martín: O sea, que hacen clic y escriben en pantalla como una persona.
+Lucía: Eso. Hay un Holo cuatro de veintisiete mil millones de parámetros, denso, y otro de treinta y cinco mil millones con mezcla de expertos.
+Lucía: Y un tercero más chico, Holotron cuatro Nano. Están en Hugging Face en varios formatos, GGUF incluido.
+Martín: ¿Cómo les va?
+Lucía: En OSWorld dos punto cero, el de veintisiete saca sesenta y uno coma siete por ciento. El de treinta y cinco, treinta coma nueve.
+Lucía: Opus cinco punto cinco saca ochenta y uno coma ocho.
+Martín: La brecha sigue siendo grande.
+Lucía: Sí. H dice que el costo por tarea es mucho menor. Pero es su número.
+Martín: Mi opinión: es interesante para sistemas viejos sin API, con el modelo corriendo en infraestructura propia. Pero con esos porcentajes, no lo dejaría solo.
+Martín: Y la sexta, GitHub. Ahora se puede pedir una revisión de código de Copilot por API, REST y GraphQL.
+Lucía: Desde scripts y herramientas internas.
+Martín: Eso. Y otro cambio: desde el veintiocho de septiembre, el nivel de esfuerzo por defecto es Balanced en todos los repos y organizaciones.
+Lucía: ¿Y si alguien había elegido Lite?
+Martín: Lo conserva. Está en los planes Pro, Pro plus, Max, Business y Enterprise.
+Lucía: Lo de la API es lo útil. Lo del nivel por defecto, revisalo si te importa el costo de uso.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día de quien programa?
+Lucía: Para mí lo más concreto es lo de Copilot. Ya podés enchufar la revisión automática a tu CI o a tus propios flujos.
+Martín: Por ejemplo, que se pida la revisión solo cuando el cambio toca ciertas carpetas.
+Lucía: Claro. Y revisá qué nivel de esfuerzo te quedó, porque si no tocaste nada, ahora estás en Balanced.
+Martín: Lo segundo es ai_decide para quien arma datos.
+Martín: Clasificar reseñas, tickets o mensajes y rutear consultas directo en SQL, sin armar todo un pipeline de LLM.
+Lucía: Con la salvedad de que está en beta y el precio no está publicado. No lo pondría en producción sin saber cuánto cuesta.
+Martín: Justo. Primero una prueba chica en batch, y medís.
+Lucía: Lo tercero es Sonnet cinco punto cinco. Si cotizás proyectos con modelos de Anthropic, el número que te interesa es el costo por tarea.
+Martín: Y eso lo sacás corriendo tus tareas reales, no leyendo el anuncio.
+Lucía: Exacto. Tomá un puñado de casos que ya resolviste con el modelo anterior y compará tokens y tiempo.
+Martín: Y Holo cuatro, para quien tenga que automatizar una interfaz gráfica sin API. Los GGUF te dejan probarlo en tu máquina, si te da el hardware.
+Lucía: Como experimento, sí. Como solución, todavía no.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con un equipo interno de operaciones de una empresa mediana.
+Martín: ¿Cuál sería el problema?
+Lucía: Les llegan reclamos y consultas por mail, por WhatsApp y por un formulario. Alguien los lee uno por uno y los deriva a mano.
+Martín: Y eso se acumula los lunes.
+Lucía: Seguro. La idea es clasificar cada mensaje y rutearlo solo, con una función de decisión como ai_decide si ya tienen los datos en Databricks.
+Lucía: O con alguna de las opciones que vimos estos días, si no están en esa plataforma.
+Martín: ¿Y por dónde arrancás?
+Lucía: Con la grilla de Databricks. Antes de tocar código, puntuás los flujos candidatos con los cinco criterios.
+Martín: Y elegís el que tenga impacto, se repita mucho y tenga los datos razonablemente ordenados.
+Lucía: Y que tenga un sponsor. Alguien del equipo que lo quiera y lo defienda.
+Martín: ¿Qué haría falta?
+Lucía: Un historial de mensajes ya derivados para tener ejemplos, categorías claras acordadas con el equipo y una persona que revise los casos dudosos.
+Martín: Y medir contra cómo lo hacen hoy, antes de decir que funciona.
+Lucía: Eso. Es una idea para charlar, no una promesa de nada.
+
+## Una cosa para probar hoy
+Martín: Para hoy, algo de menos de media hora, sin instalar nada.
+Lucía: Contame.
+Martín: Agarrá la grilla de cinco criterios de Databricks y aplicala a tu propio trabajo, o al de un cliente.
+Martín: Paso uno: anotá tres procesos repetitivos que te gustaría automatizar.
+Martín: Paso dos: a cada uno ponele un puntaje del uno al cinco en impacto, repetitividad, preparación de los datos, claridad de alcance y riesgo de gobierno.
+Lucía: Ojo que en riesgo, más puntaje tiene que significar menos riesgo, si no la suma no tiene sentido.
+Martín: Bien visto. Paso tres: sumá. De veinte para arriba, es candidato. Debajo de catorce, todavía no.
+Martín: Paso cuatro: al lado de cada uno escribí quién sería el sponsor. Si no hay nombre, se frena.
+Lucía: Y paso cinco: quedate con el ganador y escribí en dos líneas qué entra, qué sale y quién revisa.
+Martín: Con eso ya tenés por dónde empezar. El link a la guía está en las notas.
+
+## Quedaron afuera
+Lucía: Y como siempre, lo que quedó afuera, para que nos digas si querés que lo sigamos.
+Martín: LlamaIndex habría lanzado Extract dos punto cinco, para sacar datos de documentos, con mejoras de precisión y referencias a la fuente de cada valor.
+Lucía: No entró porque sale de una fuente secundaria. Todavía no lo vimos confirmado en el blog de LlamaIndex.
+Martín: Un ajuste de Qwen tres punto ocho de veintisiete mil millones que ordena el razonamiento por nivel de esfuerzo, para código agéntico.
+Lucía: Gasta bastante menos tokens, pero es un ajuste de la comunidad, no del laboratorio. Por eso quedó afuera.
+Martín: Un informe del equipo rojo de Anthropic sobre modelos que ya logran secuestrar el flujo de control de un programa en algunos intentos.
+Lucía: Lo leímos en un blog que lo cita, sin enlace al original. Preferimos esperar la fuente.
+Martín: Y OpenAI listó retiros de modelos, como GPT cinco punto uno y GPT cinco punto tres Codex, para el año que viene.
+Lucía: No pudimos confirmar cuándo se publicó la página, así que quedó afuera por hoy.
+Martín: Eso fue todo. Gracias por escuchar, hasta la próxima en Radar IA.

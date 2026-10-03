@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 2 de octubre de 2026: Sonnet 5.5, los agentes siempre activos de OpenAI y decisiones con SQL en Databricks",
+  "summary": "Claude Sonnet 5.5 de Anthropic, los Dots de OpenAI en ChatGPT, la función ai_decide de Databricks y los modelos abiertos Holo4 para agentes que usan la computadora. También la revisión de código de Copilot por API y una grilla para elegir los primeros agentes de datos.",
+  "stories": [
+    {
+      "title": "Anthropic lanza Claude Sonnet 5.5: más rápido y hasta 30% más barato por tarea",
+      "url": "https://www.anthropic.com/claude-sonnet-5-5"
+    },
+    {
+      "title": "OpenAI presenta Dots: agentes siempre activos en ChatGPT con su propia computadora",
+      "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot"
+    },
+    {
+      "title": "Databricks presenta ai_decide: decisiones rápidas sobre datos con SQL o API",
+      "url": "https://www.databricks.com/blog/introducing-aidecide-make-fast-decisions-your-governed-data"
+    },
+    {
+      "title": "Databricks: cómo elegir los primeros Genie Agents con una grilla de 5 criterios",
+      "url": "https://www.databricks.com/blog/how-choose-your-first-genie-agents-maximum-impact"
+    },
+    {
+      "title": "H company lanza Holo4: modelos abiertos para agentes que usan la computadora",
+      "url": "https://huggingface.co/blog/Hcompany/holo4"
+    },
+    {
+      "title": "GitHub Copilot: revisión de código por API y nivel de esfuerzo Balanced por defecto",
+      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Qwen3.8-27B-pi: razonamiento ordenado por esfuerzo para código agéntico",
+      "url": "https://huggingface.co/blog/bytkim/qwen38-27b-pi"
+    },
+    {
+      "title": "LlamaIndex lanza Extract v2.5 para extracción de datos de documentos",
+      "url": "https://www.unite.ai/llamaindex-launches-extract-v2-5-with-accuracy-and-grounding-gains/"
+    },
+    {
+      "title": "Anthropic Frontier Red Team: modelos ya logran secuestros de flujo de control",
+      "url": "https://simonwillison.net/2026/Sep/29/anthropic-frontier-red-team/"
+    },
+    {
+      "title": "OpenAI anuncia retiros de modelos: GPT-5.3-Codex, GPT-5.1 y GPT-5.4-Nano, y audio y fine-tuning",
+      "url": "https://developers.openai.com/api/docs/deprecations"
+    }
+  ]
+}
