@@ -59,6 +59,36 @@
       "url": "https://anthropic.com/news/barclays-scales-claude",
       "title": "Barclays escala Claude: 16.000 colegas usan un asistente de conocimiento",
       "date": "2026-10-01"
+    },
+    {
+      "url": "https://anthropic.com/claude-sonnet-5-5",
+      "title": "Anthropic lanza Claude Sonnet 5.5: más rápido y hasta 30% más barato por tarea",
+      "date": "2026-10-02"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/20001530-getting-started-with-your-dot",
+      "title": "OpenAI presenta Dots: agentes siempre activos en ChatGPT con su propia computadora",
+      "date": "2026-10-02"
+    },
+    {
+      "url": "https://databricks.com/blog/introducing-aidecide-make-fast-decisions-your-governed-data",
+      "title": "Databricks presenta ai_decide: decisiones rápidas sobre datos con SQL o API",
+      "date": "2026-10-02"
+    },
+    {
+      "url": "https://databricks.com/blog/how-choose-your-first-genie-agents-maximum-impact",
+      "title": "Databricks: cómo elegir los primeros Genie Agents con una grilla de 5 criterios",
+      "date": "2026-10-02"
+    },
+    {
+      "url": "https://huggingface.co/blog/Hcompany/holo4",
+      "title": "H company lanza Holo4: modelos abiertos para agentes que usan la computadora",
+      "date": "2026-10-02"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
+      "title": "GitHub Copilot: revisión de código por API y nivel de esfuerzo Balanced por defecto",
+      "date": "2026-10-02"
     }
   ]
 }
