@@ -72,6 +72,7 @@ def publish(show_id, day, dry_run):
         run("git", "add", show["feed_path"], "state/seen.json", str(ep_dir / "meta.json"), str(ep_dir / "guion.txt"))
         run("git", "commit", "-m", f"Episodio {tag}: {meta['title']}")
         committed = True
+        run("git", "pull", "--rebase", "origin", "main")
         run("git", "push")
     except Exception:
         if committed:
