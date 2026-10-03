@@ -89,6 +89,36 @@
       "url": "https://github.blog/changelog/2026-10-02-copilot-code-review-api-support-and-new-default-effort-level",
       "title": "GitHub Copilot: revisión de código por API y nivel de esfuerzo Balanced por defecto",
       "date": "2026-10-02"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon",
+      "title": "Google presenta Gemini 4 Argon, con acceso limitado al inicio",
+      "date": "2026-10-03"
+    },
+    {
+      "url": "https://anthropic.com/research/glm-5-3-and-the-spread-of-advanced-cyber-capabilities",
+      "title": "Anthropic: GLM-5.3 y la difusión de capacidades ciber avanzadas",
+      "date": "2026-10-03"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/deprecations",
+      "title": "OpenAI anuncia el retiro de GPT-5.3-Codex, GPT-5.1, GPT-5.4-Nano, TTS y otros",
+      "date": "2026-10-03"
+    },
+    {
+      "url": "https://llamaindex.ai/blog/introducing-extract-v2-5",
+      "title": "LlamaIndex lanza Extract v2.5 para extracción de documentos",
+      "date": "2026-10-03"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps",
+      "title": "GitHub Copilot suma computer use en vista previa pública",
+      "date": "2026-10-03"
+    },
+    {
+      "url": "https://pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really",
+      "title": "Pew: los encuestados sintéticos con IA fallan 12 puntos en promedio",
+      "date": "2026-10-03"
     }
   ]
 }

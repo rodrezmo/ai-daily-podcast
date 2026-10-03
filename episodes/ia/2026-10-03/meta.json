@@ -40,5 +40,10 @@
       "title": "Qwen3.8-27B-pi: modelo ajustado para respetar el orden de esfuerzo de razonamiento",
       "url": "https://huggingface.co/blog/bytkim/qwen38-27b-pi"
     }
-  ]
+  ],
+  "guid": "ia-2026-10-03",
+  "bytes": 4662437,
+  "seconds": 582.048,
+  "pub_date": "2026-10-03T06:16:28.779914-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-10-03/episode.mp3"
 }
