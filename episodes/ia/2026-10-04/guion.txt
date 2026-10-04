@@ -1,0 +1,102 @@
+## Titulares
+Lucía: Buen día, es domingo cuatro de octubre de dos mil veintiséis y esto es Radar IA.
+Martín: Hola. Hoy hay seis notas y varias van para el mismo lado: modelos baratos para decidir, agentes que hay que medir mejor y plata que se puede ir sin que te des cuenta.
+Lucía: Arranco con Perplexity. Abrió una API que se llama Decisions.
+Martín: ¿Otra más? El miércoles contamos que OpenAI presentó su Decisions API.
+Lucía: Sí, y el jueves fue Cloudflare con Clef, y el viernes Databricks con ai decide. Ya es una categoría.
+Martín: Bueno, contame qué hace la de Perplexity.
+Lucía: No te devuelve texto. Le hacés preguntas de sí o no, de elegir entre opciones o de poner un puntaje, y te devuelve probabilidades.
+Lucía: Usa un modelo propio de veintisiete mil millones de parámetros, que también lee imágenes.
+Martín: ¿Y el precio?
+Lucía: Cuatro centavos de dólar por millón de tokens de entrada. La salida es gratis.
+Martín: Eso es casi nada.
+Lucía: Y admite hasta ciento veintiocho preguntas por pedido, con unos doscientos sesenta mil tokens de contexto.
+Martín: Ojo con una cosa. Algunas notas dicen que los pesos del modelo están abiertos en Hugging Face, pero la documentación no dice nada de eso.
+Lucía: Exacto, eso todavía no lo confirmó nadie con fuente primaria. Ayer había quedado afuera justamente por eso; hoy ya tenemos la doc oficial.
+Martín: Mi opinión: para filtrar, clasificar o rutear en un pipeline, esto tiene mucho sentido. Para todo lo demás, seguí usando un modelo de texto.
+Lucía: Segunda. Microsoft lanzó modelos de voz nuevos en su plataforma Foundry.
+Martín: ¿Transcripción?
+Lucía: Transcripción y voz. El de transcripción se llama MAI Transcribe dos Streaming. Según el anuncio, funciona en tiempo real, en sesenta idiomas, y detecta solo el idioma, aunque no pude abrir la página de Microsoft para confirmarlo.
+Lucía: Según lo publicado, cuesta cincuenta y cuatro centavos de dólar por hora de audio, como precio introductorio hasta fin de año. Todavía no está confirmado en la fuente.
+Martín: ¿Y las voces?
+Lucía: MAI Voice dos punto uno y una versión Flash. Veintidós y quince dólares por millón de caracteres, también sin confirmar.
+Martín: Los medios citan un error de palabras de dos y medio por ciento y una primera respuesta parcial en poco más de cien milisegundos.
+Lucía: Y que Artificial Analysis la pone primera entre treinta y ocho modelos. Eso viene de las notas de prensa, no lo pude confirmar en la página de Microsoft.
+Martín: Mi opinión: el precio es bueno. Pero hasta que alguien lo pruebe con un audio porteño de WhatsApp, con ruido de colectivo, yo no me la juego.
+Lucía: Tercera, y para mí la más interesante. Un benchmark de agentes que se llama ThinkingBox, publicado por Microsoft en el blog de Hugging Face.
+Martín: ¿Qué tiene de distinto?
+Lucía: Que no le cree al agente. Mira cómo quedó la base de datos al final.
+Lucía: Son quinientos siete flujos de negocio, en cinco rubros, como seguros de autos, viajes o un banco digital. Cada tarea se corre veinte veces.
+Martín: ¿Y qué encontraron?
+Lucía: Que dos de cada tres fallas parecían éxitos. El agente terminaba prolijo, sin errores, y la base quedaba mal.
+Martín: Uf. Eso es lo que más miedo da.
+Lucía: El que lidera es Claude Opus cinco punto cinco, con un sesenta y siete por ciento de acierto en el primer intento.
+Martín: Pero si le pedís que salga bien las veinte veces, el número cae a menos de la mitad.
+Lucía: Y casi el ochenta por ciento de las fallas vienen del manejo de herramientas.
+Martín: Mi opinión: esto es de lo más útil que leí en la semana. Desconfiá del log del agente.
+Lucía: Cuarta. GitHub sumó workflows dinámicos en Copilot, tanto en la terminal como en la app.
+Martín: El viernes habíamos contado lo de la revisión de código por API, y ayer el computer use. Van rápido.
+Lucía: Esto son programas que mezclan pasos de código con trabajo de agentes, en serie o en paralelo, y que pueden frenar para que una persona revise.
+Martín: ¿Está para todos?
+Lucía: En vista previa pública, en todos los planes. En la terminal tenés que activarlo con la opción experimental.
+Martín: Mi opinión: me gusta más que largar subagentes a ciegas. Hay pasos fijos y hay un punto donde una persona dice sí.
+Lucía: Quinta. Snowflake pasó Semantic Studio a disponibilidad general.
+Martín: ¿Qué es eso, en criollo?
+Lucía: Un lugar para armar vistas semánticas. O sea, definir qué significa ventas, qué es un cliente activo, cómo se calcula cada cosa.
+Lucía: Se puede armar charlando, o editando el YAML a mano, y tiene control de versiones con Git. Estaba en vista previa desde fines de agosto.
+Martín: Mi opinión: no es una noticia vistosa, pero es la que hace que preguntarle a tus datos en lenguaje natural no te devuelva cualquier cosa.
+Lucía: Y la sexta es una opinión, no un lanzamiento. Simon Willison escribió que los servicios que cobran por uso deberían tener topes de gasto duros por defecto.
+Martín: ¿Duros es que cortan?
+Lucía: Que cortan. No que te mandan un mail. Su argumento es que ahora los agentes ejecutan código sin que nadie mire, y una factura sorpresa está a un descuido.
+Martín: ¿Y hay algo de eso en la práctica?
+Lucía: Cuenta que Google Cloud lanzó sus Spend Caps en julio, y que AWS anunció límites de gasto en septiembre, todavía en un lanzamiento limitado.
+Martín: Mi opinión: tiene toda la razón. Y se conecta con lo que contamos el jueves, la nota de Matthew Green sobre si alcanza el sandboxing para contener agentes.
+Lucía: Una cosa es contener lo que hace. Otra es contener lo que gasta.
+## Para desarrolladores
+Martín: Vamos a lo práctico. ¿Qué te llevás si programás o armás datos?
+Lucía: Lo primero, ThinkingBox. Si tu agente escribe en una base, no midas lo que dice que hizo. Mirá el estado final.
+Martín: Y corré la misma tarea varias veces. Un acierto suelto no te dice nada.
+Lucía: Exacto. El benchmark muestra que la diferencia entre acertar una vez y acertar siempre es enorme.
+Martín: Y como la mayoría de las fallas está en las herramientas, ahí va el esfuerzo: buenas descripciones, validar lo que entra y lo que sale.
+Lucía: Lo segundo, los modelos de decisión. Si tenés un paso del pipeline que es clasificar o filtrar, ahora hay opciones que te devuelven una probabilidad y cuestan centavos.
+Martín: Y una probabilidad te deja poner un umbral. Lo dudoso va a una persona.
+Lucía: Lo tercero, si usás Copilot, los workflows dinámicos sirven para cosas repetibles, como chequeos antes de un release o revisiones de muchos archivos.
+Martín: Y si hacés BI, lo de Snowflake es un recordatorio: sin capa semántica, el chat sobre datos es una ruleta.
+Lucía: Y lo último, que es lo más barato de hacer: poné topes de gasto en cada servicio que pueda usar un agente.
+## Oportunidades de consultoría
+Martín: Hoy no vamos con la pyme. Hoy pienso en un estudio, contable o jurídico, chico.
+Lucía: ¿Por qué un estudio?
+Martín: Porque viven de audios de WhatsApp. El cliente manda tres minutos de audio y alguien tiene que escucharlo, entender qué pide y anotarlo.
+Lucía: Y eso se pierde, o queda en el teléfono de una sola persona.
+Martín: La idea es esta. Los audios se transcriben con un modelo de streaming como el de Microsoft.
+Martín: Después, un modelo de decisión contesta preguntas cerradas sobre cada mensaje. ¿Es urgente? ¿De qué tema es? ¿Pide un documento?
+Lucía: Y como te da probabilidades, lo que no está claro va a una bandeja para que lo mire una persona.
+Martín: Al final queda una planilla, o el sistema que ya usen, con cada pedido clasificado.
+Lucía: ¿Qué haría falta?
+Martín: Primero, probar la transcripción con audios reales del estudio, porque el español rioplatense no está medido.
+Martín: Segundo, el permiso de los clientes y cuidar dónde se guardan los datos. Es información sensible.
+Lucía: Y tercero, lo que dijimos recién: un tope de gasto en cada API y medir el resultado final, no lo que dice el sistema.
+Martín: Es una idea para charlar con el estudio, no una promesa. Hay que probarla primero.
+## Una cosa para probar hoy
+Lucía: Para hoy, algo de menos de media hora: probar la Decisions API de Perplexity con tus propios mensajes.
+Martín: Dale, decime los pasos.
+Lucía: Uno. Entrá a la consola de Perplexity y sacá una clave de API.
+Lucía: Dos. Guardala en una variable de entorno, como dice la guía de inicio rápido. El link está en las notas.
+Lucía: Tres. Juntá veinte mensajes tuyos, de tu propio correo o de un proyecto propio. Nada de datos de clientes.
+Martín: Bien ahí.
+Lucía: Cuatro. Armá una pregunta de sí o no, por ejemplo: este mensaje, ¿pide algo urgente?
+Lucía: Cinco. Mandá cada mensaje como estado, con esa pregunta, y anotá la probabilidad que te devuelve.
+Lucía: Seis. Marcá a mano cuáles eran urgentes de verdad y compará.
+Martín: Y fijate en qué valor de probabilidad empieza a equivocarse. Ese es tu umbral.
+Lucía: Con veinte mensajes el costo es casi cero. Igual, si podés, poné un tope de gasto antes.
+## Quedaron afuera
+Martín: Cerramos con lo que no entró, por si quieren que lo sumemos.
+Lucía: GitHub Copilot retira cuatro modelos, entre ellos Claude Opus cuatro punto siete y dos Gemini Flash, con reemplazos más nuevos.
+Martín: Quedó afuera porque solo afecta a quien usa Copilot. Si es tu caso, revisá qué modelo tenés elegido.
+Lucía: Ai2 liberó AstaBrief, un modelo abierto chico que arma informes científicos con citas, unas tres veces y media más rápido que el modo con razonamiento.
+Martín: Es de nicho científico, con poco impacto directo para nosotros.
+Lucía: Hugging Face presentó un ranking abierto de modelos de síntesis de voz.
+Martín: No entró porque no menciona el español. Justo hoy que hablamos de voz.
+Lucía: Y Google sumó a Gemini Enterprise un modo para consultar bases como BigQuery o Spanner vía MCP, sin copiar los datos.
+Martín: Está en vista previa y la fuente es un listado de novedades, no una nota puntual. Si se confirma, vuelve.
+Lucía: Eso fue todo por hoy. Nos escuchamos mañana en Radar IA.

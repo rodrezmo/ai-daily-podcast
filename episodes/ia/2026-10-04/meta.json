@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 4 de octubre de 2026: modelos de decisión de Perplexity, ThinkingBox y topes de gasto",
+  "summary": "Perplexity abre su Decisions API con un modelo que responde con probabilidades, Microsoft presenta MAI-Transcribe-2 y ThinkingBox mide agentes por el estado final de la base de datos. También workflows dinámicos en Copilot, Semantic Studio de Snowflake y el pedido de Simon Willison de topes de gasto duros.",
+  "stories": [
+    {
+      "title": "Perplexity abre la Decisions API y publica pplx-decider-v1-27b",
+      "url": "https://docs.perplexity.ai/docs/decisions/quickstart"
+    },
+    {
+      "title": "Microsoft AI lanza MAI-Transcribe-2-Streaming y MAI-Voice-2.1 en Foundry",
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/build-expressive-voice-experiences-with-new-mai-models-in-microsoft-foundry/4524637"
+    },
+    {
+      "title": "ThinkingBox: benchmark que mira el estado de la base de datos y no lo que dice el agente",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox"
+    },
+    {
+      "title": "GitHub Copilot: workflows dinámicos en CLI y app",
+      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app"
+    },
+    {
+      "title": "Snowflake: Semantic Studio llega a disponibilidad general",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-30-semantic-studio-ga"
+    },
+    {
+      "title": "Simon Willison: hacen falta topes de gasto duros por defecto en casi todo servicio por uso",
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Ai2 libera AstaBrief 8B, un modelo abierto que genera informes científicos con citas",
+      "url": "https://huggingface.co/blog/allenai/astabrief"
+    },
+    {
+      "title": "GitHub Copilot depreca cuatro modelos",
+      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated"
+    },
+    {
+      "title": "Open TTS Leaderboard: evaluación escalable de síntesis de voz y clonación",
+      "url": "https://huggingface.co/blog/open-tts-leaderboard"
+    },
+    {
+      "title": "Gemini Enterprise: modo de consulta federada con MCP sobre BigQuery, AlloyDB, Cloud SQL y Spanner",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+    }
+  ]
+}
