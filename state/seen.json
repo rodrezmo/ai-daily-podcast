@@ -119,6 +119,36 @@
       "url": "https://pewresearch.org/data-labs/2026/09/30/can-ai-stand-in-for-human-survey-takers-not-really",
       "title": "Pew: los encuestados sintéticos con IA fallan 12 puntos en promedio",
       "date": "2026-10-03"
+    },
+    {
+      "url": "https://docs.perplexity.ai/docs/decisions/quickstart",
+      "title": "Perplexity abre la Decisions API y publica pplx-decider-v1-27b",
+      "date": "2026-10-04"
+    },
+    {
+      "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/build-expressive-voice-experiences-with-new-mai-models-in-microsoft-foundry/4524637",
+      "title": "Microsoft AI lanza MAI-Transcribe-2-Streaming y MAI-Voice-2.1 en Foundry",
+      "date": "2026-10-04"
+    },
+    {
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox",
+      "title": "ThinkingBox: benchmark que mira el estado de la base de datos y no lo que dice el agente",
+      "date": "2026-10-04"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-01-dynamic-workflows-in-copilot-cli-and-the-copilot-app",
+      "title": "GitHub Copilot: workflows dinámicos en CLI y app",
+      "date": "2026-10-04"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-09-30-semantic-studio-ga",
+      "title": "Snowflake: Semantic Studio llega a disponibilidad general",
+      "date": "2026-10-04"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps",
+      "title": "Simon Willison: hacen falta topes de gasto duros por defecto en casi todo servicio por uso",
+      "date": "2026-10-04"
     }
   ]
 }
