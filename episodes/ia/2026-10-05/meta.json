@@ -1,0 +1,32 @@
+{
+  "title": "Radar IA, 5 de octubre: modelos de decisión locales en llama.cpp y Copilot da de baja cuatro modelos",
+  "summary": "llama.cpp suma un endpoint para modelos de decisión que puntúan opciones en vez de generar texto. GitHub Copilot da de baja cuatro modelos, Gemini Enterprise prueba consultas federadas con MCP sobre bases de datos, y Ai2 libera AstaBrief para informes con citas. Además, Anthropic anuncia un programa para formar ingenieros de despliegue.",
+  "stories": [
+    {
+      "title": "llama.cpp suma soporte para modelos de decisión con el endpoint /v1/systemone",
+      "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp"
+    },
+    {
+      "title": "GitHub Copilot da de baja cuatro modelos",
+      "url": "https://github.blog/changelog/2026-10-02-selected-models-in-github-copilot-deprecated"
+    },
+    {
+      "title": "Gemini Enterprise: modo de consulta federada con MCP para BigQuery, AlloyDB, Cloud SQL y Spanner",
+      "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+    },
+    {
+      "title": "Ai2 libera AstaBrief, un modelo abierto de 8B para generar informes científicos con citas",
+      "url": "https://huggingface.co/blog/allenai/astabrief"
+    },
+    {
+      "title": "Anthropic invierte 100 millones de dólares para formar 10.000 ingenieros de despliegue (Claude Frontier Academy)",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Olmo-core 3: infraestructura abierta para entrenar MoE grandes",
+      "url": "https://huggingface.co/blog/allenai/olmocore3"
+    }
+  ]
+}

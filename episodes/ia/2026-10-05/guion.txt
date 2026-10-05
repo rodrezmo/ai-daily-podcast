@@ -1,0 +1,116 @@
+## Titulares
+Lucía: Buen día, es lunes cinco de octubre de dos mil veintiséis y esto es Radar IA.
+Martín: Hola. Hoy son cinco notas, no seis. Hay modelos chicos que corren en tu máquina, un recorte en Copilot y una apuesta grande a la implementación.
+Lucía: Arranco con llama.cpp. El servidor ahora tiene un endpoint nuevo que se llama systemone.
+Martín: ¿Para qué sirve?
+Lucía: Para modelos de decisión. No generan texto. Puntúan opciones.
+Lucía: Le hacés preguntas de elegir entre opciones, de poner un puntaje o de sí o no.
+Martín: Esto ya es una categoría. El miércoles contamos la Decisions API de OpenAI, el jueves Clef de Cloudflare, y ayer Perplexity abrió la suya.
+Lucía: Sí, pero acá la diferencia es que corre local, en llama.cpp. Sin costo por token.
+Martín: ¿Qué modelos soporta?
+Lucía: Seis. Van desde ciento cuarenta y cuatro millones de parámetros hasta veintisiete mil millones.
+Lucía: Y responden en entre tres y cuarenta y tres milisegundos, en placas NVIDIA.
+Martín: ¿Alguno sirve para español?
+Lucía: Hay uno multilingüe, Julia uno, que maneja más de cincuenta idiomas.
+Martín: Mi opinión: es la noticia más útil del día. Si clasificás o ruteás texto, esto te saca la API externa del medio.
+Lucía: Con un matiz. Los tiempos son en GPU. En una notebook común habría que medirlo.
+Martín: Segunda. GitHub da de baja cuatro modelos en Copilot.
+Lucía: ¿Cuáles?
+Martín: Gemini tres punto cinco Flash y Gemini tres punto seis Flash. El reemplazo sugerido es Gemini tres punto ocho Flash.
+Martín: Kimi K dos punto siete Code, que se reemplaza por Kimi K tres.
+Martín: Y Claude Opus cuatro punto siete, que pasa a Claude Opus cinco punto cinco.
+Lucía: ¿Desde cuándo?
+Martín: Desde el dos de octubre. GitHub aclara que no hay que hacer nada para quitarlos.
+Lucía: Ya venimos viendo esto. El sábado contamos que OpenAI anunció el retiro de varios modelos suyos.
+Martín: Y el miércoles, que Claude Code pasó a Opus cinco punto cinco por defecto.
+Lucía: Mi opinión: no hay que hacer nada para que desaparezcan, pero sí para que lo que tenías armado siga andando igual. Un modelo nuevo no responde igual que el viejo.
+Lucía: Tercera. Google sumó a Gemini Enterprise un modo de consulta federada.
+Martín: Traducime eso.
+Lucía: Que Gemini puede consultar tus datos donde están, sin copiarlos ni ingerirlos.
+Lucía: Lo hace por eme ce pe, y con las credenciales de cada usuario.
+Martín: O sea que si yo no tengo permiso para ver una tabla, el asistente tampoco la ve.
+Lucía: Esa es la idea. Funciona con BigQuery, AlloyDB para Postgres, Cloud SQL y Spanner.
+Lucía: Y se sumó una integración con Knowledge Catalog.
+Martín: ¿Está disponible?
+Lucía: En vista previa.
+Martín: Mi opinión: el patrón está bueno. No duplicar datos y respetar permisos es justo lo que frena estos proyectos. Pero es vista previa y es todo del mundo Google.
+Lucía: Cuarta. A i dos, el Allen Institute, liberó AstaBrief.
+Martín: ¿Qué es?
+Lucía: Un modelo abierto de ocho mil millones de parámetros para generar informes científicos con citas.
+Lucía: Está basado en Qwen tres de ocho mil millones.
+Martín: ¿Cómo lo entrenaron?
+Lucía: Con cuarenta y siete mil ejemplos de ajuste supervisado y seis mil pares de preferencias.
+Lucía: Genera un informe en unos cincuenta y un segundos. Una alternativa propietaria tarda casi ciento ochenta.
+Martín: Tres veces y media más rápido, más o menos.
+Lucía: Y dicen que la calidad es competitiva en precisión de citas.
+Martín: Ojo con "competitiva". No dice que sea mejor. Dice que no queda atrás.
+Lucía: Justo. Mi opinión: lo interesante no es el informe científico. Es que un modelo chico, con datos bien filtrados, puede escribir con fuentes.
+Martín: Quinta y última. Anthropic va a poner cien millones de dólares en algo que llama Claude Frontier Academy.
+Lucía: ¿Una academia?
+Martín: Quiere formar diez mil ingenieros de despliegue, Frontier Deployed Engineers, hasta fines de dos mil veintisiete.
+Martín: Hay capacitación presencial y una residencia de doce semanas en la organización de cada participante.
+Lucía: ¿Con quién?
+Martín: Entre los socios iniciales hay consultoras grandes: Accenture, Bain, Capgemini, Deloitte y McKinsey. Y también empresas como Morgan Stanley y Novo Nordisk.
+Martín: Las primeras cohortes son en San Francisco, Nueva York y Londres.
+Lucía: Nada en la región.
+Martín: Por ahora el programa no la menciona.
+Lucía: Mi opinión: el número es marketing, pero la señal es real. El cuello de botella ya no es el modelo. Es implementarlo.
+Martín: Y ese espacio no es solo de las consultoras grandes. Una consultoría chica también entra ahí.
+
+## Para desarrolladores
+Lucía: Para quien programa, me quedo con dos cosas.
+Lucía: La primera es llama.cpp. Si tenés un paso de clasificación en un pipeline, ahora lo podés correr local.
+Martín: Pensá en etiquetar tickets, decidir a qué área va un mensaje o filtrar basura antes de mandarle algo a un modelo caro.
+Lucía: Y como son preguntas de sí o no, o de elegir, la salida es fácil de validar. No tenés que parsear texto libre.
+Martín: Eso para mí es lo mejor. Menos sorpresas en producción.
+Lucía: Y tenés seis modelos para elegir. Podés arrancar con el más chico y subir solo si no te alcanza.
+Martín: Una pregunta que me queda: cuánto acierta cada uno en español. Eso el anuncio no lo dice, así que hay que probarlo con tus datos.
+Lucía: La segunda es Copilot. Si tenés configuraciones fijadas a alguno de esos cuatro modelos, revisalas.
+Martín: Y no solo cambiar el nombre. Corré algo que conozcas y fijate si el resultado se parece.
+Lucía: Para quien arma datos, lo de Gemini Enterprise marca un camino.
+Lucía: El asistente consulta la base con los permisos de quien pregunta. No tenés que armar una copia aparte para la IA.
+Martín: Aunque si no estás en Google Cloud, hoy esto no te cambia nada.
+Lucía: Y AstaBrief sirve como referencia. Si te piden informes con citas sobre documentos propios, muestra que un modelo chico puede ser un punto de partida.
+Martín: Punto de partida. No lo pongas en producción mañana.
+Lucía: Y lo de Anthropic, aunque no es técnico, habla de nuestro trabajo.
+Martín: Sí. Si una empresa grande pone plata en formar gente que implementa, es porque saber conectar el modelo con los sistemas de cada organización vale.
+Lucía: O sea, saber de datos, de permisos y de procesos sigue contando. No alcanza con saber escribir un prompt.
+
+## Oportunidades de consultoría
+Martín: Hoy no vamos con la pyme. Vamos con el sector público.
+Lucía: ¿Qué perfil?
+Martín: Una institución o un municipio con una mesa de entradas. Le llegan mensajes y pedidos todo el día, por mail, por formularios, por WhatsApp.
+Martín: El problema es que alguien los lee uno por uno para decidir a qué área van.
+Lucía: Y ahí entra llama.cpp con un modelo de decisión.
+Martín: Exacto. Se automatiza la primera clasificación. El modelo elige entre una lista cerrada de áreas y marca si algo parece urgente.
+Lucía: Y como corre local, los datos no salen de la institución. Eso en el sector público pesa.
+Martín: Y no hay costo por token, que también ayuda cuando el presupuesto es anual y fijo.
+Lucía: ¿Qué haría falta?
+Martín: Primero, una lista clara de categorías, acordada con la gente que hoy hace el trabajo.
+Martín: Segundo, una muestra de mensajes ya clasificados a mano, para medir si el modelo acierta.
+Martín: Tercero, un servidor donde correrlo. Y probar el modelo multilingüe con textos reales en español.
+Lucía: Y una persona que revise lo que el modelo no tiene claro.
+Lucía: ¿Y por dónde se arranca para no comerse un proyecto enorme?
+Martín: Por una sola oficina y un solo canal. Por ejemplo, los mails que llegan a la mesa de entradas.
+Martín: Se corre en paralelo unas semanas. La gente sigue clasificando como siempre y se compara con lo que dijo el modelo.
+Martín: Siempre con revisión humana. Es una idea para conversar, no una promesa. Primero se mide con datos de ellos y después se ve.
+
+## Una cosa para probar hoy
+Lucía: Hoy, algo de menos de media hora: revisar si te afecta la baja de modelos en Copilot.
+Martín: Dale, paso a paso.
+Lucía: Uno. Abrí tu editor con Copilot y fijate en el selector de modelos cuál estás usando.
+Lucía: Dos. Buscá en la configuración de tus proyectos si alguno quedó fijado a uno de los cuatro modelos que salen.
+Martín: Recordá cuáles son: los dos Gemini Flash viejos, Kimi K dos punto siete Code y Claude Opus cuatro punto siete.
+Lucía: Tres. Elegí una tarea que hacés seguido y que sabés cómo debería salir. Una función chica, un test, un refactor.
+Lucía: Cuatro. Cambiá al reemplazo sugerido y corré esa misma tarea.
+Martín: Cinco. Compará con lo que esperabas. Si cambió algo, anotalo antes de que te sorprenda en medio de otra cosa.
+Lucía: Y si usás Copilot en equipo, contale al resto qué encontraste.
+
+## Quedaron afuera
+Martín: Hoy quedó afuera una sola nota.
+Lucía: Olmo core tres, también de A i dos. Es infraestructura abierta para entrenar modelos grandes de tipo mezcla de expertos.
+Martín: Dicen que logra casi el triple de rendimiento que su enfoque anterior, y que lo probaron con más de un billón de parámetros totales.
+Lucía: No entró porque sirve a pocos equipos. Para quien nos escucha, hoy tiene poco impacto práctico.
+Martín: Si les interesa que sumemos más de entrenamiento de modelos, avisen.
+
+Lucía: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.
