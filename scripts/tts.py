@@ -198,7 +198,7 @@ def master(pcm, out_mp3, intro, pre_filter=""):
 
 
 def tag(mp3, title, show):
-    from mutagen.id3 import ID3, TALB, TDRC, TIT2, TPE1
+    from mutagen.id3 import APIC, ID3, TALB, TDRC, TIT2, TPE1
     from mutagen.mp3 import MP3
 
     tags = ID3()
@@ -206,6 +206,8 @@ def tag(mp3, title, show):
     tags.add(TPE1(encoding=3, text=show["author"]))
     tags.add(TALB(encoding=3, text=show["title"]))
     tags.add(TDRC(encoding=3, text=time.strftime("%Y")))
+    cover = ROOT / "docs" / show["cover"]
+    tags.add(APIC(encoding=3, mime="image/jpeg", type=3, desc="Portada", data=cover.read_bytes()))
     tags.save(mp3)
     return MP3(mp3).info.length
 
