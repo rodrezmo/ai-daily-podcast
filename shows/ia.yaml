@@ -9,6 +9,7 @@ author: Radar IA
 category: Technology
 explicit: false
 feed_path: docs/feed.xml
+cover: cover.jpg                    # docs/cover.jpg, lo genera scripts/cover.py
 repo: rodrezmo/ai-daily-podcast     
 site_url: https://rodrezmo.github.io/ai-daily-podcast
 

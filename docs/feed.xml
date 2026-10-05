@@ -8,6 +8,12 @@
     <itunes:author>Radar IA</itunes:author>
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology" />
+    <itunes:image href="https://rodrezmo.github.io/ai-daily-podcast/cover.jpg" />
+    <image>
+      <url>https://rodrezmo.github.io/ai-daily-podcast/cover.jpg</url>
+      <title>Radar IA</title>
+      <link>https://rodrezmo.github.io/ai-daily-podcast</link>
+    </image>
     <lastBuildDate>Sun, 04 Oct 2026 09:17:33 +0000</lastBuildDate>
     <item>
       <title>Radar IA, 4 de octubre de 2026: modelos de decisión de Perplexity, ThinkingBox y topes de gasto</title>

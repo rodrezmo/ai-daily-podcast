@@ -49,6 +49,12 @@ def new_channel(show):
     text(ch, q("itunes:author"), show["author"])
     text(ch, q("itunes:explicit"), "true" if show["explicit"] else "false")
     ET.SubElement(ch, q("itunes:category"), {"text": show["category"]})
+    cover_url = f"{show['site_url'].rstrip('/')}/{show['cover']}"
+    ET.SubElement(ch, q("itunes:image"), {"href": cover_url})
+    image = ET.SubElement(ch, "image")
+    text(image, "url", cover_url)
+    text(image, "title", show["title"])
+    text(image, "link", show["site_url"])
     return rss
 
 
