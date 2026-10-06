@@ -149,6 +149,36 @@
       "url": "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps",
       "title": "Simon Willison: hacen falta topes de gasto duros por defecto en casi todo servicio por uso",
       "date": "2026-10-04"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg",
+      "title": "Cowork de Anthropic pasa la inferencia y la VM a la nube, con un sandbox aislado por sesión",
+      "date": "2026-10-06"
+    },
+    {
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api",
+      "title": "Cloudflare lanza Web Search API en beta, integrada a AI Gateway",
+      "date": "2026-10-06"
+    },
+    {
+      "url": "https://reflection.ai/blog/introducing-beam",
+      "title": "Reflection presenta Beam: MoE de 501B parámetros con pesos abiertos Apache 2.0 prometidos para este mes",
+      "date": "2026-10-06"
+    },
+    {
+      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
+      "title": "Wikimedia documenta actividad de agentes de OpenAI en sus proyectos",
+      "date": "2026-10-06"
+    },
+    {
+      "url": "https://wagtail.org/blog/one-month-on-glm-53-flash",
+      "title": "Un mes programando con GLM 5.3 Flash: costo real y tokens (Wagtail)",
+      "date": "2026-10-06"
+    },
+    {
+      "url": "https://github.com/graphene-data/graphene",
+      "title": "Graphene: analítica como código para que agentes hagan trabajo de datos con SQL y capa semántica",
+      "date": "2026-10-06"
     }
   ]
 }
