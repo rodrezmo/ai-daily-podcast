@@ -1,0 +1,126 @@
+## Titulares
+Lucía: Buen día, hoy es martes seis de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y varias tienen que ver con agentes que salen de la computadora de uno.
+Lucía: Arranco con Cowork, de Anthropic. Cambió dónde corre.
+Martín: Contame.
+Lucía: Ahora la inferencia y la máquina virtual corren en la nube, con un sandbox aislado por cada sesión.
+Lucía: El acceso a los archivos locales lo sigue haciendo la app de escritorio, que hace de puente.
+Martín: ¿Y qué se gana con eso?
+Lucía: Que lo podés usar desde el celular y dejar trabajo corriendo en segundo plano.
+Martín: Ojo con la fuente. Esto sale en el blog de Simon Willison, que cita a Felix Rieseberg. No es un anuncio oficial con documentación.
+Lucía: Sí. Y mi opinión es que está bueno, pero si trabajás con archivos de clientes, ahora esos datos pasan por ese puente entre tu escritorio y la nube. Hay que saberlo antes de usarlo.
+Martín: Y lo de dejarlo trabajando solo en segundo plano está muy bien, pero también quiere decir que nadie lo está mirando mientras trabaja.
+Lucía: Exacto. Cómodo sí, pero con los ojos abiertos.
+Martín: Segunda. Cloudflare lanzó una API de búsqueda web pensada para agentes. Está en beta.
+Lucía: ¿Busca Cloudflare o busca otro?
+Martín: Busca otro. Tiene tres proveedores detrás: Ceramic, Exa y Linkup. La usás por REST o desde Workers AI.
+Martín: Dicen que los tres proveedores soportan retención cero de datos en los pedidos que pasan por Cloudflare.
+Lucía: ¿Y cuánto sale?
+Martín: Se cobra con créditos de AI Gateway, a la tarifa del proveedor, sin recargo. O ponés tu propia clave del proveedor.
+Martín: Lo que no informan son los límites de uso.
+Lucía: Y eso para mí es lo importante. El domingo contamos que Simon Willison pedía topes de gasto duros por defecto en los servicios por uso.
+Martín: Exacto. Un agente buscando en loop sin límite claro es una factura sorpresa. Lo bueno es que el costo queda trazable en un solo lugar.
+Lucía: Y que haya tres proveedores atrás también ayuda. No quedás atado a un solo buscador.
+Martín: Sí, aunque sigue en beta. Yo no armaría nada crítico encima todavía.
+Lucía: Tercera. Reflection presentó Beam, un modelo de mezcla de expertos.
+Martín: ¿Grande?
+Lucía: Quinientos un mil millones de parámetros en total, veintitrés mil millones activos. Y un contexto de doscientos cincuenta y seis mil tokens, ampliable a un millón.
+Lucía: Prometen pesos abiertos con licencia Apache dos punto cero para este mes.
+Martín: ¿Y los números de rendimiento?
+Lucía: Setenta y siete coma dos en una versión difícil de SWE Bench Pro, y ochenta coma uno en Terminal Bench.
+Martín: Pero son benchmarks propios.
+Lucía: Propios, sí. Hoy solo hay acceso anticipado. Los pesos y el informe técnico llegan más adelante en octubre, y no hay precio de API.
+Martín: Entonces por ahora es un anuncio. Si los pesos salen como dicen, es noticia en serio. Mientras tanto, yo esperaría el informe.
+Lucía: Coincido. Un modelo de ese tamaño, abierto y con licencia Apache, sería muy interesante. Pero hasta que no lo pueda probar alguien que no sea Reflection, son promesas.
+Martín: Y aunque salgan los pesos, correr algo de quinientos mil millones de parámetros no es para la notebook de nadie.
+Lucía: No, eso seguro. Va a depender de quién lo ofrezca y a qué precio.
+Martín: Cuarta, y esta es fuerte. Wikimedia publicó que detectó agentes operados por OpenAI en sus proyectos.
+Lucía: ¿Haciendo qué?
+Martín: Según Wikimedia, editaron páginas de prueba, intentaron entrar a su Etherpad sin éxito, y hicieron millones de pedidos automáticos.
+Martín: Y dan otro dato: en 2025, el sesenta y cinco por ciento del tráfico que más recursos consume venía de bots.
+Lucía: Hay que aclarar que es el relato de una de las partes.
+Martín: Sí, es lo que cuenta Wikimedia. No vi respuesta de OpenAI en lo que tenemos.
+Lucía: Igual se conecta con algo de la semana pasada. Contamos el texto de Matthew Green que preguntaba si alcanza el sandboxing para contener agentes fuera de control.
+Martín: Y esto es justo lo que pasa cuando el agente sale a la web abierta. Ahí el sandbox no te cuida a los demás.
+Lucía: Mi opinión: más allá de quién tenga razón, cualquiera que arme agentes debería leer esa nota. Es lo que no querés que digan de tu agente.
+Martín: Y el dato del sesenta y cinco por ciento muestra quién termina pagando ese tráfico. No es el que manda el bot.
+Lucía: Quinta. Wagtail, el gestor de contenidos, contó cómo les fue un mes programando con GLM cinco punto tres Flash.
+Martín: Me gusta porque hay plata real.
+Lucía: Cubrieron la mitad de su uso con ese modelo por unos sesenta y ocho dólares.
+Lucía: En el mes completo consumieron unos dos mil millones de tokens, y un solo prototipo armado a puro vibe coding se llevó unos cuatrocientos cincuenta millones.
+Martín: ¿Algún problema?
+Lucía: Con la demanda alta, el rendimiento se degradó en varios proveedores y tuvieron que cambiar a otros modelos.
+Martín: Es un caso, no un estudio. Pero es una referencia concreta para presupuestar, y eso vale más que cualquier tabla de precios.
+Lucía: Y el sábado contamos que Anthropic publicó un análisis sobre GLM cinco punto tres y la difusión de capacidades ciber avanzadas.
+Martín: O sea, es una familia de modelos de la que se está hablando por varios lados. Hoy le toca el lado del bolsillo.
+Lucía: Lo de la degradación no es menor, igual. Si dependés de un solo modelo barato y se pone lento o se cae, te quedás parado.
+Lucía: Y última. Graphene, un proyecto en GitHub de analítica como código.
+Martín: ¿Qué hace?
+Lucía: Tenés SQL, métricas modeladas en una capa semántica y dashboards, todo en archivos y manejado por línea de comandos. La idea es que un agente pueda hacer trabajo de datos ahí.
+Lucía: Soporta Snowflake, BigQuery, ClickHouse, Postgres, MotherDuck y DuckDB.
+Martín: ¿Qué tan maduro está?
+Lucía: Es joven, tiene unas doscientas estrellas. Y la licencia es Elastic dos punto cero, que no es lo mismo que una licencia abierta tipo MIT.
+Martín: También el domingo contamos que Semantic Studio de Snowflake llegó a disponibilidad general. La capa semántica se está poniendo de moda por algo.
+Lucía: Para mí sirve como prueba de concepto. Para producción, todavía no.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día de quien programa o arma datos?
+Lucía: Primero, si construís agentes que salen a la web, lo de Wikimedia es un llamado de atención.
+Lucía: Límite de tasa, que el agente se identifique, y que quede todo registrado.
+Martín: Si tu agente hace millones de pedidos y nadie lo sabe, el problema es tuyo, no del sitio.
+Lucía: Segundo, la búsqueda web para agentes se está volviendo una pieza más, como una base de datos.
+Martín: Y con lo de Cloudflare, el costo queda en el mismo lugar donde ya controlás el gasto de los modelos.
+Lucía: Pero como no informan límites, ponelos vos.
+Martín: Tercero, lo de Wagtail. Antes de mandar todo al modelo más caro, probá uno flash para lo cotidiano.
+Lucía: Y medí. Ellos sabían cuántos tokens gastaban y en qué. Sin eso no hay forma de decidir.
+Martín: Y cuarto, si hacés informes, Graphene muestra una tendencia. Que las métricas estén definidas en archivos ayuda a que el agente no invente qué es una venta.
+Lucía: Eso es lo más útil de hoy, me parece. Un agente con SQL suelto inventa definiciones. Con una capa semántica, al menos usa las tuyas.
+Martín: Y lo de Cowork suma otra cosa. Revisá qué carpetas le das a cualquier agente, sobre todo si ahora el cómputo pasa a la nube.
+Lucía: Sí. Darle acceso a todo el disco porque es más cómodo es la peor costumbre que podemos tener.
+Martín: Y con Beam, mi consejo es no cambiar nada todavía. Anotalo y volvé cuando salga el informe técnico.
+
+## Oportunidades de consultoría
+Lucía: Vamos con la idea de consultoría. Hoy no pienso en la pyme.
+Martín: ¿En quién entonces?
+Lucía: En un equipo interno de operaciones de una empresa mediana. De esos que viven contestando las mismas preguntas desde un Excel.
+Martín: Cuánto vendimos, cuánto está pendiente, cómo viene contra el mes pasado.
+Lucía: Eso. Y cada uno calcula distinto, entonces en la reunión hay tres números para lo mismo.
+Martín: ¿Qué se automatiza?
+Lucía: Se pasan los datos a una base chica, puede ser DuckDB. Se definen las métricas una sola vez, en una capa semántica.
+Lucía: Y después un agente contesta las preguntas usando esas definiciones, no las que se le ocurran.
+Martín: Graphene sirve para mostrarlo como prueba de concepto. Pero con esa licencia y lo nuevo que es, hay que revisarlo antes de dejarlo instalado.
+Lucía: ¿Qué haría falta?
+Martín: Lo más difícil no es técnico. Es sentarse con el equipo y acordar qué significa cada métrica.
+Martín: Después, datos medianamente limpios, alguien que revise las respuestas al principio, y acceso de solo lectura.
+Lucía: Y empezar con tres o cuatro preguntas, no con todo el negocio.
+Martín: Y si alguna pregunta necesita información de afuera, como precios de referencia publicados en la web, ahí podría entrar una búsqueda como la de Cloudflare. Pero eso es para una segunda etapa.
+Lucía: Primero que los números internos cierren. Después vemos.
+Martín: Es una idea para charlar con ellos. No hay garantía de que ahorre tiempo hasta que se pruebe.
+
+## Una cosa para probar hoy
+Martín: ¿Qué probamos hoy?
+Lucía: Graphene con DuckDB, en tu máquina. Media hora.
+Martín: Dale, contá el paso a paso.
+Lucía: Uno. Buscá Graphene en GitHub, el link está en las notas, y cloná el repositorio.
+Lucía: Dos. Agarrá un CSV tuyo que no tenga datos sensibles. Unas ventas de prueba, por ejemplo, y cargalo en un archivo de DuckDB.
+Lucía: Tres. Seguí el README para conectarlo a ese archivo.
+Lucía: Cuatro. Definí una sola métrica. Por ejemplo, ventas totales por mes.
+Martín: Una sola, no te entusiasmes.
+Lucía: Cinco. Pedile a tu agente de programación que arme un informe usando esa métrica.
+Lucía: Y seis. Compará el resultado con lo que te da tu planilla.
+Martín: Si coinciden, ya tenés algo para mostrar. Si no coinciden, aprendiste dónde está la diferencia, que también sirve.
+Lucía: Y fijate cómo pregunta el agente. Si usa la métrica que definiste o si se arma su propio SQL por el costado.
+Martín: Eso te dice si la capa semántica realmente está sirviendo para algo.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: Meta habría empezado a cobrar los mensajes de servicio en la API de WhatsApp Business desde el primero de octubre.
+Martín: No entró porque las cifras salen de una fuente secundaria y no encontramos tarifa oficial para Argentina. Si les interesa, lo seguimos.
+Lucía: Después, se dice que OpenAI va a probar anuncios visuales mientras ChatGPT genera imágenes.
+Martín: Fuente secundaria, y no está claro qué impacto tiene acá.
+Lucía: También, que DeepSeek V cuatro punto uno Flash achica a 3 por ciento la brecha con los modelos de Estados Unidos en LiveBench.
+Martín: Otra vez fuente secundaria, y el lanzamiento fue en septiembre.
+Lucía: Y Olmo-core tres, infraestructura abierta para entrenar modelos de mezcla de expertos grandes.
+Martín: Más investigación que uso práctico, y quedó fuera de la ventana de fechas.
+Lucía: Si quieren que sumemos alguna, avisen.
+Martín: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.

@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 6 de octubre: Cloudflare suma búsqueda web para agentes y Reflection anuncia Beam, un modelo abierto de 501B",
+  "summary": "Cloudflare lanza en beta una API de búsqueda web para agentes y Reflection presenta Beam, un modelo de mezcla de expertos con pesos abiertos prometidos para octubre. Wikimedia denuncia actividad de agentes de OpenAI, Wagtail cuenta el costo real de programar un mes con GLM 5.3 Flash, Cowork de Anthropic pasa a la nube y Graphene propone analítica como código para agentes.",
+  "stories": [
+    {
+      "title": "Cowork de Anthropic pasa la inferencia y la VM a la nube, con un sandbox aislado por sesión",
+      "url": "https://simonwillison.net/2026/Oct/5/felix-rieseberg/"
+    },
+    {
+      "title": "Cloudflare lanza Web Search API en beta, integrada a AI Gateway",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-02-introducing-web-search-api/"
+    },
+    {
+      "title": "Reflection presenta Beam: MoE de 501B parámetros con pesos abiertos Apache 2.0 prometidos para este mes",
+      "url": "https://reflection.ai/blog/introducing-beam"
+    },
+    {
+      "title": "Wikimedia documenta actividad de agentes de OpenAI en sus proyectos",
+      "url": "https://diff.wikimedia.org/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
+    },
+    {
+      "title": "Un mes programando con GLM 5.3 Flash: costo real y tokens (Wagtail)",
+      "url": "https://wagtail.org/blog/one-month-on-glm-53-flash/"
+    },
+    {
+      "title": "Graphene: analítica como código para que agentes hagan trabajo de datos con SQL y capa semántica",
+      "url": "https://github.com/graphene-data/graphene"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Olmo-core 3: infraestructura abierta para entrenar MoE grandes",
+      "url": "https://huggingface.co/blog/allenai/olmocore3"
+    },
+    {
+      "title": "Meta empezó a cobrar los mensajes de servicio en WhatsApp Business API desde el 1 de octubre",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "title": "OpenAI probará anuncios visuales en la generación de imágenes de ChatGPT",
+      "url": "https://aiweekly.co/alerts/openai-to-test-visual-ads-during-chatgpt-image-generation"
+    },
+    {
+      "title": "DeepSeek V4.1 Flash achica la brecha con los modelos de EE.UU. a 3% en LiveBench",
+      "url": "https://aiweekly.co/alerts/deepseek-v41-flash-narrows-us-china-ai-gap-to-3-on-livebench"
+    }
+  ]
+}
