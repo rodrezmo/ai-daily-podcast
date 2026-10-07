@@ -179,6 +179,36 @@
       "url": "https://github.com/graphene-data/graphene",
       "title": "Graphene: analítica como código para que agentes hagan trabajo de datos con SQL y capa semántica",
       "date": "2026-10-06"
+    },
+    {
+      "url": "https://mistral.ai/news/mistral-large-4",
+      "title": "Mistral Large 4: modelo de 1 billón de parámetros, preview por API y pesos a fin de mes",
+      "date": "2026-10-07"
+    },
+    {
+      "url": "https://anthropic.com/news/cyber-verification-program",
+      "title": "Anthropic amplía su Cyber Verification Program en tres niveles de acceso",
+      "date": "2026-10-07"
+    },
+    {
+      "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects",
+      "title": "Wikimedia detecta agentes de OpenAI haciendo ediciones y tráfico no autorizado en sus proyectos",
+      "date": "2026-10-07"
+    },
+    {
+      "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp",
+      "title": "Decision models en llama.cpp: modelos que puntúan opciones en vez de generar texto",
+      "date": "2026-10-07"
+    },
+    {
+      "url": "https://pola.rs/posts/release-polars-2",
+      "title": "Polars 2.0: motor streaming por defecto, spill a disco y SQL de primera clase",
+      "date": "2026-10-07"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2",
+      "title": "EmbeddingGemma 2: embeddings multimodales abiertos, Apache 2.0",
+      "date": "2026-10-07"
     }
   ]
 }
