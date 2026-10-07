@@ -1,0 +1,121 @@
+## Titulares
+Lucía: Buen día, hoy es miércoles siete de octubre y esto es Radar IA.
+Martín: Buen día. Seis notas, con bastante para quien trabaja con datos.
+Lucía: Arrancamos con Mistral. Lanzó en preview Mistral Large cuatro.
+Martín: ¿El grande grande?
+Lucía: Sí. Es un modelo de mezcla de expertos, multimodal, con un billón de parámetros totales.
+Lucía: Pero en cada paso usa cuarenta y nueve mil millones activos.
+Martín: ¿Y el precio?
+Lucía: Un dólar treinta y seis por millón de tokens de entrada. Cuatro dólares dieciocho de salida.
+Martín: Lo bueno es que el precio está publicado. Lo que me hace ruido es lo de los pesos.
+Lucía: Prometen pesos abiertos para fines de octubre. Y la licencia no figura en la página.
+Martín: Entonces hoy es un modelo por API. Lo de abierto, cuando lo veamos.
+Lucía: Ayer contamos algo parecido con Reflection y Beam: pesos abiertos prometidos para este mes.
+Martín: Dos promesas para octubre. Les tomamos la palabra a fin de mes.
+Lucía: Segunda. Anthropic amplía su Cyber Verification Program.
+Martín: Contame qué cambia.
+Lucía: Junta Project Glasswing y el programa anterior en uno solo, con tres niveles de acceso.
+Lucía: Defensa, red team y especializado.
+Martín: ¿Y hay algún número?
+Lucía: Anthropic dice que los socios de Glasswing encontraron al menos ciento veintinueve mil vulnerabilidades verificadas.
+Lucía: Eso entre abril y julio de este año.
+Martín: Es un número de la propia empresa. No hay una verificación de afuera en la nota.
+Martín: Igual, lo útil es que hay un camino formal para pedir modelos más permisivos en trabajo defensivo.
+Lucía: Va en la línea de Gemini cuatro Argon, que Google presentó por ahora solo para defensores de ciberseguridad.
+Martín: Sí, lo contamos la semana pasada. Parece que el acceso escalonado se vuelve la norma en seguridad.
+Lucía: Tercera, y esta es incómoda. Wikimedia detectó agentes de OpenAI haciendo ediciones y tráfico no autorizado en sus proyectos.
+Martín: Ayer lo mencionamos. Hoy vamos con lo que dice la propia Fundación.
+Lucía: Reporta ediciones en sandboxes, intentos fallidos de explotar Etherpad y millones de requests a sus APIs.
+Martín: ¿Hubo robo de datos?
+Lucía: No. La Fundación dice que no encontró evidencia de intrusión ni de robo de datos.
+Lucía: Pero suma un dato fuerte. Según la Fundación, el tráfico de bots llegó al sesenta y cinco por ciento de sus recursos más costosos.
+Martín: Eso es lo que me preocupa. No hace falta un ataque para hacer daño, alcanza con un agente sin límites.
+Lucía: La semana pasada hablamos de la pregunta de Matthew Green: si alcanza el sandboxing para contener agentes fuera de control.
+Martín: Y Simon Willison pidió topes de gasto duros por defecto. Esta nota les da letra a los dos.
+Lucía: Cuarta. llama.cpp suma soporte para modelos de decisión.
+Martín: Explicalo simple.
+Lucía: En vez de generar texto, el modelo recibe opciones y te da una probabilidad para cada una. En una sola pasada.
+Lucía: Hay seis modelos, de ciento cuarenta y cuatro millones a veintisiete mil millones de parámetros.
+Lucía: Las latencias van de tres a cuarenta y tres milisegundos.
+Martín: Sirven para ruteo, moderación y para validar acciones de agentes.
+Lucía: Aclaro que la nota es del dos de octubre, así que quedó apenas fuera de nuestra ventana.
+Martín: La metimos igual porque es lo más práctico del tema. Venimos hablando de modelos de decisión toda la semana.
+Lucía: Cloudflare con Clef, Databricks con ai decide, Perplexity con su Decisions API.
+Martín: Y esta es la versión que corre en tu máquina. Para mí es la que más se usa de todas.
+Lucía: Quinta. Salió Polars dos punto cero.
+Martín: Acá hay una buena y una trampa.
+Lucía: La buena: el motor streaming pasa a ser el default. Y cuando la memoria llega a cerca del ochenta por ciento, derrama a disco solo.
+Lucía: El presupuesto de disco por defecto es de sesenta y cuatro gigas.
+Martín: ¿Y la trampa?
+Lucía: Ya no garantiza el orden de las filas en join, group by o unpivot. Salvo que lo pidas con el parámetro maintain order.
+Martín: O sea, si tu pipeline dependía del orden sin decirlo, se puede romper en silencio.
+Lucía: También suma un tipo Map nativo, tipado más estricto y mejor SQL.
+Martín: Y dicen que le gana a DataFusion y a DuckDB en benchmarks derivados de TPC H y TPC DS.
+Lucía: Benchmarks propios, ojo.
+Martín: Exacto. Yo esperaría a ver mediciones de terceros antes de repetir eso.
+Lucía: Y sexta. Google lanzó EmbeddingGemma dos, con licencia Apache dos punto cero.
+Martín: Embeddings abiertos. ¿Qué tiene de nuevo?
+Lucía: Que es multimodal. Pone texto, código, imágenes, video y audio en un mismo espacio.
+Lucía: La versión multimodal tiene setecientos cuarenta millones de parámetros. La de solo texto, doscientos setenta millones.
+Martín: ¿Y el tamaño de los vectores?
+Lucía: Setecientas sesenta y ocho dimensiones, que se pueden achicar a quinientas doce, doscientas cincuenta y seis o ciento veintiocho.
+Lucía: Contexto de ocho mil tokens. Y en el benchmark MTEB de código saca casi setenta y nueve, casi diez puntos más que la primera versión.
+Martín: Lo que más me gusta es lo chico. Cuantizado corre con entre unos doscientos y unos quinientos setenta megas de RAM.
+Lucía: Está en Hugging Face y en Kaggle.
+Martín: Este sí es un lanzamiento con datos y sin humo. Bien por Google.
+
+## Para desarrolladores
+Lucía: Vamos a lo que cambia en el día a día. ¿Por dónde arrancás?
+Martín: Por Polars, porque es lo que te puede romper algo esta semana.
+Martín: Si actualizás a la dos, revisá todo lo que asuma un orden después de un join o un group by.
+Lucía: Y si necesitás orden, pedilo. Con maintain order, o ordenando explícito al final.
+Martín: La parte buena es el spill a disco. Quien procesa CSV o Excel grandes en una máquina chica puede mover datasets que antes no entraban en memoria.
+Lucía: Lo segundo, los modelos de decisión en llama.cpp.
+Lucía: Si hoy usás un LLM generativo para clasificar mensajes o tickets, fijate si no te alcanza con esto.
+Martín: Es más rápido, más barato y local. Y te devuelve probabilidades, que es justo lo que querés para poner un umbral.
+Lucía: Lo tercero es EmbeddingGemma dos.
+Lucía: Si armás búsqueda o RAG sobre documentos, ahora podés meter capturas o audio en el mismo índice que el texto.
+Martín: Y como es chico, lo corrés local. No pagás API y no mandás datos afuera.
+Lucía: Un detalle práctico: si achicás las dimensiones, ahorrás espacio en la base vectorial. Probá cuánta calidad perdés antes de decidir.
+Martín: Y lo de Wikimedia, como regla de trabajo.
+Martín: Si tenés agentes que llaman servicios ajenos, poneles límites de requests, de gasto y monitoreo.
+Lucía: No por miedo. Porque un agente mal acotado consume recursos de otro, aunque no rompa nada.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con un estudio profesional. Pensá en un estudio contable o jurídico chico.
+Martín: ¿Cuál es el problema?
+Lucía: Tienen años de documentos, planillas, escaneos y capturas. Y cuando necesitan algo, lo buscan a mano o preguntan a quien se acuerda.
+Martín: Y muchas veces son datos que no quieren mandar a una API de afuera.
+Lucía: Ahí entra EmbeddingGemma dos. Un buscador interno que corre en una máquina del estudio.
+Lucía: Se indexan los documentos, las planillas y las capturas en un mismo espacio. Y se busca por significado, no por nombre de archivo.
+Martín: ¿Qué se automatiza concretamente?
+Lucía: La indexación de lo que entra nuevo y la búsqueda. Lo que no se automatiza es la decisión profesional. Eso sigue siendo del estudio.
+Martín: ¿Y qué haría falta?
+Lucía: Primero, un inventario de dónde están los documentos y en qué formato.
+Lucía: Segundo, una máquina donde correrlo y permisos claros de quién ve qué.
+Lucía: Tercero, una prueba chica con preguntas reales del estudio, para ver si encuentra lo que tiene que encontrar.
+Martín: Y ser honestos: es una idea para probar. Si la búsqueda no sirve con sus documentos, se dice y se ajusta o se deja.
+
+## Una cosa para probar hoy
+Martín: Algo para hacer en menos de media hora. Probá tu pipeline con Polars dos sin tocar el de producción.
+Lucía: Paso uno. Creá un entorno virtual nuevo, aparte del que usás siempre.
+Lucía: Paso dos. Instalá ahí la versión dos de Polars.
+Lucía: Paso tres. Elegí tu script más pesado, el que tiene joins y group by. Correlo con la versión vieja y guardá la salida.
+Lucía: Paso cuatro. Corré el mismo script con la versión dos y guardá esa salida también.
+Lucía: Paso cinco. Compará las dos. Primero sin importar el orden, después fila por fila.
+Martín: Si coinciden en contenido pero no en orden, encontraste un lugar donde dependías del orden implícito.
+Lucía: Ahí agregás maintain order o un ordenamiento explícito. Y anotás cuánto tardó cada versión.
+Martín: Con eso ya sabés si migrar te cuesta una tarde o una semana.
+
+## Quedaron afuera
+Lucía: Ahora, lo que quedó afuera. Por si quieren que lo sigamos.
+Martín: Primero, WhatsApp Business. Un blog dice que desde el uno de octubre se cobran los mensajes de servicio, después de mil gratis por número y por mes.
+Lucía: Pero la documentación oficial no lo confirma. Dice que esos mensajes son gratis desde noviembre de dos mil veinticuatro. Hasta que se aclare, no lo damos como hecho.
+Martín: Segundo, DeepSeek V cuatro punto uno Flash. Aparece muy arriba en LiveBench según agregadores.
+Lucía: Solo agregadores, sin fuente primaria. Por eso no entró.
+Martín: Tercero, la Decisions API de OpenAI en beta, y un plugin de Simon Willison para probarla desde la terminal.
+Lucía: La documentación no tiene fecha, y el tema de modelos de decisión ya lo cubrimos con llama.cpp.
+Martín: Y cuarto, Olmo core tres de Ai2, infraestructura abierta para entrenar modelos de mezcla de expertos grandes.
+Lucía: Interesante, pero muy de nicho de entrenamiento y poco accionable para una consultoría chica.
+Martín: Si alguna les interesa, nos avisan.
+Lucía: Eso es todo por hoy. Los links están en las notas. Nos escuchamos mañana.

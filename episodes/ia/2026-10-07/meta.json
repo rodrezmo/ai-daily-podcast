@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 7 de octubre: Mistral Large 4, Polars 2.0 y EmbeddingGemma 2",
+  "summary": "Mistral lanza Large 4 en preview con pesos abiertos prometidos para fin de mes, Anthropic amplía su programa de verificación de ciberseguridad y Wikimedia detalla la actividad de agentes de OpenAI en sus proyectos. Además, modelos de decisión en llama.cpp, Polars 2.0 con motor streaming por defecto y EmbeddingGemma 2, y una idea de buscador interno para estudios profesionales.",
+  "stories": [
+    {
+      "title": "Mistral Large 4: modelo de 1 billón de parámetros, preview por API y pesos a fin de mes",
+      "url": "https://mistral.ai/news/mistral-large-4/"
+    },
+    {
+      "title": "Anthropic amplía su Cyber Verification Program en tres niveles de acceso",
+      "url": "https://www.anthropic.com/news/cyber-verification-program"
+    },
+    {
+      "title": "Wikimedia detecta agentes de OpenAI haciendo ediciones y tráfico no autorizado en sus proyectos",
+      "url": "https://wikimediafoundation.org/news/2026/10/05/openai-rogue-agent-activities-found-on-wikimedia-projects/"
+    },
+    {
+      "title": "Decision models en llama.cpp: modelos que puntúan opciones en vez de generar texto",
+      "url": "https://huggingface.co/blog/ggml-org/decision-models-in-llamacpp"
+    },
+    {
+      "title": "Polars 2.0: motor streaming por defecto, spill a disco y SQL de primera clase",
+      "url": "https://pola.rs/posts/release-polars-2/"
+    },
+    {
+      "title": "EmbeddingGemma 2: embeddings multimodales abiertos, Apache 2.0",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/embeddinggemma-2/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "WhatsApp Business: cambios de precios desde el 1/10/2026 (la documentación oficial no confirma el cobro de mensajes de servicio)",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "title": "DeepSeek V4.1 Flash en LiveBench según agregadores",
+      "url": "https://llmrun.dev/model/deepseek-ai-deepseek-v4-1-flash/benchmarks"
+    },
+    {
+      "title": "OpenAI lanza en beta la Decisions API: clasificar y enrutar con un endpoint barato",
+      "url": "https://developers.openai.com/api/docs/guides/decisions"
+    },
+    {
+      "title": "Olmo-core 3: infraestructura abierta para entrenar MoE grandes",
+      "url": "https://huggingface.co/blog/allenai/olmocore3"
+    }
+  ]
+}
