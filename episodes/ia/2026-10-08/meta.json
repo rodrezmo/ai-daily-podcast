@@ -1,0 +1,52 @@
+{
+  "title": "Radar IA, 8 de octubre: Claude Haiku 5.5 baja los precios y llega el Personal Agent Protocol",
+  "summary": "Anthropic lanza Claude Haiku 5.5 con precios mucho más bajos que Haiku 4.5, Sierra y Meta proponen un protocolo abierto para que agentes personales se autentiquen con comercios y Google baja el precio de imágenes con Nano Banana 2.1. Además, los modelos de decisión abiertos de Liquid AI, el oro olímpico de Nemotron y el debate sobre regulación y adopción de IA en Argentina.",
+  "stories": [
+    {
+      "title": "Anthropic lanza Claude Haiku 5.5 con precios mucho más bajos",
+      "url": "https://www.anthropic.com/claude-haiku-5-5"
+    },
+    {
+      "title": "LiquidAI d1: modelos abiertos de decisión para el borde (3B y 600M)",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1"
+    },
+    {
+      "title": "NVIDIA afina Nemotron y llega a nivel oro en IOI e IMO 2026",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-ioi-and-imo-2026"
+    },
+    {
+      "title": "Sierra y Meta proponen el Personal Agent Protocol para que agentes personales se autentiquen con comercios",
+      "url": "https://thenextweb.com/news/personal-agent-protocol-sierra-meta"
+    },
+    {
+      "title": "Google lanza Nano Banana 2.1: imágenes a la mitad de precio, con límites",
+      "url": "https://ai.google.dev/gemini-api/docs/models/gemini-nano-banana-2.1"
+    },
+    {
+      "title": "El Economista: en Argentina se debate cómo regular la IA mientras las empresas adoptan más lento que las personas",
+      "url": "https://eleconomista.com.ar/economia/regulacion-ia-debate-autonomia-control-humano-n98642"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "OpenAI Decisions API: guía oficial (clasificación y ruteo con gpt-6-luna)",
+      "url": "https://developers.openai.com/api/docs/guides/decisions"
+    },
+    {
+      "title": "Plugin llm-openai-decisions: probando la Decisions API desde la línea de comandos",
+      "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/"
+    },
+    {
+      "title": "WhatsApp Business Platform: tabla de cambios de precios por mercado (hasta oct 2026)",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "title": "DeepSeek V4.1 Flash: los alias viejos ya apuntan al modelo nuevo",
+      "url": "https://api-docs.deepseek.com/news/news0910"
+    },
+    {
+      "title": "OpenAI publica en GitHub 722 manuscritos de matemática generados por un modelo interno",
+      "url": "https://github.com/openai/math"
+    }
+  ]
+}

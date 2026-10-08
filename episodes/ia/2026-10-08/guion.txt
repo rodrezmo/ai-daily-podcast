@@ -1,0 +1,105 @@
+## Titulares
+Lucía: Hola, buen día. Es jueves ocho de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay un modelo barato de Anthropic, modelos chicos para decidir rápido, olimpíadas, agentes que van de compras, imágenes que dicen que bajaron a mitad de precio y un debate argentino sobre regulación.
+Lucía: Arranquemos por lo que más toca el bolsillo. Anthropic lanzó Claude Haiku cinco punto cinco.
+Martín: Y el precio es lo que llama la atención.
+Lucía: Sí. Cuesta diez centavos de dólar por millón de tokens de entrada y cincuenta centavos por millón de salida.
+Lucía: Eso vale hasta los cien mil tokens. Por encima, pasa a cincuenta centavos y dos dólares y medio.
+Martín: Para comparar, Haiku cuatro punto cinco estaba en un dólar de entrada y cinco de salida.
+Lucía: O sea, una décima parte. Además trae nivel de esfuerzo ajustable y está en AWS, Google Cloud y Azure.
+Martín: Anthropic publica un setenta y dos por ciento en OSWorld dos punto uno, en modo offline. Haiku cuatro punto cinco tenía menos del dieciséis.
+Lucía: Y de paso bajaron a la mitad el precio de lectura de caché de Sonnet cinco punto cinco.
+Martín: Que lo contamos el viernes pasado, cuando salió Sonnet cinco punto cinco.
+Lucía: Ahora, el asterisco. Anthropic reconoce que el tokenizador nuevo genera algo más de tokens para el mismo texto. Simon Willison lo estima en un veinticinco por ciento, pero esa cifra no pudimos confirmarla.
+Martín: Entonces el ahorro real es menor que la cuenta de la vidriera.
+Lucía: Sigue siendo mucho más barato. Pero hay que medirlo con tus textos, no con la tabla de precios.
+Martín: Segunda. Liquid AI publicó en Hugging Face dos modelos abiertos que llama de decisión.
+Lucía: Ayer hablamos justamente de los decision models en llama punto cpp, modelos que puntúan opciones en vez de generar texto.
+Martín: Exacto. Uno es d uno de tres mil millones de parámetros, que acepta texto e imagen.
+Martín: El otro es d uno omni, de seiscientos millones, experimental, que suma audio.
+Lucía: ¿Y qué dicen los números?
+Martín: El de tres mil millones saca casi cuarenta y nueve puntos en su Decision Index. Dicen que es el mejor entre los modelos de menos de diez mil millones.
+Martín: Y es rápido. Ocho milisegundos por pregunta en una RTX cuarenta noventa, y cincuenta en una Jetson Orin Nano.
+Lucía: Lo que no dice el post es la licencia.
+Martín: No. Así que antes de pensar en usarlo en algo serio, hay que ir a la ficha del modelo y fijarse.
+Lucía: Tercera. NVIDIA afinó un Nemotron y dice que llegó a nivel oro en las olimpíadas internacionales de informática y de matemática de este año.
+Martín: El modelo tiene quinientos cincuenta mil millones de parámetros, con cincuenta y cinco mil millones activos.
+Lucía: En la de informática sacó unos quinientos treinta y cinco puntos sobre seiscientos. El umbral de oro era de unos trescientos sesenta.
+Martín: Ojo, que esa corrida no es oficial.
+Lucía: En la de matemática sacó treinta sobre cuarenta y dos. El oro arrancaba en veintinueve.
+Martín: Raspando, pero oro.
+Lucía: Para entrenarlo usaron veintidós mil problemas de programación y unos cuatrocientos quince mil ejemplos de pruebas.
+Martín: Mi opinión: muestra hasta dónde llega un modelo abierto en razonamiento. Pero son olimpíadas, no planillas de oficina. Y tampoco declaran licencia.
+Lucía: Cuarta. Según The Next Web, Sierra y Meta proponen el Personal Agent Protocol.
+Martín: La idea es que tu agente personal se pueda identificar ante un comercio.
+Lucía: Está basado en OAuth. El agente puede entrar como invitado y consultar, por ejemplo, stock o política de devoluciones.
+Lucía: Y si el cliente inicia sesión, le da al agente acceso de lectura o de escritura.
+Martín: Los socios fundadores son Walmart, Shopify, Stripe, Rocket, Genesys e Instinct.
+Lucía: La especificación cero punto uno sale más adelante en octubre. Y los pagos quedan para una extensión.
+Martín: Compite con el Trusted Agent Protocol de Visa. Así que todavía no está claro qué estándar va a ganar.
+Lucía: Y aclaremos que lo leímos en The Next Web. El anuncio original de Sierra no lo pudimos abrir.
+Martín: Quinta. Google sacó Nano Banana dos punto uno, su modelo para generar y editar imágenes.
+Lucía: Hace imágenes en uno, dos y cuatro K, y acepta hasta catorce imágenes de referencia.
+Martín: Lo de mitad de precio viene de afuera. Según The Decoder, citado por AI Weekly, una imagen en uno K baja de casi siete centavos de dólar a poco más de tres.
+Lucía: Y una en cuatro K, de unos quince centavos a unos siete y medio.
+Martín: Pero esos precios no están en la página del modelo de Google. Así que tomalos con pinzas hasta verlos en la lista oficial.
+Lucía: Lo que sí dice la página es que no admite function calling, ni salida estructurada, ni caché, ni Live API.
+Martín: O sea, barato para hacer imágenes. Incómodo para meterlo dentro de un agente.
+Lucía: Y la sexta, local. El Economista hizo una crónica de AILAT veintiséis, en Buenos Aires, sobre cómo regular la IA en Argentina.
+Martín: La nota cuenta que Milei rechazó ante la ONU los controles estatales preventivos.
+Lucía: Y cuenta que una propuesta de empresas operadas por IA se modificó, para que un humano mantenga la responsabilidad legal.
+Martín: Después vienen los números. Según Google, el sesenta y cinco por ciento de los argentinos usa IA. Tres puntos arriba del promedio global.
+Lucía: Pero, siempre según lo que dijeron ahí, solo algo más del veinte por ciento de las empresas la adopta de verdad. Y un cuarenta y cuatro por ciento planea empezar este año.
+Martín: Importante: esos números los dio un orador de Google en el evento, y el estudio es de Google. No es una medición independiente.
+Lucía: Igual, la brecha entre la gente que la usa y las empresas que no la usan se siente bastante real.
+
+## Para desarrolladores
+Martín: Vamos a lo práctico. ¿Qué te cambia esto si programás o armás datos?
+Lucía: Lo primero es Haiku cinco punto cinco. Si tenés tareas de mucho volumen, como clasificar mails o mensajes, o sacar datos de planillas, el costo por tarea baja bastante.
+Martín: Pero no cambies el modelo y listo. Por lo del tokenizador, el mismo texto ahora son más tokens.
+Lucía: Medí con tus datos reales. Y probá el nivel de esfuerzo: para clasificar, seguramente no te hace falta el más alto.
+Martín: El identificador es claude guion haiku guion cinco guion cinco. Y si usás Sonnet cinco punto cinco con mucho caché, revisá la factura, que esa lectura ahora sale la mitad.
+Lucía: Segundo, Nano Banana dos punto uno. Si querés usarlo en un flujo automático, pensalo en dos pasos.
+Martín: Claro. Un modelo de texto decide qué imagen hace falta y arma el pedido. Nano Banana solo genera.
+Lucía: Porque no te va a devolver salida estructurada ni llamar funciones.
+Martín: Tercero, los d uno de Liquid. Para clasificar o rutear en una máquina propia, sin mandar datos afuera, puede ser una opción.
+Lucía: Siempre que la licencia te lo permita. Ese es el primer paso, antes del benchmark.
+Martín: Y lo del protocolo de agentes, por ahora, es para seguirlo de cerca. No hay especificación publicada todavía.
+Lucía: Si trabajás con una tienda online, vale la pena leer la versión cero punto uno cuando salga. Pero no implementes nada sobre un anuncio.
+
+## Oportunidades de consultoría
+Martín: Hoy no vamos con la pyme. ¿A quién le sirve más lo de hoy?
+Lucía: Yo pensé en un estudio contable chico. Reciben comprobantes y consultas de clientes por WhatsApp y por mail, todo mezclado.
+Martín: Y alguien pasa la mañana leyendo, separando y copiando datos a una planilla.
+Lucía: Ese es el problema. La idea es automatizar la primera pasada.
+Lucía: Un modelo barato, como Haiku cinco punto cinco, clasifica cada mensaje. Es factura, es consulta, es urgente, o es otra cosa.
+Martín: Y si es un comprobante, saca los campos básicos y los deja en la planilla que el estudio ya usa.
+Lucía: Pero con una persona que revisa antes de que eso cuente para algo.
+Martín: Que va en línea con lo que contaba El Economista: el humano mantiene la responsabilidad.
+Lucía: Exacto. ¿Qué haría falta? Primero, una muestra de mensajes reales, anonimizados, para probar.
+Martín: Segundo, acordar las categorías con el estudio, y no inventarlas desde afuera.
+Lucía: Tercero, definir cómo llegan los mensajes. Una casilla de mail es fácil. WhatsApp depende de cómo lo tengan armado.
+Martín: Y medir el costo real con el tokenizador nuevo antes de decir cualquier número.
+Lucía: Es una idea para charlar con ellos, no una promesa. Si la brecha que mencionaban en el evento es real, hay mucho estudio en esa situación.
+
+## Una cosa para probar hoy
+Martín: Algo para hacer en menos de media hora.
+Lucía: Medir cuánto te cuesta de verdad Haiku cinco punto cinco con tus textos.
+Martín: Contame el paso a paso.
+Lucía: Uno. Juntá veinte mensajes reales de algo que ya clasifiques. Mails, consultas, lo que tengas. Sacales datos personales.
+Lucía: Dos. Escribí un prompt corto que pida una sola categoría como respuesta.
+Lucía: Tres. Mandá los veinte a Haiku cuatro punto cinco y anotá los tokens de entrada y de salida que te devuelve la API.
+Lucía: Cuatro. Mandá los mismos veinte a Haiku cinco punto cinco, con esfuerzo bajo, y anotá lo mismo.
+Martín: Ahí ves cuánto creció la cantidad de tokens con el tokenizador nuevo.
+Lucía: Cinco. Multiplicá cada uno por su precio y compará el costo por mensaje.
+Lucía: Seis. Mirá si las categorías coinciden. Si el más barato se equivoca más, eso también es costo.
+Martín: Y con ese número ya podés decidir si te conviene migrar, sin creerle a nadie.
+
+## Quedaron afuera
+Lucía: Antes de irnos, algunas que quedaron afuera.
+Martín: La guía de la Decisions API de OpenAI, para clasificar y rutear con respuestas tipadas. Quedó afuera porque sigue en beta y la página no tiene fecha clara.
+Lucía: La tabla de precios de WhatsApp Business. Hay cambios en varios países, pero la página no muestra ninguno para Argentina este año.
+Martín: Y lo del fin de la mensajería gratuita viene de un análisis de Omdia que no pudimos confirmar con Meta.
+Lucía: DeepSeek V cuatro punto uno Flash. La documentación dice que los nombres viejos ya apuntan al modelo nuevo, pero no hay anuncio oficial y los precios de terceros se contradicen.
+Martín: Y OpenAI publicó en GitHub setecientos veintidós manuscritos de matemática hechos por un modelo interno. El propio repositorio advierte que algunos pueden tener errores, así que lo dejamos para cuando esté más verificado.
+Lucía: Si querés que sumemos alguna de estas, avisanos. Gracias por escuchar, nos vemos mañana.
