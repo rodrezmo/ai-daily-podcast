@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 9 de octubre: ChatGPT estrena interfaz interactiva y Anthropic lanza Cyber Mission",
+  "summary": "ChatGPT empieza a responder con botones, calculadoras y gráficos editables, Anthropic presenta Cyber Mission para infraestructura crítica y escaneo gratuito de open source, y Google Cloud muestra agentes Gemini persistentes. Además, un port de TypeScript en Rust hecho con Claude, la Decisions API de OpenAI y el programa de Anthropic para startups.",
+  "stories": [
+    {
+      "title": "ChatGPT estrena Intelligent UI con GPT-6: respuestas con botones, calculadoras y gráficos editables",
+      "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/"
+    },
+    {
+      "title": "Anthropic lanza Cyber Mission: programa para infraestructura crítica y escaneo gratuito de proyectos open source",
+      "url": "https://www.anthropic.com/news/anthropic-cyber-mission"
+    },
+    {
+      "title": "Google Cloud presenta agentes Gemini persistentes que trabajan tareas de varios días",
+      "url": "https://venturebeat.com/orchestration/google-cloud-unveils-persistent-gemini-agents-for-long-running-tasks-and-they-get-their-own-gmail-calendar-and-drive-storage"
+    },
+    {
+      "title": "tsc-rs: un port en Rust del compilador de TypeScript 7 hecho con Claude Opus, con 181.711 tests pasando",
+      "url": "https://github.com/pingdotgg/ts-rust"
+    },
+    {
+      "title": "OpenAI Decisions API: guía oficial con precios y tipos de pregunta",
+      "url": "https://developers.openai.com/api/docs/guides/decisions"
+    },
+    {
+      "title": "Anthropic regala un año de Claude Team y USD 1.000 en créditos a startups",
+      "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "NVIDIA NeMo-DCR: sincronizar pesos de 1 billón de parámetros en RL pasa de 87,5 minutos a 150 segundos",
+      "url": "https://arxiv.org/abs/2610.08430"
+    },
+    {
+      "title": "Simon Willison prueba la Decisions API de OpenAI con un plugin para LLM",
+      "url": "https://simonwillison.net/2026/Oct/6/llm-openai-decisions/"
+    },
+    {
+      "title": "WhatsApp Business Platform: calendario de cambios de precios, con Argentina y moneda local",
+      "url": "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    },
+    {
+      "title": "DeepSeek V4.1 Flash: los nombres viejos de la API ya se sirven con el modelo nuevo",
+      "url": "https://api-docs.deepseek.com/news/news0910"
+    }
+  ]
+}

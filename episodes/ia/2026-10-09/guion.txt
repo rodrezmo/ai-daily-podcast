@@ -1,0 +1,102 @@
+## Titulares
+Lucía: Buen día, hoy es viernes nueve de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y una de ellas trae números que dan para discutir un rato.
+Lucía: Arranquemos por la más visible. ChatGPT estrena lo que OpenAI llama Intelligent UI, con GPT seis.
+Martín: ¿Qué es eso, en concreto?
+Lucía: Que las respuestas ya no son solo texto. Mezclan botones, calculadoras y gráficos que se pueden editar.
+Lucía: Se empezó a desplegar el miércoles siete para los planes Pro, Plus, Business y Enterprise.
+Martín: Y el jueves ocho llegó a Free y a Go. Lo cuenta TechCrunch.
+Lucía: Un detalle que me gustó: se puede bajar la cantidad de visuales.
+Martín: Menos mal. Mi opinión: para preguntas con números puede estar bueno ver un gráfico que podés tocar.
+Martín: Pero hay que ver si ayuda a entender o si es decoración. Eso no lo dice nadie todavía.
+Lucía: Segunda. Anthropic lanzó algo que llama Cyber Mission, con dos patas.
+Lucía: Una es un programa de defensa de infraestructura crítica, con once socios fundadores.
+Martín: Entre ellos Accenture, CrowdStrike, Deloitte y PwC.
+Lucía: La otra es el OSS Scanner. Un servicio gratuito y opcional que escanea proyectos open source.
+Martín: Ojo con esto. Anthropic dice que espera una tasa de verdaderos positivos de más del noventa por ciento.
+Martín: Y los reportes salen sin revisión humana. Lo dicen ellos mismos, en su blog.
+Lucía: O sea que puede haber errores, por ejemplo en qué tan grave marcan algo.
+Martín: Exacto. "Espera" no es "midió". Lo tomaría como una promesa a verificar.
+Lucía: El miércoles ya habíamos contado que Anthropic amplió su Cyber Verification Program. Va todo para el mismo lado.
+Martín: Tercera. Google Cloud presentó agentes Gemini que trabajan en tareas de varios días.
+Lucía: Fue en Gemini at Work dos mil veintiséis. Es un agente universal dentro de Gemini Enterprise.
+Martín: Está en vista previa privada desde el ocho de octubre. Funciona en Workspace, en Microsoft trescientos sesenta y cinco y en Slack.
+Lucía: Y acá viene lo raro: soporta modelos Gemini y también Claude.
+Martín: Tiene ruteo inteligente entre modelos y topes de gasto por proyecto.
+Lucía: Precio adicional no anunciaron. Fecha de disponibilidad general, tampoco.
+Martín: Lo de los topes me parece lo más sensato del anuncio. El domingo contamos que Simon Willison pedía topes de gasto duros por defecto en casi todo servicio por uso.
+Lucía: Y el viernes pasado hablamos de Dots, los agentes siempre activos de OpenAI en ChatGPT. La carrera de agentes que corren solos sigue.
+Martín: Cuarta, la de los números. Un proyecto en GitHub de Ping Labs que se llama tsc-rs.
+Lucía: Es un port en Rust del compilador de TypeScript siete, hecho con Claude Opus.
+Martín: El README dice que pasan los ciento ochenta y un mil setecientos once tests, portados de la versión en Go.
+Lucía: Y que es un poco más de una vez y media más rápido que el tsc siete.
+Martín: Lo que más llama la atención es el costo. Dicen que gastaron unos veinticuatro mil dólares en dos semanas con Claude Opus.
+Lucía: Y que antes habían gastado más de cuatrocientos mil dólares con modelos de OpenAI sin llegar al objetivo.
+Martín: Ahora, todas esas cifras son autodeclaradas. Nadie de afuera las auditó.
+Lucía: Y reconocen límites: el uso de memoria y los builds de varios proyectos.
+Martín: Igual vale como caso. Pocas veces alguien publica cuánto le costó un proyecto grande con agentes de código.
+Lucía: Quinta. OpenAI publicó la guía oficial de su Decisions API.
+Martín: Está en beta pública con un único modelo, gpt seis luna.
+Lucía: Cuesta diez centavos de dólar por millón de tokens de entrada. Y la salida no se cobra.
+Martín: Sirve para tres tipos de pregunta. Probabilidad de que algo sea cierto, elegir entre opciones, o puntuar en una escala.
+Lucía: Dicen que es unas diez veces más rápida que la Responses API. Y la disponibilidad general la esperan en las próximas semanas.
+Martín: Esto viene con contexto. El domingo contamos que Perplexity abrió su propia Decisions API.
+Lucía: Y el miércoles, los decision models en llama.cpp. Ya es una categoría, no un experimento de una sola empresa.
+Martín: Para mí es de lo más útil del día, y no lo digo por el nombre. Clasificar barato sirve para un montón de cosas aburridas.
+Lucía: Sexta y última. Anthropic amplió su programa Claude for Startups.
+Martín: Un año de Claude Team con hasta cinco asientos premium, mil dólares en créditos de API, acceso al Claude Marketplace y horas de consulta con su equipo de Applied AI.
+Lucía: Es para empresas fundadas en los últimos cinco años o que recibieron financiamiento en los últimos dos.
+Martín: Opinión: está bien, pero es una estrategia para que te quedes en su plataforma. Si calificás, aprovechalo sabiendo eso.
+
+## Para desarrolladores
+Lucía: Vamos a lo que cambia en el día a día de quien programa o arma datos.
+Martín: Lo primero es la Decisions API. Si hoy usás un modelo de chat para clasificar mensajes o filas, fijate esto.
+Lucía: En vez de pedirle texto y parsearlo, le mandás la entrada y una lista de preguntas con nombre, tipo e instrucciones.
+Martín: Y te devuelve una probabilidad, o la opción elegida con su nivel de confianza, o un puntaje.
+Lucía: Un detalle de la guía: la respuesta puede venir como rechazo. Tu código tiene que contemplar ese caso.
+Martín: Y las imágenes van embebidas en base sesenta y cuatro, no como link.
+Lucía: Lo segundo es el caso de tsc-rs. Te da una referencia, con todas las reservas, de cuánto puede costar un proyecto grande con agentes.
+Martín: Y una lección que no es de precio: tenían una batería enorme de tests ya escrita. Eso es lo que permite saber si el agente llegó o no.
+Lucía: Sin tests, ese número de ciento ochenta y un mil no existe.
+Martín: Tercero, si mantenés un proyecto open source crítico, podés inscribirlo en el OSS Scanner. Es opcional y gratis.
+Lucía: Pero Anthropic avisa que es para proyectos que puedan seguirle el ritmo a los hallazgos. Y acordate que nadie revisa esos reportes antes de que te lleguen.
+Martín: Y si armás informes, mirá cómo ChatGPT mezcla texto con gráficos editables. Es una referencia de hacia dónde van a pedir los clientes que se vea un informe.
+
+## Oportunidades de consultoría
+Lucía: Hoy pensemos en un estudio contable o jurídico chico.
+Martín: Me gusta. El problema típico: les entran consultas por mail y por WhatsApp todo el día, mezcladas.
+Lucía: Un vencimiento, una factura mal hecha, alguien que pide un turno, un reclamo urgente.
+Martín: Y alguien del estudio las lee una por una para decidir a quién le toca.
+Lucía: La idea sería usar una API de decisiones para clasificar cada mensaje por tipo y por urgencia.
+Martín: El resultado va a una planilla con la categoría y la confianza. Lo que tenga baja confianza lo mira una persona.
+Lucía: ¿Qué haría falta? Primero, sacar los mensajes de donde estén, aunque sea exportados.
+Martín: Después, acordar con el estudio unas pocas categorías claras. Esa charla es la mitad del trabajo.
+Lucía: Y un par de semanas comparando lo que dice el modelo contra lo que decide la gente del estudio.
+Martín: Un cuidado importante. La guía de OpenAI dice que el procesamiento regional está en Estados Unidos y Europa.
+Lucía: Para un estudio que maneja datos de clientes, eso hay que hablarlo antes de mandar nada.
+Martín: Y no es la única opción. Hay otras APIs de decisión y modelos que se pueden correr local. La idea es la tarea, no el proveedor.
+Lucía: Es una idea para charlar con ellos, no una promesa de que les va a ahorrar tantas horas.
+
+## Una cosa para probar hoy
+Martín: Hoy proponemos hacer tu primera llamada a la Decisions API. En media hora sobra.
+Lucía: Paso uno: tené a mano una clave de API de OpenAI en una variable de entorno.
+Martín: Paso dos: abrí la guía de Decisions, el link está en las notas, y copiá el ejemplo mínimo con curl.
+Lucía: Paso tres: en el campo input poné un mensaje real, de esos que te llegan por WhatsApp o por mail. Sin datos personales.
+Martín: Paso cuatro: armá una pregunta de tipo elección, con tres o cuatro categorías tuyas y una descripción corta de cada una.
+Lucía: Sumá siempre una categoría "otro". La guía recomienda incluir una opción comodín así, y tiene sentido.
+Martín: Paso cinco: corrélo y mirá la opción elegida, las probabilidades y la confianza.
+Lucía: Paso seis: repetí con cinco o diez mensajes distintos y anotá en qué casos duda.
+Martín: Como solo se cobra la entrada, a diez centavos el millón de tokens, la prueba cuesta casi nada.
+Lucía: Y si tu código no contempla el rechazo, probá qué pasa. Mejor descubrirlo hoy.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera.
+Lucía: Simon Willison probó la Decisions API con un plugin para su herramienta LLM.
+Martín: No entró porque es un plugin en alfa que repite lo que ya dice la guía oficial, que sí contamos.
+Lucía: Una página de la plataforma de WhatsApp Business con el calendario de cambios de precios, que menciona Argentina y moneda local.
+Martín: Quedó afuera porque no tiene fecha de actualización y no hay cambios nuevos para Latinoamérica en octubre.
+Lucía: DeepSeek dice que los nombres viejos de su API ya se sirven con el modelo V cuatro punto uno Flash.
+Martín: Nota sin fecha y sin cifras claras. Es un cambio de alias menor.
+Lucía: Y NVIDIA publicó un trabajo para sincronizar pesos de modelos enormes durante el entrenamiento, que baja de casi noventa minutos a ciento cincuenta segundos.
+Martín: Muy específico de entrenamiento a esa escala. Si quieren que sumemos algo de esto, avisen.
+Lucía: Eso fue todo. Buen viernes, y nos escuchamos mañana.
