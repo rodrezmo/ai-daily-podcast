@@ -239,6 +239,36 @@
       "url": "https://eleconomista.com.ar/economia/regulacion-ia-debate-autonomia-control-humano-n98642",
       "title": "El Economista: en Argentina se debate cómo regular la IA mientras las empresas adoptan más lento que las personas",
       "date": "2026-10-08"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface",
+      "title": "ChatGPT estrena Intelligent UI con GPT-6: respuestas con botones, calculadoras y gráficos editables",
+      "date": "2026-10-09"
+    },
+    {
+      "url": "https://anthropic.com/news/anthropic-cyber-mission",
+      "title": "Anthropic lanza Cyber Mission: programa para infraestructura crítica y escaneo gratuito de proyectos open source",
+      "date": "2026-10-09"
+    },
+    {
+      "url": "https://venturebeat.com/orchestration/google-cloud-unveils-persistent-gemini-agents-for-long-running-tasks-and-they-get-their-own-gmail-calendar-and-drive-storage",
+      "title": "Google Cloud presenta agentes Gemini persistentes que trabajan tareas de varios días",
+      "date": "2026-10-09"
+    },
+    {
+      "url": "https://github.com/pingdotgg/ts-rust",
+      "title": "tsc-rs: un port en Rust del compilador de TypeScript 7 hecho con Claude Opus, con 181.711 tests pasando",
+      "date": "2026-10-09"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/decisions",
+      "title": "OpenAI Decisions API: guía oficial con precios y tipos de pregunta",
+      "date": "2026-10-09"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits",
+      "title": "Anthropic regala un año de Claude Team y USD 1.000 en créditos a startups",
+      "date": "2026-10-09"
     }
   ]
 }
