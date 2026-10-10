@@ -269,6 +269,36 @@
       "url": "https://techcrunch.com/2026/10/06/anthropic-gives-startups-a-free-year-of-enterprise-service-and-1000-in-token-credits",
       "title": "Anthropic regala un año de Claude Team y USD 1.000 en créditos a startups",
       "date": "2026-10-09"
+    },
+    {
+      "url": "https://deno.com/blog/cloudflare",
+      "title": "Cloudflare compra Deno; el runtime tendrá un año más de mantenimiento",
+      "date": "2026-10-10"
+    },
+    {
+      "url": "https://mistral.ai/news/mistral-large-4",
+      "title": "Mistral Large 4 sale en vista previa: 1 billón de parámetros y precio por API",
+      "date": "2026-10-10"
+    },
+    {
+      "url": "https://anthropic.com/claude-haiku-5-5",
+      "title": "Anthropic presenta Claude Haiku 5.5 con precios un 75% menores que Haiku 4.5",
+      "date": "2026-10-10"
+    },
+    {
+      "url": "https://python.org/downloads/release/python-3150",
+      "title": "Python 3.15 ya salió: JIT 7-12% más rápido, UTF-8 por defecto y frozendict",
+      "date": "2026-10-10"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-07-local-sandboxing-for-github-copilot-now-generally-available",
+      "title": "GitHub Copilot: sandboxing local disponible en general, sin costo adicional",
+      "date": "2026-10-10"
+    },
+    {
+      "url": "https://huggingface.co/blog/building-with-ml-intern",
+      "title": "Hugging Face: un agente 'ML intern' entrenó seis modelos por unos USD 103 en total",
+      "date": "2026-10-10"
     }
   ]
 }
