@@ -1,0 +1,111 @@
+## Titulares
+Lucía: Buen día, es sábado diez de octubre y esto es Radar IA.
+Martín: Hola, hola. Hoy hay seis notas, y varias le tocan el día a día a quien programa.
+Lucía: Arrancamos por una que me sorprendió. El equipo de Deno se suma a Cloudflare.
+Martín: El runtime de JavaScript y TypeScript, el que competía con Node.
+Lucía: Ese. Lo cuentan en el blog de Deno. Y lo importante es qué pasa con el runtime.
+Martín: Contame.
+Lucía: Lo van a mantener un año, con versiones mensuales de correcciones y actualizaciones de seguridad. Después de ese año, se termina el desarrollo.
+Martín: Pero sigue siendo open source.
+Lucía: Sí, el código queda abierto. El equipo pasa a trabajar en otra cosa, que llaman celld, sobre el modelo de programación de Cloudflare Workers.
+Martín: Mi opinión honesta: si tenés scripts o servicios en Deno, no es para entrar en pánico, pero sí para anotarlo. Tenés un año para migrar o para decidir si alguien mantiene un fork.
+Lucía: Y un año pasa rápido.
+Martín: Segunda. Mistral Large cuatro salió en vista previa por API.
+Lucía: El miércoles ya lo habíamos mencionado. Hoy vamos con los números de la ficha oficial.
+Martín: Es un modelo de mezcla de expertos, multimodal, de un billón de parámetros.
+Lucía: Billón en castellano, o sea, un millón de millones.
+Martín: Exacto. Y activos usa unos cincuenta y dos mil millones por vez, según la ficha de Mistral.
+Martín: El precio: un dólar con treinta y seis por millón de tokens de entrada, y cuatro dólares con dieciocho de salida.
+Lucía: Precio medio, digamos.
+Martín: Medio. En benchmarks reporta sesenta y uno coma siete por ciento en DeepSWE y casi sesenta en AutomationBench.
+Lucía: ¿Y los pesos abiertos?
+Martín: Prometidos para fin de mes. Sin licencia especificada todavía.
+Lucía: Ahí está mi reparo. Pesos prometidos sin licencia no son pesos abiertos hasta que los veas. Lo seguimos cuando salgan.
+Martín: Tercera, y esta sí es de bolsillo. Anthropic presentó Claude Haiku cinco punto cinco.
+Lucía: El jueves contamos el lanzamiento. Hoy vamos al precio, que es lo que importa.
+Martín: Diez centavos de dólar por millón de tokens de entrada. Cincuenta centavos de salida.
+Lucía: Eso es en pedidos de hasta cien mil tokens. Por encima de ese tramo sube a cincuenta centavos de entrada y dos con cincuenta de salida.
+Martín: Sí. Y Haiku cuatro punto cinco costaba un dólar y cinco dólares.
+Lucía: Esperá, porque el titular dice setenta y cinco por ciento más barato.
+Martín: Y con esos números, en pedidos cortos da un décimo del precio anterior, noventa por ciento menos.
+Lucía: Claro. El setenta y cinco es un promedio: la propia Anthropic habla de noventa por ciento menos hasta cien mil tokens y cincuenta por ciento menos por encima.
+Martín: O sea que en contextos cortos, la baja es todavía mayor que la del titular.
+Lucía: En benchmarks, setenta y dos coma cuatro por ciento en OSWorld offline y treinta y nueve coma dos en Terminal-Bench.
+Martín: Y está en AWS, Google Cloud y Azure. Para clasificar y extraer datos en volumen, esto cambia la cuenta.
+Lucía: Cuarta. Salió Python tres punto quince.
+Martín: Con más de cinco mil seiscientos commits y unas mil personas contribuyendo.
+Lucía: Lo que más me interesa: UTF-8 pasa a ser la codificación por defecto.
+Martín: Eso le va a ahorrar dolores de cabeza a mucha gente en Windows.
+Lucía: También el JIT experimental mejora. Entre siete y ocho por ciento en Linux sobre x ochenta y seis, y entre once y doce en Mac con chips ARM.
+Martín: Experimental, recordemos. Y suman importaciones perezosas explícitas y frozendict, un diccionario inmutable.
+Lucía: Un aviso que da la propia nota: tkinter e IDLE se pueden colgar en macOS veintisiete.
+Martín: Mi opinión: es una versión para probar ya, pero no para pasar producción el lunes.
+Lucía: Quinta. GitHub Copilot tiene sandboxing local en disponibilidad general, sin costo adicional.
+Martín: El sábado pasado contamos que Copilot sumaba computer use en vista previa. Esto viene a ser la otra cara.
+Lucía: Exacto. Si el agente puede hacer más cosas, necesitás encerrarlo.
+Martín: Funciona en la CLI, en la app de Copilot y en VS Code con Agent Host. En Windows, Mac y Linux.
+Lucía: Corre sobre un contenedor de Microsoft que se llama MXC, con el repo bajo licencia MIT.
+Martín: Limita archivos, red, credenciales de Git y de la CLI de GitHub, y también servidores MCP locales, donde esté soportado.
+Lucía: Y lo que más me gusta: la organización puede imponer políticas que el desarrollador no puede aflojar.
+Martín: Coincido. Es de esas noticias aburridas que importan más que un modelo nuevo.
+Lucía: Y la sexta. Hugging Face mostró un agente que llaman ML intern, el pasante de machine learning.
+Martín: Es un modo de HuggingChat. Planifica, te pide presupuesto, hace una prueba chica, entrena, evalúa y publica el modelo en el Hub.
+Lucía: Entrenaron seis modelos por unos ciento tres dólares en total.
+Martín: Un ejemplo: un diagnosticador de enfermedades de cítricos pasó de casi quince a casi cincuenta y tres por ciento de acierto. Costó un dólar con noventa.
+Lucía: Cincuenta y tres por ciento sigue siendo bajo para diagnosticar, eh.
+Martín: Sí, es una mejora, no un producto terminado. El otro ejemplo me parece más útil.
+Lucía: El reescritor.
+Martín: Un modelo chiquito, de ochocientos millones de parámetros, que devuelve salida válida el noventa y nueve coma siete por ciento de las veces. Con doce minutos de entrenamiento en una GPU A10G.
+Lucía: Me gusta que pida presupuesto antes. Hace unos días hablamos de Simon Willison pidiendo topes de gasto duros por defecto. Va en esa línea.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia esto a quien programa?
+Lucía: Lo primero, Python tres punto quince. Si leés CSV o exportaciones de Excel en Windows, el UTF-8 por defecto te cambia el comportamiento.
+Martín: Para bien, en general. Pero si algún script dependía del encoding viejo sin decirlo, ahora puede leer distinto.
+Lucía: Por eso, antes de actualizar, conviene revisar dónde abrís archivos sin indicar la codificación.
+Martín: Lo segundo, Deno. Hacé un inventario hoy. Qué corre en Deno, quién lo mantiene y a dónde lo moverías.
+Lucía: Tenés un año de parches. Usalo para planificar, no para esperar.
+Martín: Tercero, el costo de los modelos chicos. Con Haiku cinco punto cinco a diez centavos el millón de tokens de entrada, muchas tareas de clasificar y extraer pasan a costar centavos.
+Lucía: Y del otro lado, el pasante de Hugging Face muestra que ajustar un modelo chico a una tarea puntual cuesta decenas de dólares.
+Martín: Entonces la pregunta ya no es si podés pagarlo. Es qué te conviene: pagar API por volumen o entrenar algo chico y propio.
+Lucía: Y a Mistral Large cuatro lo pondría en la lista para comparar en agentes de código, sabiendo que todavía está en vista previa.
+Martín: Y lo último: si usás agentes que ejecutan comandos, activá el sandbox de Copilot. El martes hablamos de Cowork, que también corre en un sandbox aislado por sesión. Se nota que va para ese lado.
+Lucía: Cerrar red y credenciales por defecto debería ser lo normal.
+
+## Oportunidades de consultoría
+Lucía: Vamos con la idea del día. Hoy no pensé en una pyme, sino en un estudio contable chico.
+Martín: Me gusta. ¿Cuál es el problema?
+Lucía: Les llegan comprobantes por mail y por WhatsApp, de muchos clientes. Alguien los abre uno por uno, ve qué es cada cosa y carga los datos en una planilla.
+Martín: Y en época de vencimientos eso se vuelve una montaña.
+Lucía: La idea es automatizar dos pasos. Primero, clasificar cada documento: factura, recibo, constancia, otra cosa.
+Martín: Segundo, extraer los campos que el estudio ya carga a mano y dejarlos en la misma planilla de siempre.
+Lucía: Con los precios de Haiku cinco punto cinco, el costo por documento en tareas así es muy bajo. Eso hace viable probar sin una gran inversión.
+Martín: ¿Y qué haría falta para arrancar?
+Lucía: Una muestra real de documentos, con permiso del estudio. Una lista clara de qué campos quieren. Y una persona que revise todo lo que el sistema marque como dudoso.
+Martín: Y un tope de gasto configurado desde el día uno.
+Lucía: Sí. Y si el volumen crece mucho, recién ahí evaluar un modelo chico entrenado para eso, como mostró Hugging Face.
+Martín: Aclaremos que es una idea para explorar. No es una promesa de ahorrar tanto tiempo ni de tal precio.
+Lucía: Exacto. Hay que medir con sus documentos antes de decir nada.
+
+## Una cosa para probar hoy
+Martín: Para probar hoy, en menos de media hora: corré uno de tus scripts de datos con Python tres punto quince.
+Lucía: Paso uno. Instalá Python tres punto quince en paralelo a tu versión actual, sin reemplazarla. Bajalo del sitio oficial de Python o usá tu gestor de versiones.
+Martín: Paso dos. Creá un entorno virtual nuevo con esa versión.
+Lucía: Paso tres. Instalá las dependencias de tu script en ese entorno.
+Martín: Paso cuatro. Elegí un script que lea un CSV o una exportación de Excel con tildes y eñes.
+Lucía: Paso cinco. Corrélo con la versión vieja y con la nueva, y guardá las dos salidas.
+Martín: Paso seis. Compará los resultados. Si cambian los caracteres raros o las tildes, buscá dónde abrís archivos sin decir la codificación.
+Lucía: Y si estás en Mac con macOS veintisiete y usás tkinter, acordate del aviso: puede colgarse.
+Martín: Si todo da igual, ya sabés que ese script está listo para migrar.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: Microsoft publicó Decision-1, un modelo chico para clasificar y enrutar con probabilidades calibradas.
+Lucía: Lo dejamos porque se cruza con la Decisions API de OpenAI que contamos ayer, y es bastante de nicho.
+Martín: DeepSeek V cuatro punto uno Flash, con un millón de tokens de contexto y quince centavos de dólar por millón de entrada.
+Lucía: Interesante por precio, pero la fuente no tiene fecha de publicación. No pudimos ubicarla en el tiempo.
+Martín: Falcon-ASR, un modelo de reconocimiento de voz que incluye español y portugués.
+Lucía: Afuera porque no dan cifras para español ni la licencia. Si salen, lo miramos.
+Martín: Y OpenAI sumó un modo Ultrafast a GPT seis punto uno Sol, a seis veces el precio estándar.
+Lucía: Nicho por precio. Si te interesa alguno de estos, avisanos.
+Martín: Eso fue Radar IA. Que tengas buen sábado, hasta el próximo episodio.
