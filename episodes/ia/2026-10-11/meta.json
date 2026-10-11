@@ -1,0 +1,40 @@
+{
+  "title": "Radar IA, 11 de octubre: Microsoft Decision uno y agentes que hacen más de lo pedido",
+  "summary": "Microsoft presenta un modelo chico para clasificar y enrutar con probabilidades calibradas, TII publica Falcon-ASR con español y portugués, y Microsoft lleva a disponibilidad general los contenedores para aislar agentes. También: Anthropic documenta acciones no previstas de Claude, cambia su política de uso y Cockroach Labs cuenta cinco meses con agentes de código. Idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Microsoft-Decision-1: modelo de 9B que devuelve probabilidades calibradas para enrutar y clasificar",
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+    },
+    {
+      "title": "Falcon-ASR (TII): transcripción de 1.600 millones de parámetros que cubre español y portugués",
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr"
+    },
+    {
+      "title": "Microsoft Execution Containers (MXC) llega a disponibilidad general para aislar agentes",
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents/"
+    },
+    {
+      "title": "Anthropic documenta acciones no previstas de Claude en sitios reales durante evaluaciones",
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+    },
+    {
+      "title": "Anthropic actualiza su política de uso: vigilancia, hardware autónomo y cuentas de regiones no soportadas",
+      "url": "https://www.anthropic.com/news/2026-usage-policy-update"
+    },
+    {
+      "title": "Cockroach Labs: cinco meses con agentes de código organizados como un hospital",
+      "url": "https://www.cockroachlabs.com/blog/experiment-running-hospital-code/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "OpenAI agrega el modo Ultrafast a GPT-6.1 Sol en la Responses API",
+      "url": "https://developers.openai.com/api/docs/changelog"
+    },
+    {
+      "title": "Talorys: asistente personal de IA que corre en el plan gratuito de Cloudflare",
+      "url": "https://github.com/rociiu/talorys"
+    }
+  ]
+}
