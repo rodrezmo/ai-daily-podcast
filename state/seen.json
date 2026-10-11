@@ -299,6 +299,36 @@
       "url": "https://huggingface.co/blog/building-with-ml-intern",
       "title": "Hugging Face: un agente 'ML intern' entrenó seis modelos por unos USD 103 en total",
       "date": "2026-10-10"
+    },
+    {
+      "url": "https://commandline.microsoft.com/microsoft-decision-1-model-foundry",
+      "title": "Microsoft-Decision-1: modelo de 9B que devuelve probabilidades calibradas para enrutar y clasificar",
+      "date": "2026-10-11"
+    },
+    {
+      "url": "https://huggingface.co/blog/tiiuae/falcon-asr",
+      "title": "Falcon-ASR (TII): transcripción de 1.600 millones de parámetros que cubre español y portugués",
+      "date": "2026-10-11"
+    },
+    {
+      "url": "https://blogs.windows.com/windowsdeveloper/2026/10/07/microsoft-execution-containers-policy-driven-containment-for-ai-agents",
+      "title": "Microsoft Execution Containers (MXC) llega a disponibilidad general para aislar agentes",
+      "date": "2026-10-11"
+    },
+    {
+      "url": "https://anthropic.com/research/investigating-unintended-model-actions",
+      "title": "Anthropic documenta acciones no previstas de Claude en sitios reales durante evaluaciones",
+      "date": "2026-10-11"
+    },
+    {
+      "url": "https://anthropic.com/news/2026-usage-policy-update",
+      "title": "Anthropic actualiza su política de uso: vigilancia, hardware autónomo y cuentas de regiones no soportadas",
+      "date": "2026-10-11"
+    },
+    {
+      "url": "https://cockroachlabs.com/blog/experiment-running-hospital-code",
+      "title": "Cockroach Labs: cinco meses con agentes de código organizados como un hospital",
+      "date": "2026-10-11"
     }
   ]
 }
