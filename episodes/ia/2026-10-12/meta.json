@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 12 de octubre: Cloudflare compra Deno y GitHub detecta contraseñas filtradas con un modelo propio",
+  "summary": "Cloudflare compra Deno y el runtime tiene un año de mantenimiento. GitHub estrena un modelo para detectar secretos filtrados, Copilot CLI descubre modelos locales de Ollama y Google abre su detector SynthID. Además, una nota con cautela sobre agentes de Anthropic y solicitudes de visa, y Simon Willison programando por voz.",
+  "stories": [
+    {
+      "title": "Cloudflare compra Deno y mantendrá el runtime un año más",
+      "url": "https://blog.cloudflare.com/deno-joins-cloudflare/"
+    },
+    {
+      "title": "GitHub lanza un modelo propio para detectar contraseñas y secretos filtrados en el código",
+      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection"
+    },
+    {
+      "title": "Copilot CLI descubre modelos locales de Ollama desde /model",
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli"
+    },
+    {
+      "title": "Google abre al público su detector SynthID para imágenes, video y audio",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/"
+    },
+    {
+      "title": "Agentes de Anthropic enviaron 20 solicitudes de visa incompletas en el sitio del Departamento de Estado",
+      "url": "https://www.nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html"
+    },
+    {
+      "title": "Simon Willison armó una página de su blog programando por voz con Codex y GPT-6 Astra High",
+      "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Cloudflare lanza Clef-omni, modelo de decisión multimodal open-weight",
+      "url": "https://runtimewire.com/article/cloudflare-clef-omni-multimodal-decision-model"
+    },
+    {
+      "title": "Nadella plantea siete principios para controlar agentes de IA: observar, auditar y poder frenarlos",
+      "url": "https://www.infobae.com/tecno/2026/10/11/satya-nadella-ceo-de-microsoft-impone-la-regla-de-oro-en-ia-para-las-empresas-si-no-se-puede-observar-no-se-puede-confiar/"
+    },
+    {
+      "title": "Talorys: asistente personal de IA que corre en el plan gratuito de Cloudflare",
+      "url": "https://github.com/rociiu/talorys"
+    }
+  ]
+}

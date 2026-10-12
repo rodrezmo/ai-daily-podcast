@@ -1,0 +1,105 @@
+## Titulares
+Lucía: Buen día, es lunes doce de octubre y esto es Radar IA.
+Martín: Hola. Hoy hay seis notas, y varias tienen que ver con lo mismo: qué pasa cuando le das las llaves a un agente.
+Lucía: Arranquemos por una que ya conocen. El sábado contamos que Cloudflare compra Deno.
+Martín: Sí, lo repetimos porque tiene una consecuencia práctica que vale la pena subrayar.
+Lucía: Dale. Lo que dice el anuncio de Deno es que el runtime de Deno recibe un año de mantenimiento.
+Martín: Con releases mensuales de bugs y seguridad. Y después de ese año, termina su desarrollo.
+Lucía: Sigue siendo open source, eso sí. Pero nadie lo va a seguir empujando desde la empresa.
+Martín: ¿Y por qué lo compran, entonces?
+Lucía: Para apoyarse en celld, la implementación open source de Workers y Durable Objects que el equipo de Deno publicó en agosto, y lograr que workerd se pueda autoalojar.
+Martín: Mi opinión: si tenés scripts o servicios en Deno, no es pánico, pero ya tenés fecha. Un año pasa rápido.
+Lucía: Y para Cloudflare es una jugada más para quedarse como plataforma de agentes y de apps baratas.
+Martín: Segunda. GitHub lanzó un modelo propio para detectar contraseñas y secretos filtrados en el código.
+Lucía: Es un modelo afinado que lee el código de alrededor para marcar credenciales probables.
+Martín: Incluso contraseñas que no tienen un formato reconocible. Esa es la parte nueva.
+Lucía: Las alertas de contraseña ya pasaron a este modelo. Y se suma a push protection, que está en vista previa privada y lo tiene que habilitar un administrador.
+Martín: Más adelante también va a estar en el comando security review de Copilot.
+Lucía: Ojo con dos cosas. Los chequeos opcionales consumen créditos de IA. Y no publicaron cifras de precisión.
+Martín: O sea, buena red de seguridad, pero no sabemos cuántos falsos positivos tira. Habrá que probarlo antes de creerle.
+Lucía: Tercera, también de GitHub. El Copilot CLI ahora descubre modelos locales de Ollama desde el comando model.
+Martín: Desde la versión uno punto cero punto noventa y cuatro, si tenés Ollama corriendo, te lista los modelos y los podés sumar a la sesión.
+Lucía: Tienen que soportar tool calling y streaming. No cualquier modelo sirve.
+Martín: Y acá viene el detalle importante. Usar un modelo local no activa el modo offline ni apaga la telemetría.
+Lucía: Para eso hay que setear una variable, COPILOT OFFLINE en true.
+Martín: Me parece bien que lo digan claro. Mucha gente va a asumir que local es igual a privado, y no.
+Lucía: Prometen enrutamiento inteligente con modelos locales más adelante. Eso todavía es promesa.
+Martín: Cuarta. Google abrió al público su detector SynthID para imágenes, video y audio.
+Lucía: Cualquiera puede subir un archivo y ver si tiene la marca de agua de Google o de socios como OpenAI, NVIDIA y Kakao.
+Martín: Apple figura como "pronto". Y está disponible en todo el mundo, pero solo en inglés.
+Lucía: Google dice que ya marcó más de ciento ochenta mil millones de imágenes y videos.
+Martín: El dato que más importa es otro, igual. Si el archivo no tiene marca, eso no prueba que sea auténtico.
+Lucía: Exacto. Sirve para confirmar que algo es generado, no para confirmar que algo es real.
+Martín: Quinta, y esta hay que tomarla con pinzas. El New York Times dice que agentes de Anthropic completaron veinte solicitudes de visa en un formulario del Departamento de Estado de Estados Unidos.
+Lucía: Según dos fuentes que cita el diario. Ninguna solicitud estaba completa y ninguna se procesó.
+Martín: Según el diario, Anthropic publicó el viernes un post sobre la actividad de sus agentes, pero sin nombrar los sitios.
+Lucía: Y el post original no lo pudimos encontrar. Así que el vínculo entre las visas y Anthropic hoy depende de fuentes anónimas.
+Martín: Ayer justamente contamos que Anthropic documentó acciones no previstas de Claude en sitios reales durante evaluaciones.
+Lucía: Y la semana pasada, lo de Wikimedia detectando agentes de OpenAI en sus proyectos.
+Martín: Sea quien sea, el patrón se repite. Un agente con acceso a internet hace cosas en sitios reales.
+Lucía: Sexta, más liviana. Simon Willison armó una página de su blog programando por voz.
+Martín: Usó el modo de voz de la app de escritorio de ChatGPT, en la pestaña Codex, con GPT seis Astra High y vista previa en vivo.
+Lucía: Más o menos media hora hablando y otra media hora tipeando para pulir.
+Martín: Y no era un cambio chico. Modelo y migración de Django, vistas, plantillas y cuatro importaciones de newsletters.
+Lucía: Todo salió como un pull request, el setecientos diecinueve, así que se puede revisar.
+Martín: Su conclusión me gusta porque es medida. La voz sirve para hacer varias cosas a la vez y para ver resultados visuales.
+Lucía: Pero para los detalles, conviene teclear.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día?
+Lucía: Lo primero, y más aburrido, es Deno. Si tenés algo corriendo ahí, anotalo hoy en una lista de pendientes con fecha.
+Martín: No hace falta migrar mañana. Hay releases de seguridad durante un año. Pero conviene no arrancar proyectos nuevos ahí.
+Lucía: Lo segundo son los secretos. Mucha gente que arma datos sube scripts con la clave de la base o de una API pegada en el código.
+Martín: Culpable. Pasa todo el tiempo, sobre todo en repos chicos que "no ve nadie".
+Lucía: El modelo de GitHub apunta justo a eso, a las contraseñas sin formato que los detectores clásicos no agarraban.
+Martín: Si tu organización tiene Secret Protection o Advanced Security, las alertas ya vienen incluidas. Lo que consume créditos son los chequeos opcionales.
+Lucía: Y push protection, que sigue en vista previa privada, lo tiene que prender un administrador. Vale la pena mirar si está activo.
+Martín: Lo tercero es el combo de Copilot CLI con Ollama.
+Lucía: Para quien trabaja con datos de clientes, poder probar un agente de código con un modelo local es interesante.
+Martín: Pero hay que recordar lo que dijimos: local no es offline. Si querés que no salga nada, tenés que poner la variable.
+Lucía: Lo del enrutamiento inteligente con modelos locales es para más adelante. Por ahora, el modelo lo elegís vos a mano.
+Martín: Y lo cuarto es lo de los agentes en sitios reales. Si estás armando algo con un agente que navega, pensá en sandbox, permisos acotados y logs.
+Lucía: Que el agente no pueda mandar un formulario a cualquier lado. Y que quede registro de lo que hizo.
+Martín: Y del caso de Simon me quedo con una cosa: el agente hizo mucho, pero todo terminó en un pull request que un humano revisó.
+Lucía: Esa es la parte que no hay que saltearse, con voz o con teclado.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero pensar en un perfil distinto. No la pyme, sino el equipo interno de datos u operaciones de una empresa mediana.
+Martín: ¿Por qué ese?
+Lucía: Porque esos equipos suelen tener un montón de scripts sueltos. Planillas que se actualizan solas, cargas a una base, informes que salen por mail.
+Martín: Y cada script tiene una clave adentro. Lo vi mil veces.
+Lucía: El problema concreto es que nadie sabe cuántas credenciales hay dando vueltas ni en qué repos.
+Martín: Entonces la idea sería una revisión de repositorios y scripts. Primero, un inventario: qué repos hay, quién los mantiene, qué se conecta a qué.
+Lucía: Después, activar la detección de secretos que ya tienen disponible, y revisar las alertas con el equipo.
+Martín: Lo que se automatiza es la detección. Lo que no se automatiza es decidir qué clave rotar y dónde guardarla.
+Lucía: Ahí entra mover las claves a variables de entorno o a un gestor de secretos, y dejar una guía corta para el equipo.
+Martín: Y si ya usan agentes, o los quieren usar, sumar una política simple: qué puede tocar el agente, en qué entorno, y qué se loguea.
+Lucía: ¿Qué haría falta? Acceso de lectura a los repos, alguien del equipo que conozca los procesos, y saber qué plan de GitHub tienen.
+Martín: Porque según el plan, algunas cosas consumen créditos. Eso hay que ponerlo sobre la mesa desde el principio.
+Lucía: Y no prometer que después de eso no se filtra nada. Es bajar el riesgo, no eliminarlo.
+Martín: Además, el modelo de GitHub no publicó cifras de precisión. Así que la revisión humana sigue siendo parte del trabajo.
+
+## Una cosa para probar hoy
+Martín: Para hoy, propongo probar el Copilot CLI con un modelo local de Ollama. Menos de media hora.
+Lucía: Contame el paso a paso.
+Martín: Uno. Fijate que tu Copilot CLI esté en la versión uno punto cero punto noventa y cuatro o más nueva. Si no, actualizalo.
+Lucía: Dos. Levantá Ollama y tené descargado un modelo que soporte tool calling y streaming. Si no los soporta, no te va a servir.
+Martín: Tres. Si querés que no salga nada a la red, antes de abrir el CLI seteá la variable COPILOT OFFLINE en true.
+Lucía: Esto es lo que más se olvida. Sin eso, usar un modelo local no apaga la telemetría.
+Martín: Cuatro. Abrí el CLI y escribí el comando model. Te tendría que listar los modelos de tu Ollama.
+Lucía: Cinco. Elegí uno y sumalo a la sesión.
+Martín: Seis. Dale una tarea chica sobre un repo de prueba. Por ejemplo, que te explique un script o que agregue un test.
+Lucía: Y mirá qué hace con las herramientas. Si se traba, puede ser el modelo y no el CLI.
+Martín: Ah, y hacelo en un repo de prueba, no en el de un cliente. Por lo menos la primera vez.
+Lucía: Buena aclaración.
+
+## Quedaron afuera
+Lucía: Antes de irnos, tres cosas que vimos y dejamos afuera.
+Martín: Una, que Cloudflare habría lanzado Clef omni, un modelo de decisión multimodal con pesos abiertos.
+Lucía: Quedó afuera porque solo aparece en una fuente secundaria y no lo encontramos confirmado en el anuncio de Cloudflare.
+Martín: Dos, Satya Nadella planteó siete principios para controlar agentes de IA: observarlos, auditarlos y poder frenarlos.
+Lucía: Va en la línea de lo que charlamos hoy, pero es la opinión de un ejecutivo, contada por una fuente secundaria.
+Martín: Y tres, Talorys, un asistente personal de IA que corre en el plan gratuito de Cloudflare.
+Lucía: No entró porque no tiene fecha ni releases. Es un proyecto chico, por ahora.
+Martín: Si alguna de estas les interesa, avisen y la seguimos.
+Lucía: Los links de todo están en las notas del episodio. Hasta mañana.
