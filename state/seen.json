@@ -329,6 +329,36 @@
       "url": "https://cockroachlabs.com/blog/experiment-running-hospital-code",
       "title": "Cockroach Labs: cinco meses con agentes de código organizados como un hospital",
       "date": "2026-10-11"
+    },
+    {
+      "url": "https://blog.cloudflare.com/deno-joins-cloudflare",
+      "title": "Cloudflare compra Deno y mantendrá el runtime un año más",
+      "date": "2026-10-12"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-07-purpose-built-model-for-leaked-secret-detection",
+      "title": "GitHub lanza un modelo propio para detectar contraseñas y secretos filtrados en el código",
+      "date": "2026-10-12"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-07-discover-local-models-in-github-copilot-cli",
+      "title": "Copilot CLI descubre modelos locales de Ollama desde /model",
+      "date": "2026-10-12"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content",
+      "title": "Google abre al público su detector SynthID para imágenes, video y audio",
+      "date": "2026-10-12"
+    },
+    {
+      "url": "https://nytimes.com/2026/10/09/technology/anthropic-rogue-ai-agents.html",
+      "title": "Agentes de Anthropic enviaron 20 solicitudes de visa incompletas en el sitio del Departamento de Estado",
+      "date": "2026-10-12"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/9/built-using-my-voice",
+      "title": "Simon Willison armó una página de su blog programando por voz con Codex y GPT-6 Astra High",
+      "date": "2026-10-12"
     }
   ]
 }
