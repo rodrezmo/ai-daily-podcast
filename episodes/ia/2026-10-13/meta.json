@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 13 de octubre: Cloudflare lanza Clef-omni y Google deja de vender Gemini Code Assist",
+  "summary": "Cloudflare lanza Clef-omni, un modelo multimodal con pesos abiertos, y JetBrains publica Mellum 2.1 para agentes de código. Google deja de vender Gemini Code Assist y manda a los clientes a Antigravity. Además, un paper de Harvard sobre agentes de código, Mistral Large 4 en vista previa y los monitores internos de Goodfire.",
+  "stories": [
+    {
+      "title": "Cloudflare lanza Clef-omni: modelo de decisión multimodal con pesos abiertos y baja el precio de Clef-flash",
+      "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/"
+    },
+    {
+      "title": "JetBrains publica Mellum2.1, modelo abierto de 12B para agentes de código",
+      "url": "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+    },
+    {
+      "title": "Google deja de vender Gemini Code Assist y manda a los clientes a Antigravity",
+      "url": "https://aiweekly.co/alerts/google-ends-gemini-code-assist-sales-points-buyers-to-antigravity"
+    },
+    {
+      "title": "Estudio de Harvard: los agentes de código suman código pero no software terminado",
+      "url": "https://fion.ac/jellyfish.pdf"
+    },
+    {
+      "title": "Mistral Large 4: modelo abierto multimodal en vista previa, lanzamiento público el 27 de octubre",
+      "url": "https://docs.mistral.ai/models/mistral-large-4-0"
+    },
+    {
+      "title": "Goodfire lanza monitores que leen señales internas del modelo para detectar agentes fuera de control",
+      "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Google presenta un agente Gemini único para Workspace que corre flujos de varios días",
+      "url": "https://futurumgroup.com/insights/google-collapses-enterprise-ai-into-a-single-gemini-agent-at-gemini-at-work-2026"
+    },
+    {
+      "title": "Nadella publica siete principios para tratar a los modelos de IA como riesgo interno",
+      "url": "https://ecosistemastartup.com/nadella-la-regla-de-oro-de-microsoft-para-agentes-de-ia/"
+    },
+    {
+      "title": "Talorys: asistente personal de IA de código abierto que corre en tu propia cuenta de Cloudflare",
+      "url": "https://github.com/rociiu/talorys"
+    }
+  ]
+}

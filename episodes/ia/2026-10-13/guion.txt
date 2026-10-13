@@ -1,0 +1,110 @@
+## Titulares
+Lucía: Buen día, es martes trece de octubre y esto es Radar IA.
+Martín: Hola. Hoy hay modelos abiertos, un estudio que le baja el precio a la productividad de los agentes, y un producto de Google que deja de venderse.
+Lucía: Arranquemos con Cloudflare. Lanzó Clef omni, un modelo de decisión multimodal con pesos abiertos.
+Martín: ¿Modelo de decisión quiere decir que no te escribe texto libre?
+Lucía: Exacto. Le pasás texto, imagen, audio o video en una sola llamada, y te devuelve una decisión estructurada.
+Martín: Esto viene en la línea de lo que venimos contando. El domingo hablamos de Microsoft Decision uno, y el viernes de la guía de la Decisions API de OpenAI.
+Lucía: Sí, todos están yendo para el mismo lado. Ahora, el dato duro. Clef omni cuesta quince centavos de dólar por millón de tokens de entrada.
+Martín: Y la latencia mediana en texto ronda los ciento treinta milisegundos, según Cloudflare.
+Lucía: Además bajaron el precio de Clef flash. Pasó de nueve centavos a menos de cuatro centavos por millón.
+Martín: Pero acá está la letra chica. El contexto alojado de Clef flash bajó de sesenta y cuatro mil tokens a veinticuatro mil.
+Lucía: O sea, más barato, pero entra mucho menos.
+Martín: Mi opinión: para clasificar mensajes cortos es una muy buena noticia. Si mandabas documentos largos a Clef flash, revisá antes de que te rompa algo.
+Lucía: Segunda. JetBrains publicó Mellum dos punto uno, un modelo abierto para agentes de código.
+Martín: Es una mezcla de expertos de doce mil millones de parámetros, con dos mil quinientos millones activos.
+Lucía: Licencia Apache dos punto cero. Y lo entrenaron con aprendizaje por refuerzo en miles de entornos.
+Martín: JetBrains dice que genera casi el doble de tokens que Qwen tres punto cinco de nueve mil millones, en una H doscientos.
+Lucía: Eso es velocidad, no calidad. Y lo mide JetBrains, no alguien de afuera.
+Martín: Cierto. Ya está en Hugging Face, pero todavía faltan las versiones GGUF y el soporte en vLLM.
+Lucía: Así que para correrlo en tu máquina con las herramientas de siempre, hay que esperar un poco.
+Martín: Igual me gusta. Un modelo de código chico, abierto, que podés alojar vos sin pagar API.
+Lucía: Tercera. Google dejó de vender Gemini Code Assist y manda a los clientes a Antigravity.
+Martín: Desde el nueve de octubre no se pueden comprar suscripciones nuevas, ni Standard ni Enterprise.
+Lucía: Las que ya existen se renuevan solas durante dos mil veintiséis. Y la renovación automática termina en dos mil veintisiete.
+Martín: Lo que no hay son precios de transición. Tampoco dijeron nada para usuarios individuales.
+Martín: No es un apagón inmediato. Pero el mensaje es claro: el futuro de Google para código es Antigravity.
+Lucía: Y aclaremos la fuente: lo leímos en AI Weekly, que cita una nota de Google. No es el anuncio original.
+Martín: Mi lectura es simple. Si tu equipo usa Code Assist, tenés un año y algo para planear la migración. No es urgente, pero tampoco lo dejes para diciembre del año que viene.
+Lucía: Cuarta, y para mí la más interesante del día. Un paper de Fiona Chen y James Stratton, de Harvard, sobre agentes de código.
+Martín: Contame los números.
+Lucía: Analizaron unos trescientos millones de eventos de setecientas dieciocho empresas.
+Martín: ¿Y?
+Lucía: Con agentes se escriben alrededor de un treinta por ciento más de líneas de código. Y hay un veintitrés por ciento más de pull requests.
+Martín: Hasta ahí, todo lindo.
+Lucía: Pero no hay un aumento significativo de issues resueltos. Y el tiempo de revisión sube un cuarenta y nueve por ciento. Casi la mitad más.
+Martín: Más código, no más software terminado. Y alguien tiene que leer todo eso.
+Lucía: Una aclaración importante: no es un experimento. Compara empresas según cuándo adoptaron los agentes, y las conclusiones dependen de supuestos.
+Martín: O sea, puede haber otras cosas que expliquen la diferencia entre empresas.
+Lucía: Puede. Pero la muestra es enorme, y el patrón es claro.
+Martín: Igual es el dato más sólido que vi en un tiempo. Y va en línea con lo que contamos el domingo de Cockroach Labs, cinco meses con agentes de código.
+Lucía: Quinta. Mistral Large cuatro, que ya mencionamos el sábado, sigue en vista previa.
+Martín: Según Mistral, los pesos abiertos llegan para fin de octubre.
+Lucía: Mientras tanto, hay acceso previo para socios de ciberseguridad y autoridades.
+Martín: El modelo tiene poco más de un billón de parámetros totales, y cincuenta y dos mil millones activos. Es multimodal, y los pesos abiertos están prometidos pero todavía no salieron.
+Lucía: Los benchmarks de lanzamiento todavía no los confirmó nadie de forma independiente.
+Martín: Mi opinión: es la alternativa europea y abierta más grande que hay. Pero hasta que salgan los pesos, es más anuncio que herramienta.
+Lucía: Y la sexta. Goodfire lanzó unos monitores que leen señales internas del modelo para detectar agentes fuera de control.
+Martín: Que viene al caso, porque ayer contamos lo de los agentes de Anthropic que mandaron veinte solicitudes de visa incompletas en el sitio del Departamento de Estado.
+Lucía: Justamente. Lo de Goodfire está disponible para clientes de Baseten.
+Martín: ¿Y funciona?
+Lucía: En pruebas propias sobre Kimi K tres, detectaron el noventa y tres por ciento de las sesiones maliciosas.
+Martín: ¿Y cuántas sesiones normales marcaron por error?
+Lucía: Cinco y medio por ciento de las benignas quedaron marcadas para revisión.
+Martín: Ese número no es menor. Si tenés miles de sesiones por día, son muchas para revisar a mano.
+Lucía: Y los números son del proveedor, contados por TechCrunch. Interesante como idea, pero falta que alguien lo mida de afuera.
+
+## Para desarrolladores
+Martín: Vamos a lo práctico. ¿Qué cambia hoy para quien programa o arma datos?
+Lucía: Lo primero, el estudio de Harvard. Si usás agentes, el cuello de botella ya no es escribir código. Es revisarlo.
+Martín: Entonces conviene pedirle al agente cambios más chicos. Pull requests que se puedan leer en diez minutos.
+Lucía: Y pedirle tests junto con el cambio, así el que revisa no arranca de cero.
+Martín: Y medir el tiempo de revisión, no solo cuánto código sale.
+Lucía: Claro. Si sube la revisión y no suben los issues cerrados, no ganaste nada.
+Martín: Segundo, Mellum dos punto uno. Si tenés una GPU decente, es un candidato para un agente de código autoalojado.
+Lucía: Pero hoy no hay GGUF ni vLLM. Yo esperaría esas versiones antes de meterlo en un flujo de trabajo.
+Martín: Tercero, para los que arman pipelines de clasificación. Clef omni te deja mandar audio, imagen y texto a la misma llamada.
+Lucía: Y te devuelve algo estructurado. Eso te ahorra el paso de transcribir primero y clasificar después.
+Martín: Y con pesos abiertos, en teoría podrías alojarlo vos si los datos no pueden salir de tu infraestructura. Eso habría que verlo caso por caso.
+Lucía: Ojo con Clef flash: si tus entradas pasan los veinticuatro mil tokens, ya no entran en el contexto alojado.
+Martín: Y si lo vas a probar con agentes, lo de Goodfire es un recordatorio: los agentes en producción necesitan alguien o algo que los vigile.
+Lucía: Aunque sea un registro de cada acción y un límite de lo que pueden tocar.
+Martín: Y cuarto, si en el equipo usan Gemini Code Assist, anoten la fecha. La renovación automática se termina en dos mil veintisiete. Conviene probar Antigravity con tiempo, no cuando se venza.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero pensar en un estudio contable chico.
+Martín: Buen perfil. Les llega de todo por WhatsApp.
+Lucía: Exacto. Fotos de facturas, comprobantes, audios de clientes preguntando cosas, PDFs de bancos. Todo mezclado en el mismo chat.
+Martín: Y alguien del estudio se pasa la mañana mirando qué es cada cosa y a quién le toca.
+Lucía: Y en época de vencimientos, eso se multiplica. Los audios son lo peor, porque hay que escucharlos enteros.
+Lucía: Ese es el problema. La idea es automatizar la clasificación y el enrutamiento.
+Martín: Un modelo de decisión como Clef omni puede recibir el audio o la imagen y devolver una categoría. Por ejemplo, factura, consulta impositiva, pedido de turno, o "no sé".
+Martín: La ventaja de un modelo de decisión es que no inventa una respuesta larga. Elige entre las opciones que vos le das.
+Lucía: Y con eso, cada mensaje cae en la planilla o en la bandeja de la persona que corresponde.
+Martín: ¿Qué haría falta?
+Lucía: Primero, una lista clara de categorías, acordada con el estudio. Pocas, no veinte.
+Martín: Segundo, una muestra de mensajes reales, anonimizados, para probar antes de prometer nada.
+Lucía: Tercero, una persona que revise lo que el modelo marca como dudoso. Siempre tiene que haber una salida de "esto lo mira un humano".
+Martín: Y cuarto, hablar en serio de privacidad. Son datos fiscales de terceros. Hay que ver dónde se procesan y quién los ve.
+Lucía: Es una idea para explorar, no una garantía. Primero se prueba con la muestra, y recién ahí se ve si vale la pena.
+
+## Una cosa para probar hoy
+Martín: Para hoy, algo de menos de media hora.
+Lucía: Armá un mini set de prueba para clasificar mensajes. Sirve para cualquier modelo que ya uses.
+Martín: Paso uno. Juntá veinte mensajes reales de un canal que conozcas. Mails, tickets o chats. Sacales nombres y datos personales.
+Lucía: Paso dos. Definí cuatro categorías, y una quinta que sea "otro".
+Martín: Paso tres. En una planilla, al lado de cada mensaje, anotá vos a mano la categoría correcta. Esa es tu respuesta esperada.
+Lucía: Paso cuatro. Pasale los veinte mensajes al modelo, y pedile que responda solo con el nombre de la categoría.
+Martín: Importante: el mismo pedido para todos los mensajes. Si cambiás el pedido a mitad de camino, no podés comparar.
+Martín: Paso cinco. Contá cuántos acertó. Y mirá con atención los que erró. Ahí vas a ver si el problema es el modelo o tus categorías.
+Lucía: Con eso ya tenés una base para comparar cualquier modelo de decisión nuevo que salga. Que, viendo el ritmo de esta semana, van a ser varios.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: Google presentó un agente Gemini único para Workspace, que corre flujos de varios días.
+Martín: Lo dejamos afuera porque tiene poco dato duro, y la fuente es un análisis de consultora. Falta confirmar el alcance.
+Lucía: También circula que Satya Nadella publicó siete principios para tratar a los modelos de IA como un riesgo interno.
+Martín: Pero solo lo vimos en medios secundarios. No encontramos el texto original, y la lista de principios no está confirmada.
+Lucía: Y Talorys, un asistente personal de código abierto que corre en tu propia cuenta de Cloudflare, pensado para el plan gratuito.
+Martín: El repo no tiene fechas ni releases visibles. Poco impacto verificable por ahora. Si les interesa que lo miremos más, avisen.
+Lucía: Eso es todo por hoy. Gracias por escuchar, nos vemos mañana en Radar IA.
