@@ -389,6 +389,36 @@
       "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost",
       "title": "Goodfire lanza monitores que leen señales internas del modelo para detectar agentes fuera de control",
       "date": "2026-10-13"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon",
+      "title": "Google lanza Gemini 4 Argon, con precio de lanzamiento de 2 USD por millón de tokens de entrada",
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b",
+      "title": "Liquid AI publica LFM2.5-24B-A2B, un modelo de razonamiento abierto para correr en el equipo",
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://anthropic.com/engineering/redesigning-source-control",
+      "title": "Anthropic migró su monorepo fuera de git: 30.000 cambios por día",
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/CHANGELOG.md",
+      "title": "Claude Code 2.1.296: lectura de archivos grandes y auto-compactación en subagentes",
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder",
+      "title": "Meta lanza Muse Wonder, su primer modelo de frontera, a 4 USD por millón de tokens de entrada",
+      "date": "2026-10-14"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/12/python-3-15",
+      "title": "Python 3.15: imports perezosos (PEP 810), profiler por muestreo y fin de soporte de 3.10",
+      "date": "2026-10-14"
     }
   ]
 }
