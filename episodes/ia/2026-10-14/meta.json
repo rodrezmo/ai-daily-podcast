@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 14 de octubre: Gemini 4 Argon, Meta Muse Wonder y Anthropic sin git",
+  "summary": "Google lanza Gemini 4 Argon con precio promocional hasta el 30 de noviembre y Meta presenta Muse Wonder, su primer modelo de frontera. Además, Liquid AI publica un modelo abierto de 24B, Anthropic cuenta cómo migró su monorepo fuera de git, sale Claude Code 2.1.296 y Python 3.15 trae imports perezosos.",
+  "stories": [
+    {
+      "title": "Google lanza Gemini 4 Argon, con precio de lanzamiento de 2 USD por millón de tokens de entrada",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+    },
+    {
+      "title": "Liquid AI publica LFM2.5-24B-A2B, un modelo de razonamiento abierto para correr en el equipo",
+      "url": "https://huggingface.co/blog/LiquidAI/lfm25-24b-a2b"
+    },
+    {
+      "title": "Anthropic migró su monorepo fuera de git: 30.000 cambios por día",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control"
+    },
+    {
+      "title": "Claude Code 2.1.296: lectura de archivos grandes y auto-compactación en subagentes",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-code/refs/heads/main/CHANGELOG.md"
+    },
+    {
+      "title": "Meta lanza Muse Wonder, su primer modelo de frontera, a 4 USD por millón de tokens de entrada",
+      "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
+    },
+    {
+      "title": "Python 3.15: imports perezosos (PEP 810), profiler por muestreo y fin de soporte de 3.10",
+      "url": "https://simonwillison.net/2026/Oct/12/python-3-15/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "La IA de acá: adopción, regulación e impacto en la región (columna de Levy Yeyati)",
+      "url": "https://www.infobae.com/opinion/2026/10/14/la-ia-de-aca-adopcion-regulacion-e-impacto-en-la-region/"
+    },
+    {
+      "title": "Google Play permite crear apps propias con vibe coding que corren en Android sin publicarlas",
+      "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/"
+    },
+    {
+      "title": "SpaceXSI junta X Premium, Grok y Cursor en una sola suscripción de 8 a 200 USD por mes",
+      "url": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/"
+    },
+    {
+      "title": "American Express propone un marco para que los agentes de IA no compren sin autorización",
+      "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/"
+    }
+  ]
+}

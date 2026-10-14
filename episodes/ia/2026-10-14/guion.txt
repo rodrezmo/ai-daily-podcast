@@ -1,0 +1,112 @@
+## Titulares
+Lucía: Buen día, es miércoles catorce de octubre de dos mil veintiséis y esto es Radar IA.
+Martín: Hola, hola. Hoy hay dos modelos grandes nuevos, uno abierto para correr en tu máquina y una historia de infraestructura que está buenísima.
+Lucía: Arranco con Google. Presentó Gemini cuatro Argon, su nuevo modelo insignia.
+Martín: ¿Dónde se puede usar?
+Lucía: Por API, en AI Studio, y en Antigravity. Lo cuenta en su blog.
+Martín: Ayer justo contamos que Google deja de vender Gemini Code Assist y manda a los clientes a Antigravity. Cierra bastante.
+Lucía: Sí. El dato que importa es el precio. Hasta el treinta de noviembre cuesta dos dólares por millón de tokens de entrada.
+Lucía: Y diez dólares por millón de salida.
+Martín: ¿Y después?
+Lucía: Después se duplica. Cuatro de entrada y veinte de salida.
+Martín: O sea que es un precio de lanzamiento con fecha de vencimiento.
+Lucía: Exacto. Además declara un límite unificado de un millón de tokens.
+Lucía: Y dice que sale primero en el Vals Index, y que en el benchmark de Gray Swan los ataques de prompt injection funcionan solo el cero coma siete por ciento de las veces.
+Martín: Todos números de la propia Google, ojo.
+Lucía: Todos de Google. Mi opinión: el precio promocional es real y medible, los benchmarks hay que esperar a que los mida alguien más.
+Martín: Segunda. Liquid AI publicó en el blog de Hugging Face un modelo de razonamiento abierto que se llama LFM dos punto cinco.
+Martín: Tiene veinticuatro mil millones de parámetros, pero activa solo dos mil millones por vez. Es un mixture of experts.
+Lucía: ¿Y para qué está pensado?
+Martín: Para agentes locales. Contexto de hasta ciento treinta y un mil tokens.
+Martín: Reportan unos ciento ochenta tokens por segundo en una Apple M5 Max, y unos ciento catorce en una Ryzen AI Max más trescientos noventa y cinco.
+Lucía: Eso es rápido para algo que corre en tu equipo.
+Martín: Y corre con llama punto cpp, MLX, vLLM, SGLang y ONNX.
+Martín: En uso de herramientas le gana a Qwen tres punto seis de treinta y cinco mil millones. En AutomationBench saca casi veintiocho contra menos de nueve.
+Lucía: Pero no le gana en todo, ¿no?
+Martín: No. Pierde en GPQA Diamond y en SWE-Bench Verified. Y lo que me preocupa más: el post no aclara la licencia.
+Lucía: Eso es lo primero que hay que mirar antes de meterlo en algo comercial.
+Martín: Tal cual. El modelo pinta bien para agentes privados, pero sin licencia clara es para probar, no para producción.
+Lucía: Tercera, mi favorita del día. Anthropic contó en su blog de ingeniería que migró su monorepo fuera de git.
+Martín: ¿Fuera de git? ¿A qué?
+Lucía: A Scion, un sistema de control de versiones propio. La migración les llevó cinco meses.
+Lucía: El motivo son los agentes de código. En mayo tenían unos dos mil quinientos cambios por día.
+Lucía: En septiembre, más de treinta mil.
+Martín: Doce veces más en cuatro meses.
+Lucía: Y unos veinticinco millones de checkouts por día en CI.
+Lucía: Dicen que los checkouts ahora son dos órdenes de magnitud más rápidos, y que el mirroring usa doscientas veces menos CPU y memoria.
+Martín: Lo interesante no es Scion en sí, que nadie de nosotros va a usar. Es lo que muestra: lo primero que se rompe con agentes a escala es la infraestructura pensada para humanos.
+Lucía: Repositorio, revisión, CI. Ayer hablamos del estudio de Harvard que dice que los agentes suman código pero no software terminado. Esto es la otra cara: suman muchísimo código.
+Martín: Cuarta, más chiquita. Claude Code dos punto uno punto doscientos noventa y seis.
+Martín: La herramienta Read suma un parámetro, allow large, para leer archivos de texto grandes de una sola vez.
+Martín: También hay autoCompactWindow para subagentes, que es la auto-compactación de contexto, y una clave code para el gateway de las apps de Claude.
+Lucía: ¿Y arreglos?
+Martín: Varios. VS Code, Slack, Windows y runners propios.
+Martín: Un detalle: la fecha, diez de octubre, viene de un agregador. No la confirmamos en el changelog.
+Lucía: Cambio menor, pero si laburás con logs o repos grandes, se nota.
+Lucía: Quinta. Meta lanzó Muse Wonder, que según TechCrunch es su primer modelo de frontera.
+Lucía: Sale por la Meta Model API a cuatro dólares por millón de tokens de entrada y veinte de salida.
+Martín: Pará. Es exactamente lo que va a costar Gemini Argon desde el treinta de noviembre.
+Lucía: Sí, y la nota dice que es un precio parecido al de GPT seis Sol y Opus cinco punto cinco.
+Lucía: Hay otra versión, Muse Wonder Full, que queda solo para suscriptores de Muse Code.
+Martín: ¿Y benchmarks?
+Lucía: Los de la propia Meta, incluido uno que se llama MemoryBench. La nota no dice licencia ni tamaño de contexto.
+Martín: Entonces es otro proveedor más para comparar. Hasta que no haya mediciones independientes, yo no migraría nada.
+Martín: Y la sexta. Simon Willison resume la salida de Python tres punto quince.
+Lucía: El sábado contamos que ya había salido. ¿Qué agrega Simon?
+Martín: Lo más útil es lazy import, la PEP ochocientos diez. Ponés lazy antes del import y la dependencia se carga recién cuando la usás.
+Martín: Eso baja el tiempo de arranque cuando tenés librerías pesadas.
+Martín: Hay sintaxis nueva para desempaquetar en comprensiones, la PEP setecientos noventa y ocho.
+Martín: Y un profiler por muestreo, Tachyon, en profiling punto sampling, que se engancha a un proceso que ya está corriendo usando el PID.
+Lucía: ¿Y la velocidad?
+Martín: El JIT experimental dio cerca de uno coma dos veces más rápido en un benchmark de Fibonacci. En lo demás, similar a tres punto catorce.
+Martín: Y se termina el soporte de Python tres punto diez.
+Lucía: Lo que más me gusta es el profiler. Engancharte a un proceso de producción sin reiniciarlo es oro.
+## Para desarrolladores
+Lucía: Vamos a lo práctico. ¿Qué cambia hoy para quien programa o arma datos?
+Martín: Primero, la cuenta de costos. Hoy tenés varios modelos grandes con precios de lista parecidos, una vez pasada la promoción de Argon.
+Martín: Gemini Argon promocional a dos y diez, Muse Wonder a cuatro y veinte, y la nota de TechCrunch dice que ese precio es parecido al de GPT seis Sol y Opus cinco punto cinco.
+Lucía: Si tenés una automatización que corre todos los días por API, este es el momento de medir.
+Lucía: Agarrá veinte casos reales tuyos, corrélos en dos o tres modelos y compará calidad y costo. No el benchmark de la empresa, tus casos.
+Martín: Y anotá la fecha. Si elegís Argon por el precio, después del treinta de noviembre ese precio se duplica.
+Lucía: Segundo, lo local. LFM dos punto cinco corre con llama punto cpp y MLX.
+Lucía: Si trabajás con datos que no pueden salir de la máquina, por fin hay algo pensado para agentes con herramientas que anda rápido en hardware de escritorio.
+Martín: Con la salvedad de siempre: revisá la licencia, y no esperes que programe tan bien como los grandes. En SWE-Bench pierde.
+Lucía: Tercero, Python tres punto quince. Si mantenés CLIs o scripts que importan pandas, torch o similares, lazy import puede bajar el arranque.
+Martín: Y si tenés un ETL que tarda y no sabés dónde, el profiler Tachyon te deja mirarlo en vivo.
+Lucía: Ah, y si todavía tenés algo en Python tres punto diez, se quedó sin soporte. Ponelo en la lista.
+Martín: Y lo de Anthropic es para equipos que ya usan agentes de código. Si los agentes empiezan a abrir muchos más cambios, el cuello de botella va a ser tu CI y tu revisión, no el agente.
+Lucía: Vale la pena mirar cuántos cambios por día tienen hoy y cuánto tarda el pipeline, antes de que se multiplique.
+## Oportunidades de consultoría
+Martín: Hoy te propongo pensar en un estudio profesional. Un estudio contable o jurídico chico.
+Lucía: ¿Por qué ese perfil?
+Martín: Porque tiene información sensible de clientes y muchas veces no quiere, o no puede, mandarla a una API externa.
+Martín: El problema típico: les llegan documentos y mails todo el día, y alguien los clasifica a mano y carga datos en un Excel.
+Lucía: Y ahí entra el modelo de Liquid.
+Martín: Ahí entra la idea. Un agente local, con un modelo como LFM dos punto cinco, que lea lo que entra, lo clasifique y proponga la carga en la planilla.
+Martín: Todo dentro de una máquina del estudio, sin que los datos salgan.
+Lucía: ¿Qué haría falta?
+Martín: Una computadora con buena capacidad, porque las velocidades que reportan son en equipos tipo Apple M5 Max o Ryzen AI Max. Una muestra de documentos reales para probar. Y que alguien del estudio revise cada propuesta del agente, al menos al principio.
+Lucía: Y antes que nada, confirmar la licencia del modelo, porque el post no la aclara.
+Martín: Exacto. Es una idea para un piloto chico, no una promesa. Primero se prueba con casos reales y se ve si sirve.
+## Una cosa para probar hoy
+Lucía: La cosa para probar hoy: medir cuánto te ahorra lazy import en un script tuyo. Menos de media hora.
+Martín: Dale, paso a paso.
+Lucía: Uno. Instalá Python tres punto quince en un entorno aparte, para no tocar lo que ya tenés andando.
+Lucía: Dos. Elegí un script o CLI tuyo que importe librerías pesadas, de esos que tardan en arrancar aunque solo pidas la ayuda.
+Lucía: Tres. Corrélo así como está con el comando time adelante, tres veces, y anotá el tiempo.
+Martín: ¿Tres veces por qué?
+Lucía: Porque la primera suele ser más lenta. Te quedás con un promedio.
+Lucía: Cuatro. Copiá el script y, en los imports pesados, agregá la palabra lazy adelante. Lazy import pandas, por ejemplo.
+Lucía: Cinco. Volvé a correrlo tres veces con time y compará.
+Martín: Y si querés ir un paso más, corré un proceso largo y probá engancharle el profiler de profiling punto sampling con el PID.
+Lucía: Si la diferencia es grande, ya sabés dónde tenías el arranque lento. Si no cambia nada, también es un dato.
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: Una columna de Levy Yeyati en Infobae sobre adopción, regulación e impacto de la IA en la región.
+Lucía: No entró porque es opinión con pocas cifras. Si les interesa el tema regional, avisen.
+Martín: Google Play ahora deja crear apps propias con vibe coding que corren en Android sin publicarlas. Quedó afuera por impacto práctico limitado y sin datos duros.
+Lucía: SpaceXSI junta X Premium, Grok y Cursor en una sola suscripción de ocho a doscientos dólares por mes.
+Lucía: Es un paquete comercial, poco impacto técnico.
+Martín: American Express propuso un marco para que los agentes de IA no compren sin autorización.
+Martín: Por ahora es una propuesta, sin adopción ni datos. Si avanza, lo traemos.
+Lucía: Eso es todo por hoy, nos escuchamos mañana en Radar IA.
