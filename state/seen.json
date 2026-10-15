@@ -419,6 +419,36 @@
       "url": "https://simonwillison.net/2026/Oct/12/python-3-15",
       "title": "Python 3.15: imports perezosos (PEP 810), profiler por muestreo y fin de soporte de 3.10",
       "date": "2026-10-14"
+    },
+    {
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes",
+      "title": "OpenAI retira GPT-5.5 de ChatGPT, ChatGPT Work y Codex (la API no cambia)",
+      "date": "2026-10-15"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability",
+      "title": "Gemini 4 Argon llega a la app de Gemini con modo 'Tareas' y 40 apps conectadas",
+      "date": "2026-10-15"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform",
+      "title": "Figma lanza Specs y abre código y MCP para que los agentes sigan el sistema de diseño de cada equipo",
+      "date": "2026-10-15"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence",
+      "title": "Apate usa agentes de IA que se hacen pasar por víctimas para hacer perder tiempo a los estafadores",
+      "date": "2026-10-15"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace",
+      "title": "Zenzap junta 44 millones de dólares para un chat laboral con IA que apunta a reemplazar a WhatsApp en la empresa",
+      "date": "2026-10-15"
+    },
+    {
+      "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary",
+      "title": "La IA está descompilando juegos en masa: preservación, mashups y riesgo de copia",
+      "date": "2026-10-15"
     }
   ]
 }
