@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 15 de octubre: OpenAI retira GPT-5.5 de ChatGPT, Gemini 4 Argon con Tareas y Figma abre MCP",
+  "summary": "OpenAI retira GPT-5.5 de ChatGPT y Codex (la API no cambia) y Gemini 4 Argon llega a la app con modo Tareas y más de 40 apps conectadas. Además, Figma abre código y MCP para agentes, Apate usa agentes de IA contra estafadores, Zenzap levanta 44 millones para un chat laboral con IA y la IA descompila juegos viejos en masa.",
+  "stories": [
+    {
+      "title": "OpenAI retira GPT-5.5 de ChatGPT, ChatGPT Work y Codex (la API no cambia)",
+      "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
+    },
+    {
+      "title": "Gemini 4 Argon llega a la app de Gemini con modo 'Tareas' y 40 apps conectadas",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability/"
+    },
+    {
+      "title": "Figma lanza Specs y abre código y MCP para que los agentes sigan el sistema de diseño de cada equipo",
+      "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+    },
+    {
+      "title": "Apate usa agentes de IA que se hacen pasar por víctimas para hacer perder tiempo a los estafadores",
+      "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/"
+    },
+    {
+      "title": "Zenzap junta 44 millones de dólares para un chat laboral con IA que apunta a reemplazar a WhatsApp en la empresa",
+      "url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/"
+    },
+    {
+      "title": "La IA está descompilando juegos en masa: preservación, mashups y riesgo de copia",
+      "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Expertos: los incidentes de IA 'rebelde' son fallas básicas de contención y monitoreo de los laboratorios",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html"
+    },
+    {
+      "title": "OpenCode 2.0: servicio local único, Code Mode para encadenar herramientas MCP y plugins nuevos",
+      "url": "https://anoma.ly/notes/opencode-2-0/"
+    },
+    {
+      "title": "Google Play permite crear apps personales con 'vibe coding' que corren en Android sin publicarse",
+      "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/"
+    }
+  ]
+}

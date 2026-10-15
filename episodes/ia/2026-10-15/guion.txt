@@ -1,0 +1,112 @@
+## Titulares
+Lucía: Buen día, hoy es jueves quince de octubre. Esto es Radar IA.
+Martín: Buen día. Hoy tenemos un modelo que se jubila, agentes que se dejan estafar a propósito y un chat que quiere sacarle el lugar a WhatsApp en la oficina.
+Lucía: Arrancamos con OpenAI. El catorce de octubre anunció que retira GPT cinco punto cinco de ChatGPT, de ChatGPT Work y de Codex.
+Martín: ¿Y la API?
+Lucía: La API no cambia. Si lo usás por API, sigue ahí.
+Martín: O sea que el que se entera es el que tenía flujos armados dentro de ChatGPT o de Codex.
+Lucía: Exacto. Los prompts que andaban bien con ese modelo van a correr con el que quede por defecto. Y eso puede cambiar resultados sin que nadie toque nada.
+Martín: Mi opinión: es una noticia chica pero práctica. Lo que molesta es que te cambien el piso debajo de los flujos que ya tenías armados.
+Lucía: Segunda. Gemini cuatro Argon llega a la app de Gemini.
+Martín: Ayer contamos el lanzamiento del modelo, con el precio de lanzamiento de dos dólares por millón de tokens de entrada.
+Lucía: Claro, ahora es la versión para el usuario común. La pueden usar los suscriptores de Google AI Pro y Ultra.
+Martín: ¿Qué trae de nuevo?
+Lucía: Un modo tareas. Es un interruptor en el chat. Le delegás algo y sigue trabajando aunque no estés en la compu.
+Martín: Y se conecta a más de cuarenta apps. Nombran Shopify, Adobe, OpenTable e Instacart.
+Lucía: Además, la interfaz de código de Antigravity ahora está dentro de la app de Gemini para macOS.
+Martín: Que cierra con lo del martes, cuando contamos que Google deja de vender Gemini Code Assist y manda a los clientes a Antigravity.
+Lucía: Lo que no dice el post es en qué países está ni qué límites de uso tiene. Eso para nosotros es justo lo importante.
+Martín: Mi opinión: lo de tareas en segundo plano es interesante. Pero hasta no saber límites, es una promesa.
+Lucía: Tercera. Figma, en su evento Config en India, presentó Specs.
+Martín: ¿Qué es Specs?
+Lucía: Un editor en Markdown para escribir el lenguaje de diseño de un equipo. Lo leen las personas y también los agentes, como referencia.
+Martín: Y abrió las capas de código, que estaban en beta privada desde junio. Ahora están en beta pública.
+Lucía: Sumó soporte para más de veinte herramientas nuevas por MCP. Y está integrando Payload, el CMS de código abierto que compró el año pasado, con Figma Make.
+Martín: Hay un dato que me llamó la atención. La jefa de diseño dijo que hoy se produce diecisiete veces más código que antes, pero los lanzamientos crecieron solo uno coma tres veces.
+Lucía: Que es una forma elegante de decir que escribir código ya no es el cuello de botella.
+Martín: Mi opinión: lo de Specs es lo más sensato del día. Darle contexto escrito al agente es lo que funciona.
+Lucía: Cuarta. Apate, una startup australiana, usa agentes de IA que se hacen pasar por víctimas de estafas.
+Martín: Me encanta la idea.
+Lucía: Atienden llamadas, contestan mensajes y mails sospechosos. Tienen personas de distintas edades, acentos e idiomas.
+Martín: Y el objetivo es que el estafador hable lo más posible y suelte datos: cuentas bancarias, billeteras cripto, teléfonos, sitios truchos.
+Lucía: Dicen que llevan dos millones y medio de conversaciones. Y unos diecisiete años de tiempo de estafadores perdido.
+Martín: El Commonwealth Bank de Australia, que es cliente, reporta una caída del setenta y seis por ciento en pérdidas por estafas reportadas públicamente.
+Lucía: Ojo con eso. Son números de la propia empresa. Nadie lo verificó de forma independiente.
+Martín: Sí, pero el problema es real. Y acá, con las estafas por WhatsApp, nos toca de cerca.
+Lucía: Mi opinión: es de los usos de agentes con más sentido que vi en semanas. Con la cifra en cuarentena.
+Martín: Quinta. Zenzap juntó cuarenta y cuatro millones de dólares para un chat laboral con IA.
+Lucía: Que apunta a reemplazar a WhatsApp en la empresa.
+Martín: Suma tareas, calendario, búsqueda con IA y agentes para automatizar flujos. También transcribe notas de voz y llamadas.
+Lucía: ¿Precio?
+Martín: Hay plan gratis. Los pagos arrancan en cincuenta y un dólares por mes para hasta veinte usuarios. Y los agentes se cobran aparte, por créditos.
+Lucía: Entre los clientes nombran FedEx, Starbucks y Taco Bell.
+Martín: Mi opinión: la plata no me dice mucho. Lo que me interesa es la señal. Hay mercado para ordenar el caos de los grupos de trabajo.
+Lucía: Aunque sacar a una pyme argentina de WhatsApp... buena suerte.
+Martín: Sexta y última. Un desarrollador indie escribió en su blog que la IA está descompilando juegos en masa. Lo levantó Simon Willison.
+Lucía: Cuenta que hay agentes que toman juegos viejos, los descompilan y los portan al navegador o a hardware nuevo.
+Martín: Lo cual para preservación es buenísimo.
+Lucía: Sí, pero él mismo advierte que lo mismo sirve para copiar a la competencia o abrir software pago contra la voluntad del dueño.
+Martín: Mi opinión: es un texto de opinión, no un estudio. Pero el punto es bueno. Si un agente puede leer un binario y reescribirlo, migrar sistemas viejos se vuelve otra cosa.
+Lucía: Y proteger código también.
+
+## Para desarrolladores
+Martín: Vamos a lo que te cambia el día.
+Lucía: Lo primero y más urgente. Si usás Codex o ChatGPT con GPT cinco punto cinco, revisá qué modelo te quedó por defecto.
+Martín: Y si tenés algo que dependía de ese comportamiento, pasalo a la API. Ahí no cambia nada.
+Lucía: Tiene una lección más general. Si tu flujo depende de un modelo puntual, fijá la versión. Y tené un par de casos de prueba para notar si algo cambió.
+Martín: Lo segundo es Figma. Specs es, en el fondo, un archivo en Markdown que el agente consulta.
+Lucía: Que es lo mismo que mucha gente ya hace en sus repos con un archivo de convenciones para el agente de código.
+Martín: Claro. La idea se está volviendo estándar. Escribir las reglas una vez y que el agente las respete.
+Lucía: Y los más de veinte conectores nuevos por MCP van en la misma línea. Si armás herramientas internas, exponerlas por MCP te abre más clientes.
+Lucía: Y ojo con las capas de código de Figma. Le pedís al agente que pase un diseño a código, o que edite una parte.
+Martín: Que suena bien, pero está en beta pública. Para prototipos, sí. Para producción, yo esperaría.
+Lucía: Y no tengo claro precios ni en qué planes viene. Antes de proponérselo a alguien, averiguá eso.
+Martín: Lo tercero es lo de descompilar. Pensalo para sistemas heredados.
+Lucía: Ese sistema viejo del que nadie tiene el código fuente.
+Martín: Ese. Antes migrarlo era imposible o carísimo. Ahora hay una herramienta más para intentarlo.
+Lucía: Con cuidado legal, eso sí. Que el software sea tuyo o tengas permiso.
+Martín: Y del otro lado, si vendés software, asumí que alguien lo puede leer. La lógica importante, mejor del lado del servidor.
+Lucía: Un detalle de Apate que también sirve. Mezclan modelos de frontera con modelos propios afinados con sus conversaciones.
+Martín: Que es el patrón de siempre. El modelo grande para arrancar, el chico y afinado cuando ya tenés datos.
+Martín: Y una de Gemini. Si probás el modo tareas o Antigravity en Mac, medí cuánto hace solo antes de confiarle algo largo.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con el sector público.
+Martín: ¿Por la de Apate?
+Lucía: Sí. Pensá en un área municipal de defensa del consumidor. O en una oficina provincial que recibe denuncias de estafas.
+Martín: Que seguro le llegan por WhatsApp, por mail, por formulario, con capturas de pantalla.
+Lucía: Exacto. El problema es que todo eso queda desparramado. Nadie cruza si el mismo número de teléfono o el mismo alias aparece en veinte denuncias.
+Martín: ¿Y qué se automatiza?
+Lucía: Un modelo lee cada denuncia y saca los datos duros: teléfono, alias o cuenta, sitio web, la marca que imitaron, el tipo de estafa.
+Martín: Eso va a una planilla o a una base chica.
+Lucía: Y arriba, un tablero simple. Qué números se repiten, qué modalidad crece esta semana.
+Martín: Con eso la oficina puede sacar alertas a los vecinos más rápido. O pasarle datos ordenados a quien corresponda.
+Lucía: ¿Qué haría falta?
+Martín: Acceso a las denuncias, obvio. Un acuerdo claro sobre datos personales, porque esto es sensible.
+Lucía: Una persona del área que revise lo que extrae el modelo. No se automatiza la decisión, solo el ordenamiento.
+Martín: Y empezar con un lote de denuncias viejas para ver si la extracción sirve.
+Lucía: Es una idea para charlar, no una promesa. No vamos a hacer lo de Apate de hablar con estafadores. Es ordenar lo que ya llega.
+
+## Una cosa para probar hoy
+Martín: Esta tiene que ver con Zenzap, pero sin pagar nada.
+Lucía: Vamos a sacar tareas de un grupo de WhatsApp de trabajo.
+Martín: Paso uno. Abrí un grupo de trabajo en WhatsApp. Elegí uno donde tengas permiso para usar esos mensajes.
+Lucía: Paso dos. En el menú del chat, buscá la opción de exportar chat. Elegí sin archivos, solo el texto.
+Martín: Paso tres. Te queda un archivo de texto. Abrilo y fijate que no tenga datos que no deberías compartir. Si hace falta, recortá.
+Lucía: Paso cuatro. Pegalo en el asistente que uses. Y pedile esto: armame una tabla con cada tarea pedida, quién la pidió, a quién se le asignó, la fecha y si alguien dijo que estaba hecha.
+Martín: Paso cinco. Pedile que te la devuelva como CSV.
+Lucía: Paso seis. Abrila en una planilla y comparala con lo que vos te acordás.
+Martín: Ahí vas a ver dos cosas. Cuántas tareas se pierden en un grupo. Y cuántas veces el modelo se equivoca con quién dijo qué.
+Lucía: Las dos te sirven. Una para entender el problema. La otra para saber cuánto revisar.
+Martín: En media hora lo tenés.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: OpenCode dos punto cero. Ahora corre como un solo servicio en segundo plano y suma un modo para encadenar herramientas MCP con código.
+Lucía: No entró porque solo encontramos una nota de terceros, sin fecha ni anuncio oficial. Y rompe compatibilidad con los plugins viejos.
+Martín: Google Play deja crear apps personales con vibe coding que corren en Android sin publicarse.
+Lucía: Quedó afuera porque por ahora es solo para Estados Unidos y no encontramos el post oficial de Google.
+Martín: Y un análisis que dice que los incidentes de agentes rebeldes son, en realidad, fallas básicas de contención y monitoreo de los laboratorios.
+Lucía: Interesante, pero es un análisis de terceros sin fuente primaria. Si les interesa, nos dicen y lo seguimos.
+Martín: Eso es todo por hoy. Hasta mañana.
+Lucía: Chau, buen jueves.
