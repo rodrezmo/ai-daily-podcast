@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 16 de octubre: Meta abre Muse Spark Open, GitHub automatiza arreglos de seguridad y Anthropic suma evaluadores externos",
+  "summary": "Meta libera los pesos de Muse Spark Open, un modelo de 816 mil millones de parámetros con un millón de tokens de contexto, y GitHub lleva a disponibilidad general el autofix agéntico de code scanning. Además, Anthropic le da a METR acceso de nivel empleado, OpenCode 2.0 cambia su arquitectura, FLUX.3 Klein trae imagen abierta a GPUs medianas y Copilot retira varios modelos el 16 de noviembre.",
+  "stories": [
+    {
+      "title": "Meta publica Muse Spark Open: modelo abierto de 816B parámetros (42B activos) y 1M de contexto",
+      "url": "https://research.meta.ai/blog/muse-spark-open"
+    },
+    {
+      "title": "GitHub: el autofix agéntico de code scanning llega a disponibilidad general",
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability"
+    },
+    {
+      "title": "Anthropic da a METR acceso de nivel empleado y crea un esquema de evaluadores independientes en tres niveles",
+      "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/"
+    },
+    {
+      "title": "OpenCode 2.0: servicio local único, Code Mode para encadenar herramientas MCP, tareas en segundo plano y plugins estables",
+      "url": "https://anoma.ly/notes/opencode-2-0/"
+    },
+    {
+      "title": "Hugging Face: FLUX.3 Image Klein, imagen abierta de 6B con edición multi-referencia, en Diffusers",
+      "url": "https://huggingface.co/blog/flux-3"
+    },
+    {
+      "title": "GitHub Copilot retira Claude Opus 4.8, Claude Opus 5 y GPT-5.6 Terra el 16 de noviembre",
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "GitHub: AI Scan para pull requests sale de preview y cubre lenguajes que CodeQL no cubre",
+      "url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available"
+    },
+    {
+      "title": "CSO: los incidentes de IA 'rebelde' serían fallas básicas de seguridad de los laboratorios",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html"
+    },
+    {
+      "title": "Anthropic le dice a inversores que su facturación trimestral subió casi 50% a 16.800 millones de dólares",
+      "url": "https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/"
+    },
+    {
+      "title": "IBM Granite Switch 4.1: un endpoint con chat, decisiones, guardia de seguridad y voz a texto",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1"
+    }
+  ]
+}

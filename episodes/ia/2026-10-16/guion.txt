@@ -1,0 +1,111 @@
+## Titulares
+Lucía: Buen día, es viernes dieciséis de octubre y esto es Radar IA.
+Martín: Hola, hola. Hoy viene cargado de GitHub, un modelo abierto enorme de Meta y una movida de Anthropic con evaluadores externos.
+Lucía: Arranquemos por Meta, que publicó Muse Spark Open.
+Martín: El miércoles contamos que Meta había lanzado Muse Wonder, su primer modelo de frontera. Esto es otra cosa, ¿no?
+Lucía: Sí, este es abierto. Liberan los pesos.
+Lucía: Son ochocientos dieciséis mil millones de parámetros en total, pero solo cuarenta y dos mil millones activos.
+Martín: O sea que en cada paso trabaja una parte chica del modelo.
+Lucía: Exacto. Y tiene un millón de tokens de contexto. Además es multimodal de origen.
+Martín: ¿Y dónde se usa? Porque eso no lo corrés en tu casa.
+Lucía: No, ni de cerca. Pero hay APIs hospedadas en Together, Fireworks, Groq, OpenRouter y otras. Y los pesos están en Hugging Face, SageMaker, Google Cloud y Foundry.
+Martín: Lo que me hace ruido es la licencia.
+Lucía: Es una licencia propia, la licencia Muse. Permite uso comercial limitado y es gratis para muchos desarrolladores.
+Martín: Limitado, muchos. Son dos palabras que piden leer la letra chica antes de meterlo en algo serio.
+Lucía: Totalmente. Abierto no quiere decir que hagas lo que quieras. Sale en el blog de investigación de Meta.
+Martín: Segunda. GitHub pasó a disponibilidad general el autofix agéntico de code scanning.
+Lucía: Contame cómo funciona.
+Martín: Aparece una alerta de seguridad. Copilot propone el arreglo, vuelve a correr CodeQL para confirmar que la alerta se cierra, y abre un pull request en borrador.
+Lucía: Me gusta que verifique antes de abrir el pull request. Es lo mínimo, pero no todos lo hacen.
+Martín: Y puede juntar hasta veinticinco alertas en un mismo pull request.
+Lucía: ¿Qué hace falta para usarlo?
+Martín: Code Security, o Advanced Security en Enterprise Cloud. Y consume créditos de IA más minutos de Actions.
+Lucía: Ahí está el detalle. El costo es variable. Si tenés un backlog grande, conviene mirar cuánto te va a salir antes de largarlo todo junto.
+Martín: Tercera, y es la más rara del día. Anthropic le da a METR acceso de nivel empleado.
+Lucía: ¿Qué quiere decir eso en concreto?
+Martín: Según TechCrunch, seis investigadores de METR van a tener laptops, oficina y herramientas internas.
+Martín: Y pueden publicar sus evaluaciones sin veto de Anthropic.
+Lucía: ¿Sin ningún veto?
+Martín: Casi. Hay redacciones permitidas en categorías acotadas, como datos de clientes o arquitectura del modelo.
+Martín: Además arman un esquema de evaluadores independientes en tres niveles. Los de nivel más bajo, como SecureBio, sí necesitan aprobación para publicar.
+Lucía: El lunes hablamos de los agentes de Anthropic que mandaron veinte solicitudes de visa incompletas en el sitio del Departamento de Estado. Y antes habían documentado acciones no previstas de Claude en sitios reales.
+Lucía: Es difícil no leer esto en ese contexto.
+Martín: Sí, aunque ojo: la nota es de TechCrunch, no un anuncio oficial que hayamos leído. Mi opinión es que está bien que alguien de afuera pueda publicar sin pedir permiso. Ahora, hay que ver qué publican.
+Lucía: Cuarta. OpenCode dos punto cero.
+Martín: El agente de código abierto.
+Lucía: Ese. Ahora corre como un único servicio local en segundo plano. Suma tareas en segundo plano y los plugins de la interfaz de terminal pasan a estables.
+Lucía: Y trae algo que se llama Code Mode, que encadena llamadas a herramientas eme ce pe u OpenAPI dentro de un script.
+Martín: En vez de que el modelo vaya llamando herramienta por herramienta.
+Lucía: Claro. La contra es que rompe la compatibilidad con los plugins de la versión uno.
+Martín: Bueno, es una versión mayor, se entiende. Pero si tenés plugins propios, no actualices un viernes a la tarde.
+Lucía: Quinta, imágenes. Hugging Face presenta Flux tres Image Klein, un modelo abierto de seis mil millones de parámetros.
+Martín: ¿Qué hace?
+Lucía: Texto a imagen y edición usando varias imágenes de referencia. Ya está en Diffusers.
+Lucía: Hay una versión destilada de dieciséis pasos que tarda casi dos segundos por imagen en una H cien.
+Martín: ¿Y cuánta memoria pide?
+Lucía: Entre quince y veintiún gigas de memoria de video. O sea, entra en una placa de dieciséis a veinticuatro gigas.
+Martín: Eso está bueno. Es hardware que alguien puede tener.
+Lucía: Sí, pero el post no dice qué licencia tiene. Hasta que eso no esté claro, yo no lo usaría para un cliente.
+Martín: Y sexta. GitHub Copilot retira tres modelos el dieciséis de noviembre.
+Lucía: ¿Cuáles?
+Martín: Claude Opus cuatro punto ocho, Claude Opus cinco y GPT cinco punto seis Terra.
+Martín: El reemplazo de Opus cinco es Opus cinco punto cinco. El de GPT cinco punto seis Terra es GPT seis punto uno Sol o GPT seis Luna.
+Lucía: ¿Y Opus cuatro punto ocho?
+Martín: Lo conserva el plan anual individual. El resto lo pierde.
+Lucía: Ayer contamos que OpenAI retira GPT cinco punto cinco de ChatGPT, ChatGPT Work y Codex. Se nota que esta temporada es de limpieza de modelos viejos.
+Martín: Es un mes de margen. No es mucho si tenés flujos armados alrededor de un modelo puntual.
+
+## Para desarrolladores
+Lucía: Vamos a lo práctico. ¿Qué cambia esta semana para alguien que programa o arma datos?
+Martín: Lo primero, lo más urgente: la fecha del dieciséis de noviembre.
+Martín: Si en tu equipo hay prompts, instrucciones o flujos que eligen a mano Opus cinco o GPT cinco punto seis Terra en Copilot, hay que pasarlos al reemplazo antes.
+Lucía: Y probar. Un modelo nuevo no responde igual que el viejo, aunque sea de la misma familia.
+Martín: Exacto. No es cambiar un nombre y listo.
+Lucía: Lo segundo es el autofix. Si tu organización ya paga Code Security, tenés una forma de bajar el backlog de alertas viejas.
+Martín: Yo arrancaría por pocas alertas, no por las veinticinco de golpe. Así ves la calidad de los arreglos y cuánto gastás en créditos y minutos de Actions.
+Lucía: Y como abre el pull request en borrador, la revisión sigue siendo tuya. Eso no hay que delegarlo.
+Martín: Lo tercero es para quien trabaja con agentes abiertos. El Code Mode de OpenCode apunta a algo que se repite: encadenar herramientas en un script en lugar de una llamada por vez.
+Lucía: Si usás servidores eme ce pe para consultar bases o APIs internas, vale la pena mirarlo.
+Martín: Y antes de actualizar, fijate qué plugins usás. El comando para la versión mayor es opencode upgrade guion guion major. Pero si tus plugins son de la uno, se van a romper.
+Lucía: Y lo cuarto, más de fondo: con Muse Spark Open aparece otra opción abierta grande por API. Para quien procesa documentos largos, ese millón de tokens de contexto es interesante.
+Martín: Siempre que la licencia te deje usarlo para lo que querés. Lo repito porque es lo que más se olvida.
+
+## Oportunidades de consultoría
+Lucía: Hoy pensaba en un perfil que no tocamos tanto: los estudios y profesionales independientes.
+Martín: Dale. ¿Cuál sería el problema?
+Lucía: Pensá en un estudio contable chico. Los clientes le mandan comprobantes por WhatsApp. Fotos, PDFs, capturas de pantalla.
+Lucía: Y alguien del estudio los carga a mano en un Excel.
+Martín: Conozco esa escena. Horas de tipeo y errores de copia.
+Lucía: La idea sería usar un modelo multimodal, como Muse Spark Open por alguna de las APIs hospedadas, para leer esos archivos y sacar los campos que importan.
+Lucía: Fecha, monto, quién emite. Y que eso termine en una planilla.
+Martín: Con una persona revisando, ¿no?
+Lucía: Siempre. El modelo propone, la persona del estudio confirma. Sobre todo al principio.
+Martín: ¿Y qué haría falta para arrancar?
+Lucía: Primero, una muestra real de comprobantes para ver qué tan bien los lee. Segundo, leer la licencia del modelo para confirmar que ese uso entra.
+Lucía: Tercero, resolver qué pasa con los datos de los clientes. Mandar documentos de terceros a una API externa no es un tema menor.
+Martín: Y si el modelo abierto no cierra por licencia o por privacidad, la misma idea funciona con otro. Lo que se ofrece es el circuito, no el modelo.
+Lucía: Exacto. Y sin prometer cuántas horas se ahorran hasta haberlo probado con sus papeles.
+
+## Una cosa para probar hoy
+Martín: La cosa para probar hoy es justamente esa: medir si un contexto de un millón de tokens te sirve de verdad.
+Lucía: ¿Cómo lo hacemos en menos de media hora?
+Martín: Paso uno. Entrá a alguno de los proveedores que tienen Muse Spark Open, por ejemplo OpenRouter si ya tenés cuenta.
+Martín: Paso dos. Elegí un documento largo que conozcas bien. Un contrato, un manual interno, un informe de varios meses. Algo que no tenga datos sensibles.
+Lucía: Importante eso.
+Martín: Paso tres. Antes de cargarlo, anotá tres preguntas cuya respuesta ya sepas. Una fácil, una que esté perdida en el medio del documento y una que necesite cruzar dos partes.
+Martín: Paso cuatro. Cargá el documento y hacé las tres preguntas.
+Martín: Paso cinco. Compará con tus respuestas. Y si querés, repetí lo mismo con el modelo que usás siempre.
+Lucía: Con eso en veinte minutos sabés si te sirve para tu caso, más allá del número del anuncio.
+Martín: Y si te convence, recién ahí leés la licencia con calma.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: GitHub también sacó de preview AI Scan para pull requests. Revisa vulnerabilidades en lenguajes que CodeQL no cubre, como PHP, Bash, Terraform y Dockerfiles.
+Lucía: No entró porque es solo informativo, no bloquea merges y se pisa bastante con el autofix que ya contamos.
+Martín: Después, según el Financial Times, Anthropic le dijo a inversores que su facturación trimestral subió casi cincuenta por ciento, a unos dieciséis mil ochocientos millones de dólares.
+Lucía: Lo dejamos afuera porque son cifras filtradas, de tercera mano. Nadie las confirmó oficialmente.
+Martín: También había un análisis en CSO que dice que los incidentes de agentes rebeldes serían, en realidad, fallas básicas de seguridad de los laboratorios. Que faltó contención y monitoreo.
+Lucía: Es una nota de análisis, sin una fuente primaria que hayamos podido verificar.
+Martín: Y por último, IBM presentó Granite Switch cuatro punto uno: un solo endpoint con chat, decisiones, guardia de seguridad y voz a texto.
+Lucía: Muy de nicho por ahora, y no menciona licencia ni sabemos qué tal anda en español. Si alguno de estos te interesa, avisanos.
+Martín: Eso es todo por hoy. Buen viernes y hasta mañana.
