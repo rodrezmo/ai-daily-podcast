@@ -449,6 +449,36 @@
       "url": "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary",
       "title": "La IA está descompilando juegos en masa: preservación, mashups y riesgo de copia",
       "date": "2026-10-15"
+    },
+    {
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "title": "Meta publica Muse Spark Open: modelo abierto de 816B parámetros (42B activos) y 1M de contexto",
+      "date": "2026-10-16"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability",
+      "title": "GitHub: el autofix agéntico de code scanning llega a disponibilidad general",
+      "date": "2026-10-16"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access",
+      "title": "Anthropic da a METR acceso de nivel empleado y crea un esquema de evaluadores independientes en tres niveles",
+      "date": "2026-10-16"
+    },
+    {
+      "url": "https://anoma.ly/notes/opencode-2-0",
+      "title": "OpenCode 2.0: servicio local único, Code Mode para encadenar herramientas MCP, tareas en segundo plano y plugins estables",
+      "date": "2026-10-16"
+    },
+    {
+      "url": "https://huggingface.co/blog/flux-3",
+      "title": "Hugging Face: FLUX.3 Image Klein, imagen abierta de 6B con edición multi-referencia, en Diffusers",
+      "date": "2026-10-16"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
+      "title": "GitHub Copilot retira Claude Opus 4.8, Claude Opus 5 y GPT-5.6 Terra el 16 de noviembre",
+      "date": "2026-10-16"
     }
   ]
 }
