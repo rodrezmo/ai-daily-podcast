@@ -1,0 +1,112 @@
+## Titulares
+Lucía: Hola, buen día. Es sábado diecisiete de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y varias vienen con números para mirar con lupa.
+Lucía: Arranco con un modelo abierto grande. Reflection lanzó Beam, y sale en el blog de Hugging Face.
+Martín: ¿Grande cuánto?
+Lucía: Unos quinientos mil millones de parámetros en total. Es una mezcla de expertos, así que en cada paso se usan veintitrés mil millones.
+Lucía: Tiene contexto de un millón de tokens y licencia Apache dos punto cero.
+Martín: Eso último es lo que más me importa. Apache es una licencia que te deja usarlo comercialmente sin vueltas.
+Lucía: Los números de rendimiento son del propio equipo. En SWE-bench Verified dan casi ochenta y dos por ciento.
+Lucía: Y en GPQA Diamond, un poco más de noventa por ciento.
+Martín: Ojo, que nadie los verificó de forma independiente todavía. Hasta que alguien los reproduzca, son números de folleto.
+Lucía: Y para alojarlo vos mismo necesitás fierros. La versión comprimida en NVFP4 pesa unos doscientos ochenta gigas.
+Martín: O sea, para una pyme lo realista es usarlo a través de un proveedor de inferencia, no en una máquina propia.
+Lucía: Ayer contamos que Meta publicó Muse Spark Open, otro modelo abierto enorme. Se nota que hay competencia en esa liga.
+Martín: Segunda. GitHub pasó a disponibilidad general AI Scan para pull requests. Sale en el changelog de GitHub.
+Lucía: ¿Qué hace exactamente?
+Martín: Busca vulnerabilidades en los pull requests, en lenguajes que CodeQL no cubre.
+Martín: PHP, Shell, Terraform, Dockerfiles, JSP y Blazor.
+Lucía: Justo lo que hay en muchos sistemas viejos de la región. Mucho PHP heredado y mucho script suelto.
+Martín: Está disponible en repos públicos. En privados necesitás Code Security o Advanced Security, y se cobra con créditos de IA.
+Martín: No hace falta licencia de Copilot.
+Lucía: Y los resultados son consultivos. No te bloquean el merge.
+Martín: Tampoco corre en forks ni en los pull requests de Dependabot.
+Lucía: Ayer hablamos del autofix agéntico de code scanning, que también llegó a disponibilidad general. GitHub viene armando todo un paquete de seguridad con IA.
+Martín: Mi opinión: está bien que no bloquee. Pero antes de prenderlo en privados, mirá cuántos créditos te come.
+Lucía: Tercera, más de práctica que de producto. El equipo de Claude Code contó cómo hace la revisión de código.
+Martín: Sí, lo publicaron en el blog de Claude.
+Lucía: Exacto. Salió esta semana.
+Lucía: La idea es cambiar la pregunta. En vez de preguntar si un humano leyó el código, preguntar qué puede salir mal y qué control lo tendría que detectar.
+Martín: Me gusta el planteo. Es pensar en riesgos, no en firmas.
+Lucía: La revisión pasa a ser continua, como un corrector ortográfico. Y Claude revisa y corrige la mayoría de los cambios antes que una persona.
+Martín: Ahora, una aclaración. Los resultados que mencionan son del propio equipo, y lo cuenta la misma empresa que vende la herramienta.
+Lucía: Sí. El martes hablamos de un estudio de Harvard que decía que los agentes de código suman código pero no software terminado. Vale la pena leer las dos cosas juntas.
+Martín: Cuarta, y para mí la más útil del día. Mistral lanzó Timestral, en su blog.
+Lucía: Son modelos de pronóstico de series de tiempo, ¿no?
+Martín: Sí. Vienen en cuatro tamaños. El más chico tiene cinco millones de parámetros y el más grande, doscientos nueve millones.
+Martín: Licencia MIT modificada y los pesos están en Hugging Face.
+Lucía: ¿Y cómo les va?
+Martín: Según Mistral, el más grande encabeza tres benchmarks: GIFT-Eval, TIME y fev-bench.
+Martín: Y el de veintiocho millones le gana a Chronos dos, que es cuatro veces más grande, en GIFT-Eval y TIME.
+Lucía: Lo que me llama la atención es que no necesita GPU.
+Martín: Nada. En una CPU de ocho hilos, un pronóstico a un día tarda unos diez milisegundos con el más chico.
+Martín: Y unos ciento cuarenta milisegundos con el más grande.
+Lucía: Eso cambia la cuenta. Pronosticar demanda o stock sin pagar GPU ni API.
+Martín: Y la licencia es MIT modificada, así que conviene leer qué modificaron antes de usarlo en un cliente.
+Lucía: Quinta. Cursor publicó en su changelog dos novedades para los agentes en la nube.
+Lucía: Primero, ahora pueden armar canvases interactivos y compartirlos por link.
+Martín: ¿Canvases tipo un panel?
+Lucía: Algo así, una pieza interactiva que el agente construye. Y segundo, la Environments API pasa a beta.
+Lucía: Los entornos admiten hasta trescientos repositorios y cargan cinco veces más rápido.
+Martín: Lo de compartir por link me interesa más que lo de los repositorios. Para devolverle algo interactivo a un cliente puede servir.
+Lucía: Sí, aunque es una beta. Yo esperaría a ver cómo se porta.
+Martín: Y sexta, DeepSeek. Está en la documentación de su API, con fecha de hoy.
+Martín: Abrió una API propia de búsqueda y lectura de páginas, que llaman Search and Fetch.
+Martín: Y deepseek-flash pasa a la versión V cuatro punto uno Flash mil diecisiete. Misma forma de llamarlo, mismo precio.
+Lucía: ¿Y los nombres viejos?
+Martín: deepseek-v4-flash y la variante vision-exp quedan retirados. Pero por ahora redirigen al modelo nuevo.
+Martín: Recomiendan usar DeepSeek Harness cero punto dos punto uno, la release candidate uno, o algo posterior.
+Lucía: Bueno, nada roto por ahora. Pero si tenés algo en producción con el nombre viejo, ya no sabés bien qué modelo te está contestando.
+Martín: Exacto. La redirección es cómoda, pero te cambia el modelo sin que toques nada.
+
+## Para desarrolladores
+Lucía: Vamos a lo que cambia en el día a día. ¿Por dónde empezás?
+Martín: Por DeepSeek, porque es lo más rápido de resolver. Buscá en tu código los nombres viejos y cambialos por el nuevo.
+Martín: Así sabés qué modelo estás llamando y no dependés de una redirección.
+Lucía: Y si estás armando un agente barato que necesita buscar en la web, la API de Search and Fetch es una opción más para comparar.
+Martín: Segundo, AI Scan. Si mantenés Terraform, Dockerfiles o PHP viejo, ahora tenés un revisor para esos archivos.
+Lucía: Pero acordate de que no bloquea. Si nadie mira los avisos, es como no tenerlo.
+Martín: Y no corre en los pull requests de Dependabot. Las actualizaciones de dependencias las seguís revisando por otro lado.
+Lucía: Tercero, lo del equipo de Claude Code. Aunque no uses esa herramienta, la pregunta sirve igual.
+Lucía: Agarrá tu flujo de revisión y preguntate, para cada tipo de cambio, qué puede salir mal y qué control lo atrapa.
+Martín: Un test, un escaneo, un linter, o una persona. Y lo que no tiene ningún control, eso es lo que leés a mano.
+Lucía: Y para quien arma datos, Timestral. Si tenés una serie de ventas o de consumo, podés probar un pronóstico en una notebook, sin GPU.
+Martín: Con Beam, en cambio, yo no me apuraría. Primero que alguien reproduzca esos números.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero ir por un perfil distinto. No la pyme, sino el equipo de operaciones de una empresa mediana.
+Martín: ¿Pensando en Timestral?
+Lucía: Sí. Imaginate un área de operaciones que planifica stock o compras con una planilla de Excel.
+Lucía: Cada semana alguien saca promedios a mano y decide cuánto pedir.
+Martín: Y si esa persona se va de vacaciones, el pronóstico se va con ella.
+Lucía: Tal cual. La idea sería automatizar ese paso.
+Lucía: Un proceso que toma el Excel que ya exportan, corre un modelo chico de Timestral en una computadora común y devuelve el pronóstico en otra hoja.
+Martín: Sin GPU y sin pagar por cada llamada a una API.
+Lucía: ¿Qué haría falta?
+Martín: Primero, historia limpia. Fechas consistentes, sin huecos raros, y el mismo producto con el mismo nombre siempre.
+Martín: Segundo, comparar contra lo que ya hacen. Correr el modelo en paralelo unas semanas y ver si se equivoca menos que el promedio a mano.
+Lucía: Y tercero, revisar la licencia MIT modificada antes de meterlo en un trabajo pago.
+Martín: Y decirlo claro: es una prueba. Puede que el modelo no mejore nada para esos datos, y eso también es una respuesta.
+
+## Una cosa para probar hoy
+Lucía: Para probar hoy, en menos de media hora: un pronóstico con Timestral sobre datos tuyos.
+Martín: Dale, contame el paso a paso.
+Lucía: Uno. Agarrá una serie que tengas en Excel, ventas por día o consumo por hora. Exportala a CSV con dos columnas, fecha y valor.
+Lucía: Dos. Buscá Timestral en Hugging Face y elegí el modelo más chico, el de cinco millones de parámetros.
+Lucía: Tres. Abrí una notebook y seguí el ejemplo de uso que trae la ficha del modelo, pero con tu CSV.
+Martín: Y antes de correrlo, sacá las últimas semanas de la serie y guardalas aparte.
+Lucía: Eso es el paso cuatro. Pronosticá ese tramo que escondiste y comparalo con lo que pasó de verdad.
+Lucía: Cinco. Hacé lo mismo con un promedio simple y fijate cuál se equivoca menos.
+Martín: Si el modelo no le gana al promedio, ya aprendiste algo. Y te ahorraste vendérselo a alguien.
+
+## Quedaron afuera
+Lucía: Antes de irnos, algunas cosas que quedaron afuera.
+Martín: Una nota del Financial Times dice que Anthropic les reportó a inversores ingresos trimestrales de dieciséis mil ochocientos millones de dólares.
+Lucía: No entró porque son cifras filtradas por fuentes anónimas. Nadie lo confirmó oficialmente.
+Martín: IBM presentó Granite Switch cuatro punto uno, que junta chat, decisiones y voz a texto en un mismo endpoint.
+Lucía: Quedó afuera porque la nota no trae benchmarks con números ni dice la licencia.
+Martín: Salió VS Code uno punto ciento cuarenta y dos, con el arnés de Copilot por defecto, canvases en preview y controles de permisos para empresas.
+Lucía: Lo dejamos porque tenía menos impacto que las otras notas de herramientas de hoy.
+Martín: Y Vercel lanzó Token Pass, treinta dólares por mes con ochenta dólares de crédito para GLM cinco punto tres y Kimi K tres.
+Lucía: Está en acceso anticipado y el impacto es acotado. Si quieren que sigamos alguna de estas, avisen.
+Martín: Eso es todo por hoy. Buen sábado y nos escuchamos el próximo episodio.
