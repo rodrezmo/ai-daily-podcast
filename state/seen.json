@@ -479,6 +479,36 @@
       "url": "https://github.blog/changelog/2026-10-15-upcoming-deprecation-of-selected-github-copilot-models-in-mid-november",
       "title": "GitHub Copilot retira Claude Opus 4.8, Claude Opus 5 y GPT-5.6 Terra el 16 de noviembre",
       "date": "2026-10-16"
+    },
+    {
+      "url": "https://huggingface.co/blog/reflection-beam",
+      "title": "Reflection lanza Beam, modelo abierto de 501B parámetros con licencia Apache 2.0",
+      "date": "2026-10-17"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-15-ai-scan-for-pull-requests-generally-available",
+      "title": "GitHub AI Scan para pull requests pasa a disponibilidad general",
+      "date": "2026-10-17"
+    },
+    {
+      "url": "https://claude.dev/blog/solving-code-review-at-anthropic",
+      "title": "Cómo el equipo de Claude Code hace la revisión de código",
+      "date": "2026-10-17"
+    },
+    {
+      "url": "https://mistral.ai/news/timestral",
+      "title": "Mistral lanza Timestral: modelos de pronóstico de series de tiempo de 5M a 209M de parámetros que corren en CPU",
+      "date": "2026-10-17"
+    },
+    {
+      "url": "https://cursor.com/changelog/cloud-agent-canvases-and-environments",
+      "title": "Cursor: los agentes en la nube ahora arman canvases interactivos y llega la Environments API en beta",
+      "date": "2026-10-17"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/updates",
+      "title": "DeepSeek habilita su API de Search & Fetch y actualiza V4.1 Flash a la versión 1017 sin cambiar precio",
+      "date": "2026-10-17"
     }
   ]
 }
