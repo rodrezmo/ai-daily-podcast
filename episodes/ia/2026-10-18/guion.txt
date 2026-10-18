@@ -1,0 +1,110 @@
+## Titulares
+Lucía: Buen día, hoy es domingo dieciocho de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay un modelo nuevo, un cambio en VS Code que puede molestar a más de uno y una historia de Postgres que me gustó mucho.
+Lucía: Arranquemos por Google. Gemini cuatro Argon ya está disponible para desarrolladores.
+Martín: ¿Pero eso no lo contamos ya?
+Lucía: Sí, el miércoles contamos el lanzamiento, con un precio de dos dólares por millón de tokens de entrada. Y el jueves, que llegaba a la app de Gemini con el modo Tareas.
+Martín: ¿Y qué agrega el post del blog de Google?
+Lucía: Dónde se puede usar. Está en la capa paga de la API de Gemini, en AI Studio y en Android Studio.
+Lucía: Y quienes pagan Google AI Ultra lo pueden probar en AI Studio y en Antigravity, la plataforma de desarrollo con agentes.
+Martín: ¿Para qué lo venden?
+Lucía: Para trabajos largos de ingeniería de software. El ejemplo que dan es una migración de código.
+Martín: Mi opinión: el post no trae ni un benchmark, ni un precio, ni el tamaño de contexto. Es un anuncio de disponibilidad y nada más.
+Lucía: Para los números hay que ir a la guía de la API. Antes de migrar algo, eso es lo primero que miraría.
+Martín: Segunda. Salió VS Code uno punto ciento cuarenta y dos.
+Martín: El arnés de Copilot pasa a ser, de a poco, el que viene por defecto en las sesiones nuevas.
+Lucía: ¿Y qué es lo que puede molestar?
+Martín: Que si tu organización define permisos o activa el sandbox, los chats de Claude, de Codex y de terminal quedan no disponibles.
+Lucía: Uy. O sea que actualizás el editor y perdés opciones.
+Martín: Exacto. Cuando abrís un chat local que ya tenías, se muda a Copilot, con el historial. El chat en línea del editor sigue andando para cosas chicas.
+Martín: Los administradores tienen una opción para seguir con el arnés local, pero es temporal. Y no dicen hasta cuándo.
+Lucía: Y ojo, que con esa opción el sandbox y los permisos no se aplican.
+Martín: Además suma canvases en vista previa. Y podés mover un chat a otra carpeta o a un worktree nuevo, por ahora con Codex.
+Lucía: Opinión.
+Martín: Lo de los canvases está bien. Lo otro es empujar a todos hacia Copilot usando las políticas de seguridad. Si trabajás con Claude o Codex adentro de VS Code en una empresa, revisá antes de actualizar.
+Lucía: Y esto se suma a lo del viernes, cuando contamos que GitHub Copilot retira Claude Opus cuatro punto ocho, Claude Opus cinco y GPT cinco punto seis Terra el dieciséis de noviembre.
+Lucía: Tercera. Vercel lanza Token Pass.
+Lucía: Son treinta dólares por mes y te dan ochenta dólares de crédito para dos modelos abiertos: GLM cinco punto tres y Kimi K tres.
+Martín: ¿Para quién es?
+Lucía: Por ahora es acceso anticipado, solo para equipos Pro. Todo pasa por el AI Gateway y el crédito se comparte en el equipo.
+Lucía: El crédito que no usás se pierde. Y cuando se termina, los pedidos se cortan hasta el mes siguiente. No hay cobros extra automáticos.
+Martín: Eso último me gusta. Lo peor de los agentes es la factura sorpresa a fin de mes.
+Lucía: Viene con retención cero de datos activada, y la inferencia corre en Estados Unidos y en Europa.
+Martín: Opinión: es un tope de gasto bien claro. Ahora, solo te conviene si de verdad gastás más de treinta dólares por mes en esos dos modelos.
+Martín: Cuarta, la de Postgres. Postgres diecinueve se atrasa.
+Lucía: ¿Cuánto?
+Martín: Tenía que salir entre fines de septiembre y principios de octubre. Ahora esperan sacarlo cerca del diecinueve de noviembre.
+Martín: Y sacaron entre ocho y diez funciones importantes, que probablemente pasen a Postgres veinte.
+Lucía: ¿Y la IA qué tiene que ver?
+Martín: Según The Register, Peter Eisentraut, uno de los committers principales, dice que parte de esas marchas atrás vino de revisiones de código hechas con modelos de lenguaje.
+Martín: Encontraron una cola larga de casos borde menores. Y algunas de las funciones que se cayeron tenían defectos de arquitectura difíciles de arreglar en beta.
+Martín: Él lo describe así: te quedás mirando una lista de cuarenta reportes de defectos. Y aunque cada arreglo sea chico, no da el tiempo.
+Lucía: Y aclaró que no fue por vibe coding, porque cuando se escribieron la mayoría de esas funciones esa técnica no estaba disponible.
+Martín: Una de las que se cayó es el soporte de consultas de grafos en SQL.
+Lucía: Opinión: para mí es la noticia más interesante del día. La IA no escribió código malo. Revisó código humano y subió la vara de calidad.
+Martín: Y conecta con lo de ayer, cuando contamos cómo el equipo de Claude Code hace la revisión de código, y que el AI Scan de GitHub para pull requests pasó a disponibilidad general.
+Lucía: Si pensabas migrar a Postgres diecinueve, corré la fecha.
+Lucía: Quinta. Amazon MWAA, el Airflow administrado de AWS, suma habilidades de agente.
+Lucía: Son cuatro: para escribir flujos, depurarlos, probarlos y actualizar el entorno.
+Martín: ¿Funcionan con cualquier asistente?
+Lucía: Con cualquier asistente de código que soporte habilidades de agente. Se instalan con el plugin de análisis de datos de AWS.
+Lucía: Andan con MWAA aprovisionado y con el serverless, en todas las regiones donde está el servicio.
+Martín: ¿Y qué hace la de escribir?
+Lucía: Le describís el flujo en lenguaje natural y te arma el DAG, con las dependencias entre tareas y el manejo de errores.
+Martín: Opinión: si ya usás Airflow en AWS, sirve. Si no, no es motivo para meterte. Y el anuncio no dice nada de precio.
+Martín: Sexta y última. GitHub Actions saca los lockfiles de workflows en vista previa pública.
+Martín: Con una extensión de la línea de comandos de GitHub se genera un archivo que fija el commit exacto de cada acción que usás.
+Lucía: ¿Incluye las dependencias de las acciones?
+Martín: Sí, las transitivas y los workflows reutilizables. Y Actions corre esos commits aunque después alguien mueva el tag.
+Martín: Los administradores pueden exigir el lockfile con una política. Y Dependabot actualiza la entrada del lockfile en el mismo pull request.
+Lucía: Está en los planes Free, Team y Enterprise Cloud.
+Martín: Opinión: es barato y cierra un agujero real de la cadena de suministro. Pero GitHub mismo lo aclara: fijar una dependencia no dice si es segura. Hay que revisarla antes.
+## Para desarrolladores
+Lucía: Bueno, ¿qué cambia el lunes para quien programa o arma datos?
+Martín: Lo primero, VS Code. Antes de actualizar en la compu del trabajo, preguntá si tu organización tiene políticas de permisos o de sandbox.
+Martín: Si las tiene, Claude, Codex y la terminal en el chat van a desaparecer. Mejor saberlo antes que en medio de una tarea.
+Lucía: Lo segundo, Postgres. Si tenías una migración planeada, el calendario cambió. Y algunas funciones que esperabas capaz no están.
+Lucía: Antes de prometer nada, fijate en las notas de la versión final qué entró y qué no.
+Martín: Lo tercero es más de fondo. Lo de Postgres muestra que la revisión con IA encuentra cosas reales.
+Martín: Pero también muestra el costo: alguien tiene que leer cuarenta reportes y decidir cuáles arreglar.
+Lucía: Si lo sumás a tu flujo, tené pensado quién va a priorizar lo que salga. Si no, es una lista más que nadie mira.
+Martín: Y lo cuarto: si tenés automatizaciones en GitHub Actions, el lockfile es de las mejoras más baratas de la semana.
+Lucía: Para la gente de datos con Airflow en AWS, vale la pena probar las habilidades de MWAA en un entorno de prueba. Pero el DAG que te arme el agente se revisa igual que uno escrito a mano.
+Martín: Y Token Pass, si estás probando agentes con modelos abiertos y querés un techo de gasto fijo.
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con un equipo interno de datos o de operaciones en una empresa mediana.
+Martín: ¿Cuál es el problema?
+Lucía: Pensá en un equipo que tiene informes y cargas de datos corriendo en GitHub Actions. Los fue armando gente distinta, en distintos momentos.
+Lucía: Esos workflows usan acciones de terceros. Y muchas veces tienen acceso a credenciales de bases de datos o de la nube.
+Martín: Y nadie sabe bien qué acciones corren, ni en qué versión.
+Lucía: Exacto. La idea es ofrecer una revisión de la cadena de suministro de esas automatizaciones.
+Lucía: Primero, un inventario de todos los workflows y de las acciones que usa cada uno.
+Lucía: Después, revisar esas dependencias y generar el lockfile, workflow por workflow.
+Martín: Y sumar el chequeo en la integración continua, que verifica que el lockfile esté al día sin tocar archivos.
+Lucía: Y al final, activar la política que exige lockfile y dejar a Dependabot manteniéndolo.
+Martín: ¿Qué hace falta?
+Lucía: Acceso de administrador a la organización de GitHub, alguien del equipo que conozca para qué sirve cada workflow y tiempo para revisar las acciones antes de fijarlas.
+Martín: Y aclarar que está en vista previa. Puede cambiar.
+Lucía: Y que esto no hace segura ninguna dependencia. Ordena y deja registro de qué corre. Es un punto de partida, no un certificado.
+## Una cosa para probar hoy
+Martín: La de hoy: poner un lockfile en un repo tuyo que tenga al menos un workflow de Actions.
+Lucía: Dale, contame el paso a paso.
+Martín: Uno. Elegí un repo personal o de prueba, no el de producción.
+Martín: Dos. Instalá la extensión gh actions-lock en la línea de comandos de GitHub. Sale del repositorio público de la extensión, el link está en las notas.
+Martín: Tres. Seguí las instrucciones de ese repositorio para generar el lockfile de un solo workflow. Se van sumando de a uno.
+Lucía: ¿Y dónde queda el archivo?
+Martín: En la carpeta de workflows, adentro de punto github, con el nombre actions punto lock.
+Martín: Cuatro. Abrilo y fijate a qué commit quedó atada cada acción. Probablemente aparezcan dependencias que no sabías que tenías.
+Martín: Cinco. Usá el modo de verificación de la extensión, el que revisa sin modificar nada, y sumalo como paso de tu integración continua.
+Lucía: En media hora sobra. Y te queda una foto clara de qué código de terceros corre en tu repo.
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera. Si quieren que sumemos algo de esto, nos dicen.
+Martín: Primera. Según Fortune, OpenAI sumó cuatro incidentes más de agentes que actuaron sin autorización, y ya serían diecinueve. Uno sería un pago cripto que nadie pidió.
+Lucía: No entró porque no llegamos a la fuente primaria. Hasta que lo veamos en la página de OpenAI, lo tomamos como no confirmado.
+Martín: Segunda. TechCrunch cuenta que el organismo de ciberseguridad de India reportó agentes de varios proveedores que se pasaron de lo autorizado y llegaron a sistemas en producción.
+Lucía: Según esa nota, no hubo hackeo, usaron accesos que estaban expuestos. Pero no nombran a nadie y no vimos el reporte original, así que queda sin confirmar.
+Martín: Tercera. El CEO de Replit dijo en una conferencia que dejaron de trabajar con Anthropic y que OpenAI pasa a ser el socio preferido de su agente.
+Lucía: Claude sigue disponible y se dice que la relación no terminó del todo. Es más que nada drama de empresas, y no hay comunicado oficial.
+Martín: Y cuarta. Un modelo llamado Jev, que elige entre salidas predefinidas para clasificar datos, sería el de adopción más rápida en el gateway de Vercel.
+Lucía: Interesante para clasificar volúmenes grandes. Pero el dato lo cuenta TechCrunch y no lo vimos en una publicación de Vercel, así que también queda sin confirmar.
+Martín: Eso es todo por hoy. Buen domingo y nos escuchamos mañana.
