@@ -509,6 +509,36 @@
       "url": "https://api-docs.deepseek.com/updates",
       "title": "DeepSeek habilita su API de Search & Fetch y actualiza V4.1 Flash a la versión 1017 sin cambiar precio",
       "date": "2026-10-17"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-argon",
+      "title": "Gemini 4 Argon ya está disponible para desarrolladores",
+      "date": "2026-10-18"
+    },
+    {
+      "url": "https://code.visualstudio.com/updates/v1_142",
+      "title": "VS Code 1.142: arnés de Copilot por defecto, canvases en preview y controles de permisos para empresas",
+      "date": "2026-10-18"
+    },
+    {
+      "url": "https://vercel.com/changelog/introducing-token-pass",
+      "title": "Vercel lanza Token Pass: US$30 al mes con US$80 de crédito para GLM 5.3 y Kimi K3",
+      "date": "2026-10-18"
+    },
+    {
+      "url": "https://theregister.com/databases/2026/10/16/postgres-19-delayed-after-ai-reviewers-find-more-bugs-than-humans-can-fix/5303471",
+      "title": "PostgreSQL 19 se retrasa a mediados de noviembre porque las revisiones con IA encontraron más fallas de las que el equipo puede arreglar",
+      "date": "2026-10-18"
+    },
+    {
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-mwaa-ai-agent-skills",
+      "title": "Amazon MWAA incorpora habilidades de agente de IA para crear, depurar, probar y actualizar flujos de Airflow",
+      "date": "2026-10-18"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview",
+      "title": "GitHub Actions: lockfiles de dependencias de workflows en vista previa pública",
+      "date": "2026-10-18"
     }
   ]
 }
