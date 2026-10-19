@@ -539,6 +539,36 @@
       "url": "https://github.blog/changelog/2026-10-14-github-actions-workflow-lockfiles-in-public-preview",
       "title": "GitHub Actions: lockfiles de dependencias de workflows en vista previa pública",
       "date": "2026-10-18"
+    },
+    {
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+      "title": "Databricks: el conversor agéntico de código llega a GA para migrar SQL de T-SQL, Oracle, Teradata, BigQuery o Snowflake",
+      "date": "2026-10-19"
+    },
+    {
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october",
+      "title": "Databricks: el driver ADBC para Power BI es GA y queda por defecto en conexiones nuevas",
+      "date": "2026-10-19"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-16-iceberg-v3-upgrade-expression-defaults-ga",
+      "title": "Snowflake: Apache Iceberg v3 en GA con upgrade in-place desde v2 y defaults con expresiones",
+      "date": "2026-10-19"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-15-postgres-data-mirroring-ga",
+      "title": "Snowflake Postgres: el mirroring de datos hacia Snowflake llega a GA, sin ETL ni conectores",
+      "date": "2026-10-19"
+    },
+    {
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-14-cowork-document-generation-ga",
+      "title": "Snowflake CoWork ya genera PDF, Word, PowerPoint y HTML a partir del análisis (disponibilidad general)",
+      "date": "2026-10-19"
+    },
+    {
+      "url": "https://developers.openai.com/api/docs/guides/decisions-voice",
+      "title": "OpenAI integra Decisions de forma nativa en GPT-Live para decidir mientras el usuario aún habla",
+      "date": "2026-10-19"
     }
   ]
 }
