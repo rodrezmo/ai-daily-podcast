@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 19 de octubre: migración de SQL con agentes en Databricks, Iceberg v3 en Snowflake y ADBC por defecto en Power BI",
+  "summary": "Seis notas del día de datos e IA: el conversor agéntico de SQL de Databricks, el driver ADBC de Power BI, Iceberg v3 en Snowflake, el mirroring de Postgres, la generación de documentos en Snowflake CoWork y Decisions en GPT-Live. Además, una idea de consultoría para un equipo interno de datos y una cosa para probar hoy.",
+  "stories": [
+    {
+      "title": "Databricks: el conversor agéntico de código llega a GA para migrar SQL de T-SQL, Oracle, Teradata, BigQuery o Snowflake",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october#the-agentic-code-converter-is-generally-available-for-sql-conversion"
+    },
+    {
+      "title": "Databricks: el driver ADBC para Power BI es GA y queda por defecto en conexiones nuevas",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/october#adbc-driver-for-power-bi-is-now-generally-available"
+    },
+    {
+      "title": "Snowflake: Apache Iceberg v3 en GA con upgrade in-place desde v2 y defaults con expresiones",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-16-iceberg-v3-upgrade-expression-defaults-ga"
+    },
+    {
+      "title": "Snowflake Postgres: el mirroring de datos hacia Snowflake llega a GA, sin ETL ni conectores",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-15-postgres-data-mirroring-ga"
+    },
+    {
+      "title": "Snowflake CoWork ya genera PDF, Word, PowerPoint y HTML a partir del análisis (disponibilidad general)",
+      "url": "https://docs.snowflake.com/en/release-notes/2026/other/2026-10-14-cowork-document-generation-ga"
+    },
+    {
+      "title": "OpenAI integra Decisions de forma nativa en GPT-Live para decidir mientras el usuario aún habla",
+      "url": "https://developers.openai.com/api/docs/guides/decisions-voice"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "StepFun libera Step 5 Preview: MoE de 600B con 27B activos y 1M de contexto",
+      "url": "https://www.marktechpost.com/2026/10/16/stepfun-releases-step-5-preview-open-weights-600b-moe-27b-active-1m-context"
+    },
+    {
+      "title": "Cómo el equipo de Claude Code hace revisión de código: automatizada y continua, no solo al final",
+      "url": "https://simonwillison.net/2026/Oct/16/code-review/"
+    },
+    {
+      "title": "Brecha en OpenCode expone claves de OpenAI, Anthropic y Google de cerca del 1,4% de usuarios de su consola",
+      "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation"
+    }
+  ]
+}

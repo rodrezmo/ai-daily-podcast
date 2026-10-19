@@ -1,0 +1,122 @@
+## Titulares
+Lucía: Buen día, hoy es lunes diecinueve de octubre y esto es Radar IA.
+Martín: Buen día. Arrancamos la semana con un episodio bastante de datos, ¿no?
+Lucía: Muy de datos. Cinco de las seis notas son de plataformas de datos y la sexta es de voz.
+Martín: Y casi todas son pases a disponibilidad general. O sea, cosas que ya se pueden usar en serio, no anuncios.
+Lucía: Exacto. Vamos con la primera. Databricks sacó a disponibilidad general su conversor agéntico de código para SQL.
+Martín: ¿Qué hace, concretamente?
+Lucía: Traduce consultas de otros dialectos a Databricks SQL. Te ese cu ele, Oracle, Teradata, BigQuery, Snowflake y Redshift, entre otros.
+Lucía: Está basado en Genie Code y quedó disponible el quince de octubre.
+Martín: Lo que me llamó la atención es que no solo traduce. Valida la salida, corrige errores y después escribe el resultado en una carpeta del espacio de trabajo.
+Lucía: Sí, ese es el detalle que lo hace agéntico y no un traductor de texto.
+Martín: Mi opinión: sirve, pero no es magia. Una migración de data warehouse viejo tiene lógica de negocio escondida en cada consulta.
+Lucía: Y eso no lo valida nadie más que alguien que conoce el negocio.
+Martín: Tal cual. Baja el costo de reescribir, pero la revisión sigue siendo tuya.
+Lucía: Por cierto, ayer contamos que Amazon MWAA incorporó habilidades de agente para crear y depurar flujos de Airflow.
+Martín: Es la misma tendencia. Los agentes se meten en las tareas pesadas del ingeniero de datos, no solo en el editor de código.
+Lucía: Segunda, también de Databricks. El driver a de be ce para Power BI pasó a disponibilidad general.
+Martín: A de be ce es Arrow Database Connectivity, para el que se lo pregunta.
+Lucía: Y lo importante es que desde el quince de octubre es el driver predeterminado para conexiones nuevas. Tanto en Power BI Desktop como en el servicio.
+Martín: Esto es de esas noticias chiquitas que te pueden arruinar una mañana.
+Lucía: ¿Por?
+Martín: Porque cambia un default. Si armás una conexión nueva, ya no estás usando lo mismo que antes. Conviene probarlo antes de que te sorprenda en un modelo que funcionaba.
+Lucía: Bien. Tercera, Snowflake. Salió a disponibilidad general el soporte de Apache Iceberg versión tres, el dieciséis de octubre.
+Martín: ¿Y qué trae de nuevo?
+Lucía: Dos cosas. Primero, podés subir una tabla de versión dos a versión tres en el lugar, con un alter table. Conserva el nombre y los privilegios.
+Lucía: Segundo, las tablas versión tres administradas aceptan expresiones, secuencias e identidad como valores por defecto.
+Martín: Ojo con esto, porque el upgrade es permanente.
+Lucía: Es permanente, sí. Aunque en las tablas administradas tenés Time Travel para volver a la versión dos.
+Martín: O sea, hay red, pero no es un botón de deshacer infinito. Yo lo probaría primero en una tabla que no sea crítica.
+Lucía: Cuarta, otra de Snowflake. El mirroring de datos de Snowflake Postgres hacia Snowflake llegó a disponibilidad general el quince.
+Martín: Contame cómo funciona.
+Lucía: Es una réplica continua. Tablas de una instancia de Snowflake Postgres se copian a una base de Snowflake.
+Lucía: Replica inserciones, actualizaciones, borrados y también cambios de esquema. Está en AWS y en Azure.
+Martín: Y sin ETL ni conectores, que es lo que venden.
+Lucía: Eso dice la nota.
+Martín: Mi lectura: para un equipo chico de datos esto ahorra armar un pipeline propio. Pero fijate que es desde Snowflake Postgres, no desde cualquier Postgres que tengas dando vueltas.
+Lucía: Buena aclaración. Si tu sistema operativo está en otro lado, esto no te resuelve nada todavía.
+Lucía: Quinta. Snowflake CoWork ya genera documentos a partir del análisis. Pasó de vista previa a disponibilidad general el catorce de octubre.
+Martín: ¿Qué formatos?
+Lucía: Pe de efe, Word, PowerPoint y hache te eme ele. Le pedís el documento desde el análisis y lo ves ahí mismo en CoWork.
+Martín: ¿Algún requisito?
+Lucía: Necesita la herramienta de ejecución de código del agente Cortex.
+Martín: Acá soy un poco más escéptico. Que te genere el PowerPoint está bien. Que el PowerPoint diga algo correcto depende del análisis de abajo.
+Lucía: Sí, pero el paso de exportar a mano y pegar gráficos se lo saca de encima. Para quien arma informes todas las semanas no es poco.
+Martín: Eso te lo compro.
+Lucía: Y la sexta, la única que no es de datos. OpenAI integró Decisions de forma nativa en GPT Live.
+Martín: Esto es para asistentes de voz, ¿no?
+Lucía: Sí. Desde el quince, GPT Live puede llamar a Decisions directamente, sin pasar por tu aplicación.
+Lucía: O puede disparar decisiones usando los fragmentos de transcripción, mientras el usuario todavía está hablando.
+Martín: La idea es bajar la latencia. Que el asistente ya vaya decidiendo qué acción ejecutar antes de que termines la frase.
+Lucía: Requiere un permiso específico de escritura sobre Decisions. Y un detalle: la página no menciona precio.
+Martín: Eso para mí es lo que falta saber. Decidir mientras el otro habla suena bien, pero también es decidir con información incompleta.
+Lucía: Habrá que ver cómo se comporta cuando el cliente cambia de idea a mitad de frase.
+Martín: Que pasa todo el tiempo.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué le cambia hoy a quien programa o arma datos?
+Martín: Yo empiezo por lo más concreto: el driver de Power BI. Si tenés informes sobre Databricks, el default cambió.
+Lucía: Las conexiones nuevas usan a de be ce. No hay que tocar nada para que pase, y justamente por eso hay que mirarlo.
+Martín: Segundo, Iceberg. Si tenés un lakehouse en Iceberg sobre Snowflake, ahora podés subir de versión sin recrear tablas.
+Lucía: Y como conserva nombre y privilegios, no tenés que volver a dar permisos ni cambiar referencias.
+Martín: Pero repito lo de antes. Es permanente, con una ventana de Time Travel en las administradas. Probalo en una tabla de prueba.
+Lucía: Y aprovechá los defaults con expresiones e identidad. Te ahorran lógica que hoy por ahí tenés en la carga.
+Martín: Tercero, el conversor de Databricks. Acá el consejo es tratar la salida como un borrador.
+Lucía: ¿Cómo lo encararías?
+Martín: Primero, un conjunto de consultas con resultados conocidos. Las convertís, las corrés en los dos lados y comparás.
+Lucía: Comparar resultados, no comparar el texto del SQL.
+Martín: Exacto. Que el código se vea parecido no quiere decir que devuelva lo mismo.
+Lucía: Y para quien arma asistentes de voz, lo de Decisions en GPT Live te cambia la arquitectura.
+Martín: Sí, porque parte de la lógica de qué acción ejecutar sale de tu aplicación y pasa a una delegación nativa.
+Lucía: Eso simplifica, pero también te deja menos lugar para poner tus propios controles en el medio.
+Martín: Yo dejaría las acciones que mueven plata o datos sensibles con una confirmación explícita. Por más rápido que sea el modelo.
+Lucía: Y no te olvides del permiso de escritura de Decisions en la clave que uses.
+Martín: Lo último: el mirroring de Snowflake Postgres. Si tu aplicación ya vive ahí, podés sacar los reportes analíticos de la base operativa sin escribir un pipeline.
+Lucía: Menos código que mantener, que siempre es la mejor noticia.
+
+## Oportunidades de consultoría
+Lucía: Vamos a la idea de consultoría. Hoy no pensé en la pyme.
+Martín: ¿En quién, entonces?
+Lucía: En el equipo interno de datos de una empresa mediana. De esas que tienen años de consultas en te ese cu ele o en Oracle, y que están mudándose a Databricks.
+Martín: Ah, el clásico. Cientos de consultas que escribió gente que ya no está.
+Lucía: Ese es el problema. Nadie sabe bien qué hace cada una, y reescribirlas a mano es lento y caro.
+Martín: Y el conversor agéntico de Databricks ahora está en disponibilidad general.
+Lucía: Entonces la idea es ofrecer la migración asistida, pero con el foco en la validación, no en la traducción.
+Martín: Contame los pasos.
+Lucía: Uno, inventario. Juntar las consultas y ordenarlas por cuánto se usan y qué tan críticas son.
+Lucía: Dos, pasarlas por el conversor, que ya valida y corrige errores por su cuenta.
+Lucía: Tres, lo que vendés de verdad: comparar resultados entre el sistema viejo y el nuevo, con datos reales.
+Martín: Y documentar las diferencias, que es lo que el equipo interno nunca tiene tiempo de hacer.
+Lucía: Exacto. Se automatiza la traducción y buena parte de la comparación.
+Martín: ¿Y qué haría falta del lado del cliente?
+Lucía: Acceso a los dos entornos, un espacio de trabajo en Databricks y alguien del negocio que diga qué resultado es el correcto cuando no coinciden.
+Martín: Eso último es clave. Sin esa persona, la migración no se puede dar por buena.
+Lucía: Y aclaro: es una idea para explorar. No hay garantía de que el conversor resuelva todo. Las consultas más raras van a seguir siendo trabajo a mano.
+Martín: Pero el mensaje es honesto: la herramienta acelera, vos ponés el control.
+
+## Una cosa para probar hoy
+Martín: La cosa para probar hoy es para quien tiene Power BI conectado a Databricks.
+Lucía: Lo del driver nuevo.
+Martín: Eso. En menos de media hora sabés si te afecta.
+Martín: Paso uno: elegí un informe que funcione bien hoy y que tenga una tabla con números que conozcas.
+Martín: Paso dos: hacé una copia del archivo. No toques el original.
+Martín: Paso tres: en la copia, armá una conexión nueva a Databricks. Como es nueva, va a usar el driver a de be ce por defecto.
+Lucía: Y apuntás a la misma tabla o consulta que usa el informe original.
+Martín: Exacto. Paso cuatro: actualizá los datos y anotá cuánto tarda.
+Martín: Paso cinco: compará con el original. Que los totales den igual, que las fechas se vean igual, que no falten filas.
+Lucía: Yo agregaría mirar los tipos de datos. Decimales y fechas son los que suelen dar sorpresas cuando cambia un driver.
+Martín: Buen punto. Y si todo coincide, ya sabés que las conexiones nuevas no te van a romper nada.
+Lucía: Y si algo no coincide, lo descubriste un lunes a la mañana y no el día que hay que presentar el informe.
+
+## Quedaron afuera
+Lucía: Ahora, lo que quedó afuera. Tres notas.
+Martín: La primera: StepFun habría liberado Step cinco Preview, un modelo de mezcla de expertos de seiscientos mil millones de parámetros, con veintisiete mil millones activos y un millón de tokens de contexto.
+Lucía: No entró porque no encontramos fuente primaria ni pudimos verificar la fecha. Si se confirma, la retomamos.
+Martín: La segunda: un resumen de Simon Willison sobre cómo el equipo de Claude Code hace la revisión de código, automatizada y continua.
+Lucía: Quedó afuera porque es de segunda mano. Y además el sábado ya contamos la nota original, del blog de Claude.
+Martín: Y la tercera: se dice que hubo una brecha en OpenCode que expuso claves de OpenAI, Anthropic y Google de cerca del uno coma cuatro por ciento de los usuarios de su consola.
+Lucía: El viernes hablamos de OpenCode dos punto cero, por eso nos interesa. Pero no hay aviso oficial y lo que se reporta no está verificado.
+Martín: Igual, si usás esa consola, rotar las claves no le hace mal a nadie.
+Lucía: Si querés que sigamos alguno de estos temas, avisanos.
+Martín: Eso es todo por hoy. Los links están en las notas del episodio.
+Lucía: Gracias por escuchar Radar IA, nos vemos mañana.
