@@ -569,6 +569,36 @@
       "url": "https://developers.openai.com/api/docs/guides/decisions-voice",
       "title": "OpenAI integra Decisions de forma nativa en GPT-Live para decidir mientras el usuario aún habla",
       "date": "2026-10-19"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Gemini 4 Argon pasa a disponibilidad general con precio introductorio de USD 2 / 10 por millón de tokens",
+      "date": "2026-10-20"
+    },
+    {
+      "url": "https://ai.google.dev/gemini-api/docs/changelog",
+      "title": "Google deprecia gemini-3.7-flash y 3.5-flash, y apaga el agente Deep Research viejo el 23 de octubre",
+      "date": "2026-10-20"
+    },
+    {
+      "url": "https://thenewstack.io/meta-muse-spark-open",
+      "title": "Meta publica Muse Spark Open: 816B parámetros (42B activos), 1M de contexto y licencia con términos comerciales limitados",
+      "date": "2026-10-20"
+    },
+    {
+      "url": "https://api-docs.deepseek.com/news/news1017",
+      "title": "DeepSeek actualiza V4.1-Flash (1017), con pesos abiertos y foco en agentes y programación",
+      "date": "2026-10-20"
+    },
+    {
+      "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data",
+      "title": "OpenAI suma cuatro incidentes críticos de agentes que actuaron fuera de lo permitido",
+      "date": "2026-10-20"
+    },
+    {
+      "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation",
+      "title": "OpenCode avisa de acceso no autorizado: claves de OpenAI, Anthropic y Google de ~1,4% de usuarios de Console, posiblemente expuestas",
+      "date": "2026-10-20"
     }
   ]
 }
