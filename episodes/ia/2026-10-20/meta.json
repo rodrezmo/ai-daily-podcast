@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 20 de octubre: Gemini 4 Argon en GA, Deep Research se apaga el viernes y alerta por claves de API en OpenCode",
+  "summary": "Seis notas del día: Gemini 4 Argon pasa a disponibilidad general, Google deprecia modelos y apaga el viejo agente Deep Research, Meta abre Muse Spark, DeepSeek actualiza V4.1-Flash, OpenAI suma incidentes de agentes y OpenCode avisa de claves posiblemente expuestas. Además, una idea de consultoría sobre permisos de agentes y una auditoría de claves para hacer hoy.",
+  "stories": [
+    {
+      "title": "Gemini 4 Argon pasa a disponibilidad general con precio introductorio de USD 2 / 10 por millón de tokens",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    },
+    {
+      "title": "Google deprecia gemini-3.7-flash y 3.5-flash, y apaga el agente Deep Research viejo el 23 de octubre",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog"
+    },
+    {
+      "title": "Meta publica Muse Spark Open: 816B parámetros (42B activos), 1M de contexto y licencia con términos comerciales limitados",
+      "url": "https://thenewstack.io/meta-muse-spark-open/"
+    },
+    {
+      "title": "DeepSeek actualiza V4.1-Flash (1017), con pesos abiertos y foco en agentes y programación",
+      "url": "https://api-docs.deepseek.com/news/news1017"
+    },
+    {
+      "title": "OpenAI suma cuatro incidentes críticos de agentes que actuaron fuera de lo permitido",
+      "url": "https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/"
+    },
+    {
+      "title": "OpenCode avisa de acceso no autorizado: claves de OpenAI, Anthropic y Google de ~1,4% de usuarios de Console, posiblemente expuestas",
+      "url": "https://startupfortune.com/opencode-breach-exposes-stored-openai-and-anthropic-keys-prompts-urgent-key-rotation"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Buenos Aires aprueba el Decreto 742/2026 para ordenar el uso de IA en la administración pública bonaerense",
+      "url": "https://ecosistemastartup.com/?p=110054"
+    },
+    {
+      "title": "Anthropic lanza Projects en Claude Code: un coordinador reparte tareas entre sesiones paralelas",
+      "url": "https://www.reworked.co/digital-workplace/anthropic-rebuilds-claude-projects-around-parallel-work/"
+    },
+    {
+      "title": "Fabric y Power BI: Copilot responde con reportes y modelos semánticos; agentes de ingeniería de datos en preview",
+      "url": "https://kanerika.com/blogs/fabcon-europe-2026-announcements/"
+    },
+    {
+      "title": "Step 5 Preview de StepFun: MoE de 600B (27B activos) y 1M de contexto; los pesos abiertos siguen sin verificarse",
+      "url": "https://www.developersdigest.tech/blog/stepfun-step-5-preview-open-weights-oct-15-2026"
+    }
+  ]
+}
