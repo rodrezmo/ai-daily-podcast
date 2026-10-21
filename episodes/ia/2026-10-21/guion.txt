@@ -1,0 +1,115 @@
+## Titulares
+Lucía: Buen día, hoy es miércoles veintiuno de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y varias giran alrededor de lo mismo: seguridad y control de agentes.
+Lucía: Arranquemos por Anthropic. Su equipo Frontier Red Team usó Claude para revisar proyectos open source.
+Martín: ¿Buscando bugs?
+Lucía: No exactamente. Buscaban superficie de ataque. Código expuesto que no hace falta, o combinaciones de opciones que debilitan los controles.
+Martín: ¿Y cuánto revisaron?
+Lucía: Más de cinco millones de líneas, en veinticinco proyectos. Reportaron cuatrocientos noventa y tres hallazgos.
+Martín: El caso que más me llamó la atención es el de OpenSSH.
+Lucía: Sí. Había unas cuatro mil quinientas líneas de firma post-cuántica experimental que se podían alcanzar sin autenticarse.
+Martín: Eso en un servicio tan usado no es poca cosa. El arreglo ya salió en OpenSSH diez punto seis.
+Lucía: Y combinaron las técnicas en un skill de Claude reutilizable para este tipo de revisión, que están integrando a su herramienta OSS-Scanner.
+Martín: Mi opinión: es de lo más útil que vi en la semana. No es un benchmark, es un método que se puede repetir.
+Lucía: Ojo, los números son del propio equipo de Anthropic. Pero el arreglo en OpenSSH es concreto y se puede verificar.
+Martín: Y conecta con algo que contamos el domingo: PostgreSQL diecinueve se retrasa porque las revisiones con IA encontraron más fallas de las que el equipo puede arreglar.
+Lucía: Encontrar ya no es el cuello de botella. Arreglar sí.
+Martín: Segunda. OpenAI agrega caché de prompts de doce horas en la Responses API.
+Lucía: O sea, podés dejar en caché las instrucciones, las herramientas y el contexto hasta medio día.
+Martín: La entrada cacheada sale más barata. Pero hay una letra chica.
+Lucía: Escribir en caché cuesta dos veces y media el precio normal de entrada.
+Martín: Entonces no es ahorro automático. Si el prompt se reutiliza poco, perdés plata.
+Lucía: Para un bot que atiende todo el día con el mismo prompt largo, probablemente conviene. Para algo que corre tres veces, no.
+Martín: Hay que hacer la cuenta. Y eso está bien que lo digan claro.
+Lucía: Tercera. Microsoft presentó Guardian Agents, una herramienta para monitorear agentes.
+Martín: Esta la cuenta TechCrunch, no es un anuncio que leímos directo de Microsoft.
+Lucía: Además, Defender ahora detecta hasta sesenta tipos de agentes que los empleados traen al trabajo. Mencionan Claude Code y Codex.
+Martín: Y suman permisos por tarea y aprobación humana para las decisiones riesgosas.
+Lucía: Ayer contamos que OpenAI sumó cuatro incidentes críticos de agentes que actuaron fuera de lo permitido.
+Martín: Y también ayer, lo de OpenCode avisando de un acceso no autorizado con claves posiblemente expuestas.
+Lucía: Así que el momento no es casual. Las empresas ya tienen agentes adentro, lo sepa o no el área de sistemas.
+Martín: Mi opinión: el producto me importa menos que el vocabulario. Permisos por tarea y aprobación humana son buenas ideas, uses Microsoft o no.
+Lucía: Cuarta. Google suma a la app de Gemini una página pensada para negocios.
+Martín: ¿Qué conecta?
+Lucía: Google Business Profile, Ads, Workspace. Y apps de afuera como Shopify, Wix, Zoho y Xero.
+Martín: Y convierte planillas y recibos en gráficos y modelos interactivos.
+Lucía: El despliegue es global, en los próximos días.
+Martín: La semana pasada hablamos de Gemini cuatro Argon llegando a la app con modo Tareas y cuarenta apps conectadas. Esto va en la misma línea.
+Lucía: Mi opinión: esto es lo primero que va a probar el dueño de un comercio antes de llamar a alguien.
+Martín: Y está bien. Marca qué parte de los informes simples ya viene incluida. Lo que no viene es ordenar los datos de verdad.
+Lucía: Quinta. IBM Research publicó en el blog de Hugging Face una técnica que se llama ALTK Evolve.
+Martín: La idea es simple. Toma los intentos previos de un agente y los destila en reglas cortas.
+Lucía: Esas reglas se agregan al prompt de sistema. No se reentrena nada, no se tocan pesos.
+Martín: ¿Y los números?
+Lucía: En la prueba de retail de tau dos bench, con GPT cuatro punto uno, la métrica Pass cuatro sube de cincuenta y siete y medio a sesenta y siete y medio por ciento.
+Martín: Y en la de aerolínea, con GPT cinco punto cinco, sube de cincuenta y cinco a setenta por ciento.
+Lucía: Pero el costo por conversación aumenta: treinta y dos por ciento en aerolínea y sesenta y cinco en retail.
+Martín: Y son pocas tareas de prueba, con los datos del propio equipo.
+Lucía: Mi opinión: el patrón es bueno y barato de copiar. Los números, los tomaría como una pista, no como una promesa.
+Martín: El repo es abierto. La licencia todavía no la verificamos.
+Lucía: Sexta y última. GitHub Copilot retiró varios modelos desde el diecinueve de octubre.
+Martín: Salen GPT cinco punto cinco y GPT cinco punto cuatro. El reemplazo es GPT seis punto uno Sol.
+Lucía: GPT cinco punto cuatro mini y GPT cinco mini se reemplazan por GPT seis Luna.
+Martín: Gemini tres punto siete Flash pasa a Gemini tres punto ocho Flash. Y Grok cuatro punto cinco pasa a Grok cuatro punto siete.
+Lucía: El viernes ya habíamos contado otra tanda: Copilot retira Claude Opus cuatro punto ocho, Claude Opus cinco y GPT cinco punto seis Terra el dieciséis de noviembre.
+Martín: Y ayer, que Google deprecia gemini tres punto siete flash en su API.
+Lucía: Los modelos ya duran menos que un paquete de yerba.
+Martín: Exagerás, pero no tanto. Opinión: no es noticia emocionante, pero es la que más probablemente te rompa algo esta semana.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué le cambia a quien programa o arma datos?
+Martín: Primero, lo de Copilot. Si tenés un modelo fijado en una configuración o en un flujo, revisá que no apunte a uno retirado.
+Lucía: Y lo mismo para cualquier script que llame a gemini tres punto siete flash por API.
+Martín: Segundo, el caché de doce horas. Si armás agentes con prompts largos compartidos, puede bajar costos.
+Lucía: Pero medí antes. Fijate cuántas veces se reusa el mismo prefijo en un día.
+Martín: Porque la escritura cuesta dos veces y media. Si el prompt cambia seguido, cada cambio es una escritura cara.
+Lucía: Tercero, lo de IBM. Si tenés un bot de atención o un agente de back office que falla siempre en los mismos casos.
+Martín: Podés juntar esos fallos, sacar reglas cortas y sumarlas al prompt. Sin reentrenar.
+Lucía: Con el costo extra por conversación en mente. Más reglas, más tokens.
+Martín: Y cuarto, el de Anthropic, que para mí es el más interesante.
+Lucía: No se trata de buscar vulnerabilidades sofisticadas. Se trata de preguntar qué está expuesto que no debería estarlo.
+Martín: Funciones experimentales activas por defecto. Opciones que, combinadas, apagan un control.
+Lucía: Eso lo podés hacer con tu propio servicio. Y como el método está descrito en detalle, no arrancás de cero.
+Martín: Eso sí, si encontrás quinientas cosas, el problema pasa a ser cuáles arreglás primero. Lo de PostgreSQL lo muestra bien.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con los equipos internos de operaciones o de datos en empresas medianas.
+Martín: Me gusta. ¿Cuál es el problema?
+Lucía: Que la gente ya usa agentes. Alguien instaló un agente de código, otro conectó un bot a la planilla de ventas, otro guardó una clave en un archivo de texto.
+Martín: Y nadie tiene la lista completa.
+Lucía: Exacto. Lo de Microsoft lo dice con todas las letras: agentes que los empleados traen al trabajo.
+Martín: Entonces, ¿qué se ofrece?
+Lucía: Un relevamiento de agentes y automatizaciones con IA. Qué hay andando, qué claves usa, a qué datos accede y qué puede hacer sin preguntar.
+Martín: ¿Y qué se automatiza ahí?
+Lucía: La parte de buscar. Un agente recorre repositorios y configuraciones, y arma un inventario de claves, modelos fijados y permisos.
+Martín: Ahí entra el método de Anthropic. Revisar qué está expuesto por defecto en los servicios propios de esa empresa.
+Lucía: Y de paso detectás modelos retirados, como los de Copilot de esta semana.
+Martín: ¿Qué haría falta?
+Lucía: Acceso de lectura a los repos y configuraciones. Una persona de sistemas que acompañe. Y acordar antes qué se revisa y qué no.
+Martín: Y el entregable no es un informe de quinientos hallazgos. Es una lista corta, priorizada, con quién aprueba qué.
+Lucía: Permisos por tarea y aprobación humana para lo riesgoso. Las mismas ideas de la nota, aplicadas a su realidad.
+Martín: Sin prometer que quedan blindados. Es ordenar lo que ya tienen.
+
+## Una cosa para probar hoy
+Lucía: Para hoy, algo de veinte minutos. Buscar modelos retirados en tu código.
+Martín: Dale, contame el paso a paso.
+Lucía: Uno. Abrí una terminal en la carpeta donde tenés tus proyectos.
+Martín: Dos. Hacé una búsqueda de texto en todos los archivos por los nombres de los modelos que salieron.
+Lucía: Buscá gpt guion cinco punto cinco, gpt guion cinco punto cuatro, gemini guion tres punto siete guion flash y grok guion cuatro punto cinco.
+Martín: Tres. No te olvides de los archivos de configuración del editor y de las variables de entorno. Ahí suele estar el modelo fijado.
+Lucía: Cuatro. Por cada resultado, anotá con qué lo reemplazarías. Los reemplazos que sugiere GitHub están en las notas del episodio.
+Martín: Cinco. Ya que estás, sumá a la búsqueda los que salen el dieciséis de noviembre. Así no te agarra de sorpresa.
+Lucía: Y seis, si encontrás alguno en producción, cambialo en una rama y corré las pruebas antes de mergear.
+Martín: Un modelo nuevo no siempre responde igual. Mejor enterarte hoy que un lunes a la mañana.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: MiniMax anunció M tres punto uno Flash, con un millón de tokens de contexto y un precio muy bajo.
+Lucía: No entró porque no encontramos fuente primaria. Y los pesos y la licencia están sin confirmar.
+Martín: Mistral lanzó Voxtral tres, con transcripción, voz sintética y un SDK para agentes de voz.
+Lucía: Pinta interesante, pero no pudimos verificar la fecha de publicación.
+Martín: NVIDIA presentó modelos abiertos nuevos para correr agentes en empresas y en PCs.
+Lucía: Afuera porque las comparaciones de velocidad son de la propia NVIDIA, y no está clara ni la licencia ni la fecha.
+Martín: Y ChatGPT ahora deja bloquear chats con PIN o biometría.
+Lucía: Un cambio de privacidad menor, sin cifrado de punta a punta. Si quieren que sumemos alguna de estas, nos avisan.
+Martín: Eso fue todo por hoy. Nos escuchamos mañana en Radar IA.

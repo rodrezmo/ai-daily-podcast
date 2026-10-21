@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 21 de octubre: Anthropic y la superficie de ataque, caché de 12 horas en OpenAI y Gemini para pymes",
+  "summary": "Seis notas del día: Claude ayuda a reducir la superficie de ataque de 25 proyectos open source, OpenAI suma caché de prompts de 12 horas, Microsoft lanza Guardian Agents, Gemini estrena herramientas para pymes, IBM prueba reglas aprendidas para agentes y Copilot retira varios modelos. Además, una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Anthropic usa Claude para reducir la superficie de ataque de 25 proyectos open source",
+      "url": "https://www.anthropic.com/research/attack-surface-reduction"
+    },
+    {
+      "title": "OpenAI agrega caché de prompts de 12 horas en la Responses API",
+      "url": "https://developers.openai.com/api/docs/changelog"
+    },
+    {
+      "title": "Microsoft lanza Guardian Agents y detección de agentes en Defender",
+      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/"
+    },
+    {
+      "title": "Gemini suma herramientas para pymes: marca, finanzas y apps conectadas (Shopify, Xero, Zoho)",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-tools-small-business-owners/"
+    },
+    {
+      "title": "IBM Research: ALTK-Evolve mejora agentes de atención al cliente con reglas aprendidas, sin reentrenar",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-bc"
+    },
+    {
+      "title": "GitHub Copilot retira GPT-5.5, GPT-5.4, Gemini 3.7 Flash y Grok 4.5",
+      "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "MiniMax anuncia M3.1 Flash: 1M de contexto y USD 0,15 por millón de tokens de entrada",
+      "url": "https://llmgateway.io/models/minimax-m3.1-flash"
+    },
+    {
+      "title": "Mistral lanza Voxtral 3: transcripción, voz sintética y SDK para agentes de voz",
+      "url": "https://mistral.ai/news/voxtral-3/"
+    },
+    {
+      "title": "NVIDIA lanza Nemotron 3.5 Super VL (120B) y Bolt 74B-A9B para PCs",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+    }
+  ]
+}
