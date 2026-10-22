@@ -629,6 +629,36 @@
       "url": "https://github.blog/changelog/2026-10-19-github-copilot-models-deprecated-on-october-19-2026",
       "title": "GitHub Copilot retira GPT-5.5, GPT-5.4, Gemini 3.7 Flash y Grok 4.5",
       "date": "2026-10-21"
+    },
+    {
+      "url": "https://mistral.ai/news/voxtral-3",
+      "title": "Mistral lanza Voxtral 3: modelos de transcripción, TTS y un SDK para agentes de voz",
+      "date": "2026-10-22"
+    },
+    {
+      "url": "https://llmgateway.io/models/minimax-m3.1-flash",
+      "title": "MiniMax M3.1 Flash: modelo con 1M de contexto a USD 0,15 / 0,60 por millón de tokens",
+      "date": "2026-10-22"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed",
+      "title": "Anthropic propone un proyecto de ley federal que permitiría frenar modelos de riesgo inminente",
+      "date": "2026-10-22"
+    },
+    {
+      "url": "https://federalregister.gov/documents/2026/10/20/2026-21447/notice-of-order-regarding-exclusion-and-removal-of-deepseek-products-from-federal-civilian-executive",
+      "title": "DHS excluye a DeepSeek de las compras federales, incluso productos construidos sobre sus modelos",
+      "date": "2026-10-22"
+    },
+    {
+      "url": "https://docs.anthropic.com/en/release-notes/overview",
+      "title": "Anthropic: perfiles de usuario final (GA) y webhooks de organización (beta) en la API",
+      "date": "2026-10-22"
+    },
+    {
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
+      "title": "Google abre TorchTPU y Amazon TorchNeuron: PyTorch nativo en TPU y Trainium",
+      "date": "2026-10-22"
     }
   ]
 }
