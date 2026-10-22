@@ -1,0 +1,96 @@
+## Titulares
+Lucía: Buen día, es jueves veintidós de octubre y esto es Radar IA.
+Martín: Hola. Hoy hay voz barata, un modelo con contexto enorme, dos noticias de regulación en Estados Unidos y algo de infraestructura.
+Lucía: Arrancamos por la voz. Mistral lanzó Voxtral tres.
+Martín: Es una familia entera: transcripción, texto a voz y un kit para armar agentes de voz.
+Lucía: La transcripción cubre más de cincuenta idiomas.
+Martín: Y el precio es lo que llama la atención. La versión Mini, en lote, sale menos de medio centavo de dólar por minuto.
+Lucía: La versión en tiempo real cuesta menos de un centavo por minuto, y responde en menos de medio segundo.
+Martín: El texto a voz sale trece dólares por millón de caracteres.
+Lucía: Y el kit de agentes corre sobre LiveKit, con soporte para telefonía y para llamadas web.
+Martín: Se puede usar por API alojada en Europa o instalarlo en tus propios servidores.
+Lucía: Eso último me parece lo más importante. Hay muchos casos donde el audio no puede salir de la casa.
+Martín: En el gráfico de Artificial Analysis, un comparador independiente que Mistral muestra en su anuncio, Small Transcribe tres aparece tercero en error de transcripción.
+Lucía: Tercero, no primero. Ojo que es el gráfico que eligió Mistral para mostrar.
+Martín: La semana pasada ya habíamos contado que Mistral sacó Timestral, sus modelos de pronóstico que corren en CPU. Vienen sacando cosas chicas y prácticas.
+Lucía: Segunda. MiniMax liberó M tres punto uno Flash, el diecinueve de octubre.
+Martín: Tiene un millón de tokens de contexto, razonamiento ajustable, visión y llamado a herramientas.
+Lucía: Pero no tiene modo JSON. Ojo con eso si dependés de salidas estructuradas.
+Martín: El precio: quince centavos de dólar por millón de tokens de entrada y sesenta centavos de salida.
+Lucía: MiniMax dice que cuesta un tercio que el modelo anterior y corre unas tres veces más rápido.
+Martín: Esas cifras son de ellos. Nadie las midió todavía de forma independiente.
+Lucía: Y los pesos se publicarían mañana, veintitrés de octubre. La licencia no está confirmada.
+Martín: Mi opinión: es barato y vale mirarlo, pero yo esperaría a mañana para ver la licencia antes de entusiasmarme.
+Lucía: Tercera, regulación. Según TechCrunch, Anthropic propone un proyecto de ley federal en Estados Unidos.
+Martín: La idea es que el Departamento de Comercio pueda pedirle a un juez que frene el lanzamiento de un modelo.
+Lucía: Solo si hay riesgo inminente de más de cincuenta muertes, o de más de mil millones de dólares en daños.
+Martín: Aclaremos: es una propuesta, no una ley. Anthropic la está presentando al Congreso.
+Lucía: Para acá no cambia nada hoy. Pero marca hacia dónde puede ir la regulación del país de donde salen la mayoría de los modelos que usamos.
+Martín: Hace unos días también contamos que Anthropic le dio a METR acceso de nivel empleado para evaluar sus modelos. Va en la misma línea de mostrarse como el que pide reglas.
+Lucía: Cuarta, también de Estados Unidos. El Departamento de Seguridad Nacional excluyó a DeepSeek de las compras civiles federales.
+Martín: Y no solo a DeepSeek. También exige quitar productos de terceros construidos sobre implementaciones de DeepSeek.
+Lucía: El aviso salió en el Federal Register el veinte de octubre, y lo confirmamos en el texto.
+Martín: Lo interesante es lo de los productos de terceros. Si vendés algo armado sobre un modelo, el modelo de abajo empieza a importar.
+Lucía: Y justo el martes contamos que DeepSeek actualizó V cuatro punto uno Flash, con pesos abiertos. Mucha gente lo usa por costo.
+Martín: Quinta, para quien construye sobre Claude. Anthropic sumó perfiles de usuario final en la API.
+Lucía: Sirven para asociar cada pedido a un cliente final y aplicar medidas de seguridad por usuario.
+Martín: El SDK ya los soporta.
+Lucía: Y en beta hay webhooks de organización, que avisan cuando se restringe o se banea un perfil, y cuando termina. Para usarlos hay que pedir acceso al equipo de cuenta de Anthropic.
+Lucía: Para mí es de lo más útil del día, aunque no tenga titular llamativo. Si un cliente abusa, no se te cae la cuenta entera.
+Martín: Sexta y última. En la PyTorch Conference, Google liberó TorchTPU y Amazon liberó TorchNeuron.
+Lucía: TorchTPU deja correr PyTorch nativo en las TPU de Google, con cambio de dispositivo en una línea e integración con vLLM y Transformers de Hugging Face.
+Martín: TorchNeuron hace lo mismo para Trainium, el chip de Amazon, con licencia Apache dos.
+Lucía: Las dos van contra el dominio de CUDA, o sea, de NVIDIA.
+Martín: A mediano plazo puede abaratar entrenar o servir modelos. Para una consultoría chica, hoy no mueve la aguja.
+Lucía: Coincido. Es una noticia para seguir, no para actuar.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia el día a quien programa?
+Lucía: Lo primero son los perfiles de usuario de Anthropic. Si tenés un producto con varios clientes sobre la misma cuenta, es casi obligatorio.
+Martín: Antes, un usuario problemático te podía comprometer todo. Ahora cada pedido queda atado a un perfil.
+Lucía: Actualizar el SDK de Python y pasar el identificador del cliente. Es poco trabajo.
+Martín: Lo segundo es el inventario de modelos. Lo de DeepSeek es un recordatorio de que conviene saber qué modelo corre debajo de cada cosa que entregás.
+Lucía: Sobre todo si usás un proveedor intermedio y no sabés bien qué modelo te está sirviendo.
+Martín: Tercero, MiniMax. Un millón de tokens de contexto a ese precio sirve para procesar documentos largos de una sola vez.
+Lucía: Pero sin modo JSON. Si tu pipeline espera JSON, vas a tener que validar la salida vos.
+Martín: Y Voxtral. Si alguna vez armaste transcripción de audios, compará el costo y la latencia con lo que usás hoy.
+Lucía: La opción de instalarlo en tu infraestructura es la que más puertas abre.
+Martín: Lo de TorchTPU y TorchNeuron, si entrenás modelos propios, anotalo. Si no, dejalo pasar.
+
+## Oportunidades de consultoría
+Lucía: Hoy pensé en los estudios y profesionales independientes. Por ejemplo, un estudio contable o jurídico.
+Martín: ¿Por qué ellos y no la pyme de siempre?
+Lucía: Porque reciben una cantidad enorme de audios de WhatsApp de clientes. Consultas, pedidos, papeles que faltan.
+Martín: Y alguien los tiene que escuchar uno por uno.
+Lucía: Exacto. La idea es transcribir esos audios con algo como Voxtral, clasificarlos por cliente y por tipo de pedido, y volcarlos en una planilla o en el sistema que ya usen.
+Martín: Que la persona del estudio lea un resumen en vez de escuchar veinte audios.
+Lucía: Y como el costo es de centavos por minuto, el gasto en la API no es lo que frena el proyecto.
+Martín: ¿Qué haría falta?
+Lucía: Una forma ordenada de exportar los audios, el consentimiento de los clientes y una regla clara de qué se guarda y qué no.
+Martín: Y acá entra lo de autoalojar. Un estudio maneja información sensible. Poder tener el audio en servidores propios, o en una nube en Europa, es un argumento.
+Lucía: Y siempre con una persona que revise. Nombres, montos y fechas son justo lo que más se equivoca en una transcripción.
+Martín: Es una idea para charlar con el estudio, no una promesa de que les va a ahorrar tantas horas.
+
+## Una cosa para probar hoy
+Martín: La propuesta de hoy: transcribí un audio tuyo con Voxtral y fijate cómo le va con el español de acá.
+Lucía: Paso uno. Grabate un audio de WhatsApp de un minuto. Hablá rápido, nombrá a una persona, decí un número de teléfono y un monto en pesos.
+Martín: Paso dos. Exportalo desde el teléfono a tu computadora.
+Lucía: Paso tres. Entrá a la consola de Mistral y creá una clave de API.
+Martín: Paso cuatro. Buscá en la documentación el ejemplo de transcripción y pegalo en un script. Cambiá solo la ruta del archivo.
+Lucía: Paso cinco. Corré el script y compará el texto con lo que dijiste.
+Martín: Anotá tres cosas: si escribió bien el nombre, si el número salió completo y si entendió el monto.
+Lucía: Un minuto de audio cuesta menos de un centavo de dólar. No hay excusa.
+Martín: Y si tenés ganas, probá el mismo audio con lo que usás hoy y comparalos lado a lado.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera.
+Martín: NVIDIA publicó Nemotron tres punto cinco Super VL, de ciento veinte mil millones de parámetros, y Bolt, un modelo cuantizado para entrar en veinticuatro gigas y correr en una PC.
+Lucía: No entró porque la fuente es del quince de octubre, fuera de nuestra ventana, y el blog no declara licencia.
+Martín: DeepSeek liberó DeepInfer, el framework de inferencia que usa para V cuatro punto uno Flash.
+Lucía: Lo dejamos afuera porque para servir en producción todavía le faltan piezas, como el manejo de caché y el balanceo de réplicas.
+Martín: Sage A uno punto cinco y Simular Agent S cuatro, dos agentes abiertos con mejoras en benchmarks.
+Lucía: Todo autorreportado y sacado de un agregador. Hasta que alguien lo mida, no entra.
+Martín: Y Google habría empezado a cobrar por tokens la API de analítica conversacional de BigQuery y Looker.
+Lucía: Eso no lo pudimos confirmar: ni la fuente ni la fecha. Si te interesa que lo sigamos, avisanos.
+Martín: Eso fue todo por hoy. Los links están en las notas del episodio.
+Lucía: Gracias por escuchar, nos vemos mañana en Radar IA.

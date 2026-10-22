@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 22 de octubre: Voxtral 3 de Mistral, MiniMax M3.1 Flash y una ley de seguridad que propone Anthropic",
+  "summary": "Seis notas del día: Mistral lanza Voxtral 3 con transcripción y voz a precios bajos, MiniMax presenta M3.1 Flash con un millón de tokens de contexto, Anthropic propone una ley federal de seguridad en Estados Unidos, el DHS excluye a DeepSeek de las compras federales, la API de Anthropic suma perfiles de usuario y webhooks, y Google y Amazon abren TorchTPU y TorchNeuron. Además, una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Mistral lanza Voxtral 3: modelos de transcripción, TTS y un SDK para agentes de voz",
+      "url": "https://mistral.ai/news/voxtral-3/"
+    },
+    {
+      "title": "MiniMax M3.1 Flash: modelo con 1M de contexto a USD 0,15 / 0,60 por millón de tokens",
+      "url": "https://llmgateway.io/models/minimax-m3.1-flash"
+    },
+    {
+      "title": "Anthropic propone un proyecto de ley federal que permitiría frenar modelos de riesgo inminente",
+      "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
+    },
+    {
+      "title": "DHS excluye a DeepSeek de las compras federales, incluso productos construidos sobre sus modelos",
+      "url": "https://www.federalregister.gov/documents/2026/10/20/2026-21447/notice-of-order-regarding-exclusion-and-removal-of-deepseek-products-from-federal-civilian-executive"
+    },
+    {
+      "title": "Anthropic: perfiles de usuario final (GA) y webhooks de organización (beta) en la API",
+      "url": "https://docs.anthropic.com/en/release-notes/overview#october-20-2026-2"
+    },
+    {
+      "title": "Google abre TorchTPU y Amazon TorchNeuron: PyTorch nativo en TPU y Trainium",
+      "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "NVIDIA suma Nemotron 3.5 Super VL (120B) y Bolt para correr agentes en PC",
+      "url": "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+    },
+    {
+      "title": "DeepSeek libera DeepInfer, el framework de inferencia detrás de V4.1-Flash",
+      "url": "https://github.com/deepseek-ai/DeepInfer"
+    },
+    {
+      "title": "Sage-A1.5 y Simular Agent S4: nuevos agentes abiertos con mejoras en benchmarks",
+      "url": "https://aiweekly.co/alerts/sage-a15-moe-agent-hits-817-browsecomp-612-swe-bench-pro"
+    },
+    {
+      "title": "Google deja de cobrar gratis la Conversational Analytics API y empieza la facturación por tokens",
+      "url": "https://cloud.google.com/bigquery/docs/conversational-analytics"
+    }
+  ]
+}
