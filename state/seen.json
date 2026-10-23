@@ -659,6 +659,36 @@
       "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus",
       "title": "Google abre TorchTPU y Amazon TorchNeuron: PyTorch nativo en TPU y Trainium",
       "date": "2026-10-22"
+    },
+    {
+      "url": "https://claude.com/resources/articles/claude-duet",
+      "title": "Anthropic presenta Claude Duet, un agente proactivo en vista previa",
+      "date": "2026-10-23"
+    },
+    {
+      "url": "https://anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation",
+      "title": "Anthropic dona el estándar Agent Skills a la Agentic AI Foundation",
+      "date": "2026-10-23"
+    },
+    {
+      "url": "https://anthropic.com/research/formal-verification",
+      "title": "Claude demuestra formalmente que 239 programas de OSS-Fuzz no se caen con entradas de hasta 64 MB",
+      "date": "2026-10-23"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational",
+      "title": "NVIDIA Kumo Relational: modelo preentrenado que predice sobre bases relacionales sin entrenar",
+      "date": "2026-10-23"
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5",
+      "title": "IBM lanza Granite Speech 5.0 con transcripción en español, Apache 2.0",
+      "date": "2026-10-23"
+    },
+    {
+      "url": "https://simular.ai/articles/agent-s4-evolving-the-interfaces-computer-use-agents-work-throughagen",
+      "title": "Simular presenta Agent S4: agentes de uso de computadora que mejoran sus propias interfaces",
+      "date": "2026-10-23"
     }
   ]
 }
