@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 23 de octubre: Claude Duet, Agent Skills a la Linux Foundation y pruebas formales de Anthropic",
+  "summary": "Seis notas del día: Anthropic presenta Claude Duet, un agente proactivo en vista previa; dona el estándar Agent Skills a la Agentic AI Foundation; Claude demuestra formalmente propiedades de 239 programas de OSS-Fuzz; NVIDIA lanza Kumo Relational para predecir sobre bases relacionales; IBM suma Granite Speech 5.0 con español; y Simular presenta Agent S4. Además, una idea de consultoría para estudios y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Anthropic presenta Claude Duet, un agente proactivo en vista previa",
+      "url": "https://claude.com/resources/articles/claude-duet"
+    },
+    {
+      "title": "Anthropic dona el estándar Agent Skills a la Agentic AI Foundation",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    },
+    {
+      "title": "Claude demuestra formalmente que 239 programas de OSS-Fuzz no se caen con entradas de hasta 64 MB",
+      "url": "https://www.anthropic.com/research/formal-verification"
+    },
+    {
+      "title": "NVIDIA Kumo Relational: modelo preentrenado que predice sobre bases relacionales sin entrenar",
+      "url": "https://huggingface.co/blog/nvidia/kumo-relational"
+    },
+    {
+      "title": "IBM lanza Granite Speech 5.0 con transcripción en español, Apache 2.0",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+    },
+    {
+      "title": "Simular presenta Agent S4: agentes de uso de computadora que mejoran sus propias interfaces",
+      "url": "https://www.simular.ai/articles/agent-s4-evolving-the-interfaces-computer-use-agents-work-throughagen"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Looker: Conversational Analytics suma observabilidad de tokens y pasa a modo Fast por defecto",
+      "url": "https://docs.cloud.google.com/looker/docs/release-notes"
+    },
+    {
+      "title": "Meta publica Muse Spark Open, modelo multimodal de pesos abiertos",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open"
+    },
+    {
+      "title": "VocabX: adaptar el vocabulario de un SLM al dominio recorta 77% el costo de inferencia",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+    },
+    {
+      "title": "NVIDIA OpenShell: runtime con políticas para flotas de agentes autónomos",
+      "url": "https://github.com/NVIDIA/OpenShell"
+    }
+  ]
+}

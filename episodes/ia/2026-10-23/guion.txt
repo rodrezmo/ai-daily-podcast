@@ -1,0 +1,122 @@
+## Titulares
+Lucía: Buen día, es viernes veintitrés de octubre y esto es Radar IA.
+Martín: Hola. Hoy hay seis notas y varias vienen con números de verdad, así que vamos rápido.
+Lucía: Arranco con Anthropic, que presentó Claude Duet, un agente proactivo en vista previa.
+Martín: ¿Proactivo en qué sentido?
+Lucía: Es una app para iOS, Android y web, basada en Claude Opus cinco punto cinco.
+Lucía: Te manda un resumen diario y trabaja en segundo plano.
+Lucía: Y antes de mandar un mensaje, pagar, firmar o borrar algo, te pide aprobación.
+Martín: Eso último me parece lo más sensato de todo el anuncio.
+Lucía: Dicen que tiene más de seis mil conectores, como Gmail, Slack, QuickBooks y Shopify.
+Martín: Ahora, la letra chica.
+Lucía: Va por lista de espera y arranca con suscriptores Pro y Max de Estados Unidos.
+Lucía: No tiene precio aparte, consume el límite del plan.
+Martín: O sea que acá en Argentina, por ahora, no lo usa nadie.
+Martín: El miércoles contamos que Gemini sumó herramientas para pymes con apps conectadas como Shopify, Xero y Zoho.
+Lucía: Sí, van todos para el mismo lado: el agente que te ordena la facturación, la agenda y la tienda.
+Martín: Mi opinión: la dirección es clara, pero hasta que no se pueda probar desde acá, es una vidriera.
+Lucía: Segunda, también de Anthropic. Donó el estándar Agent Skills a la Agentic AI Foundation.
+Martín: Que está bajo la Linux Foundation.
+Lucía: Exacto. Pasan el nombre, la organización de GitHub y el dominio.
+Lucía: Según Anthropic, ya hay más de setenta plataformas integradas, entre ellas ChatGPT, Cursor, GitHub Copilot y VS Code.
+Martín: Y tiran otros dos números: un millón de skills publicadas y casi doscientos ochenta millones de instalaciones.
+Lucía: Que son cifras de la propia Anthropic, ojo.
+Martín: Sí. Igual, lo importante no es el número. Es que el formato queda en un lugar neutral.
+Lucía: Además propusieron una hoja de ruta con versiones y lineamientos de seguridad, que todavía no es definitiva.
+Martín: Para mí es la noticia más útil del día para quien arma cosas con agentes.
+Lucía: Tercera, y esta es más de investigación.
+Lucía: Anthropic, junto con Theorem, usó a Claude para demostrar formalmente que doscientos treinta y nueve programas de OSS-Fuzz no se caen con entradas de hasta sesenta y cuatro megas.
+Martín: Demostrar en serio, con pruebas matemáticas.
+Lucía: Sí, pruebas en Rocq, a nivel ensamblador de RISC-V.
+Lucía: Son doscientos treinta y nueve puntos de entrada en ciento veintitrés librerías. Las pruebas suman unos ciento ochenta millones de líneas de Rocq.
+Martín: Y en el camino encontraron y parcharon cientos de bugs.
+Lucía: El costo es el tema. Algunas pruebas pueden llevar cientos de millones de tokens.
+Martín: Dicen que Opus cinco punto cinco usó cerca de un cuarenta por ciento menos de tokens que Opus cinco.
+Lucía: Pero eso fue en treinta y seis tareas chicas, y en la mitad que logró probar, no en todo el trabajo.
+Martín: El miércoles ya habíamos contado que Anthropic usó a Claude para reducir la superficie de ataque de veinticinco proyectos open source. Esto va en la misma línea.
+Lucía: Mi opinión: es un dato concreto y serio. Pero no quiere decir software sin bugs. Quiere decir que no se cae con esas entradas.
+Martín: Cuarta. NVIDIA presentó Kumo Relational, en el blog de Hugging Face.
+Martín: Es un modelo preentrenado que predice sobre bases relacionales sin entrenar.
+Lucía: ¿Sobre varias tablas a la vez?
+Martín: Sí, varias tablas unidas por claves foráneas. Y sin ingeniería de variables.
+Martín: En cuarenta y una tareas de quince bases, y en RelBench versión uno, le gana por casi cuatro puntos de área bajo la curva a árboles con variables armadas a mano.
+Martín: Y en otra prueba, con datos de SAP, rinde un ocho por ciento más que ensambles de AutoGluon.
+Lucía: ¿Licencia?
+Martín: El código es Apache dos punto cero. Los pesos tienen otra licencia, OpenMDW. Y hay versión NIM.
+Lucía: Mi lectura: si tenés ventas, clientes o stock en una base, esto te puede ahorrar semanas de armar variables.
+Martín: Con dos reparos. Son números de benchmark. Y la ventaja se achica cuando tenés mucho dato para entrenar.
+Lucía: Quinta. IBM lanzó Granite Speech cinco punto cero, con transcripción en español y licencia Apache dos punto cero.
+Lucía: Es un modelo de dos mil millones de parámetros.
+Lucía: Transcribe inglés, francés, alemán, español, portugués y japonés.
+Martín: ¿Y qué tan bien?
+Lucía: En inglés anda en un cinco por ciento de error por palabra, en promedio. Es segundo entre los modelos abiertos en el Open ASR Leaderboard.
+Lucía: Hay una variante de cuatrocientos setenta millones que es muchísimo más rápida.
+Martín: Y un dato que me gustó. La versión anterior, la cuatro punto uno plus, con listas de términos propios bajó el error de casi doce a unos seis y medio por ciento.
+Lucía: Ayer hablamos de Voxtral tres, de Mistral, que también trae transcripción. La competencia en voz abierta está movida.
+Martín: Mi opinión: muy útil, pero todos esos números son de inglés. Para español rioplatense hay que medirlo.
+Lucía: Y la sexta. Simular presentó Agent S cuatro, agentes que usan la computadora y mejoran sus propias interfaces.
+Martín: Contame cómo es eso.
+Lucía: Hay un metaagente que reescribe las interfaces de otro agente, el que hace las tareas. Lo hace por evolución, probando poblaciones de variantes.
+Lucía: En OSWorld versión dos, con ciento ocho tareas, un modelo Qwen de veintisiete mil millones de parámetros pasa de algo más de cinco a unos veintiún por ciento de éxito.
+Lucía: A un dólar con diez por tarea.
+Martín: ¿Y contra qué lo comparan?
+Lucía: Contra GPT cinco punto cinco, que saca trece por ciento a veinticinco dólares y medio por tarea.
+Martín: Es un salto grande. Pero son números del propio proveedor.
+Lucía: Sí, todavía no lo confirmó nadie de afuera. El código está abierto, en el repo de Agent S.
+Martín: Lo que sugiere es interesante: un modelo chico y barato, con buenas interfaces, compite con uno caro.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia hoy a quien programa o arma datos?
+Lucía: Lo primero, las skills. Si escribís skills para agentes, ahora el formato es neutral.
+Lucía: Una skill que armás para una herramienta debería servirte en otras de esas setenta plataformas.
+Martín: Menos riesgo de quedar atado a un proveedor. Y ojo con la seguridad antes de instalar skills de terceros: los lineamientos todavía son una propuesta.
+Lucía: Dos. Kumo Relational para quien hace modelos sobre bases transaccionales.
+Martín: Churn, demanda, scoring. Todo eso que hoy arranca con semanas de armar variables.
+Lucía: Yo lo probaría contra lo que ya tenés en producción, con tus datos, antes de creerle al benchmark.
+Martín: Tres. Si transcribís audio, Granite Speech es abierto y liviano. Lo podés correr en tu infraestructura.
+Lucía: Y la idea de listas de términos sirve un montón para nombres de productos, clientes o siglas internas.
+Martín: Cuatro, algo más de fondo. Lo de Agent S cuatro dice que la interfaz que le das al agente pesa tanto como el modelo.
+Lucía: O sea, antes de pagar el modelo más caro, revisá cómo le presentás las herramientas.
+Martín: Y lo de verificación formal: Anthropic publicó parte de las pruebas y Theorem, un skill. Si te interesa el tema, es un buen lugar para mirar cómo trabajan.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con estudios y profesionales independientes.
+Martín: ¿Por la transcripción?
+Lucía: Sí. Pensá en un estudio contable o jurídico chico.
+Lucía: Reciben audios de WhatsApp de clientes, tienen reuniones, llamadas.
+Lucía: Y lo que se dijo queda en la memoria de alguien o en una nota suelta.
+Martín: Y muchas veces no quieren mandar esos audios a un servicio de afuera.
+Lucía: Justamente. La idea es transcribir con un modelo abierto como Granite Speech, en una máquina propia del estudio.
+Lucía: Con una lista de términos del estudio: nombres de clientes, siglas, nombres de trámites.
+Martín: Y después, ¿qué se automatiza?
+Lucía: Que cada audio o reunión quede transcripto, con un resumen corto, y cargado en la planilla o el sistema que ya usan.
+Martín: ¿Qué haría falta?
+Lucía: Primero, medir. Probar con una muestra de audios reales y ver cuánto se equivoca en español rioplatense.
+Lucía: Segundo, el consentimiento de los clientes para grabar y transcribir.
+Lucía: Y tercero, una máquina que lo corra y alguien que revise las transcripciones al principio.
+Martín: Y aclarar que es una idea para explorar. Hasta no medirlo con sus audios, no se le promete nada a nadie.
+
+## Una cosa para probar hoy
+Martín: Para hoy, algo de menos de media hora.
+Lucía: Medí cómo transcribe Granite Speech tus propios audios.
+Martín: Dale, paso a paso.
+Lucía: Uno. Entrá al blog de Hugging Face y buscá la nota de IBM sobre Granite Speech cinco. El link está en las notas.
+Lucía: Dos. Elegí cinco audios cortos tuyos, de un minuto o menos. Que sean tuyos o que tengas permiso.
+Lucía: Tres. Seguí las instrucciones de la nota y transcribilos con el modelo.
+Lucía: Cuatro. Escuchá cada audio con la transcripción al lado y marcá los errores.
+Martín: Fijate sobre todo en nombres propios, números y palabras bien nuestras.
+Lucía: Cinco. Anotá en una planilla cuántos errores hubo por audio.
+Martín: Con eso ya sabés si vale la pena seguir. Y tenés una muestra para comparar contra otro modelo.
+
+## Quedaron afuera
+Martín: Y ahora lo que quedó afuera. Por si quieren que lo sigamos.
+Lucía: Looker. Conversational Analytics sumó un panel de uso estimado de tokens y ahora usa el modo Fast por defecto.
+Lucía: No entró porque no hay ninguna nota de octubre que confirme que empieza a cobrar por tokens. La página de precios habla de extender la promoción con noventa días de aviso.
+Martín: Meta publicó Muse Spark Open en el blog de Hugging Face. El martes ya contamos el modelo y sus términos comerciales limitados.
+Martín: Esta nota no trae ni licencia ni benchmarks, así que no sumaba nada nuevo.
+Lucía: NVIDIA OpenShell, un runtime que corre cada agente en un sandbox con políticas y sin ver credenciales reales.
+Lucía: Quedó afuera porque es versión cero punto uno, sin fecha de lanzamiento clara.
+Martín: Y VocabX, que adapta el vocabulario de un modelo chico a un dominio y dice recortar un setenta y siete por ciento el costo de inferencia.
+Martín: El dato viene de un solo sistema interno y el paper todavía no salió. Si sale, lo miramos.
+Lucía: Si alguna les interesa, avisen.
+Martín: Eso es todo por hoy. Buen viernes y nos escuchamos mañana.
