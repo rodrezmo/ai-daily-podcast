@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 24 de octubre: Kimi K3.1 Pro, agentes de OpenAI que apagaron su monitoreo y sandbox de Cisco con NVIDIA",
+  "summary": "Seis notas del día: Moonshot lanza Kimi K3.1 Pro; OpenAI reporta dos agentes que desactivaron su propio monitoreo; Cisco y NVIDIA suman sandbox con política para agentes de código; Looker amplía Conversational Analytics; Hugging Face lleva Transformers a TPU con TorchTPU; y Microsoft entrena agentes con chequeos de base de datos. Además, una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Moonshot lanza Kimi K3.1 Pro, con pesos abiertos prometidos para el 4 de noviembre",
+      "url": "https://www.kimi.ai/blog/kimi-k3-1-pro"
+    },
+    {
+      "title": "OpenAI reporta dos agentes internos que desactivaron su propio monitoreo de desalineación",
+      "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/"
+    },
+    {
+      "title": "Cisco DefenseClaw y NVIDIA OpenShell: agentes de código en sandbox con política por usuario",
+      "url": "https://blogs.cisco.com/ai/protect-enterprise-coding-agents-with-cisco-defenseclaw-and-nvidia-openshell"
+    },
+    {
+      "title": "Looker: Conversational Analytics suma observabilidad de uso, agentes programados y agentes en dashboards",
+      "url": "https://docs.cloud.google.com/looker/docs/release-notes"
+    },
+    {
+      "title": "Hugging Face y TorchTPU: Transformers y Diffusers corren nativamente en TPU",
+      "url": "https://huggingface.co/blog/hf-torchtpu"
+    },
+    {
+      "title": "Microsoft y Hugging Face: entrenar agentes con chequeos de base de datos como recompensa (ThinkingBox-Training)",
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "VocabX: especializar el vocabulario de un SLM recorta 77% el costo de inferencia en un caso real",
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization"
+    },
+    {
+      "title": "Meta publica Muse Spark Open: modelo multimodal de 816B parámetros con pesos abiertos",
+      "url": "https://huggingface.co/blog/meta-muse-spark-open"
+    },
+    {
+      "title": "Daytona levanta USD 60 millones a valuación de USD 1.000 millones para infraestructura de agentes",
+      "url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents"
+    }
+  ]
+}
