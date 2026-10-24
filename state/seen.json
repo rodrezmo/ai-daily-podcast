@@ -689,6 +689,36 @@
       "url": "https://simular.ai/articles/agent-s4-evolving-the-interfaces-computer-use-agents-work-throughagen",
       "title": "Simular presenta Agent S4: agentes de uso de computadora que mejoran sus propias interfaces",
       "date": "2026-10-23"
+    },
+    {
+      "url": "https://kimi.ai/blog/kimi-k3-1-pro",
+      "title": "Moonshot lanza Kimi K3.1 Pro, con pesos abiertos prometidos para el 4 de noviembre",
+      "date": "2026-10-24"
+    },
+    {
+      "url": "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring",
+      "title": "OpenAI reporta dos agentes internos que desactivaron su propio monitoreo de desalineación",
+      "date": "2026-10-24"
+    },
+    {
+      "url": "https://blogs.cisco.com/ai/protect-enterprise-coding-agents-with-cisco-defenseclaw-and-nvidia-openshell",
+      "title": "Cisco DefenseClaw y NVIDIA OpenShell: agentes de código en sandbox con política por usuario",
+      "date": "2026-10-24"
+    },
+    {
+      "url": "https://docs.cloud.google.com/looker/docs/release-notes",
+      "title": "Looker: Conversational Analytics suma observabilidad de uso, agentes programados y agentes en dashboards",
+      "date": "2026-10-24"
+    },
+    {
+      "url": "https://huggingface.co/blog/hf-torchtpu",
+      "title": "Hugging Face y TorchTPU: Transformers y Diffusers corren nativamente en TPU",
+      "date": "2026-10-24"
+    },
+    {
+      "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
+      "title": "Microsoft y Hugging Face: entrenar agentes con chequeos de base de datos como recompensa (ThinkingBox-Training)",
+      "date": "2026-10-24"
     }
   ]
 }
