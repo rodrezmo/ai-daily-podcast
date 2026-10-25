@@ -719,6 +719,36 @@
       "url": "https://huggingface.co/blog/microsoft/thinkingbox-training",
       "title": "Microsoft y Hugging Face: entrenar agentes con chequeos de base de datos como recompensa (ThinkingBox-Training)",
       "date": "2026-10-24"
+    },
+    {
+      "url": "https://huggingface.co/blog/Dharma-AI/vocabx-vocabulary-specialization",
+      "title": "VocabX: especializar el vocabulario de un SLM recorta 77% el costo de inferencia",
+      "date": "2026-10-25"
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1",
+      "title": "Ensemble de modelos de series temporales IBM Granite para pronósticos",
+      "date": "2026-10-25"
+    },
+    {
+      "url": "https://docs.cloud.google.com/bigquery/docs/release-notes",
+      "title": "BigQuery: AI.TRANSLATE y AI.CHUNK_DOCUMENT disponibles en GA",
+      "date": "2026-10-25"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases",
+      "title": "Claude Code 2.1.307 y 2.1.309: evento de telemetría de seguridad y arreglos del sandbox",
+      "date": "2026-10-25"
+    },
+    {
+      "url": "https://github.com/ollama/ollama/releases",
+      "title": "Ollama 0.40.8 a 0.40.11: modelo Flint de 40B, Nemotron 3.5 Bolt y voz en macOS",
+      "date": "2026-10-25"
+    },
+    {
+      "url": "https://cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+      "title": "Cerebras explica cómo sirve Kimi K3, de 3 billones de parámetros, a 1.000 a 2.000+ tokens por segundo",
+      "date": "2026-10-25"
     }
   ]
 }

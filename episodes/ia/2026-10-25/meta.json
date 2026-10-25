@@ -36,5 +36,10 @@
       "title": "GVS5H: orquestar varias instancias de un mismo modelo mejora LiveCodeBench sin entrenar",
       "url": "https://github.com/slee-persis/GVS5H"
     }
-  ]
+  ],
+  "guid": "ia-2026-10-25",
+  "bytes": 5217652,
+  "seconds": 615.336,
+  "pub_date": "2026-10-25T06:18:26.071417-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-10-25/episode.mp3"
 }
