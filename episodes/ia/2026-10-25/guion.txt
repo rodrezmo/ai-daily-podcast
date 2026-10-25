@@ -1,0 +1,115 @@
+## Titulares
+Lucía: Hola, buen día. Es domingo veinticinco de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y varias son más de taller que de anuncio.
+Lucía: Arrancamos con una que me gustó. Se llama VocabX y sale en el blog de Hugging Face, de un equipo llamado Dharma AI.
+Martín: La idea es achicar el vocabulario de un modelo chico para una tarea puntual.
+Lucía: Exacto. Tomaron Qwen tres de cuatro B y lo usaron para calificar ensayos en portugués.
+Lucía: Bajaron el vocabulario de unas ciento cincuenta mil entradas a unas sesenta y cinco mil.
+Martín: ¿Y qué ganaron con eso?
+Lucía: Los tokens por respuesta pasaron de trescientos cincuenta a unos cien. El costo de inferencia bajó un setenta y siete por ciento.
+Lucía: Y el puntaje en su prueba subió, de cero coma setenta a cero coma ochenta y uno.
+Martín: Suena muy bien. Pero ojo, que es el adelanto de un paper que todavía está en revisión.
+Lucía: Sí, y el propio texto avisa que las cifras pueden cambiar. Lo midieron en una sola placa, una RTX cincuenta noventa, con vLLM.
+Martín: Mi opinión: la idea tiene sentido para tareas repetitivas con un idioma y un tema fijos. Pero hasta que no salga revisado, es una promesa con números prolijos.
+Lucía: Segunda nota. IBM Research publicó en Hugging Face una receta para pronosticar series temporales juntando cuatro modelos Granite.
+Martín: Un ensemble, digamos. Combina dos versiones de PatchTST, FlowState y TTM, sin reentrenar nada.
+Lucía: Lo probaron en GIFT Eval, que tiene noventa y siete configuraciones.
+Martín: ¿Y cuánto mejora?
+Lucía: Casi nada en precisión. El error del conjunto da cero coma seiscientos ochenta y tres. El mejor modelo solo da cero coma seiscientos ochenta y cinco.
+Martín: O sea, empate técnico.
+Lucía: Ellos mismos lo venden más por robustez que por precisión. No tenés que adivinar qué arquitectura le va mejor a tus datos.
+Martín: El costo es que cargás cuatro checkpoints, y eso suma tiempo y memoria.
+Lucía: Mi lectura: útil si no sabés por dónde empezar. Pero compararlo contra un modelo solo, con tus propios datos, es obligatorio.
+Martín: Y el viernes ya habíamos tenido a IBM con Granite Speech cinco, así que la familia Granite viene activa.
+Lucía: Tercera. BigQuery pasó a disponibilidad general dos funciones de IA que se usan desde SQL.
+Martín: Una es AI punto TRANSLATE, que traduce texto dentro de una consulta.
+Lucía: Puede usar traducción automática neuronal o un modelo de lenguaje de traducción. Salió el jueves veintidós.
+Martín: La otra es AI punto CHUNK DOCUMENT, del miércoles veintiuno. Parte documentos no estructurados en fragmentos.
+Lucía: Pensado para generar embeddings y armar RAG.
+Martín: Opinión honesta: no es un salto, pero es de esas cosas que te ahorran un script aparte. Lo dice la nota de versiones de Google Cloud, sin cifras de rendimiento.
+Lucía: Cuarta. Claude Code sacó dos versiones, la dos punto uno punto trescientos siete y la dos punto uno punto trescientos nueve.
+Martín: Esto sale del changelog en GitHub, así que es lo que dice el propio proyecto.
+Lucía: La primera agrega un evento de telemetría de seguridad en OpenTelemetry y corrige que algunas llamadas MCP por HTTP se enviaran dos veces.
+Martín: La segunda es la importante. Corrige fallas del sandbox de Bash.
+Lucía: Por ejemplo, había archivos de inicio que corrían fuera del sandbox.
+Martín: Y en macOS, reglas para bloquear escritura que no se aplicaban si había un symlink de por medio.
+Lucía: Para mí, actualizar no es opcional. Si usás el sandbox como barrera, esas eran justo las grietas.
+Martín: Y conecta con lo de ayer, cuando contamos que Cisco y NVIDIA presentaron agentes de código en sandbox con política por usuario. El aislamiento de agentes está en todos lados.
+Lucía: Quinta. Ollama sacó cuatro versiones en cuatro días, de la cero punto cuarenta punto ocho a la cero punto cuarenta punto once.
+Martín: También es changelog. Te dice qué hay, no qué tan bien anda.
+Lucía: Suman Flint, de la empresa Recursive. Cuarenta B, del tipo mezcla de expertos, con un contexto de unos doscientos sesenta mil tokens.
+Martín: Primero salió en macOS y después en Linux y Windows.
+Lucía: También Nemotron tres punto cinco Bolt, que tiene visión y un contexto de ciento veintiocho mil.
+Martín: Un endpoint para generar voz, solo en macOS. Y una familia de modelos de decisión, la d tres, de dos B a veintisiete B.
+Lucía: Opinión: para quien trabaja con datos sensibles, cada modelo local nuevo es una opción más para no mandar nada a la nube. Ahora, si sirven o no, eso lo vas a saber probando.
+Martín: Y la sexta. Cerebras contó cómo sirve Kimi K tres, un modelo abierto de unos tres billones de parámetros.
+Lucía: Lo reparten en cincuenta y nueve wafers, conectados por Ethernet.
+Martín: Con los pesos a cuatro bits y la caché a ocho bits.
+Lucía: Cerebras dice que llega a entre mil y más de dos mil tokens por segundo.
+Martín: Y cita resultados de benchmarks de agentes, como Terminal Bench, con ochenta y ocho por ciento, tomados del blog de Kimi.
+Lucía: Acá hay que ser claros: son cifras del proveedor. Nadie las verificó de forma independiente.
+Martín: Y no hay precios. Así que no sabemos si eso es para nosotros o para un puñado de clientes grandes.
+Lucía: El domingo pasado hablamos del Token Pass de Vercel, que incluía crédito para Kimi K tres. Y ayer, de Kimi K tres punto uno Pro.
+Martín: El modelo se mueve rápido. Lo de Cerebras demuestra que se puede servir muy rápido. Lo demás, a confirmar.
+Lucía: Igual, la velocidad importa. Un agente de código que hace muchas vueltas seguidas se nota cuando cada vuelta tarda menos.
+Martín: Sí, para flujos largos es donde más pesa. Pero sin precio, es una demo de ingeniería, no una oferta.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué cambia en el día a día de quien programa o arma datos?
+Martín: Lo primero, lo más aburrido y lo más urgente. Si usás Claude Code, actualizá.
+Lucía: Sobre todo si tenés reglas para bloquear escritura y en tu repo hay symlinks.
+Martín: Y si tenés OpenTelemetry armado, el evento nuevo de seguridad te deja auditar qué bloqueó el agente.
+Lucía: Eso sirve para algo muy práctico: explicarle a otro por qué el agente no hizo lo que le pediste.
+Martín: Segundo, BigQuery. Si tenés una columna de comentarios de clientes en otro idioma, ahora la traducís en la misma consulta.
+Lucía: Y si tenés contratos o manuales en PDF, el chunking queda en SQL. Menos piezas sueltas en el pipeline.
+Martín: Igual, fijate cuánto te cuesta antes de correrlo sobre una tabla entera. La nota no da precios.
+Lucía: Tercero, VocabX. No es algo para bajar mañana, pero cambia una pregunta.
+Martín: ¿Cuál?
+Lucía: Si tenés una tarea repetitiva, siempre en el mismo idioma y el mismo tema, quizás no necesitás un modelo más grande. Quizás necesitás uno más chico y más afinado.
+Martín: Con el asterisco de que es un preprint.
+Lucía: Con el asterisco, sí. Y fijate que lo que bajó fue la cantidad de tokens por respuesta. Ahí está casi todo el ahorro.
+Martín: Eso es lo interesante para cualquiera que paga por token. Respuestas más cortas, factura más chica.
+Lucía: Siempre que la calidad no se caiga. En su prueba subió, pero es una sola tarea.
+Martín: Un punto más sobre Ollama. Si ya lo usás, el contexto largo de Flint te deja meter documentos enteros sin trocear.
+Lucía: Eso dice la ficha. Cuánta memoria hace falta para llenarlo, no lo dice la nota.
+Martín: Así que antes de prometerle eso a alguien, probalo en tu propia máquina.
+Lucía: Y si en tu equipo hay datos que no pueden salir, ahora hay más modelos para elegir. Código, visión y voz, todo local.
+Martín: Y cuarto, pronósticos. El ensemble de Granite te da un punto de partida sin tener que elegir arquitectura.
+Lucía: Pero medí. Si un modelo solo te da lo mismo con un cuarto de la memoria, quedate con uno.
+
+## Oportunidades de consultoría
+Martín: Vamos con la idea del día. Hoy no la pensaría para una pyme.
+Lucía: ¿Para quién, entonces?
+Martín: Para el equipo de operaciones de una empresa mediana. Una distribuidora, por ejemplo, que planifica compras con una planilla.
+Lucía: El problema típico es que el pronóstico de demanda lo hace una persona, a ojo, con el histórico en Excel.
+Martín: Y cuando esa persona se va de vacaciones, nadie sabe cómo se calculaba.
+Lucía: La idea sería tomar ese histórico de ventas por producto y correr un pronóstico automático cada semana.
+Martín: Con el ensemble de Granite como una opción, y un modelo solo como comparación. Sin reentrenar.
+Lucía: El entregable no es el modelo. Es un informe semanal con lo que se espera vender, y al lado lo que pasó de verdad.
+Martín: Eso es clave. Mostrar cuándo el pronóstico le erra, no esconderlo.
+Lucía: ¿Qué haría falta?
+Martín: Unos cuantos meses de ventas limpias, alguien del equipo que valide los números, y una máquina que aguante cargar cuatro modelos.
+Lucía: Y si los productos tienen descripciones en otro idioma, o vienen de proveedores de afuera, la traducción en BigQuery puede ordenar el catálogo antes de pronosticar.
+Martín: Eso solo si ya trabajan en BigQuery. Si viven en Excel, no hace falta cambiar todo de golpe.
+Lucía: Y arrancar con pocos productos, los que más pesan, antes de prometer nada sobre el resto.
+Martín: Ojo, que es una idea para explorar con ellos. Puede que el método a ojo funcione mejor de lo que parece.
+
+## Una cosa para probar hoy
+Lucía: Una cosa para probar hoy, en menos de media hora.
+Martín: Probá un modelo local con visión sobre un documento tuyo.
+Lucía: Paso uno: actualizá Ollama a la última versión, la cero punto cuarenta punto once.
+Martín: Paso dos: buscá en la biblioteca de modelos de Ollama el nombre exacto de Nemotron tres punto cinco Bolt y bajalo.
+Lucía: Paso tres: elegí una imagen real de tu trabajo. Una factura escaneada, una captura de una planilla, un gráfico.
+Martín: Que no tenga datos que no puedas usar, aunque todo quede en tu máquina.
+Lucía: Paso cuatro: pedile que extraiga tres o cuatro campos concretos. Fecha, total, proveedor.
+Martín: Paso cinco: anotá cuánto tardó y cuántos campos sacó bien.
+Lucía: Con eso ya sabés si vale la pena seguir probando, o si por ahora te quedás con lo que usás.
+Martín: Y si no tenés una máquina potente, mejor elegí el modelo más chico que encuentres. No hace falta el más grande para esta prueba.
+
+## Quedaron afuera
+Lucía: Dos que quedaron afuera hoy.
+Martín: Daytona levantó sesenta millones de dólares, con una valuación de mil millones, para hacer sandboxes de agentes.
+Lucía: No entró porque es una nota de financiamiento. No cambia nada práctico hoy.
+Martín: Y GVS5H, un repo que dice que orquestar varias copias de un mismo modelo mejora resultados en LiveCodeBench, sin entrenar.
+Lucía: Lo dejamos afuera porque es de un autor independiente, sin revisión y sin fecha. Si les interesa, avisen y lo seguimos.
+Martín: Eso es todo por hoy. Los links están en las notas. Buen domingo.
