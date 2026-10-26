@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 26 de octubre: OpenAI deja de entrenar con internet en vivo, 1Password para agentes y la voz local de Block",
+  "summary": "Seis notas del día: OpenAI y el entrenamiento sin internet en vivo, 1Password for Agents, el modelo de voz Dessa de Block, el peso de los tokens de caché en el gasto de agentes de código, Nanbeige4.3 y el benchmark FrontierMemory. Además, una idea de consultoría, algo para probar hoy y temas que quedaron afuera.",
+  "stories": [
+    {
+      "title": "OpenAI dejará de entrenar modelos con internet en vivo, por riesgos",
+      "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+    },
+    {
+      "title": "1Password for Agents: los agentes inician sesión sin ver tu contraseña",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+    },
+    {
+      "title": "Block presenta Dessa, modelo de voz full-duplex que corre local en una MacBook M4 Max",
+      "url": "https://techcrunch.com/2026/10/24/blocks-new-voice-model-sounds-eerily-human/"
+    },
+    {
+      "title": "Los tokens de caché explican 96-99% del gasto en agentes de código; recortes de precio",
+      "url": "https://minimaxir.com/2026/10/cheap-llms/"
+    },
+    {
+      "title": "Nanbeige4.3-33B: modelo abierto Apache-2.0 para código agéntico, contexto de 512K",
+      "url": "https://www.marktechpost.com/2026/10/25/nanbeige-releases-nanbeige4-3-33b-open-agentic-coding-model/"
+    },
+    {
+      "title": "FrontierMemory: benchmark de memoria de agentes con cinco harness",
+      "url": "https://thenewstack.io/letta-frontiermemory-agent-harness-benchmark/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Daytona levanta USD 60M a USD 1.000M de valuación para sandboxes de agentes",
+      "url": "https://techfundingnews.com/daytona-raises-60m-at-1b-valuation-to-build-a-cloud-for-ai-agents"
+    },
+    {
+      "title": "Cognition abre el plugin Devin Vulnerability Fixes",
+      "url": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab"
+    },
+    {
+      "title": "OpenAI negocia una ronda de hasta USD 30.000M a USD 1,25 billones",
+      "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+    }
+  ]
+}
