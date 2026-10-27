@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 27 de octubre: GPT-6.1 Terra a un dólar, Kimi K3.1 Pro y una filtración en Workers AI de Cloudflare",
+  "summary": "Seis notas del día: precios y pruebas de GPT-6.1 Terra, Kimi K3.1 Pro con pesos abiertos en camino, la filtración entre usuarios en Workers AI de Cloudflare, el plugin de Cognition para que Devin corrija vulnerabilidades, Claude Code 2.1.311 y el curso de Raschka sobre modelos de razonamiento. Además, una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "GPT-6.1 Terra: precios y pruebas del modelo de OpenAI",
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/"
+    },
+    {
+      "title": "Kimi K3.1 Pro: modelo de Moonshot a USD 2/10 por millón de tokens, pesos abiertos hasta el 4 de noviembre",
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro/"
+    },
+    {
+      "title": "Cloudflare: filtración entre usuarios en GLM-5.3 de Workers AI por un bug de caché KV en SGLang",
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+    },
+    {
+      "title": "Cognition publica plugin open source para que Devin corrija vulnerabilidades de PHP, Node.js y GitLab",
+      "url": "https://www.marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab"
+    },
+    {
+      "title": "Claude Code 2.1.311: compactación automática en vez de cortar a 200K tokens y mejoras en subagentes",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311"
+    },
+    {
+      "title": "Sebastian Raschka publica un curso en video para construir un modelo de razonamiento desde cero",
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Daytona levanta USD 60M Serie B a USD 1.000M de valoración para infraestructura de agentes",
+      "url": "https://tech.eu/2026/10/20/daytona-hits-1b-valuation-with-60m-series-b-for-ai-agent-cloud//"
+    },
+    {
+      "title": "Hugging Face: Space para saber qué modelos de Transformers corren sin cambios en AWS Trainium",
+      "url": "https://huggingface.co/blog/torch-neuronx-model-support"
+    },
+    {
+      "title": "Anthropic presenta su S-1 ante la SEC para una oferta pública inicial",
+      "url": "https://www.anthropic.com/news/s1-sec"
+    }
+  ]
+}

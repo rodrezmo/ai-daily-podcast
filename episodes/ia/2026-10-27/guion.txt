@@ -1,0 +1,111 @@
+## Titulares
+Lucía: Buen día, hoy es martes veintisiete de octubre y esto es Radar IA.
+Martín: Hola. Hoy hay modelos nuevos con precios, una filtración de datos que vale la pena entender bien, y un par de cosas para quien programa.
+Lucía: Arranquemos con OpenAI. Salió GPT seis punto uno Terra, y el que mejor lo contó con números es Simon Willison en su blog.
+Martín: ¿Qué precio tiene?
+Lucía: Un dólar por millón de tokens de entrada y cinco de salida.
+Martín: Barato, para ser de OpenAI.
+Lucía: Willison lo compara con Sol y con Luna. Y cita a un empleado de OpenAI que dice esto.
+Lucía: Que es mejor en comunicación técnica, parecido en visión y en uso de computadora, más rápido, y algo más flojo en el resto.
+Martín: Me gusta que lo diga así. Es más honesto que un "el mejor modelo de la historia".
+Lucía: Y hay un dato de bolsillo. Una prueba con el razonamiento al máximo costó unos once centavos de dólar.
+Martín: ¿Y cuánto tardó?
+Lucía: Cuatro minutos y once segundos.
+Martín: O sea, barato pero no instantáneo si le pedís que piense todo. Mi opinión: es un candidato serio para reemplazar a un modelo más caro en tareas de redactar o explicar cosas técnicas. Para el resto, hay que probarlo con lo tuyo.
+Lucía: Segunda. Moonshot lanzó Kimi K tres punto uno Pro.
+Martín: Esto ya lo contamos el sábado, cuando salió con los pesos abiertos prometidos para el cuatro de noviembre.
+Lucía: Sí, pero ahora hay más números. Cuesta dos dólares por millón de tokens de entrada y diez de salida.
+Martín: Eso es la mitad de lo que cuesta Claude Opus cinco punto cinco.
+Lucía: Exacto. Y Artificial Analysis le puso cincuenta y cinco puntos. Opus cinco punto cinco tiene cincuenta y ocho.
+Martín: ¿Y los otros grandes?
+Lucía: Gemini cuatro Argon y GPT seis Astra quedaron en cincuenta y tres.
+Martín: Fijate un detalle. El martes pasado contamos que Gemini cuatro Argon pasó a disponibilidad general con un precio introductorio de dos y diez. El mismo precio que Kimi.
+Lucía: Y con dos puntos menos en ese índice.
+Martín: Ojo igual. Los benchmarks que publica Moonshot son propios, y lo de los pesos abiertos todavía es una promesa. Hasta que no estén publicados, no los cuento.
+Lucía: Tercera, y para mí la más importante del día. Cloudflare publicó en su blog un informe sobre una filtración entre usuarios en Workers AI.
+Martín: Contá bien qué pasó, porque esto es delicado.
+Lucía: Entre el veintisiete de agosto y el nueve de septiembre, el modelo GLM cinco punto tres devolvió texto de otras sesiones.
+Martín: ¿A todo el mundo?
+Lucía: No. Pasó con prompts de más de seiscientos ochenta mil tokens. Y fueron ciento cincuenta y cinco respuestas.
+Martín: ¿Y por qué?
+Lucía: El modelo aceptaba un contexto de algo más de un millón de tokens. Pero el espacio de caché para procesar el prompt era más chico que eso.
+Lucía: Y un bug en SGLang, el motor que usaban para servir el modelo, dejaba páginas viejas de caché ahí, con datos de otro usuario.
+Martín: Uf. Cloudflare dice que no encontró explotación deliberada, ¿no?
+Lucía: Eso dice. Corrigieron la configuración y el motor. La versión arreglada es SGLang cero punto cinco punto veintidós o posterior.
+Martín: Mi opinión: muy bien que lo publiquen con este nivel de detalle. Y es un recordatorio de que "mis datos en la nube de un proveedor grande" no es lo mismo que "mis datos aislados".
+Lucía: Cuarta. Cognition, la empresa de Devin, publicó un plugin open source para corregir vulnerabilidades.
+Martín: ¿De qué?
+Lucía: Tiene tres skills: una para PHP, una para Node punto js y una para GitLab. Salió el veintidós de octubre, un día después de las actualizaciones de seguridad de PHP y de Node por fallas de ejecución remota.
+Martín: ¿Y cómo trabaja?
+Lucía: Escanea en modo solo lectura, vos elegís qué repositorios, corre los tests antes y después, y abre un pull request por repositorio con un plan para volver atrás.
+Martín: Suena prolijo. Pero acá hay un asterisco grande.
+Lucía: Sí. La nota es de MarkTechPost y no se pudo abrir, ni el repositorio oficial. Los datos vienen de buscadores. Así que todavía no lo confirmamos en la fuente.
+Martín: Y aunque lo confirmemos, un agente que toca código de producción se revisa antes de correrlo. Se relaciona con lo del miércoles pasado, cuando contamos que Anthropic usó Claude para reducir la superficie de ataque de veinticinco proyectos open source. Agentes haciendo mantenimiento de seguridad. Va por ahí.
+Lucía: Quinta. Claude Code dos punto uno punto trescientos once.
+Martín: El domingo hablamos de la trescientos siete y la trescientos nueve. Esta trae algo más jugoso.
+Lucía: Sí. Antes, si una sesión con contexto estándar pasaba los doscientos mil tokens, se frenaba con un error de créditos para el contexto de un millón.
+Martín: Me pasó. Es muy molesto.
+Lucía: Ahora compacta y sigue. Además, los subagentes pueden usar servidores MCP que terminan de conectarse tarde.
+Lucía: Los hooks de SubagentStop se disparan una sola vez por subagente. Y la palabra ultrathink corre con esfuerzo extra alto en los modelos cinco.
+Martín: Opinión: no es un cambio vistoso, pero es de los que te ahorran broncas todos los días. Lo de los hooks, en particular, si automatizás cosas.
+Lucía: Y la sexta. Sebastian Raschka publicó un curso en video para construir un modelo de razonamiento desde cero.
+Martín: ¿Cuánto es?
+Lucía: Ocho videos, unas once horas de código. Parte de Qwen tres, la versión chiquita de cero coma seis B.
+Lucía: Recorre verificadores, autoconsistencia, autorrefinamiento, GRPO con recompensas verificables y destilación a partir de respuestas de DeepSeek R uno.
+Martín: Y acompaña su libro sobre el mismo tema.
+Lucía: No es un lanzamiento, es formación. Pero de la buena.
+Martín: Coincido. Si querés entender qué hay adentro de un modelo que "piensa", esto vale más que diez anuncios.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día?
+Lucía: Lo primero, para mí, es lo de Cloudflare. Si alojás modelos propios con SGLang, hay dos cosas para revisar.
+Lucía: Una, que estés en la cero punto cinco punto veintidós o más nueva. Dos, que el espacio de caché sea mayor que el contexto máximo que le dejás usar al modelo.
+Martín: Eso último es lo que me parece clave. No es solo un bug. Es una configuración que parecía razonable y no lo era.
+Lucía: Exacto. El contexto anunciado era más grande que la caché que lo tenía que sostener.
+Martín: Lo segundo es el precio. Entre Terra a uno y cinco, y Kimi y Argon a dos y diez, hay un escalón de modelos medianos que se volvió bastante barato.
+Lucía: Y eso cambia cuentas. Hay tareas de clasificar, resumir o redactar que quizás estás pagando con un modelo tope de gama sin necesidad.
+Martín: Pero no te cases con el benchmark. El dato de Willison, once centavos y cuatro minutos con razonamiento máximo, te dice que el nivel de razonamiento importa tanto como el precio por token.
+Lucía: Lo tercero, Claude Code. Si trabajás con sesiones largas, actualizá. Y si tenés hooks de SubagentStop, revisá que no dependías de que se dispararan más de una vez.
+Martín: Buen punto. Un arreglo también te puede romper algo que funcionaba por casualidad.
+Lucía: Y lo de Cognition, como idea, es interesante para equipos con muchos repositorios. Escaneo en solo lectura, tests antes y después, un pull request por repo.
+Martín: Aunque no uses Devin, ese flujo lo podés copiar con el agente que tengas. Es un buen patrón.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero ir por otro lado. No la pyme. Un estudio, contable o jurídico, chico.
+Martín: Dale. ¿Cuál es el problema?
+Lucía: Les llegan documentos de clientes por WhatsApp y por mail. Contratos, facturas, notas. Alguien los lee, los resume y los carga a mano.
+Martín: Y seguro ya alguien del estudio los está pegando en un chat de IA sin preguntarle a nadie.
+Lucía: Es lo más probable. Y ahí entra la noticia de Cloudflare. Es el ejemplo perfecto para tener esa charla de privacidad sin meter miedo.
+Martín: ¿Qué se automatiza?
+Lucía: Recibir el documento, clasificarlo por tipo, sacar un resumen corto y los campos que importan, y dejarlo en una planilla para que una persona lo revise.
+Martín: Siempre con revisión humana.
+Lucía: Siempre. Y la parte de consultoría de verdad es decidir dónde corre el modelo.
+Martín: Ahí aparecen las opciones de hoy. Un modelo mediano y barato por API, o, si Moonshot cumple con los pesos abiertos, la posibilidad de alojar algo propio más adelante.
+Lucía: Con cuidado, porque alojarlo vos te trae justo los problemas de configuración que tuvo Cloudflare.
+Martín: ¿Qué haría falta para arrancar?
+Lucía: Un inventario de qué tipos de documentos reciben. Unas muestras anonimizadas para probar. Y una regla escrita de qué se puede mandar afuera y qué no.
+Martín: Y mandar lo mínimo. Si el resumen se puede hacer con dos páginas, no mandes las cuarenta.
+Lucía: Es una idea para conversar, no una promesa de nada. Pero el problema es real en casi cualquier estudio.
+
+## Una cosa para probar hoy
+Martín: Propongo algo concreto. Comparar GPT seis punto uno Terra contra el modelo que usás hoy, con tus propias tareas.
+Lucía: Contame el paso a paso.
+Martín: Uno. Elegí tres prompts reales de tu trabajo. Por ejemplo, explicar un error, resumir un documento y redactar un mail técnico.
+Martín: Dos. Correlos con tu modelo de siempre y anotá cuánto tardó cada uno.
+Lucía: ¿Y el costo?
+Martín: Tres. Mirá el consumo de tokens en el panel del proveedor y multiplicá por el precio. Con Terra son un dólar el millón de entrada y cinco el de salida.
+Martín: Cuatro. Corré los mismos tres prompts con Terra, con el razonamiento en un nivel normal.
+Lucía: Y si querés, uno con el razonamiento al máximo, para ver si te pasa lo de los cuatro minutos.
+Martín: Cinco. Leé las respuestas una al lado de la otra, sin mirar cuál es cuál, y poné un puntaje del uno al cinco.
+Lucía: Me gusta lo de no mirar. Uno siempre le tiene simpatía al modelo que ya usa.
+Martín: Con eso, en media hora, sabés si Terra te sirve para lo que dice el empleado de OpenAI, la comunicación técnica. Y sabés cuánto te ahorrarías.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy. Si quieren que sumemos algo, avisen.
+Martín: Anthropic presentó ante la SEC el documento para salir a la bolsa.
+Lucía: No entró porque todavía no tenemos ninguna cifra sacada del documento. Solo sabemos que se presentó.
+Martín: Daytona, que hace infraestructura para agentes, levantó sesenta millones de dólares en una Serie B, con una valuación de mil millones.
+Lucía: Es una ronda de inversión. Para el día a día de ustedes, poco impacto directo.
+Martín: Y Hugging Face sacó un Space para saber qué modelos de Transformers corren sin cambios en AWS Trainium.
+Lucía: Útil, pero muy de nicho. Solo sirve si usás Trainium.
+Martín: Eso fue todo. Gracias por escuchar, nos oímos mañana en Radar IA.
