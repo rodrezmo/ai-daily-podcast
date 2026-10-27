@@ -779,6 +779,36 @@
       "url": "https://thenewstack.io/letta-frontiermemory-agent-harness-benchmark",
       "title": "FrontierMemory: benchmark de memoria de agentes con cinco harness",
       "date": "2026-10-26"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra",
+      "title": "GPT-6.1 Terra: precios y pruebas del modelo de OpenAI",
+      "date": "2026-10-27"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/23/kimi-k31-pro",
+      "title": "Kimi K3.1 Pro: modelo de Moonshot a USD 2/10 por millón de tokens, pesos abiertos hasta el 4 de noviembre",
+      "date": "2026-10-27"
+    },
+    {
+      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation",
+      "title": "Cloudflare: filtración entre usuarios en GLM-5.3 de Workers AI por un bug de caché KV en SGLang",
+      "date": "2026-10-27"
+    },
+    {
+      "url": "https://marktechpost.com/2026/10/24/cognition-devin-vulnerability-fixes-plugin-php2shell-nodejs-gitlab",
+      "title": "Cognition publica plugin open source para que Devin corrija vulnerabilidades de PHP, Node.js y GitLab",
+      "date": "2026-10-27"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.311",
+      "title": "Claude Code 2.1.311: compactación automática en vez de cortar a 200K tokens y mejoras en subagentes",
+      "date": "2026-10-27"
+    },
+    {
+      "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
+      "title": "Sebastian Raschka publica un curso en video para construir un modelo de razonamiento desde cero",
+      "date": "2026-10-27"
     }
   ]
 }
