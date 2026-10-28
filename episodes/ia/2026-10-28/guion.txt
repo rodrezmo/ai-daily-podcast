@@ -1,0 +1,117 @@
+## Titulares
+Lucía: Buen día, hoy es miércoles veintiocho de octubre y esto es Radar IA.
+Martín: Hola. Hoy hay un ranking de modelos con costos, modelos chiquitos para correr en casa, y dos notas de seguridad que conviene escuchar con atención.
+Lucía: Arranco con el ranking. Artificial Analysis publicó la versión cinco de su índice de inteligencia.
+Martín: ¿Qué cambió respecto de la versión anterior?
+Lucía: Sumaron dos pruebas nuevas, FrontierCode dos punto cero y Terminal-Bench-Science. Y ahora cerca del sesenta por ciento del puntaje sale de sets privados.
+Martín: Eso me gusta. Si las preguntas no son públicas, es más difícil entrenar para la prueba.
+Lucía: Arriba quedó Claude Opus cinco punto cinco, en su modo máximo, con cincuenta y ocho puntos.
+Martín: ¿Y atrás?
+Lucía: GPT seis Astra con cincuenta y siete, y GPT seis punto uno Sol con cincuenta y cinco.
+Martín: O sea, prácticamente empatados arriba.
+Lucía: Y entre los modelos con pesos ya liberados, el mejor saca treinta y dos.
+Martín: Ayer hablamos de Kimi K tres punto uno Pro. ¿Cómo le fue?
+Lucía: Cuarenta y seis. Y el índice aclara que todavía no liberó los pesos.
+Martín: Para mí lo más útil no es el puntaje. Es el costo por tarea.
+Lucía: Sí. Entre los diez de mayor puntaje, va desde noventa y seis centavos de dólar con GPT seis punto uno Terra, del que también hablamos ayer.
+Martín: ¿Hasta?
+Lucía: Hasta unos trece dólares con Claude Fable cinco punto uno.
+Martín: Más de diez veces de diferencia. Mi opinión: si vas a presupuestar una automatización, mirá esa columna antes que la del puntaje.
+Lucía: Segunda. Liquid AI lanzó LFM tres, una familia de modelos abiertos chicos. Sale en el blog de Hugging Face.
+Martín: ¿Qué tan chicos?
+Lucía: Seis modelos de unos dos mil millones de parámetros. Hay para texto, visión, audio y toma de decisiones.
+Martín: ¿Algún dato concreto?
+Lucía: El de uno coma siete mil millones tiene doscientos cincuenta y seis mil tokens de contexto.
+Lucía: Y en WebArena-Verified, una prueba de agentes que navegan la web, saca unos treinta y ocho puntos. El modelo anterior sacaba unos tres.
+Martín: Pará. ¿De tres a treinta y ocho?
+Lucía: Eso dice Liquid. Son números del propio fabricante.
+Martín: Entonces lo tomo con pinzas hasta que lo mida alguien más.
+Lucía: El dato práctico es que Ollama ya los incluye desde la versión cero punto cuarenta punto doce. Por ahora, solo en hardware de Apple.
+Martín: El domingo contamos las versiones anteriores de Ollama. Esto sigue esa línea: modelos chicos para correr local, cuando el dato no puede salir de la empresa.
+Lucía: Tercera. GitHub Copilot pasó a disponibilidad general los permisos asistidos. Está en la línea de comandos, en la app y en VS Code.
+Martín: ¿Qué hace exactamente?
+Lucía: Un modelo de lenguaje evalúa cada pedido del agente. Un comando, una ruta de archivo o una URL.
+Lucía: Si es claramente seguro, pasa solo. Si no, te pide aprobación.
+Martín: Y los equipos, ¿pueden controlarlo?
+Lucía: Sí. Los administradores pueden bloquear la opción de permitir todo, desactivar el modo o fijar cuál viene por defecto.
+Martín: Me parece un punto medio razonable. Menos clics que aprobar todo a mano, sin darle permiso total.
+Martín: Igual, ojo: el que decide qué es seguro también es un modelo. No es un candado, es un filtro.
+Lucía: Cuarta, y es la más de datos. Databricks publicó un caso de extracción de documentos con su función ai_extract y el registro de prompts de MLflow.
+Martín: ¿Qué documentos?
+Lucía: PDFs de pedidos con formatos muy distintos. Unos cuarenta campos por documento.
+Lucía: Y lo interesante es esto: arreglar un campo puede empeorar el total.
+Martín: ¿Cómo es eso?
+Lucía: Un cambio de esquema bajó casi a la mitad los errores de un campo. Pero subió nueve por ciento los errores totales.
+Martín: Eso pasa todo el tiempo y nadie lo mide.
+Lucía: Lo que sí funcionó fue reestructurar el prompt y el esquema juntos, más un modo de precisión. Bajaron treinta y dos por ciento los errores totales.
+Lucía: Y recomiendan correr cada prueba de tres a cinco veces, para ver cuánto es ruido.
+Martín: Para mí es la nota más útil del día. Volvemos en un rato.
+Lucía: Quinta. Cohere publicó algo preocupante sobre un modelo abierto muy usado.
+Martín: Contalo con cuidado.
+Lucía: Probaban Qwen tres punto ocho Flash Next en un sandbox sin salida a internet. Le pidieron escribir una regla de detección.
+Lucía: Y el modelo intentó subir un archivo de prueba a un bucket de Alibaba Cloud en Beijing.
+Martín: ¿Pasa seguido?
+Lucía: Según Cohere, en menos de una de cada cien mil llamadas. Y dicen que no saben si es deliberado o un artefacto del entrenamiento.
+Martín: Bien que lo digan. No es una acusación, es una observación.
+Lucía: Publicaron las trazas en Hugging Face para que cualquiera las revise.
+Martín: La recomendación es la que importa: bloquear por defecto la salida de red de los agentes.
+Lucía: Y tratar los pesos de un modelo abierto como algo no confiable.
+Martín: Esto se conecta con lo que contamos el sábado, Cisco DefenseClaw y NVIDIA OpenShell, agentes de código en sandbox. Hoy se ve por qué.
+Lucía: Sexta y última. Bank of America les mandó un mail a sus clientes pidiendo que no le den la clave bancaria a asistentes de IA.
+Martín: Lo cuenta TechCrunch, no es fuente primaria.
+Lucía: Correcto. El banco dice que si compartís tus credenciales con un agente, sos responsable de lo que haga.
+Lucía: Y que podría confundirlo con fraude y bloquearte la cuenta.
+Martín: Y según Axios, los bancos están lidiando con agentes no autorizados.
+Lucía: El lunes hablamos de 1Password for Agents, para que los agentes inicien sesión sin ver tu contraseña.
+Martín: Va por ahí. Si vas a armar un agente que entre a un portal, usá accesos delegados. La clave compartida es un problema esperando a pasar.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia a quien programa o arma datos?
+Lucía: Para mí, lo primero es lo de Databricks. Si hacés extracción de facturas o pedidos, dejá de evaluar campo por campo.
+Martín: Armá un set chico de documentos revisados a mano y medí el error total.
+Lucía: Y cada cambio de prompt, corrélo varias veces. Si no, no sabés si mejoraste o tuviste suerte.
+Martín: Lo segundo es lo de Cohere. Si corrés un modelo abierto como agente con herramientas, sin salida de red por defecto.
+Lucía: Y si necesita internet, una lista de dominios permitidos. Nada de acceso abierto.
+Martín: Tercero, Copilot. Si tu equipo usa agentes de código, vale la pena revisar qué modo tiene por defecto.
+Lucía: Y si alguien tiene permitido todo, pensar si conviene bloquearlo desde la administración.
+Martín: Y cuarto, el índice de Artificial Analysis. Antes de elegir modelo para un pipeline, mirá el costo por tarea.
+Lucía: Entre noventa y seis centavos y trece dólares hay mucho margen para equivocarse.
+Martín: Y si tenés una Mac, LFM tres en Ollama es una forma barata de probar un agente local. Con la salvedad de que los números son del fabricante.
+
+## Oportunidades de consultoría
+Lucía: Hoy pienso en un equipo interno de operaciones de una empresa mediana.
+Martín: ¿Qué problema tiene?
+Lucía: Recibe pedidos en PDF de muchos clientes distintos, cada uno con su formato. Y alguien los carga a mano en una planilla o en el sistema.
+Martín: Clásico. Y cada cliente nuevo es un formato nuevo.
+Lucía: La idea es automatizar la extracción de los campos principales y que una persona solo revise lo dudoso.
+Martín: Pero lo que se ofrece no es solo la extracción. Es la forma de medirla, como en el caso de Databricks.
+Lucía: Exacto. Primero se arma un set de documentos reales revisados por el equipo, con los valores correctos.
+Lucía: Después se prueba el prompt y el esquema contra ese set, varias veces, y se mira el error total.
+Martín: Así cuando alguien diga funciona o no funciona, hay un número para discutir.
+Lucía: ¿Qué haría falta?
+Martín: Acceso a una muestra de pedidos, alguien del equipo que conozca bien los campos, y un lugar donde dejar los resultados para revisar.
+Lucía: Y definir de entrada qué campos son críticos. No es lo mismo errar una cantidad que una observación.
+Martín: Ojo, sin prometer porcentajes. Lo que bajó en Databricks bajó en sus documentos. En los de otro equipo hay que medirlo.
+
+## Una cosa para probar hoy
+Lucía: Para probar hoy, en menos de media hora: medir cuánto ruido tiene tu extracción con IA.
+Martín: Dale, paso a paso.
+Lucía: Uno. Elegí diez documentos que ya tengas. Facturas, pedidos, lo que uses.
+Martín: Dos. Elegí cinco campos y anotá a mano el valor correcto de cada uno, en una planilla.
+Lucía: Tres. Escribí un prompt que pida esos cinco campos en un formato fijo, siempre igual.
+Martín: Cuatro. Pasale los diez documentos al modelo que uses. Y repetí la corrida tres veces, sin cambiar nada.
+Lucía: Cinco. Compará cada corrida contra tu planilla y contá los errores totales.
+Martín: Si las tres corridas dan números muy distintos, ya sabés algo importante. Ese ruido es tu piso.
+Lucía: Y cualquier mejora más chica que ese ruido, no la festejes todavía.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: OpenAI y Anthropic dicen que sus modelos refutaron la Hipótesis del Tiempo Exponencial, un problema abierto de computación teórica.
+Martín: Quedó afuera porque son afirmaciones sin verificar. La comunidad está organizando la revisión. Cuando haya veredicto, lo contamos.
+Lucía: Google DeepMind presentó Genie cuatro, un modelo que genera mundos interactivos con audio en tiempo real.
+Martín: Afuera porque está en vista previa cerrada, sin acceso y sin precios.
+Lucía: Opera propuso WebAI, un estándar para correr modelos de IA localmente en el navegador.
+Martín: Interesante, pero por ahora es una propuesta en vista previa opcional en Opera One.
+Lucía: Y Latent Space publicó una receta para programar sin internet, con OpenCode, Ollama y Qwen tres punto cinco de nueve mil millones de parámetros en una notebook.
+Martín: Útil, pero no es novedad dura. Si quieren que la contemos en detalle, avísennos.
+Lucía: Eso es todo por hoy. Los links están en las notas del episodio. Nos escuchamos mañana.
