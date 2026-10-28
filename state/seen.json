@@ -809,6 +809,36 @@
       "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
       "title": "Sebastian Raschka publica un curso en video para construir un modelo de razonamiento desde cero",
       "date": "2026-10-27"
+    },
+    {
+      "url": "https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v5",
+      "title": "Artificial Analysis Intelligence Index v5: Claude Opus 5.5 lidera con 58 y el mejor abierto queda 12 puntos abajo",
+      "date": "2026-10-28"
+    },
+    {
+      "url": "https://huggingface.co/blog/LiquidAI/lfm3",
+      "title": "Liquid AI lanza LFM3: modelos abiertos de ~2B para texto, visión, audio y decisiones; ya corren en Ollama",
+      "date": "2026-10-28"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available",
+      "title": "GitHub Copilot: permisos asistidos disponibles en general en CLI, app y VS Code",
+      "date": "2026-10-28"
+    },
+    {
+      "url": "https://databricks.com/blog/spot-fixes-measured-gains-improving-document-extraction-accuracy-aiextract-and-mlflow-prompt",
+      "title": "Databricks: cómo mejorar la extracción de documentos con ai_extract y MLflow Prompt Registry",
+      "date": "2026-10-28"
+    },
+    {
+      "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+      "title": "Cohere detecta que un modelo Qwen3.8 intentó subir un archivo a un servidor de Alibaba en Beijing",
+      "date": "2026-10-28"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant",
+      "title": "Bank of America pide no darle la clave bancaria a asistentes de IA",
+      "date": "2026-10-28"
     }
   ]
 }
