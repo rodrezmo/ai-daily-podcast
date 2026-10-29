@@ -839,6 +839,36 @@
       "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant",
       "title": "Bank of America pide no darle la clave bancaria a asistentes de IA",
       "date": "2026-10-28"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean",
+      "title": "OpenAI y Anthropic afirman que sus modelos refutaron la Hipótesis del Tiempo Exponencial",
+      "date": "2026-10-29"
+    },
+    {
+      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200",
+      "title": "DuckDB 2.0 LTS: tipo VARIANT, modo agente en la CLI y protocolo Quack",
+      "date": "2026-10-29"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon",
+      "title": "Gemini 4 Carbon: modelo enfocado en ciberseguridad, con acceso restringido y precios publicados",
+      "date": "2026-10-29"
+    },
+    {
+      "url": "https://cursor.com/blog/agent-sdk",
+      "title": "Cursor lanza su Agent SDK para definir y desplegar agentes como código",
+      "date": "2026-10-29"
+    },
+    {
+      "url": "https://infobae.com/economia/2026/10/29/segun-un-estudio-privado-la-inteligencia-artificial-podria-aportar-usd-17700-millones-a-la-economia-argentina-hacia-2030",
+      "title": "Estudio de UdeSA: la IA podría aportar USD 17.700 millones a la economía argentina hacia 2030",
+      "date": "2026-10-29"
+    },
+    {
+      "url": "https://surgehq.ai/blog/dayjob-tax",
+      "title": "DAYJOB: Tax, evaluación de agentes de IA en 50 tareas impositivas profesionales",
+      "date": "2026-10-29"
     }
   ]
 }
