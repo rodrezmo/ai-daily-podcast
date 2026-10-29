@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 29 de octubre: la Hipótesis del Tiempo Exponencial, DuckDB 2.0 y Gemini 4 Carbon",
+  "summary": "OpenAI y Anthropic dicen que sus modelos refutaron la Hipótesis del Tiempo Exponencial, sale DuckDB 2.0 como versión LTS y Google presenta Gemini 4 Carbon. También: el Agent SDK de Cursor, un estudio de UdeSA sobre el impacto de la IA en Argentina y una evaluación de agentes en tareas impositivas.",
+  "stories": [
+    {
+      "title": "OpenAI y Anthropic afirman que sus modelos refutaron la Hipótesis del Tiempo Exponencial",
+      "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/"
+    },
+    {
+      "title": "DuckDB 2.0 LTS: tipo VARIANT, modo agente en la CLI y protocolo Quack",
+      "url": "https://duckdb.org/2026/10/21/announcing-duckdb-200"
+    },
+    {
+      "title": "Gemini 4 Carbon: modelo enfocado en ciberseguridad, con acceso restringido y precios publicados",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "title": "Cursor lanza su Agent SDK para definir y desplegar agentes como código",
+      "url": "https://cursor.com/blog/agent-sdk"
+    },
+    {
+      "title": "Estudio de UdeSA: la IA podría aportar USD 17.700 millones a la economía argentina hacia 2030",
+      "url": "https://www.infobae.com/economia/2026/10/29/segun-un-estudio-privado-la-inteligencia-artificial-podria-aportar-usd-17700-millones-a-la-economia-argentina-hacia-2030/"
+    },
+    {
+      "title": "DAYJOB: Tax, evaluación de agentes de IA en 50 tareas impositivas profesionales",
+      "url": "https://surgehq.ai/blog/dayjob-tax"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Anthropic abre la vista previa de Claude Duet, un agente proactivo",
+      "url": "https://letsdatascience.com/news/anthropic-opens-claude-duet-research-preview-for-proactive-a-16522f5d"
+    },
+    {
+      "title": "OpenAI lanza GPT-6.1 Terra a la mitad del precio de la versión anterior",
+      "url": "https://forkast.news/gpt-6-1-terra-arrives-at-1-5-half-the-rate-of-a-model-openai-shipped-27-days-ago/"
+    },
+    {
+      "title": "Argentina: primer proyecto de ley de regulación de IA presentado en Diputados",
+      "url": "https://www.diariojudicial.com/news-97386-regular-la-ia"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+## Titulares
+Lucía: Buen día. Es jueves veintinueve de octubre y esto es Radar IA.
+Martín: Hola, hola. Hoy hay matemática pesada, una base de datos nueva y un estudio con números de Argentina.
+Lucía: Arrancamos por lo más ruidoso. OpenAI y Anthropic dicen que sus modelos refutaron la Hipótesis del Tiempo Exponencial.
+Martín: Que no es poca cosa, si se confirma.
+Lucía: Lo cuenta TechCrunch. Los dos laboratorios dicen que sus modelos encontraron algoritmos sub-exponenciales para tres SAT.
+Martín: Tres SAT es un problema clásico de satisfacibilidad. Durante décadas se asumió que no se podía resolver tan rápido.
+Lucía: OpenAI publicó la prueba en GitHub, y también la formalización en Lean.
+Martín: El viernes contamos que Claude había demostrado formalmente que doscientos treinta y nueve programas de OSS-Fuzz no se caían. Va por el mismo lado: modelos haciendo pruebas formales.
+Lucía: Un grupo que incluye a Ryan Williams, del MIT, está interpretando el resultado. Y él mismo dice que probablemente no sea la respuesta final.
+Martín: Ese es el dato que importa. Todavía no hay verificación independiente.
+Lucía: OpenAI dice que no vio implicancias criptográficas.
+Martín: Mi opinión: es muy interesante como señal de lo que hacen estos modelos en matemática. Para tu laburo de mañana, no cambia nada.
+Lucía: Segunda. Salió DuckDB dos punto cero, y es una versión de soporte largo.
+Martín: Soporte hasta octubre de dos mil veintisiete, como mínimo. Lo dice el blog oficial.
+Lucía: Trae tres cosas. Un tipo de dato nuevo, VARIANT, para datos semiestructurados.
+Martín: Un modo agente en la línea de comandos.
+Lucía: Y una versión pulida de Quack, su protocolo cliente-servidor.
+Martín: Lo del modo agente tiene un número. En pruebas con TPC-H, la salida que lee el modelo bajó casi un sesenta por ciento.
+Lucía: Menos texto para el modelo es menos tokens. Y menos confusión.
+Martín: Para mí es la noticia más útil del día. Es gratis, es liviano y ahora está pensado para que lo use un agente.
+Lucía: Tercera. Google presentó Gemini cuatro Carbon, un modelo enfocado en ciberseguridad.
+Martín: Es el sucesor de Argon, que había salido hace dos semanas.
+Lucía: Según Google, marca ochenta y ocho coma dos por ciento en SEC-bench Pro y cincuenta y cuatro coma ocho en ExploitGym.
+Martín: Ojo, que esas cifras son de Google. No hay verificación independiente.
+Lucía: Lo interesante es que publicaron precios. Dos dólares por millón de tokens de entrada y diez de salida, como precio introductorio.
+Martín: Después pasa a cuatro y veinte. O sea, el doble.
+Lucía: Y por ahora solo lo usa un grupo de defensores de ciberseguridad.
+Martín: El martes hablamos del plugin de Cognition para que Devin corrija vulnerabilidades. La revisión de seguridad con IA viene empujando fuerte.
+Lucía: Mi lectura: no lo vas a poder usar todavía, pero marca un precio de referencia para la frontera.
+Martín: Cuarta. Cursor lanzó su Agent SDK, ya disponible en general.
+Lucía: La idea es definir agentes como código. Las instrucciones van en Markdown.
+Martín: Y las herramientas son funciones en TypeScript, con el mismo control de versiones y revisión que el resto de tu código.
+Lucía: Se despliega con un comando, o lo corrés en tu propia infraestructura como un proceso de Node en un contenedor.
+Martín: Y reacciona a eventos de pull requests en GitHub, GitLab y Bitbucket.
+Lucía: Lo que más me gusta es que se puede alojar por cuenta propia. Para equipos con requisitos sobre dónde van los datos, eso pesa.
+Martín: Coincido. Es menos marketing de lo habitual: hay cosas concretas para tocar.
+Lucía: Quinta, y esta es de acá. Un estudio de la UdeSA, que publica Infobae, estima cuánto podría aportar la IA a la economía argentina.
+Martín: Con adopción acelerada, unos diecisiete mil setecientos millones de dólares hacia dos mil treinta.
+Lucía: Eso sería dos coma trece por ciento del PBI.
+Martín: Sin cambios, el número queda en unos doce mil setecientos millones.
+Lucía: La adopción en empresas pasaría de once coma dos por ciento en dos mil veinticinco a dieciséis y medio en dos mil treinta.
+Martín: En pymes la estimación es dieciséis por ciento en las medianas y ocho y medio en las pequeñas.
+Lucía: Y el gasto en IA este año ronda los ochocientos millones de dólares. Por debajo del promedio latinoamericano.
+Martín: Es una proyección, hay que tomarla como tal. Pero el mensaje es claro: la adopción es baja y queda mucho por hacer.
+Lucía: Sexta y última. Surge AI publicó DAYJOB Tax, una evaluación de agentes en cincuenta tareas impositivas profesionales.
+Martín: Con un umbral exigente: tenés que cumplir el noventa y cinco por ciento de la rúbrica para aprobar.
+Lucía: El mejor fue Claude Sonnet cinco punto cinco, con diez coma ocho por ciento.
+Martín: O sea, apenas una de cada diez tareas.
+Lucía: Después viene Fable cinco punto uno con nueve coma seis, y Opus cinco punto cinco con nueve coma dos.
+Martín: Ayer contamos que Opus cinco punto cinco lideraba el índice de Artificial Analysis. Acá queda tercero. Cada benchmark mide otra cosa.
+Lucía: Hay un caso que ilustra bien. En la venta de un inmueble, un agente, Astra, no identificó un plazo clave en ninguno de los cinco intentos. Opus sí lo identificó en los cinco.
+Martín: Ese es el tipo de error que en un estudio contable te cuesta caro.
+Lucía: Mi opinión: es de los benchmarks más honestos que vi. Con criterios estrictos, todavía hace falta revisión humana.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué te llevás de todo esto si programás o armás datos?
+Lucía: Lo primero, DuckDB dos punto cero. Si tenés pipelines o reportes con datos chicos o medianos, es buen momento para mirarlo.
+Martín: Que sea versión de soporte largo es clave. Podés construir encima sin miedo a que cambie todo en seis meses.
+Lucía: El tipo VARIANT sirve para esos JSON medio desprolijos que te llegan de una API.
+Martín: Y el modo agente es para cuando le pedís a un agente de código que consulte la base. Lee menos salida y se pierde menos.
+Lucía: Segundo, el SDK de Cursor. Si querés un revisor de pull requests o un agente interno, ahora lo podés escribir como código.
+Martín: Con instrucciones en Markdown y herramientas en TypeScript, todo en el mismo repo.
+Lucía: Y el resumen menciona evals y replay de eventos. O sea, podés volver a pasar un evento viejo y ver cómo responde el agente.
+Martín: Eso es lo que separa un agente de juguete de uno que podés mantener.
+Lucía: Tercero, DAYJOB Tax como advertencia. Si armás un agente para tareas de dominio, como impuestos, no confíes en la demo.
+Martín: Armá tus propias pruebas con casos reales y un criterio estricto. Y dejá un humano revisando.
+Lucía: Y lo de Gemini cuatro Carbon, por ahora, es para tener en el radar. No se puede usar en general.
+Martín: Aunque el precio sí sirve. Si estás calculando costos de un proyecto, dos y diez por millón de tokens es una referencia de frontera.
+Lucía: Y acordate de que después sube a cuatro y veinte. Si presupuestás, presupuestá con el precio que queda, no con el introductorio.
+Martín: Buen punto. Lo introductorio dura poco.
+Lucía: Y una más sobre DuckDB. Quack, el protocolo cliente-servidor, ahora viene más pulido.
+Martín: El anuncio habla de mejoras sustanciales de rendimiento y estabilidad, pero habría que probarlo antes de ponerlo en producción.
+
+## Oportunidades de consultoría
+Martín: Hoy vamos con estudios contables y profesionales independientes. Me parece que el benchmark de impuestos les habla directo.
+Lucía: Dale. ¿Cuál es el problema?
+Martín: Un estudio chico maneja muchos clientes, cada uno con su planilla de Excel y sus vencimientos.
+Lucía: Y los plazos se pierden entre mails, WhatsApp y archivos sueltos.
+Martín: La idea no es que la IA haga el trabajo impositivo. DAYJOB muestra que todavía no está para eso.
+Lucía: La idea es ordenar. Juntar las planillas de todos los clientes en un solo lugar, por ejemplo con DuckDB.
+Martín: Y sobre eso, un tablero de vencimientos y un aviso semanal de qué viene.
+Lucía: Un modelo puede ayudar a leer documentos y proponer qué plazos aplican. Pero siempre como borrador.
+Martín: Con una persona del estudio que confirma cada uno. Ese paso no se saltea.
+Lucía: ¿Qué haría falta?
+Martín: Acceso a las planillas que ya usan, una lista de los vencimientos que les importan y alguien del estudio que valide las primeras semanas.
+Lucía: Y el número de la UdeSA ayuda a contextualizar: la adopción en pequeñas empresas anda por el ocho y medio por ciento proyectado. Hay mucho espacio.
+Martín: Es una idea para charlar, no una promesa. Cada estudio trabaja distinto.
+
+## Una cosa para probar hoy
+Lucía: Para hoy, algo de media hora. Probar DuckDB dos punto cero con datos tuyos.
+Martín: Paso uno. Entrá al blog de DuckDB y bajate la versión dos punto cero de la línea de comandos. El link está en las notas.
+Lucía: Paso dos. Agarrá un archivo que uses de verdad. Un export de Excel, una respuesta de una API en JSON, lo que tengas.
+Martín: Mejor si es algo desprolijo, con campos que a veces están y a veces no.
+Lucía: Paso tres. Cargalo y probá guardar esa parte desprolija en una columna de tipo VARIANT.
+Martín: Paso cuatro. Hacé tres o cuatro consultas que hoy resolvés a mano en la planilla.
+Lucía: Paso cinco, si te sobra tiempo. Fijate en el anuncio cómo se activa el modo agente y pedile a tu agente de código que haga esas mismas consultas.
+Martín: Y compará. Cuánto tardó, cuánto leyó, si le erró en algo.
+Lucía: Con eso ya sabés si te sirve para tu próximo reporte.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: Anthropic publicó su propio algoritmo para tres SAT, hallado por Claude. No le dimos nota aparte porque ya entra en el titular de hoy.
+Martín: OpenAI lanzó GPT seis punto uno Terra a la mitad del precio de la versión anterior. Lo dejamos afuera porque ya lo cubrimos el martes.
+Lucía: Anthropic abrió la vista previa de Claude Duet, un agente proactivo. También quedó afuera porque ya lo contamos el viernes veintitrés.
+Martín: Y en Argentina se presentó en Diputados un proyecto de ley para regular la IA. Hoy le dimos menos prioridad, pero si quieren que lo sigamos, avísennos.
+Lucía: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.
