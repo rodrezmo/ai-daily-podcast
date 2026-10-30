@@ -1,0 +1,44 @@
+{
+ "title": "Radar IA, 30 de octubre: Mistral Large 4 abierto, GPT-6.1 Terra y una falla de seguridad en asistentes de código",
+ "summary": "Mistral publica Large 4 con pesos abiertos y GPT-6.1 Terra baja el precio de API, con datos que conviene tomar con pinzas. Además, la vulnerabilidad EMBRACE en asistentes de código, las cifras de Octoverse, Nemotron Transcribe y un estudio de Ai2 sobre LLM como jueces. Cierra con una idea de consultoría y algo para probar hoy.",
+ "stories": [
+  {
+   "title": "Mistral Large 4: modelo abierto de 1 billón de parámetros",
+   "url": "https://mistral.ai/news/mistral-large-4-oss/"
+  },
+  {
+   "title": "GPT-6.1 Terra: USD 1 entrada / 5 salida por millón de tokens",
+   "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
+  },
+  {
+   "title": "EMBRACE: cinco asistentes de código con navegador embebido vulnerables",
+   "url": "https://www.helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities/"
+  },
+  {
+   "title": "GitHub Octoverse 2026: 220 millones de PRs mergeados por mes",
+   "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026/"
+  },
+  {
+   "title": "NVIDIA Nemotron 3.5 Transcribe: transcripción abierta de 40 idiomas con diarización",
+   "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+  },
+  {
+   "title": "Ai2: los LLM no son confiables para juzgar si una idea es novedosa",
+   "url": "https://huggingface.co/blog/allenai/novelty-bench"
+  }
+ ],
+ "discarded": [
+  {
+   "title": "OpenAI da créditos de API a suscriptores de planes de USD 100, 200 y 500",
+   "url": "https://simonwillison.net/2026/Oct/29/api-credits/"
+  },
+  {
+   "title": "Claude Code: denuncia de envío del transcript de agentes cada 30 segundos",
+   "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+  },
+  {
+   "title": "Codex 0.166.0",
+   "url": "https://github.com/openai/codex/releases"
+  }
+ ]
+}

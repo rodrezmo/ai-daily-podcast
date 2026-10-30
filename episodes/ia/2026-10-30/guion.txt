@@ -1,0 +1,110 @@
+## Titulares
+Lucía: Buen día, hoy es viernes treinta de octubre. Esto es Radar IA.
+Martín: Buen día. Hoy tenemos seis notas, y varias vienen con letra chica.
+Lucía: Arranquemos por la grande. Mistral publicó Mistral Large cuatro, un modelo abierto de un billón de parámetros.
+Martín: Billón en castellano, o sea, un millón de millones.
+Lucía: Exacto. Es un modelo de mezcla de expertos, multimodal, y los pesos salen con una licencia tipo MIT, pero modificada.
+Martín: ¿Modificada cómo?
+Lucía: Por ejemplo, si lo querés ofrecer como servicio a terceros, necesitás una licencia comercial.
+Martín: Ahí está la letra chica número uno.
+Lucía: La API cuesta setenta centavos de dólar por millón de tokens de entrada y dos dólares con diez de salida.
+Martín: ¿Y cómo rinde?
+Lucía: Mistral dice diecinueve coma siete por ciento en FrontierCode dos y cuarenta y uno por ciento en Terminal-Bench cuatro.
+Martín: Dice Mistral. Son sus propios benchmarks, nadie los midió de afuera todavía.
+Lucía: Y otro detalle: la página del anuncio no tiene fecha, así que no podemos confirmar cuándo salió.
+Martín: Mi opinión: un modelo abierto de ese tamaño a ese precio es una buena noticia. Pero hasta que alguien lo pruebe por fuera, los números son marketing con decimales.
+Lucía: Segunda. OpenAI lanzó el lunes veintiséis GPT seis punto uno Terra.
+Martín: El martes contamos los precios y las pruebas de este modelo, con la nota de Simon Willison.
+Lucía: Sí. Hoy lo traemos con los números del anuncio. Ojo, que la página oficial no nos abrió. Los datos salen de un agregador de noticias, y además está la nota de Willison.
+Martín: O sea, segunda mano. Tomalo con pinzas.
+Lucía: Precio: un dólar por millón de tokens de entrada, cinco de salida, y cinco centavos los tokens en caché.
+Martín: Es casi la mitad de lo que cuesta GPT seis punto uno Sol.
+Lucía: Y en Terminal-Bench cuatro pasa a cincuenta coma tres por ciento. El Terra anterior, GPT cinco punto seis, tenía veintiuno y medio.
+Martín: Más que el doble. Si se confirma, es el dato fuerte de la semana para quien paga API.
+Lucía: Y comparado con Mistral, que se adjudica cuarenta y uno en el mismo benchmark...
+Martín: Pará, no compararía todavía. Uno son números de Mistral y el otro llega por un agregador. Son dos fuentes distintas.
+Lucía: Justo. Tercera, y esta es de seguridad. Se llama EMBRACE.
+Martín: La investigación es de Forever Security y la publicó Help Net Security.
+Lucía: Encontraron que en cinco asistentes de código con navegador embebido, una página web o un HTML local puede leer archivos o ejecutar comandos.
+Martín: Los cinco son Cursor, Copilot, Codex, VS Code y Claude Desktop.
+Lucía: Cursor y Copilot ya parchearon. Al veintinueve de octubre, Codex y VS Code todavía no.
+Martín: Esta me parece la más importante del día. No por espectacular, sino porque le pega a herramientas que usamos todos los días.
+Lucía: Cuarta. GitHub mostró cifras de su informe Octoverse dos mil veintiséis.
+Martín: Aclaremos: son cifras que dio Jay Parikh en GitHub Universe y que citó Simon Willison. No las sacamos del informe directo.
+Lucía: Unos doscientos veinte millones de pull requests mergeados por mes. Cerca del triple.
+Martín: Y más de siete mil millones de commits por mes, y unos treinta millones de repos nuevos por mes.
+Lucía: Mi lectura: alguien tiene que revisar todo eso. Y buena parte lo generan agentes.
+Martín: El cuello de botella ya no es escribir código, es revisarlo.
+Lucía: Quinta. NVIDIA publicó en el blog de Hugging Face Nemotron tres punto cinco Transcribe.
+Martín: Es un modelo abierto de transcripción. Unos treinta mil millones de parámetros en total, cuatro mil millones activos.
+Lucía: Cubre cuarenta idiomas y separa hasta ocho hablantes en grabaciones de hasta una hora.
+Martín: En inglés da una tasa de error por palabra de cinco coma tres por ciento en promedio.
+Lucía: Y un ajuste fino para el ámbito médico bajó el error de veintidós a doce por ciento, más o menos.
+Martín: Pero ojo con dos cosas. La nota no confirma que ande en español. Y tampoco dice la licencia.
+Lucía: Que para nosotros son justo las dos preguntas que importan.
+Martín: El viernes pasado hablamos de Granite Speech cinco de IBM, que sí trae español y licencia Apache dos. Hoy esa sigue siendo la opción con las cosas claras.
+Lucía: Sexta, y es mi favorita. Ai2 armó un benchmark para ver si un modelo de lenguaje puede juzgar si una idea es novedosa.
+Martín: Usaron ciento cincuenta y cuatro ideas de papers aceptados en ICLR dos mil veintiséis y ciento cuarenta y cinco rechazados.
+Lucía: Con GPT cinco punto cuatro, cambiar una sola frase del prompt hizo caer la precisión de noventa y tres y medio a cuarenta y uno por ciento.
+Martín: Una frase. Eso es casi tirar una moneda.
+Lucía: Lo que mejor anduvo fue Claude Opus cuatro punto seis con voto mayoritario. Ochenta y cinco centésimas de macro F uno, por unos dos dólares y medio.
+Martín: Y un evaluador agéntico con GPT cinco punto seis Sol costó unas diez veces más y rindió peor.
+Lucía: O sea, más caro y más complicado no es mejor.
+Martín: Y si usás un modelo como juez, en lo que sea, esto te tiene que preocupar.
+
+## Para desarrolladores
+Lucía: Vamos a lo que cambia en el día a día. ¿Por dónde empezás?
+Martín: Por EMBRACE, sin dudas. Si usás alguno de esos asistentes, revisá qué proyectos marcaste como confiables.
+Lucía: Porque el ataque arranca con una página o un HTML que el asistente abre.
+Martín: Claro. Si clonaste un repo de cualquier lado y le diste confianza, ese repo puede traer el HTML.
+Lucía: Y si usás Codex o VS Code, hasta el veintinueve no había parche. Fijate si salió uno antes de seguir como si nada.
+Martín: Segundo punto, costos. Esta semana salieron dos modelos pensados para agentes de código con precios bajos.
+Lucía: Terra a un dólar de entrada, Mistral Large cuatro a setenta centavos.
+Martín: Y el lunes hablamos de que los tokens de caché explican casi todo el gasto en agentes de código.
+Lucía: Entonces el precio del caché, esos cinco centavos de Terra, puede pesar más que el precio de lista.
+Martín: Mi consejo: no cambies de modelo por la tabla de precios. Medí con tus propias tareas.
+Lucía: Tercero, revisión de código. Si los números de Octoverse son ciertos, cada vez llegan más pull requests.
+Martín: Y muchos los escribe un agente. Conviene achicar los PR y pedir que cada uno venga con tests.
+Lucía: Y cuarto, lo de Ai2. Si tenés un pipeline donde un modelo evalúa respuestas, clasifica tickets o puntúa calidad...
+Martín: Probá qué pasa cuando le cambiás una frase al prompt. Si el resultado se da vuelta, el juez no es confiable.
+Lucía: Y el voto mayoritario, o sea correr varias veces y quedarte con lo que más sale, fue lo que mejor anduvo. Es barato de probar.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Pensemos en instituciones y sector público.
+Martín: Un colegio profesional, una cooperativa, un concejo deliberante chico.
+Lucía: Tienen reuniones largas, con varias personas hablando, y alguien tiene que escribir el acta a mano.
+Martín: Y esa persona tarda días, y el acta sale con huecos.
+Lucía: La idea: grabar la reunión, transcribir con un modelo que separe quién habla, y que otro modelo arme un borrador del acta.
+Martín: Con los temas tratados, lo que se resolvió y quién quedó a cargo de qué.
+Lucía: Lo que no se automatiza es la aprobación. El borrador lo revisa y lo firma la persona responsable, como siempre.
+Martín: ¿Y con qué modelo de transcripción?
+Lucía: Para esto conviene algo que corra en la propia institución, porque hay datos sensibles.
+Martín: Y ahí Nemotron hoy no sirve todavía, porque no sabemos si anda en español ni con qué licencia.
+Lucía: Granite Speech cinco, del que hablamos el viernes pasado, sí trae español y Apache dos. Arrancaría por ahí y dejaría Nemotron en observación.
+Martín: ¿Qué haría falta?
+Lucía: Una compu con algo de potencia o un servidor propio, un micrófono decente en la sala, y consentimiento de quienes participan para grabar.
+Martín: Y una prueba con dos o tres actas viejas que ya estén escritas, para comparar el borrador con lo que se aprobó de verdad.
+Lucía: Eso. Es una idea para conversar, no una promesa de que va a salir perfecto.
+
+## Una cosa para probar hoy
+Martín: Propongo esto: medí qué tan frágil es tu propio juez.
+Lucía: Contame el paso a paso.
+Martín: Uno. Elegí veinte ejemplos donde ya sepas la respuesta correcta. Pueden ser tickets clasificados o respuestas buenas y malas.
+Lucía: Veinte alcanza para ver algo, no para publicar un paper.
+Martín: Exacto. Dos. Escribí el prompt de evaluación que usarías normalmente y pasale los veinte casos al modelo.
+Lucía: Tres. Anotá cuántos acertó.
+Martín: Cuatro. Cambiá una sola frase del prompt. Por ejemplo, en vez de "evaluá si es correcto", poné "decime si tiene errores".
+Lucía: Y volvé a correr los veinte.
+Martín: Cinco. Compará. Si el acierto se mueve mucho, ya sabés que no podés confiar en una sola corrida.
+Lucía: Y seis, si te sobra tiempo: corré el mismo prompt tres veces y quedate con la respuesta que más se repite. Fijate si mejora.
+Martín: En media hora lo tenés, y te ahorra sorpresas.
+
+## Quedaron afuera
+Lucía: Antes de irnos, tres notas que quedaron afuera.
+Martín: Una: Simon Willison cuenta que OpenAI da créditos de API a quienes pagan planes de cien, doscientos y quinientos dólares.
+Lucía: No entró porque es de segunda mano y las condiciones no están confirmadas en la página oficial.
+Martín: Dos: un usuario denuncia que Claude Code manda el transcript de los agentes cada treinta segundos.
+Lucía: Son mediciones propias de esa persona y Anthropic no lo confirmó. Si hay novedades, lo traemos.
+Martín: Y tres: salió Codex cero punto ciento sesenta y seis. Es un release menor, sin nada destacado.
+Lucía: Si querés que sigamos alguna, avisanos.
+Martín: Eso es todo por hoy. Buen fin de semana, y revisá esos proyectos confiables.
