@@ -869,6 +869,36 @@
       "url": "https://surgehq.ai/blog/dayjob-tax",
       "title": "DAYJOB: Tax, evaluación de agentes de IA en 50 tareas impositivas profesionales",
       "date": "2026-10-29"
+    },
+    {
+      "url": "https://mistral.ai/news/mistral-large-4-oss",
+      "title": "Mistral Large 4: modelo abierto de 1 billón de parámetros",
+      "date": "2026-10-30"
+    },
+    {
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "title": "GPT-6.1 Terra: USD 1 entrada / 5 salida por millón de tokens",
+      "date": "2026-10-30"
+    },
+    {
+      "url": "https://helpnetsecurity.com/2026/10/29/research-ai-assistant-browser-vulnerabilities",
+      "title": "EMBRACE: cinco asistentes de código con navegador embebido vulnerables",
+      "date": "2026-10-30"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/28/github-octoverse-2026",
+      "title": "GitHub Octoverse 2026: 220 millones de PRs mergeados por mes",
+      "date": "2026-10-30"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary",
+      "title": "NVIDIA Nemotron 3.5 Transcribe: transcripción abierta de 40 idiomas con diarización",
+      "date": "2026-10-30"
+    },
+    {
+      "url": "https://huggingface.co/blog/allenai/novelty-bench",
+      "title": "Ai2: los LLM no son confiables para juzgar si una idea es novedosa",
+      "date": "2026-10-30"
     }
   ]
 }
