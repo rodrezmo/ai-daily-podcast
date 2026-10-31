@@ -899,6 +899,36 @@
       "url": "https://huggingface.co/blog/allenai/novelty-bench",
       "title": "Ai2: los LLM no son confiables para juzgar si una idea es novedosa",
       "date": "2026-10-30"
+    },
+    {
+      "url": "https://anthropic.com/news/expanding-partnership-gsa",
+      "title": "Anthropic ofrece 40% de descuento a gobiernos (GSA/OneGov) en Claude Enterprise, Claude for Government y API",
+      "date": "2026-10-31"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/29/api-credits",
+      "title": "OpenAI da créditos de API a suscriptores de planes de USD 100, 200 y 500",
+      "date": "2026-10-31"
+    },
+    {
+      "url": "https://github.com/openai/codex/releases",
+      "title": "Codex 0.166.0: búsqueda en transcript, codex queue --resume, codex doctor --network-only",
+      "date": "2026-10-31"
+    },
+    {
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "title": "Denuncia: Claude Code gasta 15-20% de tokens en resúmenes de estado de agentes en segundo plano",
+      "date": "2026-10-31"
+    },
+    {
+      "url": "https://liquid.ai/blog/lfm3",
+      "title": "Liquid AI lanza LFM3: seis modelos de ~2B con pesos abiertos",
+      "date": "2026-10-31"
+    },
+    {
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
+      "title": "Baidu publica Unlimited-OCR 2: parseo de documentos de muchas páginas con licencia MIT",
+      "date": "2026-10-31"
     }
   ]
 }
