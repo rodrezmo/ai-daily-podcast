@@ -1,0 +1,120 @@
+## Titulares
+Lucía: Buen día, hoy es sábado treinta y uno de octubre y esto es Radar IA.
+Martín: Buen día. Hoy hay de todo un poco: precios, herramientas de código, modelos chicos y una denuncia que hay que tomar con pinzas.
+Lucía: Arranquemos por Anthropic. Amplió su acuerdo con la GSA, en Estados Unidos.
+Martín: ¿Qué ofrece?
+Lucía: Un cuarenta por ciento de descuento en Claude Enterprise, Claude for Government y la API para organismos públicos.
+Lucía: Y no es solo el gobierno federal. Entran también estados, gobiernos locales y tribales.
+Martín: Lo que me llamó la atención es que no hay compromiso mínimo de gasto.
+Lucía: Exacto. Y la API está disponible en Bedrock y en Vertex con certificación FedRAMP High.
+Martín: Anthropic estima unos mil millones de dólares de ahorro.
+Lucía: Estima, ojo. Es una cifra de la propia empresa.
+Martín: Mi opinión: para nosotros el descuento no aplica, es solo para Estados Unidos.
+Martín: Pero sirve como referencia de precio y de modelo de compra sin mínimos para el sector público. Eso sí se puede citar acá.
+Lucía: Segunda. OpenAI empieza a dar créditos de API a los suscriptores de sus planes de cien, doscientos y quinientos dólares por mes.
+Martín: ¿Cuántos créditos?
+Lucía: El equivalente a lo que pagás por mes, y los aplicás a una organización de API.
+Martín: Ayer hablamos de GPT seis punto uno Terra y sus precios. Esto viene a sumar del lado del costo.
+Lucía: Un detalle. Lo cuenta Simon Willison en su blog, y dice que es casi idéntico a un beneficio que Anthropic anunció a principios de octubre para los planes Max y Team.
+Martín: O sea, se copian.
+Lucía: Bastante parecido, sí. Y para el usuario está bien que compitan por ahí.
+Lucía: Otra aclaración: la página de ayuda de OpenAI no se pudo verificar, así que la fuente es Willison.
+Martín: Opinión honesta: si ya pagás un plan alto, prototipar con la API te sale prácticamente gratis. Si no lo pagás, no cambia nada.
+Lucía: Tercera. Salió Codex cero punto ciento sesenta y seis, el veintinueve de octubre.
+Martín: ¿Qué trae?
+Lucía: Búsqueda y selección dentro del transcript. Un comando para reanudar hilos, codex queue con la opción resume.
+Lucía: Y un diagnóstico de red, codex doctor con la opción network only.
+Martín: Y hay un arreglo que me parece lo más importante.
+Lucía: Sí. Antes, al reanudar o bifurcar una sesión, se perdían los permisos y las aprobaciones. Eso ya está corregido.
+Martín: Y la versión anterior, la ciento sesenta y cinco del veintisiete, sumó Vertex AI como proveedor y dejó la memoria versión dos activa por defecto.
+Lucía: Mi opinión: no es un lanzamiento llamativo, pero es lo que hace falta para trabajar en sesiones largas sin perder el hilo.
+Martín: Cuarta, y acá voy con cuidado. Es una denuncia de un tercero sobre Claude Code. No está confirmada.
+Lucía: Contala.
+Martín: El autor de un gist en GitHub, de Flamerix AI, sostiene que cada unos treinta segundos Claude Code manda el transcript de cada agente en segundo plano a un modelo.
+Martín: ¿Para qué? Para generar un estado de tres a cinco palabras.
+Lucía: ¿Y cuánto gasta eso?
+Martín: Según su propia telemetría de una semana, el dieciséis por ciento del gasto.
+Martín: Dice que está activo por defecto desde la versión dos punto uno punto doscientos treinta y dos, y que no hay forma de apagarlo.
+Lucía: Pero en los comentarios no todos coinciden.
+Martín: No. Uno estima alrededor de un ocho por ciento, y otro directamente cuestiona el porcentaje.
+Lucía: Y Anthropic no respondió.
+Martín: Exacto. Así que por ahora es lo que dice una persona con sus propias mediciones. Nadie lo confirmó.
+Lucía: El lunes contamos que los tokens de caché explican casi todo el gasto en agentes de código. Con eso en mente, vale la pena medir el propio consumo antes de creerle o descartarlo.
+Martín: Quinta. Liquid AI lanzó LFM3, seis modelos de unos dos mil millones de parámetros con pesos abiertos.
+Lucía: Esto lo mencionamos el miércoles, cuando contamos que ya corrían en Ollama. Hoy tenemos más números.
+Martín: El de uno coma siete mil millones tiene doscientos cincuenta y seis mil tokens de contexto y ocupa alrededor de un giga en cuatro bits.
+Lucía: En su propia tabla promedia casi cuarenta y nueve y medio, contra poco más de cuarenta y siete de Qwen tres coma cinco de nueve mil millones.
+Martín: O sea, le gana a un modelo bastante más grande.
+Lucía: En su tabla, repito. En seguir instrucciones saca casi noventa y siete en IFEval. En llamadas a funciones, unos setenta y uno en BFCL.
+Martín: ¿Y dónde pierde?
+Lucía: En contexto largo. En RULER a ciento veintiocho mil tokens saca sesenta y cinco y pico, contra ochenta y siete del Qwen.
+Martín: Entonces el contexto largo está en la ficha, pero no rinde tanto.
+Lucía: Y la licencia no figura en la página. Eso hay que mirarlo antes de usarlo para algo serio.
+Martín: Mi opinión: un modelo de un giga con buen function calling que corre local es interesante. Pero los benchmarks son del propio fabricante.
+Lucía: Sexta y última. Baidu publicó en Hugging Face Unlimited OCR dos, un modelo de OCR y parseo de documentos.
+Martín: ¿Qué tiene de distinto?
+Lucía: Según la ficha, la latencia y la memoria se mantienen casi constantes aunque el documento crezca. Y procesa varias páginas por request.
+Martín: Corre con Transformers y con SGLang. Y tiene licencia MIT.
+Lucía: Dice tener el estado del arte en dos benchmarks de documentos largos, pero no publica cifras.
+Martín: Ahí me pongo escéptico. Sin números, "estado del arte" no dice mucho.
+Lucía: Igual, la licencia MIT y el foco en PDFs largos lo hacen fácil de probar.
+Martín: Y con MIT lo podés usar en un proyecto comercial sin vueltas.
+Lucía: Mi opinión: de las seis, es la que más rápido se puede llevar a un caso real. Pero hay que medirla con documentos propios.
+## Para desarrolladores
+Martín: Vamos a lo que le cambia a quien programa.
+Lucía: Lo primero, para mí, es Codex. Si trabajás con sesiones largas, el arreglo de permisos al reanudar te ahorra un dolor de cabeza.
+Martín: Y codex queue con resume te deja retomar un hilo sin arrancar de cero.
+Lucía: Si estás detrás de un proxy o en una red rara, codex doctor con network only te dice si el problema es la red.
+Martín: Lo segundo es el costo. Entre los créditos de OpenAI y el beneficio que ya tenía Anthropic, si pagás un plan alto tenés API para prototipar.
+Lucía: Revisá si te corresponde y en qué organización se acreditan.
+Martín: Tercero, la denuncia de Claude Code. No sabemos si es cierta.
+Martín: Pero si usás agentes en segundo plano, mirá tu consumo. Compará lo que gastás con y sin agentes de fondo. Es la única forma de saber.
+Lucía: Y cuarto, los modelos chicos. LFM3 puede servir para tareas locales con llamadas a funciones, sin mandar datos afuera.
+Martín: Siempre que no le pidas contexto muy largo. Ahí se cae.
+Lucía: Para clasificar textos cortos, decidir qué herramienta llamar o completar un formulario, puede alcanzar.
+Martín: Y al ocupar un giga, entra hasta en una notebook común. Eso habría que probarlo en cada caso, claro.
+Lucía: Y para quien arma datos, Unlimited OCR dos es una opción abierta para sacar texto de PDFs largos.
+Martín: El miércoles contamos lo de Databricks para mejorar la extracción de documentos con ai extract. Es el mismo problema desde otro lado.
+Lucía: La diferencia es que acá tenés un modelo abierto que podés correr vos, sin depender de una plataforma.
+Martín: A cambio, la infraestructura y el mantenimiento corren por tu cuenta. No es gratis en tiempo.
+## Oportunidades de consultoría
+Lucía: Hoy pensemos en un estudio, contable o jurídico, chico.
+Martín: Me parece bien. Es un perfil que tiene el problema bien a la vista.
+Martín: ¿Por qué un estudio?
+Lucía: Porque viven entre PDFs largos. Balances, contratos, expedientes escaneados.
+Lucía: Y muchas veces alguien copia datos a mano de esos PDFs a un Excel.
+Martín: Ahí entra el OCR de Baidu.
+Lucía: La idea: un proceso que toma los PDFs de una carpeta, los pasa por Unlimited OCR dos y saca el texto ordenado.
+Martín: Y después un modelo chico, como LFM3, que extraiga campos puntuales y los deje en una planilla.
+Lucía: Por ejemplo, fecha, partes, montos, vencimientos. Lo que ese estudio necesite.
+Martín: Un punto a favor para un estudio: todo puede correr en una máquina propia. Los documentos no salen de la oficina.
+Lucía: ¿Qué haría falta?
+Martín: Una computadora con capacidad para correr el OCR, una muestra de documentos reales y alguien del estudio que diga qué campos importan.
+Lucía: Y probarlo antes con sus propios documentos. Los benchmarks de las dos fichas son de los fabricantes.
+Martín: Y confirmar la licencia de LFM3, que no figura. Si no está clara, se usa otro modelo para la extracción.
+Lucía: Es una idea para charlar con el estudio, no una promesa. Hay que ver si con sus papeles funciona.
+## Una cosa para probar hoy
+Martín: Algo para hacer en menos de media hora.
+Lucía: Probá LFM3 en tu máquina con Ollama, que ya lo tiene.
+Martín: Contame el paso a paso.
+Lucía: Uno. Si no tenés Ollama, instalalo desde su página.
+Lucía: Dos. Buscá LFM3 en la biblioteca de modelos de Ollama y bajate la versión más chica.
+Martín: Ocupa alrededor de un giga, así que baja rápido.
+Lucía: Tres. Abrí una terminal y corré el modelo.
+Lucía: Cuatro. Pegale un texto corto, tipo un mail o una factura, y pedile que te devuelva los datos en JSON.
+Martín: Fecha, monto, nombre. Algo que puedas verificar a ojo.
+Lucía: Cinco. Probá lo mismo con un texto bastante más largo y fijate si empieza a fallar.
+Martín: Así comprobás vos mismo lo del contexto largo, en vez de creerle a la tabla.
+Lucía: Y anotá qué tan rápido responde en tu computadora. Eso define si te sirve o no.
+## Quedaron afuera
+Martín: Antes de cerrar, algunas que quedaron afuera.
+Lucía: Simon Willison escribió que octubre fue un punto de inflexión para hacer videojuegos con vibe coding.
+Martín: Quedó afuera porque es la opinión de una sola persona, sin dato duro.
+Lucía: Después, Ted Sanders, de OpenAI, explicó un esquema de nombres para sus modelos: Luna, Terra, Sol y Astra.
+Martín: Es la cita de un empleado, no un anuncio oficial. Y poco impacto práctico.
+Lucía: Y IBM sacó Granite Switch cuatro punto uno punto uno, un modelo de reconocimiento de voz chico con puntuación.
+Martín: Es un parche menor, sin cifras de calidad ni licencia declarada.
+Lucía: Y Hugging Face presentó paquetes en Swift con modelos abiertos de voz y de decisión para dispositivos de Apple.
+Martín: Solo sirve para Apple y no está verificado para español, por eso no entró.
+Lucía: Si querés que sumemos algo de esto, avisanos.
+Martín: Eso es todo por hoy. Buen fin de semana y nos escuchamos en el próximo Radar IA.

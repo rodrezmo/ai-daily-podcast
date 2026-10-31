@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 31 de octubre: descuento de Anthropic a gobiernos, Codex 0.166 y modelos chicos abiertos",
+  "summary": "Anthropic amplía su descuento para gobiernos en EE.UU., OpenAI da créditos de API a suscriptores de planes altos y sale Codex 0.166.0. Además, una denuncia sin confirmar sobre el gasto de tokens de Claude Code, los modelos LFM3 de Liquid AI y el OCR abierto de Baidu. Cierra con una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Anthropic ofrece 40% de descuento a gobiernos (GSA/OneGov) en Claude Enterprise, Claude for Government y API",
+      "url": "https://www.anthropic.com/news/expanding-partnership-gsa"
+    },
+    {
+      "title": "OpenAI da créditos de API a suscriptores de planes de USD 100, 200 y 500",
+      "url": "https://simonwillison.net/2026/Oct/29/api-credits/"
+    },
+    {
+      "title": "Codex 0.166.0: búsqueda en transcript, codex queue --resume, codex doctor --network-only",
+      "url": "https://github.com/openai/codex/releases"
+    },
+    {
+      "title": "Denuncia: Claude Code gasta 15-20% de tokens en resúmenes de estado de agentes en segundo plano",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce"
+    },
+    {
+      "title": "Liquid AI lanza LFM3: seis modelos de ~2B con pesos abiertos",
+      "url": "https://www.liquid.ai/blog/lfm3"
+    },
+    {
+      "title": "Baidu publica Unlimited-OCR 2: parseo de documentos de muchas páginas con licencia MIT",
+      "url": "https://huggingface.co/baidu/Unlimited-OCR-2"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Hugging Face: AnySpeechRecognizer y AnyDecisionModel, paquetes Swift con modelos abiertos de voz y decisión para Apple",
+      "url": "https://huggingface.co/blog/anydecisionmodel"
+    },
+    {
+      "title": "Simon Willison: octubre 2026 fue un punto de inflexión para hacer videojuegos con vibe coding",
+      "url": "https://simonwillison.net/2026/Oct/28/vibe-game-development/"
+    },
+    {
+      "title": "IBM Granite Switch 4.1.1: ASR de 0,5B con puntuación y adaptador de decisión actualizado",
+      "url": "https://huggingface.co/blog/ibm-granite/granite-switch-4-1-1"
+    },
+    {
+      "title": "Ted Sanders (OpenAI) explica el esquema de nombres Luna < Terra < Sol < Astra",
+      "url": "https://simonwillison.net/2026/Oct/28/ted-sanders/"
+    }
+  ]
+}
