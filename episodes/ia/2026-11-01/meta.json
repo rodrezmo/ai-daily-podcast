@@ -44,5 +44,10 @@
       "title": "Memdoor: cinco modelos Qwen3.8-27B coordinados igualan a un modelo de frontera en LiveCodeBench Hard, según su autor",
       "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve"
     }
-  ]
+  ],
+  "guid": "ia-2026-11-01",
+  "bytes": 5295051,
+  "seconds": 625.008,
+  "pub_date": "2026-11-01T06:18:32.187637-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-11-01/episode.mp3"
 }

@@ -929,6 +929,36 @@
       "url": "https://huggingface.co/baidu/Unlimited-OCR-2",
       "title": "Baidu publica Unlimited-OCR 2: parseo de documentos de muchas páginas con licencia MIT",
       "date": "2026-10-31"
+    },
+    {
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "title": "Mistral Large 4 llega a Hugging Face con pesos abiertos: MoE de ~1T parámetros y 1M de contexto",
+      "date": "2026-11-01"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts",
+      "title": "Cómo se tomaron cuentas de ChatGPT: falla en las vistas previas HTML corregida por OpenAI",
+      "date": "2026-11-01"
+    },
+    {
+      "url": "https://anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "title": "Anthropic amplía AI for Science a 20 fundaciones e instituciones y lanza un plan Team con descuento para científicos",
+      "date": "2026-11-01"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world",
+      "title": "Una empresa de juegos dice gastar más de USD 3 millones al mes en tokens con un enjambre de agentes que publica cambios cada hora",
+      "date": "2026-11-01"
+    },
+    {
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer",
+      "title": "Talos: un infostealer usa un LLM vía OpenRouter para rankear a las víctimas por cuánto valen",
+      "date": "2026-11-01"
+    },
+    {
+      "url": "https://aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai",
+      "title": "Amazon pide a sus ingenieros documentar dónde la IA no ayuda y cuidar las métricas de uso de tokens",
+      "date": "2026-11-01"
     }
   ]
 }
