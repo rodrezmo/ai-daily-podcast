@@ -1,0 +1,117 @@
+## Titulares
+Lucía: Buen día, es domingo primero de noviembre y esto es Radar IA.
+Martín: Hola. Hoy tenemos seis notas, y dos de seguridad que conviene escuchar con atención.
+Lucía: Arranco con un modelo abierto. Mistral Large cuatro llegó a Hugging Face con los pesos disponibles.
+Martín: El viernes contamos el lanzamiento, ¿no? Un modelo abierto de un billón de parámetros.
+Lucía: Ese mismo. Lo nuevo es el detalle que publicó Hugging Face en su blog.
+Lucía: Es una mezcla de expertos con alrededor de un billón de parámetros en total.
+Lucía: Pero en cada paso se activan unos cuarenta y nueve mil millones.
+Martín: Y el contexto es de un millón de tokens. Además es multimodal.
+Lucía: Sale con variantes efe pe ocho y ene ve efe pe cuatro, y con soporte inicial en Transformers, ve ele ele eme y llama ce pe pe.
+Martín: Mi opinión: es una muy buena noticia para quien necesita tener los datos en casa.
+Martín: Pero ojo con la licencia. Es una derivada de MIT que limita ofrecerlo como servicio.
+Lucía: O sea, abierto sí, pero no para revenderlo como API sin leer la letra chica.
+Martín: Exacto. Antes de armar un producto encima, hay que leerla entera.
+Lucía: Segunda. Cómo se tomaron cuentas de ChatGPT con un link compartido.
+Martín: Esto lo levantó Simon Willison. El exploit lo publicó Parameter Labs.
+Lucía: Encadenaba tres cosas. Un mensaje postMessage de una librería de fórmulas que se llama MathLive.
+Lucía: Después, un inner hache te eme ele que metía ese contenido en la página.
+Lucía: Y una política de seguridad de contenido permisiva con YouTube.
+Martín: Con eso podían ejecutar JavaScript dentro de ChatGPT desde un link compartido.
+Lucía: OpenAI ya lo corrigió y pagó cinco mil dólares de recompensa.
+Martín: Mi lectura es que el problema no es la IA en sí. Es el de siempre: hache te eme ele que se muestra sin cuidado.
+Lucía: Y eso aplica a cualquiera que embebe salidas de un modelo dentro de su sistema.
+Martín: El viernes también hablamos de EMBRACE, cinco asistentes de código con navegador embebido que resultaron vulnerables. Va en la misma dirección.
+Lucía: Mostrar contenido ajeno dentro de una app sigue siendo el punto flojo.
+Martín: Tercera, Anthropic.
+Lucía: Amplió su programa AI for Science, que da créditos gratuitos de Claude para investigación.
+Lucía: Se suman veinte organizaciones. Entre ellas Sloan, Simons, la ene ese efe, el Crick Institute y el Broad Institute, el de gnomAD.
+Martín: Y la nota menciona un plan Team con descuento para científicos, lanzado en los últimos meses.
+Lucía: Lo que no dice la nota es cuántos créditos son. No hay montos.
+Martín: Ayer contamos el cuarenta por ciento de descuento a gobiernos en Claude Enterprise. Se ve una línea clara de ir a buscar instituciones.
+Lucía: Sirve si trabajás en una universidad o un instituto. Para el resto, es más bien una señal de hacia dónde va.
+Martín: Cuarta. Esta es la más llamativa, y por eso la más sospechosa.
+Lucía: Una empresa de juegos, Spawn, dice gastar más de tres millones de dólares por mes en tokens.
+Martín: Lo cuenta su fundador, Jacob Sansbury, y Willison lo enlazó.
+Lucía: Tienen un enjambre de agentes con modelos Fable que lleva cambios a producción cada hora.
+Lucía: Cerca del sesenta por ciento del trabajo nace de un error en producción, un reporte, algo raro en los logs o un pedido de funcionalidad.
+Martín: Y volver atrás un cambio les tarda unos treinta segundos.
+Lucía: Ahora, todo esto lo declara el propio fundador. No hay verificación independiente.
+Martín: Exacto. Yo lo tomaría como un relato, no como un caso de estudio.
+Martín: Lo interesante no es el número grande. Son los controles: el rollback rápido y los errores que se reportan solos.
+Lucía: Sin eso, publicar cada hora con agentes sería tirarse a la pileta sin agua.
+Martín: Quinta, y es la que más me preocupó. Cisco Talos analizó un infostealer que usa un modelo de lenguaje.
+Lucía: El malware se llama VOLTA-AUTODOXER. Roba credenciales y billeteras.
+Lucía: Después arma un informe de la víctima y lo manda a OpenRouter con un prompt de analista forense.
+Martín: El modelo le dice cuánto vale cada víctima. Así priorizan a quién atacar.
+Lucía: El modelo por defecto es Claude Opus cuatro punto seis.
+Lucía: Si ese se niega, tienen respaldo en Kimi K dos y en Gemini dos punto cinco Flash.
+Martín: Incluso detectan frases de rechazo para saltar al siguiente. Y usan temperatura cero coma dos.
+Lucía: Toda la infraestructura que se observó es de terceros.
+Martín: Mi opinión: esto ya no es teoría. Hay gente usando APIs de modelos para ordenar ataques.
+Lucía: Y si manejás claves de API, conviene rotarlas, ponerles límites y mirar el tráfico saliente.
+Martín: Sexta y última. Amazon y un memo sobre cómo medir el uso de IA en ingeniería.
+Lucía: Lo firma Terk Terkowitz, vicepresidente e ingeniero distinguido.
+Lucía: La página no muestra fecha. Simon Willison lo citó el veintiocho de octubre.
+Martín: Dice tres cosas. Primero, que si la IA no te ayuda, lo documentes como un hallazgo.
+Lucía: Segundo, que las métricas de adopción y de tokens no se vuelvan objetivos, porque pueden subir costos y complejidad.
+Martín: Y tercero, que miren los percentiles diez y noventa de adopción, para ver si el uso intenso se traduce en entregas.
+Lucía: No trae cifras de adopción, eso hay que decirlo.
+Martín: Igual me parece de lo más sensato que leí en la semana. Contar tokens no es medir trabajo.
+Lucía: Y hace buen contraste con lo de Spawn, que presume justamente del gasto.
+
+## Para desarrolladores
+Martín: Vamos a lo práctico. ¿Qué cambia para quien programa o arma datos?
+Lucía: Lo primero es lo de ChatGPT. Si mostrás en tu app hache te eme ele generado por un modelo, revisalo.
+Lucía: Fijate dónde usás inner hache te eme ele con contenido que no controlás.
+Martín: Y revisá tu política de seguridad de contenido. Ahí el agujero fue permitir de más a un dominio externo.
+Lucía: Lo segundo, las claves. Lo de Talos muestra que una clave de API robada se usa de verdad.
+Martín: Una clave sin límite de gasto es plata de otro esperando a que alguien la use.
+Lucía: Tercero, Mistral Large cuatro. Que ya tenga soporte en ve ele ele eme y llama ce pe pe baja la barrera para probarlo.
+Martín: Aunque es enorme. Yo no me imagino corriéndolo en cualquier máquina.
+Lucía: Bueno, la nota no dice qué hardware hace falta, así que no lo adivinemos.
+Martín: Cierto, me corrijo. Digamos que hay que mirar los requisitos antes de planificar nada.
+Lucía: Otra cosa que me llevo, y es de Spawn. Más allá de las cifras, lo que copiaría es la idea de poder volver atrás rápido.
+Martín: Sí. Si vas a dejar que un agente toque producción, primero asegurate de poder deshacer lo que hizo en segundos.
+Lucía: Y de que los errores te lleguen solos, sin depender de que alguien se acuerde de avisar.
+Martín: Eso sirve aunque publiques una vez por semana y no cada hora.
+Lucía: Y lo último, el memo de Amazon. Si usás agentes de código, empezá a anotar dónde no te sirven.
+Martín: Eso vale más que cualquier tablero de tokens consumidos.
+Lucía: El lunes pasado hablamos de que los tokens de caché explican casi todo el gasto en agentes de código. Medir bien empieza por ahí.
+
+## Oportunidades de consultoría
+Martín: Hoy me quiero ir del clásico de la pyme. Pienso en un equipo interno de datos o de operaciones de una empresa mediana.
+Lucía: Uno que ya le dio agentes de código o asistentes a su gente, y no sabe si sirven.
+Martín: Ese es el problema. Pagan licencias o tokens, y la única métrica que tienen es cuánto se usa.
+Lucía: Y como dice el memo de Amazon, eso puede terminar premiando el gasto y no las entregas.
+Martín: La idea sería armarles un tablero que cruce dos cosas: el uso de la herramienta y lo que se entregó.
+Lucía: Lo que se automatiza es juntar los datos de uso que ya existen y los del sistema de tareas o de tickets, y actualizarlos solos.
+Martín: Y mirar el diez por ciento que menos usa y el diez por ciento que más usa, como sugiere el memo.
+Lucía: Sumaría una planilla simple para que la gente anote dónde la IA no ayudó. Que sea un hallazgo, no una culpa.
+Martín: ¿Qué haría falta? Acceso a los registros de uso, al sistema de tareas y alguien del equipo que defina qué cuenta como entrega.
+Lucía: Y de paso, un repaso de cómo guardan las claves de API, por lo de Talos.
+Martín: Ojo, es una idea para conversar. No hay forma de prometer que el tablero mejore la productividad.
+Lucía: Lo que sí da es una conversación con datos en lugar de una con sensaciones.
+
+## Una cosa para probar hoy
+Lucía: Para hoy, algo de media hora: una auditoría rápida de tus claves de API.
+Martín: Dale, contame el paso a paso.
+Lucía: Uno. Entrá al panel de cada proveedor de modelos que uses y listá todas las claves activas.
+Lucía: Dos. Borrá las que no reconozcas o que no usaste en el último tiempo.
+Martín: Si dudás de una, rotala. Generás una nueva, la cambiás donde haga falta y borrás la vieja.
+Lucía: Tres. A cada clave que quede, ponele un límite de gasto, si el proveedor lo permite.
+Lucía: Cuatro. Buscá en tus repositorios si hay alguna clave escrita a mano en el código o en un archivo de configuración subido.
+Martín: Un grep por el prefijo de la clave alcanza para encontrar las más obvias.
+Lucía: Cinco. Si tenés registros de red, fijate si hay tráfico saliente a OpenRouter u otros servicios que no deberías estar usando.
+Martín: Y anotá todo en una planilla: qué clave, para qué sirve, quién la usa. La próxima vez tardás cinco minutos.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy, por si quieren que lo sumemos.
+Martín: Se dice que Anthropic habría renombrado sus planes: Max a cien dólares y Ultra a doscientos.
+Lucía: No entró porque no encontramos fuente verificable. Todavía no lo confirmó nadie de forma oficial.
+Martín: Memdoor: su autor dice que cinco modelos Qwen tres punto ocho de veintisiete mil millones, coordinados, igualan a un modelo de frontera en LiveCodeBench Hard.
+Lucía: Quedó afuera porque es un dato autorreportado. Si alguien lo reproduce, lo retomamos.
+Martín: NVIDIA mostró un agente de voz con modelos abiertos Nemotron y una latencia medida de un segundo y siete décimas.
+Lucía: También es una medición propia, y con poco impacto práctico por ahora.
+Martín: Y Hugging Face lanzó Project ProtoStar, para dejar datos científicos públicos listos para IA. Interesante, pero hoy no le vimos uso directo.
+Lucía: Eso fue todo. Rotá esas claves, y nos escuchamos mañana en Radar IA.

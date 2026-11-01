@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 1 de noviembre: Mistral Large 4 abierto, una falla en ChatGPT y un infostealer con LLM",
+  "summary": "Mistral Large 4 llega con pesos abiertos, se explica cómo se tomaban cuentas de ChatGPT con una falla ya corregida y Talos describe un infostealer que usa un LLM para rankear víctimas. Además, el memo de Amazon sobre métricas de IA, el relato de una empresa de juegos con enjambre de agentes y el programa AI for Science de Anthropic. Cierra con una idea de consultoría y una auditoría de claves de API para hacer hoy.",
+  "stories": [
+    {
+      "title": "Mistral Large 4 llega a Hugging Face con pesos abiertos: MoE de ~1T parámetros y 1M de contexto",
+      "url": "https://huggingface.co/blog/mistral-large4"
+    },
+    {
+      "title": "Cómo se tomaron cuentas de ChatGPT: falla en las vistas previas HTML corregida por OpenAI",
+      "url": "https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/"
+    },
+    {
+      "title": "Anthropic amplía AI for Science a 20 fundaciones e instituciones y lanza un plan Team con descuento para científicos",
+      "url": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+    },
+    {
+      "title": "Una empresa de juegos dice gastar más de USD 3 millones al mes en tokens con un enjambre de agentes que publica cambios cada hora",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/"
+    },
+    {
+      "title": "Talos: un infostealer usa un LLM vía OpenRouter para rankear a las víctimas por cuánto valen",
+      "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+    },
+    {
+      "title": "Amazon pide a sus ingenieros documentar dónde la IA no ayuda y cuidar las métricas de uso de tokens",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Hugging Face lanza Project ProtoStar para dejar los datos científicos públicos listos para IA",
+      "url": "https://huggingface.co/blog/announcing-project-protostar"
+    },
+    {
+      "title": "Anthropic habría renombrado sus planes Max: Max a USD 100 y Ultra a USD 200",
+      "url": "https://latent.space/p/ainews-google-admits-ai-mode-hurts-search-revenue-15-500b-drop-worst-since-2004-ipo-ai-bear-market-c/"
+    },
+    {
+      "title": "NVIDIA muestra un agente de voz con modelos abiertos Nemotron y latencia medida de 1,7 segundos",
+      "url": "https://huggingface.co/blog/nvidia/nemotron-halloween"
+    },
+    {
+      "title": "Memdoor: cinco modelos Qwen3.8-27B coordinados igualan a un modelo de frontera en LiveCodeBench Hard, según su autor",
+      "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve"
+    }
+  ]
+}
