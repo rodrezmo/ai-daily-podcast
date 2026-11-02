@@ -959,6 +959,36 @@
       "url": "https://aboutamazon.com/news/company-news/amazon-software-engineer-role-guideline-ai",
       "title": "Amazon pide a sus ingenieros documentar dónde la IA no ayuda y cuidar las métricas de uso de tokens",
       "date": "2026-11-01"
+    },
+    {
+      "url": "https://huggingface.co/blog/anydecisionmodel",
+      "title": "Hugging Face publica paquetes Swift para transcripción y modelos de decisión locales en Apple",
+      "date": "2026-11-02"
+    },
+    {
+      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html",
+      "title": "PostgreSQL 19 se atrasa porque las búsquedas de bugs con LLM multiplican los reportes",
+      "date": "2026-11-02"
+    },
+    {
+      "url": "https://infobae.com/tecno/2026/10/31/openai-entrenara-sus-ia-con-chats-de-expertos-en-ciberseguridad-aunque-estos-se-nieguen",
+      "title": "OpenAI usará sesiones de Daybreak Blue de cuentas personales para entrenar, incluso con la mejora del modelo desactivada",
+      "date": "2026-11-02"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom",
+      "title": "Grietas en el boom de gasto en IA: más de USD 740.000 millones de capex y flujo de caja negativo",
+      "date": "2026-11-02"
+    },
+    {
+      "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents",
+      "title": "DoorDash recibió solo 'cientos' de pedidos desde agentes de IA, frente a unas 3 millones de entregas diarias",
+      "date": "2026-11-02"
+    },
+    {
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
+      "title": "Costo de que Claude Opus 5.5 construya la misma app en 12 stacks de JavaScript: de USD 2,67 (Hono+htmx) a USD 4,97 (Angular)",
+      "date": "2026-11-02"
     }
   ]
 }

@@ -44,5 +44,10 @@
       "title": "Ollama 0.40.13: los modelos LFM3 de Liquid AI (texto, audio, omni) ahora corren en Linux y Windows",
       "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13"
     }
-  ]
+  ],
+  "guid": "ia-2026-11-02",
+  "bytes": 4990058,
+  "seconds": 586.92,
+  "pub_date": "2026-11-02T06:26:32.678818-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-11-02/episode.mp3"
 }
