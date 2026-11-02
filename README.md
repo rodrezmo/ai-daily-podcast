@@ -12,6 +12,7 @@ Podcast diario de noticias de IA en es-AR, generado por agentes de Claude y publ
 - `scripts/seen.py`: filtra notas ya usadas (`state/seen.json`).
 - `scripts/feed.py`: arma y valida el RSS.
 - `scripts/publish.py`: sube el MP3 a Releases, actualiza feed y estado, commit y push.
+- `redes/`: estrategia de redes (agentes, reglas, audiogramas, medición). Ver `redes/README.md`.
 - `docs/`: GitHub Pages (`feed.xml` e `index.html`).
 - `episodes/<show>/<día>/`: archivos de trabajo de cada episodio (los `.mp3` no se commitean).
 
