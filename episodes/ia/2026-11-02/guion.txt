@@ -1,0 +1,100 @@
+## Titulares
+Lucía: Buen día, hoy es lunes dos de noviembre de dos mil veintiséis y esto es Radar IA.
+Martín: Buen día. Hoy tenemos seis noticias, y varias tienen números concretos, que es lo que nos gusta.
+Lucía: Arranco con una que me encantó. PostgreSQL diecinueve viene atrasado, y según uno de sus committers, la culpa es de la IA.
+Martín: ¿De la IA? ¿Escribió código malo?
+Lucía: No exactamente. Lo cuenta Robert Haas en su blog. Su respuesta corta es que llegaron los LLM.
+Lucía: Con modelos de lenguaje es mucho más fácil encontrar bugs en una base de código grande y vieja como la de Postgres.
+Martín: Y alguien tiene que arreglarlos.
+Lucía: Exacto. Y los parches que redacta un modelo igual necesitan revisión humana.
+Lucía: El dato duro: los commits a la rama estable pasaron de setecientos veinticuatro el año pasado a mil ciento sesenta y nueve este año. Más de sesenta por ciento de suba.
+Martín: Y hubo funciones que se cayeron, ¿no?
+Lucía: Tres funciones grandes se revirtieron entre fines de agosto y mediados de septiembre. Una de ellas, las consultas de grafos en SQL.
+Martín: Mi opinión: es la cara menos glamorosa de la IA. Encontrar bugs es barato, arreglarlos sigue costando horas de gente.
+Lucía: Haas espera la versión para noviembre, y dice que podría atrasarse más. Pero lo toma como una señal de que el proyecto prioriza la calidad.
+Martín: Segunda. OpenAI va a entrenar con sesiones de Daybreak Blue de cuentas personales, aunque el usuario haya apagado la opción de mejorar el modelo.
+Lucía: Contame qué es Daybreak Blue, porque no todos lo usan.
+Martín: Según Infobae, es el nivel de acceso que OpenAI da a especialistas en ciberseguridad.
+Martín: Las fechas: desde el veinte de noviembre, los usuarios individuales pierden el acceso por API. Desde el veintinueve, esas sesiones se usan para entrenar.
+Lucía: ¿Y las empresas?
+Martín: Según el correo, los clientes empresariales no están afectados. Y después de las quejas, OpenAI prometió una opción para excluirse, pero no dijo cómo ni desde cuándo.
+Lucía: El lunes pasado contamos que OpenAI iba a dejar de entrenar modelos con internet en vivo, por riesgos. Y ahora busca datos por otro lado.
+Martín: Mi opinión: si usás una cuenta personal para trabajar con datos de clientes, este es un buen momento para revisar qué corre ahí.
+Lucía: Tercera, más técnica. Hugging Face publicó dos paquetes en Swift para hacer IA local en equipos de Apple.
+Lucía: Uno se llama AnySpeechRecognizer y sirve para transcribir. Te deja elegir el motor: el de Apple, Parakeet o Qwen tres ASR.
+Martín: ¿Y qué tan bien transcribe?
+Lucía: Con Parakeet Unified, que es solo para inglés, da uno coma cuarenta y tres por ciento de error por palabra en un set de prueba limpio.
+Lucía: Y transcribe una hora de audio en veinte a cuarenta segundos, en una Mac con M cuatro Max.
+Martín: Ojo, que en grabaciones de reuniones reales todos los motores que probaron pasaron el veintitrés por ciento de error.
+Lucía: Sí, eso está en la misma nota, y está bueno que lo digan. El otro paquete, AnyDecisionModel, responde sí o no, elige entre opciones o puntúa en una escala, con probabilidades y sin generar texto.
+Martín: Mi opinión: lo mejor es que todo corre local. Lo malo es que pide Swift seis punto dos y macOS o iOS veintiséis, así que no es para cualquiera.
+Lucía: Cuarta, y esta es para los que hacen cuentas. Nolan Lawson midió cuánto le cuesta a Claude Opus cinco punto cinco construir la misma app en doce stacks de JavaScript.
+Martín: ¿Qué app?
+Lucía: Un buscador de Pokémon. Cinco corridas por stack, y se queda con la mediana.
+Lucía: Lo más barato fue Hono con htmx: dos dólares con sesenta y siete. Lo más caro, Angular: cuatro dólares con noventa y siete.
+Martín: Casi el doble.
+Lucía: Casi el doble. Y Angular además fue el que más líneas de código escribió, unas dos mil.
+Martín: Un detalle importante: el costo es el precio de API que informa Claude Code, no lo que pagó. Él mismo aclara que es una app chica y que los resultados varían entre corridas.
+Lucía: Mi opinión: es un experimento casero, pero apunta a algo real. Si el agente escribe el código, el stack también es una decisión de costos.
+Martín: Quinta. DoorDash dijo que recibió apenas unos cientos de pedidos de agentes de IA.
+Lucía: ¿Contra cuántos?
+Martín: Contra unas tres millones de entregas por día. Lo dijo en su llamada de resultados del tercer trimestre, según TechCrunch.
+Martín: La mayoría de la gente sigue pidiendo desde la app. Igual, la empresa dice que está abierta a trabajar con esos agentes.
+Lucía: Mi opinión: es un balde de agua fría para todo el discurso del comercio hecho por agentes. Por ahora es marginal.
+Martín: Y la sexta, más de contexto. TechCrunch dice que aparecen grietas en el boom del gasto en IA.
+Martín: Alphabet, Amazon, Meta y Microsoft planean invertir más de setecientos cuarenta mil millones de dólares este año.
+Lucía: Eso ya lo sabíamos más o menos. ¿Qué es lo nuevo?
+Martín: Que Alphabet, Amazon y Meta tienen flujo de caja libre negativo. Amazon, más de cuarenta y dos mil millones en negativo en doce meses.
+Martín: Y entre los grandes de nube, sumando a Oracle, emitieron unos trescientos veintiséis mil millones de dólares de deuda este año. El triple que el año pasado.
+Lucía: Mi opinión: no es una crisis, pero sí una alerta. Los precios de hoy de los modelos no están garantizados.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia todo esto a alguien que programa o arma datos?
+Lucía: Lo primero, lo de Lawson. Si estimás un proyecto donde un agente escribe buena parte del código, el stack mueve el costo.
+Martín: Y no solo el costo. En su tabla, Angular tardó unos diecisiete minutos de mediana, y Hono con htmx menos de nueve.
+Lucía: Además el JavaScript que llega al navegador va de cero kilobytes con Astro a ciento cuarenta y dos con Next punto js.
+Martín: Esto se conecta con algo que contamos el lunes pasado: los tokens de caché explican entre noventa y seis y noventa y nueve por ciento del gasto en agentes de código.
+Lucía: O sea, medir lo que gasta tu agente ya no es opcional.
+Martín: Y ojo, que lo barato no salió peor. En accesibilidad, todos los stacks sacaron cien.
+Lucía: Y en rendimiento quedaron todos entre noventa y siete y cien. La diferencia real estuvo en lo que costó llegar.
+Martín: Hay otro detalle que me llamó la atención. Algunos agentes ni usaron las herramientas oficiales de cada framework, y Lawson sospecha que hoy esas integraciones pueden hacer más mal que bien.
+Lucía: Eso es una sospecha de él, no algo que haya probado. Pero vale la pena tenerlo en cuenta antes de cargarle diez integraciones a tu agente.
+Martín: Lo segundo, Postgres. Si tenés algo planeado sobre la versión diecinueve, contá con que llega más tarde.
+Lucía: Y fijate qué funciones necesitabas, porque tres de las grandes se revirtieron. Por ejemplo, partir y unir particiones con ALTER TABLE.
+Martín: Y una lectura más general: si mantenés un proyecto, prepará el proceso de revisión. Los bugs encontrados con LLM van a seguir llegando.
+Lucía: Haas lo dice así: la demora en sí no le preocupa mucho. Lo que le parece más inquietante es el largo plazo, porque pueden aparecer décadas de bugs que nadie había visto.
+Lucía: Lo tercero, para quien trabaja en Apple: transcripción y clasificación cien por ciento locales, con licencias abiertas.
+Martín: Hay modelos con licencia Creative Commons, otros Apache dos punto cero y otros con la licencia abierta de NVIDIA. Conviene leer cada una antes de meterlo en un producto.
+Lucía: Y el paquete de transcripción viene con una herramienta de línea de comandos que se llama hear, para transcribir archivos y evaluar resultados.
+
+## Oportunidades de consultoría
+Martín: Hoy no vamos con la pyme. Pensaba en un estudio o un profesional independiente. Un estudio contable, o jurídico.
+Lucía: ¿Qué problema tienen?
+Martín: Graban reuniones con clientes, o audios de WhatsApp, y después alguien tiene que escucharlos y pasar a mano lo importante.
+Martín: Y por lo que vimos con OpenAI, mandar esas conversaciones a un servicio en la nube con cuentas personales es un riesgo.
+Lucía: Entonces la idea es transcribir en una Mac de la oficina, sin que el audio salga de ahí.
+Martín: Exacto. Se automatiza la transcripción y, con el paquete de decisiones, una primera clasificación. Por ejemplo, si el audio menciona un vencimiento o si hay que llamar al cliente.
+Lucía: ¿Y qué haría falta?
+Martín: Una Mac con Apple silicon y macOS veintiséis o más nuevo, alguien que arme el flujo en Swift, y una prueba seria con sus propios audios.
+Lucía: Eso es clave. La nota no da números en castellano, y en reuniones reales el error pasó el veintitrés por ciento.
+Martín: Por eso lo plantearía como una prueba acotada. Una persona revisa todo, y recién después se decide si sirve. Es una idea, no una promesa.
+
+## Una cosa para probar hoy
+Lucía: Para hoy propongo un mini Lawson. Medir cuánto te cuesta a vos una tarea con tu agente.
+Martín: Dale, contame el paso a paso.
+Lucía: Uno: elegí una tarea chica y cerrada de tu backlog. Algo que se haga en diez minutos.
+Lucía: Dos: escribí el pedido una sola vez, en un archivo de texto, para usar exactamente el mismo.
+Lucía: Tres: corrélo con tu agente de código en dos variantes. Puede ser dos librerías, dos stacks o dos modelos.
+Lucía: Cuatro: al terminar cada corrida, anotá el costo o los tokens que te informa la herramienta, el tiempo y cuántas líneas cambió.
+Martín: ¿Y con una corrida alcanza?
+Lucía: No alcanza para concluir nada. Lawson hizo cinco por stack y dice que los resultados variaban. Pero te da un orden de magnitud.
+Martín: Y ya con eso estimás mejor el próximo presupuesto.
+
+## Quedaron afuera
+Martín: Y antes de irnos, lo que quedó afuera hoy.
+Lucía: Infobae dice que Anthropic es el mayor cliente de SpaceX, con treinta y cuatro coma cinco por ciento de sus ingresos del trimestre. Quedó afuera por poco impacto práctico y fuente secundaria.
+Martín: También en Infobae, que Anthropic dejó de pedir ejercicios de programación en las entrevistas porque Claude resuelve mejor las pruebas. Interesante, pero con poco dato.
+Lucía: Una nota sobre rescatistas de Estados Unidos y Canadá que atienden excursionistas que siguieron rutas inventadas por IA. Llamativa, pero sin impacto para nuestro día a día.
+Martín: Y Ollama cero punto cuarenta punto trece, que ahora corre los modelos LFM tres de Liquid AI en Linux y Windows. El miércoles pasado ya habíamos contado el lanzamiento de LFM tres, así que hoy no sumaba tanto.
+Lucía: Si querés que alguna de estas entre en otro episodio, avisanos.
+Martín: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.

@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 2 de noviembre: lo que cuesta programar con IA, Postgres 19 demorado y cambios de privacidad en OpenAI",
+  "summary": "Cuánto cuesta que un agente arme la misma app en doce stacks de JavaScript, por qué PostgreSQL 19 se atrasa con tanto reporte de bugs hecho con LLM y qué cambia en privacidad con OpenAI. Además, DoorDash y los pedidos de agentes, las grietas en el gasto en IA y la transcripción local en Apple. Cierra con una idea de consultoría y un experimento para hacer hoy.",
+  "stories": [
+    {
+      "title": "Hugging Face publica paquetes Swift para transcripción y modelos de decisión locales en Apple",
+      "url": "https://huggingface.co/blog/anydecisionmodel"
+    },
+    {
+      "title": "PostgreSQL 19 se atrasa porque las búsquedas de bugs con LLM multiplican los reportes",
+      "url": "http://rhaas.blogspot.com/2026/10/postgres-19-is-late-and-its-ais-fault.html"
+    },
+    {
+      "title": "OpenAI usará sesiones de Daybreak Blue de cuentas personales para entrenar, incluso con la mejora del modelo desactivada",
+      "url": "https://www.infobae.com/tecno/2026/10/31/openai-entrenara-sus-ia-con-chats-de-expertos-en-ciberseguridad-aunque-estos-se-nieguen/"
+    },
+    {
+      "title": "Grietas en el boom de gasto en IA: más de USD 740.000 millones de capex y flujo de caja negativo",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+    },
+    {
+      "title": "DoorDash recibió solo 'cientos' de pedidos desde agentes de IA, frente a unas 3 millones de entregas diarias",
+      "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/"
+    },
+    {
+      "title": "Costo de que Claude Opus 5.5 construya la misma app en 12 stacks de JavaScript: de USD 2,67 (Hono+htmx) a USD 4,97 (Angular)",
+      "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Anthropic es el mayor cliente de SpaceX: 34,5% de sus ingresos del trimestre, con contratos de hasta USD 120.500 millones hasta 2029",
+      "url": "https://www.infobae.com/tecno/2026/11/01/anthropic-ya-es-el-mayor-cliente-de-spacex-y-le-aporto-el-345-de-sus-ingresos-del-trimestre/"
+    },
+    {
+      "title": "Anthropic dejó de pedir ejercicios de programación en entrevistas porque Claude resuelve mejor las pruebas",
+      "url": "https://www.infobae.com/tecno/2026/11/01/anthropic-elimino-las-entrevistas-de-programacion-porque-claude-resuelve-mejor-las-pruebas/"
+    },
+    {
+      "title": "Rescatistas de EE.UU. y Canadá atienden excursionistas que siguieron rutas inventadas por IA",
+      "url": "https://www.infobae.com/tecno/2026/11/01/rescatistas-de-eeuu-y-canada-ya-atienden-excursionistas-que-siguieron-rutas-inventadas-por-ia/"
+    },
+    {
+      "title": "Ollama 0.40.13: los modelos LFM3 de Liquid AI (texto, audio, omni) ahora corren en Linux y Windows",
+      "url": "https://github.com/ollama/ollama/releases/tag/v0.40.13"
+    }
+  ]
+}
