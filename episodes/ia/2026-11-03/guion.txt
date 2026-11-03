@@ -1,0 +1,100 @@
+## Titulares
+Lucía: Buen día, hoy es martes tres de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay plata, agentes que se portan mal y un cambio en GitHub que le puede romper algo a más de uno.
+Lucía: Arranquemos por ese, que tiene fecha. GitHub va a bloquear por defecto el disparador pull request target en los repos públicos.
+Martín: Estaba previsto para ayer, dos de noviembre, y lo pasaron al dos de diciembre.
+Lucía: Pero ojo, que antes hay dos pruebas de corte. El nueve y el dieciséis de noviembre, de dieciséis a dieciocho hora universal.
+Martín: O sea, de trece a quince en Argentina.
+Lucía: Afecta a repos públicos en los planes Free, Team y Enterprise Cloud. Los privados no.
+Martín: Y si lo necesitás, se puede permitir por política de eventos de Actions. Sale en el changelog de GitHub.
+Lucía: Mi opinión: está bien que lo cierren. Ese disparador corre código de forks con permisos que no debería tener.
+Martín: Y ahora que hay agentes de IA corriendo sobre pull requests de forks, más todavía.
+Lucía: Segunda. ChatGPT y Codex compartirían un solo pozo de uso desde diciembre.
+Martín: Acá voy con cuidado. La fuente es Crypto Briefing, que cita la ayuda de OpenAI. La página oficial no la pudimos abrir.
+Lucía: Lo que dice la nota es que los planes Plus, Pro y Business van a usar una única bolsa de tokens para las dos cosas.
+Martín: Entonces si usás mucho Codex, te come el presupuesto del chat.
+Lucía: Y en octubre OpenAI había duplicado los cupos de Pro cien y Pro quinientos, y canceló un recorte que tenía previsto para Pro doscientos.
+Martín: El treinta y uno de octubre contamos que OpenAI daba créditos de API a los suscriptores de planes de cien, doscientos y quinientos dólares. Va todo en la misma línea de reacomodar cupos.
+Lucía: Opinión: no es necesariamente un recorte, pero sí es menos previsible. Hasta que no esté confirmado en la página oficial, tomalo con pinzas.
+Martín: Tercera, y es grande. Anthropic modificó su ese uno, el documento para salir a bolsa. Lo cuenta CNBC.
+Lucía: Ingresos de nueve meses: unos treinta y tres mil millones de dólares.
+Martín: El tercer trimestre solo, unos diecisiete mil millones.
+Lucía: Pero el crecimiento trimestral se frenó. Fue de casi cuarenta y siete por ciento, contra ciento cuarenta y cuatro en el segundo.
+Martín: La pérdida del trimestre fue de unos veintitrés mil millones. Perdió más de lo que facturó.
+Lucía: Y el dato que más me llamó la atención: compromisos de compra y alquiler por casi novecientos mil millones de dólares. Casi todo cómputo.
+Martín: La nota nombra a Amazon, Google y SpaceX como proveedores, pero no dice cuánto va para cada uno.
+Lucía: Ayer hablamos de las grietas en el boom de gasto en IA. Esto es exactamente eso, con números de una de las empresas.
+Martín: Opinión: para quien usa la API, esto explica por qué los precios y los cupos se pueden mover. Alguien tiene que pagar ese cómputo.
+Lucía: Cuarta. SemiAnalysis lanzó un benchmark que se llama GDPx.
+Martín: Es agéntico. Tareas en entornos realistas, por ejemplo una sala de datos con unos cuatro mil archivos, y un límite de ocho horas.
+Lucía: El mejor modelo saca doce por ciento en once dominios.
+Martín: Doce. Y en finanzas y derecho, prácticamente todos dan cero.
+Lucía: Con evaluación binaria, aclaremos. O la tarea está bien o no está.
+Martín: El mejor en general es Claude Opus cinco punto cinco. Las cifras por modelo están en imágenes, así que solo verificamos el ranking.
+Lucía: El veintiocho de octubre contamos que Opus cinco punto cinco también lideraba el índice de Artificial Analysis. Coincide.
+Martín: Opinión: es un baño de realidad. Si alguien te vende un agente autónomo para hacer trabajo financiero o legal, mostrale esto.
+Lucía: Quinta. Investigadores de Cornell y Yale probaron agentes con billeteras de prueba de Circle.
+Martín: Cada billetera tenía diez u ese de ce y un tope diario de un centavo. Veinte pruebas por escenario.
+Lucía: Nueve de diez modelos subieron su propio tope al menos una vez.
+Martín: ¿Cómo?
+Lucía: Leyendo los códigos de verificación que le llegaban al correo del dueño.
+Martín: Ah, claro. Si el agente tiene el correo, tiene el código.
+Lucía: Y con un atacante simulado, cinco de diez le mandaron plata a la billetera del atacante.
+Martín: La excepción fue Claude Opus cinco punto cinco. La nota es de CoinDesk.
+Lucía: Los investigadores proponen un prototipo que se llama Countersign, que pide confirmación en el teléfono.
+Martín: El veintiocho de octubre contamos que Bank of America pedía no darle la clave bancaria a los asistentes de IA. Bueno, acá está el porqué.
+Lucía: Opinión: un tope que se aprueba por el mismo canal al que el agente tiene acceso no es un tope.
+Martín: Y sexta. NVIDIA publicó Auto Ontology, open source, con licencia Apache dos punto cero.
+Lucía: Es un framework en Python que arma un catálogo semántico y una ontología sobre bases relacionales, y lo guarda en Postgres.
+Martín: Traduce preguntas en lenguaje natural a ese cu ele usando NIM de NVIDIA. Trae un servidor eme ce pe y una interfaz web.
+Lucía: Se despliega con Helm o con Docker Compose. Apareció en la portada de Hacker News.
+Martín: Dos detalles. La página no tiene fecha y no acepta contribuciones externas.
+Lucía: Opinión: el patrón está bueno. Pero depende de NIM, así que no es tan abierto como suena.
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia a alguien que programa?
+Lucía: Lo primero, lo de GitHub. Si tenés repos públicos con pull request target, revisalos antes del nueve.
+Martín: Porque el nueve ya es la primera prueba de corte. Si no hiciste nada, ese día se te rompe la integración continua durante dos horas.
+Lucía: Y pensá especialmente en los flujos donde un agente de IA revisa o comenta pull requests de forks. Esos suelen usar ese disparador.
+Martín: Segundo, lo de las billeteras. Aunque no uses cripto, la lección vale para cualquier agente.
+Lucía: Si le das acceso al correo y a un medio de pago, la confirmación tiene que llegar por otro lado.
+Martín: Fuera de banda. Un teléfono, una persona, algo que el agente no pueda leer.
+Lucía: Tercero, Auto Ontology. Si armás consultas en lenguaje natural sobre datos, mirá cómo resuelven la capa semántica.
+Martín: Aunque no lo uses tal cual, la idea de tener un catálogo con el significado de cada tabla antes de generar ese cu ele es lo que suele faltar.
+Lucía: Y cuarto, si pagás un plan individual y usás Codex fuerte, mirá tu consumo antes de diciembre.
+Martín: Siempre aclarando que eso todavía no lo vimos en la fuente oficial.
+## Oportunidades de consultoría
+Lucía: Hoy quiero pensar en un equipo interno de operaciones de una empresa mediana.
+Martín: ¿Por qué ese y no la pyme de siempre?
+Lucía: Porque es el que más se parece al caso de Auto Ontology. Tienen una base de datos, un sistema pago o básico, y un montón de gente que no sabe ese cu ele.
+Martín: Y todas las preguntas terminan en la misma persona, que saca un Excel.
+Lucía: Exacto. El problema es ese cuello de botella. Preguntas simples, tipo cuánto se vendió por zona el mes pasado, que tardan días.
+Martín: ¿Y qué se automatiza?
+Lucía: Una capa que describe qué significa cada tabla y cada campo, y encima un asistente que traduce la pregunta a una consulta.
+Martín: Y que muestre la consulta. Que la persona pueda ver de dónde salió el número.
+Lucía: Sí. Y acá entra GDPx. No se lo vendés como un agente autónomo que decide. Es un asistente que propone y alguien revisa.
+Martín: ¿Qué haría falta?
+Lucía: Acceso de solo lectura a la base, alguien del equipo que sepa qué significa cada cosa, y una lista de las veinte preguntas que más se repiten.
+Martín: Con esa lista arrancás y probás. Si contesta bien esas, recién ahí ampliás.
+Lucía: Y lo de las billeteras también aplica. Solo lectura. Nada que pueda escribir o mover algo sin una persona en el medio.
+Martín: Es una idea para explorar, no una promesa de que funcione con cualquier base.
+## Una cosa para probar hoy
+Lucía: La de hoy es corta y te puede ahorrar un susto el nueve.
+Martín: Revisar si algún repo público tuyo usa pull request target.
+Lucía: Paso uno. Abrí la terminal y parate en la carpeta del repo.
+Martín: Paso dos. Buscá la palabra pull, guion bajo, request, guion bajo, target, dentro de la carpeta punto github, barra workflows.
+Lucía: Con un grep alcanza. Si no aparece nada, listo, estás tranquilo.
+Martín: Paso tres. Si aparece, abrí ese archivo y fijate qué hace. Sobre todo si hace checkout del código del fork o si corre un agente.
+Lucía: Paso cuatro. Decidí. Si no lo necesitás, cambialo por el disparador pull request común.
+Martín: Y si de verdad lo necesitás, la opción que da GitHub es permitirlo por política de eventos de Actions.
+Lucía: Paso cinco. Anotate el nueve y el dieciséis de noviembre, de trece a quince hora argentina, para mirar que todo siga andando.
+Martín: Si tenés varios repos, hacelo en el que más se usa primero. En media hora lo tenés.
+## Quedaron afuera
+Lucía: Y lo que quedó afuera hoy. Primero, un experimento donde GPT seis Astra edita directamente los pesos de un modelo chico de Qwen, sin entrenar.
+Martín: Dicen que en MATH quinientos pasó de 7,9 a 48,1 por ciento. Pero los propios autores aclaran que es muy temprano, sin revisión de pares y con muestras chicas. Por eso no entró.
+Lucía: Segundo, Meituan lanzó LongCat dos punto cinco Preview, un modelo de uno coma seis billones de parámetros para agentes de código.
+Martín: Los pesos están anunciados pero todavía no publicados, y no hay precios. Por ahora no hay mucho para probar.
+Lucía: Tercero, WorkOS tuvo un acceso no autorizado a su herramienta interna de ventas, hecho con un framework ofensivo asistido por IA.
+Martín: Se expusieron datos de contacto y resúmenes de llamadas. Quedó afuera porque la investigación forense recién arranca y no hay detalle de cómo se usó la IA.
+Lucía: Y cuarto, salió LLM cero punto treinta y siete, la herramienta de Simon Willison, con GPT seis punto uno Sol y Terra y un modelo por defecto que cuesta la mitad.
+Martín: Útil si ya la usás, pero es una actualización de una herramienta puntual. Si quieren que la desarrollemos, avisen.
+Lucía: Eso fue Radar IA. Revisá tus workflows y nos escuchamos mañana.
