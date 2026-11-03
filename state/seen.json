@@ -989,6 +989,36 @@
       "url": "https://nolanlawson.com/2026/10/28/the-ai-cost-of-javascript-frameworks",
       "title": "Costo de que Claude Opus 5.5 construya la misma app en 12 stacks de JavaScript: de USD 2,67 (Hono+htmx) a USD 4,97 (Angular)",
       "date": "2026-11-02"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2",
+      "title": "GitHub bloqueará pull_request_target por defecto en repos públicos el 2 de diciembre",
+      "date": "2026-11-03"
+    },
+    {
+      "url": "https://cryptobriefing.com/openai-unifies-chatgpt-codex-token-allowance",
+      "title": "ChatGPT y Codex compartirán un solo pozo de uso desde diciembre",
+      "date": "2026-11-03"
+    },
+    {
+      "url": "https://cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+      "title": "Anthropic modificó su S-1: ingresos del tercer trimestre de ~USD 17.000 millones y compromisos por USD 895.400 millones",
+      "date": "2026-11-03"
+    },
+    {
+      "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+      "title": "SemiAnalysis lanza GDPx: el mejor modelo saca 12% en 11 dominios y finanzas y derecho dan 0%",
+      "date": "2026-11-03"
+    },
+    {
+      "url": "https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+      "title": "Cornell y Yale: 9 de 10 agentes de IA subieron su propio límite de gasto en billeteras de prueba",
+      "date": "2026-11-03"
+    },
+    {
+      "url": "https://github.com/NVIDIA/auto-ontology",
+      "title": "NVIDIA publica Auto Ontology: capa semántica open source (Apache 2.0) para que agentes consulten bases de datos en lenguaje natural",
+      "date": "2026-11-03"
     }
   ]
 }

@@ -1,48 +1,53 @@
 {
- "title": "Radar IA, 3 de noviembre: GitHub frena pull_request_target, el S-1 de Anthropic y un benchmark que pone en 0% a finanzas y derecho",
- "summary": "GitHub posterga al 2 de diciembre el bloqueo de pull_request_target en repos públicos, Anthropic actualizó su S-1 con ingresos del tercer trimestre, y SemiAnalysis lanza GDPx, un benchmark agéntico donde el mejor modelo saca 12%. Además: agentes que se suben su propio límite de gasto, NVIDIA Auto Ontology y una idea de consultoría con datos.",
- "stories": [
-  {
-   "title": "GitHub bloqueará pull_request_target por defecto en repos públicos el 2 de diciembre",
-   "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2"
-  },
-  {
-   "title": "ChatGPT y Codex compartirán un solo pozo de uso desde diciembre",
-   "url": "https://cryptobriefing.com/openai-unifies-chatgpt-codex-token-allowance/"
-  },
-  {
-   "title": "Anthropic modificó su S-1: ingresos del tercer trimestre de ~USD 17.000 millones y compromisos por USD 895.400 millones",
-   "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
-  },
-  {
-   "title": "SemiAnalysis lanza GDPx: el mejor modelo saca 12% en 11 dominios y finanzas y derecho dan 0%",
-   "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
-  },
-  {
-   "title": "Cornell y Yale: 9 de 10 agentes de IA subieron su propio límite de gasto en billeteras de prueba",
-   "url": "https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
-  },
-  {
-   "title": "NVIDIA publica Auto Ontology: capa semántica open source (Apache 2.0) para que agentes consulten bases de datos en lenguaje natural",
-   "url": "https://github.com/NVIDIA/auto-ontology"
-  }
- ],
- "discarded": [
-  {
-   "title": "Weight-Space Programming: GPT-6 Astra edita pesos de Qwen3.5-0.8B sin gradiente y sube MATH-500 de 7,9% a 48,1%",
-   "url": "https://rikiyat.github.io/blog/weight-space-programming/"
-  },
-  {
-   "title": "WorkOS sufrió un acceso no autorizado a su herramienta interna de ventas con un framework ofensivo asistido por IA",
-   "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident"
-  },
-  {
-   "title": "Meituan lanza LongCat-2.5 Preview: 1,6 billones de parámetros (48.000 millones activos) para agentes de código",
-   "url": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/"
-  },
-  {
-   "title": "LLM 0.37: agrega GPT-6.1 Sol y Terra, comando para endpoints compatibles con OpenAI y un modelo por defecto más barato",
-   "url": "https://simonwillison.net/2026/Nov/2/llm/"
-  }
- ]
+  "title": "Radar IA, 3 de noviembre: GitHub frena pull_request_target, el S-1 de Anthropic y un benchmark que pone en 0% a finanzas y derecho",
+  "summary": "GitHub posterga al 2 de diciembre el bloqueo de pull_request_target en repos públicos, Anthropic actualizó su S-1 con ingresos del tercer trimestre, y SemiAnalysis lanza GDPx, un benchmark agéntico donde el mejor modelo saca 12%. Además: agentes que se suben su propio límite de gasto, NVIDIA Auto Ontology y una idea de consultoría con datos.",
+  "stories": [
+    {
+      "title": "GitHub bloqueará pull_request_target por defecto en repos públicos el 2 de diciembre",
+      "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2"
+    },
+    {
+      "title": "ChatGPT y Codex compartirán un solo pozo de uso desde diciembre",
+      "url": "https://cryptobriefing.com/openai-unifies-chatgpt-codex-token-allowance/"
+    },
+    {
+      "title": "Anthropic modificó su S-1: ingresos del tercer trimestre de ~USD 17.000 millones y compromisos por USD 895.400 millones",
+      "url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html"
+    },
+    {
+      "title": "SemiAnalysis lanza GDPx: el mejor modelo saca 12% en 11 dominios y finanzas y derecho dan 0%",
+      "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities"
+    },
+    {
+      "title": "Cornell y Yale: 9 de 10 agentes de IA subieron su propio límite de gasto en billeteras de prueba",
+      "url": "https://coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test"
+    },
+    {
+      "title": "NVIDIA publica Auto Ontology: capa semántica open source (Apache 2.0) para que agentes consulten bases de datos en lenguaje natural",
+      "url": "https://github.com/NVIDIA/auto-ontology"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Weight-Space Programming: GPT-6 Astra edita pesos de Qwen3.5-0.8B sin gradiente y sube MATH-500 de 7,9% a 48,1%",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+    },
+    {
+      "title": "WorkOS sufrió un acceso no autorizado a su herramienta interna de ventas con un framework ofensivo asistido por IA",
+      "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident"
+    },
+    {
+      "title": "Meituan lanza LongCat-2.5 Preview: 1,6 billones de parámetros (48.000 millones activos) para agentes de código",
+      "url": "https://technode.com/2026/11/02/meituan-launches-longcat-2-5-multimodal-ai-model-for-extended-coding-tasks/"
+    },
+    {
+      "title": "LLM 0.37: agrega GPT-6.1 Sol y Terra, comando para endpoints compatibles con OpenAI y un modelo por defecto más barato",
+      "url": "https://simonwillison.net/2026/Nov/2/llm/"
+    }
+  ],
+  "guid": "ia-2026-11-03",
+  "bytes": 4767902,
+  "seconds": 559.176,
+  "pub_date": "2026-11-03T06:19:51.997858-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-11-03/episode.mp3"
 }
