@@ -1019,6 +1019,36 @@
       "url": "https://github.com/NVIDIA/auto-ontology",
       "title": "NVIDIA publica Auto Ontology: capa semántica open source (Apache 2.0) para que agentes consulten bases de datos en lenguaje natural",
       "date": "2026-11-03"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/message-threads",
+      "title": "Anthropic lanza Message Threads (beta) en la Messages API: el servidor guarda la conversación y cada pedido manda solo lo nuevo",
+      "date": "2026-11-04"
+    },
+    {
+      "url": "https://alignment.anthropic.com/2026/automated-em-search",
+      "title": "Anthropic usó agentes Claude para generar datasets de fine-tuning que esquivan su propio monitor de datos",
+      "date": "2026-11-04"
+    },
+    {
+      "url": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration",
+      "title": "Android Studio Rabbit 2 permite traer tu propio agente: más de 40 agentes vía Agent Client Protocol",
+      "date": "2026-11-04"
+    },
+    {
+      "url": "https://huggingface.co/blog/cwe-bench",
+      "title": "CWE-bench v2: 100 tareas de reparar vulnerabilidades reales; Gemini 4 Argon 67,8% y Claude Opus 5.5 67,3%",
+      "date": "2026-11-04"
+    },
+    {
+      "url": "https://huggingface.co/blog/allenai/statebench",
+      "title": "Ai2 publica StateBench: los modelos de frontera caen a 13% o menos al seguir variables en textos largos",
+      "date": "2026-11-04"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/fast-mode",
+      "title": "Anthropic retira el modo rápido de Opus 4.8 el 30 de noviembre y recomienda migrar a Opus 5.5",
+      "date": "2026-11-04"
     }
   ]
 }
