@@ -1,0 +1,40 @@
+{
+  "title": "Radar IA, 4 de noviembre: Message Threads de Anthropic, CWE-bench y un benchmark que deja a los modelos en 13%",
+  "summary": "Anthropic lanza Message Threads en beta para mandar solo lo nuevo en cada pedido, y retira el modo rápido de Opus 4.8 el 30 de noviembre. Además: CWE-bench v2 con costo por tarea, StateBench de Ai2 sobre seguir variables en textos largos, agentes propios en Android Studio y datasets que esquivan un monitor. Más una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Anthropic lanza Message Threads (beta) en la Messages API: el servidor guarda la conversación y cada pedido manda solo lo nuevo",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/message-threads"
+    },
+    {
+      "title": "Anthropic usó agentes Claude para generar datasets de fine-tuning que esquivan su propio monitor de datos",
+      "url": "https://alignment.anthropic.com/2026/automated-em-search/"
+    },
+    {
+      "title": "Android Studio Rabbit 2 permite traer tu propio agente: más de 40 agentes vía Agent Client Protocol",
+      "url": "https://developer.android.com/blog/posts/ai-agents-android-studio-integration"
+    },
+    {
+      "title": "CWE-bench v2: 100 tareas de reparar vulnerabilidades reales; Gemini 4 Argon 67,8% y Claude Opus 5.5 67,3%",
+      "url": "https://huggingface.co/blog/cwe-bench"
+    },
+    {
+      "title": "Ai2 publica StateBench: los modelos de frontera caen a 13% o menos al seguir variables en textos largos",
+      "url": "https://huggingface.co/blog/allenai/statebench"
+    },
+    {
+      "title": "Anthropic retira el modo rápido de Opus 4.8 el 30 de noviembre y recomienda migrar a Opus 5.5",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/fast-mode#supported-models"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Copilot conectores: un solo login autoriza unos 26 servicios MCP (Slack, Sentry, Linear y más), en public preview",
+      "url": "https://docs.github.com/en/copilot/concepts/customizations/copilot-connectors"
+    },
+    {
+      "title": "DeepSeek presenta en código abierto un prototipo de agente de programación que compite con Claude Code",
+      "url": "https://voiceofemirates.com/en/science-and-tech/2026/11/03/deepseek-expands-its-ai-ambitions-a-new-software-agent-to-rival-developer-tools"
+    }
+  ]
+}

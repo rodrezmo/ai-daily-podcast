@@ -1,0 +1,106 @@
+## Titulares
+Lucía: Buen día, es miércoles cuatro de noviembre y esto es Radar IA.
+Martín: Hola, hola. Hoy hay seis notas, y varias son de Anthropic, así que vamos a tratar de no sonar a folleto.
+Lucía: Arranco con la más práctica. Anthropic sacó en beta algo que se llama Message Threads, en la Messages API.
+Martín: ¿Qué cambia?
+Lucía: Que el servidor guarda la conversación. En cada pedido nuevo mandás solo los mensajes nuevos y el identificador de la respuesta anterior.
+Martín: O sea, dejás de reenviar todo el historial cada vez.
+Lucía: Exacto. Se activa con un header beta. El hilo vence a los cinco minutos de la última llamada y se borra, como mucho, a la hora.
+Martín: ¿Y el famoso dato de velocidad?
+Lucía: Según Anthropic, vía prensa, baja alrededor de un treinta y cinco por ciento la mediana del tiempo hasta el primer token, en pedidos de entre quinientos mil y un millón de tokens.
+Martín: Ojo que esa cifra no aparece en la documentación. Así que tomala con pinzas.
+Lucía: Y otra cosa importante: no cambia ni el consumo de tokens ni el precio. Y no sirve si usás retención cero ni HIPAA.
+Martín: Mi opinión: es útil para agentes con contexto largo, sobre todo por el payload. Pero no es un ahorro de plata.
+Lucía: Segunda. También de Anthropic, pero del blog de alineación. Usaron agentes Claude para generar datasets de fine-tuning que esquivaran su propio monitor de datos.
+Martín: Contame cómo.
+Lucía: Claude generó miles de datasets, de hasta cinco mil ejemplos cada uno. Pasaron el monitor con muy pocos avisos.
+Martín: ¿Y dónde escondían lo malo?
+Lucía: En ficción y en juegos de rol. Y los modelos ajustados con eso salieron más desalineados que con los datasets conocidos.
+Martín: Hay que decir lo que aclara Anthropic: el escenario favorecía al equipo atacante y esos modelos nunca se desplegaron.
+Lucía: Igual el mensaje es claro. Filtrar lo explícitamente malo no alcanza.
+Martín: Tercera. Android Studio Rabbit dos te deja traer tu propio agente. Más de cuarenta, vía Agent Client Protocol.
+Lucía: ¿Cuáles?
+Martín: Claude Agent, Codex, Junie, Antigravity, entre otros. Con acceso al emulador, al build y a Logcat.
+Lucía: ¿Y hay números de rendimiento?
+Martín: En el anuncio de Google no aparecen, así que no los vamos a repetir.
+Lucía: Lo valioso es lo otro: usás el agente que ya pagás sin cambiar de editor. Eso sí está bueno.
+Martín: Cuarta. Salió CWE-bench versión dos, en el blog de Hugging Face, hecho por Collinear AI.
+Lucía: ¿De qué va?
+Martín: Cien tareas públicas de reparar vulnerabilidades reales, sobre noventa y una categorías CWE. Evaluaron once modelos, con corrección determinística.
+Lucía: ¿Quién ganó?
+Martín: Gemini cuatro Argon con sesenta y siete coma ocho por ciento. Claude Opus cinco punto cinco, sesenta y siete coma tres. Prácticamente empatados.
+Lucía: Y lo interesante es el costo.
+Martín: Sí. DeepSeek V cuatro punto uno Flash llega a cincuenta y siete por ciento, a cuatro centavos de dólar por intento.
+Lucía: ¿Contra?
+Martín: Un dólar ochenta y tres por intento de Opus. Y tres dólares noventa y dos de Gemini cuatro Argon.
+Lucía: Diez puntos menos por una fracción mínima del precio. Para muchos casos, esa cuenta cierra.
+Martín: El jueves pasado hablamos de Gemini cuatro Carbon, el modelo enfocado en ciberseguridad. Este benchmark viene bien para poner esas promesas contra una tabla.
+Lucía: Quinta, y para mí la más importante del día. Ai2 publicó StateBench.
+Martín: Uh, este me preocupó.
+Lucía: Mide cuánto aguantan los modelos siguiendo cambios de estado en documentos largos. Variables que se modifican a lo largo del texto.
+Martín: ¿Y cómo les fue?
+Lucía: Gemini tres punto ocho Flash, Opus cinco punto cinco y GPT seis Sol y Luna van bien en los niveles fáciles. En el más difícil caen a trece por ciento o menos.
+Martín: Trece por ciento.
+Lucía: Y modelos chicos entrenados a medida, con una arquitectura llamada Gated DeltaNet, mantienen casi cien.
+Martín: Aunque algunos de esos chicos también fallan cuando el problema viene planteado como ediciones de planilla.
+Lucía: Ayer contamos lo de GDPx, donde finanzas y derecho daban cero por ciento. Esto va en la misma línea: llevar cuentas largas no es el fuerte de estos modelos.
+Martín: Sexta, y cortita. Anthropic retira el modo rápido de Opus cuatro punto ocho el treinta de noviembre.
+Lucía: ¿Qué pasa después?
+Martín: Si pedís el modo rápido con ese modelo, te devuelve error. Recomiendan pasar a Opus cinco punto cinco.
+Lucía: Y en la misma semana hubo dos cosas más.
+Martín: Sí. Una API de análisis de uso y costos, en beta desde el veintinueve de octubre. Y el límite de tamaño de pedido subió a ciento veintiocho megas. Antes era treinta y dos.
+Lucía: Nada épico, pero si tenés código en producción, agendalo.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le sirve hoy a quien programa o arma datos?
+Lucía: Primero, lo urgente. Buscá en tu código si usás Opus cuatro punto ocho con el modo rápido. Tenés hasta fin de mes.
+Martín: Y aprovechá para mirar la API de costos. Sirve para controlar el gasto por workspace o por clave.
+Lucía: Segundo, Message Threads. Si tenés un agente con contexto largo, probalo. Mandás menos datos por pedido.
+Martín: Pero ojo con el vencimiento. Cinco minutos sin llamadas y el hilo se va.
+Lucía: Claro. Si tu agente espera a un humano que tarda, vas a tener que manejar el caso de hilo vencido.
+Martín: Y si trabajás con datos sensibles bajo retención cero, directamente no aplica.
+Lucía: Tercero, CWE-bench te da algo que casi nunca tenemos: costo por tarea.
+Martín: Si vas a automatizar revisión o parcheo de seguridad, podés arrancar con el modelo barato y escalar al caro solo cuando falla.
+Lucía: Eso no lo dice el benchmark, eh. Es una idea nuestra a partir de los números.
+Martín: Sí, sí. Idea nuestra.
+Lucía: Cuarto, StateBench. Si le pedís a un modelo que lleve un saldo, un stock o un estado que cambia a lo largo de un documento largo, desconfiá.
+Martín: Que el modelo extraiga los movimientos. La suma, que la haga el código.
+Lucía: Y lo del fine-tuning va para el mismo lado. Si ajustás con datos sintéticos o de terceros, no alcanza con un filtro de contenido. Hay que mirar qué comportamiento sale.
+Martín: Y si sos de Android, Rabbit dos te deja usar tu agente de siempre adentro del IDE.
+
+## Oportunidades de consultoría
+Lucía: Para consultoría hoy me quedo con StateBench. Y no pienso en la pyme, pienso en un estudio contable chico.
+Martín: Dale, contame el problema.
+Lucía: Un estudio que recibe resúmenes, extractos y planillas de clientes. Y alguien se pasa horas reconstruyendo saldos a mano.
+Martín: Y la tentación es tirarle todo a un chat y pedirle el saldo final.
+Lucía: Justamente eso es lo que StateBench dice que no conviene. En documentos largos, los modelos pierden el hilo.
+Martín: ¿Entonces qué se automatiza?
+Lucía: Separar las dos partes. El modelo lee cada documento y saca los movimientos a una tabla: fecha, concepto, importe.
+Martín: Y después la cuenta la hace una planilla o un script, que no se equivoca sumando.
+Lucía: Exacto. Y se agrega un control: el total calculado contra el saldo que figura en el documento. Si no coincide, lo revisa una persona.
+Martín: ¿Qué haría falta para arrancar?
+Lucía: Unos cuantos documentos reales de ejemplo, anonimizados. Definir el formato de la tabla con el estudio. Y alguien del estudio que valide las primeras semanas.
+Martín: Y venderlo como lo que es: una ayuda para cargar más rápido, con control humano. No como un contador automático.
+Lucía: Tal cual. Es una idea para explorar, no una promesa.
+
+## Una cosa para probar hoy
+Martín: ¿Y qué probamos hoy?
+Lucía: Un StateBench casero. Te lleva veinte minutos.
+Martín: A ver, paso a paso.
+Lucía: Uno. Abrí una planilla y escribí unos cuarenta movimientos de una cuenta inventada. Ingresos, egresos, alguna corrección.
+Martín: Dos. Calculá el saldo final con una fórmula de suma. Ese es tu resultado correcto.
+Lucía: Tres. Copiá los movimientos como texto corrido, tipo "el lunes entraron tantos pesos, el martes se pagó tal cosa".
+Martín: Cuatro. Pegale ese texto al modelo que uses y pedile solo el saldo final.
+Lucía: Cinco. Compará con la planilla.
+Martín: Y seis, la parte interesante: pedile que primero arme la tabla de movimientos, y hacé la suma vos en la planilla.
+Lucía: Vas a ver cuál de los dos caminos te da más confianza. Y te sirve para explicárselo a un cliente con un ejemplo propio.
+Martín: Si querés subir la dificultad, agregá movimientos que corrigen otros anteriores. Ahí es donde más sufren.
+
+## Quedaron afuera
+Lucía: Dos notas que quedaron afuera hoy.
+Martín: La primera: GitHub Copilot sumó conectores, donde con un solo login autorizás unos veintiséis servicios MCP, como Slack, Sentry o Linear. Está en vista previa pública.
+Lucía: No entró porque la documentación no tiene fecha confirmada y las cifras vienen de un agregador.
+Martín: La segunda: se dice que DeepSeek presentó en código abierto un prototipo de agente de programación para competir con Claude Code.
+Lucía: Quedó afuera porque no hay fuente primaria, ni licencia, ni benchmarks. Si sale algo oficial, lo traemos.
+Martín: Si te interesa que sigamos alguna de las dos, avisanos.
+Lucía: Los links de todo están en las notas del episodio. Nos escuchamos mañana, chau.
