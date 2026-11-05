@@ -40,5 +40,10 @@
       "title": "Qwen 3.8 27B en una laptop interpreta pesos de redes neuronales, con límites",
       "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
     }
-  ]
+  ],
+  "guid": "ia-2026-11-05",
+  "bytes": 4737323,
+  "seconds": 555.36,
+  "pub_date": "2026-11-05T06:16:28.274147-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-11-05/episode.mp3"
 }
