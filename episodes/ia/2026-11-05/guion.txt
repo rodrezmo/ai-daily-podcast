@@ -1,0 +1,110 @@
+## Titulares
+Lucía: Buen día, es jueves cinco de noviembre y esto es Radar IA.
+Martín: Hola. Hoy viene un día bastante de herramientas, sin grandes lanzamientos de modelos.
+Lucía: Lo cual se agradece un poco, ¿no?
+Martín: Un poco, sí. Arrancamos con GitHub. Copilot ya está disponible en JetBrains Air.
+Lucía: Air es el entorno de JetBrains para delegarle tareas a agentes.
+Martín: Exacto. Y la integración va por Agent Client Protocol, el mismo protocolo que ayer contamos con Android Studio Rabbit dos.
+Lucía: O sea que ese protocolo se está volviendo el enchufe estándar para meter agentes en los editores.
+Martín: Eso parece. Las tareas pueden correr local en tu IDE o en la nube, y podés tener varias sesiones en paralelo.
+Lucía: ¿Y en la nube dónde corre?
+Martín: En un contenedor Docker sobre una máquina virtual nueva para cada tarea. Todo el tráfico pasa por un proxy y no queda estado de una tarea a la otra.
+Lucía: Eso está bien pensado. ¿Y quién paga?
+Martín: Ahí está la letra chica. Las tareas en la nube consumen tu plan de Copilot, no los créditos de JetBrains AI.
+Lucía: Bueno, tiene sentido.
+Martín: Sí, pero el administrador de Air no puede poner límites de gasto de Copilot ahí adentro. Y las métricas de Air no muestran el uso de Copilot.
+Lucía: Y tampoco elegís si una tarea va contra tu plan personal o el de la organización, ¿no?
+Martín: Tampoco. Mi opinión: buena integración, pero si administrás un equipo, el control de costos queda flojo.
+Lucía: Segunda, también de GitHub. Dependabot ahora actualiza dependencias de Agent Package Manager, que se abrevia APM.
+Martín: ¿Dependencias de agentes? Contame qué se actualiza.
+Lucía: Skills, prompts e instrucciones de agentes que declarás en un archivo apm punto yml. Dependabot te abre el pull request y regenera el archivo de lock si lo tenés.
+Martín: Ojo que es solo actualización de versiones, no alertas de seguridad.
+Lucía: Correcto. Está para todos los planes en github punto com.
+Martín: A mí me parece de lo más sano del día. Los prompts pasan a tratarse como cualquier paquete: versionados y con revisión.
+Lucía: Tercera, y para mí la más interesante. Dharma Field Extractor, que sale en el blog de Hugging Face.
+Martín: El de documentos a JSON.
+Lucía: Ese. Le pasás la imagen de una factura o un formulario y te devuelve los campos en JSON. Con un esquema que vos definís, o sin esquema y te trae todo lo que encuentra.
+Martín: ¿Y si le pedís un campo que no está?
+Lucía: Devuelve null en lugar de inventarlo. Eso es justo lo que uno quiere.
+Martín: ¿Qué tamaño tiene?
+Lucía: Es un adaptador LoRA sobre un modelo de unos dos mil millones de parámetros. Lo entrenaron con unos cuarenta y tres mil ejemplos.
+Martín: ¿Y cómo le fue?
+Lucía: Según los autores, saca cero coma ochenta y tres en una prueba de quinientos cuarenta y seis documentos. Claude Opus cinco saca cero coma ochenta y dos.
+Martín: Casi empatados, entonces.
+Lucía: En calidad sí. La diferencia grande es el costo: dicen que es entre seis y ciento cuarenta y siete veces más barato que las APIs, corriendo en una sola placa de video; la comparación es contra el precio de lista de las APIs.
+Martín: Hay que decirlo: es el benchmark de ellos, medido por ellos.
+Lucía: Sí. Y no aclaran la licencia. Además se entrenó sobre todo con documentos en inglés y en portugués de Brasil.
+Martín: O sea que para una factura argentina hay que probarlo antes de creerle.
+Lucía: Exacto. Igual va en la línea de lo que vimos el sábado pasado con Unlimited-OCR dos de Baidu y los modelos chicos de Liquid AI. Modelos chicos y específicos para documentos.
+Martín: Cuarta, también en Hugging Face, de IBM Research. Se llama Palette y arma presentaciones con tu propio lenguaje de diseño.
+Lucía: ¿Diapositivas?
+Martín: Diapositivas. Es un modelo de pesos abiertos de veinte mil millones de parámetros que juega dos roles. Un diseñador que arma el plan en JSON, y un programador que escribe el código de cada slide.
+Lucía: Y lo comparan con NotebookLM, me imagino.
+Martín: Sí. En un benchmark que se llama PresentBench saca cincuenta y nueve coma siete, contra sesenta coma ocho de NotebookLM.
+Lucía: Un punto abajo.
+Martín: Un punto abajo, y siendo un modelo abierto que podés correr en tu infraestructura. Además tiene un arnés que revisa cada slide, detecta textos que se pisan o se salen, y lo repara. Eso suma tres puntos y medio en promedio.
+Lucía: Lo del arnés me parece lo más aprovechable, más allá del modelo.
+Martín: Coincido. Tampoco indica licencia, así que antes de usarlo con un cliente, hay que mirar eso.
+Lucía: Quinta. Simon Willison sacó datasette agent cero coma cinco, en versión alfa.
+Martín: Datasette es su herramienta para publicar y explorar bases SQLite, para quien no la conozca.
+Lucía: Lo nuevo es un panel lateral: el chat del agente queda al lado de la tabla o la consulta que estás mirando.
+Martín: ¿Y qué ganás con eso?
+Lucía: Combinado con datasette apps, le pedís por chat una aplicación sobre tu base, aparece, y la vas ajustando desde el mismo chat.
+Martín: Hay demo, ¿no?
+Lucía: Sí, entrás con tu cuenta de GitHub. El link está en las notas. Es alfa, así que para jugar, no para producción.
+Martín: Y la sexta, también de Simon. La versión cero coma treinta y siete de llm, su herramienta de línea de comandos para usar modelos.
+Lucía: ¿Qué trae?
+Martín: Suma GPT seis punto uno Sol y GPT seis punto uno Terra. Terra es el que contamos el viernes pasado.
+Lucía: ¿Y cambió el modelo por defecto?
+Martín: Sí, pasa a ser GPT seis Luna, que cuesta la mitad que el anterior, GPT cinco punto seis Luna. Eso si no configuraste uno vos.
+Lucía: Dato importante si tenés scripts que no fijan el modelo. Te cambia sin avisar.
+Martín: Exacto. Y agrega un comando para sumar endpoints compatibles con OpenAI, y embeddings que aceptan contenido binario de distintos tipos.
+
+## Para desarrolladores
+Lucía: Vamos a lo que le cambia el día a quien programa o arma datos.
+Martín: Primero, lo de llm. Si lo usás en scripts, fijá el modelo explícito. Que el default cambie es bueno para el bolsillo, pero rompe la reproducibilidad.
+Lucía: Y lo de endpoints compatibles con OpenAI te ahorra tocar archivos de configuración a mano para enchufar otro proveedor.
+Martín: Segundo, Dependabot con APM. Si ya tenés skills o instrucciones de agentes compartidas entre repos, ahora las podés versionar y recibir pull requests cuando cambian.
+Lucía: Y eso obliga a algo bueno: revisar un cambio de prompt como revisás un cambio de código.
+Martín: Tercero, para los que trabajan con JetBrains y Copilot. Las tareas en la nube son cómodas, pero no tenés tope de gasto dentro de Air.
+Lucía: Si sos admin, mirá el consumo del lado de Copilot, porque en Air no lo vas a ver.
+Martín: Y el cuarto es más de patrón que de herramienta.
+Lucía: ¿Cuál?
+Martín: Tanto Dharma como Palette dicen lo mismo con otras palabras. Un modelo chico, entrenado para una tarea acotada, más un chequeo automático a la salida.
+Lucía: El null cuando el campo no está, y el arnés que solo acepta una reparación si mejora la slide.
+Martín: Eso. Si armás pipelines de datos con IA, esa validación a la salida vale más que cambiar de modelo.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero ir por los estudios contables.
+Martín: Dale, cambiamos un poco de la pyme.
+Lucía: Pensá en un estudio chico que recibe facturas y comprobantes de sus clientes por WhatsApp o por mail. Fotos, PDFs, de todo.
+Martín: Y alguien los carga a mano en una planilla.
+Lucía: Exacto. Proveedor, número, fecha, total. Horas de tipeo por mes y errores de carga.
+Martín: ¿Qué se automatiza?
+Lucía: La extracción. Se define un esquema fijo con los campos que el estudio ya usa, y un modelo como el de Dharma devuelve el JSON. Eso va a la planilla o al sistema que tengan.
+Martín: ¿Y qué haría falta?
+Lucía: Primero, una muestra de documentos reales del estudio para medir cuánto acierta en castellano y con comprobantes argentinos. No hay que asumir el número del blog.
+Martín: Segundo, revisión humana. Lo que vuelve null o no cierra con el total se marca para que alguien lo mire.
+Lucía: Tercero, decidir dónde corre. Si son datos de clientes, conviene correrlo en infraestructura propia y no subirlo a cualquier demo.
+Martín: Y confirmar la licencia antes de usarlo comercialmente.
+Lucía: Sí. La idea es ofrecer una prueba acotada para medir, no prometer que se termina la carga manual.
+
+## Una cosa para probar hoy
+Martín: Para probar hoy, en menos de media hora, propongo la demo de Dharma Field Extractor.
+Lucía: Contame el paso a paso.
+Martín: Uno: buscá tres o cuatro comprobantes que no tengan datos sensibles. Facturas viejas tuyas, o ejemplos de internet.
+Lucía: Importante lo de sin datos sensibles, porque la demo es de un tercero.
+Martín: Dos: entrá a la demo, que el link está en las notas, y subí el primero sin esquema. Mirá qué campos encuentra solo.
+Lucía: Tres: subí el mismo con un esquema chico. Proveedor, número, fecha de vencimiento y total.
+Martín: Cuatro: agregá un campo que sepas que no está en el documento, y fijate si de verdad devuelve null.
+Lucía: Y cinco: anotá en una planilla cuántos campos sacó bien de cada documento.
+Martín: Con eso en media hora tenés una idea propia de si sirve para comprobantes en castellano, en vez de quedarte con el número del blog.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: GitHub Copilot llegó al asistente de código de Xcode, en preview pública. No entró porque más allá de que está disponible, hay poco dato.
+Lucía: La API de métricas de Copilot ahora distingue cuando usás tu propia clave o modelos personalizados de empresa. Es un detalle administrativo, de impacto acotado.
+Martín: Simon Willison probó Qwen tres punto ocho de veintisiete mil millones de parámetros en su laptop para interpretar pesos de redes neuronales, con límites. Curioso, pero poco práctico por ahora.
+Lucía: Y Kimi K tres punto uno Pro habría publicado pesos abiertos, según un resumen de Latent Space. No entró porque la licencia y las cifras no están confirmadas en una fuente primaria.
+Martín: Si querés que sigamos alguna de estas, avisanos.
+Lucía: Eso fue todo por hoy. Nos escuchamos mañana en Radar IA.
