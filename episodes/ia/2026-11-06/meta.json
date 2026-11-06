@@ -1,0 +1,40 @@
+{
+  "title": "Radar IA, 6 de noviembre: Copilot en Xcode, métricas de uso en Copilot y una voz de 75 megas con español",
+  "summary": "Copilot llega como asistente de código de Xcode en preview pública y la API de métricas de Copilot suma datos de BYOK y de code review. Además, Phonon, una voz que corre sin servidor, los números de adopción de IA en empresas de Estados Unidos y un experimento con Qwen local. Y quedaron afuera Cosmos tres y datasette-apps.",
+  "stories": [
+    {
+      "title": "GitHub Copilot llega al asistente de código de Xcode (preview pública)",
+      "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant"
+    },
+    {
+      "title": "La API de métricas de Copilot reporta uso BYOK y modelos custom de empresa",
+      "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api"
+    },
+    {
+      "title": "Qwen 3.8 27B local puede interpretar pesos de una red (y sus límites)",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/"
+    },
+    {
+      "title": "La API de métricas de Copilot suma detalle de code review y tasa de comentarios atendidos",
+      "url": "https://github.blog/changelog/2026-11-05-usage-metrics-api-adds-code-review-details-and-addressed-rate"
+    },
+    {
+      "title": "Phonon TTS: voz on-device de ~65-75 MB con español",
+      "url": "https://huggingface.co/blog/phonon-tts"
+    },
+    {
+      "title": "Adopción de IA en empresas de EE.UU.: datos del Census Bureau a octubre 2026",
+      "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Cosmos 3 de NVIDIA: modelos abiertos para simulación interactiva de mundos",
+      "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+    },
+    {
+      "title": "datasette-apps 0.3a0: apps HTML creadas y alojadas desde Datasette con el agente",
+      "url": "https://simonwillison.net/2026/Nov/4/datasette-apps/"
+    }
+  ]
+}

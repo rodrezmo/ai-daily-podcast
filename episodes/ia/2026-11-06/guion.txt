@@ -1,0 +1,96 @@
+## Titulares
+Lucía: Buen día, hoy es viernes seis de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay bastante GitHub, un experimento raro con un modelo local, una voz que entra en un pendrive y un número sobre adopción de IA en empresas.
+Lucía: Arranquemos por GitHub. Copilot ya se puede configurar como el asistente de código integrado de Xcode.
+Martín: Está en preview pública, salió en el changelog de GitHub el cuatro de noviembre.
+Lucía: Hace falta Xcode veintisiete punto tres beta y macOS Tahoe veintiséis punto seis o superior.
+Martín: O sea, todavía es terreno de betas. No es para meterlo mañana en la máquina con la que trabajás.
+Lucía: Lo bueno es que funciona con todos los planes de Copilot. Y la extensión anterior sigue disponible.
+Martín: Mi opinión: si hacés apps para iOS o Mac y ya pagás Copilot, te ahorrás otra suscripción. Si no, no te cambia nada.
+Lucía: Y va en la misma línea de lo que contamos ayer, Copilot en JetBrains Air vía Agent Client Protocol.
+Martín: Y el miércoles, Android Studio Rabbit dos abriéndose a traer tu propio agente. Copilot se está metiendo en todos los editores.
+Lucía: Segunda y tercera, juntas, porque son de la misma API. La API de métricas de Copilot.
+Martín: El tres de noviembre GitHub sumó dos cosas. Primero, separa el uso con claves propias, lo que llaman BYOK, del uso de modelos custom de empresa.
+Lucía: BYOK local incluye la CLI, la app de Copilot con claves propias, o modelos corriendo en Ollama o LM Studio.
+Martín: Y los modelos custom de empresa aparecen con un campo nuevo, is custom enterprise model.
+Lucía: Ojo con un detalle que dicen ellos mismos. Los conteos de BYOK local son un piso.
+Martín: Claro, si alguien tiene la telemetría apagada, no se cuenta. Y no hay datos hacia atrás, arranca desde ahora.
+Lucía: Y el cinco de noviembre agregaron detalle del code review de Copilot.
+Martín: Los reportes diarios por repositorio traen un objeto nuevo, copilot code review.
+Lucía: Ahí ves cuántos comentarios de Copilot se evaluaron y cuántos se atendieron, por repositorio. Desglosado por severidad, tipo y personalización.
+Martín: Y cuenta los PR que se mergearon después de la revisión de Copilot sin que un humano pidiera cambios.
+Lucía: Mi opinión es que esto es más útil que cualquier anuncio de modelo nuevo. Te deja ver si alguien le hace caso a la IA o si los comentarios se ignoran.
+Martín: Coincido. Aunque esa última métrica hay que leerla con cuidado. Que nadie pida cambios no quiere decir que el código esté bien.
+Lucía: Justo. Puede querer decir que nadie revisó.
+Martín: Cuarta. Simon Willison repitió un experimento de un paper sobre programación en el espacio de pesos.
+Lucía: Contame qué es eso, porque suena a humo.
+Martín: Le dan a un modelo los pesos de redes chiquitas entrenadas en juegos de grilla. Y le preguntan a qué juego corresponde cada una.
+Lucía: Ah, o sea, que mire los números y adivine qué aprendió la red.
+Martín: Eso. Lo probó con Qwen tres punto ocho de veintisiete mil millones de parámetros, en local, con LM Studio. Un archivo de diecisiete gigas.
+Lucía: ¿Y?
+Martín: Acertó Breakout con ochenta y ocho por ciento de confianza. Tardó cincuenta y dos minutos.
+Lucía: ¿Cincuenta y dos minutos para una respuesta?
+Martín: Sí. Pong lo acertó con setenta y cinco por ciento, en poco más de una hora. Pac-Man con setenta y dos por ciento, en cuarenta y seis minutos.
+Lucía: ¿Y falló alguno?
+Martín: Freeway. Y para comparar, Kimi K tres punto uno Pro acertó Breakout en menos de diez minutos.
+Lucía: Mi opinión: es un dato interesante sobre lo que razona un modelo local. Pero es curiosidad, no herramienta. Casi una hora por pregunta no entra en ningún flujo de trabajo.
+Martín: Y es una persona probándolo en su máquina, no un estudio. Está bien tomarlo así.
+Lucía: Quinta. Phonon, un modelo de texto a voz que corre en el dispositivo, sin servidor ni red.
+Martín: Lo presenta Gradium en el blog de Hugging Face. Pesa entre sesenta y cinco y setenta y cinco megas.
+Lucía: Hay dos versiones. Una es solo inglés, con licencia Apache dos punto cero.
+Martín: Y la otra cubre inglés, francés, alemán, español y portugués. Pero con licencia no comercial.
+Lucía: Ese es el detalle que importa. La que habla español no la podés usar en un producto que cobres.
+Martín: Gradium dice que lidera el ranking abierto de TTS de Hugging Face en inteligibilidad en alemán y español.
+Lucía: Y en latencia en CPU, entre veintiocho y treinta y ocho milisegundos hasta el primer audio, en percentil noventa y cinco y con las versiones en inglés.
+Martín: Eso lo dice la propia empresa. Vale la pena probarlo antes de creerlo.
+Lucía: Mi opinión: para prototipos y pruebas está muy bien. Para un producto en español, la licencia te frena.
+Martín: Sexta y última. Willison también publicó un gráfico con la encuesta de empresas del Census Bureau de Estados Unidos.
+Lucía: En firmas de doscientos cincuenta empleados o más, el uso de IA llegó a cuarenta coma siete por ciento.
+Martín: Es un promedio de seis relevamientos, publicado el veintidós de octubre.
+Lucía: Y en las empresas chicas está entre veintiuno y veinticuatro por ciento.
+Martín: Un detalle: la pregunta cambió en noviembre de dos mil veinticinco. No se puede comparar con los datos de antes.
+Lucía: Mi opinión: es de Estados Unidos, no de acá. Pero sirve como referencia. Ni en las grandes llega a la mitad.
+Martín: Y en las chicas, más o menos una de cada cinco. Bastante lejos del discurso de que todo el mundo ya usa IA.
+
+## Para desarrolladores
+Lucía: ¿Qué te llevás para el día a día?
+Martín: Lo de las métricas de Copilot, sin duda. Si tenés acceso de admin en la organización, ahora podés saber cuánto se usan los modelos propios y cuánto se le hace caso al code review.
+Lucía: Y si armás tableros, pensá bien los números de BYOK. Son un piso, no el total.
+Martín: Exacto. Si alguien te pregunta cuánto se usa, la respuesta honesta es al menos tanto.
+Lucía: Y no hay datos de días anteriores. Si querés una serie, empezá a guardar desde hoy.
+Martín: Lo segundo es Xcode. Si programás para Apple, ya podés probar Copilot ahí, siempre en beta.
+Lucía: Lo tercero es Phonon. Si necesitás voz sin pagar una API y sin red, hay una opción liviana.
+Martín: Pero fijate la licencia antes de meterla en nada que se venda.
+Lucía: Y lo de Qwen te sirve más como recordatorio. Un modelo local de diecisiete gigas puede razonar cosas raras, pero lento.
+
+## Oportunidades de consultoría
+Martín: Hoy no vamos con la pyme. Hoy el perfil es un equipo interno de desarrollo o de datos en una empresa mediana.
+Lucía: Que paga Copilot para varias personas y no sabe bien si le sirve.
+Martín: Ese es el problema. Alguien firmó las licencias y ahora le preguntan si vale la pena. Y no tiene números.
+Lucía: Entonces la idea es un informe de uso de IA para ese equipo. Armado con la API de métricas de Copilot.
+Martín: Qué se automatiza: una tarea programada que baje los reportes diarios por repositorio.
+Lucía: Que guarde el objeto de code review: comentarios evaluados, atendidos, por severidad y por tipo.
+Martín: Que separe el uso con modelos propios del uso con modelos de empresa.
+Lucía: Y que arme un tablero simple, por repositorio y por semana.
+Martín: ¿Qué hace falta? Acceso de admin a la organización en GitHub, un lugar donde guardar los datos, y la herramienta de tableros que ya usen.
+Lucía: Y un punto importante: explicar las limitaciones desde el día uno. Los conteos de BYOK son un piso. Y no hay historia para atrás.
+Martín: No es un informe que dice si Copilot conviene o no. Es un informe que muestra cómo se usa. La decisión la toman ellos.
+
+## Una cosa para probar hoy
+Lucía: Para probar hoy, en menos de media hora: escuchar a Phonon en español en tu propia máquina.
+Martín: Paso uno. Entrá al blog de Hugging Face y buscá la nota de Phonon. El link está en las notas.
+Lucía: Paso dos. Elegí la versión de cuarenta millones de parámetros, que es la que tiene español. Es para probar en uso personal, recordá la licencia.
+Martín: Paso tres. Seguí los ejemplos de la nota para correrlo en tu computadora. Para usarlo sin conexión, primero bajá los pesos y las voces.
+Lucía: Paso cuatro. Pasale una frase en español que uses de verdad. Un aviso, un recordatorio, lo que sea.
+Martín: Paso cinco. Fijate cuánto tarda en empezar a sonar en tu CPU. Ellos dicen entre veintiocho y treinta y ocho milisegundos, medido en inglés.
+Lucía: Y paso seis, escuchalo con atención. Si se entiende bien en nuestro español, o si suena a otra parte.
+Martín: Con eso ya sabés si te sirve para un prototipo.
+
+## Quedaron afuera
+Lucía: Dos que quedaron afuera hoy.
+Martín: Una es Cosmos tres de NVIDIA, modelos abiertos para simulación interactiva de mundos.
+Lucía: No entró porque no encontramos detalle verificable: ni tamaños, ni licencia, ni datos. Y es más para robótica que para nosotros.
+Martín: La otra es datasette-apps cero punto tres alfa, de Simon Willison. Apps HTML creadas y alojadas desde Datasette con el agente.
+Lucía: Ayer mencionamos datasette-agent. Esta es una versión alfa, bastante de nicho, y pesaba poco como noticia.
+Martín: Si querés que alguna de las dos entre, avisanos.
+Lucía: Eso es todo por hoy. Buen fin de semana y nos escuchamos en el próximo episodio.
