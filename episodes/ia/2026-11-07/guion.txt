@@ -1,0 +1,108 @@
+## Titulares
+Lucía: Buen día, hoy es sábado siete de noviembre y esto es Radar IA.
+Martín: Hola. Hoy tenemos seis notas, y por suerte casi todas con fuente primaria.
+Lucía: Arranco con una que nos toca de cerca a los que trabajamos con datos. Salió datasette-apps, versión cero punto tres alfa cero.
+Martín: El jueves hablamos de datasette-agent, el chat del agente al lado de las páginas de Datasette. Esto va un paso más allá, ¿no?
+Lucía: Exacto. Son apps HTML que viven dentro de Datasette y que el agente puede crear y gestionar.
+Lucía: Ahora podés mencionar una app con numeral en el chat, y el agente tiene herramientas para agregar o quitar consultas guardadas.
+Martín: Y lo importante: las consultas de escritura piden aprobación del usuario.
+Lucía: Sí. Además las apps se abren a pantalla completa. Necesita Datasette uno punto cero alfa cuarenta y uno o posterior.
+Martín: Mi opinión: el patrón está muy bueno. Un mini tablero o un formulario armado por un modelo, con control sobre lo que escribe. Pero es alfa. No lo pondría en producción todavía.
+Lucía: De acuerdo. Segunda nota, en el blog de Hugging Face. Se llama Phonon TTS, un modelo de texto a voz que corre en el dispositivo.
+Martín: ¿De qué tamaño estamos hablando?
+Lucía: Entre sesenta y cinco y setenta y cinco megas. Y hay dos versiones.
+Lucía: La treinta y uno, solo inglés, con licencia Apache dos punto cero. Y la cuarenta, con cinco idiomas, incluido español.
+Martín: Y acá viene el pero.
+Lucía: Sí. La que tiene español es no comercial.
+Martín: ¿Y la velocidad?
+Lucía: El primer audio sale en CPU en unos treinta milisegundos, entre veintiocho y treinta y ocho en el percentil noventa y cinco. Lo comparan con Pocket TTS, que tarda ciento sesenta y cinco.
+Martín: O sea, varias veces más rápido. Y dicen que pasó las doscientas mil descargas en dos semanas.
+Lucía: Opinión: muy útil para quien no quiere mandar texto a un servidor. Pero si querés usarlo en español para un cliente, la licencia te frena.
+Martín: Tercera. GitHub anunció en su changelog que el agente de GitHub en Slack y en Teams pasa a disponibilidad general.
+Lucía: ¿Qué trae?
+Martín: En Teams suma un canvas para revisar planes y cambios. Detecta solo el repo a partir del mensaje. Y los issues y pull requests que se crean desde la conversación quedan atribuidos.
+Lucía: Eso de la atribución no es menor. Saber quién pidió qué.
+Martín: Coincido. Lo que no dice es precio ni en qué planes entra. Así que no sabemos cuánto cuesta.
+Lucía: Y esto sigue la línea de lo que contamos el jueves, Copilot disponible en JetBrains Air. GitHub está poniendo el agente en todos lados.
+Martín: Cuarta, y esta es más curiosa. Simon Willison repitió en su laptop un experimento de un paper sobre programación en el espacio de pesos.
+Lucía: Contame qué hizo, porque suena raro.
+Martín: Le pasó a un modelo local los pesos de redes neuronales y le pidió que adivinara qué hacían, sin herramientas.
+Martín: Usó Qwen tres punto ocho, veintisiete mil millones de parámetros, cuantizado a cuatro bits. Pesa unos diecisiete gigas.
+Lucía: ¿Y acertó?
+Martín: Identificó Pac-Man, Pong y Breakout. Tardó entre cuarenta y seis y sesenta y cinco minutos cada uno. Con Freeway falló.
+Lucía: Y comparó con otro modelo, ¿no?
+Martín: Sí, Kimi K tres punto uno Pro lo resolvió con Breakout en unos diez minutos.
+Lucía: Opinión honesta: es una curiosidad. Poco accionable. Pero tiene números concretos y se puede reproducir, que no es poco.
+Martín: Quinta. También vía Willison, un gráfico con datos del Censo de Estados Unidos sobre adopción de IA en empresas.
+Lucía: ¿Qué dicen los números?
+Martín: En empresas de doscientos cincuenta empleados o más, cerca del cuarenta y uno por ciento dice usar IA.
+Martín: En las de cien a doscientos cuarenta y nueve, un tercio. Y en las chicas, entre veintiuno y veinticuatro por ciento.
+Lucía: Los datos son del veintidós de octubre. Pero ojo, que la serie tiene trampa.
+Martín: Sí. La pregunta cambió de redacción en noviembre del año pasado.
+Lucía: Y desde el diecinueve de octubre dice "Super Intelligence", por una orden ejecutiva.
+Martín: Lo cual es bastante insólito para una encuesta oficial.
+Lucía: Mi opinión: sirve para dimensionar. Las empresas chicas están bastante atrás. Pero con ese quiebre metodológico, no comparemos peras con manzanas.
+Martín: Y la sexta. Dropbox firmó la compra de Tigris Data por unos trescientos cincuenta millones de dólares en efectivo.
+Lucía: Esto sale de un formulario ocho K presentado ante la SEC, así que es dato firme.
+Martín: Tigris ofrece almacenamiento de objetos para cargas de IA. El acuerdo se firmó el tres de noviembre y esperan cerrarlo en el cuarto trimestre.
+Lucía: Y lanzan algo nuevo, ¿no?
+Martín: DBX Agent Cloud. Arranca con almacenamiento compatible con S tres. El anuncio público fue el cinco.
+Lucía: Opinión: es una señal de que el almacenamiento para agentes se está volviendo una categoría propia. Para una pyme de acá, impacto chico por ahora.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia hoy a alguien que programa o arma datos?
+Lucía: Para mí lo más útil es datasette-apps. Porque resuelve algo que siempre cuesta: darle a alguien una interfaz sobre sus datos sin escribir un front entero.
+Martín: Y con el detalle de que lo de escritura pide aprobación.
+Lucía: Exacto. Ese es el patrón que vale copiar, uses Datasette o no. El modelo puede leer libre, pero para escribir, pasa por una persona.
+Martín: Lo segundo es Phonon. Si alguna vez necesitaste voz y no querías depender de una API, ahora hay una opción de setenta megas que corre en CPU.
+Lucía: Pero leé la licencia antes de entusiasmarte. Español, no comercial.
+Martín: Sí. Para prototipos o uso interno puede servir. Para un producto, revisalo bien.
+Lucía: Y lo tercero, si tu equipo vive en Slack o Teams, lo de GitHub. Pedir una tarea de código desde el chat y que quede atribuida.
+Martín: Yo ahí dudo un poco. Delegar desde el chat es cómodo, pero hay que ver qué revisión queda en el medio.
+Lucía: Para eso está el canvas en Teams, para revisar el plan antes. Pero sí, sin precios, cuesta decidir.
+Martín: Y lo de Qwen, como dato lateral: un modelo de diecisiete gigas corriendo en una laptop razona sobre pesos durante casi una hora. Los locales ya aguantan tareas largas.
+Lucía: Lentos, eso sí. El otro modelo lo hizo en diez minutos.
+Martín: ¿Y lo de Dropbox? ¿Le sirve a alguien que programa hoy?
+Lucía: Poco, por ahora. Lo único concreto es que DBX Agent Cloud arranca compatible con S tres.
+Lucía: O sea, si ya trabajás con esa interfaz, en teoría no tendrías que cambiar mucho código para probarlo.
+Martín: En teoría. Todavía no hay mucho más que eso para evaluar.
+Lucía: Y la compra ni siquiera cerró. Esperan hacerlo en el cuarto trimestre.
+
+## Oportunidades de consultoría
+Lucía: Vamos con la idea de consultoría. Hoy no quiero ir a la pyme de siempre.
+Martín: ¿A quién se lo ofrecerías?
+Lucía: A un estudio contable o de profesionales independientes. Tienen datos de clientes repartidos en planillas, y cada consulta es abrir Excel, filtrar y copiar.
+Martín: Y ahí entra lo de datasette-apps.
+Lucía: Claro. La idea sería cargar esas planillas en una base, y que un agente arme mini tableros y formularios encima.
+Lucía: Por ejemplo, ver el estado de cada cliente, o cargar un dato nuevo desde un formulario.
+Martín: Y lo que se automatiza es el armado de esas vistas. El estudio pide en lenguaje natural y el agente crea la app.
+Lucía: Con la ventaja de que cualquier consulta que escriba en la base pide aprobación. Eso para un estudio es clave, porque nadie quiere que un modelo toque datos sin control.
+Martín: ¿Qué haría falta?
+Lucía: Primero, ordenar y limpiar las planillas. Eso es la mitad del trabajo.
+Lucía: Después, una instalación de Datasette donde ellos puedan entrar, y definir quién aprueba las escrituras.
+Martín: Y ojo con algo. Es un estudio con datos de terceros, así que hay que pensar dónde corre todo y quién tiene acceso.
+Lucía: Sí, eso se charla antes de tocar una sola planilla.
+Martín: Y decirles la verdad: que es una herramienta en alfa. Yo lo plantearía como un piloto chico, con una sola planilla.
+Lucía: Exacto. Una idea para explorar, no algo para vender llave en mano.
+
+## Una cosa para probar hoy
+Martín: Bueno, ¿qué probamos hoy en menos de media hora?
+Lucía: Probá Phonon en tu máquina. Te propongo esto, paso a paso.
+Lucía: Uno: entrá al post de Phonon en el blog de Hugging Face. El link está en las notas.
+Lucía: Dos: elegí la versión. Si querés probar en español, es la cuarenta. Acordate que es no comercial.
+Martín: Y si tu idea es usarlo en algo comercial, probá la treinta y uno en inglés, que es Apache.
+Lucía: Tres: bajala y generá audio de un párrafo corto, siempre en CPU, sin placa de video.
+Lucía: Cuatro: fijate cuánto tarda en salir el primer sonido. Ellos hablan de unos treinta milisegundos.
+Martín: Y cinco: escuchalo con atención. Fijate si te convence cómo suena en español.
+Lucía: Con eso, en un rato sabés si te sirve o no.
+
+## Quedaron afuera
+Martín: Antes de irnos, algunas que quedaron afuera, por si quieren que les demos más lugar.
+Lucía: GitHub también actualizó Copilot code review, con administración por API y un resumen más compacto.
+Martín: Quedó afuera porque es un cambio incremental. Lo de Slack y Teams tenía más impacto.
+Lucía: Baidu publicó ERNIE cinco punto cinco Flash Base, un modelo de mezcla de expertos.
+Martín: No entró porque es un modelo base, sin ajuste para seguir instrucciones, y no pudimos verificar la fecha de publicación.
+Lucía: Y NVIDIA lanzó cuatro modelos abiertos Cosmos tres, para simulación interactiva del mundo.
+Martín: Son de nicho, para conducción y robótica. Además el tamaño que informan no era consistente.
+Lucía: Si alguna les interesa, avisen.
+Martín: Eso es todo por hoy. Buen sábado y nos escuchamos en el próximo Radar IA.
