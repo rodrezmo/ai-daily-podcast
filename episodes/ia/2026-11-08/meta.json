@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 8 de noviembre de 2026: Gemini Omni 1.2 Flash, Inkling 2 Small y Hy4",
+  "summary": "Seis notas del día: video de hasta quince segundos con Gemini Omni 1.2 Flash, el modelo Inkling 2 Small de Thinking Machines, Hy4 de Tencent con uso de computadora, Ling-3.2-flash con un millón de contexto, tests chicos para Transformers y el cierre del grupo AI Frontiers de Microsoft Research. Además, una idea de consultoría, algo para probar hoy y lo que quedó afuera.",
+  "stories": [
+    {
+      "title": "Google lanza Gemini Omni 1.2 Flash: video de hasta 15 s, 30% más barato",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+    },
+    {
+      "title": "Thinking Machines presenta Inkling 2 Small: MoE de 594B con 17B activos",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+    },
+    {
+      "title": "Tencent lanza Hy4: modelo con visión y computer use, API a USD 0,90/2,70 por millón de tokens",
+      "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+    },
+    {
+      "title": "Ant Group publica Ling-3.2-flash: 560B totales, 25B activos y 1M de contexto",
+      "url": "https://developer.ant-ling.com/en/docs/getting-started/changelog"
+    },
+    {
+      "title": "Model Integration Contracts: tests chicos en CPU para evitar bugs silenciosos en Transformers",
+      "url": "https://huggingface.co/blog/transformers-mic"
+    },
+    {
+      "title": "Langford: terminó el grupo AI Frontiers de Microsoft Research",
+      "url": "https://hunch.net/?p=13764006"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "OpenAI presenta GPT-6 Cyber, solo para clientes aprobados de Daybreak Red",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber/"
+    },
+    {
+      "title": "Pruna publica P-H3-Image: generación y edición de imágenes abierta, 5x más rápida",
+      "url": "https://www.pruna.ai/blog/oss-p-h3-image-launch"
+    },
+    {
+      "title": "Semana de pánico en el mercado de IA: Anthropic apunta a un IPO con run rate de USD 80B",
+      "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/"
+    },
+    {
+      "title": "Apiiro: la opción Don't Ask Again de Claude Code expone contraseñas en 1.122 archivos públicos de GitHub",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again"
+    }
+  ]
+}

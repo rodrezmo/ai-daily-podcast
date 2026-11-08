@@ -1,0 +1,124 @@
+## Titulares
+Lucía: Buen día, hoy es domingo ocho de noviembre y esto es Radar IA.
+Martín: Hola, hola. Tenemos seis notas, tres modelos nuevos, un poco de video y una noticia medio triste sobre agentes.
+Lucía: Arranco con Google. Lanzó Gemini Omni uno punto dos Flash, que genera y edita video.
+Martín: ¿De cuánto?
+Lucía: Clips de tres a quince segundos. En setecientos veinte p sale siete centavos de dólar por segundo.
+Lucía: Eso es un treinta por ciento menos que la versión uno punto uno.
+Martín: Y se puede escalar después a mil ochenta p o a cuatro K.
+Lucía: Está en la API de Gemini, en Vertex y en Google Vids, y en Vids dicen que los clips de quince segundos no tienen costo extra.
+Martín: Mi opinión: quince segundos no es una película, pero es justo lo que dura un video de producto para redes.
+Martín: Lo que importa acá es el precio, no la magia. Un clip de diez segundos cuesta unos setenta centavos de dólar.
+Lucía: Y eso si sale bien a la primera, que con video casi nunca pasa.
+Martín: Cierto. Hay que contar los intentos que tirás a la basura.
+Lucía: Igual, para un comercio o una agencia que hoy no hace video porque no le da el presupuesto, cambia la cuenta.
+Lucía: Vamos con la segunda. Thinking Machines presentó Inkling dos Small.
+Martín: Small, pero con casi seiscientos mil millones de parámetros.
+Lucía: Exacto. Es un modelo de mezcla de expertos, y usa diecisiete mil millones activos por vez. Acepta imágenes.
+Martín: ¿Y se puede bajar?
+Lucía: Todavía no. Por ahora está en Tinker, su plataforma, con pesos cerrados.
+Lucía: Prometen publicar los pesos con licencia Apache dos la semana que viene, después de pruebas de seguridad.
+Martín: Y tiran un número: ochenta y seis por ciento en SWE-bench Pro versión dos, la parte difícil.
+Lucía: Que son cifras que publica la empresa. No encontramos una medición independiente todavía.
+Martín: Mi lectura: si los pesos salen como dicen, es una opción abierta fuerte. Hasta que salgan, es una promesa.
+Lucía: El domingo pasado contamos que Mistral Large cuatro llegó a Hugging Face con pesos abiertos. La pelea de los modelos abiertos grandes viene movida.
+Martín: Tercera. Tencent lanzó Hy cuatro, un modelo con visión y uso de computadora.
+Lucía: O sea, puede mirar una pantalla y operar.
+Martín: La API ya está en OpenRouter y en otras plataformas. Noventa centavos de dólar por millón de tokens, y dos con setenta en la otra punta.
+Lucía: ¿Y los pesos?
+Martín: Dicen que los publican en unos días, junto con las fichas técnicas. La licencia no está especificada.
+Lucía: Ahí está el detalle. Lo venden como abierto y todavía no sabemos bajo qué condiciones.
+Martín: Coincido. Barato para probar agentes, pero yo no apostaría nada serio hasta ver la licencia.
+Lucía: Cuarta, más modelos grandes. Ant Group publicó Ling tres punto dos flash.
+Martín: Dejame adivinar: mezcla de expertos.
+Lucía: Sí. Quinientos sesenta mil millones de parámetros, veinticinco mil millones activos, y un millón de tokens de contexto.
+Lucía: Y es gratis las dos primeras semanas después del lanzamiento.
+Martín: ¿Licencia?
+Lucía: No figura. Precio después de esas dos semanas, tampoco.
+Martín: Un millón de tokens suena bárbaro, pero el miércoles contamos lo de StateBench, de Ai2.
+Lucía: Sí, que los modelos de frontera caen a trece por ciento o menos cuando tienen que seguir variables en textos largos.
+Martín: Entonces, que entre mucho texto no quiere decir que lo entienda todo. Vale probarlo gratis, pero midiendo.
+Lucía: Quinta, una más de ingeniería. Hugging Face propone algo que llaman Model Integration Contracts para Transformers.
+Martín: Contame, que esta me gustó.
+Lucía: La idea es tener tests chicos que corren en CPU, con versiones reducidas de los modelos.
+Lucía: Los archivos de prueba pesan sesenta y seis megas, contra más de mil doscientos del original.
+Martín: ¿Y encontraron algo?
+Lucía: Un bug en la atención de UMT cinco que estuvo casi dos meses en la rama principal sin que nadie lo viera.
+Martín: Eso es lo que más me gusta de la nota. No es teoría, encontraron un error de verdad que se les había pasado.
+Lucía: Y la última. John Langford contó en su blog que se terminó el grupo AI Frontiers de Microsoft Research.
+Martín: ¿El de Autogen?
+Lucía: Ese. Eran unas cincuenta personas trabajando en agentes, y se cerró tras la reorganización en Microsoft AI de septiembre.
+Martín: Sin dramatizar: si tenés algo armado sobre Autogen, el futuro del framework queda en duda.
+Lucía: No dice que lo abandonen. Dice que el equipo que lo empujaba ya no existe como tal.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le sirve a quien programa o arma datos de todo esto?
+Lucía: Para mí lo más útil es lo de Hugging Face, lejos.
+Lucía: Si desplegás modelos propios, la lección es probar el camino por defecto, no solo el modo eager que usás para depurar.
+Martín: Explicalo para quien no vive en PyTorch.
+Lucía: Muchas veces el código que probás no es el mismo que corre en producción. Hay optimizaciones que cambian el camino.
+Lucía: Y el bug de UMT cinco vivía justo en ese otro camino.
+Martín: Y como los tests corren en CPU con archivos chicos, los podés meter en la integración continua sin pagar una GPU.
+Lucía: Exacto. Sesenta y seis megas entran en cualquier pipeline.
+Martín: Lo segundo es lo de Autogen. Si tenés agentes armados ahí, no hace falta migrar mañana.
+Martín: Pero sí conviene tener separada la lógica de negocio del framework, para poder moverte si hace falta.
+Lucía: Y tercero, con tantos modelos nuevos baratos, la tentación es cambiar de modelo cada semana.
+Martín: Ahí va mi consejo: tené un set chico de tareas tuyas para comparar. Los benchmarks de la empresa no alcanzan.
+Lucía: Y con Hy cuatro y Ling, fijate la licencia antes de mandar datos de clientes. Hoy no está clara en ninguno de los dos.
+Martín: Y una más sobre Ling. Si trabajás con documentos largos, contratos o actas, el millón de tokens gratis es tentador.
+Lucía: Lo es. Pero yo lo probaría con documentos públicos, no con los de un cliente.
+Martín: Y con preguntas cuya respuesta ya conocés. Así ves si de verdad encuentra el dato en la página trescientos.
+Lucía: Por lo que contamos de StateBench, yo esperaría que en algunas cosas falle. Mejor saberlo antes.
+Martín: Y sobre Inkling, si los pesos salen la semana que viene, ahí sí vale la pena mirarlo con tus propias pruebas.
+Lucía: Mientras tanto, el ochenta y seis por ciento es un número de folleto.
+
+## Oportunidades de consultoría
+Lucía: Vamos a la parte de consultoría. Hoy no quiero ir por la pyme.
+Martín: ¿Por dónde, entonces?
+Lucía: Por una institución o un organismo público chico. Un municipio, por ejemplo.
+Lucía: El problema: tienen que avisar cambios todo el tiempo. Horarios, requisitos de un trámite, cortes de calle.
+Lucía: Y el equipo de comunicación son dos o tres personas que hacen todo a mano.
+Martín: Y ahí entra el video de Gemini Omni.
+Lucía: La idea es esta. Los avisos ya viven en una planilla, con fecha, tema y texto.
+Lucía: Un script toma cada fila y pide un clip corto, de diez o quince segundos, con un estilo fijo.
+Martín: Y a la par genera el texto para redes y el subtitulado.
+Lucía: Claro. Y nada se publica sin que una persona lo revise y lo apruebe.
+Martín: Eso es clave en el sector público. Un video que muestra mal un requisito es un problema.
+Lucía: ¿Qué haría falta? Acceso a la API de Gemini o a Vertex, la planilla ordenada y un criterio visual acordado.
+Martín: Y también reglas claras sobre qué se puede generar y qué no. Nada de caras de funcionarios, por ejemplo.
+Lucía: Y avisar que el video está hecho con IA. En un organismo público, la transparencia no es opcional.
+Martín: ¿Y por dónde arrancarías?
+Lucía: Por un solo tipo de aviso. Digamos, cambios de horario de atención. Es repetitivo y el formato casi no cambia.
+Martín: Y medís cuánto tiempo lleva hoy hacerlo a mano, para tener con qué comparar.
+Lucía: Exacto. Si después de un mes no se nota la diferencia, se deja ahí y listo.
+Lucía: Con siete centavos por segundo, el costo del piloto es fácil de calcular antes de arrancar.
+Martín: Es una idea para charlar, no una promesa de que vaya a ahorrar tiempo. Eso se mide con el piloto.
+
+## Una cosa para probar hoy
+Martín: La cosa para probar hoy. Propongo comparar Hy cuatro contra el modelo que ya usás.
+Lucía: ¿Media hora alcanza?
+Martín: Alcanza. Paso uno: entrá a OpenRouter, que es donde ya está la API de Hy cuatro.
+Martín: Paso dos: elegí cinco tareas reales de tu semana. Un resumen, una consulta SQL, una extracción de datos de un texto.
+Lucía: Y sin datos sensibles, que la licencia todavía no está.
+Martín: Exacto. Paso tres: corré las cinco tareas en Hy cuatro y en tu modelo de siempre, con el mismo prompt.
+Martín: Paso cuatro: anotá en una planilla si la respuesta sirve, cuánto tardó y cuántos tokens gastó.
+Lucía: Paso cinco, el que nadie hace: decidí antes qué cuenta como respuesta buena.
+Martín: Sí, porque si no, terminás eligiendo por la que te cae más simpática.
+Lucía: Y si te sobra tiempo, probá una tarea con una captura de pantalla, que es lo que Hy cuatro promete además del texto.
+Martín: Buena. Ahí ves si lo de la visión es real o es del anuncio nomás.
+Lucía: Y esa planilla te queda para cuando salga el próximo modelo.
+
+## Quedaron afuera
+Lucía: Cerramos con lo que quedó afuera, por si quieren que lo sigamos.
+Martín: OpenAI presentó GPT seis Cyber, una variante para ciberseguridad solo para clientes aprobados.
+Lucía: No entró porque no pudimos abrir la página oficial. Los números que circulan son de prensa.
+Martín: Apiiro dice que una opción de Claude Code expone contraseñas en más de mil archivos públicos de GitHub.
+Lucía: Pinta importante, pero tampoco pudimos abrir la nota. Sin fecha ni detalles verificados, no la contamos.
+Martín: Pruna sacó un modelo abierto de imágenes, unas cinco veces más rápido según ellos.
+Lucía: Quedó afuera porque la licencia excluye varias regiones y el impacto práctico es acotado.
+Martín: Y hubo ruido financiero: se habla de un IPO de Anthropic con una semana fea en el mercado.
+Lucía: El martes contamos lo del S-1 modificado. Esto es un resumen secundario sin impacto práctico directo, así que lo dejamos.
+Martín: Si alguna les interesa, avisen y la sumamos cuando haya fuente firme.
+
+## Despedida
+Lucía: Eso es todo por hoy, nos escuchamos mañana en Radar IA.
