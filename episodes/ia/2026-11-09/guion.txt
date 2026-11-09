@@ -1,0 +1,120 @@
+## Titulares
+Lucía: Buen día. Es lunes nueve de noviembre y esto es Radar IA.
+Martín: Hola, hola. Hoy hay seis notas, y varias vienen con letra chica.
+Lucía: Arranquemos por OpenAI. Sacó GPT seis Cyber, una variante de GPT seis Astra pensada para pruebas de seguridad autorizadas.
+Martín: Pero no la puede usar cualquiera.
+Lucía: No. Está por API y en Codex, solo para clientes aprobados de un programa que se llama Daybreak Red.
+Martín: ¿Y los números?
+Lucía: Según OpenAI, saca cuarenta y ocho y medio por ciento en un benchmark de exploits que se llama ExploitGym. La versión anterior, GPT cinco punto seis Cyber, sacaba treinta y dos coma uno.
+Martín: O sea, una mejora de unos dieciséis puntos.
+Lucía: Y dice que, sin instrucciones de despliegue, no tocó servicios fuera de alcance en el noventa y nueve coma noventa y tres por ciento de los casos.
+Martín: Dos aclaraciones. Todo eso es autoinformado. Y la página oficial no se pudo abrir al verificar, así que las cifras salen de la cobertura de otros medios.
+Lucía: El lunes pasado contamos que OpenAI iba a usar sesiones de Daybreak Blue de cuentas personales para entrenar. Esta es la otra pata del mismo programa.
+Martín: Mi lectura: para la mayoría es una señal de cómo se van a repartir los permisos, no una herramienta para probar mañana.
+Lucía: Segunda. Pruna publicó P H tres Image, un modelo abierto para generar y editar imágenes.
+Martín: Sale de MiniMax H tres, el original, y lo achicaron bastante.
+Lucía: Siete veces más chico. Pasa de ciento cuarenta y tres gigas a veinte.
+Martín: Y usa ocho pasos de difusión en vez de cincuenta.
+Lucía: Una imagen de cuatro megapíxeles sale en unos dos coma seis segundos en una B doscientos. El original tardaba más de doce.
+Martín: Lo interesante es la versión de cuatro bits. Pide unos veintiún gigas de memoria de video con imágenes de ocho megapíxeles y corre en una sola placa de cuarenta y ocho.
+Lucía: Ojo con la licencia, eso sí.
+Martín: Sí, excluye la Unión Europea, Reino Unido, Corea del Sur y Estados Unidos si no tenés una licencia aparte de MiniMax. Y te obliga a poner que funciona con MiniMax H tres.
+Lucía: Desde Argentina no estás en la lista, pero leela antes de usarla con un cliente.
+Martín: Tercera, y para mí la más importante del día. Un benchmark de investigadores de Alibaba y universidades asiáticas, que se llama Co Design Bench.
+Lucía: Lo contó The Decoder.
+Martín: Miden cambios sobre aplicaciones web que ya existen, a partir de pedidos reales de usuarios. Probaron diez modelos.
+Lucía: ¿Y cómo les fue?
+Martín: El mejor, GPT seis Astra, cumple cerca del setenta por ciento de los requisitos. Pero termina bien solo una de cada cuatro tareas.
+Lucía: Veintiséis coma cuatro por ciento.
+Martín: Y esos mismos modelos pasan el noventa y nueve por ciento en benchmarks más viejos.
+Lucía: Eso me hace acordar a la semana pasada. Ai2 publicó StateBench, donde los modelos de frontera caían a trece por ciento o menos siguiendo variables en textos largos.
+Martín: Y SemiAnalysis con GDPx, doce por ciento el mejor modelo. Hay un patrón: cuando la prueba se parece al trabajo real, los números bajan fuerte.
+Lucía: Un detalle más. El resultado cambia según el entorno de trabajo que le pongas al agente.
+Martín: O sea, no medís solo el modelo. Medís el modelo con su andamiaje.
+Lucía: Cuarta. Anthropic lanzó en beta Personal Finance para Claude.
+Martín: Conectás tus cuentas bancarias, ¿no?
+Lucía: Sí, vía Plaid. Solo para suscriptores Pro, Max y Ultra de Estados Unidos. Salió el cinco de noviembre.
+Martín: ¿Qué ve?
+Lucía: Es de solo lectura. Saldos, los últimos cuatro dígitos de la cuenta y hasta veinticuatro meses de transacciones.
+Martín: Lo que me llamó la atención es la letra chica.
+Lucía: A mí también. Si desconectás la cuenta, los datos financieros que quedaron en chats y artefactos guardados siguen ahí.
+Martín: Y los saldos pueden venir con uno o dos días de atraso, o duplicar cuentas.
+Lucía: OpenAI hizo algo parecido con ChatGPT en mayo, así que no es una idea nueva.
+Martín: Acá no está disponible. Pero la lista de cuidados sirve para cualquier proyecto con datos de plata.
+Lucía: Quinta. Snowflake lleva su agente, CoCo, a Excel y a Google Sheets.
+Martín: Esta la leímos en StartupHub, no en el anuncio de Snowflake. Así que con pinzas.
+Lucía: Según la nota, está en vista previa pública. No hay fecha de lanzamiento ni precio.
+Martín: ¿Qué hace concretamente?
+Lucía: Corre las consultas en Snowflake y manda el resultado directo a la planilla, sin conectores de terceros.
+Martín: Y respeta el rol de quien está logueado. Las políticas de enmascaramiento y de acceso por filas se aplican a cada consulta.
+Lucía: Las consultas quedan visibles en el libro, para poder conciliar los números.
+Martín: Eso me gusta. Es lo que te pide cualquier contador.
+Lucía: Los límites son los de siempre. Excel hasta un millón de filas, Sheets hasta veinte millones de celdas.
+Martín: Y el refresco es manual, con un botón. Excel además refresca al abrir.
+Lucía: Hay pruebas internas de Snowflake, pero son de Snowflake. Yo esperaría a ver el anuncio oficial.
+Martín: Sexta. Google publicó un plugin abierto que se llama Elephant Goldfish.
+Lucía: Elefante y pez dorado. Me encanta el nombre.
+Martín: La idea es esta. Un agente elefante, que tiene todo el contexto del proyecto, redacta la especificación.
+Lucía: Y los peces dorados la revisan sin haber visto la conversación.
+Martín: Exacto. Revisores sin memoria, para que no arrastren los mismos supuestos.
+Lucía: Licencia Apache dos. Funciona con Claude Code, Codex CLI y Antigravity CLI. Tiene unas quince mil setecientas estrellas.
+Martín: Y aclaran que no es un producto con soporte oficial de Google.
+Lucía: No pudimos confirmar la fecha exacta de lanzamiento. Apareció en el resumen de hoy de The Neuron.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué nos llevamos para el día a día?
+Lucía: Para mí, lo primero es el benchmark de Alibaba. Si usás agentes de código, contá con revisión humana en casi tres de cada cuatro cambios.
+Martín: Y eso hay que meterlo en el alcance. Si le presupuestás a un cliente como si el agente lo hiciera solo, te comés la diferencia.
+Lucía: Lo segundo es que el entorno importa. Mismo modelo, distinto andamiaje, distinto resultado.
+Martín: Ahí entra Elephant Goldfish. Separar quien diseña de quien revisa es un cambio de proceso, no de modelo.
+Lucía: Antes de escribir código, tenés una especificación revisada por alguien que no estaba en tu cabeza.
+Martín: Y tiene una skill de drift report, que compara la documentación con el código actual. Eso, en un repo heredado, vale oro.
+Lucía: Lo tercero es para quien arma datos. Lo de Snowflake, si se confirma, va en la misma línea que lo que contamos la semana pasada de NVIDIA Auto Ontology, esa capa semántica para consultar bases en lenguaje natural.
+Martín: La tendencia es que el agente vaya a donde ya está el usuario. La planilla, en este caso.
+Lucía: Pero con permisos. Que cada uno vea solo lo que su rol le deja ver.
+Martín: Y una cuarta, chiquita. Si necesitás imágenes y tenés una placa de cuarenta y ocho gigas, P H tres Image te ahorra pagar una API. Siempre que la licencia te cierre.
+
+## Oportunidades de consultoría
+Lucía: Hoy no quiero ir a la pyme de siempre. Pensemos en un estudio contable.
+Martín: Dale. ¿Cuál es el problema?
+Lucía: Los clientes les mandan extractos bancarios por WhatsApp o por mail, en PDF o en planilla. Y alguien del estudio los pasa a mano y los clasifica.
+Martín: Y lo de Personal Finance muestra justo eso. Conectar IA a transacciones reales.
+Lucía: Claro, pero acá no hay Plaid. Así que la idea es más modesta.
+Martín: Contame.
+Lucía: Un flujo que toma el extracto que llega, lo convierte en una tabla, propone una categoría para cada movimiento y la deja en una planilla para que el contador la revise.
+Martín: La IA propone, la persona aprueba.
+Lucía: Exacto. Y la planilla guarda de dónde salió cada número, como hace Snowflake con las consultas visibles.
+Martín: ¿Qué haría falta?
+Lucía: Unos meses de extractos de ejemplo, ya clasificados, para calibrar. El plan de cuentas del estudio. Y alguien que revise las primeras semanas.
+Martín: Y acá es donde sirve la letra chica de la nota de Claude. Hay que definir de entrada cuánto tiempo se guardan los datos, quién los ve y qué pasa cuando un cliente se va.
+Lucía: Y avisar que los saldos pueden no coincidir. Si a Anthropic se le duplican cuentas, a nosotros también nos puede pasar.
+Martín: Es una idea para charlar con el estudio, no una promesa de cuántas horas se ahorran.
+Lucía: Eso lo sabremos después de probarlo con sus datos.
+
+## Una cosa para probar hoy
+Martín: Para hoy, propongo instalar Elephant Goldfish y revisar una idea chica. Media hora alcanza.
+Lucía: Contalo paso a paso.
+Martín: Primero, si usás Claude Code, agregás el marketplace del plugin. Es el comando claude plugin marketplace add, con el nombre del repo de Google, elephant goldfish model.
+Lucía: El comando exacto está en las notas.
+Martín: Segundo, instalás el plugin, que se llama egm. Claude plugin install egm arroba egm.
+Lucía: Y ojo, después hay que abrir una sesión nueva.
+Martín: Tercero, en esa sesión escribís barra egm dos puntos egm guion brainstorm, y le contás una idea. Por ejemplo, agregar un aviso por mail cuando falla un informe.
+Lucía: Eso te arma un resumen del concepto en un archivo.
+Martín: Cuarto, corrés egm guion draft, que lo convierte en un documento de diseño.
+Lucía: Y quinto, egm guion review sobre ese documento. Ahí entran los revisores sin contexto.
+Martín: Un detalle. La revisión necesita que tu sesión pueda crear subagentes nuevos. Si no puede, se frena.
+Lucía: Y el propio repo dice que la revisión no reemplaza los tests ni el criterio humano.
+Martín: Si usás Codex o Antigravity, también hay instrucciones. Están en el mismo repo.
+Lucía: Lo que yo miraría es qué te marcan los peces dorados que vos no viste.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que dejamos afuera.
+Martín: Latent Space escribió sobre la salida a bolsa de Anthropic, con el Nasdaq a la baja y un ritmo anual de ingresos de ochenta mil millones.
+Lucía: Quedó afuera porque es contexto de mercado, no una novedad técnica. Algo de eso ya tocamos el martes pasado con el S uno de Anthropic.
+Martín: OpenCode Browse, una herramienta para que los agentes de programación usen tu navegador real, con tus sesiones abiertas.
+Lucía: Interesante, pero no pudimos confirmar la fecha de publicación.
+Martín: Bloomberg dice que la plataforma de agentes de DeepSeek llegó a un millón y medio de usuarios activos por día.
+Lucía: Fuente cerrada, sin un dato que pudiéramos verificar.
+Martín: Y CNBC repasa experimentos donde agentes eludieron restricciones y coordinaron acciones no autorizadas.
+Lucía: Sin cifras concretas. Si les interesa el tema, avísennos y lo buscamos con datos.
+Martín: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.

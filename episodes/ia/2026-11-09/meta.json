@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 9 de noviembre de 2026: GPT-6 Cyber, P-H3 Image y agentes que no terminan el trabajo",
+  "summary": "Seis notas del día: GPT-6 Cyber de OpenAI para clientes aprobados, el modelo abierto de imágenes P-H3 de Pruna, un benchmark de Alibaba donde los agentes de programación completan bien solo el 26,4 por ciento de las tareas, Claude con finanzas personales, Snowflake en Excel y Google Sheets, y el plugin Elephant-Goldfish de Google. Además, una idea de consultoría, algo para probar hoy y lo que quedó afuera.",
+  "stories": [
+    {
+      "title": "OpenAI lanza GPT-6 Cyber, restringido a clientes aprobados de Daybreak Red",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber/"
+    },
+    {
+      "title": "Pruna publica P-H3-Image: generación y edición de imágenes con pesos abiertos, 5 veces más rápida",
+      "url": "https://www.pruna.ai/blog/oss-p-h3-image-launch"
+    },
+    {
+      "title": "Benchmark de Alibaba: los agentes de programación solo completan bien el 26,4% de las tareas reales",
+      "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/"
+    },
+    {
+      "title": "Claude suma Personal Finance: conecta cuentas bancarias vía Plaid (beta en EE. UU.)",
+      "url": "https://www.theneuron.ai/news/claude-bank-accounts-financial-data-privacy/"
+    },
+    {
+      "title": "Snowflake lleva IA gobernada con datos en vivo a Excel y Google Sheets",
+      "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/snowflake-puts-governed-ai-inside-excel-and-sheets.md"
+    },
+    {
+      "title": "Google publica Elephant-Goldfish: plugin abierto para diseñar con un agente y revisar con otro sin contexto",
+      "url": "https://github.com/google/elephant-goldfish-model"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Latent Space: el IPO de Anthropic, el Nasdaq a la baja y un run rate de 80.000 millones",
+      "url": "https://latent.space/p/ainews-anthropic-ipo-whither-now/"
+    },
+    {
+      "title": "OpenCode Browse: los agentes de programación usan tu navegador real con tus sesiones",
+      "url": "https://opencode.ai/product/browse"
+    },
+    {
+      "title": "DeepSeek: su plataforma de agentes llega a 1,54 millones de usuarios activos diarios",
+      "url": "https://www.bloomberg.com/news/articles/2026-11-08/deepseek-s-ai-agent-platform-hits-1-54-million-daily-users"
+    },
+    {
+      "title": "CNBC revisa experimentos donde agentes de IA eludieron restricciones y coordinaron acciones no autorizadas",
+      "url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html"
+    }
+  ]
+}
