@@ -1,0 +1,112 @@
+## Titulares
+Lucía: Buen día, hoy es martes diez de noviembre y esto es Radar IA.
+Martín: Hola, hola. Hoy viene cargado de Anthropic, pero también hay modelos chicos y baratos, y un incidente de seguridad que conviene mirar.
+Lucía: Arranquemos por lo grande. Anthropic presentó Fable cinco punto dos y Mythos cinco punto dos.
+Martín: Que en realidad son el mismo modelo, ¿no?
+Lucía: Exacto. Fable sale para todo el mundo, en AWS, Google Cloud y Azure. Mythos es el mismo modelo sin ciertos bloqueos de ciberseguridad y biología, y queda solo para organizaciones que pasen programas de verificación.
+Martín: ¿Y el precio?
+Lucía: Ocho dólares por millón de tokens de entrada y cuarenta de salida. Hay un modo rápido que cuesta el doble, dieciséis y ochenta.
+Martín: O sea que baja un veinte por ciento respecto de Fable cinco punto uno, que estaba en diez y cincuenta.
+Lucía: Y en benchmarks, Anthropic dice que en FrontierSWE versión dos saca casi setenta por ciento, contra unos sesenta y dos de Opus cinco punto cinco.
+Martín: Y en Remote Labor Index casi el doble: cuarenta y uno contra veintiuno.
+Lucía: Ojo que esas cifras son de la propia Anthropic. Nadie las midió de afuera todavía.
+Martín: Lo que me llamó la atención es que la misma Anthropic recomienda seguir usando Opus cinco punto cinco para el día a día.
+Lucía: Sí, eso dice bastante. Fable es para cuando realmente lo necesitás, no para todo.
+Martín: Y un detalle práctico: los clasificadores de seguridad pueden derivar algunas consultas a otro modelo. Si armás algo serio encima, eso hay que tenerlo en cuenta.
+Lucía: Mi opinión: bajar el precio está bien, pero sigue siendo caro. Hay que hacer la cuenta antes de cambiar.
+Martín: Segunda, y es del mismo modelo. Anthropic publicó una guía de cómo promptear Fable cinco punto dos, y la levantó Simon Willison.
+Lucía: Lo de quién es dueño del código.
+Martín: Eso. En pruebas chicas de Anthropic, si no le aclarás de quién es el código, el modelo agrega cosas encima de lo que hay, aunque repita código.
+Lucía: Y si le decís algo como "este código es tuyo"...
+Martín: Fusionó el código repetido en cerca de la mitad de los intentos. Sin esa frase, en menos de una décima.
+Lucía: Una oración en el prompt de sistema y cambia si el agente refactoriza o parchea. Me parece de lo más útil del día, aunque las pruebas sean chicas.
+Martín: Tercera. Meta lanzó Muse Ember, un modelo chico con un millón de tokens de contexto.
+Lucía: ¿Y cuánto sale?
+Martín: Diez centavos de dólar por millón de tokens de entrada y cincuenta centavos de salida. Y puede devolver hasta quinientos doce mil tokens de salida.
+Lucía: ¿Hay algún dato independiente o es todo de Meta?
+Martín: Hay uno. Artificial Analysis le da treinta y seis en su índice, lo mismo que Claude Haiku cinco punto cinco, y por encima de GPT seis Luna, que saca veintiocho.
+Lucía: A unos catorce centavos por tarea, según esa misma medición.
+Martín: El resto, Terminal-Bench y AutomationBench, son números de Meta. Cerca de cuarenta y de treinta y ocho por ciento.
+Lucía: Para extraer datos o parsear documentos largos suena muy bien. Para programar en serio, yo esperaría a ver más pruebas.
+Martín: Cuarta, y es mi favorita. Amazon reemplazó Sonnet cuatro punto seis por algo llamado Strands Decider para clasificar tickets.
+Lucía: Lo cuenta el propio equipo en el blog de Strands Agents, así que es un caso interno.
+Martín: Sí. La idea es que Strands Decider no genera texto. Le pasás un estado y unas opciones, y te devuelve una probabilidad por cada opción.
+Lucía: ¿Y los números?
+Martín: Con veinte categorías de tickets, el costo por millón pasó de unos veintidós mil dólares con Sonnet a unos quinientos con la versión basada en Gemma cuatro.
+Lucía: Un noventa y ocho por ciento menos.
+Martín: Y la latencia bajó de algo más de cuatro segundos a menos de uno.
+Lucía: Hay letra chica, igual. La ventana es de unos cuatro mil tokens.
+Martín: Y algo que me pareció muy honesto que lo pongan: el orden de las claves del JSON movió las probabilidades hasta casi veinte puntos.
+Lucía: Eso es para tomar nota. Mi opinión: el patrón es buenísimo para categorías fijas, pero hay que probar bien el formato de entrada.
+Martín: Quinta. Notion informó un incidente con Fireworks AI, un proveedor de IA que usaba.
+Lucía: ¿Qué pasó?
+Martín: Fireworks reportó el seis de noviembre que actores maliciosos pudieron acceder a datos, y el ocho confirmó otro conjunto.
+Lucía: ¿Y qué datos son?
+Martín: Transcripciones de chats de Notion AI, que podrían haber afectado a menos del uno por ciento de los espacios. Según Notion, sin autor ni espacio asociado, y sin los resultados de herramientas.
+Lucía: Notion dice que ya se había desconectado de Fireworks el tres de noviembre. Y recomienda rotar cualquier credencial que hayas pegado en Notion AI.
+Martín: Acá la lección no es Notion en particular. Es que detrás de cada producto con IA puede haber un proveedor intermedio que no ves.
+Lucía: Totalmente. Y que pegar contraseñas en un chat es mala idea, con cualquier herramienta.
+Martín: Sexta y última. OpenCode lanzó Browse.
+Lucía: Que es un servidor MCP más una extensión de Chromium, para que los agentes de programación usen tu navegador real, con tus sesiones iniciadas.
+Martín: Por debajo usa Playwright. Para logins, doble factor o pagos, te devuelve la pestaña a vos.
+Lucía: Y lo podés limitar a una lista de sitios permitidos.
+Martín: Útil es. Pero darle a un agente tu navegador con todas tus sesiones abiertas me da un poco de miedo.
+Lucía: Sí, yo lo usaría solo con esa lista de sitios bien cerrada. Y justo después de lo de Notion, más.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué le cambia todo esto a quien programa o arma datos?
+Martín: Lo primero, lo del prompt. Si tenés un agente de programación, revisá tu prompt de sistema.
+Lucía: Si querés que refactorice, decile que el código es suyo. Si querés que toque lo mínimo, quizás conviene no decirlo.
+Martín: Y medilo. Los datos de Anthropic son de pruebas chicas y con Fable cinco punto dos, no con cualquier modelo.
+Lucía: Lo segundo es el patrón de Strands Decider. Si tenés una tarea de clasificar en categorías fijas, no necesitás un modelo grande que escriba texto.
+Martín: Necesitás algo que te devuelva una probabilidad por opción. Y eso abre otra cosa: podés poner un umbral y mandar a revisión humana los casos dudosos.
+Lucía: Pero con el cuidado del orden de las claves del JSON. Fijá el formato y no lo cambies sin volver a medir.
+Martín: Lo tercero, modelos chicos con contexto largo. Muse Ember con un millón de tokens de contexto y diez centavos de entrada, ojo que arriba de doscientos mil tokens por pedido sube a treinta, te deja meter documentos enteros para extracción o ruteo.
+Lucía: El jueves pasado hablamos de Dharma Field Extractor, documento a JSON estructurado con un modelo chico. Va en la misma línea.
+Martín: Se nota la tendencia, sí. El modelo grande para pensar, el chico para el trabajo repetitivo.
+Lucía: Y lo cuarto, sobre Fable. Antes de migrar, hacé la cuenta. La misma Anthropic recomienda Opus cinco punto cinco para el día a día.
+Martín: Y la semana pasada contamos que Anthropic retira el modo rápido de Opus cuatro punto ocho el treinta de noviembre y recomienda migrar a Opus cinco punto cinco. Si estás en eso, Opus cinco punto cinco parece el destino razonable, no Fable.
+Lucía: Por último, seguridad. Si usás herramientas con IA que mandan datos a terceros, preguntá quiénes son esos terceros.
+Martín: Y si alguna vez pegaste una clave en un chat, rotala. Hoy, no la semana que viene.
+
+## Oportunidades de consultoría
+Lucía: Vamos con la idea de consultoría del día. Hoy no es una pyme.
+Martín: ¿A quién apuntamos?
+Lucía: A una institución o un municipio. Pensá en una mesa de entradas que recibe reclamos por WhatsApp, por mail y por formulario.
+Martín: Y alguien los lee uno por uno y los reenvía al área que corresponde.
+Lucía: Exacto. Ese es el problema: tiempo de una persona, reclamos que se pierden, y demoras en el ruteo.
+Martín: Y acá entra el patrón de Strands Decider. Categorías fijas, como alumbrado, tránsito, residuos, y un modelo chico que devuelve una probabilidad por categoría.
+Lucía: Lo que se automatiza es la primera clasificación. Si la probabilidad es alta, va directo al área. Si es baja, lo mira una persona.
+Martín: ¿Qué haría falta?
+Lucía: Primero, un historial de reclamos ya clasificados a mano, para probar si el modelo acierta.
+Martín: Segundo, una lista de categorías cerrada y acordada con la gente que trabaja ahí.
+Lucía: Tercero, definir bien dónde corren los datos. Son datos de vecinos. Y después de lo de Notion, preguntar por cada proveedor intermedio no es un detalle.
+Martín: Y cuarto, alguien del lado de la institución que revise los casos dudosos y diga si la clasificación tiene sentido.
+Lucía: Ojo, no es una promesa de ahorro. El caso de Amazon es de Amazon, con su volumen. Acá lo primero sería una prueba chica con datos reales para ver si funciona.
+Martín: Y si no funciona, también es un resultado. Mejor saberlo con cien reclamos que con diez mil.
+
+## Una cosa para probar hoy
+Lucía: Y la cosa para probar hoy. Martín, contá vos.
+Martín: Vamos a probar lo de "este código es tuyo". Son unos veinte minutos.
+Lucía: Dale, paso a paso.
+Martín: Uno. Elegí un archivo de un proyecto tuyo que tenga dos funciones parecidas, con código repetido.
+Lucía: Si no tenés, escribí dos funciones casi iguales a propósito. Tarda dos minutos.
+Martín: Dos. Abrí tu agente de programación y pedile una mejora chica en una de esas funciones. Sin decir nada más.
+Lucía: Guardá el resultado, o fijate qué cambió en git.
+Martín: Tres. Descartá los cambios y volvé al estado original.
+Lucía: Cuatro. Hacé el mismo pedido, pero agregá al principio una frase como "este código es tuyo".
+Martín: Cinco. Compará los dos resultados. ¿En alguno fusionó el código repetido? ¿En alguno solo agregó encima?
+Lucía: Y repetilo unas tres veces de cada lado. Una sola vez no te dice nada.
+Martín: Ojo que el dato de Anthropic es con Fable cinco punto dos. Con otro modelo puede dar distinto, y eso también es interesante saberlo.
+Lucía: Y si te da algo raro, contanos.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: Thinking Machines lanzó Inkling dos Small, un modelo de mezcla de expertos con un millón de contexto. No entró porque las cifras son de segunda mano y los pesos todavía no se publicaron.
+Lucía: Después, Anthropic arrancó el roadshow de su salida a la bolsa. El martes pasado contamos que había modificado su S-1. Hoy lo dejamos afuera porque es más financiero que práctico y no pudimos verificar el cuerpo de la nota.
+Martín: Hay un reclamo en GitHub que dice que Gemini mandaría archivos de Drive y correos a revisores humanos.
+Lucía: Eso está sin verificar, con pruebas informales y sin respuesta de Google. Si se confirma, lo traemos.
+Martín: Y DeepSeek dice que Harness tiene un millón y medio de usuarios diarios y prepara un marketplace de plugins. Quedó afuera porque son cifras que declara la propia empresa.
+Lucía: Si querés que alguna de estas se sume, avisanos.
+Martín: Eso es todo por hoy. Los links están en las notas del episodio.
+Lucía: Nos escuchamos mañana. Chau.

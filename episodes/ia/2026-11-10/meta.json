@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 10 de noviembre de 2026: Fable 5.2, Muse Ember de Meta y clasificar tickets por una fracción del costo",
+  "summary": "Seis notas del día: Claude Fable 5.2 y Mythos 5.2, el consejo de Anthropic para promptear a Fable 5.2, el modelo chico Muse Ember de Meta, el caso de Amazon con Strands Decider, el incidente de Notion con Fireworks AI y OpenCode Browse. Además, una idea de consultoría, algo para probar hoy y lo que quedó afuera.",
+  "stories": [
+    {
+      "title": "Anthropic presenta Claude Fable 5.2 y Mythos 5.2: mismo modelo, uno abierto y otro solo para organizaciones verificadas",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "title": "Anthropic documenta cómo promptear Fable 5.2: decirle que el código es suyo lo lleva a refactorizar",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
+    },
+    {
+      "title": "Meta lanza Muse Ember: modelo chico con 1M de contexto a USD 0,10 / 0,50 por millón de tokens",
+      "url": "https://research.meta.ai/blog/muse-ember"
+    },
+    {
+      "title": "Amazon reemplaza Sonnet 4.6 por Strands Decider en clasificación de tickets y baja el costo 98%",
+      "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/"
+    },
+    {
+      "title": "Notion y Fireworks AI: acceso malicioso a transcripciones de chats de Notion AI de menos del 1% de los espacios",
+      "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor"
+    },
+    {
+      "title": "OpenCode Browse: agentes de programación manejan tu navegador real con sesiones iniciadas",
+      "url": "https://opencode.ai/product/browse"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Thinking Machines lanza Inkling 2 Small (594B, 17B activos, 1M de contexto)",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+    },
+    {
+      "title": "Anthropic arranca el roadshow de su IPO mientras Fable 5.2 vuelve al primer puesto según rankings",
+      "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/"
+    },
+    {
+      "title": "DeepSeek Harness reporta 1,54 millones de usuarios diarios y prepara un marketplace oficial de plugins",
+      "url": "https://runtimewire.com/article/deepseek-harness-1-54-million-daily-users-plugin-marketplace"
+    },
+    {
+      "title": "Reclamo en GitHub: Gemini enviaría archivos de Drive y correos conectados a revisores humanos",
+      "url": "https://github.com/thisisme6598/gemini_files/"
+    }
+  ]
+}
