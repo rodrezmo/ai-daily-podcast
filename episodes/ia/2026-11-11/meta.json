@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 11 de noviembre de 2026: Gemini 4 Carbon, Claude con planillas y la brecha de Railway",
+  "summary": "Seis notas del día: Gemini 4 Carbon de Google, las nuevas planillas y Claude Data de Anthropic, Scribe v3 de ElevenLabs con mejora en español, la brecha en Railway con credenciales de IA, los modelos de decisión de Hugging Face y AlphaProof Code de DeepMind. Además, una idea de consultoría, algo para probar hoy y lo que quedó afuera.",
+  "stories": [
+    {
+      "title": "Google lanza Gemini 4 Carbon con /swarm en Antigravity",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+    },
+    {
+      "title": "Claude suma Sheets, Whiteboards y Claude Data (ex Dashboards) con conectores interactivos",
+      "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
+    },
+    {
+      "title": "ElevenLabs lanza Scribe v3 y Scribe v3 Live, con mejora en español",
+      "url": "https://elevenlabs.io/blog/scribe-v3"
+    },
+    {
+      "title": "Brecha en Railway: USD 740.000 en uso fraudulento de IA con credenciales robadas",
+      "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
+    },
+    {
+      "title": "Hugging Face presenta los 'decision models': modelos que devuelven probabilidades en vez de generar texto",
+      "url": "https://huggingface.co/blog/decision"
+    },
+    {
+      "title": "DeepMind presenta AlphaProof Code: verificación formal del código del protocolo de Signal",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Taller de OpenAI sobre Codex: Cloud v2, traspaso local a nube y voz",
+      "url": "https://latent.space/p/codex-work/"
+    },
+    {
+      "title": "Anthropic lanza el roadshow de su IPO: ticker ANT, USD 70 a 78 por acción",
+      "url": "https://www.anthropic.com/news/roadshow-launch"
+    },
+    {
+      "title": "OpenAI retira las voces Advanced y Standard de ChatGPT el 11 de diciembre",
+      "url": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
+    },
+    {
+      "title": "Alibaba muestra la familia Qwen4 con Qwen4-Max en preview",
+      "url": "https://x.com/Alibaba_Qwen/status/2120335993643684315"
+    }
+  ]
+}

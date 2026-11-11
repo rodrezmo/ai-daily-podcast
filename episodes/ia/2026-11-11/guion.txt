@@ -1,0 +1,132 @@
+## Titulares
+Lucía: Buen día, es miércoles once de noviembre y esto es Radar IA.
+Martín: Hola. Hoy tenemos un modelo nuevo de Google, planillas en Claude, transcripción en español, una brecha bastante fea y un par de cosas de investigación que valen la pena.
+Lucía: Arrancamos con Google. Lanzó Gemini cuatro Carbon.
+Martín: ¿Dónde está disponible?
+Lucía: En la API paga de Gemini, o sea AI Studio y Android Studio. También en Antigravity y en la app, para los suscriptores Ultra.
+Martín: Lo de Android Studio me suena. El miércoles pasado contamos que Android Studio Rabbit dos deja traer tu propio agente.
+Lucía: Exacto, va por el mismo lado. Ahora, el precio. Hay un precio introductorio hasta el treinta de noviembre.
+Lucía: Dos dólares por millón de tokens de entrada y diez de salida.
+Martín: ¿Y después?
+Lucía: Después se duplica. Cuatro de entrada y veinte de salida.
+Martín: O sea que la promo dura menos de tres semanas. Si alguien hace cuentas de costo, que las haga con el precio de diciembre.
+Lucía: Tal cual. Google dice que es número uno en CursorBench cuatro punto cero y en AutomationBench de Zapier.
+Martín: Datos del propio proveedor. Hasta que alguien los reproduzca, son marketing con números.
+Lucía: Lo más interesante para mí es otra cosa. Suma un modo que se llama swarm, en preview.
+Martín: ¿Qué hace?
+Lucía: A partir de un prompt arma un equipo de agentes coordinados.
+Martín: Suena lindo. Habría que ver cuánto gasta un enjambre de agentes con el precio de diciembre.
+Lucía: Segunda. Claude suma Sheets, Whiteboards y Claude Data, que antes se llamaba Dashboards.
+Martín: Contame lo de Sheets.
+Lucía: Arma planillas con el equipo, con fórmulas y varias pestañas.
+Martín: ¿Y Claude Data?
+Lucía: Se conecta a herramientas como Snowflake y Salesforce para generar dashboards. Y puede usar definiciones certificadas por el equipo de datos, eso está en beta.
+Martín: Eso de las definiciones certificadas es lo que me parece serio. El problema de siempre es que cada uno calcula la facturación de una forma distinta.
+Lucía: También hay conectores interactivos con Salesforce, NetSuite y Workday. Algunos en beta.
+Martín: ¿Precios?
+Lucía: La nota no aclara planes ni precios.
+Martín: Bueno, eso falta. Mi opinión: apunta directo a planillas e informes, que es donde vive medio mundo. Pero sin saber cuánto cuesta, no se puede recomendar todavía.
+Lucía: Tercera. ElevenLabs lanzó Scribe versión tres y Scribe versión tres Live.
+Martín: Transcripción.
+Lucía: Sí. Dicen que baja veintisiete por ciento los errores de palabras frente a la versión dos, medido en ciento dos idiomas.
+Lucía: Y en español la mejora es de treinta y cinco por ciento.
+Martín: Eso nos toca directo.
+Lucía: Además reduce doce por ciento los errores al identificar quién habla. Y la versión Live baja cuarenta y tres por ciento los errores que cambian el sentido de la frase, frente a la versión dos en tiempo real.
+Martín: De nuevo, números de la propia empresa y sin precios. Pero si el español mejora en serio, transcribir reuniones y audios de WhatsApp se vuelve mucho más usable.
+Lucía: Cuarta, y esta es la fea. Una brecha en Railway.
+Martín: La plataforma de deploy.
+Lucía: Esa. Según BleepingComputer, los atacantes escaparon del aislamiento del sistema de archivos en la infraestructura de build.
+Lucía: Accedieron a variables de entorno descifradas de clientes y buscaron claves de proveedores de IA.
+Martín: Y las usaron.
+Lucía: Sí. Unos setecientos cuarenta mil dólares de consumo no autorizado.
+Martín: Uf. ¿Cuántos afectados?
+Lucía: Acá hay que ser precisos. El máximo posible es uno coma ochenta y cinco por ciento de los workspaces. No es un número confirmado de afectados.
+Lucía: Y hubo tokens de mil ochocientos cincuenta y dos usuarios expuestos.
+Martín: ¿Desde cuándo?
+Lucía: El ataque arrancó el veinte de octubre y se divulgó el veintidós.
+Martín: ¿Qué dice Railway?
+Lucía: Que roten secretos, y que va a reembolsar.
+Martín: Mi lectura es simple. Una clave de IA en una variable de entorno es plata en efectivo. Si no tiene tope de gasto, el riesgo no tiene techo.
+Lucía: Quinta. Hugging Face presentó los modelos de decisión.
+Martín: ¿Qué son?
+Lucía: Modelos que no generan texto. Reciben un contexto y preguntas cerradas, tipo elegir una opción, un puntaje o sí y no.
+Lucía: Y devuelven probabilidades sobre respuestas definidas de antemano. Sin generar JSON.
+Martín: Ah, esto me gusta. Nada de rezar para que el modelo devuelva un JSON bien formado.
+Lucía: Ya tienen soporte en Transformers, en llama punto cpp con GGUF y una etiqueta propia en el Hub.
+Lucía: El soporte en TRL todavía es un pull request abierto.
+Martín: ¿Ejemplos?
+Lucía: Un ticket que va a facturación con cero coma nueve nueve ocho de probabilidad. Una pregunta de reembolso, sí o no, con alrededor de cero coma nueve nueve cinco.
+Martín: Ojo que el post tiene algunas inconsistencias numéricas chicas. No es grave, pero conviene leerlo con cuidado.
+Lucía: Para mí es de lo más útil del día, aunque haga menos ruido.
+Martín: Y se conecta con algo de la semana pasada. El jueves contamos lo de Dharma Field Extractor, documento a JSON estructurado con un modelo chico.
+Lucía: Sí, misma tendencia. Modelos chicos y específicos para tareas aburridas.
+Martín: Sexta y última. DeepMind presentó AlphaProof Code.
+Lucía: Verificación formal del código del protocolo de Signal.
+Martín: Contame los números.
+Lucía: Según DeepMind, agentes con Gemini Carbon escribieron más de seis millones de líneas de prueba en Lean.
+Lucía: Lo hicieron en cuatro semanas, con revisión humana de más o menos el uno por ciento del código.
+Martín: ¿Y cómo saben que sirve?
+Lucía: Reintrodujeron dos bugs que ya estaban corregidos. Y el sistema probó que esa versión era insegura.
+Martín: Eso está bueno como prueba. Igual, es una afirmación del propio laboratorio.
+Lucía: Dicen que están liberando los artefactos.
+Martín: Ahí se puede chequear. El miércoles pasado hablamos de CWE-bench dos, con modelos reparando vulnerabilidades reales. Esto va un paso más allá: probar que el código es seguro.
+
+## Para desarrolladores
+Lucía: Vamos a lo que cambia en el día a día.
+Martín: Para mí lo primero es Railway, aunque no uses Railway.
+Lucía: ¿Por qué?
+Martín: Porque casi todos tenemos claves de IA en variables de entorno de algún servicio. Y la lección es que esa clave tiene que tener un tope de gasto y tiene que poder rotarse rápido.
+Lucía: Y una clave por proyecto, así si se filtra una sabés de dónde vino.
+Martín: Exacto.
+Lucía: Lo segundo son los modelos de decisión. Si hoy clasificás tickets, mails o mensajes pidiéndole a un modelo grande que devuelva un JSON, esto te cambia el enfoque.
+Martín: Porque en vez de parsear texto, recibís una probabilidad por opción.
+Lucía: Y con eso podés poner un umbral. Si la probabilidad es alta, se rutea solo. Si es baja, lo mira una persona.
+Martín: Eso es oro para cualquier flujo de clasificación. Y corre en llama punto cpp, o sea que podés probarlo local.
+Lucía: Tercero, Gemini cuatro Carbon. Si lo vas a probar, aprovechá el precio hasta fin de mes, pero hacé el presupuesto con el precio que viene después.
+Martín: Y lo de swarm, en preview. Yo lo probaría en algo descartable antes de meterlo en un flujo real.
+Lucía: Y para quien arma datos, lo de las definiciones certificadas en Claude Data apunta a algo que muchos equipos ya hacen a mano: tener una sola definición de cada métrica.
+Martín: Ahí hay trabajo para el equipo de datos, no menos. Alguien tiene que escribir y mantener esas definiciones.
+
+## Oportunidades de consultoría
+Lucía: Hoy la idea va para estudios y profesionales independientes.
+Martín: ¿Por ejemplo?
+Lucía: Pensá en un estudio contable chico. Los clientes mandan audios de WhatsApp todo el día.
+Martín: Y alguien los tiene que escuchar uno por uno.
+Lucía: Exacto. Y la mitad son consultas que van a una persona y la otra mitad van a otra.
+Martín: ¿Qué se automatiza?
+Lucía: Dos pasos. Primero se transcribe el audio, y ahí Scribe dice que mejoró bastante en español.
+Lucía: Después un modelo de decisión clasifica el texto. Por ejemplo, si es sobre facturación, sobre un vencimiento o si pide un turno.
+Martín: Y con la probabilidad decidís. Lo seguro se asigna solo, lo dudoso queda para revisar.
+Lucía: Tal cual.
+Martín: ¿Qué haría falta?
+Lucía: Una forma ordenada de sacar los audios del WhatsApp del estudio. Un listado de categorías que el estudio realmente use.
+Lucía: Y un par de semanas probando con audios reales para ver dónde se equivoca.
+Martín: Y el consentimiento de los clientes, porque son audios con datos personales y a veces con datos fiscales.
+Lucía: Sí, eso va primero.
+Martín: Y aclaro, es una idea para explorar. No sabemos todavía cuánto cuesta transcribir con la versión nueva, así que no hay forma de prometer un ahorro.
+
+## Una cosa para probar hoy
+Lucía: Hoy, inspirado en lo de Railway, una auditoría de claves de IA en media hora.
+Martín: Dale, paso a paso.
+Lucía: Paso uno. Hacé una lista de cada servicio donde tenés una clave de un proveedor de IA. Plataforma de deploy, CI, tu máquina, notebooks.
+Martín: Incluí los proyectos viejos que dejaste andando.
+Lucía: Sobre todo esos. Paso dos. Entrá al panel de consumo de cada proveedor y mirá las últimas semanas.
+Lucía: Buscá picos que no te cierren o modelos que vos no usás.
+Martín: Paso tres.
+Lucía: Si el proveedor permite poner un tope de gasto, ponelo. Bajo, algo que no te duela si se dispara.
+Martín: Paso cuatro.
+Lucía: Rotá las claves que estén en servicios de terceros. Generá una nueva, actualizá la variable y borrá la vieja.
+Martín: Y paso cinco, si te sobra tiempo, separá una clave por proyecto.
+Lucía: Así, la próxima vez que alguien avise de una brecha, sabés exactamente qué rotar.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: Primero, el roadshow de la salida a bolsa de Anthropic, con un ticker y un rango de precio por acción.
+Martín: Lo dejamos porque el impacto práctico es acotado y los datos no se pudieron verificar en la página oficial.
+Lucía: Segundo, se dice que OpenAI retira las voces Advanced y Standard de ChatGPT el once de diciembre.
+Martín: No pudimos abrir la página oficial, así que está sin confirmar.
+Lucía: Tercero, Alibaba mostró la familia Qwen cuatro, con Qwen cuatro Max en preview.
+Martín: Sin benchmarks ni precios verificados. Cuando haya datos, lo vemos.
+Lucía: Y cuarto, una crónica de un taller de OpenAI sobre Codex, con traspaso del trabajo local a la nube y voz.
+Martín: Fuente secundaria y sin cambios concretos que se puedan medir. Si quieren que sigamos alguno de estos, avísennos.
+Lucía: Eso es todo por hoy. Rotá esas claves y nos escuchamos mañana.
