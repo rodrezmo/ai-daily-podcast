@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 12 de noviembre: Anthropic lanza Fable 5.2 y Meta apuesta a un modelo barato para agentes",
+  "summary": "Anthropic lanza Claude Fable 5.2 con precio publicado y mejoras en benchmarks propios, y Meta presenta Muse Ember, un modelo muy barato para agentes. Además, la Decisions API de Google, un emulador local de AWS y un parche de seguridad para llm. En consultoría, una idea para estudios contables, y para probar hoy, medir la Decisions API con mensajes propios.",
+  "stories": [
+    {
+      "title": "Anthropic lanza Claude Fable 5.2 y Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "title": "Meta presenta Muse Ember, su modelo más chico y barato para agentes",
+      "url": "https://research.meta.ai/blog/muse-ember"
+    },
+    {
+      "title": "Google lanza la Gemini Decisions API con el modelo Gemini Decision 1",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+      "title": "AWS publica un emulador local oficial de sus servicios",
+      "url": "https://github.com/aws/aws-emulator"
+    },
+    {
+      "title": "llm 0.37.2 corrige dos fallas que podían filtrar la API key de OpenAI a otros proveedores",
+      "url": "https://github.com/simonw/llm/releases/tag/0.37.2"
+    },
+    {
+      "title": "Taller de OpenAI sobre Codex en el AI Engineer Code Summit",
+      "url": "https://latent.space/p/codex-work/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Anthropic lanza el roadshow de su IPO: 825 millones de acciones a USD 70-78",
+      "url": "https://www.anthropic.com/news/roadshow-launch"
+    },
+    {
+      "title": "Alibaba muestra la familia Qwen4",
+      "url": "https://x.com/Alibaba_Qwen/status/2120335993643684315"
+    },
+    {
+      "title": "OpenAI retira las voces Advanced y Standard de ChatGPT el 11 de diciembre",
+      "url": "https://help.openai.com/en/articles/20001638-retiring-advanced-and-standard-voice-in-chatgpt"
+    }
+  ]
+}

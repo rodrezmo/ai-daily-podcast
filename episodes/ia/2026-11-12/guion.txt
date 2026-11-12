@@ -1,0 +1,119 @@
+## Titulares
+Lucía: Buen día, es jueves doce de noviembre y esto es Radar IA.
+Martín: Hola. Hoy hay modelo nuevo de Anthropic, uno muy barato de Meta, una API de Google para decidir cosas, un emulador de Amazon y un parche de seguridad que conviene no dejar pasar.
+Lucía: Arrancamos con Anthropic. Lanzó Claude Fable cinco punto dos, en disponibilidad general.
+Martín: ¿Cuánto sale?
+Lucía: Ocho dólares por millón de tokens de entrada y cuarenta de salida.
+Lucía: Y hay un modo rápido que cuesta el doble, dieciséis y ochenta, y según ellos es hasta dos veces y media más veloz.
+Martín: O sea, pagás el doble por velocidad. Para algunas cosas vale, para la mayoría no.
+Lucía: Los números de benchmarks que publican son de un salto grande.
+Lucía: En FrontierSWE versión dos pasa de cincuenta y seis por ciento a casi setenta, comparado con Fable cinco punto uno.
+Lucía: Y en AutomationBench sube unos veinte puntos, de treinta y uno a cincuenta y uno.
+Martín: ¿Y OSWorld?
+Lucía: En OSWorld dos punto uno, casi noventa por ciento.
+Martín: Todo eso son cifras del fabricante. Pueden ser ciertas, pero hasta que alguien las reproduzca, son eso.
+Lucía: Junto con Fable sale Mythos cinco punto dos. Es el mismo modelo pero sin las salvaguardas de ciberseguridad y biología.
+Martín: ¿Y eso lo puede usar cualquiera?
+Lucía: No. Está limitado a organizaciones verificadas.
+Martín: Bien que lo restrinjan. Mi opinión: el salto en automatización es lo que más me interesa, si se sostiene con tareas reales.
+Lucía: Está disponible en la nube de Amazon, en Google Cloud y en Azure.
+Lucía: Segunda. Meta presentó Muse Ember uno punto cero, su modelo más chico y barato, pensado para agentes.
+Martín: ¿Qué tan barato?
+Lucía: Diez centavos de dólar por millón de tokens de entrada y cincuenta centavos de salida. Eso para prompts de hasta doscientos mil tokens.
+Lucía: Y tiene contexto de un millón.
+Martín: Eso es muy barato. ¿Qué dicen de rendimiento?
+Lucía: Meta dice que supera a Claude Haiku cinco punto cinco y a GPT seis Luna en una variante de AutomationBench.
+Lucía: Saca casi treinta y ocho por ciento, contra catorce de Haiku y veinte de GPT seis Luna.
+Martín: Ahí también, benchmark elegido por el que vende.
+Lucía: Y ellos mismos admiten que queda por detrás de Haiku en FrontierCode dos.
+Martín: Eso me gusta, que lo digan. Para agentes de mucho volumen puede servir, pero hay que probarlo con datos propios antes de cambiar nada.
+Lucía: Está en la API de Meta, en Google Cloud y en Oracle Cloud.
+Lucía: Tercera. Google lanzó la Gemini Decisions API, con un modelo que se llama Gemini Decision uno.
+Martín: ¿Decisiones de qué tipo?
+Lucía: De conjunto cerrado. Sí o no, opción múltiple, o un puntaje con una rúbrica.
+Lucía: Podés mandar hasta mil preguntas en un solo pedido.
+Martín: ¿Sobre texto nada más?
+Lucía: No. Texto, imágenes, audio, video y pe de efe, de hasta doscientos cincuenta y seis mil tokens.
+Lucía: Cuesta diez centavos por millón de tokens de entrada. Y la salida es gratis.
+Martín: Tiene sentido, la salida es un sí o un no.
+Lucía: La latencia que declaran va de ciento cincuenta a doscientos cincuenta milisegundos. Y devuelve un puntaje de confianza de cero a uno.
+Martín: Ayer contamos que Hugging Face presentó los decision models, modelos que devuelven probabilidades en vez de generar texto. Esto va exactamente en la misma dirección.
+Lucía: Sí. Y tiene nivel gratuito en AI Studio.
+Martín: Para mí es la noticia más útil del día. Clasificar mails o mensajes barato y con una confianza que podés medir es trabajo de todos los días.
+Lucía: Cuarta. Amazon publicó a doble ve ese emulator, un clon local oficial de sus servicios para probar sin tocar la nube.
+Martín: ¿Qué servicios cubre?
+Lucía: Eso no lo pudimos verificar. La lista de servicios no figura en el repositorio.
+Lucía: Lo que cuenta Simon Willison es que está escrito en Rust, en buena parte por agentes de IA.
+Martín: Eso es un dato curioso en sí mismo.
+Lucía: Y en Mac o Windows necesita Docker.
+Martín: La idea es buena. Probar un pipeline sin pagar y sin miedo a romper producción. Habría que ver qué tan completo es.
+Lucía: Quinta, y esta es para actualizar ya. Salió llm cero punto treinta y siete punto dos.
+Martín: El jueves pasado habíamos contado llm cero punto treinta y siete, con modelos nuevos de OpenAI.
+Lucía: Bueno, esta versión corrige dos fallas de seguridad.
+Lucía: La clave de OpenAI se podía mandar a endpoints compatibles de otros proveedores.
+Martín: ¿En qué casos?
+Lucía: Dos. Si usabas una clave con nombre que no estaba guardada. O si corrías un modelo con la opción de responses activada y forzabas chat completions.
+Martín: Ayer hablamos de la brecha en Railway, con setecientos cuarenta mil dólares en uso fraudulento de IA con credenciales robadas. Una clave que se escapa no es un detalle.
+Lucía: Exacto. Si usás llm con varios proveedores, actualizá.
+Lucía: Sexta y última. Latent Space publicó una crónica del taller de OpenAI sobre Codex en el AI Engineer Code Summit.
+Martín: ¿Qué dijeron?
+Lucía: Que la nube de Codex funciona como ejecutor en segundo plano, aunque pasar una tarea de local a la nube todavía es torpe. Hablaron de la voz como interfaz.
+Lucía: Y de Codex Cloud versión dos, donde publicás el entorno una vez y cada tarea corre en una instancia aislada.
+Martín: ¿Algún consejo práctico?
+Lucía: Uno. Bajar el nivel de esfuerzo.
+Martín: Es una crónica de terceros, con pocos datos duros. La tomo como experiencia de uso, no como anuncio.
+
+## Para desarrolladores
+Lucía: Vamos a lo que cambia en el día a día de quien programa o arma datos.
+Martín: Lo primero, lo de llm. Si lo usás, actualizá hoy y te sacás el problema de encima.
+Lucía: Y aprovechá para revisar qué claves tenés guardadas y con qué nombre. La falla aparecía justo cuando la clave nombrada no estaba guardada.
+Martín: Segundo, la Decisions API. Mucho de lo que hacemos con modelos grandes es, en el fondo, clasificar.
+Lucía: Este mail es reclamo o consulta. Esta factura está completa o no.
+Martín: Hoy eso se resuelve pidiéndole a un modelo que genere texto y después parseando la respuesta. Acá te devuelve la opción y un puntaje.
+Lucía: Y con el puntaje podés poner un umbral. Lo que tiene confianza baja va a revisión humana.
+Martín: Tercero, el emulador de Amazon. Si tenés tests que hoy pegan contra la nube, vale la pena mirar si cubre los servicios que usás.
+Lucía: Con la salvedad de que la lista de servicios todavía no la verificamos.
+Martín: Cuarto, precios. Entre Muse Ember y Fable cinco punto dos hay una diferencia enorme. Ochenta veces en la entrada.
+Lucía: Lo cual no quiere decir que Ember sirva para todo. En código queda detrás de Haiku, según la propia Meta.
+Martín: Mi consejo: armá un set chico de tareas tuyas, reales, y corré los dos. Los benchmarks de cada empresa no te dicen cómo le va con tus datos.
+Lucía: Y lo del modo rápido de Fable: el doble de precio. Usalo donde la espera te cueste plata, no por default.
+Martín: Va en línea con lo del taller de Codex, bajar el esfuerzo. No siempre hace falta el máximo.
+
+## Oportunidades de consultoría
+Lucía: Hoy pensé en estudios y profesionales independientes. Un estudio contable chico, por ejemplo.
+Martín: ¿Cuál es el problema?
+Lucía: Los clientes mandan de todo por WhatsApp o por mail. Fotos de facturas, pe de efe de constancias, audios.
+Lucía: Alguien del estudio tiene que abrir cada cosa, ver qué es, de qué cliente y a qué carpeta va.
+Martín: Y eso se come horas que nadie factura.
+Lucía: La idea es usar algo como la Decisions API para la primera clasificación.
+Lucía: Preguntas cerradas. ¿Es factura, recibo, constancia u otra cosa? ¿Está legible, sí o no?
+Martín: Como acepta imágenes, pe de efe y audio, no hace falta transcribir antes.
+Lucía: Lo que tiene confianza alta se archiva solo. Lo dudoso queda en una bandeja para que lo mire una persona.
+Martín: ¿Qué haría falta para arrancar?
+Lucía: Primero, una lista clara de categorías, acordada con el estudio.
+Lucía: Segundo, una muestra de documentos reales para medir cuánto acierta antes de soltarlo.
+Lucía: Tercero, resolver cómo llegan los archivos desde el WhatsApp o el mail hasta el sistema.
+Martín: Y cuarto, hablar de privacidad. Son datos fiscales de terceros. Eso tiene que estar claro antes de mandar nada a una API.
+Lucía: Es una idea para explorar, no una promesa. Si la muestra da mal, se ajusta o no se hace.
+
+## Una cosa para probar hoy
+Martín: Para hoy, algo de menos de media hora: medir si la Decisions API sirve para tu caso.
+Lucía: Paso uno. Juntá unos treinta mensajes o mails reales. Sacales nombres y datos personales.
+Martín: Paso dos. Etiquetalos vos a mano. Por ejemplo, reclamo, consulta o pedido.
+Lucía: Paso tres. Entrá a AI Studio, que tiene nivel gratuito, y armá esa misma pregunta como opción múltiple.
+Martín: Paso cuatro. Pasale los treinta mensajes y anotá la respuesta y el puntaje de confianza de cada uno.
+Lucía: Paso cinco. Compará con tus etiquetas. Fijate cuántos acertó y, sobre todo, si los errores tenían confianza baja.
+Martín: Si los errores se concentran abajo, ya tenés un umbral para mandar esos casos a revisión humana.
+Lucía: Y si no se concentran, también aprendiste algo, y en media hora.
+
+## Quedaron afuera
+Martín: Tres cosas que vimos y dejamos afuera.
+Lucía: Una. Anthropic lanzó el roadshow de su salida a bolsa, con ochocientos veinticinco millones de acciones a entre setenta y setenta y ocho dólares.
+Martín: Quedó afuera porque es contexto financiero, con poco impacto para quien usa la API. Y el registro ante la comisión de valores de Estados Unidos todavía no es efectivo.
+Lucía: Dos. Alibaba mostró la familia Qwen cuatro.
+Martín: Sin confirmar. El comunicado oficial de septiembre dice que está en entrenamiento, sin fecha, sin precio y sin pesos publicados.
+Lucía: Tres. Se dice que OpenAI retira las voces Advanced y Standard de ChatGPT el once de diciembre.
+Martín: No pudimos abrir la página de ayuda ni encontrar otra fuente con esa fecha. Si se confirma, lo contamos.
+Lucía: Si querés que alguna de estas entre en un próximo episodio, avisanos.
+
+Martín: Eso es todo por hoy, nos escuchamos mañana en Radar IA.
