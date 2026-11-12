@@ -1079,6 +1079,36 @@
       "url": "https://simonwillison.net/2026/Nov/2/llm",
       "title": "llm 0.37: nuevos modelos OpenAI y nuevo modelo por defecto más barato",
       "date": "2026-11-05"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available",
+      "title": "Google lanza Gemini 4 Carbon con /swarm en Antigravity",
+      "date": "2026-11-11"
+    },
+    {
+      "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors",
+      "title": "Claude suma Sheets, Whiteboards y Claude Data (ex Dashboards) con conectores interactivos",
+      "date": "2026-11-11"
+    },
+    {
+      "url": "https://elevenlabs.io/blog/scribe-v3",
+      "title": "ElevenLabs lanza Scribe v3 y Scribe v3 Live, con mejora en español",
+      "date": "2026-11-11"
+    },
+    {
+      "url": "https://bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges",
+      "title": "Brecha en Railway: USD 740.000 en uso fraudulento de IA con credenciales robadas",
+      "date": "2026-11-11"
+    },
+    {
+      "url": "https://huggingface.co/blog/decision",
+      "title": "Hugging Face presenta los 'decision models': modelos que devuelven probabilidades en vez de generar texto",
+      "date": "2026-11-11"
+    },
+    {
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code",
+      "title": "DeepMind presenta AlphaProof Code: verificación formal del código del protocolo de Signal",
+      "date": "2026-11-11"
     }
   ]
 }
