@@ -1139,6 +1139,36 @@
       "url": "https://simonwillison.net/2026/Nov/2/census-bureau-super-intelligence",
       "title": "Adopción de IA en empresas de EE.UU.: datos del Census Bureau a octubre 2026",
       "date": "2026-11-06"
+    },
+    {
+      "url": "https://anthropic.com/claude-fable-and-mythos-5-2",
+      "title": "Anthropic lanza Claude Fable 5.2 y Mythos 5.2",
+      "date": "2026-11-12"
+    },
+    {
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "title": "Meta presenta Muse Ember, su modelo más chico y barato para agentes",
+      "date": "2026-11-12"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api",
+      "title": "Google lanza la Gemini Decisions API con el modelo Gemini Decision 1",
+      "date": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/aws/aws-emulator",
+      "title": "AWS publica un emulador local oficial de sus servicios",
+      "date": "2026-11-12"
+    },
+    {
+      "url": "https://github.com/simonw/llm/releases/tag/0.37.2",
+      "title": "llm 0.37.2 corrige dos fallas que podían filtrar la API key de OpenAI a otros proveedores",
+      "date": "2026-11-12"
+    },
+    {
+      "url": "https://latent.space/p/codex-work",
+      "title": "Taller de OpenAI sobre Codex en el AI Engineer Code Summit",
+      "date": "2026-11-12"
     }
   ]
 }
