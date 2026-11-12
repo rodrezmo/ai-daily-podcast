@@ -99,7 +99,7 @@ def synth_gemini(lines, tts):
     # En la Routine la key no está en el entorno: el proxy de la sesión la agrega al request.
     # google-genai >= 3.0 usa v1 por defecto; TTS y Voice Design solo existen en v1beta (404 "model not found").
     client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY") or "proxy-injected",
-                          http_options={"api_version": "v1beta"})
+                          http_options={"api_version": "v1beta", "timeout": 300_000})  # 5 min por request: una llamada colgada no traba el workflow
     silence = b"\x00\x00" * int(SAMPLE_RATE * tts["pause_ms"] / 1000)
     out = []
     chunks = chunk_lines(lines, tts["max_chunk_chars"])
