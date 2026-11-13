@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 13 de noviembre: Gemini 4 Hydrogen y la suba de precios que se viene",
+  "summary": "Google lanza Gemini 4 Hydrogen y se anuncia que Carbon y Argon duplican su precio el primero de diciembre. Además: pagos de agentes con x402 en Brave, un modelo abierto de 145B para notebook, transcripción abierta de Salesforce y los pesos abiertos de Inkling 2 Small.",
+  "stories": [
+    {
+      "title": "Google lanza Gemini 4 Hydrogen, su modelo barato para código y agentes",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+    },
+    {
+      "title": "Gemini 4 Hydrogen frente a Haiku 5.5 y GPT-6 Luna: el precio no es tan barato, y Carbon y Argon duplican el suyo el 1 de diciembre",
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/"
+    },
+    {
+      "title": "Brave Search API acepta pagos de agentes con el protocolo x402",
+      "url": "https://brave.com/blog/search-api-agentic-payments/"
+    },
+    {
+      "title": "Edge0-145B: modelo abierto de 145B que corre en una notebook con unos 29 GB de memoria",
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer"
+    },
+    {
+      "title": "Salesforce publica SOV-Transcribe-1, modelo abierto de transcripción bajo Apache 2.0",
+      "url": "https://huggingface.co/blog/salesforce-sovereign-intelligence/sov-transcribe-1"
+    },
+    {
+      "title": "Thinking Machines libera Inkling 2 Small con pesos Apache 2.0: 594B totales, 17B activos, 1M de contexto",
+      "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Apple amplía su Foundation Models framework",
+      "url": "https://developer.apple.com/foundation-models-framework/"
+    },
+    {
+      "title": "Perplexity publica Decider v1.3",
+      "url": "https://x.com/AravSrinivas/status/2121020114321703210"
+    },
+    {
+      "title": "Provincia de Buenos Aires regula el uso de IA en el sector público",
+      "url": "https://ecosistemastartup.com/?p=110054"
+    }
+  ]
+}

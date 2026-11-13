@@ -1,0 +1,93 @@
+## Titulares
+Lucía: Buen día, es viernes trece de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay mucho modelo abierto, una cuenta de precios que conviene hacer antes de fin de mes y un buscador que cobra a los agentes.
+Lucía: Arrancamos por Google. Lanzó Gemini cuatro Hydrogen, que presenta como su modelo barato para código y agentes.
+Martín: Los datos del blog de Google: un millón de tokens de contexto y cuatro niveles de razonamiento.
+Lucía: El precio es un dólar con cincuenta por millón de tokens de entrada y siete con cincuenta por millón de salida.
+Martín: Y el precio es plano en todo el contexto. No sube si le mandás un documento enorme.
+Lucía: Google dice que es dos veces y media más rápido que Gemini tres punto ocho Flash. Eso es dato de Google, no medición independiente.
+Martín: Llega a la API, a Sheets y al modo gratuito de la app.
+Lucía: El miércoles habíamos contado que Google lanzó Gemini cuatro Carbon. Hydrogen sería el hermano chico de esa familia.
+Martín: Mi opinión: que el precio esté publicado y sea plano está bueno para presupuestar. Pero ojo con la palabra barato.
+Lucía: Justo, porque esa es la segunda noticia. Simon Willison puso a Hydrogen al lado de la competencia.
+Martín: Y la comparación no lo deja tan bien parado. Haiku cinco punto cinco y GPT seis Luna cuestan diez centavos de dólar por millón de entrada y cincuenta centavos por millón de salida.
+Lucía: O sea que Hydrogen sale unas quince veces más caro que esos dos.
+Martín: Es un modelo de costo medio, no un modelo barato.
+Lucía: Y hay un dato más fuerte. Según Willison, Carbon y Argon pasan el primero de diciembre a costar el doble.
+Martín: Hoy están en dos dólares de entrada y diez de salida por millón.
+Lucía: Eso lo dice el autor del blog. No lo vimos en un anuncio de Google, así que tomalo como algo a confirmar.
+Martín: Pero si tenés algo andando sobre Gemini cuatro, yo haría la cuenta igual. Quedan dos semanas y media.
+Lucía: Tercera. Brave hizo que su API de búsqueda acepte pagos de agentes con un protocolo que se llama x cuatrocientos dos.
+Martín: La mecánica es así. El agente pide algo, recibe un error cuatrocientos dos, firma un pago y vuelve a intentar.
+Lucía: El pago es en USDC sobre la red Base. Sin cuenta y sin clave de API.
+Martín: Cuesta cinco dólares cada mil pedidos, y Brave cubre las comisiones de red por tiempo limitado.
+Lucía: Me parece interesante como idea. Un agente que paga lo que usa, sin que vos administres claves.
+Martín: Sí, pero te obliga a manejar cripto. En la región eso tiene su vuelta contable y operativa. No es para enchufar mañana.
+Lucía: Cuarta, y acá pido escepticismo desde el principio. Edge cero ciento cuarenta y cinco B.
+Martín: Es un modelo abierto de ciento cuarenta y cinco mil millones de parámetros que, según la empresa, corre en una notebook con unos veintinueve gigas de memoria.
+Lucía: Tiene unos diez mil millones de parámetros activos, más de ochenta tokens por segundo y un contexto de entre ciento veintiocho mil y doscientos cincuenta y seis mil tokens.
+Martín: Reportan ochenta y seis y medio en Terminal-Bench dos punto uno.
+Lucía: Con evaluaciones propias. Y fijate esto: la página no dice qué licencia tiene, y el informe técnico está pendiente.
+Martín: Entonces, si los números se sostienen, es muy útil para correr algo potente en local con datos sensibles. Hoy son cifras del proveedor y nada más.
+Lucía: Quinta. Salesforce publicó en Hugging Face un modelo abierto de transcripción, SOV Transcribe uno, con licencia Apache dos.
+Martín: En el ranking de Artificial Analysis tiene una tasa de error por palabra de dos coma veintiocho por ciento.
+Lucía: Queda por debajo de Nemotron tres punto cinco Transcribe, con dos coma ochenta y uno, y de Voxtral Small, con dos coma setenta y siete.
+Martín: Tiene cuatro mil millones de parámetros activos sobre veintiséis mil millones totales.
+Lucía: El problema para nosotros: el post habla de inglés y no menciona el español.
+Martín: Y el miércoles contamos que ElevenLabs lanzó Scribe v tres con mejora en español. Así que hay opciones, pero esta en particular hay que probarla con audio rioplatense antes de confiar.
+Lucía: Y la sexta. Thinking Machines liberó Inkling dos Small con pesos bajo Apache dos.
+Martín: Quinientos noventa y cuatro mil millones de parámetros totales, diecisiete mil millones activos.
+Lucía: Es una mezcla de expertos que acepta texto e imagen, y tiene soporte en ve ele ele eme desde el primer día.
+Martín: Una aclaración de fechas. Lo anunciaron el cinco de noviembre y los pesos se liberaron el doce.
+Lucía: Mi lectura: licencia permisiva, buena noticia. Pero con ese tamaño no es para una notebook. Necesitás infraestructura seria.
+Martín: Y ayer hablamos de Muse Ember, el modelo más chico y barato de Meta para agentes. La semana viene cargada de modelos en todos los tamaños.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué cambia en el día a día de quien programa?
+Martín: Lo primero es plata. Si tenés flujos sobre Carbon o Argon, revisá el costo antes del primero de diciembre.
+Lucía: Aunque el dato venga de Willison y no de Google, cuesta poco hacer la cuenta y tener un plan.
+Martín: Y si pensás pasar a Hydrogen para ahorrar, compará con Haiku cinco punto cinco y GPT seis Luna. Quince veces de diferencia no es un detalle.
+Lucía: Lo que sí tiene Hydrogen es el precio plano con un millón de contexto. Si tu caso es mandar documentos largos enteros, eso simplifica mucho el presupuesto.
+Martín: Segundo, lo de Brave. Más allá de la cripto, el patrón es interesante.
+Lucía: El cuatrocientos dos como señal de pago. Si armás agentes que consumen servicios externos, vale la pena entender cómo funciona aunque hoy no lo uses.
+Martín: Tercero, modelos abiertos. Hoy tenemos tres, y los tres con una letra chica distinta.
+Lucía: Edge cero, sin licencia explícita. No lo metas en nada de un cliente hasta que eso esté claro.
+Martín: Inkling dos Small, con licencia clara, pero pesado.
+Lucía: Y SOV Transcribe, con licencia clara y tamaño razonable, pero sin datos de español.
+Martín: La regla general: el número del benchmark es el punto de partida. La prueba es con tus datos.
+Lucía: Sobre todo en transcripción. Una tasa de error medida en inglés no te dice nada de un audio de WhatsApp con ruido de colectivo.
+
+## Oportunidades de consultoría
+Martín: Hoy la idea va para estudios y profesionales independientes. Pienso en un estudio contable o jurídico chico.
+Lucía: ¿Cuál es el problema?
+Martín: Los clientes mandan audios de WhatsApp todo el día. Alguien los escucha, anota lo que piden y lo carga en una planilla.
+Lucía: Y muchas veces son datos que el estudio no quiere mandar a un servicio externo.
+Martín: Exacto. Ahí entra un modelo de transcripción abierto, corriendo en una máquina del propio estudio.
+Lucía: Lo que se automatiza es pasar el audio a texto y dejarlo en una planilla con el cliente, la fecha y el pedido.
+Martín: Y una persona revisa. No se reemplaza a nadie, se le saca el trabajo de tipear.
+Lucía: ¿Qué haría falta?
+Martín: Primero, una prueba con audios reales del estudio, con permiso, para ver si el modelo entiende el español de esa gente. SOV Transcribe no lo promete.
+Lucía: Y comparar con alguna alternativa que sí mencione español, como lo que contamos de Scribe v tres, si el estudio acepta un servicio externo.
+Martín: Después, una computadora con memoria suficiente y un circuito simple para exportar los audios.
+Lucía: Lo vendería como piloto acotado. Si la transcripción no sirve en español, se sabe en una semana y no se gastó de más.
+
+## Una cosa para probar hoy
+Lucía: Para hoy, algo de menos de media hora. Hacé la cuenta de cuánto te costaría tu uso actual con estos precios.
+Martín: Paso uno. Entrá al panel de uso de tu proveedor y anotá cuántos millones de tokens de entrada y de salida usaste el último mes.
+Lucía: Paso dos. Abrí una planilla. Una fila por modelo y dos columnas de precio, entrada y salida.
+Martín: Paso tres. Cargá Hydrogen, uno con cincuenta y siete con cincuenta. Haiku cinco punto cinco y GPT seis Luna, diez centavos y cincuenta centavos.
+Lucía: Si usás Carbon o Argon, cargá dos y diez, y otra fila con el doble, por si se confirma lo de diciembre.
+Martín: Paso cuatro. Multiplicá tus millones de entrada por el precio de entrada, los de salida por el de salida, y sumá.
+Lucía: Paso cinco. Mirá la diferencia y elegí una tarea concreta para probar en el modelo más barato que te parezca razonable.
+Martín: El precio solo no decide. Pero en veinte minutos sabés cuánto te jugás.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera. Decinos si querés que alguno entre.
+Martín: Apple amplió su framework de modelos. Habla de perfiles dinámicos, de usar Claude y Gemini por la misma API y de un SDK para Python.
+Lucía: No entró porque es todo dato del proveedor y la página no tiene fecha. No pudimos confirmar cuándo salió.
+Martín: Perplexity publicó Decider uno punto tres, modelos abiertos para clasificar y extraer datos que te dicen en qué parte del texto encontraron cada cosa.
+Lucía: Se relaciona con los decision models de Hugging Face que contamos el miércoles. Pero lo anunció el propio CEO en una red social, sin fecha confirmada, así que lo dejamos.
+Martín: Y una local. Se dice que la Provincia de Buenos Aires reguló el uso de IA en su administración pública con un decreto.
+Lucía: Lo vimos en una fuente secundaria y no verificamos ni la fecha ni el texto oficial. Si se confirma, lo retomamos.
+
+Martín: Eso es todo por hoy, buen viernes y nos escuchamos el lunes.
