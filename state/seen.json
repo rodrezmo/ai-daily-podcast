@@ -1169,6 +1169,36 @@
       "url": "https://latent.space/p/codex-work",
       "title": "Taller de OpenAI sobre Codex en el AI Engineer Code Summit",
       "date": "2026-11-12"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen",
+      "title": "Google lanza Gemini 4 Hydrogen, su modelo barato para código y agentes",
+      "date": "2026-11-13"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/12/llm-gemini",
+      "title": "Gemini 4 Hydrogen frente a Haiku 5.5 y GPT-6 Luna: el precio no es tan barato, y Carbon y Argon duplican el suyo el 1 de diciembre",
+      "date": "2026-11-13"
+    },
+    {
+      "url": "https://brave.com/blog/search-api-agentic-payments",
+      "title": "Brave Search API acepta pagos de agentes con el protocolo x402",
+      "date": "2026-11-13"
+    },
+    {
+      "url": "https://edge0.ai/blog/introducing-edge0-145b-frontier-ai-capabilities-on-your-own-computer",
+      "title": "Edge0-145B: modelo abierto de 145B que corre en una notebook con unos 29 GB de memoria",
+      "date": "2026-11-13"
+    },
+    {
+      "url": "https://huggingface.co/blog/salesforce-sovereign-intelligence/sov-transcribe-1",
+      "title": "Salesforce publica SOV-Transcribe-1, modelo abierto de transcripción bajo Apache 2.0",
+      "date": "2026-11-13"
+    },
+    {
+      "url": "https://thinkingmachines.ai/news/inkling-2-small",
+      "title": "Thinking Machines libera Inkling 2 Small con pesos Apache 2.0: 594B totales, 17B activos, 1M de contexto",
+      "date": "2026-11-13"
     }
   ]
 }
