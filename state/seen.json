@@ -1199,6 +1199,36 @@
       "url": "https://thinkingmachines.ai/news/inkling-2-small",
       "title": "Thinking Machines libera Inkling 2 Small con pesos Apache 2.0: 594B totales, 17B activos, 1M de contexto",
       "date": "2026-11-13"
+    },
+    {
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+      "title": "llama.cpp y ggml llegan a la versión 1.0.0",
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio",
+      "title": "Google AI Studio integra créditos de Google Cloud para AI Pro y Ultra",
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen",
+      "title": "Gemini en Google Sheets con Gemini 4 Hydrogen",
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html",
+      "title": "AWS publica aws-emulator: clon local y gratuito de más de 200 servicios de AWS, escrito por agentes",
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december",
+      "title": "GitHub Copilot retira 6 modelos el 14 de diciembre de 2026",
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace",
+      "title": "Hugging Face Hub se puede pagar desde Google Cloud Marketplace",
+      "date": "2026-11-14"
     }
   ]
 }

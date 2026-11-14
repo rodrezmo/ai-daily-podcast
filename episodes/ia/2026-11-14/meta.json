@@ -40,5 +40,10 @@
       "title": "LLM 0.37.2 corrige una fuga de la API key de OpenAI hacia otros proveedores",
       "url": "https://simonwillison.net/2026/Nov/11/llm/"
     }
-  ]
+  ],
+  "guid": "ia-2026-11-14",
+  "bytes": 4568550,
+  "seconds": 534.288,
+  "pub_date": "2026-11-14T06:17:18.713642-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-11-14/episode.mp3"
 }
