@@ -1,0 +1,113 @@
+## Titulares
+Lucía: Buen día, hoy es sábado catorce de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay un episodio bastante de herramientas, con poco humo.
+Lucía: Arrancamos con algo que a mí me alegró. llama.cpp y ggml llegaron a la versión uno punto cero.
+Martín: ¿Uno punto cero recién ahora? Si hace años que todo el mundo lo usa.
+Lucía: Justamente. Lo importante no es el número, es el compromiso que viene con él.
+Lucía: A partir de ahora, los cambios que rompen la API o la ABI se van a marcar con un salto de versión mayor.
+Martín: O sea, si armaste algo encima, no te lo rompen en una actualización cualquiera.
+Lucía: Exacto. Y además soporta más de ciento cincuenta variantes de arquitectura y tiene decodificación especulativa.
+Martín: Y se instala por todos lados. Docker, Homebrew, Winget, conda-forge y hasta XCFramework para Apple.
+Lucía: Sale en el blog de Hugging Face, del equipo de llama.cpp.
+Martín: Mi opinión: es de las noticias más aburridas y más útiles de la semana. Estabilidad es lo que le faltaba a lo local.
+Lucía: Segunda. Google AI Studio ahora integra créditos de Google Cloud para quienes pagan AI Pro o Ultra.
+Martín: ¿Cómo funciona eso?
+Lucía: Los suscriptores reclaman créditos mensuales de Google Cloud desde AI Studio.
+Lucía: Cada crédito dura doce meses y se van acumulando.
+Martín: Ojo con un detalle. Para usar la facturación de Cloud te piden un prepago mínimo de cinco dólares.
+Lucía: Sí. Y la nota no dice cuántos créditos son por mes, así que no sabemos cuánto rinde.
+Martín: Para prototipar con la API de Gemini está bien. Pero hasta no ver el monto, es un beneficio con letra chica.
+Lucía: Tercera, y es un seguimiento corto. Ayer contamos que Google lanzó Gemini cuatro Hydrogen, su modelo barato para código y agentes.
+Martín: Y que, comparado con la competencia, el precio no era tan barato como parecía.
+Lucía: Eso. Lo nuevo es que Gemini en Google Sheets recibe ese modelo.
+Lucía: Está para suscripciones de negocio elegibles y para AI Pro y Ultra.
+Martín: Sale en el anuncio del lanzamiento, en el blog de Google.
+Martín: Mi lectura: tener el modelo nuevo dentro de la planilla es lo que más gente va a tocar sin saberlo. Google habla de resultados más de treinta por ciento más rápidos que los modelos anteriores en Sheets, pero no dice contra cuáles ni cómo es la calidad.
+Lucía: Cuarta. El jueves contamos que AWS publicó un emulador local oficial de sus servicios.
+Martín: El aws-emulator, sí.
+Lucía: Ahora hay más detalle en el blog All Things Distributed.
+Lucía: Emula las APIs de más de doscientos servicios de AWS. Está escrito en Rust y la licencia es CC cero.
+Martín: Y lo llamativo es que el código lo escribieron y lo probaron agentes.
+Lucía: Corre sin conexión y sin cuenta de AWS. En tu máquina, en un servidor de desarrollo o en integración continua.
+Martín: En macOS y en Windows recomiendan usar Docker.
+Lucía: A mí me parece la noticia más práctica del día. Probar sin gastar y sin andar pasando credenciales.
+Martín: Coincido. Lo de que lo escribieron agentes es más titular que dato, pero el emulador en sí sirve.
+Lucía: Quinta. GitHub Copilot va a retirar seis modelos el catorce de diciembre.
+Martín: Contame cuáles.
+Lucía: Claude Fable cinco, Claude Haiku cuatro punto cinco, Gemini tres punto ocho Flash, Gemini cuatro Argon, Grok cuatro punto seis y Kimi K tres.
+Martín: ¿Y qué ponen en su lugar?
+Lucía: Sugieren Fable cinco punto dos, Haiku cinco punto cinco, Gemini cuatro Hydrogen, Gemini cuatro Carbon y Grok cuatro punto siete.
+Martín: Son cinco. Kimi K tres se va sin reemplazo anunciado.
+Lucía: Sale en el changelog de GitHub.
+Martín: Mi opinión: un mes de aviso es poco si tenés flujos atados a un modelo puntual. Toca revalidar.
+Lucía: Última. El Hub de Hugging Face ahora se puede pagar desde el Marketplace de Google Cloud.
+Martín: ¿Qué entra en esa factura?
+Lucía: Team, Enterprise, Inference Endpoints, Providers, Spaces con GPU y almacenamiento.
+Martín: Y Hugging Face revisa cada suscripción, no es automático.
+Lucía: No es una noticia técnica, es de compras. Pero en una empresa grande eso destraba meses de trámite.
+Martín: Sí, cero glamour, bastante impacto para quien tiene que pedir permiso para gastar.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia hoy a quien programa?
+Lucía: Lo primero, y lo más urgente, es Copilot.
+Lucía: Si tenés algo fijado a alguno de esos seis modelos, tenés hasta el catorce de diciembre.
+Martín: Y no alcanza con cambiar el nombre del modelo en la configuración.
+Martín: Un modelo nuevo responde distinto. Si tenés prompts afinados o salidas que parsea otro sistema, hay que volver a probar.
+Lucía: Justo hablando de Carbon, uno de los reemplazos sugeridos. Ayer dijimos que Carbon y Argon duplican su precio el primero de diciembre.
+Martín: Así que migrar a Carbon puede salir más caro de lo que uno espera. Vale la pena mirarlo antes de elegir.
+Lucía: Segundo, el emulador de AWS.
+Lucía: Si armás pipelines de datos o automatizaciones sobre AWS, podés correr los tests contra el emulador en vez de contra la cuenta real.
+Martín: Y en integración continua eso es oro. No necesitás meter credenciales en el pipeline.
+Lucía: Con una salvedad. Es un emulador. Lo que pasa en producción puede no ser igual.
+Martín: Claro, sirve para el ciclo de desarrollo, no para dar por probado el despliegue.
+Lucía: Igual, para quien está aprendiendo AWS o armando una demo, poder romper cosas sin miedo a la factura cambia bastante.
+Martín: Sí. Y como corre offline, lo podés usar en una máquina que ni siquiera tiene salida a internet.
+Lucía: Y tercero, llama.cpp uno punto cero.
+Lucía: Si estabas dudando de construir algo encima por miedo a que cambie todo cada semana, ahora hay una promesa de estabilidad.
+Martín: Y con Docker o conda-forge lo metés en un entorno de datos sin compilar nada.
+Lucía: Lo de la decodificación especulativa también suma. Es una técnica para acelerar la generación.
+Martín: Aunque la nota no da números de cuánto mejora, así que eso hay que medirlo en tu propia máquina.
+Lucía: Lo de los créditos de AI Studio, para quien ya paga AI Pro, es plata que conviene reclamar para prototipar.
+Martín: Siempre que no te olvides del prepago de cinco dólares para activar la facturación.
+Lucía: Y como los créditos se acumulan, no hace falta usarlos todos el mismo mes.
+Martín: Pero vencen a los doce meses. Si no los usás, se pierden igual.
+Lucía: Y lo de Sheets. Si ya tenés una suscripción elegible, vale la pena ver si cambió algo en las fórmulas o resúmenes que venías pidiendo.
+Martín: Sin dar por hecho que mejoró. Comparalo con lo que te daba antes.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos a hablar de la pyme. Vamos con estudios y profesionales independientes.
+Martín: Pensá en un estudio contable o jurídico chico.
+Lucía: Tienen montones de documentos con datos de clientes. Y muchas veces no quieren, o no pueden, mandarlos a un servicio en la nube.
+Martín: Entonces usan IA a escondidas, pegando cosas en un chat, o no la usan.
+Lucía: La idea sería un asistente local montado sobre llama.cpp, que corra en una computadora del estudio.
+Martín: ¿Y qué automatiza concretamente?
+Lucía: Por ejemplo, clasificar los documentos que llegan, sacar un resumen corto de cada uno y armar una planilla de pendientes.
+Martín: Todo sin que los datos salgan de la oficina.
+Lucía: Y sin que nadie tenga que copiar y pegar a mano cada documento en un chat.
+Martín: El problema real ahí no es la tecnología, es el tiempo que se va en ordenar papeles que llegan por mail o por WhatsApp.
+Lucía: Exacto. El asistente no decide nada. Ordena y resume, y la persona revisa.
+Lucía: ¿Qué haría falta? Una máquina con memoria suficiente para el modelo que se elija.
+Lucía: Una carpeta de entrada bien definida, y alguien del estudio que revise lo que sale.
+Martín: Y una prueba con documentos reales antes de decidir nada. Un modelo local puede andar bien o quedarse corto según la tarea.
+Lucía: Exacto. Es una idea para explorar con ellos, no algo que se pueda prometer de entrada.
+Martín: Lo que cambia hoy es que la base ahora es estable. Eso hace más defendible construir encima.
+
+## Una cosa para probar hoy
+Martín: ¿Qué probamos hoy?
+Lucía: Correr un modelo local con llama.cpp. En menos de media hora lo tenés.
+Lucía: Paso uno. Instalá llama.cpp con lo que uses. Homebrew en Mac, Winget en Windows, o la imagen de Docker.
+Martín: Paso dos. Entrá al Hub de Hugging Face y bajate un modelo chico que sea compatible con llama.cpp.
+Lucía: Chico de verdad. Para esta prueba no hace falta nada grande.
+Martín: Paso tres. Corré el modelo desde la terminal y escribile una consulta simple.
+Lucía: Paso cuatro, el interesante. Pegale un texto tuyo que no mandarías a la nube y pedile un resumen en tres líneas.
+Martín: Y anotá cuánto tardó y si el resumen te sirve. Con eso ya sabés si lo local te alcanza para algo real.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera.
+Martín: IBM sumó a Granite cuatro punto uno un formato que llaman LLMON.
+Lucía: No entró porque es solo el anuncio del formato, sin datos de rendimiento verificados.
+Martín: También apareció la nota de Hugging Face sobre los decision models.
+Lucía: Esa la presentamos el miércoles, y hoy además no pudimos leer el contenido de la nota. Así que nada nuevo para sumar.
+Martín: Y la corrección de llm cero punto treinta y siete punto dos, por la fuga de la API key de OpenAI hacia otros proveedores.
+Lucía: Esa ya la contamos el jueves. Si querés que volvamos sobre alguna, avisanos.
+Martín: Eso fue todo por hoy. Buen sábado y hasta la próxima.

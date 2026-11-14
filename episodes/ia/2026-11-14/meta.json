@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 14 de noviembre: llama.cpp llega a la 1.0 y Copilot retira seis modelos",
+  "summary": "llama.cpp y ggml llegan a la versión 1.0.0 con compromiso de API estable. GitHub Copilot retira seis modelos el 14 de diciembre, AWS publica un emulador local de más de 200 servicios y Hugging Face se puede pagar desde Google Cloud. Además, créditos de Google Cloud en AI Studio y Gemini en Sheets.",
+  "stories": [
+    {
+      "title": "llama.cpp y ggml llegan a la versión 1.0.0",
+      "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+    },
+    {
+      "title": "Google AI Studio integra créditos de Google Cloud para AI Pro y Ultra",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-cloud-credits-gdp-ai-studio/"
+    },
+    {
+      "title": "Gemini en Google Sheets con Gemini 4 Hydrogen",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-4-hydrogen/"
+    },
+    {
+      "title": "AWS publica aws-emulator: clon local y gratuito de más de 200 servicios de AWS, escrito por agentes",
+      "url": "https://www.allthingsdistributed.com/2026/11/aws-emulator-and-the-engineers-job-when-agents-write-the-code.html"
+    },
+    {
+      "title": "GitHub Copilot retira 6 modelos el 14 de diciembre de 2026",
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december"
+    },
+    {
+      "title": "Hugging Face Hub se puede pagar desde Google Cloud Marketplace",
+      "url": "https://huggingface.co/blog/hub-gcp-marketplace"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Granite 4.1 de IBM suma LLMON",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+    },
+    {
+      "title": "Decision Models en Hugging Face",
+      "url": "https://huggingface.co/blog/decision"
+    },
+    {
+      "title": "LLM 0.37.2 corrige una fuga de la API key de OpenAI hacia otros proveedores",
+      "url": "https://simonwillison.net/2026/Nov/11/llm/"
+    }
+  ]
+}
