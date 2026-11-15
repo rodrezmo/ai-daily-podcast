@@ -1229,6 +1229,36 @@
       "url": "https://huggingface.co/blog/hub-gcp-marketplace",
       "title": "Hugging Face Hub se puede pagar desde Google Cloud Marketplace",
       "date": "2026-11-14"
+    },
+    {
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+      "title": "LLMON: lenguaje de marcado nativo para LLM, ahora en Granite 4.1 de 3B y 8B",
+      "date": "2026-11-15"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2",
+      "title": "Prompting Claude Fable 5.2: decirle que es dueño del código cambia cómo refactoriza",
+      "date": "2026-11-15"
+    },
+    {
+      "url": "https://code.visualstudio.com/updates/v1_146",
+      "title": "VS Code 1.146: bandeja de sesiones de agentes, comparación de modelos y Skills sobre MCP",
+      "date": "2026-11-15"
+    },
+    {
+      "url": "https://databricks.com/blog/new-genie-autonomous-ai-complex-enterprise-work",
+      "title": "Databricks presenta el nuevo Genie: agente autónomo para tareas largas sobre datos de empresa",
+      "date": "2026-11-15"
+    },
+    {
+      "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens",
+      "title": "Vercel Token Pass: USD 150 mensuales en tokens de modelos abiertos por USD 30 por equipo",
+      "date": "2026-11-15"
+    },
+    {
+      "url": "https://crissyfield.de/research/lovable-en",
+      "title": "Investigación alemana: miles de apps hechas con Lovable exponen datos personales en Supabase",
+      "date": "2026-11-15"
     }
   ]
 }
