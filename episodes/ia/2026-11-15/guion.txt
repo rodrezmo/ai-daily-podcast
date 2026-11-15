@@ -1,0 +1,109 @@
+## Titulares
+Lucía: Buen día, hoy es domingo quince de noviembre y esto es Radar IA.
+Martín: Hola, hola. Domingo tranquilo, pero hay seis notas que valen la pena.
+Lucía: Arranco con una de seguridad que dio vueltas por Hacker News el viernes. Bueno, el sábado catorce, perdón.
+Martín: La de Lovable.
+Lucía: Esa. Unos investigadores alemanes, de un sitio que se llama Crissyfield, analizaron unos ciento cincuenta y nueve mil proyectos hechos con Lovable.
+Lucía: De esos, unos treinta y cuatro mil quinientos usaban Supabase como base de datos.
+Martín: ¿Y qué encontraron?
+Lucía: Que en casi veinticinco mil sitios la base devolvía registros apenas cargabas la página, sin iniciar sesión.
+Lucía: Y en unos siete mil cuatrocientos sitios aparecían emails, repartidos en más de diez mil quinientas tablas.
+Martín: Ojo, que los propios autores aclaran que eso no es una tasa confirmada de filtración.
+Lucía: Sí, lo dicen ellos. Pero mencionan casos con pasaportes y con más de doscientos mil mensajes expuestos.
+Martín: El informe no tiene fecha y no hay respuesta de Lovable.
+Martín: Mi opinión: el problema no es la herramienta en sí, es que nadie revisa los permisos de la base. La app anda, se ve linda, y la puerta queda abierta.
+Lucía: Y me hace acordar a lo que contamos el miércoles, la brecha en Railway con uso fraudulento de IA. Distinto caso, mismo tema de fondo: la seguridad queda para después.
+Martín: Segunda. IBM publicó en el blog de Hugging Face algo que se llama LLMON.
+Lucía: ¿Qué es eso?
+Martín: Un lenguaje de marcado pensado para modelos de lenguaje. Usa tokens especiales para separar las instrucciones de los datos.
+Martín: Lo metieron en dos modelos preview de Granite cuatro punto uno, uno de tres mil millones de parámetros y otro de ocho mil millones.
+Lucía: ¿Y para qué sirve separar instrucciones de datos?
+Martín: Para la inyección de prompts. Que un documento que lee el agente no le pueda dar órdenes.
+Martín: IBM dice que en un benchmark llamado O, P, I evita un cuarenta y siete por ciento más de ataques que el mejor modelo de frontera que probaron.
+Lucía: El número es de IBM, así que con pinzas.
+Martín: Totalmente. Y ellos mismos dicen que son experimentales, que no son para producción. Pero la idea me parece de lo más sensato que leí en la semana.
+Lucía: Tercera. La guía de prompting de Anthropic para Claude Fable cinco punto dos, que levantó Simon Willison.
+Martín: El jueves contamos el lanzamiento de Fable cinco punto dos. Esto es otra cosa.
+Lucía: Exacto. Es un dato medido sobre cómo refactoriza.
+Lucía: Si no le aclarás de quién es el código, consolida código duplicado en menos de una de cada diez corridas.
+Lucía: Si le decís "sos el dueño y mantenedor de largo plazo de este código", lo hace en cerca de tres de cada cuatro.
+Martín: Una frase, y pasa de casi nunca a tres de cada cuatro.
+Lucía: Lo cual es útil y a la vez un poco inquietante. Dice mucho de cuánto depende el resultado de cómo le hablás.
+Martín: Cuarta. Salió VS Code uno punto ciento cuarenta y seis.
+Martín: Trae varias cosas en modo experimental o preview. Un modo Inbox para las sesiones de agentes, tipo bandeja de entrada.
+Martín: Comparación del mismo prompt entre varios modelos, con un juez y un sintetizador.
+Martín: Handoff desde Copilot CLI con el comando barra code, y MCP que le entrega skills al modelo.
+Lucía: ¿Y el dato duro?
+Martín: Que el arnés Local queda deprecado y se elimina en febrero de dos mil veintisiete. Hay que migrar al arnés Copilot.
+Lucía: Y ayer contamos que GitHub Copilot retira seis modelos el catorce de diciembre. Vienen limpiando bastante.
+Martín: Sí. Mi lectura: lo de comparar modelos con juez está bueno, pero lo importante de esta versión es la fecha de baja. Agendala.
+Lucía: Quinta. Databricks presentó el nuevo Genie.
+Lucía: Es un agente que hace trabajos largos sobre datos de la empresa. Puede correr programado o dispararse por un evento, por ejemplo una métrica que cae.
+Lucía: Tiene una capa de contexto de negocio que llaman Genie Ontology, y un tope de gasto por usuario a través de Unity Gateway.
+Martín: ¿Y números?
+Lucía: Databricks dice que en un benchmark propio, hecho con Turing, acertó el noventa y uno por ciento de las corridas.
+Lucía: Uno coma seis veces la tasa del mejor de dos agentes de frontera, y con menos de la mitad de los tokens.
+Martín: Benchmark propio, proveedor que se mide a sí mismo. Ya sabemos.
+Lucía: Y no hay fechas ni precios. Lo que sí me parece interesante es el concepto: un agente que vigila una métrica y te avisa, en vez de que vos le preguntes.
+Martín: Sexta y última. Vercel cambió el Token Pass.
+Martín: El plan sigue costando treinta dólares por equipo por mes, pero el crédito incluido pasó de ochenta a ciento cincuenta dólares.
+Lucía: Casi el doble.
+Martín: Casi el doble. Es para modelos abiertos a través de su AI Gateway: Kimi K tres y K tres punto uno Pro, GLM cinco punto tres y cinco punto tres Flash, y DeepSeek V cuatro punto uno Flash.
+Martín: Es acceso anticipado para equipos Pro, con cupos limitados.
+Lucía: ¿Y si te pasás?
+Martín: El crédito no se acumula, y con las claves del Token Pass, cuando se agota los requests se cortan. Sin cargos extra.
+Lucía: Eso me gusta más que el número. Un techo de gasto claro.
+Martín: Coincido. Para alguien que quiere probar un agente de código sin miedo a la factura, es un buen trato. Siempre que esos modelos te alcancen.
+
+## Para desarrolladores
+Lucía: Vamos a lo práctico. ¿Qué te llevás vos de todo esto si programás?
+Martín: Lo primero, lo de VS Code. Si usás el arnés Local, tenés hasta febrero de dos mil veintisiete. Mejor migrar al arnés Copilot con tiempo y no la semana anterior.
+Lucía: Lo segundo, la frase de Fable. Si usás agentes para refactorizar, decile que es el dueño y mantenedor del código.
+Martín: Ojo, que el dato es para Fable cinco punto dos. No sabemos si vale igual para otros modelos.
+Lucía: Bien. Lo tercero es lo de Lovable, y vale para cualquier app generada con IA.
+Lucía: Si la app usa Supabase, revisá los permisos a nivel de fila, lo que se llama R, L, S. Que la base no devuelva nada a alguien sin login.
+Martín: Y conecto con LLMON. Si tu agente lee documentos de terceros, mails, PDFs, lo que sea, tenés que pensar en la inyección de prompts.
+Martín: LLMON todavía no es para producción, pero la idea de fondo sí: separar bien qué es instrucción y qué es dato.
+Lucía: Y si estás armando algo con modelos abiertos y te preocupa el costo, lo de Vercel, si usás las claves del Token Pass, te da un número fijo por mes. Sabés cuánto vas a gastar como máximo.
+Martín: Para el que trabaja con datos, Genie marca una dirección. Agentes que corren solos cuando una métrica se mueve. Todavía sin precio, así que por ahora es para mirar.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero pensar en estudios y profesionales independientes.
+Martín: ¿Estudios contables, jurídicos?
+Lucía: Por ejemplo. Muchos se armaron un portal para clientes con alguna de estas herramientas que generan apps con IA.
+Lucía: Un formulario para subir documentación, una lista de trámites, ese tipo de cosas.
+Martín: Y ahí adentro hay datos personales de clientes.
+Lucía: Justamente. El problema de ese estudio es que no sabe si su base está abierta. Lo armó un sobrino, o lo armó la misma persona un fin de semana.
+Martín: Entonces la idea es una revisión de seguridad de esa app.
+Lucía: Sí. Primero, un inventario: qué tablas hay y qué datos guarda cada una.
+Lucía: Después, probar qué devuelve la base sin iniciar sesión, igual que hicieron los investigadores alemanes.
+Lucía: Y revisar que cada tabla tenga sus permisos por fila configurados.
+Martín: ¿Qué se automatiza?
+Lucía: La prueba sin login se puede dejar armada como un script que corre seguido y avisa si alguna tabla empieza a devolver registros.
+Martín: Eso está bueno, porque la app la siguen tocando y un cambio puede volver a abrir algo.
+Lucía: Exacto. Lo que haría falta es acceso a la app y a la base, permiso por escrito del estudio, y alguien que entienda permisos de base de datos.
+Martín: Y aclarar desde el principio que es una revisión. No es una garantía de que no haya otros agujeros.
+Lucía: Eso, una revisión, no una promesa.
+
+## Una cosa para probar hoy
+Martín: Propongo probar el truco de Fable, pero midiéndolo vos.
+Lucía: Contame.
+Martín: Paso uno. Buscá un repo tuyo que tenga código duplicado. Dos funciones que hacen casi lo mismo, por ejemplo.
+Martín: Paso dos. Hacé una copia del repo, o una rama nueva, para no ensuciar nada.
+Martín: Paso tres. Pedile a tu agente de código que refactorice ese módulo. Sin decirle nada más.
+Lucía: Y guardás lo que hizo.
+Martín: Eso. Paso cuatro. Volvés al estado original y repetís el mismo pedido, pero agregás la frase: "sos el dueño y mantenedor de largo plazo de este código".
+Martín: Paso cinco. Comparás los dos resultados. ¿Juntó el código duplicado en alguno de los dos?
+Lucía: Y si tenés tiempo, lo corrés dos o tres veces cada uno. Con una sola corrida no sacás conclusiones.
+Martín: Bien dicho. Y si usás otro modelo que no sea Fable, mejor todavía. Así ves si el truco se sostiene o es algo de ese modelo nomás.
+Lucía: En media hora lo tenés.
+
+## Quedaron afuera
+Lucía: Algunas que quedaron afuera hoy, por si quieren que las sumemos.
+Martín: El anuncio de Fable cinco punto dos en sí, con precios y benchmarks. Quedó afuera porque ya lo contamos el jueves.
+Lucía: Un aviso de que Power BI retira su Copilot independiente y lo reemplaza Microsoft trescientos sesenta y cinco Copilot.
+Lucía: Quedó afuera porque la fuente es un espejo no oficial del aviso de Microsoft, y las fechas son ambiguas.
+Martín: Genie en Slack, que pasó a disponibilidad general. Quedó afuera porque no trae datos nuevos ni precios.
+Lucía: Y el slash teamwork de Antigravity, el sistema multiagente de Google con verificadores automáticos. Afuera porque los resultados son autoinformados por Google.
+Martín: Si alguna les interesa, avísennos.
+Lucía: Eso es todo por hoy, buen domingo y nos escuchamos mañana.

@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 15 de noviembre: apps de Lovable con datos expuestos y un truco de prompt para Fable 5.2",
+  "summary": "Una investigación alemana encontró miles de apps hechas con Lovable que exponen datos personales en Supabase. Además, VS Code 1.146 depreca el arnés Local, el nuevo Genie de Databricks, el Token Pass de Vercel con más crédito para modelos abiertos y el modelo LLMON de IBM contra la inyección de prompts. Para probar hoy: la frase de dueño del código con Fable 5.2.",
+  "stories": [
+    {
+      "title": "LLMON: lenguaje de marcado nativo para LLM, ahora en Granite 4.1 de 3B y 8B",
+      "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+    },
+    {
+      "title": "Prompting Claude Fable 5.2: decirle que es dueño del código cambia cómo refactoriza",
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2#say-who-owns-the-code"
+    },
+    {
+      "title": "VS Code 1.146: bandeja de sesiones de agentes, comparación de modelos y Skills sobre MCP",
+      "url": "https://code.visualstudio.com/updates/v1_146"
+    },
+    {
+      "title": "Databricks presenta el nuevo Genie: agente autónomo para tareas largas sobre datos de empresa",
+      "url": "https://www.databricks.com/blog/new-genie-autonomous-ai-complex-enterprise-work"
+    },
+    {
+      "title": "Vercel Token Pass: USD 150 mensuales en tokens de modelos abiertos por USD 30 por equipo",
+      "url": "https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens"
+    },
+    {
+      "title": "Investigación alemana: miles de apps hechas con Lovable exponen datos personales en Supabase",
+      "url": "https://www.crissyfield.de/research/lovable-en/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Anthropic lanza Claude Fable 5.2 (y Mythos 5.2 para organizaciones verificadas)",
+      "url": "https://www.anthropic.com/news/claude-fable-and-mythos-5-2"
+    },
+    {
+      "title": "Genie en Slack ya está disponible en general (GA)",
+      "url": "https://www.databricks.com/blog/genie-slack-now-generally-available-governed-ai-cowork-right-where-work-happens"
+    },
+    {
+      "title": "Google Research: /teamwork de Antigravity, sistema multiagente con verificadores automáticos",
+      "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/"
+    },
+    {
+      "title": "Power BI retira el Copilot independiente: Microsoft 365 Copilot será el reemplazo desde el 8 de diciembre",
+      "url": "https://mc.merill.net/message/MC1546429"
+    }
+  ]
+}
