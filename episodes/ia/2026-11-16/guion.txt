@@ -1,0 +1,119 @@
+## Titulares
+Lucía: Buen día, hoy es lunes dieciséis de noviembre y esto es Radar IA.
+Martín: Buen día. Arrancamos la semana con mucho de datos, un par de cambios para quien programa y un benchmark que nos deja pensando.
+Lucía: Vamos con la primera. Databricks lanzó en beta Genie ZeroOps.
+Martín: ¿Qué hace?
+Lucía: Es un agente que corre en segundo plano y vigila jobs, pipelines y tablas. Detecta fallas y problemas de calidad de datos, investiga la causa y propone el arreglo.
+Martín: Propone, ojo. No dice que lo aplique solo.
+Lucía: Exacto. Y salió el doce de noviembre, en las notas de versión de Databricks.
+Martín: Ese mismo día también apareció Genie con Gemini cuatro Hydrogen, a través de Unity Gateway.
+Lucía: Que es el modelo barato de Google que contamos el trece.
+Martín: Y el quince hablamos del nuevo Genie como agente para tareas largas. Así que Databricks viene empujando fuerte con esta marca.
+Lucía: Además, Genie Search y Genie Ontology pasaron a disponibilidad general el nueve.
+Martín: Mi opinión: la idea de pipelines que se autodiagnostican es buena. Pero es beta, y no hay números de cuántas fallas encuentra ni con qué precisión. Hay que verlo andar.
+Lucía: Segunda. Microsoft retira el Copilot independiente de Power BI.
+Martín: ¿Y qué queda en su lugar?
+Lucía: Microsoft trescientos sesenta y cinco Copilot. Se activa por defecto el ocho de diciembre.
+Martín: Y el Copilot viejo se va a mediados de enero de dos mil veintisiete, según el aviso; el texto del propio aviso habla en otro punto de principios de enero.
+Lucía: Desaparece del Home, de la app del celular, de Teams y de las apps de workspace. Y se borran sus ajustes de tenant.
+Martín: O sea que si sos admin de Power BI, tenés hasta el ocho de diciembre para avisarle a la gente y revisar licencias.
+Lucía: Sale en el Message Center de Microsoft. Y mañana arranca Ignite, así que puede haber más detalles.
+Martín: Opinión honesta: esto es más un cambio de producto y de licencias que de tecnología. Pero el que no se entere va a tener usuarios confundidos en diciembre.
+Lucía: Tercera, y esta me gustó. Simon Willison sacó una nueva versión de datasette-agent, la cero punto seis, todavía alfa.
+Martín: Contame qué es, para el que no usa Datasette.
+Lucía: Es un plugin para hacerle preguntas en lenguaje natural a tus datos. Ahora tiene un cuadro para escribirle al agente directo en la página de inicio.
+Martín: Y suma algo chiquito pero útil: escribís numeral y te autocompleta tablas y consultas.
+Lucía: Y el día anterior salió otra versión de datasette-llm con endpoints compatibles con OpenAI. Eso quiere decir que funciona con LM Studio u Ollama, en tu máquina.
+Martín: Sin mandar nada a la nube. Para muchos clientes eso solo ya cambia la conversación.
+Lucía: Mi opinión: es alfa, no lo pondría en producción. Pero como demo es de lo mejor que vimos.
+Martín: Cuarta. Ai2 publicó XYBench, en el blog de Hugging Face.
+Lucía: ¿El del nombre raro?
+Martín: Ese. Son algo más de ocho mil preguntas donde el pedido parte de una idea equivocada. Es decir, la persona pide una cosa, pero lo que necesita es otra.
+Lucía: Ah, el clásico "¿cómo arreglo este error?" cuando el problema está tres pasos antes.
+Martín: Tal cual. Y ganó el premio a mejor recurso en EMNLP dos mil veintiséis.
+Lucía: ¿Y cómo les va a los modelos?
+Martín: Mirá, el dato más fuerte es de las respuestas de Stack Overflow. Entre tres cuartos y casi nueve de cada diez arreglan lo que se pidió.
+Lucía: Bien.
+Martín: Pero solo entre seis y siete de cada diez atienden el objetivo de fondo.
+Lucía: O sea, resuelven la pregunta y no el problema.
+Martín: Eso. Ahora, ojo: los modelos evaluados son de generaciones anteriores, como Sonnet cuatro punto seis y GPT cinco. No es una foto de lo que usamos hoy.
+Lucía: Igual la idea vale. El benchmark es útil aunque los modelos estén viejos.
+Martín: Quinta. Claude Code sacó dos versiones la semana pasada con cambios que se notan.
+Lucía: A ver.
+Martín: La dos punto uno punto trescientos veintitrés, del doce de noviembre, trae Code Mode. Es experimental y hay que activarlo a mano.
+Lucía: ¿Y qué es Code Mode?
+Martín: Claude escribe JavaScript para llamar a sus propias herramientas, en vez de llamarlas una por una.
+Lucía: Y esa misma versión cambia la ventana de contexto que asume cuando no reconoce el modelo.
+Martín: Pasa de doscientos mil a un millón de tokens. Se puede volver atrás con una variable de entorno; el nombre está en las notas.
+Lucía: Y la trescientos veinticinco, del trece, corrige una falla de seguridad al decodificar respuestas comprimidas con zstd.
+Martín: Y hace que los comandos Bash en sandbox pidan permiso por defecto. Salvo que lo desactives en la configuración.
+Lucía: Opinión: lo de los permisos me parece bien. Lo del millón de contexto por defecto lo miraría con cuidado, porque toca el costo.
+Martín: Sexta y última. langchain-openai uno punto ocho.
+Lucía: Suma OpenAIClassifier, una clase para usar la Decisions API de OpenAI desde LangChain. Esa API ya está en disponibilidad general.
+Martín: Y el once contamos los decision models de Hugging Face, y el doce la Decisions API de Gemini. Esto viene en la misma línea: modelos que eligen o clasifican, en vez de generar texto.
+Lucía: Lo otro importante: esta versión deja de soportar Python tres punto diez. Pide tres punto once como mínimo.
+Martín: Si seguís en tres punto diez, te quedás en la uno punto siete.
+Lucía: Y el quince, varios paquetes más, como los de xai, mistral, groq y deepseek, pasaron a rutear por el gateway de LangSmith y también soltaron el tres punto diez.
+Martín: Opinión: la clase nueva ahorra trabajo. Lo del piso de Python es lo que te va a morder en el entorno viejo de algún cliente.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué cambia en el día a día?
+Martín: Lo primero, si usás Claude Code en automatizaciones o en CI, revisá ya.
+Lucía: Por lo de los permisos en Bash.
+Martín: Claro. Si tu flujo corría comandos en sandbox sin preguntar, ahora va a frenar a pedir permiso. Puede quedar trabado esperando.
+Lucía: Y lo del contexto. Si usás un ID de modelo que Claude Code no reconoce, ahora asume un millón de tokens. Eso cambia cuánto manda y cuánto pagás.
+Martín: Y si armás plugins, ahora tienen versionado, con un campo engines en el archivo plugin punto json.
+Lucía: Segundo, LangChain. Antes de actualizar, fijate qué Python tenés.
+Martín: Sí, y no solo langchain-openai. Varios paquetes de otros proveedores hicieron lo mismo.
+Lucía: Y si clasificás mails, tickets o facturas, la clase nueva te evita armar el cliente de la Decisions API a mano.
+Martín: Tercero, y para mí lo más interesante, lo de XYBench.
+Lucía: ¿Qué te llevás de ahí?
+Martín: Que si armás un asistente o un agente, conviene que pregunte por el objetivo real antes de ponerse a ejecutar.
+Lucía: Eso se puede poner en el prompt. Algo como: antes de resolver, confirmá qué quiere lograr la persona.
+Martín: Exacto. No es magia, pero ataca justo lo que mide el benchmark.
+Lucía: Y para quien hace ingeniería de datos, ZeroOps marca hacia dónde va el monitoreo. Si sos de Databricks, vale probar la beta.
+Martín: Con la expectativa en su lugar. Diagnostica y propone. La decisión sigue siendo tuya.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme.
+Martín: ¿Con quién, entonces?
+Lucía: Con un equipo interno de datos, o un área de una institución pública, que use Power BI.
+Martín: Ah, por lo del Copilot.
+Lucía: Claro. El problema de esa gente es concreto: tienen una fecha, el ocho de diciembre, y probablemente nadie se puso a mirar qué cambia.
+Martín: Y los usuarios van a ver que el Copilot de siempre desaparece del Home, del celular, de Teams.
+Lucía: Entonces la idea es ofrecer una migración ordenada. Primero, un relevamiento: quién usa hoy el Copilot de Power BI y para qué.
+Martín: Segundo, revisar los requisitos de licencia del nuevo, que es lo que Microsoft pide revisar.
+Lucía: Tercero, armar el aviso a los usuarios y una guía corta de dónde quedó cada cosa.
+Martín: ¿Y qué se automatiza ahí?
+Lucía: El relevamiento y el seguimiento. Un informe que muestre por área quién está listo y quién no, y que se actualice solo hasta la fecha.
+Martín: ¿Y qué haría falta?
+Lucía: Acceso de lectura a la administración del tenant, alguien del lado del cliente que decida sobre licencias, y un par de semanas.
+Martín: Y después, ya con eso andando, se puede hablar de gobierno: qué datos puede tocar el Copilot y qué no.
+Lucía: Ojo, es una idea. No prometemos que salga barato ni que no haya sorpresas. Ignite arranca mañana y puede cambiar algo.
+
+## Una cosa para probar hoy
+Martín: La de hoy es casi obvia: hacerle preguntas a tus propios datos, en local, con Datasette.
+Lucía: Dale, contá el paso a paso.
+Martín: Uno. Instalás Datasette en tu máquina, con pip o como uses Python.
+Lucía: Dos. Le sumás los plugins datasette-agent y datasette-llm.
+Martín: Tres. Si querés que no salga nada a la nube, abrís LM Studio u Ollama con algún modelo que ya tengas bajado.
+Lucía: Cuatro. Configurás datasette-llm para que apunte al endpoint compatible con OpenAI de LM Studio u Ollama. Las instrucciones están en las notas.
+Martín: Cinco. Abrís Datasette con una base SQLite de prueba. Nada sensible, por favor.
+Lucía: Seis. En la página de inicio aparece el cuadro del agente. Escribís una pregunta y usás numeral para mencionar la tabla.
+Martín: Por ejemplo, numeral ventas, y preguntás cuál fue el mes con más movimiento.
+Lucía: Y siete, mirás la consulta que armó y la chequeás. No te quedes solo con la respuesta.
+Martín: Media hora, tranquilo. Y recordá que es alfa, así que puede fallar.
+Lucía: Si anda, ya tenés una demo para mostrarle a alguien.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: Anthropic lanzó en beta Claude Meetings: Claude entra a las reuniones de Google Meet, toma notas y responde en el chat.
+Lucía: No entró porque es solo Google Meet, y la fuente es Axios, no la página oficial, que no se pudo abrir.
+Martín: Después, OpenAI presentó ChatGPT Wallet, para que los agentes paguen sin ver el número de tarjeta.
+Lucía: Afuera porque por ahora es solo para suscriptores Pro en Estados Unidos, y la fecha no está confirmada.
+Martín: Tercera. Según el titular de un portal, Aleph, empresa con raíces argentinas, se alía con OpenAI para vender publicidad de ChatGPT en cuarenta y cuatro mercados.
+Lucía: Esa nos interesa, pero no pudimos leer la nota. No sabemos fecha ni qué países incluye, así que esperamos.
+Martín: Y la última. En una entrevista que levantó Infobae, Boris Cherny, de Anthropic, dice que los empleos de ingeniero de software van a empezar a desaparecer antes de fin de año.
+Lucía: Afuera porque es una opinión, sin un dato duro que la sostenga.
+Martín: Si quieren que alguna de estas entre en otro episodio, avisen.
+Lucía: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.

@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 16 de noviembre: Genie ZeroOps de Databricks y el fin del Copilot independiente en Power BI",
+  "summary": "Databricks lanza en beta Genie ZeroOps, un agente que vigila pipelines, y Microsoft retira el Copilot independiente de Power BI con el 8 de diciembre como fecha clave. También: datasette-agent, el benchmark XYBench de Ai2, las novedades de Claude Code y langchain-openai 1.8.0. Para probar hoy: una idea práctica con los datos propios.",
+  "stories": [
+    {
+      "title": "Databricks lanza Genie ZeroOps en beta: un agente que vigila jobs, pipelines y tablas",
+      "url": "https://docs.databricks.com/aws/en/release-notes/product/2026/november#genie-zeroops-is-available-in-beta"
+    },
+    {
+      "title": "Power BI retira el Copilot independiente: Microsoft 365 Copilot lo reemplaza",
+      "url": "https://mc.merill.net/message/MC1546429"
+    },
+    {
+      "title": "Simon Willison: datasette-agent 0.6a0 suma un prompt de agente en la home de Datasette",
+      "url": "https://simonwillison.net/2026/Nov/15/datasette-agent/"
+    },
+    {
+      "title": "Ai2 publica XYBench: los modelos resuelven lo que se les pide más que lo que se necesita",
+      "url": "https://huggingface.co/blog/allenai/xybench"
+    },
+    {
+      "title": "Claude Code 2.1.323 y 2.1.325: Code Mode experimental, contexto de 1M por defecto para modelos desconocidos y sandbox con permisos",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323"
+    },
+    {
+      "title": "langchain-openai 1.8.0 suma OpenAIClassifier para la Decisions API y deja de soportar Python 3.10",
+      "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.0"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "OpenAI lanza ChatGPT Wallet: agentes que pagan sin ver el número de tarjeta",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet"
+    },
+    {
+      "title": "Anthropic lanza Claude Meetings en beta: Claude entra a las reuniones de Google Meet",
+      "url": "https://www.axios.com/2026/11/10/anthropic-claude-meetings-knowledge-work"
+    },
+    {
+      "title": "Aleph se alía con OpenAI para vender publicidad de ChatGPT en 44 mercados",
+      "url": "https://www.iproup.com/innovacion/73106-aleph-se-alia-con-openai-para-vender-publicidad-de-chatgpt-en-44-mercados"
+    },
+    {
+      "title": "Infobae: el creador de Claude Code prevé que los empleos de ingeniero de software empiecen a desaparecer este año",
+      "url": "https://www.infobae.com/tecno/2026/11/16/el-creador-de-claude-code-preve-que-los-empleos-de-ingeniero-de-software-empiecen-a-desaparecer-este-ano/"
+    }
+  ]
+}
