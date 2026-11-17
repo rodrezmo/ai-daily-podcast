@@ -1,0 +1,115 @@
+## Titulares
+Lucía: Buen día, es martes diecisiete de noviembre y esto es Radar IA.
+Martín: Hola. Hoy hay mucho de herramientas para quien programa, y una que tiene que ver con privacidad que me dejó pensando.
+Lucía: Arrancamos con Gemini cuatro Hydrogen, que ya está en GitHub Copilot con disponibilidad general.
+Martín: El viernes contamos el lanzamiento de Google. Ahora GitHub lo habilita en la app, en la línea de comandos y en VS Code.
+Lucía: Solo para planes pagos, y se factura al precio de lista del proveedor.
+Martín: ¿Y cuál es ese precio?
+Lucía: Según Google, un dólar con cincuenta por millón de tokens de entrada y siete dólares con cincuenta por millón de salida.
+Martín: Con un millón de tokens de contexto y un nivel de razonamiento nuevo, más alto, que llaman equis high.
+Lucía: Ojo que esas cifras son de Google. Todavía no las verificó nadie de afuera.
+Martín: Y el viernes también contamos la comparación de Simon Willison, que decía que el precio no es tan barato como parece.
+Lucía: Por eso mi opinión es simple. Probalo, pero mirá cuánto te cuesta cada tarea terminada, no el precio por token.
+Martín: Un modelo barato que piensa el doble no es barato.
+Lucía: Igual tiene sentido para agentes, que hacen muchas llamadas chiquitas. Ahí un modelo rápido puede pesar.
+Martín: Puede. Lo dejo en puede hasta ver números de alguien que no sea Google.
+Lucía: Segunda noticia. Salieron las notas de la versión uno punto cero de llama.cpp.
+Martín: El sábado contamos que llama.cpp y ggml llegaban a la uno punto cero. Esto es el detalle fino.
+Lucía: El release dice qué API se elimina, suma soporte para modelos nuevos como Kimi K tres punto uno Pro y Ripple sesenta y cinco B Preview.
+Martín: También trae la caché ca ve en efe pe ocho, una interfaz web rediseñada y correcciones de seguridad en el servidor.
+Lucía: Para mí esto es más importante que el anuncio en sí. Es la lista de lo que se rompe al migrar.
+Martín: Si tenés un llama.cpp corriendo en algún lado, leé esto antes de actualizar. En serio.
+Lucía: Y que llegue a uno punto cero también dice algo. Es un proyecto que mucha gente usa para correr modelos en su propia máquina.
+Martín: Sí, aunque un número de versión no garantiza estabilidad. Lo que importa es qué cambia, y eso está en las notas.
+Lucía: Tercera, y esta es la de privacidad. Windows once detectaría qué agentes de programación usás y lo reportaría como telemetría.
+Martín: Lo dice un análisis técnico publicado en un blog personal, xusheng punto dev.
+Lucía: El autor encontró un componente de Windows que reconoce herramientas por el nombre del ejecutable. Claude, Codex, Cursor.
+Martín: Y manda un bit por categoría, siempre que tengas activados los datos de diagnóstico opcionales.
+Lucía: Un bit, nada más. El autor no encontró texto de prompts ni código en el informe.
+Martín: Y lo probó en una sola máquina virtual ARM, con una versión puntual de Windows. No se puede generalizar a todas las instalaciones.
+Lucía: Es el análisis de una persona, no un comunicado de Microsoft. Yo lo tomaría como una alerta razonable, no como un escándalo.
+Martín: Coincido. Igual, que el sistema operativo se fije qué herramientas usás para trabajar, como mínimo da para revisar la configuración.
+Lucía: Cuarta. LangChain levantó trescientos millones de dólares en una Serie C, a una valuación de tres mil millones.
+Martín: La ronda la lidera Capital G.
+Lucía: Dicen que más de siete mil organizaciones usan LangSmith, y citan a Workday, que bajó el despliegue de un agente nuevo de cinco meses a menos de un día.
+Martín: Ese dato de Workday lo dice el propio anuncio. No hay forma de chequearlo desde afuera.
+Lucía: Lo interesante para mí no es la plata. Es hacia dónde apuntan: ejecución, evaluación y gobierno de agentes.
+Martín: O sea, lo aburrido que hace falta para que un agente funcione en serio. Tiene sentido.
+Lucía: Y tienen un evento de lanzamiento de LangSmith este viernes veinte de noviembre.
+Martín: Quinta. Datasette llm, el plugin, en la versión cero punto uno alfa once, ahora acepta endpoints compatibles con la API de OpenAI.
+Lucía: Traducido: podés enchufarle un modelo local y usarlo con Datasette.
+Martín: Es alfa, así que nada de producción todavía.
+Lucía: Pero junto con llama.cpp uno punto cero arma algo lindo. Preguntarle a tus datos con IA sin mandarlos a ningún proveedor.
+Martín: Eso para clientes con datos sensibles es un argumento fuerte. Volvemos sobre esto en un rato.
+Lucía: Y sexta, más cambios en Copilot. El dieciséis de noviembre GitHub publicó la baja de modelos.
+Martín: El sábado ya contamos que Copilot retira seis modelos el catorce de diciembre.
+Lucía: Ahora se suma el retiro del arnés Local de VS Code, en febrero de dos mil veintisiete.
+Martín: Y un control nuevo para decidir de dónde vienen las personalizaciones.
+Lucía: Te aclaro que nuestra nota no tiene el detalle de qué modelos se retiran en este aviso. Hay que ir al changelog.
+Martín: Mi opinión: si en tu equipo alguien fijó un modelo en Copilot, hoy es buen día para revisar.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día de quien programa?
+Lucía: Lo primero es Copilot, porque se mueve todo junto. Entra un modelo, salen otros, y cambia el arnés local.
+Martín: Si tenés un modelo fijado en la configuración del equipo, puede dejar de existir en diciembre.
+Lucía: Y si usás el arnés Local de VS Code, tenés hasta febrero para migrar.
+Martín: Mi sugerencia es no cambiar a Hydrogen por el precio de lista.
+Lucía: Contame cómo lo harías.
+Martín: Agarrás tres o cuatro tareas reales de tu repo. Las corrés con el modelo que usás hoy y con Hydrogen. Y mirás cuánto costó cada una terminada.
+Lucía: Y si salió bien, obvio. Una tarea barata que después tenés que rehacer no ahorró nada.
+Martín: Lo segundo es llama.cpp. Si mantenés un despliegue local, la uno punto cero elimina una API.
+Lucía: Antes de actualizar, fijate si tu código usa lo que se elimina. Las notas del release lo dicen.
+Martín: Y hay correcciones de seguridad del servidor. Así que tampoco conviene quedarse en la versión vieja para siempre.
+Lucía: La caché en efe pe ocho, a quien corre modelos en máquinas justas, le puede interesar. Pero eso lo probaría con mis propios modelos antes de opinar.
+Martín: Lo tercero es la telemetría de Windows. Si programás con agentes en Windows, revisá si tenés activados los datos de diagnóstico opcionales.
+Lucía: Sobre todo si trabajás para clientes que son delicados con qué herramientas se usan en sus proyectos.
+Martín: Y lo cuarto, para la gente de datos, es la combinación de datasette llm con modelos locales.
+Lucía: Es alfa, pero sirve para prototipar consultas sobre una base sin que los datos salgan de tu máquina.
+Martín: Y como habla el mismo idioma que la API de OpenAI, si mañana cambiás de modelo local, no tenés que reescribir todo.
+Lucía: Esa es la parte que más me gusta. El endpoint compatible se volvió una especie de enchufe estándar.
+Martín: Y mirando LangChain, el mensaje para el que arma agentes es que la evaluación y el seguimiento ya no son opcionales.
+Lucía: Aunque no uses LangSmith, la pregunta es la misma. ¿Cómo sabés que tu agente sigue haciendo lo que tiene que hacer después de cambiar de modelo?
+Martín: Que, justamente, es lo que te va a pasar en diciembre con Copilot.
+Lucía: Todo cierra.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero pensar en estudios y profesionales independientes. Un estudio contable, por ejemplo.
+Martín: Me gusta, porque casi siempre hablamos de pymes.
+Lucía: El problema de un estudio así es que tiene montones de planillas de clientes. Y no puede andar subiendo esos datos a cualquier servicio.
+Martín: Entonces termina buscando cosas a mano en un Excel gigante.
+Lucía: La idea es armar un piloto con un modelo local corriendo con llama.cpp, y Datasette arriba, con el plugin que ahora acepta endpoints compatibles con OpenAI.
+Martín: Así la gente del estudio le hace preguntas a sus datos y nada sale de la oficina.
+Lucía: Por ejemplo, qué clientes tienen algo pendiente, o qué planillas no se actualizaron este mes.
+Martín: Preguntas que hoy alguien resuelve abriendo diez archivos.
+Lucía: Lo que se automatiza es la consulta. Pasar las planillas a una base, y dejar que alguien pregunte en lenguaje natural en vez de armar filtros.
+Martín: ¿Y qué haría falta?
+Lucía: Una máquina con memoria suficiente para el modelo que elijan, ordenar las planillas para que se puedan cargar, y alguien que mantenga todo actualizado.
+Martín: Y ser muy claros con que el plugin es alfa. Esto es un piloto, no un sistema para apoyar decisiones importantes sin revisar.
+Lucía: Exacto. Es una idea para probar con ellos, no una promesa. Las respuestas del modelo hay que controlarlas.
+Martín: Y de paso, revisar la telemetría de las máquinas con Windows del estudio. Es una charla que a un estudio le interesa tener.
+
+## Una cosa para probar hoy
+Martín: La cosa para probar hoy es corta. Revisar la telemetría de Windows once.
+Lucía: Te lleva cinco minutos.
+Martín: Uno: abrí Configuración.
+Lucía: Dos: entrá en Privacidad y seguridad.
+Martín: Tres: buscá Diagnóstico y comentarios.
+Lucía: Cuatro: fijate si están activados los datos de diagnóstico opcionales. Según el análisis, el reporte de agentes solo sale si eso está prendido.
+Martín: Cinco: si no los querés, desactivalos.
+Lucía: Y ya que estás, si usás Copilot en algún equipo, abrí el changelog de GitHub y fijate si alguno de tus modelos fijados está en la lista de bajas.
+Martín: Con eso, en menos de media hora, sabés qué mandás y qué se te rompe en diciembre.
+Lucía: Y si tenés un rato más, anotá en algún lado qué modelo usa cada proyecto. Te va a servir la próxima vez que haya bajas.
+Martín: Que, a este ritmo, va a ser pronto.
+
+## Quedaron afuera
+Lucía: Antes de irnos, algunas que quedaron afuera.
+Martín: Una herramienta que se llama lend. Es un proxy para que los agentes en una máquina virtual usen tu sesión local sin ver las credenciales.
+Lucía: Quedó afuera porque está en etapa temprana y había poco dato. Pero la idea está buena.
+Martín: Otra: OpenAI lanzaría ChatGPT Wallet, para que los agentes paguen compras.
+Lucía: No pudimos verificar la fecha ni acceder a la fuente. Y en todo caso sería solo para Estados Unidos.
+Martín: También estaba Claude Meetings, Claude entrando a reuniones de Google Meet, en beta para Team y Enterprise.
+Lucía: Esa quedó fuera de la ventana de días que cubrimos, y la fuente no la pudimos verificar.
+Martín: Y por último, se dice que Aleph sería revendedor exclusivo de la publicidad de ChatGPT en cuarenta y cuatro mercados.
+Lucía: Fuera de ventana y sin fecha confirmada. Si alguna te interesa, avisanos y la seguimos.
+Martín: Eso es todo por hoy. Los links están en las notas del episodio.
+Lucía: Nos escuchamos mañana. Chau.

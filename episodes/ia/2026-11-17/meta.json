@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 17 de noviembre: Gemini 4 Hydrogen en Copilot, llama.cpp 1.0 y la telemetría de Windows 11 sobre tus agentes",
+  "summary": "Gemini 4 Hydrogen llega a GitHub Copilot, llama.cpp publica su versión 1.0 y un análisis muestra que Windows 11 detecta qué agentes de programación usás. También: la Serie C de LangChain, datasette-llm con modelos locales y las bajas de modelos en Copilot. Para probar hoy: una idea práctica con tus propios datos.",
+  "stories": [
+    {
+      "title": "Gemini 4 Hydrogen llega a GitHub Copilot con disponibilidad general",
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot"
+    },
+    {
+      "title": "Notas de la versión llama.cpp v1.0.0 en GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0"
+    },
+    {
+      "title": "Windows 11 detecta qué agentes de programación usás y lo reporta como telemetría",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/"
+    },
+    {
+      "title": "LangChain levanta USD 300M de Serie C a una valuación de USD 3.000M",
+      "url": "https://www.langchain.com/blog/series-c"
+    },
+    {
+      "title": "datasette-llm 0.1a11 suma endpoints compatibles con OpenAI y modelos locales",
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm/"
+    },
+    {
+      "title": "GitHub Copilot: nuevos controles de personalización y modelos que se dan de baja",
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "lend: un proxy para que los agentes en una VM usen tu sesión local sin ver las credenciales",
+      "url": "https://blog.antonio.cx/running-agents-with-lend"
+    },
+    {
+      "title": "OpenAI lanza ChatGPT Wallet para que los agentes paguen compras",
+      "url": "https://openai.com/index/introducing-chatgpt-wallet"
+    },
+    {
+      "title": "Aleph será revendedor exclusivo de ChatGPT Ads en 44 mercados",
+      "url": "https://www.iproup.com/innovacion/73106-aleph-se-alia-con-openai-para-vender-publicidad-de-chatgpt-en-44-mercados"
+    },
+    {
+      "title": "Claude Meetings: Claude entra a reuniones de Google Meet (beta Team y Enterprise)",
+      "url": "https://www.axios.com/2026/11/10/anthropic-claude-meetings-knowledge-work"
+    }
+  ]
+}
