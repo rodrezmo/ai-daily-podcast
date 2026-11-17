@@ -1259,6 +1259,36 @@
       "url": "https://crissyfield.de/research/lovable-en",
       "title": "Investigación alemana: miles de apps hechas con Lovable exponen datos personales en Supabase",
       "date": "2026-11-15"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot",
+      "title": "Gemini 4 Hydrogen llega a GitHub Copilot con disponibilidad general",
+      "date": "2026-11-17"
+    },
+    {
+      "url": "https://github.com/ggml-org/llama.cpp/releases/tag/v1.0.0",
+      "title": "Notas de la versión llama.cpp v1.0.0 en GitHub",
+      "date": "2026-11-17"
+    },
+    {
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry",
+      "title": "Windows 11 detecta qué agentes de programación usás y lo reporta como telemetría",
+      "date": "2026-11-17"
+    },
+    {
+      "url": "https://langchain.com/blog/series-c",
+      "title": "LangChain levanta USD 300M de Serie C a una valuación de USD 3.000M",
+      "date": "2026-11-17"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/14/datasette-llm",
+      "title": "datasette-llm 0.1a11 suma endpoints compatibles con OpenAI y modelos locales",
+      "date": "2026-11-17"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026",
+      "title": "GitHub Copilot: nuevos controles de personalización y modelos que se dan de baja",
+      "date": "2026-11-17"
     }
   ]
 }
