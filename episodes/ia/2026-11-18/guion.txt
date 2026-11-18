@@ -1,0 +1,111 @@
+## Titulares
+Lucía: Buen día, es miércoles dieciocho de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay seis notas, y varias tienen números que conviene mirar con lupa.
+Lucía: Arrancamos con Microsoft. Presentó en Ignite dos modelos propios de código: MAI Code dos y MAI Code dos Flash.
+Martín: ¿Y qué dicen los números?
+Lucía: Según los benchmarks de la propia Microsoft, MAI Code dos llega al noventa y ocho por ciento del rendimiento de GPT seis punto uno Sol.
+Lucía: Y a un cuarenta por ciento del costo.
+Martín: Pero ojo, ese precio tiene un descuento promocional del cincuenta por ciento.
+Lucía: Exacto. Ya están en GitHub Copilot, y Flash está en preview limitada en Foundry.
+Martín: Ayer contamos que Gemini cuatro Hydrogen llegó a GitHub Copilot. Copilot se está llenando de opciones baratas.
+Lucía: Mi opinión: es una alternativa que vale probar si ya usás Copilot. Pero los números son de Microsoft y nadie los verificó por afuera todavía.
+Martín: Y el cuarenta por ciento con descuento promocional no es el precio de siempre. Hay que ver cuánto queda cuando se termine.
+Lucía: Segunda. Alibaba lanzó Qwen cuatro Max.
+Martín: Venía en preview desde el once de noviembre, ¿no?
+Lucía: Sí, y ahora quedó disponible en QwenCloud. Es un modelo de mezcla de expertos, con entrada de imagen y un millón de tokens de contexto.
+Martín: El titular habla de dos coma cuatro billones de parámetros.
+Lucía: Y Alibaba dice que el costo por tarea en su propio benchmark, Work trescientos sesenta, bajó cerca de un cincuenta y ocho por ciento.
+Martín: De unos veintisiete yuanes a unos once por tarea.
+Lucía: El detalle importante: los pesos no son abiertos. Solo por API.
+Martín: Prometen modelos Qwen cuatro más chicos con pesos abiertos, pero eso todavía no está.
+Lucía: Yo lo leo como presión sobre los precios de los modelos grandes. Bien para todos.
+Martín: Coincido. Pero las cifras son de la empresa, y la nota que tenemos es de un medio, TechNode. El comunicado oficial está en la sala de prensa de Alibaba Cloud.
+Lucía: Tercera, más de fierros. Hugging Face ahora enruta los modelos de lenguaje de Inference Providers a través de OpenRouter.
+Martín: O sea, con un token de Hugging Face llamás modelos de pesos abiertos por OpenRouter.
+Lucía: Que tiene más de ochenta proveedores. Con APIs compatibles con las de OpenAI y Anthropic, y sin recargo.
+Martín: Y hay un dato que citan que me llamó la atención.
+Lucía: Contame.
+Martín: Los modelos de pesos abiertos pasaron de cerca del veintisiete a casi el setenta y dos por ciento de los tokens en OpenRouter.
+Martín: Eso entre octubre de dos mil veinticinco y septiembre de dos mil veintiséis.
+Lucía: Casi el triple en un año. Pero hay un cambio que rompe cosas.
+Martín: El de las claves.
+Lucía: Ese. Ya no se aceptan claves propias de proveedor para los modelos de lenguaje. Si las usabas, revisalo.
+Martín: Opinión: simplifica mucho probar modelos abiertos baratos desde un solo lugar. El cambio de claves es lo único que puede doler.
+Lucía: Cuarta. Una herramienta chica pero muy práctica: se llama lend.
+Martín: La escribió Antonio, que la contó en su blog.
+Lucía: Es un proxy que se pone delante del agente SSH. La idea es que un agente corriendo en una máquina virtual remota use tus credenciales locales sin verlas.
+Martín: ¿Cómo funciona en concreto?
+Lucía: El agente remoto pide ejecutar un comando local, por ejemplo gh o algo con tus claves SSH. Y vos aprobás cada pedido en tu laptop.
+Martín: Por defecto niega todo. Y los permisos se dan por tiempo o por cantidad de usos.
+Lucía: Tiene licencia MIT, corre en macOS y Linux, y trae un servidor MCP.
+Martín: Ahora, la limitación. Lo que aprobás corre como tu usuario, sin sandbox.
+Lucía: Eso hay que tenerlo clarísimo.
+Martín: El miércoles pasado hablamos de la brecha en Railway, setecientos cuarenta mil dólares en uso fraudulento de IA con credenciales robadas. Este tipo de patrón va justo contra ese problema.
+Lucía: Un digest dice que el hilo en Hacker News pasó los quinientos puntos, pero eso no lo verificamos.
+Martín: Mi opinión: es de lo más útil del día si corrés agentes en máquinas remotas.
+Lucía: Quinta. Un working paper de Harvard sobre agentes de código.
+Martín: Aclaremos de entrada que no está revisado por pares.
+Lucía: Sí. Usa datos de Jellyfish. Con agentes, las líneas de código suben un treinta por ciento y los pull requests, un veintitrés.
+Martín: Hasta ahí, lindo.
+Lucía: Pero el tiempo de revisión sube un cuarenta y nueve por ciento, unos tres días y medio más.
+Martín: Y las tareas terminadas no aumentan de forma significativa.
+Lucía: Exacto. Más código, misma cantidad de trabajo cerrado. El cuello de botella pasa a la revisión.
+Martín: Una aclaración: la muestra cambia según la fuente. Unos dicen setecientas dieciocho firmas y otros quinientas empresas.
+Lucía: Y la nota que tenemos es de Forkast, no el paper directo.
+Martín: Igual, la conclusión me parece sensata. Si adoptás agentes, invertí en revisión y en pruebas, no solo en generar más código.
+Lucía: Sexta, y esta es bien local. OpenAI y Aleph.
+Martín: Aleph anunció el doce de noviembre que es revendedor exclusivo de ChatGPT Ads en cuarenta y cuatro mercados.
+Lucía: Catorce de Latinoamérica, Argentina incluida.
+Martín: Marcas y agencias argentinas van a poder contratar con atención en español, facturación en moneda local y opciones de crédito.
+Lucía: Un detalle: no se encontró un comunicado propio de OpenAI. Lo anunció Aleph, y lo levantó Mercado.
+Martín: Mi lectura: para pymes y agencias de acá, pautar en ChatGPT se vuelve mucho más simple. Facturar en moneda local no es menor.
+Lucía: Y abre trabajo de medición y reportes. Volvemos a eso en un rato.
+
+## Para desarrolladores
+Martín: Vamos a lo que cambia en el día a día de quien programa.
+Lucía: Para mí lo primero es el estudio de Harvard, aunque sea preliminar.
+Martín: ¿Por qué primero?
+Lucía: Porque si generás treinta por ciento más código y nadie lo revisa más rápido, lo único que hiciste fue alargar la fila.
+Martín: Entonces la inversión va a revisión, a tests automáticos, a pull requests más chicos.
+Lucía: Eso. Que el agente escriba las pruebas junto con el código, no después.
+Martín: Lo segundo es lend. Si tenés Claude Code u otro agente corriendo en una máquina virtual, no le dejes tokens adentro.
+Lucía: Que pida permiso desde la máquina remota y vos aprobás en la tuya.
+Martín: Con la salvedad que dijimos: lo aprobado corre como vos, sin sandbox. Aprobá con cuidado.
+Lucía: Tercero, Hugging Face con OpenRouter. Si ya tenés código que habla con la API de OpenAI o de Anthropic, cambiar a un modelo abierto se vuelve casi trivial.
+Martín: Y si usabas claves propias de proveedor en Inference Providers, eso deja de andar para modelos de lenguaje. Revisalo antes de que te enteres en producción.
+Lucía: Y cuarto, Copilot. Si lo usás, tenés MAI Code dos para comparar.
+Martín: Fijate cuánto te cuesta una vez que termine el descuento. Y el catorce de noviembre contamos que Copilot retira seis modelos el catorce de diciembre, así que conviene revisar qué modelo tenés configurado.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme de siempre.
+Martín: ¿Con quién, entonces?
+Lucía: Con empresas medianas que pautan en varios canales y van a sumar ChatGPT Ads ahora que se puede facturar en moneda local.
+Martín: El problema me lo imagino. Cada canal te da sus números en su formato.
+Lucía: Y alguien del equipo de marketing pierde medio lunes pegando exportaciones en un Excel para armar el informe de la semana.
+Martín: Y cuando suma un canal nuevo, el Excel se rompe.
+Lucía: La idea es automatizar ese informe. Juntar lo que exporta cada plataforma en una sola tabla, con las mismas columnas.
+Martín: Y arriba de eso, un tablero o un informe semanal que se arma solo.
+Lucía: La IA puede entrar para redactar el resumen de la semana en lenguaje claro, para quien no quiere mirar gráficos.
+Martín: ¿Qué haría falta?
+Lucía: Acceso a las exportaciones de cada canal, acordar qué métricas importan, y una base o planilla donde caiga todo.
+Martín: Y alguien del lado de ellos que valide los primeros informes. Que el resumen escrito por IA lo revise una persona.
+Lucía: Esto es una idea para explorar, no una garantía de nada. Primero hay que ver qué datos te da realmente cada canal.
+
+## Una cosa para probar hoy
+Martín: Para probar hoy, en menos de media hora: llamar modelos abiertos con tu token de Hugging Face a través de OpenRouter.
+Lucía: Paso uno: buscá en tu código o tu configuración si usás claves propias de proveedor con Inference Providers. Si aparece alguna, anotala, porque eso va a dejar de andar.
+Martín: Paso dos: generá un token de Hugging Face, si no tenés uno.
+Lucía: Paso tres: agarrá un script que ya tengas usando un cliente compatible con OpenAI.
+Martín: Paso cuatro: cambiá la dirección base y la clave por las que indica el post del blog de Hugging Face. El link está en las notas.
+Lucía: Paso cinco: elegí dos modelos de pesos abiertos y mandales el mismo prompt, algo que uses de verdad en tu trabajo.
+Martín: Paso seis: compará las respuestas y lo que te costó cada una.
+Lucía: Con eso ya sabés si te sirve tener un solo punto de entrada para modelos abiertos.
+
+## Quedaron afuera
+Martín: Dos cosas que quedaron afuera hoy.
+Lucía: OpenAI lanzó ChatGPT Wallet, para que los agentes paguen sin ver los datos de tu tarjeta.
+Martín: No entró porque es solo para Pro en Estados Unidos, la nota es de una fuente secundaria y acá no tiene impacto todavía.
+Lucía: La otra: Claude Meetings, que hace que Claude se sume a llamadas de Google Meet. Está en beta para los planes Team y Enterprise.
+Martín: Quedó afuera porque no tiene fecha verificada y trae poco dato duro.
+Lucía: Si quieren que sigamos alguna de las dos, avisen.
+Martín: Eso es todo por hoy. Nos escuchamos mañana en Radar IA.

@@ -1,0 +1,40 @@
+{
+  "title": "Radar IA, 18 de noviembre: Microsoft estrena MAI Code 2 y Qwen4-Max llega por API",
+  "summary": "Microsoft presenta MAI Code 2, Alibaba lanza Qwen4-Max y Hugging Face suma OpenRouter a sus Inference Providers. También: un proxy para que los agentes usen tus credenciales sin verlas, un estudio de Harvard sobre código y revisión, y la reventa de ChatGPT Ads en Latinoamérica.",
+  "stories": [
+    {
+      "title": "Microsoft lanza MAI Code 2 y MAI Code 2 Flash, modelos propios de código",
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash/"
+    },
+    {
+      "title": "Alibaba lanza Qwen4-Max: 2,4 billones de parámetros, 1M de contexto, solo por API",
+      "url": "https://technode.com/2026/11/16/alibaba-launches-qwen4-max-with-lower-api-prices-and-a-million-token-context-window/"
+    },
+    {
+      "title": "Hugging Face enruta los modelos de lenguaje de Inference Providers vía OpenRouter",
+      "url": "https://huggingface.co/blog/openrouter"
+    },
+    {
+      "title": "lend: un proxy para que agentes en una VM usen tus credenciales locales sin verlas",
+      "url": "https://blog.antonio.cx/running-agents-with-lend"
+    },
+    {
+      "title": "Estudio de Harvard: los agentes de código suben 30% el código pero el cuello de botella pasa a la revisión",
+      "url": "https://forkast.news/ai-coding-agents-write-30-more-code-and-resolve-zero-additional-issues-harvard-study-finds"
+    },
+    {
+      "title": "OpenAI y Aleph: reventa exclusiva de ChatGPT Ads en 44 mercados, 14 de Latinoamérica",
+      "url": "https://mercado.com.ar/marketing/openai-acordo-con-aleph-la-reventa-exclusiva-de-chatgpt-ads-en-44-mercados"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "OpenAI lanza ChatGPT Wallet para que los agentes paguen sin ver los datos de la tarjeta",
+      "url": "https://www.ghacks.net/2026/11/15/openai-launches-chatgpt-wallet-so-agents-can-pay-without-seeing-your-card-details/"
+    },
+    {
+      "title": "Claude Meetings: Claude se suma a llamadas de Google Meet (beta, Team y Enterprise)",
+      "url": "https://support.claude.com/en/articles/18325154"
+    }
+  ]
+}
