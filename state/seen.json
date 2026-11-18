@@ -1289,6 +1289,36 @@
       "url": "https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026",
       "title": "GitHub Copilot: nuevos controles de personalización y modelos que se dan de baja",
       "date": "2026-11-17"
+    },
+    {
+      "url": "https://microsoft.ai/news/introducing-mai-code-2-and-mai-code-2-flash",
+      "title": "Microsoft lanza MAI Code 2 y MAI Code 2 Flash, modelos propios de código",
+      "date": "2026-11-18"
+    },
+    {
+      "url": "https://technode.com/2026/11/16/alibaba-launches-qwen4-max-with-lower-api-prices-and-a-million-token-context-window",
+      "title": "Alibaba lanza Qwen4-Max: 2,4 billones de parámetros, 1M de contexto, solo por API",
+      "date": "2026-11-18"
+    },
+    {
+      "url": "https://huggingface.co/blog/openrouter",
+      "title": "Hugging Face enruta los modelos de lenguaje de Inference Providers vía OpenRouter",
+      "date": "2026-11-18"
+    },
+    {
+      "url": "https://blog.antonio.cx/running-agents-with-lend",
+      "title": "lend: un proxy para que agentes en una VM usen tus credenciales locales sin verlas",
+      "date": "2026-11-18"
+    },
+    {
+      "url": "https://forkast.news/ai-coding-agents-write-30-more-code-and-resolve-zero-additional-issues-harvard-study-finds",
+      "title": "Estudio de Harvard: los agentes de código suben 30% el código pero el cuello de botella pasa a la revisión",
+      "date": "2026-11-18"
+    },
+    {
+      "url": "https://mercado.com.ar/marketing/openai-acordo-con-aleph-la-reventa-exclusiva-de-chatgpt-ads-en-44-mercados",
+      "title": "OpenAI y Aleph: reventa exclusiva de ChatGPT Ads en 44 mercados, 14 de Latinoamérica",
+      "date": "2026-11-18"
     }
   ]
 }
