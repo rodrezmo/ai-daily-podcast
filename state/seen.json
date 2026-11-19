@@ -1319,6 +1319,36 @@
       "url": "https://mercado.com.ar/marketing/openai-acordo-con-aleph-la-reventa-exclusiva-de-chatgpt-ads-en-44-mercados",
       "title": "OpenAI y Aleph: reventa exclusiva de ChatGPT Ads en 44 mercados, 14 de Latinoamérica",
       "date": "2026-11-18"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon",
+      "title": "Google lanza Gemini 4 Neon: US$3/US$15 por millón de tokens y contexto de 1M",
+      "date": "2026-11-19"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol",
+      "title": "OpenAI lanza GPT-6.2 Astra y GPT-6.2 Sol, más baratos que la generación anterior",
+      "date": "2026-11-19"
+    },
+    {
+      "url": "https://anthropic.com/news/anthropic-prices-initial-public-offering",
+      "title": "Anthropic fija el precio de su salida a bolsa en US$83 por acción y cotiza como ANT",
+      "date": "2026-11-19"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents",
+      "title": "Patrón de sandboxes externos para agentes de código, con tres implementaciones",
+      "date": "2026-11-19"
+    },
+    {
+      "url": "https://huggingface.co/blog/moe-expert-streaming",
+      "title": "Correr un MoE de 180B en una Mac con 32 GB usando Transformers",
+      "date": "2026-11-19"
+    },
+    {
+      "url": "https://huggingface.co/blog/rumble-2-flash",
+      "title": "Rumble-2-Flash: modelo abierto de reconocimiento de voz de 0,5B para más de 40 idiomas",
+      "date": "2026-11-19"
     }
   ]
 }
