@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 19 de noviembre: Gemini 4 Neon y GPT-6.2 bajan precios, y Anthropic sale a bolsa",
+  "summary": "Google lanza Gemini 4 Neon con precio y contexto de 1M, OpenAI estrena GPT-6.2 Astra y Sol, y Anthropic fija el precio de su salida a bolsa. También: sandboxes externos para agentes de código, un MoE de 180B en una Mac y Rumble-2-Flash, un modelo abierto de voz.",
+  "stories": [
+    {
+      "title": "Google lanza Gemini 4 Neon: US$3/US$15 por millón de tokens y contexto de 1M",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "title": "OpenAI lanza GPT-6.2 Astra y GPT-6.2 Sol, más baratos que la generación anterior",
+      "url": "https://simonwillison.net/2026/Nov/17/gpt62-astra-and-sol/"
+    },
+    {
+      "title": "Anthropic fija el precio de su salida a bolsa en US$83 por acción y cotiza como ANT",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+    },
+    {
+      "title": "Patrón de sandboxes externos para agentes de código, con tres implementaciones",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/"
+    },
+    {
+      "title": "Correr un MoE de 180B en una Mac con 32 GB usando Transformers",
+      "url": "https://huggingface.co/blog/moe-expert-streaming"
+    },
+    {
+      "title": "Rumble-2-Flash: modelo abierto de reconocimiento de voz de 0,5B para más de 40 idiomas",
+      "url": "https://huggingface.co/blog/rumble-2-flash"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "DaisyRose-27B: modelo de 27B entrenado con RL para tareas largas de agentes",
+      "url": "https://www.radixark.com/blog/daisyrose-27b"
+    },
+    {
+      "title": "KPMG prueba más de 100 agentes de IA en una auditoría piloto",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/"
+    },
+    {
+      "title": "Cloudflare presenta modelos 'System One' (Clef y Clairic) para decisiones y extracción en milisegundos",
+      "url": "https://latent.space/p/cloudflare/"
+    },
+    {
+      "title": "Perplexity supera los US$1.000 millones de ingresos anualizados, según su CEO",
+      "url": "https://latent.space/p/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026/"
+    }
+  ]
+}

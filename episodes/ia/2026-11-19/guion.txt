@@ -1,0 +1,119 @@
+## Titulares
+Lucía: Buen día, hoy es jueves diecinueve de noviembre y esto es Radar IA.
+Martín: Hola, hola. Hoy viene cargado de precios, así que agarren la calculadora.
+Lucía: Arrancamos con Google. Lanzó Gemini cuatro Neon.
+Martín: ¿Otro Gemini cuatro? Ya perdí la cuenta.
+Lucía: Este se ubica entre Carbon y Hydrogen. Está pensado para código complejo, razonamiento y flujos de empresa.
+Lucía: El viernes contamos que Google había lanzado Gemini cuatro Hydrogen, su modelo barato para código y agentes. Neon es el escalón de arriba.
+Martín: ¿Y cuánto sale?
+Lucía: Tres dólares por millón de tokens de entrada y quince dólares por millón de salida.
+Lucía: La entrada cacheada baja a quince centavos por millón.
+Martín: Eso es bastante menos que la entrada normal. Si repetís mucho contexto, se nota.
+Lucía: Y tiene un millón de tokens de contexto.
+Martín: ¿Y qué tal anda?
+Lucía: Google dice que saca alrededor de sesenta y cinco por ciento en Terminal-Bench cuatro punto uno.
+Lucía: Y que queda primero en el AutomationBench de Zapier, con cincuenta y seis puntos.
+Martín: Ojo con eso. Son números de Google. Nadie de afuera los verificó todavía.
+Lucía: Exacto. Está disponible en la API paga, en AI Studio, en Antigravity y en la app de Gemini para Pro y Ultra.
+Martín: Mi opinión: el precio es lo único firme acá. Los benchmarks, los tomaría con pinzas hasta ver pruebas independientes.
+Martín: Y el viernes también contamos que Carbon y Argon duplican su precio el primero de diciembre. Así que conviene mirar bien qué modelo de Google usa cada uno.
+Lucía: Segunda. OpenAI sacó dos modelos nuevos en la API: GPT seis punto dos Astra y GPT seis punto dos Sol.
+Martín: Esto lo cuenta Simon Willison en su blog.
+Lucía: Astra es el modelo de punta. Sale ocho dólares por millón de entrada y cuarenta por millón de salida.
+Lucía: Eso es el ochenta por ciento de lo que costaba GPT seis Astra.
+Martín: O sea, un veinte por ciento más barato.
+Lucía: Y Sol, el de uso cotidiano, sale dos dólares de entrada y diez de salida.
+Martín: La mitad que GPT cinco punto seis Sol.
+Lucía: Eso. Ahora, según la fuente, las reacciones fueron mixtas.
+Martín: ¿Y el contexto?
+Lucía: No figura en la fuente. Así que no lo sabemos.
+Martín: Para mí, la noticia acá es la baja de precio. Si armás agentes o automatizaciones con la API de OpenAI, te baja la cuenta sin tocar nada.
+Lucía: Tercera, y es de mercado. Anthropic fijó el precio de su salida a bolsa en ochenta y tres dólares por acción.
+Martín: Hoy es el día, ¿no?
+Lucía: Sí. Empieza a cotizar hoy en Nasdaq con el símbolo ANT. El cierre de la operación está previsto para mañana.
+Lucía: Ofrecen novecientos ochenta millones de acciones Clase A.
+Lucía: Y hay una opción de treinta días por ciento cuarenta y siete millones más.
+Martín: ¿Y cuánto recaudan en total?
+Lucía: El comunicado no lo dice.
+Martín: Bueno, no lo calculemos nosotros entonces.
+Martín: El jueves pasado contamos que Anthropic había lanzado Claude Fable cinco punto dos y Mythos cinco punto dos. Ahora cambia de estatus: pasa a ser una empresa que cotiza.
+Lucía: Mi opinión: para quien programa no cambia nada mañana. Pero es un proveedor clave de modelos, y conviene seguirlo.
+Martín: Cuarta. Simon Willison describe un patrón para correr agentes de código con sandboxes externos.
+Lucía: ¿Cómo es la idea?
+Martín: El agente queda afuera. El código que genera corre en un sandbox aparte.
+Martín: Opcionalmente, con un proxy que solo deja salir a ciertos hosts permitidos. Y que reemplaza las credenciales.
+Lucía: Ayer hablamos de lend, un proxy para que agentes en una máquina virtual usen tus credenciales locales sin verlas. Va por la misma línea.
+Martín: Tal cual. Y Willison muestra tres implementaciones con la misma API local.
+Martín: Una con v86 y Alpine corriendo en WebAssembly. Otra con Apple Containers. Y otra con Quicksand, de Microsoft, que usa QEMU.
+Lucía: Para mí esta es de las más útiles del día. Es lo que te deja soltar un agente sobre datos de un cliente sin darle las llaves.
+Lucía: Quinta. Hugging Face muestra cómo correr un modelo MoE de ciento ochenta mil millones de parámetros en una Mac con treinta y dos gigas.
+Martín: Pará. ¿En una notebook?
+Lucía: En una MacBook M cinco de treinta y dos gigas. Usan una opción nueva de Transformers que se llama experts offload.
+Lucía: Deja los expertos en disco, con una caché acotada, y cuantiza a tres bits.
+Lucía: Con Qwen tres punto ocho Flash Next llegan a casi catorce tokens por segundo.
+Martín: ¿Y cuánta memoria usa?
+Lucía: El pico es de unos veinticinco gigas. Pero pide unos cuarenta y nueve gigas de disco.
+Martín: Acordate que el viernes hablamos de Edge cero, el de ciento cuarenta y cinco mil millones que corría en una notebook. La tendencia sigue.
+Lucía: Sí, pero ojo: esto está en una PR que todavía no salió en versión estable. Es experimental.
+Martín: Mi opinión: interesante para probar, no para poner en producción todavía.
+Martín: Y la sexta. Hugging Face también presenta Rumble dos Flash, un modelo abierto de reconocimiento de voz.
+Lucía: ¿Grande?
+Martín: Chiquito. Quinientos millones de parámetros. Licencia Apache dos punto cero. Más de cuarenta idiomas.
+Martín: Reporta un error de palabras promedio de casi siete por ciento en nueve idiomas, entre ellos el español.
+Martín: Y casi ocho por ciento en un benchmark de call center en inglés.
+Lucía: ¿Y en español solo?
+Martín: No lo da. Ese es el problema.
+Lucía: El viernes también contamos que Salesforce publicó SOV-Transcribe uno, otro modelo abierto de transcripción bajo Apache dos punto cero. Ya hay varias opciones.
+Martín: Mi opinión: promete, pero hay que medirlo con audios en rioplatense antes de confiar.
+
+## Para desarrolladores
+Lucía: Vamos a lo práctico. ¿Qué cambia hoy para quien programa o arma datos?
+Martín: Lo primero, los precios. Hoy tenés tres números nuevos para comparar.
+Martín: Gemini cuatro Neon a tres y quince. GPT seis punto dos Sol a dos y diez. GPT seis punto dos Astra a ocho y cuarenta.
+Lucía: Siempre por millón de tokens, entrada y salida.
+Martín: Ojo que no son el mismo tipo de modelo. Sol es el de uso cotidiano. Neon apunta a código complejo y flujos de empresa.
+Lucía: Y Neon tiene el precio de entrada cacheada, que si mandás siempre el mismo contexto largo, puede pesar mucho.
+Martín: Lo segundo es el patrón de sandbox. Si tenés un agente que escribe y ejecuta código, separar las dos cosas es buena idea.
+Lucía: El agente piensa afuera. El código corre adentro de una caja. Y las credenciales reales nunca entran a la caja.
+Martín: Y el proxy de hosts permitidos te cubre si el código intenta mandar datos a cualquier lado.
+Lucía: Lo tercero es lo local. Si tenés un cliente que no puede mandar datos a la nube, ahora hay dos caminos para explorar.
+Lucía: Un modelo grande en una Mac con experts offload, todavía experimental. Y un modelo de voz chico como Rumble dos Flash para transcribir sin pagar por minuto.
+Martín: En los dos casos, medí vos. No te quedes con los números del anuncio.
+
+## Oportunidades de consultoría
+Lucía: Hoy pensemos en estudios y profesionales independientes. Un estudio jurídico o contable, por ejemplo.
+Martín: ¿Cuál es el problema?
+Lucía: Los clientes les mandan audios de WhatsApp todo el día. Alguien los tiene que escuchar, anotar y pasar a la carpeta del caso.
+Martín: Y son datos sensibles. No los querés andar subiendo a cualquier servicio.
+Lucía: Exacto. La idea sería transcribir esos audios en una máquina del estudio, con un modelo abierto como Rumble dos Flash.
+Martín: Sin pagar por minuto de audio.
+Lucía: Lo que se automatiza es la transcripción y que el texto quede guardado junto al expediente o la ficha del cliente.
+Martín: ¿Y qué haría falta?
+Lucía: Primero, una prueba con audios reales del estudio, con permiso, para medir qué tan bien anda en rioplatense. El anuncio no da el error en español solo.
+Lucía: Después, una máquina donde correrlo, y una persona que revise las transcripciones al principio.
+Martín: Y si después querés sumar un agente que resuma o clasifique, el patrón de sandbox de hoy viene bien para que no toque credenciales.
+Lucía: Es una idea para explorar, no una promesa. Primero se mide.
+
+## Una cosa para probar hoy
+Martín: Algo para hacer en menos de media hora. Calcular cuánto te costaría tu uso real con los precios nuevos.
+Lucía: Paso uno. Entrá al panel de uso de tu proveedor actual y fijate cuántos tokens de entrada y de salida gastaste el último mes.
+Martín: Paso dos. Abrí una planilla. Una fila por modelo: Gemini cuatro Neon, GPT seis punto dos Sol y GPT seis punto dos Astra.
+Lucía: Paso tres. En una columna poné el precio de entrada y en otra el de salida, por millón de tokens. Los tres están en las notas del episodio.
+Martín: Paso cuatro. Multiplicá tus tokens de entrada por el precio de entrada, tus tokens de salida por el de salida, y dividí por un millón.
+Lucía: Paso cinco. Si usás mucho contexto repetido, sumá una fila más para Neon con la entrada cacheada a quince centavos.
+Martín: Y con eso tenés un número propio, no el del marketing.
+Lucía: Eso sí: el precio no te dice si el modelo sirve para tu tarea. Eso lo tenés que probar aparte.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: KPMG en el Reino Unido probó más de cien agentes en una auditoría piloto sobre una empresa grande. Los agentes hicieron preguntas que los auditores no habían hecho, pero un auditor tuvo que corregir un error.
+Lucía: No entró porque no fue una auditoría formal y la fuente es secundaria.
+Martín: Cloudflare presentó dos modelos, Clef y Clairic, para decidir y extraer datos de texto en milisegundos. Por ejemplo, el número de orden de una factura.
+Lucía: Quedó afuera porque la nota no dice cómo acceder ni cuánto sale. Y es fuente secundaria.
+Martín: Y DaisyRose veintisiete B, un modelo entrenado para tareas largas de agentes. Dice que saca más del doble que su modelo base en Terminal Bench.
+Lucía: Pero los resultados son solo de la propia empresa y no indica licencia.
+Martín: Y la última. El CEO de Perplexity dijo que superaron los mil millones de dólares de ingresos anualizados.
+Lucía: Es un dato de contexto, de fuente secundaria y sin impacto práctico para nosotros. Por eso quedó afuera.
+Martín: Si quieren que alguna de estas se sume, avisen.
+
+Lucía: Eso es todo por hoy, nos escuchamos mañana en Radar IA.
