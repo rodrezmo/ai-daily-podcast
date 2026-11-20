@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 20 de noviembre: Microsoft lanza Autopilot en Copilot, DaisyRose-27B y bancos que no cubren a los agentes de IA",
+  "summary": "Microsoft presenta Autopilot, un agente siempre activo dentro de Copilot, y suma Decision 1.1 en disponibilidad general. También: DaisyRose-27B de RadixArk, el agente Stitch Loop de Google Labs, el modelo abierto Loop-9B de SenseTime y bancos de EE.UU. que dejan a los clientes como responsables de lo que hagan los agentes de IA.",
+  "stories": [
+    {
+      "title": "RadixArk publica DaisyRose-27B, modelo abierto Apache 2.0 entrenado con RL para tareas largas de agentes",
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
+    },
+    {
+      "title": "Microsoft presenta Autopilot, un agente personal siempre activo dentro de Copilot, y Office (Excel incluido) pasa a Copilot",
+      "url": "https://www.microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work/"
+    },
+    {
+      "title": "Google Labs lanza Stitch Loop, agente que propone mejoras a tu producto y abre pull requests",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop/"
+    },
+    {
+      "title": "Microsoft-Decision-1.1 pasa a disponibilidad general: modelo para decidir entre acciones, con puntaje de confianza",
+      "url": "https://commandline.microsoft.com/microsoft-decision-model-ga/"
+    },
+    {
+      "title": "Bancos de EE.UU. (Citi, PNC, Citizens) ponen a los clientes como responsables de lo que hagan los agentes de IA de terceros",
+      "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked/"
+    },
+    {
+      "title": "SenseTime libera SenseNova Loop-9B: modelo abierto de 9B que reutiliza capas y llega a 512K de contexto",
+      "url": "https://technode.com/2026/11/18/sensetime-releases-open-weight-loop-9b-model-that-reuses-layers-for-deeper-computation/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "KPMG UK probó más de 100 agentes de IA en una auditoría piloto sin valor formal",
+      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/"
+    },
+    {
+      "title": "Claude Code 2.1.321 a 2.1.325: Code Mode experimental, Fable 5.2 por defecto y arreglo de seguridad en zstd",
+      "url": "https://dev.to/aicoding-guide/this-week-in-claude-code-codex-and-gemini-cli-week-of-november-15-2026-4pmm"
+    },
+    {
+      "title": "Perplexity dice haber superado los US$1.000 millones de ingresos anualizados, según su CEO",
+      "url": "https://latent.space/p/ainews-perplexity-hits-a-1b-revenue-run-rate-up-4x-in-2026/"
+    }
+  ]
+}

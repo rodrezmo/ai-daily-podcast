@@ -1,0 +1,109 @@
+## Titulares
+Lucía: Buen día, es viernes veinte de noviembre y esto es Radar IA.
+Martín: Hola. Hoy hay dos modelos abiertos, dos movidas de Microsoft, un agente de Google que abre pull requests y un tema de bancos que conviene escuchar con atención.
+Lucía: Arranco con el modelo abierto. RadixArk, una empresa que recién aparece, publicó su primer modelo en el blog de Hugging Face. Se llama DaisyRose, de veintisiete mil millones de parámetros.
+Martín: ¿Hecho de cero?
+Lucía: No. Parte de Qwen tres punto ocho, de veintisiete B, y lo entrenaron con aprendizaje por refuerzo sobre unas mil doscientas tareas de agentes.
+Lucía: Fueron dieciocho días en ciento cuarenta y cuatro GPU H doscientos.
+Martín: ¿Y qué ganaron con todo eso?
+Lucía: En Terminal Bench cuatro punto uno pasó de cinco coma seis a doce por ciento. Más del doble.
+Lucía: En SWE Bench Pro versión dos subió de noventa y uno a casi noventa y cinco.
+Martín: Ojo, doce por ciento en Terminal Bench sigue siendo bajo en absoluto. Lo bueno es que la mejora está medida contra su propio modelo base, no contra una tabla elegida a dedo.
+Lucía: Y tiene licencia Apache dos punto cero, contexto de doscientos cincuenta y seis mil tokens, y pesos en BF dieciséis, FP ocho y NVFP cuatro.
+Martín: Para mí es de las noticias más sólidas del día. Licencia permisiva, receta contada y números modestos pero honestos.
+Lucía: Segunda. Microsoft, en su evento Ignite, presentó Autopilot dentro de Copilot.
+Martín: Contame qué es, porque el nombre promete mucho.
+Lucía: Es un agente personal que está siempre activo. Corre dentro de la organización con su propia identidad de Entra, vigila canales de Teams y el correo, y maneja proyectos de varios pasos.
+Martín: ¿Ya lo puede usar cualquiera?
+Lucía: No. Empieza a llegar solo a clientes del programa Frontier, o sea, acceso anticipado.
+Lucía: Lo que sí está disponible en general es Office dentro de Copilot: Word, Excel y PowerPoint, incluido en la suscripción de Copilot.
+Lucía: Y Copilot Code llega en las próximas semanas, según dicen.
+Martín: El punto flojo es la plata. No publicaron precios concretos. Hablan de suscripción por usuario más consumo.
+Martín: Y cobrar por consumo un agente que está siempre prendido es algo que alguien de sistemas va a querer mirar con lupa.
+Lucía: Hace una semana contamos lo de Gemini en Google Sheets con Gemini cuatro Hydrogen. Ahora Microsoft mete a Copilot de lleno en Excel. La pelea por la planilla está clarísima.
+Martín: Tercera, de Google Labs. Lanzaron Stitch Loop.
+Martín: Es un agente de larga duración que se conecta a tu repositorio de GitHub y a datos del producto: logs, comportamiento de usuarios y feedback.
+Lucía: ¿Y qué hace con eso?
+Martín: Propone cambios con sus pros y contras, los construye en un sandbox en la nube y abre un pull request. Después sigue las métricas para ver qué pasó.
+Martín: Trae loops ya armados de seguridad, latencia y accesibilidad. Y nada se mergea sin aprobación humana.
+Lucía: Me parece interesante la idea de cerrar el círculo entre lo que pasa en producción y el código.
+Lucía: Pero el miércoles contamos el estudio de Harvard: los agentes de código suben treinta por ciento el código y el cuello de botella pasa a la revisión.
+Martín: Exacto. Un agente que abre pull requests solo te llena la cola de revisión. Y por ahora es lista de espera, con prioridad para los suscriptores elegibles de AI Ultra.
+Lucía: Cuarta, otra vez Microsoft. Microsoft Decision uno punto uno pasa a disponibilidad general.
+Martín: Este me gustó más que Autopilot, te digo.
+Lucía: Es un modelo que elige entre un conjunto de acciones permitidas y devuelve un puntaje de confianza calibrado.
+Lucía: La idea es que tu aplicación pueda decir: si el modelo duda, no decido, se lo paso a una persona.
+Martín: Está basado en Gemma cuatro, la versión veintiséis B con cuatro B activos.
+Martín: Esta versión suma entrada de imágenes y, según Microsoft, es más del doble de rápida al mismo costo.
+Lucía: En el Decision Index de Artificial Analysis, versión dos punto uno, marcó sesenta y ocho.
+Lucía: Está en Foundry, en OpenRouter y en Vercel. Y Microsoft dice que tiene más de cuatro mil clientes en cinco semanas.
+Martín: Ese número es de ellos, nadie lo verificó. Y tampoco hay precios en la nota.
+Martín: Igual, lo de saber cuándo no confiar en el modelo es justo lo que le falta a la mayoría de las automatizaciones.
+Lucía: Quinta, y es la que más me hizo pensar. Sale en TechCrunch.
+Lucía: Citi actualizó su acuerdo de usuario. Si le das acceso a tu cuenta a una herramienta de IA de terceros, respondés vos por lo que haga. Incluso si la hackean.
+Martín: ¿Incluso si la hackean?
+Lucía: Así dice. PNC también cambió sus términos y Citizens avisó por mail.
+Lucía: JPMorgan y Bank of America ya lo habían hecho en octubre.
+Martín: Y hay una trampita. En el caso de Citi, los agentes que ofrece el propio banco quedan exentos.
+Lucía: O sea, el agente del banco está cubierto y el de afuera no.
+Martín: Es Estados Unidos, no es regulación local. Pero anticipa una discusión que nos va a llegar: quién responde cuando conectás un agente a una cuenta o a un sistema ajeno.
+Lucía: Y última. SenseTime liberó SenseNova Loop, un modelo abierto de nueve mil millones de parámetros. Lo cuenta TechNode.
+Martín: ¿Qué tiene de raro?
+Lucía: Tiene treinta y dos capas, pero las del medio se ejecutan dos veces. En cómputo equivale a cincuenta y seis capas.
+Lucía: Acepta texto e imágenes, y tiene contexto de quinientos doce mil tokens.
+Martín: SenseTime dice que compite con Qwen tres punto ocho de veintisiete B, el mismo que usó de base DaisyRose, en agentes y en análisis de datos.
+Martín: Pero eso es dato de ellos.
+Lucía: Lo que sí es práctico: cuantizado a cuatro bits pesa unos cinco gigas, y con doscientos cincuenta y seis mil de contexto necesita unos quince.
+Martín: Entra en hardware modesto. El problema es que la nota no dice la licencia. Antes de usarlo para algo serio, hay que ir a mirarla.
+
+## Para desarrolladores
+Lucía: Vamos a lo que le cambia a quien programa o arma datos.
+Martín: Lo primero, y lo más concreto, es el patrón de Microsoft Decision.
+Martín: Aunque no uses ese modelo, la idea sirve: el modelo elige entre una lista cerrada de acciones y te devuelve cuánta confianza tiene.
+Martín: Y vos ponés un umbral. Arriba, se ejecuta. Abajo, va a una persona.
+Lucía: Es mucho más sano que pedirle texto libre y después parsearlo rezando.
+Martín: Tal cual.
+Lucía: Lo segundo son los modelos abiertos. Si querés un modelo para agentes que puedas ajustar por tu cuenta, DaisyRose tiene licencia Apache y viene en tres formatos de pesos.
+Lucía: Y si lo que querés es correr análisis de datos en tu máquina, SenseNova Loop entra en unos cinco gigas. Eso sí, primero confirmá la licencia.
+Martín: Lo tercero es Stitch Loop, aunque todavía no lo puedas usar. Muestra hacia dónde va esto: agentes que miran métricas de producción y proponen código.
+Martín: Si eso llega a tu equipo, preparate para revisar más, no para programar menos.
+Lucía: Y lo cuarto, más de contexto. Si trabajás con Excel en el ecosistema de Microsoft, Office en Copilot ya está disponible y Copilot Code llega en las próximas semanas.
+Martín: Y conviene leer bien los términos de lo que conectes. Lo de los bancos es un aviso: cuando un agente actúa con tus credenciales, la responsabilidad puede quedar de tu lado.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero ir por el sector público, que lo tenemos medio olvidado.
+Martín: Dale. ¿Qué perfil?
+Lucía: Pensá en la mesa de entradas de un municipio chico. Le llegan reclamos por WhatsApp y por correo: un bache, una luminaria, un problema con una tasa.
+Lucía: Alguien los lee uno por uno y los deriva al área que corresponde. Es lento y depende de que esa persona esté.
+Martín: Y acá entra el patrón de Microsoft Decision, o cualquier modelo que trabaje así.
+Martín: Se arma una lista cerrada de destinos: obras públicas, alumbrado, rentas, y uno que diga revisión manual.
+Martín: El modelo clasifica cada reclamo y dice cuánta confianza tiene. Lo que tiene confianza alta se deriva solo. Lo dudoso queda para la persona.
+Lucía: Me gusta porque no reemplaza a nadie. Le saca a esa persona el volumen fácil y le deja los casos raros.
+Martín: ¿Y qué haría falta?
+Lucía: Primero, un historial de reclamos ya derivados, para probar si la clasificación tiene sentido antes de prenderla.
+Lucía: Segundo, la lista de áreas bien definida. Tercero, alguien del municipio que revise los dudosos y corrija.
+Martín: Y cuarto, pensar bien qué datos de vecinos pasan por un servicio externo. Ahí hay que ser prolijo.
+Lucía: Y algo que aprendimos hoy de los bancos: dejar por escrito quién responde si el sistema deriva mal algo.
+Martín: Es una idea para explorar, no una promesa. Primero se prueba con datos viejos y se ve si funciona.
+
+## Una cosa para probar hoy
+Martín: Para hoy, algo de media hora: probar el patrón de decidir con confianza sobre tus propios datos.
+Lucía: Contame el paso a paso.
+Martín: Uno. Juntá veinte mensajes reales que hoy clasificás a mano. Mails, tickets, consultas, lo que tengas. Sacales los datos personales.
+Martín: Dos. Escribí una lista cerrada de tres o cuatro acciones posibles, más una que diga revisar a mano.
+Martín: Tres. Entrá a OpenRouter y buscá Microsoft Decision por el nombre. Si preferís, usá cualquier modelo y pedile que además de la acción te dé un número de confianza.
+Lucía: ¿Y después?
+Martín: Cuatro. Pasale los veinte mensajes y anotá en una planilla la acción que eligió, la confianza y lo que vos hubieras hecho.
+Martín: Cinco. Ordená por confianza y fijate dónde empieza a equivocarse. Ese es tu umbral.
+Lucía: Y con eso ya sabés si vale la pena automatizarlo o no.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: KPMG en el Reino Unido probó más de cien agentes en una auditoría piloto sobre una empresa grande. Un agente falló con un requisito regulatorio y hubo que intervenir a mano.
+Lucía: No entró porque fue un piloto sin valor formal, y la fuente es secundaria, citando al Financial Times.
+Martín: Perplexity dice que superó los mil millones de dólares de ingresos anualizados.
+Lucía: Lo dijo su CEO en un evento. Es un número declarado, sin comunicado de la empresa, así que quedó afuera.
+Martín: También circuló un resumen de las últimas versiones de Claude Code, con un modo experimental donde Claude escribe JavaScript para llamar a sus herramientas.
+Lucía: Es un resumen secundario, sin changelog oficial verificado. Si lo confirmamos, lo traemos.
+Martín: Si te interesa que sumemos algo de esto, avisanos.
+Lucía: Eso es todo por hoy. Buen fin de semana y nos escuchamos en el próximo episodio.
