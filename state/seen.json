@@ -1349,6 +1349,36 @@
       "url": "https://huggingface.co/blog/rumble-2-flash",
       "title": "Rumble-2-Flash: modelo abierto de reconocimiento de voz de 0,5B para más de 40 idiomas",
       "date": "2026-11-19"
+    },
+    {
+      "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+      "title": "RadixArk publica DaisyRose-27B, modelo abierto Apache 2.0 entrenado con RL para tareas largas de agentes",
+      "date": "2026-11-20"
+    },
+    {
+      "url": "https://microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work",
+      "title": "Microsoft presenta Autopilot, un agente personal siempre activo dentro de Copilot, y Office (Excel incluido) pasa a Copilot",
+      "date": "2026-11-20"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-loop",
+      "title": "Google Labs lanza Stitch Loop, agente que propone mejoras a tu producto y abre pull requests",
+      "date": "2026-11-20"
+    },
+    {
+      "url": "https://commandline.microsoft.com/microsoft-decision-model-ga",
+      "title": "Microsoft-Decision-1.1 pasa a disponibilidad general: modelo para decidir entre acciones, con puntaje de confianza",
+      "date": "2026-11-20"
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/18/more-banks-says-customers-using-ai-agents-are-on-their-own-even-if-they-get-hacked",
+      "title": "Bancos de EE.UU. (Citi, PNC, Citizens) ponen a los clientes como responsables de lo que hagan los agentes de IA de terceros",
+      "date": "2026-11-20"
+    },
+    {
+      "url": "https://technode.com/2026/11/18/sensetime-releases-open-weight-loop-9b-model-that-reuses-layers-for-deeper-computation",
+      "title": "SenseTime libera SenseNova Loop-9B: modelo abierto de 9B que reutiliza capas y llega a 512K de contexto",
+      "date": "2026-11-20"
     }
   ]
 }
