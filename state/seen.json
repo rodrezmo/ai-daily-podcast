@@ -1379,6 +1379,36 @@
       "url": "https://technode.com/2026/11/18/sensetime-releases-open-weight-loop-9b-model-that-reuses-layers-for-deeper-computation",
       "title": "SenseTime libera SenseNova Loop-9B: modelo abierto de 9B que reutiliza capas y llega a 512K de contexto",
       "date": "2026-11-20"
+    },
+    {
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api",
+      "title": "Google abre Genie 4 en la API de Gemini y AI Studio",
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini",
+      "title": "Thinking Machines publica Inkling 2 Mini, modelo abierto de 26,4B parámetros",
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "title": "Claude Code 2.1.330: sesión empresarial, gráficos con easel y tareas programadas de hasta 30 días",
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026",
+      "title": "Microsoft presenta siete modelos MAI en Ignite, con foco en código y costos",
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you",
+      "title": "Gemini para Mac puede usar tu computadora para completar tareas",
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
+      "title": "OpenAI cuenta cómo automatiza con Codex la investigación de regresiones de rendimiento",
+      "date": "2026-11-21"
     }
   ]
 }
