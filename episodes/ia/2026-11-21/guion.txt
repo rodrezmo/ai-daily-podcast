@@ -1,0 +1,109 @@
+## Titulares
+Lucía: Buen día, hoy es sábado veintiuno de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay modelos de mundo, un modelo abierto que entra en una notebook y bastante de agentes.
+Lucía: Arranquemos por Google. Abrió Genie cuatro en la API de Gemini y en AI Studio.
+Martín: Genie cuatro es el que genera mundos interactivos, ¿no?
+Lucía: Ese. Le das un texto o una imagen y te arma un mundo que podés recorrer, con control en tiempo real.
+Lucía: Sale a setecientos veinte p y veinticuatro cuadros por segundo, con audio sincronizado.
+Martín: Y con marca de agua SynthID, para que se sepa que es generado.
+Lucía: Se accede por la Interactions API y por AI Studio. La nota no dice cuánto cuesta.
+Martín: Mi opinión: hoy es más curiosidad que herramienta de trabajo. Está bueno para ver hacia dónde van los modelos de mundo, pero no le veo uso en una pyme todavía.
+Lucía: Coincido. Si no hay precio, tampoco podés hacer números.
+Martín: Segunda. Thinking Machines publicó Inkling dos Mini, un modelo abierto.
+Martín: Es una mezcla de expertos con unos veintiséis mil millones de parámetros en total, pero solo unos tres mil cuatrocientos millones activos por vez, según el texto de la nota. La tabla habla de cinco mil cuatrocientos contando los bucles internos.
+Lucía: Traducido: ocupa unos veinte gigas de memoria.
+Martín: Exacto. Corre local en una Mac con treinta y dos gigas o en una DGX Spark. Ya está en Hugging Face.
+Lucía: ¿Y cómo le va con código?
+Martín: Reportan casi ochenta por ciento en SWE-bench Verified y algo más de cuarenta y ocho en DeepSWE.
+Lucía: Reportan ellos, ojo. Son benchmarks propios.
+Martín: Sí, y hay otra cosa. La nota no dice qué licencia tiene. Antes de usarlo en algo serio, hay que mirar el model card.
+Lucía: El jueves hablamos de correr un MoE de ciento ochenta mil millones en una Mac con treinta y dos gigas. Esto va en la misma línea, pero mucho más liviano.
+Martín: Para mí es la noticia más útil del día, si la licencia acompaña. Un modelo de código que corre en tu máquina te deja trabajar con datos sensibles sin mandarlos afuera.
+Lucía: Tercera, más de herramientas. Salió Claude Code dos punto uno punto trescientos treinta.
+Lucía: Trae algo que se llama easel, que te dibuja gráficos cuando se lo pedís.
+Martín: Eso me interesa. ¿Y las tareas programadas?
+Lucía: Las tareas recurrentes y el comando loop pasan de durar siete días a durar treinta, mientras la sesión siga corriendo. Las que ya estaban creadas siguen terminando a los siete.
+Martín: Un mes sin tener que reprogramar, con la sesión abierta. Bien.
+Lucía: Además pide aprobación para más comandos de borrado riesgosos, y corrige cuelgues y casos donde se perdía la configuración.
+Martín: Lo del borrado me parece lo más sensato del release. Es poco vistoso pero te salva un disgusto.
+Lucía: Cuarta. Microsoft presentó siete modelos MAI en Ignite.
+Martín: El miércoles contamos el lanzamiento de MAI Code dos y MAI Code dos Flash. ¿Qué hay de nuevo?
+Lucía: Que MAI Code dos ya está en GitHub Copilot. Y en Foundry están MAI Image dos punto siete y su versión Flash.
+Lucía: Y MAI Realtime uno, para voz, arranca en un centavo de dólar por minuto de audio.
+Martín: Eso es barato. ¿Contra qué se comparan?
+Lucía: Dicen que uno de sus modelos da el noventa y ocho por ciento del rendimiento de GPT seis punto uno Sol a cuarenta por ciento del precio.
+Martín: Lo dicen ellos. Todas las comparaciones contra GPT y Claude salen del propio anuncio.
+Lucía: Sí. Lo bueno es que presiona precios en código y en voz. Pero hay que probarlo con tus propios casos antes de creerle.
+Martín: Quinta. La app de Gemini para Mac ahora puede usar tu computadora.
+Martín: Navega apps nativas y sitios web, te muestra una vista previa en vivo y te deja pausar, frenar o aprobar acciones antes de que pasen.
+Lucía: ¿Y la podemos usar acá?
+Martín: No. Por ahora solo en inglés, solo en Estados Unidos y con suscripción AI Plus, Pro o Ultra. Esto sale en TechCrunch, no en un anuncio de Google.
+Lucía: O sea, por ahora es una muestra de hacia dónde va la automatización de oficina, no algo para usar el lunes.
+Martín: Tal cual. Y está bien que se pueda aprobar. Un agente que toca tu compu sin preguntarte, no gracias.
+Lucía: Y la sexta, que me gustó mucho. OpenAI contó cómo usa Codex para investigar cuando ChatGPT se pone lento.
+Martín: Regresiones de rendimiento, digamos.
+Lucía: Eso. En poco más de tres meses, el sistema registró más de mil setecientas investigaciones.
+Lucía: Encontró la causa raíz en más de seiscientas.
+Martín: ¿Y cuántas acertó de verdad?
+Lucía: Revisaron a mano cien diagnósticos. Setenta estaban bien.
+Martín: Setenta por ciento. Me gusta que den el número de acierto, y que no sea cien.
+Lucía: Y hay un detalle de diseño: usan revisión adversarial. Otra sesión de Codex intenta tirar abajo el diagnóstico de la primera.
+Martín: Es un caso concreto, con cifras. Mucho más útil que diez anuncios de agentes mágicos.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué le cambia todo esto a quien programa o arma datos?
+Lucía: Lo primero, Inkling dos Mini. Si tenés una Mac con treinta y dos gigas, podés probar un modelo de código local.
+Martín: Sirve para cuando el cliente no quiere que sus datos salgan de la máquina.
+Lucía: Pero con dos cuidados. Los números de benchmark son de ellos. Y la licencia, todavía, no la sabemos.
+Martín: Lo segundo, el patrón de OpenAI. Un agente investiga, otro agente lo critica, y un humano revisa una muestra.
+Lucía: Y mide cuánto acierta. Eso es lo que más me quedó.
+Martín: Sí. Si armás un agente para diagnosticar algo, no alcanza con que funcione en la demo. Tenés que revisar a mano un lote y contar.
+Lucía: Lo tercero, si usás Claude Code: las tareas de treinta días. Un monitoreo que corre hasta un mes, mientras la sesión siga abierta, sin que lo vuelvas a programar.
+Martín: Y easel para sacar un gráfico rápido de lo que te devuelve una consulta, sin abrir otra herramienta.
+Lucía: Y lo de Microsoft, para tener en el radar. Si ya pagás Copilot, MAI Code dos está ahí. Probalo contra lo que usás hoy, con tus tareas.
+Martín: Con tus tareas, no con las de la tabla del anuncio.
+
+## Oportunidades de consultoría
+Lucía: Vamos a la idea de consultoría. Hoy no voy por la pyme.
+Martín: ¿Por quién vas?
+Lucía: Por un equipo interno de operaciones o de datos en una empresa mediana. De esos que viven con un tablero de indicadores.
+Martín: Ah, ya sé por dónde venís. El caso de OpenAI.
+Lucía: Eso. Pensá el problema: un lunes cae un indicador. Las ventas de una sucursal, o los tiempos de entrega.
+Lucía: Y alguien se pasa la mañana cruzando planillas para entender por qué.
+Martín: Y a veces la respuesta termina siendo simple. Un dato que no se cargó, por ejemplo.
+Lucía: La idea es automatizar esa primera investigación. Un agente mira los datos y propone una causa probable.
+Martín: Y un segundo agente intenta refutarla, como hace OpenAI.
+Lucía: Exacto. Y lo que llega al equipo es un borrador de diagnóstico, no una verdad.
+Martín: ¿Qué haría falta?
+Lucía: Primero, que los datos estén en un lugar consultable, aunque sea una base simple. Con planillas sueltas por mail no arrancás.
+Lucía: Segundo, un historial de casos anteriores, para saber qué causas son las comunes.
+Martín: Y tercero, alguien del equipo que revise los diagnósticos y anote si acertaron.
+Lucía: Clave eso. OpenAI revisó cien y acertó setenta. Vos no sabés cuánto va a acertar el tuyo hasta medirlo.
+Martín: Así que la propuesta honesta es un piloto chico: un indicador, unas semanas, y contar aciertos.
+Lucía: Una idea para charlar, no una promesa.
+
+## Una cosa para probar hoy
+Martín: ¿Y qué probamos hoy?
+Lucía: Una revisión adversarial casera. Media hora, con cualquier asistente que ya uses.
+Martín: Dale, contame el paso a paso.
+Lucía: Uno. Elegí un problema que ya resolviste esta semana. Un error, un número que no cerraba, lo que sea.
+Lucía: Dos. Abrí una conversación nueva, pegale los datos o el error, y pedile que proponga la causa más probable.
+Martín: Sin contarle lo que ya sabés.
+Lucía: Exacto. Tres. Abrí otra conversación aparte. Pegale el mismo material y el diagnóstico de la primera.
+Lucía: Y pedile que intente demostrar que ese diagnóstico está mal.
+Martín: Cuatro, supongo, comparar con lo que de verdad pasó.
+Lucía: Eso. Anotá si la primera acertó y si la segunda encontró algún agujero real o inventó uno.
+Martín: Y si lo hacés con tres o cuatro problemas, ya tenés una idea de cuánto confiar.
+Lucía: Y si tenés una Mac con treinta y dos gigas y ganas, podés repetirlo con Inkling dos Mini corriendo local.
+Martín: Pero primero mirá la licencia.
+
+## Quedaron afuera
+Martín: Antes de irnos, lo que quedó afuera hoy.
+Lucía: Tencent publicó los pesos de Hy cuatro Flash. Unos doscientos veinticuatro mil millones de parámetros y contexto de hasta un millón de tokens.
+Martín: No entró porque, para quien nos escucha, el impacto práctico es bajo. Y tiene licencia propia de Tencent.
+Lucía: Después, un reporte que cita TechCrunch dice que el agente Muse de Meta mezcla conversaciones y expone datos privados.
+Martín: Ese quedó afuera porque no está confirmado y faltan detalles. Si se confirma, lo retomamos.
+Lucía: Y un ciberataque asistido por IA que habría afectado sistemas de la Comisión Europea, como nómina y reintegros médicos.
+Martín: Lo vimos solo en el resumen de un newsletter, sin verificar la fuente original. Por eso no entró.
+Lucía: Si querés que sigamos alguna de estas, avisanos.
+Martín: Eso es todo por hoy. Buen sábado, y nos escuchamos en el próximo Radar IA.

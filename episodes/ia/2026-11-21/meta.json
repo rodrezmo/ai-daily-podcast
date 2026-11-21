@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 21 de noviembre: Inkling 2 Mini abierto, Claude Code 2.1.330 y los modelos MAI de Microsoft",
+  "summary": "Thinking Machines publica Inkling 2 Mini, un modelo abierto que corre en una notebook con 32 GB. También: Claude Code 2.1.330, Genie 4 en la API de Gemini, siete modelos MAI de Microsoft, Gemini para Mac con computer use y el caso de OpenAI con Codex para investigar regresiones de rendimiento.",
+  "stories": [
+    {
+      "title": "Google abre Genie 4 en la API de Gemini y AI Studio",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/"
+    },
+    {
+      "title": "Thinking Machines publica Inkling 2 Mini, modelo abierto de 26,4B parámetros",
+      "url": "https://thinkingmachines.ai/news/inkling-2-mini/"
+    },
+    {
+      "title": "Claude Code 2.1.330: sesión empresarial, gráficos con easel y tareas programadas de hasta 30 días",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330"
+    },
+    {
+      "title": "Microsoft presenta siete modelos MAI en Ignite, con foco en código y costos",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+    },
+    {
+      "title": "Gemini para Mac puede usar tu computadora para completar tareas",
+      "url": "https://techcrunch.com/2026/11/19/google-gives-gemini-the-ability-to-use-your-mac-for-you/"
+    },
+    {
+      "title": "OpenAI cuenta cómo automatiza con Codex la investigación de regresiones de rendimiento",
+      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Tencent publica los pesos de Hy4 Flash, 224B parámetros y 1M de contexto",
+      "url": "https://technode.com/2026/11/19/tencent-releases-hy4-flash-model-weights-for-local-deployment/"
+    },
+    {
+      "title": "Meta: su agente Muse mezclaría conversaciones y expondría datos privados",
+      "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+    },
+    {
+      "title": "Ciberataque asistido por IA afectó sistemas de la Comisión Europea",
+      "url": "https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103"
+    }
+  ]
+}
