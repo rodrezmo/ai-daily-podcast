@@ -1,0 +1,114 @@
+## Titulares
+Lucía: Hola, buen día. Es domingo veintidós de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay de todo: precios que suben, modelos abiertos baratos y un susto con proveedores de inferencia.
+Lucía: Arranquemos por la plata. Gemini cuatro Carbon cambia de precio el primero de diciembre.
+Martín: Hoy está en promoción, a dos y diez dólares por millón de tokens.
+Lucía: La promo dura hasta el treinta de noviembre. Después pasa a cuatro y veinte.
+Martín: O sea, el doble. Exacto, el doble.
+Lucía: Para tener la foto completa: Neon está en tres y quince, y Hydrogen en uno cincuenta y siete cincuenta.
+Martín: El jueves contamos el lanzamiento de Neon, justamente con ese precio de tres y quince.
+Lucía: Lo marca Simon Willison en su blog. Y dice algo que me pareció atinado: la lista de modelos sugiere un orden de precios que hoy no se cumple.
+Martín: Claro, hoy Carbon sale menos que Neon, y desde el primero de diciembre va a salir más.
+Lucía: Mi opinión: no es escándalo, pero es una trampa para el que presupuesta. Si tenés algo andando sobre Carbon, recalculá ahora.
+Martín: Segunda. Hugging Face presentó lo que llama harness adapters.
+Lucía: Contame qué es, porque el nombre no ayuda.
+Martín: Son adaptadores LoRA. El modelo base queda congelado, y el adaptador se entrena con aprendizaje por refuerzo adentro de un arnés de agente concreto.
+Martín: Por ejemplo Pi, OpenCode o Hermes Agent.
+Lucía: ¿Y el dato duro?
+Martín: Con Qwen tres punto ocho de veintisiete mil millones de parámetros, en Terminal-Bench dos punto uno, pasó de treinta y nueve a cincuenta y cinco por ciento de aciertos.
+Martín: Y usando casi la mitad de tokens.
+Lucía: Eso es lo que me interesa. Mejor y más barato a la vez no se ve todos los días.
+Martín: Un adaptador combinado, que sirve para varios arneses, llevó el promedio de treinta y nueve y medio a cuarenta y nueve.
+Lucía: Opinión honesta: es el blog de Hugging Face hablando de su propio trabajo, pero es fuente primaria y trae números concretos. Vale la pena seguirlo.
+Martín: Tercera. Baseten publicó dos modelos abiertos de decisión, construidos sobre Gemma cuatro.
+Lucía: bison uno y groundhog uno.
+Martín: bison uno tiene treinta y un mil millones de parámetros. groundhog uno es una mezcla de expertos de veintiséis mil millones, con unos cuatro mil millones activos.
+Lucía: Los dos tienen ciento veintiocho mil tokens de contexto y aceptan texto e imagen.
+Martín: Y el precio llama la atención: diez centavos de dólar por millón de tokens el grande, y unos tres centavos y medio el chico.
+Lucía: Baseten dice que bison uno sale primero en el Decision Index de Artificial Analysis, con setenta y seis puntos.
+Martín: Ojo con eso. El dato lo da la propia empresa. Y la licencia no la pudimos ver.
+Lucía: Se relaciona con algo del viernes: contamos que Microsoft-Decision uno punto uno pasó a disponibilidad general.
+Martín: Sí, se está armando una categoría de modelos para decidir. Mi opinión: prometedor por el precio, pero hasta no ver la licencia, no lo metería en nada serio.
+Lucía: Cuarta. GitHub Copilot suma ocho conectores MCP verificados.
+Martín: Box, Buildkite, Calendly, ClickUp, Mixpanel, Supabase, Webflow y Wix.
+Lucía: Están en vista previa pública, para todos los planes, y se suman a más de veinticinco que ya había.
+Martín: El ejemplo que dan: Copilot puede revisar el esquema de Supabase antes de escribir una migración.
+Lucía: Eso tiene sentido. Escribir una migración sin mirar el esquema es pedir problemas.
+Martín: En Business y Enterprise, un administrador tiene que habilitar la política de funciones en vista previa.
+Lucía: Me parece bien que no venga prendido por defecto. Darle a un asistente acceso a datos reales no es un detalle.
+Martín: Quinta, y no es de IA estrictamente, pero importa: salió PostgreSQL diecinueve.
+Lucía: ¿Qué trae?
+Martín: REPACK concurrente, para reorganizar tablas sin bloquear. Funciones de ventana con IGNORE NULLS. Y COPY en formato JSON.
+Lucía: Lo de IGNORE NULLS para informes es oro.
+Martín: También INSERT con ON CONFLICT DO SELECT, y WAIT FOR LSN, para leer en una réplica lo que se acaba de escribir.
+Lucía: Y dos cambios más. JIT queda desactivado por defecto, y md5 sigue deprecado, ahora con una advertencia cuando alguien se autentica así.
+Martín: Un detalle: salió unos dos meses tarde. Según Willison, principalmente por la ola de vulnerabilidades reportadas con IA.
+Lucía: Eso es interesante. La IA como generadora de trabajo para los que mantienen software.
+Martín: Sexta, y la más seria. OpenRouter dio de baja tres proveedores de inferencia.
+Lucía: ¿Qué pasó?
+Martín: Investigadores de Dragos detectaron proveedores con datos comprometidos o que no cumplían sus políticas de datos.
+Martín: OpenRouter dice que no hubo intrusión en su plataforma. Pero sacó ciento veinticinco endpoints de la elegibilidad de retención cero.
+Lucía: El miércoles contamos que Hugging Face empezó a enrutar modelos de Inference Providers vía OpenRouter. Así que esto toca a más gente de la que parece.
+Martín: Novita, Phala y Together publicaron comunicados. En el caso de Together, hubo fuga de prompts en junio y julio de este año.
+Lucía: Mi opinión: esto es lo más importante del día. Retención cero es una promesa de un tercero, y hay que verificarla, no darla por hecha.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué cambia en el día a día del que programa o arma datos?
+Lucía: Para mí, lo primero es lo de OpenRouter. Si mandás datos de clientes a un modelo abierto a través de un intermediario, fijate qué proveedor lo aloja de verdad.
+Martín: Y si la retención cero que elegiste sigue vigente para ese endpoint. Ciento veinticinco salieron de la lista.
+Lucía: Segundo, Postgres diecinueve. Si hacés informes, IGNORE NULLS en funciones de ventana te ahorra esos trucos para arrastrar el último valor no nulo.
+Martín: Y COPY a JSON te simplifica exportar datos para otro sistema.
+Lucía: REPACK concurrente es para el que mantiene bases: reorganizar sin cortar el servicio.
+Martín: Y antes de actualizar, revisá md5. Si tus usuarios todavía autentican así, eso va a dejar de existir en algún momento.
+Lucía: Tercero, los conectores de Copilot. Si ya lo usás con Supabase, darle el esquema antes de escribir migraciones es una mejora concreta.
+Martín: Con un cuidado. El domingo pasado contamos la investigación alemana sobre miles de apps hechas con Lovable que exponían datos personales en Supabase.
+Lucía: Claro. Conectar un asistente a la base no reemplaza revisar los permisos de esa base.
+Martín: Y cuarto, para el que corre agentes con modelos propios: los harness adapters son una vía para ganar precisión sin cambiar de modelo.
+Lucía: Y sin pagar más por tarea, que es lo que suele frenar todo.
+Martín: Ah, y si tenés algo sobre Gemini Carbon, fijá la versión del modelo y recalculá el costo antes del primero de diciembre.
+
+## Oportunidades de consultoría
+Lucía: Vamos a la idea de consultoría. Hoy no pensaría en una pyme, sino en el sector público.
+Martín: ¿Por ejemplo?
+Lucía: Una municipalidad que recibe reclamos de vecinos por WhatsApp, por mail y en mesa de entradas.
+Martín: Y que alguien tiene que leer uno por uno para mandar al área que corresponde.
+Lucía: Exacto. Ese es el problema: los reclamos se acumulan, se derivan mal y nadie sabe cuánto tarda cada área.
+Martín: ¿Qué se automatiza?
+Lucía: La clasificación inicial. Un modelo lee el reclamo, propone categoría, área y urgencia, y una persona confirma.
+Martín: Ahí entran modelos como los de Baseten. Son baratos y están pensados para decidir.
+Lucía: Y aceptan imagen, que sirve cuando el vecino manda la foto del bache.
+Martín: Pero con dos frenos. Primero, la licencia, que todavía no se vio.
+Lucía: Y segundo, lo de OpenRouter. Son datos de vecinos. Hay que saber exactamente dónde se procesa todo.
+Martín: Por eso un modelo abierto tiene sentido: se puede alojar en un lugar que la institución controle.
+Lucía: ¿Qué haría falta para arrancar?
+Martín: Un historial de reclamos ya clasificados, para probar si el modelo acierta. Una lista de categorías acordada con las áreas.
+Lucía: Y una prueba chica, con una sola área, y siempre con una persona revisando antes de derivar.
+Martín: Al final, un tablero simple con cuánto tarda cada área en responder. Eso solo ya ordena bastante.
+Lucía: Es una idea para conversar, no una promesa. Si la precisión no alcanza, se queda como ayuda para el que clasifica.
+
+## Una cosa para probar hoy
+Martín: Una cosa para probar hoy, en menos de media hora.
+Lucía: Revisar si tu Postgres todavía usa md5, ahora que la diecinueve avisa cuando alguien se autentica con md5, que ya estaba deprecado.
+Martín: Dale, paso a paso.
+Lucía: Uno: conectate a tu base con psql, con un usuario administrador.
+Martín: Dos: escribí show password guion bajo encryption. Si dice scram sha doscientos cincuenta y seis, vas bien.
+Lucía: Si dice md5, ya tenés tarea.
+Martín: Tres: abrí el archivo pg guion bajo hba punto conf y buscá los renglones que digan md5 en el método.
+Lucía: Cuatro: anotá qué usuarios y qué aplicaciones dependen de esos renglones. Esa lista es lo que vale.
+Martín: Cinco: si querés avanzar, cambiá la configuración a scram, y volvé a definir la contraseña de un usuario de prueba.
+Lucía: Seis: probá que la aplicación se siga conectando con ese usuario antes de tocar los demás.
+Martín: Y hacelo en un entorno de prueba, no en producción un domingo a la mañana.
+Lucía: Obvio. Con la lista del paso cuatro ya tenés el plan para cuando actualices.
+
+## Quedaron afuera
+Martín: Repasemos lo que quedó afuera, por si quieren que lo sumemos.
+Lucía: Volvió a aparecer GPT seis punto dos Astra y Sol, de OpenAI. Ya lo contamos el jueves.
+Martín: Hoy no entró porque la página no tiene una fecha verificable y las reseñas son mixtas.
+Lucía: Después, una nota en el blog de Willison sobre fraude de tokens: gente que abusa de pruebas gratis para revender uso de IA.
+Martín: Quedó afuera porque es el testimonio de un solo caso, sin cifras.
+Lucía: También Pandex, una API y servidor MCP con legislación y fallos de la Unión Europea y ocho jurisdicciones europeas.
+Martín: No cubre Argentina, y la fecha no está confirmada.
+Lucía: Y un relevamiento de TechCrunch sobre agentes de IA que viven en WhatsApp, iMessage y SMS.
+Martín: Poco dato nuevo. Si les interesa el tema WhatsApp, avisen y lo buscamos con más sustancia.
+Lucía: Eso es todo por hoy. Los links están en las notas. Buen domingo.
+Martín: Hasta mañana.
