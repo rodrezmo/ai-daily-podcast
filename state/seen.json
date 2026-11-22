@@ -1409,6 +1409,36 @@
       "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast",
       "title": "OpenAI cuenta cómo automatiza con Codex la investigación de regresiones de rendimiento",
       "date": "2026-11-21"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/18/llm-gemini",
+      "title": "Gemini 4: el precio de Carbon sube a USD 4/20 el 1 de diciembre y el orden de precios confunde",
+      "date": "2026-11-22"
+    },
+    {
+      "url": "https://huggingface.co/blog/harness-adapters-at-scale",
+      "title": "Hugging Face presenta 'harness adapters': LoRA entrenados con RL para cada arnés de agente",
+      "date": "2026-11-22"
+    },
+    {
+      "url": "https://baseten.co/blog/meet-bison-1-and-groundhog-1",
+      "title": "Baseten publica bison-1 y groundhog-1, modelos de decisión abiertos sobre Gemma 4",
+      "date": "2026-11-22"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-11-18-connect-supabase-box-calendly-and-more-to-copilot",
+      "title": "GitHub Copilot suma ocho conectores MCP verificados: Supabase, Box, Calendly, ClickUp, Mixpanel y más",
+      "date": "2026-11-22"
+    },
+    {
+      "url": "https://postgresql.org/about/news/postgresql-19-released-3449",
+      "title": "PostgreSQL 19: REPACK sin bloqueos, IGNORE NULLS en ventanas y COPY a JSON",
+      "date": "2026-11-22"
+    },
+    {
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
+      "title": "OpenRouter retira tres proveedores y 125 endpoints de retención cero tras reporte de Dragos",
+      "date": "2026-11-22"
     }
   ]
 }
