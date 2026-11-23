@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 23 de noviembre: Inkling 2 Mini, agentes de datos en BigQuery y PostgreSQL 19",
+  "summary": "Un modelo multimodal abierto para correr local, el costo real de subir el razonamiento en Gemini 4, PostgreSQL 19 con WAIT FOR LSN, un caso de Vodafone migrando pipelines de BigQuery con un agente, el servidor MCP de Managed Airflow y el simulador de Google para probar agentes de datos.",
+  "stories": [
+    {
+      "title": "Inkling 2 Mini: modelo multimodal MoE de 26B (3B activos) para correr local",
+      "url": "https://huggingface.co/blog/inkling2mini"
+    },
+    {
+      "title": "PostgreSQL 19: WAIT FOR LSN para lecturas consistentes en réplicas",
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19/"
+    },
+    {
+      "title": "Vodafone Chequia migra procedimientos de BigQuery con el Data Engineering Agent",
+      "url": "https://cloud.google.com/blog/products/data-analytics/vodafone-cuts-data-pipeline-costs-30-via-data-engineeringagent"
+    },
+    {
+      "title": "Managed Airflow: agentes que investigan fallas y servidor MCP disponible en GA",
+      "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow"
+    },
+    {
+      "title": "Google construye un simulador de empresa sintética para probar agentes de datos",
+      "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents"
+    },
+    {
+      "title": "llm-gemini 0.38.1 agrega nivel de razonamiento xhigh y muestra su costo",
+      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Muru: servidor en Rust hecho con IA para apps Python ASGI y WSGI",
+      "url": "https://simonwillison.net/2026/Nov/21/muru/"
+    },
+    {
+      "title": "Latent Space: la verificación formal como defensa contra el 'slop' de código generado por IA",
+      "url": "https://latent.space/p/formal-verification/"
+    },
+    {
+      "title": "OKF v0.3: formato abierto de conocimiento para que agentes consuman contexto de datos",
+      "url": "https://cloud.google.com/blog/products/data-analytics/introducing-okf-v0-3"
+    },
+    {
+      "title": "Anthropic cierra su IPO: US$119,5 mil millones entre oferta y colocación privada",
+      "url": "https://www.anthropic.com/news/ipo-close"
+    }
+  ]
+}

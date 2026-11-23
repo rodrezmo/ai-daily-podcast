@@ -1,0 +1,129 @@
+## Titulares
+Lucía: Buen día, es lunes veintitrés de noviembre y esto es Radar IA.
+Martín: Hola, hola. Hoy viene muy cargado de datos, de pipelines y de bases de datos.
+Lucía: Sí, es un lunes bien de ingeniería. Arrancamos con un modelo para correr local.
+Martín: Inkling dos Mini. El sábado contamos que Thinking Machines lo había publicado, y ahora salió el post largo en el blog de Hugging Face.
+Lucía: ¿Y qué agrega el post?
+Martín: Los números de arquitectura. Es un modelo de mezcla de expertos con unos veintiséis mil millones de parámetros en total.
+Martín: Pero por cada token usa solo unos tres mil millones.
+Lucía: O sea que pesa como uno grande y corre como uno chico.
+Martín: Esa es la idea. Tiene un millón de tokens de contexto y acepta texto e imágenes.
+Lucía: ¿Y para correrlo en casa?
+Martín: Hay versiones cuantizadas en formato GGUF, de cuatro y de ocho bits, para llama.cpp. Y versiones para MLX, o sea, para las Mac con chip de Apple.
+Lucía: ¿Y qué tan bueno es?
+Martín: Dicen que gana en treinta y dos de cuarenta y ocho benchmarks contra Gemma cuatro de treinta y un mil millones y contra Qwen tres punto ocho de veintisiete mil millones, entre otros.
+Lucía: Cifras propias, ¿no?
+Martín: Propias. Y los mismos autores dicen que hace falta más validación.
+Lucía: Lo que más me hace ruido es lo que falta. El post no dice la licencia ni cuánta memoria necesitás para correrlo.
+Martín: Para mí es interesante, pero antes de ofrecérselo a alguien hay que leer la model card. Sin licencia clara, no lo metería en un proyecto.
+Lucía: Segunda. PostgreSQL diecinueve.
+Martín: Ayer hablamos de la versión diecinueve, con REPACK sin bloqueos y COPY a JSON.
+Lucía: Exacto. Hoy sumamos lo que destacó Simon Willison en su blog. Y un dato de contexto que me parece lo más fuerte.
+Martín: ¿Cuál?
+Lucía: Salió unos dos meses más tarde de lo habitual. Normalmente sale en septiembre.
+Lucía: Y Willison lo atribuye a la cantidad de vulnerabilidades reportadas con ayuda de IA que tuvo que resolver el equipo.
+Martín: Mirá vos. La IA encontrando fallas más rápido de lo que la gente puede arreglarlas.
+Lucía: La novedad que él elige es WAIT FOR LSN.
+Martín: Contame qué hace, porque el nombre no ayuda.
+Lucía: Si mandás las lecturas a una réplica, la réplica puede ir un poquito atrasada respecto de la base principal.
+Lucía: Con este comando, la réplica espera a haber aplicado los cambios hasta cierto punto antes de responder.
+Martín: Entonces el usuario escribe algo y, cuando vuelve a leer, ve lo que acaba de escribir.
+Lucía: Eso. Y se le puede poner un tiempo máximo de espera. Si la réplica no llega, tira error.
+Martín: Antes eso se armaba a mano. Él cuenta que Wikipedia lo hace hace años con MySQL.
+Lucía: Una aclaración: la nota que tenemos es la de Willison. La página oficial de PostgreSQL no la chequeamos para este dato puntual.
+Lucía: Tercera, y para mí la mejor del día. Un caso real con números.
+Martín: Vodafone República Checa, en el blog de Google Cloud.
+Martín: Tenían procedimientos almacenados en BigQuery de dos mil a tres mil líneas cada uno, que corrían uno detrás del otro.
+Lucía: Herencia de una migración vieja, imagino.
+Martín: Sí, de un data warehouse que tenían en sus propios servidores. Usaron el agente de ingeniería de datos de Gemini dentro de Dataform para reescribirlos.
+Martín: Los partió en archivos chicos, con dependencias explícitas y con tests integrados en el enfoque modular de Dataform.
+Lucía: ¿Y los números?
+Martín: Pipelines el doble de rápidos. Un treinta por ciento menos de costo. Y un noventa por ciento menos de tiempo de migración contra hacerlo a mano.
+Martín: Y dicen que mantuvieron la misma lógica, uno a uno.
+Lucía: Lo que más me gustó es que cuentan algo que les salió mal.
+Martín: Sí. Al paralelizar, el costo subió.
+Martín: Cuando corría todo en secuencia, BigQuery aprovechaba la caché. En paralelo, cada hilo escaneaba la tabla entera.
+Lucía: Y lo arreglaron con vistas materializadas para las tablas intermedias.
+Martín: Y dándole al agente instrucciones más precisas sobre qué paralelizar. Es un caso del proveedor, ojo, pero con datos y con un error reconocido. Eso suma.
+Lucía: Cuarta. También de Google Cloud. El servicio administrado de Airflow suma agentes.
+Martín: ¿Qué hacen?
+Lucía: Uno diagnostica tareas que fallaron y revisa si tus DAGs son compatibles antes de pasar a Airflow tres.
+Lucía: Y es de solo lectura. No toca nada. Propone, y la persona decide.
+Martín: Bien eso.
+Lucía: Además hay un kit de agentes con plugins para Claude Code, Gemini CLI y Codex CLI.
+Lucía: Y un servidor MCP que ya está en disponibilidad general. Permite listar y disparar DAGs, ver el estado de las corridas y revisar tareas fallidas.
+Martín: ¿Con qué permisos?
+Lucía: Por IAM. Y las herramientas de solo lectura están marcadas, para que puedas limitar al agente a esas.
+Martín: Ayer contamos que GitHub Copilot sumó conectores MCP verificados. MCP se está volviendo el enchufe estándar.
+Lucía: Un aviso importante. El caso de ejemplo del post es una empresa ficticia, y las cifras son ilustrativas. Lo dice el propio post.
+Martín: O sea, la función existe, los resultados de la historia no.
+Lucía: Quinta. Google cuenta cómo prueba a sus agentes de datos.
+Martín: Esta me encantó. Armaron un simulador que inventa una empresa entera.
+Martín: Tablas, documentos, chats internos, y respuestas verificadas con SQL.
+Lucía: ¿Y para qué?
+Martín: Para evaluar agentes sin tocar datos de clientes. Y le meten trampas a propósito.
+Martín: Por ejemplo, un memo de un supervisor que define una métrica distinto de como la define la empresa.
+Lucía: Como pasa en la vida real.
+Martín: Tal cual. Y preguntas sobre métricas que no existen, para ver si el agente inventa o se abstiene.
+Lucía: ¿Lo podemos usar?
+Martín: No. Es interno. Tiene más de cien chequeos de calibración, pero no anunciaron que lo vayan a liberar.
+Lucía: Igual la idea es copiable. Después volvemos a eso.
+Martín: Sexta y última. Un número concreto sobre lo que cuesta pensar.
+Lucía: Simon Willison sacó la versión cero punto treinta y ocho punto uno de su plugin llm-gemini.
+Lucía: Suma el nivel de razonamiento xhigh. Lo soportan Gemini cuatro Hydrogen y Neon, pero Carbon no.
+Martín: Ayer justo hablamos de que el precio de Carbon sube el primero de diciembre.
+Lucía: Sí. Y la prueba es reveladora. Con Hydrogen en nivel alto, la respuesta usó unos cinco mil tokens de salida y costó cuatro centavos de dólar.
+Lucía: En xhigh, usó más de treinta y un mil tokens y costó casi veinticuatro centavos.
+Martín: Unas seis veces más.
+Lucía: Y tardó dos minutos y medio en vez de diecinueve segundos.
+Martín: Es una sola prueba, con una sola pregunta. Pero sirve para no dejar el razonamiento al máximo por defecto sin pensarlo.
+
+## Para desarrolladores
+Lucía: ¿Qué te llevás para el día a día?
+Martín: Primero, lo de Vodafone. Si heredaste SQL monstruoso, un agente te puede ayudar a partirlo.
+Martín: Pero fijate el aprendizaje: paralelizar no siempre ahorra. Medí el costo antes y después.
+Lucía: Y la parte de darle instrucciones específicas al agente. No le digas "optimizá esto". Decile qué tablas intermedias puede correr en paralelo.
+Martín: Segundo, si usás réplicas de lectura para informes, WAIT FOR LSN te resuelve el clásico "acabo de guardar y no lo veo".
+Lucía: Tercero, si operás Airflow, el servidor MCP te deja preguntarle a tu agente por qué falló una tarea sin abrir la consola.
+Martín: Y arrancá con las herramientas de solo lectura. Que dispare DAGs lo habilitás después, cuando le tengas confianza.
+Lucía: Y cuarto, lo del costo del razonamiento. Si pagás por token, el nivel de razonamiento es una perilla de plata. Probala con tus casos antes de subirla.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme.
+Martín: ¿A quién le hablamos?
+Lucía: A una empresa mediana con un equipo interno de datos chico, que heredó procedimientos SQL enormes o macros de Excel que nadie quiere tocar.
+Martín: El problema lo conozco. Un proceso de miles de líneas, que corre en secuencia, que entiende una sola persona.
+Lucía: Y que cuando se rompe, se rompe un viernes.
+Martín: La idea sería ofrecer una migración asistida por agente, tomando el caso Vodafone como patrón.
+Martín: Partir el monolito en pasos chicos, con dependencias explícitas y con tests básicos, como que una clave no se repita o no venga vacía.
+Lucía: ¿Y cómo demostrás que el resultado es el mismo?
+Martín: Corriendo los dos en paralelo un tiempo y comparando las salidas, tabla por tabla. Eso es lo que da tranquilidad.
+Lucía: ¿Y qué haría falta?
+Martín: Acceso de solo lectura a una copia de los datos, alguien del equipo que conozca el negocio para validar, y un entorno de prueba.
+Lucía: Sin prometer el noventa por ciento de Vodafone, aclaro.
+Martín: Obvio. Eso fue su caso, con su equipo y su herramienta. Acá es una idea para charlar, no una promesa.
+
+## Una cosa para probar hoy
+Lucía: Para hoy, algo inspirado en el simulador de Google. Media hora, como mucho.
+Martín: Dale.
+Lucía: Si tenés un agente o un chat que responde preguntas sobre tus datos, armale un mini examen.
+Lucía: Paso uno. Escribí cinco preguntas reales que te haría alguien del negocio.
+Lucía: Paso dos. Para cada una, escribí vos la consulta SQL que da la respuesta correcta y anotá el número. Esa es tu respuesta dorada.
+Martín: Paso tres. Agregá una pregunta sobre una métrica que no existe. Un nombre inventado, que suene creíble.
+Lucía: Paso cuatro. Agregá una pregunta ambigua, donde haya dos definiciones posibles de la misma métrica.
+Martín: Paso cinco. Hacele las siete preguntas al agente y compará con tus números.
+Lucía: Lo que querés ver es si en la métrica inventada te dice "no la encuentro" o si te tira un número.
+Martín: Y en la ambigua, si te pregunta qué definición usar o si elige una sin avisar.
+Lucía: Guardá ese archivo. Cada vez que cambies de modelo o de prompt, lo volvés a correr.
+
+## Quedaron afuera
+Martín: Repasamos rápido lo que dejamos afuera.
+Lucía: Anthropic cerró su salida a bolsa. Entre la oferta y una colocación privada suman ciento diecinueve mil quinientos millones de dólares.
+Martín: Es negocio. No cambia nada práctico para quien usa IA, por eso no entró.
+Lucía: En Latent Space hay un panorama sobre la verificación formal como defensa contra el código basura generado por IA.
+Martín: El tema es bueno, pero las cifras son de las propias empresas. Por eso quedó afuera.
+Lucía: Google publicó la versión cero punto tres de OKF, un formato abierto para que los agentes consuman contexto de datos.
+Martín: Todavía está en versión cero. Impacto práctico limitado, por ahora.
+Lucía: Y Muru, un servidor hecho en Rust con ayuda de IA para apps de Python.
+Martín: Proyecto nuevo, sin evidencia de adopción todavía. Si quieren que sigamos alguno de estos, nos avisan.
+Lucía: Los links están en las notas. Nos escuchamos mañana.
