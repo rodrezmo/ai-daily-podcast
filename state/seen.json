@@ -1439,6 +1439,36 @@
       "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers",
       "title": "OpenRouter retira tres proveedores y 125 endpoints de retención cero tras reporte de Dragos",
       "date": "2026-11-22"
+    },
+    {
+      "url": "https://huggingface.co/blog/inkling2mini",
+      "title": "Inkling 2 Mini: modelo multimodal MoE de 26B (3B activos) para correr local",
+      "date": "2026-11-23"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/19/postgresql-19",
+      "title": "PostgreSQL 19: WAIT FOR LSN para lecturas consistentes en réplicas",
+      "date": "2026-11-23"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/data-analytics/vodafone-cuts-data-pipeline-costs-30-via-data-engineeringagent",
+      "title": "Vodafone Chequia migra procedimientos de BigQuery con el Data Engineering Agent",
+      "date": "2026-11-23"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/data-analytics/scaling-airflow-pipelines-with-ai-agents-on-managed-airflow",
+      "title": "Managed Airflow: agentes que investigan fallas y servidor MCP disponible en GA",
+      "date": "2026-11-23"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/data-analytics/a-data-simulator-to-test-agents",
+      "title": "Google construye un simulador de empresa sintética para probar agentes de datos",
+      "date": "2026-11-23"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/20/llm-gemini",
+      "title": "llm-gemini 0.38.1 agrega nivel de razonamiento xhigh y muestra su costo",
+      "date": "2026-11-23"
     }
   ]
 }
