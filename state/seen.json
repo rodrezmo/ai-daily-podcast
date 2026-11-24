@@ -1469,6 +1469,36 @@
       "url": "https://simonwillison.net/2026/Nov/20/llm-gemini",
       "title": "llm-gemini 0.38.1 agrega nivel de razonamiento xhigh y muestra su costo",
       "date": "2026-11-23"
+    },
+    {
+      "url": "https://huggingface.co/blog/agentic-evals",
+      "title": "Hugging Face: cómo construir y mantener una evaluación agéntica",
+      "date": "2026-11-24"
+    },
+    {
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
+      "title": "NariQ: Qwen3.8-27B cuantizado a 3 bits en un archivo de 10 GB que iguala al BF16",
+      "date": "2026-11-24"
+    },
+    {
+      "url": "https://openai.com/index/introducing-shirudo",
+      "title": "OpenAI y Cisco presentan Shirudo: runtime abierto que protege servidores Linux mientras se prepara el parche",
+      "date": "2026-11-24"
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "title": "Claude Platform: Opus 4.5 se retira el 22 de enero de 2027 y llega Zero Data Retention en beta",
+      "date": "2026-11-24"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-in-managed-service-for-apache-spark-4-0",
+      "title": "Managed Service for Apache Spark 4.0 llega a GA con Lightning Engine",
+      "date": "2026-11-24"
+    },
+    {
+      "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai",
+      "title": "Sinch migra su data warehouse de Snowflake a BigQuery: 1.200 modelos dbt y 36 ETL en uno",
+      "date": "2026-11-24"
     }
   ]
 }
