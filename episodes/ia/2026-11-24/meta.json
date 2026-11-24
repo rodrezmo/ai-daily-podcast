@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 24 de noviembre: evaluaciones de agentes, Shirudo de OpenAI y Cisco, y Spark 4.0 en Google Cloud",
+  "summary": "Cómo el arnés cambia el resultado de una evaluación de agentes, un modelo de 27B cuantizado a 3 bits para correr local, Shirudo para proteger servidores mientras llega el parche, el retiro de Opus 4.5 en la API, Spark 4.0 en GA y la migración de Sinch de Snowflake a BigQuery.",
+  "stories": [
+    {
+      "title": "Hugging Face: cómo construir y mantener una evaluación agéntica",
+      "url": "https://huggingface.co/blog/agentic-evals"
+    },
+    {
+      "title": "NariQ: Qwen3.8-27B cuantizado a 3 bits en un archivo de 10 GB que iguala al BF16",
+      "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF"
+    },
+    {
+      "title": "OpenAI y Cisco presentan Shirudo: runtime abierto que protege servidores Linux mientras se prepara el parche",
+      "url": "https://openai.com/index/introducing-shirudo/"
+    },
+    {
+      "title": "Claude Platform: Opus 4.5 se retira el 22 de enero de 2027 y llega Zero Data Retention en beta",
+      "url": "https://platform.claude.com/docs/en/release-notes/overview"
+    },
+    {
+      "title": "Managed Service for Apache Spark 4.0 llega a GA con Lightning Engine",
+      "url": "https://cloud.google.com/blog/products/data-analytics/whats-new-in-managed-service-for-apache-spark-4-0"
+    },
+    {
+      "title": "Sinch migra su data warehouse de Snowflake a BigQuery: 1.200 modelos dbt y 36 ETL en uno",
+      "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Anthropic cierra su IPO: US$119,5 mil millones entre oferta y colocación privada",
+      "url": "https://www.anthropic.com/news/ipo-close"
+    },
+    {
+      "title": "GLM-5.4: primer loop transformer de Z.ai, solo vía API de Coding Plan",
+      "url": "https://z.ai/blog/glm-5.4"
+    },
+    {
+      "title": "Fraude de tokens: abuso de pruebas gratis obliga a ChatPRD a eliminarlas",
+      "url": "https://simonwillison.net/2026/Nov/20/token-fraud-is-here-and-its-bad/"
+    }
+  ]
+}

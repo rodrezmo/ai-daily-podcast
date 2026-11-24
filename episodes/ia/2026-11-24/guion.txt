@@ -1,0 +1,118 @@
+## Titulares
+Lucía: Buen día, es martes veinticuatro de noviembre y esto es Radar IA.
+Martín: Hoy hay seis notas, y varias tienen más letra chica que titular.
+Lucía: Arranco con una que me gustó mucho. Hugging Face publicó una guía sobre cómo armar y mantener una evaluación de agentes.
+Martín: ¿Otra guía de evaluaciones? Hay mil.
+Lucía: Sí, pero esta trae un dato que duele. Con el mismo modelo, cambiar solo el arnés movió la precisión hasta casi treinta puntos en Terminal-Bench.
+Martín: Treinta puntos sin tocar el modelo. O sea que buena parte del ranking es el envoltorio.
+Lucía: Y hay más. Esa misma suite tuvo que corregir veintiocho de sus ochenta y nueve tareas.
+Martín: Casi un tercio de las tareas estaban mal. Eso te obliga a mirar cualquier tabla comparativa con otros ojos.
+Lucía: Lo bueno es que muestran un caso práctico: evaluaron seis modelos por menos de cinco dólares.
+Martín: Ayer contamos que Google armó un simulador de empresa sintética para probar agentes de datos. Esto va por el mismo lado, pero mucho más barato y al alcance de cualquiera.
+Lucía: Mi opinión: es de lo más útil de la semana. No vende nada y te da una receta que podés chequear.
+Martín: Segunda. Nari Labs subió a Hugging Face una versión de Qwen tres punto ocho, el de veintisiete mil millones de parámetros, cuantizada a tres bits.
+Lucía: ¿Cuánto pesa?
+Martín: Unos diez gigas. El original en BF dieciséis pesa casi cincuenta y cuatro.
+Lucía: Más de cinco veces menos.
+Martín: Y según el autor, rinde igual. En DeepSWE da cuarenta y uno por ciento contra treinta y nueve coma ocho del original.
+Lucía: Pará, ¿la versión comprimida da mejor que la original?
+Martín: Eso dice el autor, y los números son todos suyos. Nadie los replicó todavía.
+Lucía: Bien que lo aclares.
+Martín: Tiene licencia Apache dos punto cero. Pero ojo: necesita un fork de llama.cpp de la propia Nari Labs. Todavía no corre en Ollama ni en LM Studio.
+Lucía: Hace una semana hablamos de la versión uno de llama.cpp, y ya aparece un fork aparte para esto.
+Martín: Mi opinión: muy prometedor para correr local, pero lo creo cuando lo vea medido por alguien más.
+Lucía: Tercera, de seguridad. OpenAI y Cisco presentaron Shirudo.
+Martín: ¿Qué es?
+Lucía: Un runtime abierto para servidores Linux, con licencia BSD. Usa e B P F, y Codex genera unos escudos que bloquean la explotación de una vulnerabilidad sin reiniciar el servicio.
+Martín: La idea es ganar tiempo hasta que llega el parche.
+Lucía: Exacto. El operador aprueba cada despliegue y se puede ver cómo afectarían a las aplicaciones antes de aplicarlos.
+Martín: ¿Y qué datos hay de que funcione?
+Lucía: Una sola prueba controlada. Frenó un exploit de Java4Shell contra Elasticsearch. Más métricas no hay.
+Martín: Entonces es un caso de laboratorio. La idea es buena, pero una demo no alcanza para confiarle un servidor de producción.
+Lucía: Coincido. Lo miraría con interés, pero todavía no lo instalaría.
+Martín: Cuarta, de Anthropic. Las notas de versión de la plataforma de Claude anuncian que Opus cuatro punto cinco se retira de la API el veintidós de enero de dos mil veintisiete.
+Lucía: Unos dos meses.
+Martín: Y la recomendación es migrar a Opus cinco punto cinco.
+Lucía: ¿Y lo otro que anunciaron?
+Martín: Una beta que se llama Enterprise Frontier Safeguards. Trae retención cero de datos, con copias cifradas que quedan en un bucket del propio cliente.
+Lucía: ¿Y si falla ese almacenamiento?
+Martín: Suman dos webhooks. Uno avisa cuando falla el almacenamiento externo y otro cuando se recupera.
+Lucía: Mi opinión: lo del retiro es lo urgente. Lo de retención cero es interesante para datos sensibles, pero es para organizaciones elegibles, no para cualquiera.
+Lucía: Quinta. Google Cloud puso en disponibilidad general su servicio administrado de Apache Spark cuatro.
+Martín: ¿Qué trae?
+Lucía: Spark cuatro punto dos, Iceberg uno punto doce y Delta cuatro punto cuatro. Y un motor que llaman Lightning Engine.
+Martín: Que seguro promete algo.
+Lucía: Hasta cuatro coma nueve veces más rápido que Spark open source. Y hasta tres coma veinticinco veces mejor relación precio rendimiento, contra otra alternativa de Spark de alta velocidad.
+Martín: Con la palabra "hasta" adelante, y medido por Google.
+Lucía: Tal cual. También suma diagnóstico de fallos con un agente, y un kit de agente de datos para VS Code, Claude Code y Antigravity.
+Martín: Ayer hablamos de los agentes que investigan fallas en Managed Airflow. Google está metiendo el mismo agente en todos sus productos de datos.
+Lucía: Mi opinión: si ya corrés Spark en Google Cloud, vale la pena probarlo con tus propias cargas. Las cifras del proveedor, de entrada, no.
+Martín: Y la sexta, también del blog de Google Cloud. Sinch migró su data warehouse de Snowflake a BigQuery.
+Lucía: ¿Qué tan grande?
+Martín: Más de mil doscientos modelos de dbt, traducidos con el servicio de migración de BigQuery y skills de IA. Y treinta y seis flujos de ETL consolidados en un solo orquestador.
+Lucía: ¿Cómo empezaron?
+Martín: Con un piloto chico. Veinte tablas y ciento veinticinco gigas.
+Lucía: ¿Y cuánto ahorraron?
+Martín: No lo dicen. No hay un solo porcentaje de ahorro. Lo único que mencionan es una tabla que llegaba a escanear hasta cien terabytes por día.
+Lucía: Ayer contamos lo de Vodafone Chequia migrando procedimientos con el Data Engineering Agent. Es el segundo caso de migración asistida en dos días.
+Martín: Mi opinión: el método está bueno y se puede copiar. Pero es un caso de cliente publicado por el proveedor, y sin costos es medio folleto.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué le cambia hoy a quien programa?
+Martín: Lo primero, lo más concreto: si tenés algo fijado a Opus cuatro punto cinco, tenés hasta el veintidós de enero.
+Lucía: Y en el medio están las fiestas y las vacaciones. Así que en la práctica son menos de dos meses.
+Martín: Exacto. No lo dejes para enero.
+Lucía: Lo segundo es la guía de evaluación de Hugging Face. Hay dos recomendaciones que se aplican mañana mismo.
+Martín: Contame.
+Lucía: Una: correr un oracle, o sea algo que resuelve las tareas perfecto, y un agente que no hace nada.
+Martín: ¿Para qué el que no hace nada?
+Lucía: Para saber cuánto puntaje sale gratis. Si el agente vago ya aprueba tareas, tu evaluación está rota. Y si el oracle no llega al cien, también.
+Martín: Me gusta. Es un control de cordura.
+Lucía: La otra: reportar pass at k y pass a la k.
+Martín: A ver si lo explico bien. El primero mide si el agente acierta al menos una vez en k intentos. El segundo, si acierta en todos.
+Lucía: Y para algo que entregás a un cliente, te importa más el segundo. Que funcione siempre, no una vez de cada tantas.
+Martín: Lo tercero es lo del modelo local. Un modelo de veintisiete mil millones para agentes de código que hoy pide una placa de veinticuatro gigas. Lo de dieciséis es una meta a futuro del autor.
+Lucía: Con las reservas que dijimos.
+Martín: Sí. Fork aparte, números del autor, y la variante de dos bits se degrada. Hay una de dos coma cinco también, pero yo arrancaría por la de tres.
+Lucía: Y para los equipos de datos en Google Cloud, el kit de agente de datos funciona con VS Code y con Claude Code. Si ya usás eso, se puede probar sin cambiar de editor.
+
+## Oportunidades de consultoría
+Martín: Hoy no vamos con la pyme. Pensemos en un estudio, contable o jurídico.
+Lucía: Me parece bien. ¿Cuál es su problema?
+Martín: Reciben una montaña de documentos de clientes. Contratos, comprobantes, escritos. Y alguien tiene que leerlos, clasificarlos y sacar los datos a mano.
+Lucía: Y no quieren mandar esos documentos a la nube.
+Martín: Exacto. Es información de terceros, muchas veces confidencial. Ahí es donde hoy aparecen dos caminos.
+Lucía: Uno es el modelo local.
+Martín: Sí. Si lo de NariQ se confirma, un modelo de ese tamaño correría en una placa de veinticuatro gigas. Los documentos no salen de la oficina.
+Lucía: El otro es la retención cero de datos que anunció Anthropic, con las copias en un bucket propio. Pero es beta y para organizaciones elegibles. Habría que ver si el estudio califica.
+Martín: Lo que se automatiza es la primera pasada. Clasificar cada documento, extraer fechas, partes y montos, y dejarlo en una planilla para que una persona revise.
+Lucía: Una persona revisa siempre. Eso no se negocia.
+Martín: Y acá entra la nota de Hugging Face. Antes de entregar nada, armás una evaluación con documentos reales del estudio, anonimizados.
+Lucía: Con el agente que no hace nada como control, y midiendo si acierta siempre, no una vez.
+Martín: ¿Qué haría falta?
+Lucía: Una máquina con una placa Nvidia de veinticuatro gigas, alguien que se banque instalar el fork de llama.cpp, y un lote de documentos de prueba que el estudio acepte compartir.
+Martín: Y un piloto chico primero, como hizo Sinch con sus veinte tablas. Se lo puede ofrecer como idea a explorar, no como resultado garantizado.
+
+## Una cosa para probar hoy
+Lucía: Para hoy, algo de menos de media hora. Buscar dónde tenés fijado Opus cuatro punto cinco.
+Martín: Dale, paso a paso.
+Lucía: Uno. Abrí la terminal en cada repositorio donde uses la API de Claude.
+Martín: Dos.
+Lucía: Buscá el texto "opus cuatro guion cinco", escrito como figura en el código, con el buscador que uses. Mirá también los archivos de configuración y las variables de entorno.
+Martín: Ahí suele esconderse. En un punto env que nadie toca hace meses.
+Lucía: Tres. Anotá en una lista cada lugar donde aparece, y quién es el dueño de ese servicio.
+Martín: Cuatro.
+Lucía: Agarrá cinco o seis pedidos reales que hoy resuelve Opus cuatro punto cinco, y corrélos con Opus cinco punto cinco.
+Martín: Y comparás las salidas una al lado de la otra.
+Lucía: Cinco. Si algo cambia de formato o de comportamiento, anotalo como tarea de migración. Si todo da bien, ya tenés el cambio listo para enero.
+Martín: Y si te sobra tiempo, sumale el agente que no hace nada como control. Así ya tenés el principio de una evaluación propia.
+
+## Quedaron afuera
+Lucía: Ahora lo que quedó afuera, para que nos digas si querés que lo sumemos.
+Martín: Primero, Anthropic cerró su salida a bolsa. Unos ciento veinte mil millones de dólares entre la oferta y una colocación privada.
+Lucía: El jueves contamos que había fijado el precio en ochenta y tres dólares por acción. No entró hoy porque no cambia nada en el día a día de quien la usa.
+Martín: Segundo, Z.ai presentó GLM cinco punto cuatro, que según ellos es su primer loop transformer.
+Lucía: Quedó afuera porque no publicaron benchmarks ni pesos abiertos. Solo se puede usar por API, con la suscripción de Coding Plan.
+Martín: Y tercero, en el blog de Simon Willison aparece el tema del fraude de tokens. El abuso de las pruebas gratis obligó a ChatPRD a eliminarlas.
+Lucía: El tema es interesante, pero la fuente es secundaria, es un video, y no hay cifras. Si aparece algo con datos, lo traemos.
+Martín: Eso es todo por hoy. Gracias por escuchar Radar IA, nos oímos mañana.
