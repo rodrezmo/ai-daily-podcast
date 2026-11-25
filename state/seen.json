@@ -1499,6 +1499,36 @@
       "url": "https://cloud.google.com/blog/products/data-analytics/how-sinch-migrated-from-snowflake-to-bigquery-to-power-ai",
       "title": "Sinch migra su data warehouse de Snowflake a BigQuery: 1.200 modelos dbt y 36 ETL en uno",
       "date": "2026-11-24"
+    },
+    {
+      "url": "https://prismml.com/news/bonsai-2-5-27b",
+      "title": "Ternary Bonsai 2.5 27B: modelo de 5,9 GB para agentes locales, licencia Apache 2.0",
+      "date": "2026-11-25"
+    },
+    {
+      "url": "https://openai.com/index/perplexity-and-intelligence",
+      "title": "OpenAI publica su curva de perplejidad de preentrenamiento y propone límites comunes entre laboratorios",
+      "date": "2026-11-25"
+    },
+    {
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities",
+      "title": "GPT-6 diseña proteínas sin llamar a modelos de biología: resultados de laboratorio",
+      "date": "2026-11-25"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery",
+      "title": "GPT-6.2 Astra identifica al autor de un cuaderno de bocetos de 1808 en 22 minutos",
+      "date": "2026-11-25"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points",
+      "title": "Tres puntos de inflexión de los LLM en doce meses, según Simon Willison",
+      "date": "2026-11-25"
+    },
+    {
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts",
+      "title": "datasette-charts 0.2a0: el agente de Datasette genera gráficos desde el chat",
+      "date": "2026-11-25"
     }
   ]
 }
