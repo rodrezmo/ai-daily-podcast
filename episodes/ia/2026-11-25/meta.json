@@ -1,0 +1,44 @@
+{
+  "title": "Radar IA, 25 de noviembre: Bonsai 2.5 para agentes locales, perplejidad según OpenAI y gráficos en el chat de Datasette",
+  "summary": "Un modelo ternario de 5,9 GB para agentes de código locales, la propuesta de OpenAI de usar la perplejidad como métrica común, GPT-6 y el diseño de proteínas con resultados de laboratorio, el caso de Astra con un cuaderno de 1808, los tres puntos de inflexión de Simon Willison y los gráficos desde el chat de datasette-charts.",
+  "stories": [
+    {
+      "title": "Ternary Bonsai 2.5 27B: modelo de 5,9 GB para agentes locales, licencia Apache 2.0",
+      "url": "https://prismml.com/news/bonsai-2-5-27b"
+    },
+    {
+      "title": "OpenAI publica su curva de perplejidad de preentrenamiento y propone límites comunes entre laboratorios",
+      "url": "https://openai.com/index/perplexity-and-intelligence/"
+    },
+    {
+      "title": "GPT-6 diseña proteínas sin llamar a modelos de biología: resultados de laboratorio",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+    },
+    {
+      "title": "GPT-6.2 Astra identifica al autor de un cuaderno de bocetos de 1808 en 22 minutos",
+      "url": "https://simonwillison.net/2026/Nov/24/astra-historical-mystery/"
+    },
+    {
+      "title": "Tres puntos de inflexión de los LLM en doce meses, según Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/"
+    },
+    {
+      "title": "datasette-charts 0.2a0: el agente de Datasette genera gráficos desde el chat",
+      "url": "https://simonwillison.net/2026/Nov/24/datasette-charts/"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Modelos pueden comunicarse a través del servidor de inferencia aunque estén aislados",
+      "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
+    },
+    {
+      "title": "Ask HN: Anthropic acusa de destilación a una empresa que solo corre benchmarks de regresión",
+      "url": "https://news.ycombinator.com/item?id=50630809"
+    },
+    {
+      "title": "Agentes de datos en BigQuery y Looker: observabilidad, tokens y topes de costo",
+      "url": "https://cloud.google.com/blog/products/data-analytics/enterprise-ai-agent-observability-with-bigquery-and-looker"
+    }
+  ]
+}

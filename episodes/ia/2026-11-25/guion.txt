@@ -1,0 +1,122 @@
+## Titulares
+Lucía: Buen día, es miércoles veinticinco de noviembre y esto es Radar IA.
+Martín: Buen día. Hoy hay un modelo chico para correr en casa, OpenAI con dos anuncios bastante distintos, y un par de cosas de Simon Willison.
+Lucía: Arranquemos por el modelo chico, que creo que es lo más útil del día.
+Martín: Dale. PrismML publicó Ternary Bonsai dos punto cinco, de veintisiete B.
+Lucía: Es una versión ternaria de Qwen tres punto ocho, de veintisiete B. Y pesa cinco coma nueve gigas.
+Martín: Cinco coma nueve. Eso entra en una placa de consumo sin drama.
+Lucía: Y anda rápido. Doscientos cuatro tokens por segundo en una RTX cuarenta noventa.
+Martín: Y casi trescientos en una H cien.
+Lucía: El dato que más me importa es el de código. Saca setenta y cinco coma seis en SWE-bench Verified.
+Martín: ¿Contra cuánto del original?
+Lucía: El modelo base saca ochenta coma seis. O sea, pierde cinco puntos.
+Martín: Pero la versión anterior de Bonsai sacaba sesenta coma ocho. Así que el salto es grande.
+Lucía: Y la licencia es Apache dos punto cero. Se puede usar sin pedirle permiso a nadie.
+Martín: Ayer contamos lo de NariQ, el mismo Qwen tres punto ocho cuantizado a tres bits en un archivo de diez gigas.
+Lucía: Claro. Esto va en la misma línea, pero más chico todavía.
+Martín: Mi opinión: si tenés datos que no pueden salir de tu máquina, esto vale la pena probarlo. Ojo, los números son del propio PrismML. Falta que alguien más los repita.
+Lucía: Segunda. OpenAI publicó su curva interna de perplejidad de preentrenamiento.
+Martín: Esto lo firma Jakub Pachocki. Explicalo para el que no está en el tema.
+Lucía: La perplejidad mide, más o menos, qué tan sorprendido queda el modelo con el texto. Más baja, mejor.
+Martín: ¿Y qué números dieron?
+Lucía: GPT tres punto cinco, cerca de cero coma noventa y nueve. GPT cuatro, cerca de cero coma noventa y uno.
+Martín: Y un modelo reciente, que no nombran, cerca de cero coma setenta y seis.
+Lucía: La propuesta es usar esa métrica como algo compartido entre laboratorios. Y fijar un primer límite de desarrollo.
+Martín: Acá tengo dudas. El propio texto admite que es difícil comparar entre laboratorios.
+Lucía: Porque cada uno usa datos y mezclas de datos distintos.
+Martín: Exacto. Para mí es interesante como señal de por dónde puede ir la regulación. Pero es una propuesta de OpenAI, no una norma. Y la métrica la eligen ellos.
+Lucía: Tercera, también de OpenAI. Dicen que GPT seis diseña proteínas sin llamar a modelos de biología.
+Martín: Esto suena a titular de marketing. ¿Hay números?
+Lucía: Sí, y algunos son malos, lo cual me da más confianza.
+Lucía: Hicieron pruebas de laboratorio con Onava. De trescientos veintidós minibinders, treinta y cinco se unieron a su blanco.
+Martín: Eso es casi el once por ciento.
+Lucía: En rediseño de bucles de anticuerpo les fue mucho mejor. Ciento veintiocho de ciento ochenta y dos se unieron a IL cuatro R alfa. Un setenta por ciento.
+Martín: ¿Y lo malo?
+Lucía: Predicción de estructura completa. TM-score de cero coma treinta y ocho, contra cero coma noventa y tres de ESMFold dos.
+Martín: O sea, ahí está muy lejos de la herramienta especializada.
+Lucía: Y es un preprint, así que hay que tomarlo con pinzas.
+Martín: Mi lectura: sirve para calibrar hasta dónde llega un modelo general. Para nosotros, uso directo hoy, casi ninguno.
+Lucía: Cuarta, y esta me gustó. Un caso con GPT seis punto dos Astra.
+Martín: El jueves pasado hablamos de que OpenAI lanzó Astra y Sol, más baratos que la generación anterior.
+Lucía: Ese mismo. Lo cuenta Simon Willison, citando al historiador Mark Humphries.
+Martín: ¿Qué hizo?
+Lucía: Había un cuaderno de bocetos anónimo de mil ochocientos ocho, en la Biblioteca Beinecke de Yale.
+Lucía: Humphries usó Astra con poco prompting, y el modelo se lo atribuyó a un vizconde, a partir de fuentes públicas.
+Martín: Tardó veintidós minutos.
+Lucía: Y lo importante: después, un diario de viaje pedido por encargo confirmó la hipótesis.
+Martín: Eso es lo que me convence. No es que el modelo dijo algo y lo creyeron. Hubo verificación humana después.
+Lucía: Ojo, es un caso. Uno solo. No es un estudio.
+Martín: Sí, pero el patrón es replicable. Hipótesis rápida, verificación humana.
+Lucía: Quinta. Willison también resumió una charla sobre tres puntos de inflexión de los modelos de lenguaje en doce meses.
+Martín: Contame los tres.
+Lucía: Uno, los agentes de código se vuelven confiables con Opus cuatro punto cinco y GPT cinco punto uno. Noviembre de dos mil veinticinco.
+Martín: Que, dato al margen, ayer contamos que Opus cuatro punto cinco se retira el veintidós de enero.
+Lucía: Así es. Dos, los modelos clase Fable, que resuelven por fuerza bruta usando herramientas. Junio y julio de este año.
+Martín: Y tres, el salto en modelado tres D y juegos. Septiembre y octubre, con Opus cinco punto cinco el veintidós de septiembre.
+Lucía: Mi opinión: es una opinión, no un dato duro. Pero ordena bien qué cambió.
+Martín: Y conecta con el estudio de Harvard que contamos hace una semana. Los agentes suben un treinta por ciento el código, pero el cuello de botella pasa a la revisión.
+Lucía: Buen punto. Que el agente sea confiable no te saca el trabajo de revisar.
+Martín: Sexta y última. Datasette charts, versión cero punto dos alfa cero.
+Lucía: Es el plugin de gráficos de Datasette, que ahora se integra con Datasette Agent.
+Martín: Le pedís un gráfico en el chat, aparece ahí mismo en la conversación.
+Lucía: Y lo podés abrir en un constructor de gráficos, al lado de la tabla.
+Martín: Hay una demo con login de GitHub. El link está en las notas.
+Lucía: La salvedad: es alfa. No lo pondría frente a un cliente todavía.
+Martín: Coincido. Pero como idea de BI conversacional abierto, arriba de SQLite, me parece muy buena.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué le cambia esto a quien programa o arma datos?
+Martín: Para mí lo primero es Bonsai. Un agente de código local, con licencia abierta, que entra en cinco coma nueve gigas.
+Lucía: Y el costo por token es casi cero, porque corre en tu fierro.
+Martín: Eso cambia la cuenta cuando trabajás con datos que no pueden ir a una API.
+Lucía: Pero no te olvides de los cinco puntos que pierde contra el modelo base.
+Martín: Claro. Yo lo pensaría para tareas acotadas, no para lo más difícil.
+Lucía: Lo segundo es lo de Willison. Si los agentes de código ya son confiables, la pregunta es qué les encargás.
+Martín: Y quién revisa. Eso no lo resuelve ningún modelo.
+Lucía: Lo tercero, para la gente de datos, es Datasette. Pedir un gráfico en lenguaje natural, sobre una tabla en SQLite, y poder ajustarlo a mano después.
+Martín: Eso último es lo que me gusta. No te deja atado al chat. Lo terminás en un editor.
+Lucía: Y lo de Astra, aunque no sea de código, deja una lección práctica.
+Martín: ¿Cuál?
+Lucía: Que el modelo te da una hipótesis rápida, y el valor está en cómo la verificás después.
+Martín: Eso aplica igual a una consulta SQL que te arma un agente.
+
+## Oportunidades de consultoría
+Lucía: Hoy no vamos con la pyme. Vamos con estudios y profesionales independientes.
+Martín: ¿Por la nota del historiador?
+Lucía: Exacto. Pensá en un estudio que trabaja con archivos. Expedientes, antecedentes, carpetas escaneadas.
+Martín: El problema es conocido. Alguien pasa horas buscando un dato que está en algún documento viejo.
+Lucía: La idea sería un asistente de investigación documental. Le hacés una pregunta, y te devuelve una hipótesis con las fuentes donde la encontró.
+Martín: Y una persona del estudio verifica. Eso no se negocia.
+Lucía: Como en el caso de Astra. El modelo propone, el humano confirma.
+Martín: ¿Qué se automatiza, concretamente?
+Lucía: La primera búsqueda y el armado de la hipótesis. Lo que hoy es leer carpeta por carpeta.
+Martín: ¿Y qué haría falta?
+Lucía: Primero, que los documentos estén digitalizados y se puedan leer. Si son fotos torcidas, hay trabajo previo.
+Martín: Segundo, decidir qué puede salir a la nube y qué no.
+Lucía: Ahí entra algo como Bonsai. Si los papeles son sensibles, un modelo local es una opción a evaluar.
+Martín: Y tercero, un protocolo claro de verificación. Quién revisa, y cómo queda registrado.
+Lucía: Lo dejamos claro: es una idea para explorar con el estudio. No una promesa de cuánto tiempo se ahorra.
+Martín: Eso hay que medirlo con sus propios casos.
+
+## Una cosa para probar hoy
+Lucía: La de hoy es fácil y en menos de media hora la tenés.
+Martín: Probar el agente de Datasette con gráficos.
+Lucía: Paso uno: abrí la demo de Datasette Agent. El link está en las notas.
+Martín: Paso dos: entrá con tu cuenta de GitHub.
+Lucía: Paso tres: elegí una de las tablas que haya disponibles y mirala un minuto, para saber qué columnas tiene.
+Martín: Paso cuatro: pedile en el chat un gráfico simple. Algo como una cantidad por categoría.
+Lucía: Paso cinco: fijate que el gráfico aparezca en la conversación. Y después abrilo en el constructor, al lado de la tabla.
+Martín: Paso seis: cambiá algo a mano. El tipo de gráfico, o una columna.
+Lucía: Y paso siete, el más importante: anotá si entendió lo que le pediste, o si tuviste que corregirlo.
+Martín: Con eso ya sabés si te sirve para un informe rápido. Acordate que es alfa.
+
+## Quedaron afuera
+Lucía: Antes de irnos, lo que quedó afuera hoy.
+Martín: Hubo un Ask HN donde alguien dice que Anthropic acusó de destilación a una empresa que solo corre benchmarks de regresión.
+Lucía: No entró porque es el relato de una sola parte. Nadie lo confirmó y ni siquiera tiene fecha.
+Martín: Después, una nota del blog de Google Cloud sobre agentes de datos en BigQuery y Looker. Observabilidad, tokens y topes de costo.
+Lucía: El tema nos interesa, pero es del catorce de noviembre. Quedó fuera de la ventana.
+Martín: Y un post en LessWrong que dice que los modelos pueden comunicarse a través del servidor de inferencia, aunque estén aislados.
+Lucía: Ese es del diecinueve, también fuera de ventana. Y es un tema bastante de nicho, para el que autohospeda modelos.
+Martín: Si quieren que sumemos alguno de estos, nos avisan.
+Lucía: Gracias por escuchar Radar IA. Nos escuchamos mañana.
