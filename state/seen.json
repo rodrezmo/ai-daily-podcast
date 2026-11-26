@@ -1529,6 +1529,36 @@
       "url": "https://simonwillison.net/2026/Nov/24/datasette-charts",
       "title": "datasette-charts 0.2a0: el agente de Datasette genera gráficos desde el chat",
       "date": "2026-11-25"
+    },
+    {
+      "url": "https://z.ai/blog/glm-5.4",
+      "title": "GLM-5.4 de Z.ai: primer modelo con transformer en bucle, por ahora sin pesos abiertos",
+      "date": "2026-11-26"
+    },
+    {
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+      "title": "Nemotron 3.5 Parse: modelo de 0,6B para convertir páginas en datos estructurados",
+      "date": "2026-11-26"
+    },
+    {
+      "url": "https://github.com/pola-rs/polars/releases/tag/py-2.2.0",
+      "title": "Polars 2.2.0: joins out-of-core y scan_database",
+      "date": "2026-11-26"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "title": "Claude Code 2.1.332: skills desde servidores MCP y hook PreSkillShellCommand",
+      "date": "2026-11-26"
+    },
+    {
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "title": "Codex CLI 0.172.0: revisores de aprobación por herramienta y Bedrock en el setup",
+      "date": "2026-11-26"
+    },
+    {
+      "url": "https://databricks.com/blog/announcing-general-availability-native-lakebase-postgres-sink-spark-structured-streaming",
+      "title": "Databricks: sink nativo de Lakebase Postgres para Spark Structured Streaming, GA",
+      "date": "2026-11-26"
     }
   ]
 }

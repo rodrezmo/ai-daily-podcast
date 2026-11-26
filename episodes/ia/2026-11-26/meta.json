@@ -44,5 +44,10 @@
       "title": "sqlite3_rsync: copiar una base SQLite por SSH sin espacio para duplicarla",
       "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"
     }
-  ]
+  ],
+  "guid": "ia-2026-11-26",
+  "bytes": 4507090,
+  "seconds": 526.608,
+  "pub_date": "2026-11-26T06:17:26.524327-03:00",
+  "mp3_url": "https://github.com/rodrezmo/ai-daily-podcast/releases/download/ia-2026-11-26/episode.mp3"
 }
