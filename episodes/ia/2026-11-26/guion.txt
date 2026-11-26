@@ -1,0 +1,112 @@
+## Titulares
+Lucía: Buen día, hoy es jueves veintiséis de noviembre y esto es Radar IA.
+Martín: Hola. Hoy viene cargado de herramientas para el día a día y un modelo chino con arquitectura rara.
+Lucía: Arranquemos por ese. Z.ai presentó GLM cinco punto cuatro.
+Lucía: Aclaro de entrada: el blog de Z.ai no se pudo abrir. Todo lo que contamos sale de una nota de Simon Willison.
+Martín: Bien que lo digas. ¿Y qué tiene de distinto?
+Lucía: Es su primer modelo con transformer en bucle. Un grupo de capas con pesos compartidos itera varias veces, refinando lo que el modelo tiene adentro.
+Martín: O sea, en vez de sumar capas, reusa las mismas varias vueltas.
+Lucía: Esa es la idea. Se accede por el Coding Plan, con una API compatible con la de Responses de OpenAI.
+Martín: ¿Y los pesos?
+Lucía: Por ahora cerrados. Z.ai promete abrirlos después de un endurecimiento de seguridad.
+Martín: Promesa que habrá que ver si se cumple. Y no hay precio ni benchmarks todavía.
+Lucía: Exacto. El viernes pasado contamos que SenseTime liberó SenseNova Loop nueve B, que también reutiliza capas.
+Martín: Así que ya son dos apuestas por el mismo lado. Mi opinión: la arquitectura es interesante, pero sin números es una curiosidad, no una noticia para decidir nada.
+Lucía: Segunda. NVIDIA publicó en Hugging Face Nemotron tres punto cinco Parse.
+Martín: Este me interesa mucho más.
+Lucía: Es un modelo chico, de unos seiscientos millones de parámetros. Le das la imagen de una página y te devuelve el orden de lectura, qué tipo de contenido es cada parte, las cajas, las tablas y los gráficos.
+Martín: ¿Y el dato duro?
+Lucía: En una placa hache doscientos procesa casi trece páginas y media por segundo.
+Lucía: Con un especulador que se llama DFlash dos llega a unas veinte.
+Martín: ¿Contra qué?
+Lucía: Contra casi tres de la versión anterior, Parse dos punto cero.
+Martín: Más de cuatro veces más rápido sin el especulador. Y el post trae datos abiertos y una guía para hacer fine tuning.
+Lucía: Ojo con una cosa: la licencia no está confirmada en el post.
+Martín: Eso hay que mirarlo antes de meterlo en un proyecto. Pero esto es trabajo de verdad, no humo. Sacar tablas de PDFs escaneados es lo que todo el mundo necesita.
+Lucía: Tercera, para la gente de datos. Salió Polars dos punto dos para Python, el veinticuatro de noviembre.
+Martín: ¿Qué trae?
+Lucía: Joins out of core, o sea, joins sobre datos que no entran en la memoria.
+Lucía: También una función nueva, scan database, y búsquedas en columnas binarias.
+Martín: Y hay un cambio que rompe cosas, ¿no?
+Lucía: Sí. El DELETE del SQLContext ahora modifica la tabla registrada. Antes no lo hacía.
+Martín: Eso es de los cambios que te enterás en producción si no leés las notas. Bueno el release, pero actualizar sin mirar es mala idea.
+Lucía: Cuarta. Claude Code sacó la versión dos punto uno punto trescientos treinta y dos, el veinticinco de noviembre.
+Martín: El sábado pasado habíamos contado la trescientos treinta, la de tareas programadas de hasta treinta días.
+Lucía: Esa. Ahora suma en beta skills que vienen expuestas desde servidores MCP.
+Lucía: Y un hook nuevo, PreSkillShellCommand, que se dispara antes de que una skill corra un comando de terminal.
+Martín: ¿Y la anterior?
+Lucía: La trescientos treinta y uno, del veintitrés, lleva Code Mode a Bedrock, Google Cloud, Foundry y Claude Platform en AWS. Y suma un chequeo de conectividad en claude doctor.
+Martín: Para quien corre Claude Code en su propia nube, esto es más control. No cambia el mundo, pero es útil.
+Lucía: Quinta, la competencia. Codex CLI de OpenAI llegó a la cero punto ciento setenta y dos, versión estable del veinticuatro.
+Martín: Contame.
+Lucía: Ahora podés definir revisores de aprobación por herramienta en el archivo config punto toml.
+Lucía: Se puede elegir Amazon Bedrock al configurar, y los servidores MCP locales opcionales, con lista de herramientas en caché, arrancan recién en la primera llamada.
+Martín: ¿Y lo de los límites?
+Lucía: Los mensajes de error ahora te dicen qué límite de gasto alcanzaste.
+Martín: Eso parece menor, pero el que se quedó sin cupo a mitad de una tarea sin saber por qué lo va a agradecer.
+Lucía: Sexta y última. Databricks anunció disponibilidad general de un sink nativo para escribir streaming a Lakebase Postgres desde Spark Structured Streaming.
+Martín: Traducido.
+Lucía: Con un solo writeStream mandás los datos en tiempo real a Postgres. Funciona desde el runtime dieciocho LTS.
+Lucía: Y con el runtime diecinueve en adelante tenés estrategias de merge sobre una clave de upsert.
+Martín: ¿Números?
+Lucía: En una prueba sintética, unos veinte mil eventos por segundo. De punta a punta, la mitad tarda unos ciento ochenta y tres milisegundos o menos, y el noventa y nueve por ciento, unos trescientos cincuenta y cuatro o menos.
+Martín: Prueba sintética y hecha por ellos, eso hay que tenerlo presente. Pero sacarte de encima el código propio para escribir fila por fila es un alivio real.
+
+## Para desarrolladores
+Martín: Bueno, ¿qué de todo esto le cambia el día a quien programa?
+Lucía: Para mí lo primero es Polars. Si tenés un join que hoy no te entra en la memoria de la notebook, eso es justo lo que resuelve.
+Martín: Sin pasar a un clúster.
+Lucía: Exacto. Y en un servidor chico, igual. Pero antes de actualizar, buscá si usás DELETE en el SQLContext.
+Martín: Lo segundo es Nemotron Parse. Si armás un RAG sobre documentos escaneados, el cuello de botella suele ser sacar bien las tablas.
+Lucía: Un modelo de seiscientos millones de parámetros es manejable. Lo que no sabemos es si lo podés usar comercialmente.
+Martín: Por eso, primero la licencia, después el entusiasmo.
+Lucía: Lo tercero es el tema de los agentes de código. Claude Code y Codex sacaron cosas parecidas la misma semana.
+Martín: Sí, fijate. Los dos van hacia más control sobre qué puede hacer el agente.
+Lucía: En Claude Code, con el hook antes de que una skill corra comandos. En Codex, con revisores de aprobación por herramienta.
+Martín: Y los dos suman Bedrock. Para equipos que tienen que pasar todo por su cuenta de nube, eso destraba.
+Lucía: Y lo de las skills por MCP está bueno para no repetir la misma skill en cada proyecto. Pero es beta.
+Martín: Y lo de Databricks es más de nicho. Si ya estás en Databricks y querés un tablero operativo sobre Postgres casi en tiempo real, mirálo.
+Lucía: Si no estás en Databricks, no es razón para entrar.
+
+## Oportunidades de consultoría
+Martín: Vamos con la idea del día. ¿A quién le sirve más lo de hoy?
+Lucía: Hoy no elijo la pyme. Elijo un estudio contable chico.
+Martín: Dale.
+Lucía: El problema típico: les llegan facturas y comprobantes escaneados, o fotos por WhatsApp, y alguien los carga a mano en un Excel.
+Martín: Horas de gente tipeando números de una imagen.
+Lucía: Eso. La idea es armar un circuito que tome esas imágenes, saque las tablas y los campos con un modelo como Nemotron Parse, y los deje en una planilla para revisar.
+Martín: Para revisar, ojo. No para mandar directo.
+Lucía: Claro, una persona valida antes de que eso vaya a ningún lado.
+Martín: ¿Y qué haría falta?
+Lucía: Primero, confirmar la licencia del modelo. Si no sirve para uso comercial, se busca otro.
+Lucía: Después, una muestra real de comprobantes del estudio para ver cuánto acierta con sus formatos.
+Martín: Y una máquina donde correrlo. El dato de velocidad que dieron es en una hache doscientos, que no es lo que tiene un estudio.
+Lucía: Buen punto. En hardware más modesto va a ser más lento, y eso hay que medirlo.
+Martín: Y si hace falta, el post trae guía de fine tuning para ajustarlo a sus documentos.
+Lucía: Es una idea para charlar con ellos. No hay que prometer cuánto tiempo se ahorra hasta probarlo.
+
+## Una cosa para probar hoy
+Martín: ¿Qué hacemos hoy en menos de media hora?
+Lucía: Probar Polars dos punto dos sin romper nada.
+Martín: Paso a paso.
+Lucía: Uno: creá un entorno virtual nuevo, aparte del que usás en producción.
+Lucía: Dos: instalá ahí Polars en la versión dos punto dos.
+Lucía: Tres: buscá en tu código la palabra DELETE en las partes donde uses SQLContext.
+Martín: Si no aparece, ya te sacaste el cambio incompatible de encima.
+Lucía: Si aparece, cuatro: corré ese pedazo con un dataset chico y fijate si ahora te modifica la tabla registrada.
+Lucía: Cinco: si tenés algún join que se te quedaba sin memoria, probalo en ese entorno.
+Martín: Y anotá qué pasó, así decidís con datos si actualizás.
+Lucía: Media hora, como mucho.
+
+## Quedaron afuera
+Martín: Y como siempre, lo que quedó afuera, por si quieren que lo sumemos.
+Lucía: Primero, un hilo en Hacker News de un fundador que dice que Anthropic lo acusó de destilar Claude por la API y le dio veinticuatro horas para responder.
+Martín: Quedó afuera porque es un relato anónimo y Anthropic no confirmó nada.
+Lucía: Segundo, un reporte de que GPT seis punto dos Astra agota el cupo de Codex más rápido. El diecisiete de noviembre salió el lanzamiento de Astra y Sol.
+Martín: La cifra viene de un post que no se pudo abrir y no tiene confirmación oficial. Por eso no entró.
+Lucía: Tercero, Minipg, que mete PostgreSQL en un solo ejecutable, sin Docker.
+Martín: Es experimental, anda más lento que Postgres nativo y no tiene fecha verificada.
+Lucía: Y cuarto, Simon Willison recordó sqlite3 rsync, para copiar una base SQLite por SSH mandando solo lo que cambió.
+Martín: Útil, pero es una herramienta de dos mil veinticuatro. No es novedad.
+
+Lucía: Eso es todo por hoy, nos escuchamos mañana en Radar IA.

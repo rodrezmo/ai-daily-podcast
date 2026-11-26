@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 26 de noviembre: GLM-5.4 con transformer en bucle, Nemotron Parse y las novedades de Polars, Claude Code y Codex",
+  "summary": "El modelo GLM-5.4 de Z.ai con arquitectura en bucle, Nemotron 3.5 Parse para extraer datos de páginas, Polars 2.2.0 con joins out-of-core, las novedades de Claude Code y Codex CLI, y el sink de Lakebase Postgres para Spark Structured Streaming en Databricks. Con una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "GLM-5.4 de Z.ai: primer modelo con transformer en bucle, por ahora sin pesos abiertos",
+      "url": "https://z.ai/blog/glm-5.4"
+    },
+    {
+      "title": "Nemotron 3.5 Parse: modelo de 0,6B para convertir páginas en datos estructurados",
+      "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
+    },
+    {
+      "title": "Polars 2.2.0: joins out-of-core y scan_database",
+      "url": "https://github.com/pola-rs/polars/releases/tag/py-2.2.0"
+    },
+    {
+      "title": "Claude Code 2.1.332: skills desde servidores MCP y hook PreSkillShellCommand",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332"
+    },
+    {
+      "title": "Codex CLI 0.172.0: revisores de aprobación por herramienta y Bedrock en el setup",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0"
+    },
+    {
+      "title": "Databricks: sink nativo de Lakebase Postgres para Spark Structured Streaming, GA",
+      "url": "https://www.databricks.com/blog/announcing-general-availability-native-lakebase-postgres-sink-spark-structured-streaming"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Ask HN: Anthropic acusa a mi empresa de destilar, ¿cómo demuestro que no?",
+      "url": "https://news.ycombinator.com/item?id=50630809"
+    },
+    {
+      "title": "Codex: reportan que GPT-6.2 Astra consume el cupo más rápido",
+      "url": "https://community.openai.com/t/codex-rate-limits-discussion-thread/1378553/780"
+    },
+    {
+      "title": "Minipg: PostgreSQL como un único ejecutable",
+      "url": "https://progrium.github.io/minipg/"
+    },
+    {
+      "title": "sqlite3_rsync: copiar una base SQLite por SSH sin espacio para duplicarla",
+      "url": "https://simonwillison.net/2026/Nov/26/sqlite3-rsync/"
+    }
+  ]
+}
