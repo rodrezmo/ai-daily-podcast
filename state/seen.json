@@ -1559,6 +1559,36 @@
       "url": "https://databricks.com/blog/announcing-general-availability-native-lakebase-postgres-sink-spark-structured-streaming",
       "title": "Databricks: sink nativo de Lakebase Postgres para Spark Structured Streaming, GA",
       "date": "2026-11-26"
+    },
+    {
+      "url": "https://claude.com/resources/articles/introducing-claude-ship",
+      "title": "Anthropic lanza Claude Ship: agentes que revisan, arreglan y aprueban cambios de código",
+      "date": "2026-11-27"
+    },
+    {
+      "url": "https://openclaw.ai/blog/shellbench",
+      "title": "ShellBench: los mejores agentes fallan más de un tercio de las tareas cotidianas",
+      "date": "2026-11-27"
+    },
+    {
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp",
+      "title": "Google exigirá que los agentes de IA accedan a Workspace solo por sus servidores MCP desde febrero de 2027",
+      "date": "2026-11-27"
+    },
+    {
+      "url": "https://infobae.com/tecno/2026/11/27/hallaron-mas-de-12000-sitios-hechos-con-chatgpt-abiertos-a-cualquiera-algunos-con-datos-de-clientes",
+      "title": "Hallan más de 12.000 sitios hechos con ChatGPT Sites abiertos a cualquiera, algunos con datos de clientes",
+      "date": "2026-11-27"
+    },
+    {
+      "url": "https://huggingface.co/blog/training-swarms",
+      "title": "Hugging Face: cómo entrenar un equipo de agentes; un modelo de 0,6B pasa de 6,6% a 82,3%",
+      "date": "2026-11-27"
+    },
+    {
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
+      "title": "GitHub Copilot: la revisión de código se facturará por defecto a la organización desde el 30 de diciembre",
+      "date": "2026-11-27"
     }
   ]
 }
