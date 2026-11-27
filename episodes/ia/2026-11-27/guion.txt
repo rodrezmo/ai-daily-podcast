@@ -1,0 +1,106 @@
+## Titulares
+Lucía: Buen día, es viernes veintisiete de noviembre y esto es Radar IA.
+Martín: Hola, hola. Hoy viene cargado de agentes, de facturas y de un susto de seguridad.
+Lucía: Arrancamos con Anthropic, que lanzó Claude Ship.
+Martín: Es una suite de agentes que revisan, arreglan y aprueban cambios de código sobre GitHub.
+Lucía: Está disponible para los planes Team y Enterprise, en beta salvo Code Review.
+Martín: Tiene tres piezas. Code Review, que ya está en disponibilidad general.
+Lucía: PR Steward, que arregla la integración continua cuando falla y resuelve conflictos.
+Martín: Y Claude Approvals, que aprueba cambios de rutina según una política que vive en un archivo del mismo repo, con clasificadores que el equipo puede escribir en lenguaje natural.
+Lucía: Se cobra por tokens, y hay topes de gasto para Code Review y PR Steward.
+Martín: Y las organizaciones Enterprise elegibles pueden reclamar al menos diez mil dólares en créditos hasta el quince de enero.
+Lucía: Mi opinión: lo de los topes de gasto es lo más sensato del anuncio. Un agente que arregla CI solo puede quemar tokens en loop.
+Martín: Y lo de aprobar con una política en el repo me genera curiosidad y un poco de desconfianza. Ayer contamos que Codex CLI sumó revisores de aprobación por herramienta, así que van todos para el mismo lado.
+Lucía: Segunda. ShellBench, un benchmark publicado por OpenClaw.
+Martín: Midieron agentes en cien tareas cotidianas de terminal.
+Lucía: Fueron más de cincuenta y tres mil corridas, con doce modelos y cinco arneses distintos.
+Martín: El que lidera es GPT seis Astra, con un sesenta y dos y medio por ciento de éxito.
+Lucía: A un poco más de un dólar por corrida.
+Martín: Pero ojo con esto. Pasó las tres repeticiones de la misma tarea solo en casi la mitad de los casos.
+Lucía: Y en un quince por ciento largo de las corridas se falló algún requisito de seguridad.
+Martín: El dato que más me gustó: cambiar de modelo mueve, en mediana, unos cuarenta y seis puntos. Cambiar de arnés, apenas seis.
+Lucía: O sea, el mejor agente falla más de un tercio de las tareas. Eso es lo que hay que decirle a quien te pide "un agente que lo haga solo".
+Martín: Tal cual. Y la confiabilidad, repetir el mismo resultado, sigue siendo el punto flojo.
+Lucía: Tercera. Google va a exigir que los agentes de IA entren a Workspace solo por sus propios servidores MCP.
+Martín: Arranca el primero de febrero de dos mil veintisiete, según un nuevo addendum de Workspace.
+Lucía: Lo cuenta Tech Stackups, no es un anuncio de Google directo, así que tomalo con esa salvedad.
+Martín: Hay dos detalles fuertes. El MCP público de Gmail no puede enviar ni responder mails.
+Lucía: Y el tier gratuito da cinco mil pedidos por día por proyecto y por producto. El cobro del tier pago empieza el primero de abril.
+Martín: Mi lectura: si automatizás Gmail para alguien, esto te cambia el plan. Un agente que no puede responder mails es otra cosa.
+Lucía: Cuarta, y es la del susto. Hallaron más de doce mil sitios hechos con ChatGPT Sites abiertos a cualquiera.
+Martín: Lo publicó Infobae, con datos de la firma Pluto Security.
+Lucía: Detectaron unos dieciséis mil seiscientos sitios públicos. Casi ocho de cada diez se podían ver sin login.
+Martín: Y en la revisión manual encontraron datos sensibles de veintisiete organizaciones.
+Lucía: Lo peor: algunas pantallas de contraseña no protegían nada, porque los datos ya llegaban al navegador antes del login.
+Martín: Son cifras de la propia firma, sin verificación independiente. Eso hay que decirlo.
+Lucía: Sí, pero el mecanismo es creíble y es un error clásico. Una pantalla de contraseña no es control de acceso.
+Martín: Quinta. Hugging Face publicó cómo entrenar un equipo de agentes.
+Lucía: Usaron cuatro agentes que comparten una misma política, un Qwen tres chiquito, de seiscientos millones de parámetros.
+Martín: El éxito del equipo pasó de casi siete por ciento a más de ochenta y dos.
+Lucía: En setenta y cinco actualizaciones. Y resolvió veintiséis de treinta y dos problemas que tenían reservados.
+Martín: Además gastó más de un tercio menos de tokens por equipo.
+Lucía: Para comparar, un equipo sin entrenar, con ocho intentos, llegó a treinta y siete y medio por ciento.
+Martín: Me parece buena evidencia de que lo chico entrenado puede competir en costo. Pero es un experimento acotado, no lo vendamos como otra cosa.
+Lucía: El domingo hablamos de los harness adapters de Hugging Face, LoRA entrenados con aprendizaje por refuerzo para cada arnés. Es la misma línea de trabajo.
+Martín: Y la sexta, más administrativa pero importante. GitHub Copilot cambia quién paga la revisión de código.
+Lucía: Desde el treinta de diciembre, si no hay una elección guardada, las revisiones de los miembros con licencia se facturan a la organización dueña del repo.
+Martín: Aplica a Copilot Business y Enterprise. Requiere AI Credits de pago y puede subir el gasto.
+Lucía: Para mantener el esquema actual hay que elegir "Member" antes de esa fecha.
+Martín: Esto es de las cosas que nadie lee en el changelog y después aparecen en la factura de enero.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué le cambia todo esto a quien programa o arma datos?
+Martín: Para mí lo primero es ShellBench. Si estás armando un agente, el número dice que el modelo pesa mucho más que el arnés.
+Lucía: Unos cuarenta y seis puntos contra seis.
+Martín: Entonces antes de pasarte una semana puliendo el arnés, probá cambiar de modelo.
+Lucía: Y medí repeticiones, no una sola corrida. Que el líder pase las tres repeticiones solo en casi la mitad de los casos es un aviso.
+Martín: El martes hablamos de cómo construir y mantener una evaluación agéntica, de Hugging Face. Bueno, esto es exactamente para eso.
+Lucía: Lo segundo: el código hecho con agentes se está trabando en la revisión. Claude Ship apunta justo ahí.
+Martín: Si lo vas a probar, poné los topes de gasto disponibles desde el día uno. Se cobra por tokens.
+Lucía: Y pensá bien la política de aprobación. Los clasificadores en lenguaje natural suenan cómodos, pero alguien los tiene que revisar como si fueran código.
+Martín: Tercero, si usás Copilot en una organización, entrá hoy a la configuración de facturación de la revisión de código.
+Lucía: Decidí si querés que pague la organización o el miembro. Si no elegís nada, el treinta de diciembre pasa a la organización.
+Martín: Cuarto, Workspace. Si tenés integraciones con Gmail, Drive o Calendar que usan agentes, toca migrar el OAuth a los MCP de Google antes de febrero.
+Lucía: Y revisar cuotas. Cinco mil pedidos diarios por proyecto y por producto en el tier gratuito puede alcanzar o no, depende de cuántos clientes tengas colgados de ese proyecto.
+Martín: Y acordate de que el MCP público de Gmail no envía ni responde. Si tu flujo depende de eso, hay que repensarlo.
+Lucía: Y lo último, lo de ChatGPT Sites vale para cualquier herramienta que te arme una app en cinco minutos.
+Martín: Si los datos llegan al navegador antes del login, no hay login. Hay decoración.
+
+## Oportunidades de consultoría
+Lucía: Hoy quiero ir por los estudios y profesionales independientes. Contadores, abogados, estudios chicos.
+Martín: ¿Por qué ellos?
+Lucía: Porque son de los que más se tientan con armar un portal o un tablero para clientes en una tarde con IA. Y manejan datos sensibles.
+Martín: Y muchos viven en Gmail y Drive. Así que les pegan dos noticias de hoy a la vez.
+Lucía: Exacto. El problema concreto: el estudio publicó algo hecho con IA, un sitio, un formulario, un tablero, y no sabe si está realmente cerrado.
+Martín: Y además tiene alguna automatización sobre Gmail o Drive que en febrero puede dejar de andar como anda hoy.
+Lucía: La idea sería una revisión de exposición y continuidad. Primero, un inventario de todo lo que tienen publicado.
+Martín: Después, probar cada cosa sin estar logueado, y mirar qué datos llegan al navegador antes del login.
+Lucía: Eso se puede automatizar con un script que recorre las URLs y guarda qué responde cada una sin credenciales.
+Martín: Y en paralelo, listar las automatizaciones que tocan Workspace y ver cuáles dependen de enviar o responder mails.
+Lucía: ¿Qué haría falta? Acceso a la lista de lo publicado, una cuenta de prueba y un rato con quien armó cada cosa.
+Martín: Y el entregable es un informe simple: qué está abierto, qué hay que mover detrás de un control de acceso real, y qué automatización hay que migrar.
+Lucía: Sin prometer que con eso quedan blindados. Es una revisión, no una garantía.
+Martín: Claro. Es una idea para conversar, no un paquete cerrado.
+
+## Una cosa para probar hoy
+Lucía: Lo de hoy es corto. Revisá si alguna app o tablero que publicaste filtra datos antes del login.
+Martín: Menos de media hora, y si tenés varias, hacé una sola para empezar.
+Lucía: Paso uno. Abrí una ventana privada del navegador, así no arrastrás ninguna sesión.
+Martín: Paso dos. Abrí las herramientas de desarrollador y andá a la pestaña de red.
+Lucía: Paso tres. Entrá a la dirección de tu app y quedate en la pantalla de login, sin poner nada.
+Martín: Paso cuatro. Mirá las respuestas que llegaron. Fijate si alguna trae datos de verdad: nombres, mails, montos, filas de una tabla.
+Lucía: Paso cinco. Si encontrás algo, eso ya está en el navegador de cualquiera que entre. La pantalla de contraseña no lo está protegiendo.
+Martín: Y si no encontrás nada, igual probá entrar directo a alguna dirección interna de la app sin loguearte.
+Lucía: Si algo aparece, sacalo de público hasta tener un control de acceso del lado del servidor.
+
+## Quedaron afuera
+Martín: Repasemos rápido lo que quedó afuera hoy.
+Lucía: Claude ahora deja convertir artefactos en apps instalables para Windows y macOS, en beta, con tres niveles de permisos.
+Martín: No entró porque Anthropic no revisa esas apps y hoy el impacto práctico es menor.
+Lucía: OpenAI unifica los límites de Chat y Work en ChatGPT, y admite que los usuarios más intensivos podrían llegar antes al tope.
+Martín: Quedó afuera porque por ahora es un grupo chico de suscriptores Pro y no hay un dato duro.
+Lucía: Un hilo en Hacker News donde alguien cuenta que Anthropic acusó a su empresa de destilar modelos y le dio veinticuatro horas para responder.
+Martín: Es un relato anónimo, sin fuente primaria de Anthropic sobre el caso. Por eso no lo contamos como noticia.
+Lucía: Y un análisis de Databricks sobre cinco mil cuatrocientos paquetes maliciosos de npm, que menciona servidores MCP maliciosos y robo de claves de servicios de IA.
+Martín: Es seguridad general y poco accionable para hoy. Si quieren que lo desarrollemos, avisen.
+Lucía: Eso es todo por hoy. Buen fin de semana y nos escuchamos en el próximo episodio.

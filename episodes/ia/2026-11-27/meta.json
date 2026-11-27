@@ -1,0 +1,48 @@
+{
+  "title": "Radar IA, 27 de noviembre: Claude Ship, ShellBench y apps de ChatGPT Sites expuestas",
+  "summary": "Claude Ship de Anthropic para revisar y aprobar código, el benchmark ShellBench con agentes que fallan más de un tercio de las tareas, el cambio de Google que obliga a usar sus servidores MCP en Workspace, más de doce mil sitios de ChatGPT Sites abiertos, un equipo de agentes chicos entrenado en Hugging Face y la nueva facturación de Copilot Code Review. Con una idea de consultoría y algo para probar hoy.",
+  "stories": [
+    {
+      "title": "Anthropic lanza Claude Ship: agentes que revisan, arreglan y aprueban cambios de código",
+      "url": "https://claude.com/resources/articles/introducing-claude-ship"
+    },
+    {
+      "title": "ShellBench: los mejores agentes fallan más de un tercio de las tareas cotidianas",
+      "url": "https://openclaw.ai/blog/shellbench"
+    },
+    {
+      "title": "Google exigirá que los agentes de IA accedan a Workspace solo por sus servidores MCP desde febrero de 2027",
+      "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/"
+    },
+    {
+      "title": "Hallan más de 12.000 sitios hechos con ChatGPT Sites abiertos a cualquiera, algunos con datos de clientes",
+      "url": "https://www.infobae.com/tecno/2026/11/27/hallaron-mas-de-12000-sitios-hechos-con-chatgpt-abiertos-a-cualquiera-algunos-con-datos-de-clientes/"
+    },
+    {
+      "title": "Hugging Face: cómo entrenar un equipo de agentes; un modelo de 0,6B pasa de 6,6% a 82,3%",
+      "url": "https://huggingface.co/blog/training-swarms"
+    },
+    {
+      "title": "GitHub Copilot: la revisión de código se facturará por defecto a la organización desde el 30 de diciembre",
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization"
+    }
+  ],
+  "discarded": [
+    {
+      "title": "Claude permite convertir artefactos en apps instalables para Windows y macOS (beta)",
+      "url": "https://www.infobae.com/tecno/2026/11/26/anthropic-dejara-crear-e-instalar-apps-para-windows-y-macos-desde-claude/"
+    },
+    {
+      "title": "OpenAI unifica los límites de Chat y Work en ChatGPT; los usuarios más intensivos podrían llegar antes al tope",
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+    },
+    {
+      "title": "Ask HN: Anthropic acusa a mi empresa de destilar, ¿cómo demuestro que no? (467 puntos)",
+      "url": "https://news.ycombinator.com/item?id=50630809"
+    },
+    {
+      "title": "Databricks: qué revelan 5.400 paquetes npm maliciosos sobre la cadena de suministro en 2026",
+      "url": "https://www.databricks.com/blog/what-5400-malicious-npm-packages-reveal-about-software-supply-chain-risk-2026"
+    }
+  ]
+}
