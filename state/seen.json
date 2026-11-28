@@ -1589,6 +1589,36 @@
       "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization",
       "title": "GitHub Copilot: la revisión de código se facturará por defecto a la organización desde el 30 de diciembre",
       "date": "2026-11-27"
+    },
+    {
+      "url": "https://anthropic.com/research/migrating-api-to-rust",
+      "title": "Anthropic migró su API de Mensajes de Python a Rust con Claude: 70% menos CPU",
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://infobae.com/tecno/2026/11/26/anthropic-dejara-crear-e-instalar-apps-para-windows-y-macos-desde-claude",
+      "title": "Claude permite instalar artefactos como apps de escritorio para Windows y macOS (beta)",
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error",
+      "title": "OpenAI corrigió un error de facturación en GPT-6.2: los límites se agotan hasta 40% más rápido",
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://databricks.com/blog/what-5400-malicious-npm-packages-reveal-about-software-supply-chain-risk-2026",
+      "title": "Databricks analizó 5.400 paquetes npm maliciosos",
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://the-decoder.com/openai-is-building-athena-data-platform-to-cut-down-on-ai-agent-guesswork",
+      "title": "OpenAI trabaja en 'Athena', una capa semántica para que sus agentes adivinen menos con los datos de negocio",
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://github.com/convex/convex-backend-skill/issues/64",
+      "title": "Skills del plugin de Convex envían la idea del usuario a un servidor remoto sin avisar",
+      "date": "2026-11-28"
     }
   ]
 }
