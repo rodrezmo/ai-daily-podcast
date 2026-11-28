@@ -1,0 +1,122 @@
+## Titulares
+Lucía: Buen día, hoy es sábado veintiocho de noviembre y esto es Radar IA.
+Martín: Hola. Hoy hay de todo: una migración a Rust, apps de escritorio, límites que se achican y bastante seguridad.
+Lucía: Arranquemos por la que más me gustó. Anthropic contó en su blog de ingeniería cómo pasó su API de Mensajes de Python a Rust.
+Martín: Y con Claude haciendo buena parte del trabajo.
+Lucía: Exacto. Los números: cerca de setenta por ciento menos de CPU por pedido.
+Lucía: Más de ochenta por ciento menos de memoria.
+Lucía: Y la mediana del tiempo al primer token bajó alrededor de un veinte por ciento.
+Martín: Lo que a mí me interesó es otra cosa. Claude escribió el primer borrador del camino central en más o menos una semana.
+Martín: Pero verificarlo se extendió de abril a agosto.
+Lucía: Sí. En abril solo una cuarta parte de las respuestas coincidía con producción. Para agosto estaban en noventa y nueve coma seis por ciento.
+Martín: Y revisando los tests que se habían portado encontraron más de cien aserciones debilitadas.
+Lucía: O sea, tests que pasaban porque pedían menos de lo que tenían que pedir.
+Martín: Mi opinión: es de las notas más honestas que leí este año sobre código generado. El cuello de botella no es escribir, es verificar.
+Lucía: Y lo dicen ellos mismos, que no es poco.
+Martín: Segunda. Claude ahora deja instalar un artefacto como app de escritorio, en Windows y en macOS. Está en beta.
+Lucía: ¿Cómo funciona?
+Martín: Desde el menú de compartir hay un botón de instalar como app. Queda con ícono y ventana propios, sin firmar ni empaquetar nada.
+Martín: Hay tres niveles de permisos. El más alto deja correr programas y leer o borrar archivos sin preguntar cada vez.
+Lucía: Y Anthropic no revisa esas apps antes de que las instales.
+Martín: No. Además, lo que la app le pide a Claude cuenta contra el límite de tu plan.
+Lucía: Queda afuera para organizaciones con HIPAA, y en Enterprise viene apagada por defecto.
+Martín: Ayer hablamos de los más de doce mil sitios hechos con ChatGPT Sites que estaban abiertos a cualquiera.
+Lucía: Mismo patrón. Hacer software es cada vez más fácil, y revisar lo que hiciste sigue siendo trabajo tuyo.
+Martín: Yo lo veo útil para herramientas internas chiquitas. El acceso total a la compu, con cuidado.
+Lucía: Tercera, de OpenAI. Corrigieron un error de facturación en GPT seis punto dos.
+Martín: El error de los límites, ¿no?
+Lucía: Ese. Un bug en los descuentos les dio a muchos usuarios más cuota de la que correspondía.
+Lucía: Con el arreglo, en Astra se llega al tope un cuarenta por ciento antes que la semana pasada. En Sol, un veinticinco por ciento antes.
+Martín: Igual, la cuota debería durar más que con GPT seis Astra y GPT seis punto uno Sol.
+Lucía: Sí. Y OpenAI no cobra la diferencia para atrás. Da un reinicio extra de cuota y Fast Mode gratis para Business hasta fin de año.
+Martín: Lo contó un ingeniero de Codex, Thibault Sottiaux, según The Decoder.
+Lucía: Opinión: está bien que lo hayan dicho y que no cobren retroactivo. Pero si tu flujo dependía de esa cuota, esta semana te vas a dar cuenta.
+Martín: Cuarta, seguridad. El equipo de amenazas de Databricks analizó unos cinco mil cuatrocientos paquetes maliciosos de npm.
+Lucía: ¿Y qué encontraron?
+Martín: Que la mayoría son paquetes armados por atacantes, pero casi nadie los baja.
+Martín: Los paquetes legítimos que fueron comprometidos son apenas un siete por ciento del total. Y se llevan más del noventa y nueve por ciento de las descargas.
+Lucía: Uf. O sea, el peligro real es la librería conocida que alguien secuestró.
+Martín: Exacto. Otro dato: entre los paquetes de la muestra publicados con trusted publishing, el ochenta y cinco por ciento eran legítimos comprometidos.
+Lucía: Así que ese sello de procedencia no es garantía.
+Martín: Y el registro tarda una mediana de unos siete días en sacarlos.
+Lucía: ¿Y lo de IA?
+Martín: Aparecen blancos nuevos. Robo de claves de servicios de IA, y servidores MCP maliciosos que se llevan credenciales de la máquina donde corre el agente.
+Lucía: Para mí es la nota más útil del día. Tiene datos, tiene método y tiene recomendaciones.
+Martín: Quinta. Según The Information, citado por The Decoder, OpenAI está armando algo llamado Athena.
+Lucía: Una capa semántica, ¿no?
+Martín: Sí. La idea es estandarizar las definiciones de métricas para los agentes de datos de ChatGPT Work. Que el agente sepa qué significa, por ejemplo, ingreso o cantidad de clientes en tu empresa, en vez de adivinar.
+Lucía: Ojo que es un reporte, no un anuncio. Está en etapa temprana, sin fecha y sin precio.
+Martín: Y Snowflake y Databricks ya tienen capas semánticas.
+Lucía: Opinión: la idea es correcta, y el problema es real. Pero hasta que OpenAI no lo muestre, es eso, una idea.
+Martín: Y la sexta, chiquita pero picante. Un issue en GitHub sobre las skills del plugin de Convex.
+Lucía: Contame.
+Martín: El skill de quickstart manda la idea de tu proyecto, la frase que escribiste, a un servidor de Convex. En el código ese envío figuraba como telemetría. Y al usuario no se le avisa.
+Lucía: ¿Respondieron?
+Martín: Hoy mismo, un mantenedor. Dijo que no se usa para telemetría, que solo se manda para generar un quickstart a medida, y que la etiqueta estaba mal.
+Martín: Reconoció que hay que cambiar o sacar ese código y prometió una actualización.
+Martín: El jueves contamos que Claude Code dos punto uno punto trescientos treinta y dos ya carga skills desde servidores MCP.
+Lucía: Claro. Si las skills se reparten como paquetes, hay que leerlas como paquetes.
+Martín: Mi opinión: no parece mala fe. Pero una skill es código que corre con tus permisos, y nadie la lee.
+
+## Para desarrolladores
+Lucía: Bueno, ¿qué nos llevamos para el día a día?
+Martín: Lo primero, lo de Rust. Si estás migrando algo con un agente, pensá antes cómo vas a verificar.
+Lucía: Ellos usaron el tráfico real de producción como verificador. Corrían lo nuevo en sombra y comparaban con lo viejo.
+Martín: Y fijate el detalle de las aserciones debilitadas. Si el agente porta tus tests, revisá los tests, no solo el código.
+Lucía: Porque un test que pasa no te dice que el test esté bien.
+Martín: Y otra que cuentan: hubo un caso donde el agente eligió un parche descartable para que las salidas coincidieran, y un ingeniero lo rechazó.
+Lucía: El verificador premia que coincida, no que esté bien hecho. Ahí sigue haciendo falta una persona.
+Martín: Segundo, npm. Databricks recomienda no confiar solo en bloquear los scripts de instalación, porque hay paquetes que se ejecutan al importarlos.
+Lucía: Sugieren chequear la integridad del lockfile y usar un proxy de registro con lista permitida o una antigüedad mínima para versiones nuevas.
+Martín: Y credenciales de corta duración en los builds, acotadas a cada tarea.
+Lucía: La que más me quedó: tratar los archivos de configuración de los asistentes y de los servidores MCP como si fueran almacenes de credenciales.
+Martín: Porque muchas veces lo son. Tienen claves escritas ahí adentro.
+Lucía: Tercero, lo de Convex va en la misma línea. Antes de instalar una skill, leela. Fijate si manda algo afuera o si baja scripts y los corre.
+Martín: Y si trabajás con datos, lo de Athena es un recordatorio. Si tus métricas no están definidas en un lugar, ningún agente las va a adivinar bien.
+Lucía: Eso lo podés empezar hoy sin esperar a nadie.
+
+## Oportunidades de consultoría
+Martín: Hoy elijo un perfil distinto: un equipo interno de datos o de operaciones en una empresa mediana.
+Lucía: ¿Por qué ese?
+Martín: Por Athena. El problema que describe la nota lo tiene casi cualquier empresa mediana.
+Martín: Comercial dice que vendió una cosa, administración dice otra, y cada uno tiene su Excel.
+Lucía: Y cuando le preguntás a un chatbot, adivina cuál de las dos definiciones usar.
+Martín: Exacto. Entonces la idea es armar un glosario de métricas vivo.
+Lucía: Bajalo a tierra.
+Martín: Primero, sentarse con cada área y anotar cómo calcula sus diez números importantes. Venta, margen, cliente activo, lo que sea.
+Martín: Segundo, escribir cada definición una sola vez, con la fórmula y de qué planilla o tabla sale.
+Martín: Tercero, automatizar un control que compare los números de cada área contra esa definición y avise cuando no cierran.
+Lucía: ¿Y la IA dónde entra?
+Martín: En dos lugares. Ayuda a leer las planillas y proponer la definición de cada métrica, que después una persona aprueba.
+Martín: Y ese glosario es justamente lo que un agente de datos necesita para no inventar.
+Lucía: ¿Qué haría falta del lado de la empresa?
+Martín: Acceso a las planillas o al sistema, alguien de cada área con un par de horas, y un responsable que decida cuando dos áreas no se ponen de acuerdo.
+Lucía: Eso último es lo más difícil, y no lo resuelve ningún modelo.
+Martín: Para nada. Es una idea para conversar, no una promesa de nada.
+
+## Una cosa para probar hoy
+Lucía: La de hoy sale directo de la nota de Databricks. Una revisión rápida de tus dependencias y tus configuraciones de agentes. Menos de media hora.
+Martín: Dale, paso a paso.
+Lucía: Uno. Abrí un proyecto de Node que uses seguido y abrí el archivo package-lock.
+Lucía: Dos. Buscá las dependencias que declaran scripts de ciclo de vida. Esos son los paquetes que corren algo al instalarse.
+Martín: Anotá cuáles son y preguntate si de verdad los necesitás.
+Lucía: Tres. Abrí los archivos de configuración de tus asistentes de código y de tus servidores MCP.
+Lucía: Cuatro. Hacé una lista de cada servidor: qué es, de dónde lo instalaste y si todavía lo usás.
+Martín: El que no reconozcas o no uses, afuera.
+Lucía: Cinco. Buscá claves escritas en texto plano en esos archivos.
+Lucía: Seis. Las que encuentres, rotalas y pasalas a variables de entorno o a un gestor de secretos.
+Martín: Y si tenés skills instaladas, abrí una y leela de punta a punta. Fijate si manda algo a un servidor.
+Lucía: Con eso ya sabés bastante más de lo que corre en tu máquina que esta mañana.
+
+## Quedaron afuera
+Martín: Ahora lo que no entró, por si quieren que lo sigamos.
+Lucía: Bloomberg reportó que SAP recortaría al menos diez mil puestos en un giro hacia la IA.
+Martín: Quedó afuera porque SAP no lo confirmó.
+Lucía: Una nota dice que el tráfico de agentes de IA a tiendas de Estados Unidos se multiplicaría por ciento cincuenta en la Cyber Week.
+Martín: Afuera porque son conteos de cargas de página y la nota no enlaza el informe original.
+Lucía: En Hacker News alguien contó que Anthropic acusa a su empresa de destilar modelos y le da veinticuatro horas para demostrar que no.
+Martín: Testimonio anónimo, sin verificar y sin respuesta de Anthropic. Lo dejamos pasar.
+Lucía: Y Microsoft detalló ARTEX, un marco de IA que usarían grupos de ataque estatales.
+Martín: Solo vimos un resumen, no el informe original. Si sale el documento, lo miramos.
+Lucía: Si alguno de estos les interesa, avisen.
+Martín: Eso es todo por hoy. Buen sábado y nos escuchamos el próximo episodio.
